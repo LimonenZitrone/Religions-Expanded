@@ -1,0 +1,71 @@
+defined_text = {
+	name = statewide_governing_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_STATEWIDE_GOVERNING_COST
+	}
+}
+
+defined_text = {
+	name = local_tax_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_TAX_MODIFIER
+	}
+}
+
+defined_text = {
+	name = local_development_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_DEVELOPMENT_COST
+	}
+}
+
+defined_text = {
+	name = local_culture_conversion_time
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_CULTURE_CONVERSION_TIME
+	}
+}
+
+defined_text = {
+	name = local_unrest
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_UNREST
+	}
+}
+
+defined_text = {
+	name = local_monthly_autonomy
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_AUTONOMY_MOD
+	}
+}

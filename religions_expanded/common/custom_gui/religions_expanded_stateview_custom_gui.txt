@@ -1,0 +1,134 @@
+custom_icon = {
+	name = re_state_missionary_button_glow
+	potential = {
+		owned_by = FROM
+		is_state = yes
+		has_province_modifier = re_missionary_assigned_to_state_modifier
+	}
+}
+custom_button = {
+	name = re_state_missionary_button
+	potential = {
+		owned_by = FROM
+		is_state = yes
+	}
+	trigger = {
+		hidden_trigger = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_missionary_assigned_to_state_modifier }
+				}
+				FROM = {
+					NOT = { has_country_flag = re_missionary_assigned_to_state }
+					num_of_missionaries = 1
+				}
+				area_for_scope_province = {
+					type = all
+					owned_by = FROM
+					is_core = FROM
+					religion = FROM
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_province_modifier = re_missionary_assigned_to_state_modifier
+			}
+			custom_tooltip = re_state_missionary_button_tt_currently_active
+		}
+		else = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = { num_of_missionaries = 1 }
+					}
+				}
+				custom_tooltip = re_state_missionary_button_tt_blocked_no_missionary
+			}
+			if = {
+				limit = {
+					NOT = {
+						area_for_scope_province = {
+							type = all
+							owned_by = FROM
+							is_core = FROM
+						}
+					}
+				}
+				custom_tooltip = re_state_missionary_button_tt_blocked_state_not_owned
+			}
+			if = {
+				limit = {
+					NOT = {
+						area_for_scope_province = {
+							type = all
+							religion = FROM
+						}
+					}
+				}
+				custom_tooltip = re_state_missionary_button_tt_blocked_state_not_converted
+			}
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = re_missionary_assigned_to_state
+					}
+				}
+				custom_tooltip = re_state_missionary_button_tt_blocked_recently_used
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = re_missionary_assigned_to_state
+			}
+			if = {
+				limit = {
+					has_province_modifier = re_missionary_assigned_to_state_modifier
+				}
+				every_province_in_state = {
+					if = {
+						limit = {
+							has_province_modifier = re_missionary_assigned_to_state_main_modifier
+						}
+						remove_province_modifier = re_missionary_assigned_to_state_main_modifier
+					}
+					if = {
+						limit = {
+							has_province_modifier = re_missionary_assigned_to_state_modifier
+						}
+						remove_province_modifier = re_missionary_assigned_to_state_modifier
+					}
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = re_missionary_assigned_to_state_main_modifier
+					duration = -1
+					hidden = yes
+				}
+				every_province_in_state = {
+					add_province_modifier = {
+						name = re_missionary_assigned_to_state_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_province_modifier = re_missionary_assigned_to_state_modifier
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = re_state_missionary_button_tt
+}

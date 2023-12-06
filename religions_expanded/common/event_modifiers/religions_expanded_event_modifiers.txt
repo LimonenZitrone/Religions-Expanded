@@ -1,0 +1,15 @@
+# Assign Missionary to State GUI
+re_missionary_assigned_to_state_main_modifier = {
+	statewide_governing_cost = -0.2
+	missionaries = -1
+}
+
+re_missionary_assigned_to_state_modifier = {
+	# Bonuses:
+	local_tax_modifier = 0.25
+	local_development_cost = -0.05
+	local_culture_conversion_time = -0.1
+	# Maluses:
+	local_unrest = 2
+	local_autonomy = 0.05
+}

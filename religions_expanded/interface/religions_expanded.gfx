@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_re_state_missionary_button"
+		textureFile = "gfx/interface/re_state_missionary_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_state_missionary_button_glow"
+		textureFile = "gfx/interface/re_state_missionary_button_glow.dds"
+	}
+}
