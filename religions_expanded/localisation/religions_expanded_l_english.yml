@@ -10,16 +10,4 @@
  # Event Modifiers:
  re_missionary_assigned_to_state_main_modifier: "Clerical Administration"
  re_missionary_assigned_to_state_modifier: "Clerical Administration"
- 
- ###########
- #Religions#
- ###########
- jainism:0 "Jainism"
- jainism_rebels_demand:0 "Convert $COUNTRYNAME$"
- jainism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- jainism_rebels_title:0 "Religious"
- jainism_rebels_name:0 "$RELIGION$ Zealots"
- jainism_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- jainism_rebels_army:0 "$RELIGION$ Army"
- YAPANIYA:0 "Yapaniya"
- TARANAPANTH:0 "Taranapanth"
+
