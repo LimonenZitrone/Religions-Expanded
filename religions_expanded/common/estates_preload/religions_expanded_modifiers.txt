@@ -1,0 +1,9 @@
+estate_special = {
+	modifier_definition = {
+		type = privileges
+		key = re_yearly_religion_mechanic_sukha_change
+		trigger = {
+			religion = jainism
+		}
+	}
+}

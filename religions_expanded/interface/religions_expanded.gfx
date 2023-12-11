@@ -8,4 +8,36 @@ spriteTypes = {
 		name = "GFX_re_state_missionary_button_glow"
 		textureFile = "gfx/interface/re_state_missionary_button_glow.dds"
 	}
+
+	# Religion Mechanics:
+	## Sukha Mechanic:
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sukha_bar_frame"
+		textureFile = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_bar_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sukha_bar_bg"
+		textureFile = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_bar_empty.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sukha_bar_overlay"
+		textureFile = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_bar_overlay.dds"
+	}
+	progressbartype = {
+		name = "GFX_re_religion_mechanic_sukha_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_bar.dds"
+		textureFile2 = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_bar_empty.dds"
+		size = { x = 300 y = 18 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sukha_meditate_button"
+		textureFile = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_meditate_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sukha_sponsor_festival_button"
+		textureFile = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_sponsor_festival_button.dds"
+	}
 }

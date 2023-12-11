@@ -1,0 +1,785 @@
+custom_icon = {
+	name = re_religion_mechanic_sukha_banner
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+}
+custom_text_box = {
+	name = re_religion_mechanic_sukha_title
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+	tooltip = re_religion_mechanic_sukha_mechanic_tt
+}
+custom_text_box = {
+	name = re_religion_mechanic_sukha_value_text
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+	tooltip = re_religion_mechanic_sukha_mechanic_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_sukha_bar
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+		re_has_religion_mechanic_sukha_value = { value = 1 }
+	}
+	frame = {
+		number = 100
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 100 }
+		}
+	}
+	frame = {
+		number = 99
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 99 }
+		}
+	}
+	frame = {
+		number = 98
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 98 }
+		}
+	}
+	frame = {
+		number = 97
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 97 }
+		}
+	}
+	frame = {
+		number = 96
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 96 }
+		}
+	}
+	frame = {
+		number = 95
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 95 }
+		}
+	}
+	frame = {
+		number = 94
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 94 }
+		}
+	}
+	frame = {
+		number = 93
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 93 }
+		}
+	}
+	frame = {
+		number = 92
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 92 }
+		}
+	}
+	frame = {
+		number = 91
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 91 }
+		}
+	}
+	frame = {
+		number = 90
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 90 }
+		}
+	}
+	frame = {
+		number = 89
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 89 }
+		}
+	}
+	frame = {
+		number = 88
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 88 }
+		}
+	}
+	frame = {
+		number = 87
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 87 }
+		}
+	}
+	frame = {
+		number = 86
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 86 }
+		}
+	}
+	frame = {
+		number = 85
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 85 }
+		}
+	}
+	frame = {
+		number = 84
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 84 }
+		}
+	}
+	frame = {
+		number = 83
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 83 }
+		}
+	}
+	frame = {
+		number = 82
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 82 }
+		}
+	}
+	frame = {
+		number = 81
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 81 }
+		}
+	}
+	frame = {
+		number = 80
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 80 }
+		}
+	}
+	frame = {
+		number = 79
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 79 }
+		}
+	}
+	frame = {
+		number = 78
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 78 }
+		}
+	}
+	frame = {
+		number = 77
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 77 }
+		}
+	}
+	frame = {
+		number = 76
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 76 }
+		}
+	}
+	frame = {
+		number = 75
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 75 }
+		}
+	}
+	frame = {
+		number = 74
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 74 }
+		}
+	}
+	frame = {
+		number = 73
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 73 }
+		}
+	}
+	frame = {
+		number = 72
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 72 }
+		}
+	}
+	frame = {
+		number = 71
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 71 }
+		}
+	}
+	frame = {
+		number = 70
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 70 }
+		}
+	}
+	frame = {
+		number = 69
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 69 }
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 68 }
+		}
+	}
+	frame = {
+		number = 67
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 67 }
+		}
+	}
+	frame = {
+		number = 66
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 66 }
+		}
+	}
+	frame = {
+		number = 65
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 65 }
+		}
+	}
+	frame = {
+		number = 64
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 64 }
+		}
+	}
+	frame = {
+		number = 63
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 63 }
+		}
+	}
+	frame = {
+		number = 62
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 62 }
+		}
+	}
+	frame = {
+		number = 61
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 61 }
+		}
+	}
+	frame = {
+		number = 60
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 60 }
+		}
+	}
+	frame = {
+		number = 59
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 59 }
+		}
+	}
+	frame = {
+		number = 58
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 58 }
+		}
+	}
+	frame = {
+		number = 57
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 57 }
+		}
+	}
+	frame = {
+		number = 56
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 56 }
+		}
+	}
+	frame = {
+		number = 55
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 55 }
+		}
+	}
+	frame = {
+		number = 54
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 54 }
+		}
+	}
+	frame = {
+		number = 53
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 53 }
+		}
+	}
+	frame = {
+		number = 52
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 52 }
+		}
+	}
+	frame = {
+		number = 51
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 51 }
+		}
+	}
+	frame = {
+		number = 50
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 50 }
+		}
+	}
+	frame = {
+		number = 49
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 49 }
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 48 }
+		}
+	}
+	frame = {
+		number = 47
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 47 }
+		}
+	}
+	frame = {
+		number = 46
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 46 }
+		}
+	}
+	frame = {
+		number = 45
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 45 }
+		}
+	}
+	frame = {
+		number = 44
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 44 }
+		}
+	}
+	frame = {
+		number = 43
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 43 }
+		}
+	}
+	frame = {
+		number = 42
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 42 }
+		}
+	}
+	frame = {
+		number = 41
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 41 }
+		}
+	}
+	frame = {
+		number = 40
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 40 }
+		}
+	}
+	frame = {
+		number = 39
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 39 }
+		}
+	}
+	frame = {
+		number = 38
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 38 }
+		}
+	}
+	frame = {
+		number = 37
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 37 }
+		}
+	}
+	frame = {
+		number = 36
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 36 }
+		}
+	}
+	frame = {
+		number = 35
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 35 }
+		}
+	}
+	frame = {
+		number = 34
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 34 }
+		}
+	}
+	frame = {
+		number = 33
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 33 }
+		}
+	}
+	frame = {
+		number = 32
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 32 }
+		}
+	}
+	frame = {
+		number = 31
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 31 }
+		}
+	}
+	frame = {
+		number = 30
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 30 }
+		}
+	}
+	frame = {
+		number = 29
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 29 }
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 28 }
+		}
+	}
+	frame = {
+		number = 27
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 27 }
+		}
+	}
+	frame = {
+		number = 26
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 26 }
+		}
+	}
+	frame = {
+		number = 25
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 25 }
+		}
+	}
+	frame = {
+		number = 24
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 24 }
+		}
+	}
+	frame = {
+		number = 23
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 23 }
+		}
+	}
+	frame = {
+		number = 22
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 22 }
+		}
+	}
+	frame = {
+		number = 21
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 21 }
+		}
+	}
+	frame = {
+		number = 20
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 20 }
+		}
+	}
+	frame = {
+		number = 19
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 19 }
+		}
+	}
+	frame = {
+		number = 18
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 18 }
+		}
+	}
+	frame = {
+		number = 17
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 17 }
+		}
+	}
+	frame = {
+		number = 16
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 16 }
+		}
+	}
+	frame = {
+		number = 15
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 15 }
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 14 }
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 13 }
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 12 }
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 11 }
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 10 }
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 9 }
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 8 }
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 7 }
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 6 }
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 5 }
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 4 }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 3 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_sukha_value = { value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_sukha_bar_bg
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+		NOT = { re_has_religion_mechanic_sukha_value = { value = 1 } }
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_sukha_bar_frame
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_sukha_bar_overlay
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+	trigger = {
+		hidden_trigger = {
+			always = no # used to grab tooltip of effects
+		}
+	}
+	effect = {
+		re_religion_mechanic_sukha_show_current_modifier_tooltip = yes
+		re_religion_mechanic_sukha_show_max_modifier_tooltip = yes
+	}
+	tooltip = re_religion_mechanic_sukha_mechanic_short_tt
+}
+custom_button = {
+	name = re_religion_mechanic_sukha_meditate_button
+	# if you change this, make sure to change the re_religion_mechanic_sukha_meditate_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+	trigger = {
+		adm_power = 50
+		NOT = { re_has_religion_mechanic_sukha_value = { value = 100 } }
+		if = {
+			limit = {
+				has_country_flag = re_religion_mechanic_sukha_meditate_used
+			}
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_sukha_meditate_not_used_recently_tt_with_year
+				had_country_flag = { flag = re_religion_mechanic_sukha_meditate_used days = 5475 }
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_sukha_meditate_not_used_recently_tt
+				always = yes
+			}
+		}
+	}
+	effect = {
+		add_adm_power = -50
+		re_add_religion_mechanic_sukha_value = { value = 5 }
+		hidden_effect = {
+			clr_country_flag = re_religion_mechanic_sukha_meditate_used
+			set_country_flag = re_religion_mechanic_sukha_meditate_used
+			export_to_variable = {
+				which = re_religion_mechanic_sukha_meditate_used_year
+				value = trigger_value:is_year
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_sukha_meditate_button_tt
+}
+custom_button = {
+	name = re_religion_mechanic_sukha_sponsor_festival_button
+	# if you change this, make sure to change the re_religion_mechanic_sukha_sponsor_festival_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+	trigger = {
+		if = {
+			limit = {
+				monthly_income = 500
+			}
+			treasury = 3000
+		}
+		else_if = {
+			limit = {
+				NOT = { monthly_income = 17 }
+			}
+			treasury = 100
+		}
+		else = {
+			years_of_income = 0.5
+		}
+		if = {
+			limit = {
+				has_country_flag = re_religion_mechanic_sukha_sponsor_festival_used
+			}
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year
+				had_country_flag = { flag = re_religion_mechanic_sukha_sponsor_festival_used days = 5475 }
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt
+				always = yes
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				monthly_income = 500
+			}
+			add_treasury = -3000
+		}
+		else_if = {
+			limit = {
+				NOT = { monthly_income = 17 }
+			}
+			add_treasury = -100
+		}
+		else = {
+			add_years_of_income = -0.5
+		}
+		custom_tooltip = re_religion_mechanic_sukha_sponsor_festival_button_tt_choice
+		tooltip = {
+			add_country_modifier = {
+				name = re_religion_mechanic_sukha_sponsor_festival_paryushana_modifier
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = re_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = re_religion_mechanic_sukha_sponsor_festival_diwali_modifier
+				duration = 1825
+			}
+		}
+		hidden_effect = {
+			country_event = { id = re_religion_mechanic_sukha_events.1 }
+			clr_country_flag = re_religion_mechanic_sukha_sponsor_festival_used
+			set_country_flag = re_religion_mechanic_sukha_sponsor_festival_used
+			export_to_variable = {
+				which = re_religion_mechanic_sukha_sponsor_festival_used_year
+				value = trigger_value:is_year
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_sukha_sponsor_festival_button_tt
+}

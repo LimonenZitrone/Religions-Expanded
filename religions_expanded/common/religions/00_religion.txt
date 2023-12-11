@@ -2241,7 +2241,7 @@ dharmic = {
 
 	# Religions Expanded
 	jainism = {
-		color = { 17 27 69 }
+		color = { 47 57 119 }
 		icon = 30
 		allowed_conversion = {
 			sikhism
@@ -2260,8 +2260,8 @@ dharmic = {
 
 		on_convert = {
 			change_religion = jainism
+			re_set_religion_mechanic_sukha_value = { value = 0 }
 			add_prestige = -50
-
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
