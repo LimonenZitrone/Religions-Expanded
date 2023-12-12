@@ -5,10 +5,10 @@
  # GUIs:
  re_religion_mechanic_sukha_title: "Sukha"
  re_religion_mechanic_sukha_value_text: "[Root.ReGetReligionMechanicSukhaValue]%"
- re_religion_mechanic_sukha_mechanic_tt: "§YSukha§! \nSukha Description \n--------------\nSukha is gained by the following actions: \n--------------\nOur §YSukha§! is currently at §Y[Root.ReGetReligionMechanicSukhaValue]%§!. \n\nYearly Change: [Root.ReGetReligionMechanicSukhaYearlyGainValue]"
+ re_religion_mechanic_sukha_mechanic_tt: "§YSukha§! \nSukha Description \n--------------\nSukha is gained by the following actions: \n   Convert a Province via Trade Policy: §G+0.10§! \n   (per Development) \n   Promote a Culture: §G+5.00§! \n   Construct a Great Project: §G+10.00§! \n   Create an Alliance: §G+5.00§! \n   Create a Royal Marriage: §G+5.00§! \n   Send a Gift: §G+3.00§! \n   Proclaim a Guarantee (No Truce): §G+3.00§! \n\nSukha is lost by the following actions: \n   Demote a Culture: §R-10.00§! \n   Break an Alliance: §R-10.00§! \n   Break a Royal Marriage: §R-10.00§! \n   Exploit Development: §R-0.05§! (per Development) \n   Convert a Province's Culture: §R-0.05§! (per Development) \n   Force Convert a Country: §R-10.00§! \n   Pillage a Capital: §R-5.00§! \n   Disinherit an Heir: §R-5.00§! \n--------------\nOur §YSukha§! is currently at §Y[Root.ReGetReligionMechanicSukhaValue]%§!. \n\nYearly Change: [Root.ReGetReligionMechanicSukhaYearlyGainValue]"
  re_religion_mechanic_sukha_mechanic_short_tt: "§YSukha§! \nSukha Description \n--------------\nOur §YSukha§! is currently at §Y[Root.ReGetReligionMechanicSukhaValue]%§!. \n\nYearly Change: [Root.ReGetReligionMechanicSukhaYearlyGainValue]"
- re_religion_mechanic_sukha_meditate_button_tt: "§YMeditate§! \nOur [Root.Monarch.GetTitle] will meditate to affect [Root.Monarch.GetHerHis] Sukha positively."
- re_religion_mechanic_sukha_sponsor_festival_button_tt: "§YSponsor Festival§! \nSponsor a festival to increase the [Root.Monarch.GetTitle]'s Sukha."
+ re_religion_mechanic_sukha_meditate_button_tt: "§YMeditate§! \nOur [Root.Monarch.GetTitle] will meditate to affect the Sukha positively."
+ re_religion_mechanic_sukha_sponsor_festival_button_tt: "§YSponsor Festival§! \nSponsor a festival to increase our Sukha."
 
  re_religion_mechanic_sukha_meditate_not_used_recently_tt_with_year: "Our [This.Monarch.GetTitle] has NOT meditated within the last §Y15 years§! (last in §Y[This.re_religion_mechanic_sukha_meditate_used_year.GetValue]§!)"
  re_religion_mechanic_sukha_meditate_not_used_recently_tt: "Our [This.Monarch.GetTitle] has NOT meditated within the last §Y15 years§!"

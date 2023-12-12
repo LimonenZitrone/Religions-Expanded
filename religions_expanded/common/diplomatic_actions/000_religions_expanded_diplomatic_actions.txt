@@ -1,0 +1,24 @@
+giftaction = {
+	effect = {
+		# Vanilla:
+		change_asha_vahishta = { value = 1 }
+
+		# Religions Expanded:
+		re_add_religion_mechanic_sukha_value = { value = 3 }
+	}
+}
+
+guaranteeaction = {
+	effect = {
+		# Vanilla:
+		change_asha_vahishta = { value = 1 }
+
+		# Religions Expanded:
+		if = {
+			limit = {
+				NOT = { truce_with = FROM }
+			}
+			re_add_religion_mechanic_sukha_value = { value = 3 }
+		}
+	}
+}

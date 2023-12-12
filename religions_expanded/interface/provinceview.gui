@@ -2868,7 +2868,7 @@ guiTypes = {
 			## Religions Expanded GUI Start ##
 			##################################
 
-	#		# Currently moved to province_window cause no tooltip in state_window
+			# Currently moved to province_window cause no tooltip in state_window
 	#		iconType = {
 	#			name = "re_state_missionary_button_glow"
 	#			position = { x = 272 y = 64 }
