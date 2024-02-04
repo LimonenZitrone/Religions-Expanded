@@ -2260,6 +2260,7 @@ dharmic = {
 
 		on_convert = {
 			change_religion = jainism
+			enable_propogate_religion_effect = yes
 			re_set_religion_mechanic_sukha_value = { value = 0 }
 			add_prestige = -50
 			add_country_modifier = {

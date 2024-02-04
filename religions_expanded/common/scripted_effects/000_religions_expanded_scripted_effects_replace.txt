@@ -1,0 +1,152 @@
+on_built_tax_building_effect = {
+	# Vanilla:
+	if = {
+		limit = {
+			owner = { has_country_flag = can_place_center_of_reformation }
+			is_reformation_center = no
+			expelling_minorities = no
+			NOT = {
+				any_neighbor_province = {
+					is_reformation_center = yes
+				}
+			}
+			NOT = {
+				any_province = {
+					area = PREV
+					is_reformation_center = yes
+					religion = zoroastrian
+				}
+			}
+			OR = {
+				has_owner_religion = yes
+				NOT = { has_active_triggered_province_modifier = religious_center }
+			}
+		}
+		if = {
+			limit = { development = 31 }
+			custom_tooltip = TOO_MUCH_DEV_FOR_CENTER_OF_CONVERSION_TT
+		}
+		else = {
+			hidden_effect = {
+				owner = {
+					clr_country_flag = can_place_center_of_reformation
+				}
+				1 = {
+					change_variable = {
+						which = zoroastrian_reform_center_counter
+						value = 1
+					}
+				}
+			}
+			change_religion = zoroastrian
+			add_reform_center = zoroastrian
+		}
+	}
+
+	# RE:
+	owner = {
+		re_add_religion_mechanic_sukha_value = { value = 3 }
+	}
+}
+
+on_province_tax_building_destroyed_estate_privileges_effect = {
+	# Vanilla:
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					religion = buddhism
+					religion = mahayana
+					religion = vajrayana
+				}
+				has_estate_privilege = estate_church_karma_temples
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_government_attribute = buffed_monastic_temples
+				}
+				add_karma = -5
+			}
+			else = {
+				add_karma = -3
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = catholic
+				has_estate_privilege = estate_church_influence_temples
+			}
+		}
+		FROM = {
+			add_papal_influence = -3
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = gets_manpower_from_tax_buildings
+			}
+		}
+		if = {
+			limit = {
+				has_owner_religion = yes
+				has_building = cathedral
+				NOT = { has_province_modifier = estate_nobles_religious_conscription_cathedral }
+			}
+			add_province_modifier = {
+				name = estate_nobles_religious_conscription_cathedral
+				duration = -1
+			}
+			remove_province_modifier = estate_nobles_religious_conscription_temple
+		}
+		else_if = {
+			limit = {
+				has_owner_religion = yes
+				has_building = temple
+				NOT = { has_province_modifier = estate_nobles_religious_conscription_temple }
+			}
+			add_province_modifier = {
+				name = estate_nobles_religious_conscription_temple
+				duration = -1
+			}
+			remove_province_modifier = estate_nobles_religious_conscription_cathedral
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_province_modifier = estate_nobles_religious_conscription_temple
+					has_province_modifier = estate_nobles_religious_conscription_cathedral
+				}
+			}
+			remove_province_modifier = estate_nobles_religious_conscription_temple
+			remove_province_modifier = estate_nobles_religious_conscription_cathedral
+		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_church_development_of_temples_mod
+		}
+		remove_province_modifier = estate_church_development_of_temples_mod
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_brahmins_development_of_temples_mod
+		}
+		remove_province_modifier = estate_brahmins_development_of_temples_mod
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_dhimmi_development_of_communities_mod
+		}
+		remove_province_modifier = estate_dhimmi_development_of_communities_mod
+	}
+
+	# RE:
+	owner = {
+		re_add_religion_mechanic_sukha_value = { value = -3 }
+	}
+}

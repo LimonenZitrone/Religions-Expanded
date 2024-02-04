@@ -677,7 +677,7 @@ custom_button = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = re_religion_mechanic_sukha_meditate_not_used_recently_tt_with_year
-				had_country_flag = { flag = re_religion_mechanic_sukha_meditate_used days = 5475 }
+				had_country_flag = { flag = re_religion_mechanic_sukha_meditate_used days = 3650 }
 			}
 		}
 		else = {
@@ -689,7 +689,7 @@ custom_button = {
 	}
 	effect = {
 		add_adm_power = -50
-		re_add_religion_mechanic_sukha_value = { value = 5 }
+		re_add_religion_mechanic_sukha_value = { value = 10 }
 		hidden_effect = {
 			clr_country_flag = re_religion_mechanic_sukha_meditate_used
 			set_country_flag = re_religion_mechanic_sukha_meditate_used
@@ -730,7 +730,7 @@ custom_button = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year
-				had_country_flag = { flag = re_religion_mechanic_sukha_sponsor_festival_used days = 5475 }
+				had_country_flag = { flag = re_religion_mechanic_sukha_sponsor_festival_used days = 3650 }
 			}
 		}
 		else = {

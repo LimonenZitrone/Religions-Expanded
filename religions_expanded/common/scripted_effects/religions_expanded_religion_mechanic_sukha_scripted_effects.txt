@@ -886,9 +886,7 @@ re_religion_mechanic_sukha_show_max_modifier_tooltip = {
 re_clear_all_religion_mechanic_sukha_modifiers = {
 	if = {
 		limit = {
-			OR = {
-				re_has_any_religion_mechanic_sukha_modifiers = yes
-			}
+			re_has_any_religion_mechanic_sukha_modifiers = yes
 		}
 		set_variable = { which = re_religion_mechanic_sukha_value value = 0 }
 		set_variable = { which = re_religion_mechanic_sukha_value_display value = 0 }
@@ -907,5 +905,6 @@ re_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = {
 			NOT = { re_uses_religion_mechanic = { mechanic = sukha } }
 		}
 		re_clear_all_religion_mechanic_sukha_modifiers = yes
+		disable_propogate_religion_effect = yes
 	}
 }
