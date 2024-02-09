@@ -1,0 +1,92 @@
+defined_text = {
+	name = ReGetReligionMechanicHinduValue
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			re_has_religion_mechanic_hindu_value = { major_deity = shiva value = 0.001 }
+		}
+		localisation_key = "[This.re_religion_mechanic_hindu_shiva_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			re_has_religion_mechanic_hindu_value = { major_deity = brahma value = 0.001 }
+		}
+		localisation_key = "[This.re_religion_mechanic_hindu_brahma_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			re_has_religion_mechanic_hindu_value = { major_deity = vishnu value = 0.001 }
+		}
+		localisation_key = "[This.re_religion_mechanic_hindu_vishnu_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentMajorDeityName
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_name_shiva
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_name_brahma
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_name_vishnu
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_name_none
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentMajorDeityDesc
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_desc_shiva
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_desc_brahma
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_desc_vishnu
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_desc_none
+	}
+}

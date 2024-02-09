@@ -40,4 +40,47 @@ spriteTypes = {
 		name = "GFX_re_religion_mechanic_sukha_sponsor_festival_button"
 		textureFile = "gfx/interface/religion_mechanics/sukha_mechanic/re_religion_mechanic_sukha_sponsor_festival_button.dds"
 	}
+
+	## Hindu Mechanic:
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_bg"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_major_deity_shiva.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_major_deity_brahma.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_major_deity_vishnu.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_empty_button"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_empty_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_dedication_bar_frame"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_dedication_bar_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_dedication_bar_bg"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_dedication_bar_empty.dds"
+	}
+	progressbartype = {
+		name = "GFX_re_religion_mechanic_hindu_dedication_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_dedication_bar.dds"
+		textureFile2 = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_dedication_bar_empty.dds"
+		size = { x = 136 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
 }

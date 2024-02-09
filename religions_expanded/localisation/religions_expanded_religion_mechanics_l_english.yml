@@ -131,3 +131,25 @@
  re_religion_mechanic_sukha_sponsor_festival_paryushana_modifier: "Paryushana"
  re_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier: "Nandishwar Ashtahnika"
  re_religion_mechanic_sukha_sponsor_festival_diwali_modifier: "Diwali"
+
+ ####################
+ ## Hindu Mechanic ##
+ ####################
+ # GUIs:
+ re_religion_mechanic_hindu_major_deity_shiva_button_tt: "§YShiva§!"
+ re_religion_mechanic_hindu_major_deity_brahma_button_tt: "§YBrahma§!"
+ re_religion_mechanic_hindu_major_deity_vishnu_button_tt: "§YVishnu§!"
+ re_religion_mechanic_hindu_selected_major_deity_name: "[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]"
+ re_religion_mechanic_hindu_selected_major_deity_name_tt: "§Y[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]§! \n--------------\n[Root.ReGetReligionMechanicHinduCurrentMajorDeityDesc]"
+ re_religion_mechanic_hindu_dedication_bar_bg_tt: ""
+ re_religion_mechanic_hindu_dynamic_modifier_text: ""
+
+ # Customizable Localization:
+ re_religion_mechanic_hindu_major_deity_name_shiva: "Shiva"
+ re_religion_mechanic_hindu_major_deity_desc_shiva: "Shiva Desc"
+ re_religion_mechanic_hindu_major_deity_name_brahma: "Brahma"
+ re_religion_mechanic_hindu_major_deity_desc_brahma: "Brahma Desc"
+ re_religion_mechanic_hindu_major_deity_name_vishnu: "Vishnu"
+ re_religion_mechanic_hindu_major_deity_desc_vishnu: "Vishnu Desc"
+ re_religion_mechanic_hindu_major_deity_name_none: "§WNo Major Deity§!"
+ re_religion_mechanic_hindu_major_deity_desc_none: "You have not selected a major deity yet."
