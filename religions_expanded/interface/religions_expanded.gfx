@@ -50,16 +50,19 @@ spriteTypes = {
 		name = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
 		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_major_deity_shiva.dds"
 		transparencecheck = yes
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
 		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_major_deity_brahma.dds"
 		transparencecheck = yes
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
 		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_major_deity_vishnu.dds"
 		transparencecheck = yes
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_hindu_empty_button"
@@ -82,5 +85,15 @@ spriteTypes = {
 		textureFile2 = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_dedication_bar_empty.dds"
 		size = { x = 136 y = 12 }
 		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_reset_minor_deity_button"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_reset_minor_deity_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_spend_dedication_button"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_spend_dedication_button.dds"
+		transparencecheck = yes
 	}
 }

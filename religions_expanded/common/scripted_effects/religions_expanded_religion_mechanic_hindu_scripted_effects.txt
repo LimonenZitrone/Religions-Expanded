@@ -1,0 +1,1327 @@
+re_set_religion_mechanic_hindu_current_major_deity = {
+	custom_tooltip = re_set_religion_mechanic_hindu_current_major_deity_tt_$major_deity$
+	clr_country_flag = re_religion_mechanic_hindu_current_major_deity_brahma
+	clr_country_flag = re_religion_mechanic_hindu_current_major_deity_vishnu
+	clr_country_flag = re_religion_mechanic_hindu_current_major_deity_shiva
+	set_country_flag = re_religion_mechanic_hindu_current_major_deity_$major_deity$
+	hidden_effect = {
+		re_update_religion_mechanic_hindu_dynamic_modifier = yes
+	}
+}
+
+re_set_religion_mechanic_hindu_value = {
+	[[value]
+		re_set_religion_mechanic_hindu_$major_deity$_value = { value = $value$ }
+	]
+	[[which]
+		re_set_religion_mechanic_hindu_$major_deity$_value = { which = $which$ }
+	]
+}
+re_set_religion_mechanic_hindu_shiva_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			set_variable = { which = re_religion_mechanic_hindu_shiva_value value = $value$ }
+		]
+		[[which]
+			set_variable = { which = re_religion_mechanic_hindu_shiva_value which = $which$ }
+		]
+		re_update_religion_mechanic_hindu_dedication_levels = yes
+	}
+}
+re_set_religion_mechanic_hindu_brahma_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			set_variable = { which = re_religion_mechanic_hindu_brahma_value value = $value$ }
+		]
+		[[which]
+			set_variable = { which = re_religion_mechanic_hindu_brahma_value which = $which$ }
+		]
+		re_update_religion_mechanic_hindu_dedication_levels = yes
+	}
+}
+re_set_religion_mechanic_hindu_vishnu_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			set_variable = { which = re_religion_mechanic_hindu_vishnu_value value = $value$ }
+		]
+		[[which]
+			set_variable = { which = re_religion_mechanic_hindu_vishnu_value which = $which$ }
+		]
+		re_update_religion_mechanic_hindu_dedication_levels = yes
+	}
+}
+re_set_religion_mechanic_hindu_current_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				}
+				re_set_religion_mechanic_hindu_shiva_value = { value = $value$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				}
+				re_set_religion_mechanic_hindu_brahma_value = { value = $value$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+				re_set_religion_mechanic_hindu_vishnu_value = { value = $value$ }
+			}
+		]
+		[[which]
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				}
+				re_set_religion_mechanic_hindu_shiva_value = { which = $which$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				}
+				re_set_religion_mechanic_hindu_brahma_value = { which = $which$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+				re_set_religion_mechanic_hindu_vishnu_value = { which = $which$ }
+			}
+		]
+	}
+}
+
+re_add_religion_mechanic_hindu_value = {
+	[[value]
+		re_add_religion_mechanic_hindu_$major_deity$_value = { value = $value$ }
+	]
+	[[which]
+		re_add_religion_mechanic_hindu_$major_deity$_value = { which = $which$ }
+	]
+}
+re_add_religion_mechanic_hindu_shiva_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			change_variable = { which = re_religion_mechanic_hindu_shiva_value value = $value$ }
+		]
+		[[which]
+			change_variable = { which = re_religion_mechanic_hindu_shiva_value which = $which$ }
+		]
+		re_update_religion_mechanic_hindu_dedication_levels = yes
+	}
+}
+re_add_religion_mechanic_hindu_brahma_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			change_variable = { which = re_religion_mechanic_hindu_brahma_value value = $value$ }
+		]
+		[[which]
+			change_variable = { which = re_religion_mechanic_hindu_brahma_value which = $which$ }
+		]
+		re_update_religion_mechanic_hindu_dedication_levels = yes
+	}
+}
+re_add_religion_mechanic_hindu_vishnu_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			change_variable = { which = re_religion_mechanic_hindu_vishnu_value value = $value$ }
+		]
+		[[which]
+			change_variable = { which = re_religion_mechanic_hindu_vishnu_value which = $which$ }
+		]
+		re_update_religion_mechanic_hindu_dedication_levels = yes
+	}
+}
+re_add_religion_mechanic_hindu_current_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		[[value]
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				}
+				re_add_religion_mechanic_hindu_shiva_value = { value = $value$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				}
+				re_add_religion_mechanic_hindu_brahma_value = { value = $value$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+				re_add_religion_mechanic_hindu_vishnu_value = { value = $value$ }
+			}
+		]
+		[[which]
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				}
+				re_add_religion_mechanic_hindu_shiva_value = { which = $which$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				}
+				re_add_religion_mechanic_hindu_brahma_value = { which = $which$ }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+				re_add_religion_mechanic_hindu_vishnu_value = { which = $which$ }
+			}
+		]
+	}
+}
+
+re_update_religion_mechanic_hindu_dedication_levels = {
+	hidden_effect = {
+		re_update_religion_mechanic_hindu_dedication_levels_specific = { major_deity = shiva }
+		re_update_religion_mechanic_hindu_dedication_levels_specific = { major_deity = brahma }
+		re_update_religion_mechanic_hindu_dedication_levels_specific = { major_deity = vishnu }
+		re_update_religion_mechanic_hindu_dynamic_modifier = yes
+	}
+}
+re_update_religion_mechanic_hindu_dedication_levels_specific = {
+	while = {
+		limit = {
+			check_variable = { which = re_religion_mechanic_hindu_$major_deity$_value value = 100 }
+			OR = {
+				NOT = { is_variable_equal = { which = re_religion_mechanic_hindu_$major_deity$_value value = 100 } }
+				NOT = { re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = $major_deity$ level = 5 } }
+			}
+		}
+		if = {
+			limit = {
+				re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = $major_deity$ level = 5 }
+			}
+			set_variable = { which = re_religion_mechanic_hindu_$major_deity$_value value = 100 }
+		}
+		else = {
+			subtract_variable = { which = re_religion_mechanic_hindu_$major_deity$_value value = 100 }
+			change_variable = { which = re_religion_mechanic_hindu_$major_deity$_level value = 1 }
+		}
+	}
+	while = {
+		limit = {
+			NOT = { check_variable = { which = re_religion_mechanic_hindu_$major_deity$_value value = 0 } }
+		}
+		if = {
+			limit = {
+				NOT = { re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = $major_deity$ level = 1 } }
+			}
+			set_variable = { which = re_religion_mechanic_hindu_$major_deity$_value value = 0 }
+		}
+		else = {
+			change_variable = { which = re_religion_mechanic_hindu_$major_deity$_value value = 100 }
+			subtract_variable = { which = re_religion_mechanic_hindu_$major_deity$_level value = 1 }
+		}
+	}
+}
+
+re_remove_religion_mechanic_hindu_dynamic_modifiers = {
+	hidden_effect = {
+		# Shiva
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_kali_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_kali_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_kali_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_kali_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_kali_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_kali_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_surya_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_surya_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_surya_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_surya_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_surya_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_surya_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_hanuman_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_hanuman_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_hanuman_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_hanuman_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_hanuman_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_hanuman_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_buddha_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_buddha_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_buddha_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_buddha_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_buddha_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_shiva_buddha_5
+		# Brahma
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_ganesha_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_ganesha_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_ganesha_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_ganesha_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_ganesha_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_ganesha_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_kali_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_kali_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_kali_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_kali_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_kali_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_kali_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_surya_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_surya_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_surya_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_surya_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_surya_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_surya_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_hanuman_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_hanuman_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_hanuman_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_hanuman_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_hanuman_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_hanuman_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_buddha_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_buddha_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_buddha_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_buddha_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_buddha_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_brahma_buddha_5
+		# Vishnu
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_ganesha_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_ganesha_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_ganesha_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_ganesha_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_ganesha_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_ganesha_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_kali_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_kali_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_kali_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_kali_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_kali_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_kali_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_surya_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_surya_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_surya_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_surya_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_surya_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_surya_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_hanuman_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_hanuman_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_hanuman_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_hanuman_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_hanuman_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_hanuman_5
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_buddha_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_buddha_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_buddha_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_buddha_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_buddha_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_vishnu_buddha_5
+	}
+}
+
+re_update_religion_mechanic_hindu_dynamic_modifier = {
+	re_remove_religion_mechanic_hindu_dynamic_modifiers = yes
+	if = {
+		limit = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+		}
+		if = {
+			limit = {
+				has_personal_deity = ganesha
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_ganesha_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_ganesha_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_ganesha_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_ganesha_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_ganesha_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_ganesha_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = kali
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_kali_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_kali_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_kali_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_kali_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_kali_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_kali_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = surya
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_surya_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_surya_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_surya_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_surya_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_surya_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_surya_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = hanuman
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_hanuman_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_hanuman_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_hanuman_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_hanuman_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_hanuman_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_hanuman_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = buddha
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_buddha_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_buddha_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_buddha_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_buddha_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_buddha_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_shiva_buddha_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+		}
+		if = {
+			limit = {
+				has_personal_deity = ganesha
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_ganesha_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_ganesha_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_ganesha_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_ganesha_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_ganesha_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_ganesha_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = kali
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_kali_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_kali_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_kali_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_kali_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_kali_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_kali_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = surya
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_surya_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_surya_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_surya_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_surya_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_surya_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_surya_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = hanuman
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_hanuman_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_hanuman_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_hanuman_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_hanuman_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_hanuman_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_hanuman_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = buddha
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_buddha_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_buddha_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_buddha_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_buddha_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_buddha_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_brahma_buddha_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+		}
+		if = {
+			limit = {
+				has_personal_deity = ganesha
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_ganesha_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_ganesha_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_ganesha_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_ganesha_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_ganesha_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_ganesha_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = kali
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_kali_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_kali_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_kali_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_kali_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_kali_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_kali_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = surya
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_surya_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_surya_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_surya_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_surya_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_surya_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_surya_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = hanuman
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_hanuman_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_hanuman_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_hanuman_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_hanuman_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_hanuman_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_hanuman_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = buddha
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_buddha_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_buddha_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_buddha_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_buddha_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_buddha_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_vishnu_buddha_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+}
+
+re_clear_all_religion_mechanic_hindu_modifiers = {
+	if = {
+		limit = {
+			re_has_any_religion_mechanic_hindu_modifiers = yes
+		}
+		re_remove_religion_mechanic_hindu_dynamic_modifiers = yes
+		clr_country_flag = re_religion_mechanic_hindu_current_major_deity_brahma
+		clr_country_flag = re_religion_mechanic_hindu_current_major_deity_vishnu
+		clr_country_flag = re_religion_mechanic_hindu_current_major_deity_shiva
+		set_variable = { which = re_religion_mechanic_hindu_shiva_value value = 0 }
+		set_variable = { which = re_religion_mechanic_hindu_shiva_level value = 0 }
+		set_variable = { which = re_religion_mechanic_hindu_brahma_value value = 0 }
+		set_variable = { which = re_religion_mechanic_hindu_brahma_level value = 0 }
+		set_variable = { which = re_religion_mechanic_hindu_vishnu_value value = 0 }
+		set_variable = { which = re_religion_mechanic_hindu_vishnu_level value = 0 }
+		clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+		set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+	}
+}
+
+re_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = {
+	if = {
+		limit = {
+			NOT = { re_uses_religion_mechanic = { mechanic = hindu } }
+		}
+		re_clear_all_religion_mechanic_hindu_modifiers = yes
+	}
+}

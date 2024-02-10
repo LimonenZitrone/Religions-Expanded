@@ -625,6 +625,19 @@ guiTypes = {
 		### Hindu Mechanic ###
 		######################
 
+		guiButtonType = {
+			name = "re_religion_mechanic_hindu_spend_dedication_button"
+			position = { x = 17 y = 270 }
+			spriteType = "GFX_re_religion_mechanic_hindu_spend_dedication_button"
+			scripted = yes
+		}
+		guiButtonType = {
+			name = "re_religion_mechanic_hindu_reset_minor_deity_button"
+			position = { x = 17 y = 298 }
+			spriteType = "GFX_re_religion_mechanic_hindu_reset_minor_deity_button"
+			scripted = yes
+		}
+
 		iconType = {
 			name = "re_religion_mechanic_hindu_bg"
 			position = { x = 55 y = 235 }
@@ -682,6 +695,7 @@ guiTypes = {
 			name = "re_religion_mechanic_hindu_dedication_bar_bg"
 			position = { x = 184 y = 280 }
 			spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_bg"
+			alwaystransparent = yes
 			scripted = yes
 		}
 		iconType = {
@@ -699,11 +713,21 @@ guiTypes = {
 			scripted = yes
 		}
 		instantTextBoxType = {
+			name = "re_religion_mechanic_hindu_dedication_level_text"
+			position = { x = 184 y = 279 }
+			font = "garamond_14"
+			format = centre
+			maxWidth = 135
+			maxHeight = 20
+			fixedsize = yes
+			scripted = yes
+		}
+		instantTextBoxType = {
 			name = "re_religion_mechanic_hindu_dynamic_modifier_text"
-			position = { x = 162 y = 314 }
+			position = { x = 142 y = 314 }
 			font = "vic_18"
 			format = centre
-			maxWidth = 190
+			maxWidth = 220
 			maxHeight = 20
 			fixedsize = yes
 			scripted = yes
@@ -1474,11 +1498,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "deity_effect"
-				position = { x = 130 y = -4 }
+				position = { x = 110 y = -4 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 190
+				maxWidth = 220
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = centre

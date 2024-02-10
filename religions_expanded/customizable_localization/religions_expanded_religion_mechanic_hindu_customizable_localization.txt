@@ -90,3 +90,936 @@ defined_text = {
 		localisation_key = re_religion_mechanic_hindu_major_deity_desc_none
 	}
 }
+
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentMajorDeityDedicationLevel
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 5 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 4 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 3 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 2 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 1 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_1
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_0
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduShivaMajorDeityDedicationLevel
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_1
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_0
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduBrahmaMajorDeityDedicationLevel
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_1
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_0
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduVishnuMajorDeityDedicationLevel
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_1
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_hindu_major_deity_dedication_level_0
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 5 }
+		}
+		localisation_key = "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier5]"
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 4 }
+		}
+		localisation_key = "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier4]"
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 3 }
+		}
+		localisation_key = "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier3]"
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 2 }
+		}
+		localisation_key = "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier2]"
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 1 }
+		}
+		localisation_key = "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier1]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier0]"
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier0
+	random = no
+
+	# Shiva
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_ganesha_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_kali_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_surya_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_hanuman_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_0
+	}
+	# Brahma
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_ganesha_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_kali_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_surya_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_hanuman_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_0
+	}
+	# Vishnu
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_ganesha_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_kali_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_surya_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_0
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_0
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier1
+	random = no
+
+	# Shiva
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_ganesha_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_kali_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_surya_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_hanuman_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_1
+	}
+	# Brahma
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_ganesha_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_kali_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_surya_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_hanuman_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_1
+	}
+	# Vishnu
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_ganesha_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_kali_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_surya_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_1
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_1
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier2
+	random = no
+
+	# Shiva
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_ganesha_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_kali_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_surya_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_hanuman_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_2
+	}
+	# Brahma
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_ganesha_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_kali_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_surya_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_hanuman_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_2
+	}
+	# Vishnu
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_ganesha_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_kali_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_surya_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_2
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_2
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier3
+	random = no
+
+	# Shiva
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_ganesha_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_kali_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_surya_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_hanuman_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_3
+	}
+	# Brahma
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_ganesha_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_kali_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_surya_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_hanuman_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_3
+	}
+	# Vishnu
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_ganesha_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_kali_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_surya_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_3
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_3
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier4
+	random = no
+
+	# Shiva
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_ganesha_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_kali_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_surya_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_hanuman_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_4
+	}
+	# Brahma
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_ganesha_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_kali_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_surya_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_hanuman_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_4
+	}
+	# Vishnu
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_ganesha_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_kali_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_surya_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_4
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_4
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduCurrentDynamicModifier5
+	random = no
+
+	# Shiva
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_ganesha_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_kali_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_surya_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_hanuman_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_5
+	}
+	# Brahma
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_ganesha_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_kali_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_surya_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_hanuman_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_5
+	}
+	# Vishnu
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = ganesha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_ganesha_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = kali
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_kali_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = surya
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_surya_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = hanuman
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_5
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = buddha
+		}
+		localisation_key = re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_5
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}

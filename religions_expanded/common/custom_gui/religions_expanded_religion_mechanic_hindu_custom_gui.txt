@@ -1,3 +1,122 @@
+custom_button = {
+	name = re_religion_mechanic_hindu_spend_dedication_button
+	# if you change this, make sure to change the re_religion_mechanic_hindu_spend_dedication_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = hindu }
+	}
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_shiva }
+		NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_brahma }
+		NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_vishnu }
+		if = {
+			limit = {
+				OR = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+			}
+			OR = {
+				re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 1 }
+				re_has_religion_mechanic_hindu_value = { major_deity = current value = 50 }
+			}
+		}
+		else = {
+			OR = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			}
+		}
+	}
+	effect = {
+		re_add_religion_mechanic_hindu_value = { major_deity = current value = -50 }
+		custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_shiva
+		tooltip = {
+			add_country_modifier = {
+				name = re_religion_mechanic_hindu_modifier_spent_dedication_shiva
+				duration = 7300
+			}
+		}
+		custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_brahma
+		tooltip = {
+			add_country_modifier = {
+				name = re_religion_mechanic_hindu_modifier_spent_dedication_brahma
+				duration = 7300
+			}
+		}
+		custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_vishnu
+		tooltip = {
+			add_country_modifier = {
+				name = re_religion_mechanic_hindu_modifier_spent_dedication_vishnu
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_spent_dedication_shiva
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_spent_dedication_brahma
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_spent_dedication_vishnu
+					duration = 7300
+				}
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt
+}
+custom_button = {
+	name = re_religion_mechanic_hindu_reset_minor_deity_button
+	# if you change this, make sure to change the re_religion_mechanic_hindu_reset_minor_deity_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = hindu }
+	}
+	trigger = {
+		if = {
+			limit = {
+				has_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+			}
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_hindu_picked_minor_deity_not_done_recently_tt_with_year
+				had_country_flag = { flag = re_religion_mechanic_hindu_picked_minor_deity days = 730 }
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_hindu_picked_minor_deity_not_done_recently_tt
+				always = yes
+			}
+		}
+		re_has_any_religion_mechanic_hindu_minor_deity_selected = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_personal_deity = none
+		}
+	}
+	tooltip = re_religion_mechanic_hindu_reset_minor_deity_button_tt
+}
 custom_icon = {
 	name = re_religion_mechanic_hindu_bg
 	potential = {
@@ -14,6 +133,7 @@ custom_icon = {
 }
 custom_button = {
 	name = re_religion_mechanic_hindu_major_deity_shiva_button
+	# if you change this, make sure to change the re_religion_mechanic_hindu_major_deity_shiva_decision decision accordingly
 	potential = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = hindu }
@@ -21,11 +141,33 @@ custom_button = {
 	trigger = {
 	}
 	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			}
+			custom_tooltip = re_religion_mechanic_hindu_major_deity_shiva_button_tt_selected
+		}
+		else = {
+			re_set_religion_mechanic_hindu_current_major_deity = { major_deity = shiva }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
 	}
 	tooltip = re_religion_mechanic_hindu_major_deity_shiva_button_tt
 }
 custom_button = {
 	name = re_religion_mechanic_hindu_major_deity_brahma_button
+	# if you change this, make sure to change the re_religion_mechanic_hindu_major_deity_brahma_decision decision accordingly
 	potential = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = hindu }
@@ -33,11 +175,33 @@ custom_button = {
 	trigger = {
 	}
 	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			}
+			custom_tooltip = re_religion_mechanic_hindu_major_deity_brahma_button_tt_selected
+		}
+		else = {
+			re_set_religion_mechanic_hindu_current_major_deity = { major_deity = brahma }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
 	}
 	tooltip = re_religion_mechanic_hindu_major_deity_brahma_button_tt
 }
 custom_button = {
 	name = re_religion_mechanic_hindu_major_deity_vishnu_button
+	# if you change this, make sure to change the re_religion_mechanic_hindu_major_deity_vishnu_decision decision accordingly
 	potential = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = hindu }
@@ -45,6 +209,27 @@ custom_button = {
 	trigger = {
 	}
 	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			}
+			custom_tooltip = re_religion_mechanic_hindu_major_deity_vishnu_button_tt_selected
+		}
+		else = {
+			re_set_religion_mechanic_hindu_current_major_deity = { major_deity = vishnu }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
 	}
 	tooltip = re_religion_mechanic_hindu_major_deity_vishnu_button_tt
 }
@@ -69,7 +254,6 @@ custom_icon = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = hindu }
 	}
-	tooltip = re_religion_mechanic_hindu_dedication_bar_bg_tt
 }
 custom_icon = {
 	name = re_religion_mechanic_hindu_dedication_bar
@@ -685,6 +869,14 @@ custom_icon = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = hindu }
 	}
+}
+custom_text_box = {
+	name = re_religion_mechanic_hindu_dedication_level_text
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = hindu }
+	}
+	tooltip = re_religion_mechanic_hindu_dedication_level_text_tt
 }
 custom_text_box = {
 	name = re_religion_mechanic_hindu_dynamic_modifier_text

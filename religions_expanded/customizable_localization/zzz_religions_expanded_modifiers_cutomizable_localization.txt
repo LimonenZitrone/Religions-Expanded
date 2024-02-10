@@ -35,6 +35,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = development_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = DEVELOPMENT_COST
+	}
+}
+
+defined_text = {
 	name = local_culture_conversion_time
 	random = no
 
@@ -67,5 +79,173 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = LOCAL_AUTONOMY_MOD
+	}
+}
+
+defined_text = {
+	name = yearly_army_tradition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_ARMY_TRADITION
+	}
+}
+
+defined_text = {
+	name = land_morale
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LAND_MORALE
+	}
+}
+
+defined_text = {
+	name = defensiveness
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = DEFENSIVENESS
+	}
+}
+
+defined_text = {
+	name = siege_ability
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SIEGE_ABILITY
+	}
+}
+
+defined_text = {
+	name = land_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LAND_ATTRITION
+	}
+}
+
+defined_text = {
+	name = production_efficiency
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = PRODUCTION_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = all_estate_loyalty_equilibrium
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ALL_ESTATE_LOYALTY_EQUILIBRIUM
+	}
+}
+
+defined_text = {
+	name = global_unrest
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_UNREST
+	}
+}
+
+defined_text = {
+	name = stability_cost_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = STABILITY_COST_MODIFIER
+	}
+}
+
+defined_text = {
+	name = idea_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_IDEA_COST
+	}
+}
+
+defined_text = {
+	name = trade_efficiency
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = TRADE_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = improve_relation_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = IMPROVE_RELATION_MODIFIER
+	}
+}
+
+defined_text = {
+	name = naval_morale
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_NAVAL_MORALE
+	}
+}
+
+defined_text = {
+	name = advisor_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ADVISOR_COST
 	}
 }
