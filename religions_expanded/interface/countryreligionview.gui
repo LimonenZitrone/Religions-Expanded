@@ -647,30 +647,31 @@ guiTypes = {
 		}
 		iconType = {
 			name = "re_religion_mechanic_hindu_minor_deity_bg"
-			position = { x = 75 y = 247 }
+			position = { x = 80 y = 260 }
 			spriteType = "GFX_re_religion_mechanic_hindu_empty_button"
+			scale = 0.8
 			alwaystransparent = yes
 			scripted = yes
 		}
 		guiButtonType = {
 			name = "re_religion_mechanic_hindu_major_deity_shiva_button"
-			position = { x = 35 y = 235 }
+			position = { x = 53 y = 231 }
 			spriteType = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
-			scale = 0.9
+			scale = 0.8
 			scripted = yes
 		}
 		guiButtonType = {
 			name = "re_religion_mechanic_hindu_major_deity_brahma_button"
-			position = { x = 120 y = 235 }
+			position = { x = 53 y = 290 }
 			spriteType = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
-			scale = 0.9
+			scale = 0.8
 			scripted = yes
 		}
 		guiButtonType = {
 			name = "re_religion_mechanic_hindu_major_deity_vishnu_button"
-			position = { x = 78 y = 295 }
+			position = { x = 122 y = 260 }
 			spriteType = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
-			scale = 0.9
+			scale = 0.8
 			scripted = yes
 		}
 
@@ -724,10 +725,10 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "re_religion_mechanic_hindu_dynamic_modifier_text"
-			position = { x = 142 y = 314 }
+			position = { x = 134 y = 314 }
 			font = "vic_18"
 			format = centre
-			maxWidth = 220
+			maxWidth = 235
 			maxHeight = 20
 			fixedsize = yes
 			scripted = yes
@@ -1460,8 +1461,9 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "pick_deity"
-				position = { x=43 y = -53}
+				position = { x=48 y = -40}
 				quadTextureSprite ="GFX_re_religion_mechanic_hindu_empty_button"
+				scale = 0.8
 				buttonText = ""
 				buttonFont = "vic_18"
 				Orientation = "LEFT"
@@ -1471,9 +1473,9 @@ guiTypes = {
 			{
 				name ="no_deity_icon"
 				spriteType = "GFX_icon_religion"
-				position = { x = 48 y = -48 }
+				position = { x = 52 y = -37 }
 				Orientation = "UPPER_LEFT"
-				scale = 0.64
+				scale = 0.515
 				alwaystransparent = yes
 			}
 
@@ -1481,7 +1483,8 @@ guiTypes = {
 			{
 				name ="deity_icon"
 				spriteType = "GFX_hindu_deities_strip"
-				position = { x = 48 y = -48 }
+				position = { x = 52 y = -37 }
+				scale = 0.8
 			}
 
 			instantTextBoxType = {
@@ -1498,11 +1501,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "deity_effect"
-				position = { x = 110 y = -4 }
+				position = { x = 102 y = -4 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 220
+				maxWidth = 235
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = centre

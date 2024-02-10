@@ -4,6 +4,7 @@ re_set_religion_mechanic_hindu_current_major_deity = {
 	clr_country_flag = re_religion_mechanic_hindu_current_major_deity_vishnu
 	clr_country_flag = re_religion_mechanic_hindu_current_major_deity_shiva
 	set_country_flag = re_religion_mechanic_hindu_current_major_deity_$major_deity$
+	set_ruler_flag = re_religion_mechanic_hindu_selected_major_deity
 	hidden_effect = {
 		re_update_religion_mechanic_hindu_dynamic_modifier = yes
 	}

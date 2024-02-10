@@ -146,6 +146,12 @@ custom_button = {
 				re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			}
 			custom_tooltip = re_religion_mechanic_hindu_major_deity_shiva_button_tt_selected
+			if = {
+				limit = {
+					re_has_any_religion_mechanic_hindu_modifiers = yes
+				}
+				custom_tooltip = re_religion_mechanic_hindu_current_dynamic_modifier_tt
+			}
 		}
 		else = {
 			re_set_religion_mechanic_hindu_current_major_deity = { major_deity = shiva }
@@ -180,6 +186,12 @@ custom_button = {
 				re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			}
 			custom_tooltip = re_religion_mechanic_hindu_major_deity_brahma_button_tt_selected
+			if = {
+				limit = {
+					re_has_any_religion_mechanic_hindu_modifiers = yes
+				}
+				custom_tooltip = re_religion_mechanic_hindu_current_dynamic_modifier_tt
+			}
 		}
 		else = {
 			re_set_religion_mechanic_hindu_current_major_deity = { major_deity = brahma }
@@ -214,6 +226,12 @@ custom_button = {
 				re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
 			}
 			custom_tooltip = re_religion_mechanic_hindu_major_deity_vishnu_button_tt_selected
+			if = {
+				limit = {
+					re_has_any_religion_mechanic_hindu_modifiers = yes
+				}
+				custom_tooltip = re_religion_mechanic_hindu_current_dynamic_modifier_tt
+			}
 		}
 		else = {
 			re_set_religion_mechanic_hindu_current_major_deity = { major_deity = vishnu }

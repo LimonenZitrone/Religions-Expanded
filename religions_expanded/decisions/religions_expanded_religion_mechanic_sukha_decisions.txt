@@ -1,0 +1,150 @@
+country_decisions = {
+	re_religion_mechanic_sukha_meditate_decision = {
+		potential = {
+			ai = yes
+			re_uses_religion_mechanic = { mechanic = sukha }
+		}
+		allow = {
+			adm_power = 50
+			NOT = { re_has_religion_mechanic_sukha_value = { value = 100 } }
+			if = {
+				limit = {
+					has_country_flag = re_religion_mechanic_sukha_meditate_used
+				}
+				custom_trigger_tooltip = {
+					tooltip = re_religion_mechanic_sukha_meditate_not_used_recently_tt_with_year
+					had_country_flag = { flag = re_religion_mechanic_sukha_meditate_used days = 3650 }
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = re_religion_mechanic_sukha_meditate_not_used_recently_tt
+					always = yes
+				}
+			}
+		}
+		effect = {
+			add_adm_power = -50
+			re_add_religion_mechanic_sukha_value = { value = 10 }
+			hidden_effect = {
+				clr_country_flag = re_religion_mechanic_sukha_meditate_used
+				set_country_flag = re_religion_mechanic_sukha_meditate_used
+				export_to_variable = {
+					which = re_religion_mechanic_sukha_meditate_used_year
+					value = trigger_value:is_year
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { adm_power = 500 }
+					re_has_religion_mechanic_sukha_value = { value = 80 }
+				}
+			}
+		}
+	}
+
+	re_religion_mechanic_sukha_sponsor_festival_decision = {
+		potential = {
+			ai = yes
+			re_uses_religion_mechanic = { mechanic = sukha }
+		}
+		allow = {
+			if = {
+				limit = {
+					monthly_income = 500
+				}
+				treasury = 3000
+			}
+			else_if = {
+				limit = {
+					NOT = { monthly_income = 17 }
+				}
+				treasury = 100
+			}
+			else = {
+				years_of_income = 0.5
+			}
+			if = {
+				limit = {
+					has_country_flag = re_religion_mechanic_sukha_sponsor_festival_used
+				}
+				custom_trigger_tooltip = {
+					tooltip = re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year
+					had_country_flag = { flag = re_religion_mechanic_sukha_sponsor_festival_used days = 3650 }
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt
+					always = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					monthly_income = 500
+				}
+				add_treasury = -3000
+			}
+			else_if = {
+				limit = {
+					NOT = { monthly_income = 17 }
+				}
+				add_treasury = -100
+			}
+			else = {
+				add_years_of_income = -0.5
+			}
+			custom_tooltip = re_religion_mechanic_sukha_sponsor_festival_button_tt_choice
+			tooltip = {
+				add_country_modifier = {
+					name = re_religion_mechanic_sukha_sponsor_festival_paryushana_modifier
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_sukha_sponsor_festival_diwali_modifier
+					duration = 1825
+				}
+			}
+			hidden_effect = {
+				country_event = { id = re_religion_mechanic_sukha_events.1 }
+				clr_country_flag = re_religion_mechanic_sukha_sponsor_festival_used
+				set_country_flag = re_religion_mechanic_sukha_sponsor_festival_used
+				export_to_variable = {
+					which = re_religion_mechanic_sukha_sponsor_festival_used_year
+					value = trigger_value:is_year
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						monthly_income = 500
+						NOT = { treasury = 9000 }
+					}
+					AND = {
+						NOT = { monthly_income = 17 }
+						NOT = { treasury = 1000 }
+					}
+					AND = {
+						NOT = { monthly_income = 500 }
+						monthly_income = 17
+						NOT = { years_of_income = 3 }
+					}
+				}
+			}
+		}
+	}
+}
