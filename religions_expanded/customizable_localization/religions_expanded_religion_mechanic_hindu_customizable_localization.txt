@@ -32,6 +32,122 @@ defined_text = {
 }
 
 defined_text = {
+	name = ReGetReligionMechanicHinduMonthlyGainValue
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_hindu_value value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_hindu_value value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_neutral
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduMonthlyGainValueFromDedicationLevel
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_hindu_value_dedication_level value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_dedication_level_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_hindu_value_dedication_level value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_dedication_level_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_dedication_level_neutral
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduMonthlyGainValueFromReligiousUnity
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_hindu_value_religious_unity value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_religious_unity_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_hindu_value_religious_unity value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_religious_unity_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_religious_unity_neutral
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduMonthlyGainValueFromRulerSkill
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_skill_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_skill_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_skill_neutral
+	}
+}
+defined_text = {
+	name = ReGetReligionMechanicHinduMonthlyGainValueFromRulerPersonality
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_personality_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_personality_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_personality_neutral
+	}
+}
+
+defined_text = {
 	name = ReGetReligionMechanicHinduCurrentMajorDeityName
 	random = no
 

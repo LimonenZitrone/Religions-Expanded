@@ -6,4 +6,12 @@ estate_special = {
 			religion = jainism
 		}
 	}
+	modifier_definition = {
+		type = privileges
+		key = re_monthly_religion_mechanic_hindu_change
+		trigger = {
+			religion = hinduism
+			uses_personal_deities = yes
+		}
+	}
 }

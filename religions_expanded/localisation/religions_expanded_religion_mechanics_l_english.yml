@@ -144,13 +144,13 @@
  # GUIs:
  re_religion_mechanic_hindu_spend_dedication_button_tt: "§YSpend Dedication§! \nSpend some Dedication Progress for short time bonuses."
  re_religion_mechanic_hindu_reset_minor_deity_button_tt: "§YReset Minor Deity§! \nReset the currently selected Minot Deity so that no Minor Deity is selected."
- re_religion_mechanic_hindu_major_deity_shiva_button_tt: "§YShiva§! \nCurrent Level of Dedication: §Y[Root.ReGetReligionMechanicHinduShivaMajorDeityDedicationLevel]§! \n\nWith §YShiva§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [yearly_army_tradition]: §G+0.15§! \n   §YKali§!: [land_morale]: §G+2.5%§! \n   §YSurya§!: [defensiveness]: §G+2.5%§! \n   §YHanuman§!: [siege_ability]: §G+2.5%§! \n   §YBuddha§!: [land_attrition]: §G-2.5%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YShiva§!."
- re_religion_mechanic_hindu_major_deity_brahma_button_tt: "§YBrahma§! \nCurrent Level of Dedication: §Y[Root.ReGetReligionMechanicHinduBrahmaMajorDeityDedicationLevel]§! \n\nWith §YBrahma§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [development_cost]: §G-2.5%§! \n   §YKali§!: [production_efficiency]: §G+2.5%§! \n   §YSurya§!: [all_estate_loyalty_equilibrium]: §G+2.5%§! \n   §YHanuman§!: [global_unrest]: §G-0.50§! \n   §YBuddha§!: [stability_cost_modifier]: §G-2.5%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YBrahma§!."
- re_religion_mechanic_hindu_major_deity_vishnu_button_tt: "§YVishnu§! \nCurrent Level of Dedication: §Y[Root.ReGetReligionMechanicHinduVishnuMajorDeityDedicationLevel]§! \n\nWith §YVishnu§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [idea_cost]: §G-2.5%§! \n   §YKali§!: [trade_efficiency]: §G+2.5%§! \n   §YSurya§!: [improve_relation_modifier]: §G+5.0%§! \n   §YHanuman§!: [naval_morale]: §G+2.5%§! \n   §YBuddha§!: [advisor_cost]: §G-3.0%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YVishnu§!."
+ re_religion_mechanic_hindu_major_deity_shiva_button_tt: "§Y£mil£ Shiva§! \nCurrent Level of Dedication: §Y[Root.ReGetReligionMechanicHinduShivaMajorDeityDedicationLevel]§! \n\nWith §YShiva§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [yearly_army_tradition]: §G+0.15§! \n   §YKali§!: [land_morale]: §G+2.5%§! \n   §YSurya§!: [defensiveness]: §G+2.5%§! \n   §YHanuman§!: [siege_ability]: §G+2.5%§! \n   §YBuddha§!: [land_attrition]: §G-2.5%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YShiva§!."
+ re_religion_mechanic_hindu_major_deity_brahma_button_tt: "§Y£adm£ Brahma§! \nCurrent Level of Dedication: §Y[Root.ReGetReligionMechanicHinduBrahmaMajorDeityDedicationLevel]§! \n\nWith §YBrahma§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [development_cost]: §G-2.5%§! \n   §YKali§!: [production_efficiency]: §G+2.5%§! \n   §YSurya§!: [all_estate_loyalty_equilibrium]: §G+2.5%§! \n   §YHanuman§!: [global_unrest]: §G-0.50§! \n   §YBuddha§!: [stability_cost_modifier]: §G-2.5%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YBrahma§!."
+ re_religion_mechanic_hindu_major_deity_vishnu_button_tt: "£dip£ §YVishnu§! \nCurrent Level of Dedication: §Y[Root.ReGetReligionMechanicHinduVishnuMajorDeityDedicationLevel]§! \n\nWith §YVishnu§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [idea_cost]: §G-2.5%§! \n   §YKali§!: [trade_efficiency]: §G+2.5%§! \n   §YSurya§!: [improve_relation_modifier]: §G+5.0%§! \n   §YHanuman§!: [naval_morale]: §G+2.5%§! \n   §YBuddha§!: [advisor_cost]: §G-3.0%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YVishnu§!."
  re_religion_mechanic_hindu_selected_major_deity_name: "[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]"
  re_religion_mechanic_hindu_selected_major_deity_name_tt: "§Y[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]§! \n[Root.ReGetReligionMechanicHinduCurrentMajorDeityDesc]"
  re_religion_mechanic_hindu_dedication_level_text: "[Root.ReGetReligionMechanicHinduCurrentMajorDeityDedicationLevel]"
- re_religion_mechanic_hindu_dedication_level_text_tt: "Current Level of Dedication (§M[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]§!): §Y[Root.ReGetReligionMechanicHinduCurrentMajorDeityDedicationLevel]§! \nCurrent Level Progress: §Y[Root.ReGetReligionMechanicHinduValue]%§! \n--------------\nThere are §Y6§! Levels of Dedication: \n   Level 1: §YHellish Realm§! \n   Level 2: §YRealm of Hungry Ghosts§! \n   Level 3: §YRealm of Animals§! \n   Level 4: §YHumanity§! \n   Level 5: §YDomain of Demi-Gods§! \n   Level 6: §YAbode of the Gods§! \n\nThe Level of Dedication is individual for each §YMajor Deity§!. If it goes below §Y0%§!, the level is decreased. If it reaches §Y100%§!, the level is increased. \nThe Level of Dedication affects the strength of the bonus gained from the combination of specific §YMajor§! and §YMinor Deities§!."
+ re_religion_mechanic_hindu_dedication_level_text_tt: "Current Level of Dedication (§M[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]§!): §Y[Root.ReGetReligionMechanicHinduCurrentMajorDeityDedicationLevel]§! \nCurrent Level Progress: §Y[Root.ReGetReligionMechanicHinduValue]%§! \n--------------\nThere are §Y6§! Levels of Dedication: \n   Level 1: §YHellish Realm§! \n   Level 2: §YRealm of Hungry Ghosts§! \n   Level 3: §YRealm of Animals§! \n   Level 4: §YHumanity§! \n   Level 5: §YDomain of Demi-Gods§! \n   Level 6: §YAbode of the Gods§! \n\nThe Level of Dedication is individual for each §YMajor Deity§!. If it goes below §Y0%§!, the level is decreased. If it reaches §Y100%§!, the level is increased. \nThe Level of Dedication affects the strength of the bonus gained from the combination of specific §YMajor§! and §YMinor Deities§!. \n--------------\nMonthly Change: [Root.ReGetReligionMechanicHinduMonthlyGainValue] \n--------------\nThe monthly change is affected by: \n- Current Level of Dedication: [Root.ReGetReligionMechanicHinduMonthlyGainValueFromDedicationLevel] \n- Religious Unity: [Root.ReGetReligionMechanicHinduMonthlyGainValueFromReligiousUnity] \n- Ruler Skill: [Root.ReGetReligionMechanicHinduMonthlyGainValueFromRulerSkill] \n- Ruler Personalities: [Root.ReGetReligionMechanicHinduMonthlyGainValueFromRulerPersonality]"
  re_religion_mechanic_hindu_dynamic_modifier_text: "[Root.ReGetReligionMechanicHinduCurrentDynamicModifier]"
 
  re_religion_mechanic_hindu_picked_minor_deity_not_done_recently_tt_with_year: "Has NOT chosen the §YMinor Deity§! within the last §Y2 years§! (picked in §Y[Root.re_religion_mechanic_hindu_picked_minor_deity_year.GetValue]§!)"
@@ -162,6 +162,9 @@
  re_religion_mechanic_hindu_major_deity_brahma_button_tt_selected: "§YBrahma§! is the currently selected §YMajor Deity§!."
  re_religion_mechanic_hindu_major_deity_vishnu_button_tt_selected: "§YVishnu§! is the currently selected §YMajor Deity§!."
  re_religion_mechanic_hindu_current_dynamic_modifier_tt: "\nDue to your Level of Dedication towards §Y[Root.ReGetReligionMechanicHinduCurrentMajorDeityName]§! and your selected §YMinor Deity§! this has the following effects: \n[Root.ReGetReligionMechanicHinduCurrentDynamicModifier]"
+
+ # Custom Modifiers:
+ re_monthly_religion_mechanic_hindu_change: "Monthly Level of Dedication Progress (Current Major Deity)"
 
  # Deities:
  kali: "Kali"
@@ -211,6 +214,22 @@
  re_has_religion_mechanic_hindu_major_deity_vishnu_dedication_level_tt_5: "The Level of Dedication for §YVishnu§! is at least §YAbode of the Gods§!"
 
  # Customizable Localization:
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_positive: "§G+[This.re_monthly_religion_mechanic_hindu_value.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_negative: "§R[This.re_monthly_religion_mechanic_hindu_value.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_neutral: "§Y0.00§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_dedication_level_positive: "§G+[This.re_monthly_religion_mechanic_hindu_value_dedication_level.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_dedication_level_negative: "§R[This.re_monthly_religion_mechanic_hindu_value_dedication_level.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_dedication_level_neutral: "§Y0.00§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_religious_unity_positive: "§G+[This.re_monthly_religion_mechanic_hindu_value_religious_unity.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_religious_unity_negative: "§R[This.re_monthly_religion_mechanic_hindu_value_religious_unity.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_religious_unity_neutral: "§Y0.00§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_skill_positive: "§G+[This.re_monthly_religion_mechanic_hindu_value_ruler_skill.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_skill_negative: "§R[This.re_monthly_religion_mechanic_hindu_value_ruler_skill.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_skill_neutral: "§Y0.00§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_personality_positive: "§G+[This.re_monthly_religion_mechanic_hindu_value_ruler_personality.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_personality_negative: "§R[This.re_monthly_religion_mechanic_hindu_value_ruler_personality.GetValue]§!"
+ string_re_get_religion_mechanic_hindu_monthly_gain_value_from_ruler_personality_neutral: "§Y0.00§!"
+
  re_religion_mechanic_hindu_major_deity_name_shiva: "Shiva"
  re_religion_mechanic_hindu_major_deity_desc_shiva: "Shiva Desc"
  re_religion_mechanic_hindu_major_deity_name_brahma: "Brahma"
@@ -323,11 +342,11 @@
  re_religion_mechanic_hindu_spend_dedication_decision_desc: "Spend some Dedication Progress for short time bonuses."
  re_religion_mechanic_hindu_reset_minor_deity_decision_title: "Reset Minor Deity"
  re_religion_mechanic_hindu_reset_minor_deity_decision_desc: "Reset the currently selected Minot Deity so that no Minor Deity is selected."
- re_religion_mechanic_hindu_major_deity_shiva_decision_title: "Select Shiva"
+ re_religion_mechanic_hindu_major_deity_shiva_decision_title: "Select £mil£ Shiva"
  re_religion_mechanic_hindu_major_deity_shiva_decision_desc: "Current Level of Dedication: §Y[Root.ReGetReligionMechanicHinduShivaMajorDeityDedicationLevel]§! \n\nWith §YShiva§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [yearly_army_tradition]: §G+0.15§! \n   §YKali§!: [land_morale]: §G+2.5%§! \n   §YSurya§!: [defensiveness]: §G+2.5%§! \n   §YHanuman§!: [siege_ability]: §G+2.5%§! \n   §YBuddha§!: [land_attrition]: §G-2.5%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YShiva§!."
- re_religion_mechanic_hindu_major_deity_brahma_decision_title: "Select Brahma"
+ re_religion_mechanic_hindu_major_deity_brahma_decision_title: "Select £adm£ Brahma"
  re_religion_mechanic_hindu_major_deity_brahma_decision_desc: "Current Level of Dedication: §Y[Root.ReGetReligionMechanicHinduBrahmaMajorDeityDedicationLevel]§! \n\nWith §YBrahma§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [development_cost]: §G-2.5%§! \n   §YKali§!: [production_efficiency]: §G+2.5%§! \n   §YSurya§!: [all_estate_loyalty_equilibrium]: §G+2.5%§! \n   §YHanuman§!: [global_unrest]: §G-0.50§! \n   §YBuddha§!: [stability_cost_modifier]: §G-2.5%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YBrahma§!."
- re_religion_mechanic_hindu_major_deity_vishnu_decision_title: "Select Vishnu"
+ re_religion_mechanic_hindu_major_deity_vishnu_decision_title: "Select £dip£ Vishnu"
  re_religion_mechanic_hindu_major_deity_vishnu_decision_desc: "Current Level of Dedication: §Y[Root.ReGetReligionMechanicHinduVishnuMajorDeityDedicationLevel]§! \n\nWith §YVishnu§! selected as your §YMajor Deity§! you will gain the following bonuses with the specific §YMinor Deity§! selected: \n   §YGanesha§!: [idea_cost]: §G-2.5%§! \n   §YKali§!: [trade_efficiency]: §G+2.5%§! \n   §YSurya§!: [improve_relation_modifier]: §G+5.0%§! \n   §YHanuman§!: [naval_morale]: §G+2.5%§! \n   §YBuddha§!: [advisor_cost]: §G-3.0%§! \n\nThese bonuses scale with your §YLevel of Dedication§! for §YVishnu§!."
 
  # Modifiers:

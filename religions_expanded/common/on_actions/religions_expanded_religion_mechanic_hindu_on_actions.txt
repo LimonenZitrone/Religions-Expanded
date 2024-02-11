@@ -2,6 +2,15 @@ on_religion_change = {
 	re_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = yes
 }
 
+on_monthly_pulse = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		re_add_monthly_religion_mechanic_hindu_value = yes
+	}
+}
+
 # ROOT = annexing country, FROM = annexed country
 on_annexed = {
 	FROM = {
