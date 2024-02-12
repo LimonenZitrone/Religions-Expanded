@@ -633,8 +633,14 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "re_religion_mechanic_hindu_reset_minor_deity_button"
-			position = { x = 17 y = 298 }
+			position = { x = 137 y = 233 }
 			spriteType = "GFX_re_religion_mechanic_hindu_reset_minor_deity_button"
+			scripted = yes
+		}
+		guiButtonType = {
+			name = "re_religion_mechanic_hindu_toggle_dedication_focus_button"
+			position = { x = 17 y = 298 }
+			spriteType = "GFX_re_religion_mechanic_hindu_toggle_dedication_focus_button"
 			scripted = yes
 		}
 
@@ -669,7 +675,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "re_religion_mechanic_hindu_major_deity_vishnu_button"
-			position = { x = 122 y = 260 }
+			position = { x = 121 y = 265 }
 			spriteType = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
 			scale = 0.8
 			scripted = yes

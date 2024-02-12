@@ -216,6 +216,13 @@ re_has_religion_mechanic_hindu_current_value = {
 	}
 }
 
+re_is_religion_mechanic_hindu_dedication_focus_enabled = {
+	custom_trigger_tooltip = {
+		tooltip = re_is_religion_mechanic_hindu_dedication_focus_enabled_tt
+		has_country_flag = re_religion_mechanic_hindu_dedication_focus_enabled
+	}
+}
+
 re_has_any_religion_mechanic_hindu_modifiers = {
 	OR = {
 		has_country_modifier = re_religion_mechanic_hindu_modifier_shiva_ganesha_0

@@ -96,4 +96,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_spend_dedication_button.dds"
 		transparencecheck = yes
 	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_hindu_toggle_dedication_focus_button"
+		textureFile = "gfx/interface/religion_mechanics/hindu_mechanic/re_religion_mechanic_hindu_toggle_dedication_focus_button.dds"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
 }

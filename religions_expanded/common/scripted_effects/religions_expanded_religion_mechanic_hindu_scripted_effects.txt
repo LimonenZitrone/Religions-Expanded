@@ -6,6 +6,10 @@ re_set_religion_mechanic_hindu_current_major_deity = {
 	set_country_flag = re_religion_mechanic_hindu_current_major_deity_$major_deity$
 	set_ruler_flag = re_religion_mechanic_hindu_selected_major_deity
 	hidden_effect = {
+		export_to_variable = {
+			which = re_religion_mechanic_hindu_picked_major_deity_year
+			value = trigger_value:is_year
+		}
 		re_update_religion_mechanic_hindu_dynamic_modifier = yes
 		re_export_monthly_religion_mechanic_hindu_value_gain = yes
 	}
@@ -263,10 +267,12 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
 				}
 			}
+			set_variable = { which = re_monthly_religion_mechanic_hindu_value value = 0 }
 			export_to_variable = {
-				which = re_monthly_religion_mechanic_hindu_value
+				which = re_monthly_religion_mechanic_hindu_value_other
 				value = modifier:re_monthly_religion_mechanic_hindu_change
 			}
+			change_variable = { which = re_monthly_religion_mechanic_hindu_value which = re_monthly_religion_mechanic_hindu_value_other }
 			# Level of Dedication
 			if = {
 				limit = {
@@ -632,6 +638,7 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 		}
 		else = {
 			set_variable = { which = re_monthly_religion_mechanic_hindu_value value = 0 }
+			set_variable = { which = re_monthly_religion_mechanic_hindu_value_other value = 0 }
 			set_variable = { which = re_monthly_religion_mechanic_hindu_value_dedication_level value = 0 }
 			set_variable = { which = re_monthly_religion_mechanic_hindu_value_religious_unity value = 0 }
 			set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0 }
@@ -645,6 +652,76 @@ re_add_monthly_religion_mechanic_hindu_value = {
 	set_variable = { which = re_monthly_religion_mechanic_hindu_value_temp which = re_monthly_religion_mechanic_hindu_value }
 	re_add_religion_mechanic_hindu_value = { major_deity = current which = re_monthly_religion_mechanic_hindu_value_temp }
 	set_variable = { which = re_monthly_religion_mechanic_hindu_value_temp value = 0 }
+}
+
+re_remove_religion_mechanic_hindu_dynamic_dedication_focus_modifiers = {
+	hidden_effect = {
+		clr_country_flag = re_religion_mechanic_hindu_dedication_focus_enabled
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_0
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_1
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_2
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_3
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_4
+		remove_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_5
+		re_export_monthly_religion_mechanic_hindu_value_gain = yes
+	}
+}
+
+re_update_religion_mechanic_hindu_dynamic_dedication_focus_modifier = {
+	re_remove_religion_mechanic_hindu_dynamic_dedication_focus_modifiers = yes
+	set_country_flag = re_religion_mechanic_hindu_dedication_focus_enabled
+	if = {
+		limit = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 5 }
+		}
+		add_country_modifier = {
+			name = re_religion_mechanic_hindu_modifier_dedication_focus_5
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 4 }
+		}
+		add_country_modifier = {
+			name = re_religion_mechanic_hindu_modifier_dedication_focus_4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 3 }
+		}
+		add_country_modifier = {
+			name = re_religion_mechanic_hindu_modifier_dedication_focus_3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 2 }
+		}
+		add_country_modifier = {
+			name = re_religion_mechanic_hindu_modifier_dedication_focus_2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 1 }
+		}
+		add_country_modifier = {
+			name = re_religion_mechanic_hindu_modifier_dedication_focus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_country_modifier = {
+			name = re_religion_mechanic_hindu_modifier_dedication_focus_0
+			duration = -1
+		}
+	}
+	re_export_monthly_religion_mechanic_hindu_value_gain = yes
 }
 
 re_remove_religion_mechanic_hindu_dynamic_modifiers = {
@@ -1692,6 +1769,14 @@ re_update_religion_mechanic_hindu_dynamic_modifier = {
 			}
 		}
 	}
+	hidden_effect = {
+		if = {
+			limit = {
+				re_is_religion_mechanic_hindu_dedication_focus_enabled = yes
+			}
+			re_update_religion_mechanic_hindu_dynamic_dedication_focus_modifier = yes
+		}
+	}
 }
 
 re_clear_all_religion_mechanic_hindu_modifiers = {
@@ -1699,6 +1784,7 @@ re_clear_all_religion_mechanic_hindu_modifiers = {
 		limit = {
 			re_has_any_religion_mechanic_hindu_modifiers = yes
 		}
+		re_remove_religion_mechanic_hindu_dynamic_dedication_focus_modifiers = yes
 		re_remove_religion_mechanic_hindu_dynamic_modifiers = yes
 		clr_country_flag = re_religion_mechanic_hindu_current_major_deity_brahma
 		clr_country_flag = re_religion_mechanic_hindu_current_major_deity_vishnu
@@ -1711,7 +1797,9 @@ re_clear_all_religion_mechanic_hindu_modifiers = {
 		set_variable = { which = re_religion_mechanic_hindu_vishnu_level value = 0 }
 		clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
 		set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+		set_variable = { which = re_religion_mechanic_hindu_picked_major_deity_year value = 0 }
 		set_variable = { which = re_monthly_religion_mechanic_hindu_value value = 0 }
+		set_variable = { which = re_monthly_religion_mechanic_hindu_value_other value = 0 }
 		set_variable = { which = re_monthly_religion_mechanic_hindu_value_dedication_level value = 0 }
 		set_variable = { which = re_monthly_religion_mechanic_hindu_value_religious_unity value = 0 }
 		set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0 }

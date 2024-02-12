@@ -55,6 +55,29 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = ReGetReligionMechanicHinduMonthlyGainValueFromOther
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_hindu_value_other value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_other_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_hindu_value_other value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_other_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_hindu_monthly_gain_value_from_other_neutral
+	}
+}
+defined_text = {
 	name = ReGetReligionMechanicHinduMonthlyGainValueFromDedicationLevel
 	random = no
 

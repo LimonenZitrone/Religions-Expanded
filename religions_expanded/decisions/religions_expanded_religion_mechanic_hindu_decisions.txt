@@ -141,6 +141,187 @@ country_decisions = {
 		}
 	}
 
+	re_religion_mechanic_hindu_toggle_dedication_focus_decision = {
+		potential = {
+			ai = yes
+			re_uses_religion_mechanic = { mechanic = hindu }
+		}
+		allow = {
+			if = {
+				limit = {
+					re_is_religion_mechanic_hindu_dedication_focus_enabled = yes
+				}
+				if = {
+					limit = {
+						OR = {
+							re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+							re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+							re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = re_religion_mechanic_hindu_picked_major_deity_at_least_some_time_ago_tt
+						OR = {
+							had_country_flag = { flag = re_religion_mechanic_hindu_current_major_deity_shiva days = 365 }
+							had_country_flag = { flag = re_religion_mechanic_hindu_current_major_deity_brahma days = 365 }
+							had_country_flag = { flag = re_religion_mechanic_hindu_current_major_deity_vishnu days = 365 }
+						}
+					}
+				}
+				else = {
+					OR = {
+						re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+						re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+						re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+					}
+				}
+			}
+			else = {
+				NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_dedication_focus_ended }
+				OR = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					re_is_religion_mechanic_hindu_dedication_focus_enabled = yes
+				}
+				custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_current_effects
+				tooltip = {
+					re_update_religion_mechanic_hindu_dynamic_dedication_focus_modifier = yes
+				}
+				re_remove_religion_mechanic_hindu_dynamic_dedication_focus_modifiers = yes
+				custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivation_effects
+				if = {
+					limit = {
+						re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 5 }
+					}
+					custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivate_level_5
+					hidden_effect = {
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 4 }
+					}
+					custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivate_level_4
+					hidden_effect = {
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 3 }
+					}
+					custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivate_level_3
+					hidden_effect = {
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+						random_owned_province = {
+							hinduism_rebels = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 2 }
+					}
+					custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivate_level_2
+					hidden_effect = {
+						random_owned_province = {
+							hinduism_rebels = 2
+						}
+						random_owned_province = {
+							hinduism_rebels = 2
+						}
+						random_owned_province = {
+							hinduism_rebels = 2
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 1 }
+					}
+					custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivate_level_1
+					hidden_effect = {
+						random_owned_province = {
+							hinduism_rebels = 2
+						}
+						random_owned_province = {
+							hinduism_rebels = 2
+						}
+					}
+				}
+				else = {
+					custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_deactivate_level_0
+					hidden_effect = {
+						random_owned_province = {
+							hinduism_rebels = 1
+						}
+						random_owned_province = {
+							hinduism_rebels = 1
+						}
+					}
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_hindu_modifier_dedication_focus_ended
+					duration = 7300
+				}
+			}
+			else = {
+				custom_tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt_activation_effects
+				re_update_religion_mechanic_hindu_dynamic_dedication_focus_modifier = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	re_religion_mechanic_hindu_major_deity_shiva_decision = {
 		potential = {
 			ai = yes
