@@ -112,7 +112,7 @@ country_decisions = {
 			ai = yes
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
-		trigger = {
+		allow = {
 			if = {
 				limit = {
 					has_country_flag = re_religion_mechanic_hindu_picked_minor_deity
