@@ -9,7 +9,7 @@ re_uses_religion_mechanic_hindu = {
 re_not_uses_religion_mechanic_hindu = {
 	custom_trigger_tooltip = {
 		tooltip = re_not_uses_religion_mechanic_hindu_tt
-		re_uses_religion_mechanic_hindu = yes
+		NOT = { re_uses_religion_mechanic_hindu = yes }
 	}
 }
 

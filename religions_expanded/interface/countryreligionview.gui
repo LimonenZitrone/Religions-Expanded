@@ -740,6 +740,204 @@ guiTypes = {
 			scripted = yes
 		}
 
+		##################################
+		### Four Tenet System Mechanic ###
+		##################################
+
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_banner"
+			position = { x = 38 y = 237 }
+			spriteType = "GFX_war_overview_land_banner"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		instantTextBoxType = {
+			name = "re_religion_mechanic_four_tenets_system_title"
+			position = { x = 57 y = 245 }
+			font = "vic_18"
+			format = centre
+			maxWidth = 200
+			maxHeight = 20
+			fixedsize = yes
+			alwaystransparent = yes
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "re_religion_mechanic_four_tenets_system_meditate_button"
+			position = { x = 287 y = 238 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_meditate_button"
+			scripted = yes
+		}
+
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_bar_bg"
+			position = { x = 73 y = 293 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_bar"
+			position = { x = 73 y = 292 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_bar_full"
+			position = { x = 73 y = 292 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_bar_frame"
+			position = { x = 73 y = 288 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+			scripted = yes
+		}
+
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_bar_bg"
+			position = { x = 173 y = 293 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_bar"
+			position = { x = 173 y = 292 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_bar_full"
+			position = { x = 173 y = 292 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_bar_frame"
+			position = { x = 173 y = 288 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+			scripted = yes
+		}
+
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_bar_bg"
+			position = { x = 273 y = 293 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_bar"
+			position = { x = 273 y = 292 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_bar_full"
+			position = { x = 273 y = 292 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_bar_frame"
+			position = { x = 273 y = 288 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_1_button"
+			position = { x = 30 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_1_button_selected"
+			position = { x = 30 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_1_icon"
+			position = { x = 30 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_1_icon_strip"
+			alwaystransparent = yes
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_button"
+			position = { x = 130 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_button_selected"
+			position = { x = 130 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_2_icon"
+			position = { x = 130 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_2_icon_strip"
+			alwaystransparent = yes
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_button"
+			position = { x = 230 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_button_selected"
+			position = { x = 230 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_3_icon"
+			position = { x = 230 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_3_icon_strip"
+			alwaystransparent = yes
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_button"
+			position = { x = 330 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_button_selected"
+			position = { x = 330 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+			alwaystransparent = yes
+			scripted = yes
+		}
+		iconType = {
+			name = "re_religion_mechanic_four_tenets_system_ability_4_icon"
+			position = { x = 330 y = 277 }
+			spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_4_icon_strip"
+			alwaystransparent = yes
+			scripted = yes
+		}
+
 		#########################################
 		##  END Religions Expanded Custom GUI  ##
 		#########################################

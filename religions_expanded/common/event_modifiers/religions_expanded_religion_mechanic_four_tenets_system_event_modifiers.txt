@@ -1,0 +1,65 @@
+# Mechanic Modifiers:
+re_religion_mechanic_four_tenets_system_meditate_modifier = {
+	global_unrest = 2
+	all_power_cost = 0.05
+	diplomatic_reputation = -2
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_1_modifier_1 = {
+	global_tax_modifier = 0.15
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_1_modifier_2 = {
+	stability_cost_modifier = -0.2
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_1_modifier_3 = {
+	improve_relation_modifier = 0.15
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_2_modifier_1 = {
+	trade_efficiency = 0.1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_2_modifier_2 = {
+	morale_damage = 0.1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_2_modifier_3 = {
+	build_cost = -0.1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_3_modifier_1 = {
+	development_cost = -0.1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_3_modifier_2 = {
+	diplomatic_reputation = 1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_3_modifier_3 = {
+	army_tradition = 0.75
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_4_modifier_1 = {
+	diplomats = 1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_4_modifier_2 = {
+	merchants = 1
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_ability_4_modifier_3 = {
+	global_manpower_modifier = 0.2
+	religion = yes
+}
+
+# On Action Modifiers:
+re_religion_mechanic_four_tenets_system_new_institution_modifier = {
+	re_monthly_religion_mechanic_four_tenets_system_change_modifier = 0.75
+	religion = yes
+}
+re_religion_mechanic_four_tenets_system_new_tech_modifier = {
+	re_monthly_religion_mechanic_four_tenets_system_change_modifier = 0.25
+	religion = yes
+}

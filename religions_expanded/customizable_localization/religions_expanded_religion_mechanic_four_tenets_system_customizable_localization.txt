@@ -1,0 +1,173 @@
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemValue
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 0.001 }
+		}
+		localisation_key = "[This.re_religion_mechanic_four_tenets_system_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemAbility2ProgressTooltip
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_unlocked
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_in_progress
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemAbility3ProgressTooltip
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_unlocked
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_in_progress
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_locked
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemAbility4ProgressTooltip
+	random = no
+
+	text = {
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_unlocked
+	}
+	text = {
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_in_progress
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = re_religion_mechanic_four_tenets_system_next_ability_progress_tt_locked
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemMonthlyGainBaseTooltip
+	random = no
+
+	text = {
+		trigger = {
+			has_dlc = "Rule Britannia"
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_base_tt_dlc
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_base_tt
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemTotalMonthlyGainValue
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_value value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_value value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_neutral
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemMonthlyGainValue
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_value_base value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_value_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_value_base value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_value_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_value_neutral
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicFourTenetsSystemMonthlyGainModifierValue
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value_base value = 0.001 }
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_modifier_value_positive
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value_base value = 0 } }
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_modifier_value_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_four_tenets_system_monthly_gain_modifier_value_neutral
+	}
+}

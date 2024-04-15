@@ -1,0 +1,2450 @@
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_banner
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+}
+custom_text_box = {
+	name = re_religion_mechanic_four_tenets_system_title
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_mechanic_tt
+}
+
+custom_button = {
+	name = re_religion_mechanic_four_tenets_system_meditate_button
+	# if you change this, make sure to change the re_religion_mechanic_four_tenets_system_meditate_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	trigger = {
+		has_regency = no
+		NOT = { has_ruler_modifier = re_religion_mechanic_four_tenets_system_meditate_modifier }
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_4 = yes }
+	}
+	effect = {
+		if = {
+			limit = {
+				has_ruler_modifier = re_religion_mechanic_four_tenets_system_meditate_modifier
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = re_religion_mechanic_four_tenets_system_meditate_modifier
+					duration = 1825
+					desc = RE_UNTIL_MONARCH_DEATH_OR_5_YEARS
+				}
+			}
+		}
+		else = {
+			add_ruler_modifier = {
+				name = re_religion_mechanic_four_tenets_system_meditate_modifier
+				duration = 1825
+			}
+			re_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
+		}
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_meditate_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_bar_full
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_bar
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_2 = yes }
+		re_has_religion_mechanic_four_tenets_system_value = { value = 1 }
+	}
+	frame = {
+		number = 100
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 100 }
+		}
+	}
+	frame = {
+		number = 99
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 99 }
+		}
+	}
+	frame = {
+		number = 98
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 98 }
+		}
+	}
+	frame = {
+		number = 97
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 97 }
+		}
+	}
+	frame = {
+		number = 96
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 96 }
+		}
+	}
+	frame = {
+		number = 95
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 95 }
+		}
+	}
+	frame = {
+		number = 94
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 94 }
+		}
+	}
+	frame = {
+		number = 93
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 93 }
+		}
+	}
+	frame = {
+		number = 92
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 92 }
+		}
+	}
+	frame = {
+		number = 91
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 91 }
+		}
+	}
+	frame = {
+		number = 90
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 90 }
+		}
+	}
+	frame = {
+		number = 89
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 89 }
+		}
+	}
+	frame = {
+		number = 88
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 88 }
+		}
+	}
+	frame = {
+		number = 87
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 87 }
+		}
+	}
+	frame = {
+		number = 86
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 86 }
+		}
+	}
+	frame = {
+		number = 85
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 85 }
+		}
+	}
+	frame = {
+		number = 84
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 84 }
+		}
+	}
+	frame = {
+		number = 83
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 83 }
+		}
+	}
+	frame = {
+		number = 82
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 82 }
+		}
+	}
+	frame = {
+		number = 81
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 81 }
+		}
+	}
+	frame = {
+		number = 80
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 80 }
+		}
+	}
+	frame = {
+		number = 79
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 79 }
+		}
+	}
+	frame = {
+		number = 78
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 78 }
+		}
+	}
+	frame = {
+		number = 77
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 77 }
+		}
+	}
+	frame = {
+		number = 76
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 76 }
+		}
+	}
+	frame = {
+		number = 75
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 75 }
+		}
+	}
+	frame = {
+		number = 74
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 74 }
+		}
+	}
+	frame = {
+		number = 73
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 73 }
+		}
+	}
+	frame = {
+		number = 72
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 72 }
+		}
+	}
+	frame = {
+		number = 71
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 71 }
+		}
+	}
+	frame = {
+		number = 70
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 70 }
+		}
+	}
+	frame = {
+		number = 69
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 69 }
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 68 }
+		}
+	}
+	frame = {
+		number = 67
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 67 }
+		}
+	}
+	frame = {
+		number = 66
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 66 }
+		}
+	}
+	frame = {
+		number = 65
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 65 }
+		}
+	}
+	frame = {
+		number = 64
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 64 }
+		}
+	}
+	frame = {
+		number = 63
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 63 }
+		}
+	}
+	frame = {
+		number = 62
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 62 }
+		}
+	}
+	frame = {
+		number = 61
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 61 }
+		}
+	}
+	frame = {
+		number = 60
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 60 }
+		}
+	}
+	frame = {
+		number = 59
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 59 }
+		}
+	}
+	frame = {
+		number = 58
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 58 }
+		}
+	}
+	frame = {
+		number = 57
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 57 }
+		}
+	}
+	frame = {
+		number = 56
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 56 }
+		}
+	}
+	frame = {
+		number = 55
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 55 }
+		}
+	}
+	frame = {
+		number = 54
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 54 }
+		}
+	}
+	frame = {
+		number = 53
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 53 }
+		}
+	}
+	frame = {
+		number = 52
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 52 }
+		}
+	}
+	frame = {
+		number = 51
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 51 }
+		}
+	}
+	frame = {
+		number = 50
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 50 }
+		}
+	}
+	frame = {
+		number = 49
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 49 }
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 48 }
+		}
+	}
+	frame = {
+		number = 47
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 47 }
+		}
+	}
+	frame = {
+		number = 46
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 46 }
+		}
+	}
+	frame = {
+		number = 45
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 45 }
+		}
+	}
+	frame = {
+		number = 44
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 44 }
+		}
+	}
+	frame = {
+		number = 43
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 43 }
+		}
+	}
+	frame = {
+		number = 42
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 42 }
+		}
+	}
+	frame = {
+		number = 41
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 41 }
+		}
+	}
+	frame = {
+		number = 40
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 40 }
+		}
+	}
+	frame = {
+		number = 39
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 39 }
+		}
+	}
+	frame = {
+		number = 38
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 38 }
+		}
+	}
+	frame = {
+		number = 37
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 37 }
+		}
+	}
+	frame = {
+		number = 36
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 36 }
+		}
+	}
+	frame = {
+		number = 35
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 35 }
+		}
+	}
+	frame = {
+		number = 34
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 34 }
+		}
+	}
+	frame = {
+		number = 33
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 33 }
+		}
+	}
+	frame = {
+		number = 32
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 32 }
+		}
+	}
+	frame = {
+		number = 31
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 31 }
+		}
+	}
+	frame = {
+		number = 30
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 30 }
+		}
+	}
+	frame = {
+		number = 29
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 29 }
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 28 }
+		}
+	}
+	frame = {
+		number = 27
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 27 }
+		}
+	}
+	frame = {
+		number = 26
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 26 }
+		}
+	}
+	frame = {
+		number = 25
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 25 }
+		}
+	}
+	frame = {
+		number = 24
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 24 }
+		}
+	}
+	frame = {
+		number = 23
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 23 }
+		}
+	}
+	frame = {
+		number = 22
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 22 }
+		}
+	}
+	frame = {
+		number = 21
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 21 }
+		}
+	}
+	frame = {
+		number = 20
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 20 }
+		}
+	}
+	frame = {
+		number = 19
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 19 }
+		}
+	}
+	frame = {
+		number = 18
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 18 }
+		}
+	}
+	frame = {
+		number = 17
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 17 }
+		}
+	}
+	frame = {
+		number = 16
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 16 }
+		}
+	}
+	frame = {
+		number = 15
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 15 }
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 14 }
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 13 }
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 12 }
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 11 }
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 10 }
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 9 }
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 8 }
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 7 }
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 6 }
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 5 }
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 4 }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 3 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_bar_bg
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_2 = yes }
+		NOT = { re_has_religion_mechanic_four_tenets_system_value = { value = 1 } }
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_bar_frame
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_2_progress_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_bar_full
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_bar
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_3 = yes }
+		re_has_religion_mechanic_four_tenets_system_value = { value = 1 }
+	}
+	frame = {
+		number = 100
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 100 }
+		}
+	}
+	frame = {
+		number = 99
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 99 }
+		}
+	}
+	frame = {
+		number = 98
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 98 }
+		}
+	}
+	frame = {
+		number = 97
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 97 }
+		}
+	}
+	frame = {
+		number = 96
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 96 }
+		}
+	}
+	frame = {
+		number = 95
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 95 }
+		}
+	}
+	frame = {
+		number = 94
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 94 }
+		}
+	}
+	frame = {
+		number = 93
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 93 }
+		}
+	}
+	frame = {
+		number = 92
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 92 }
+		}
+	}
+	frame = {
+		number = 91
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 91 }
+		}
+	}
+	frame = {
+		number = 90
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 90 }
+		}
+	}
+	frame = {
+		number = 89
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 89 }
+		}
+	}
+	frame = {
+		number = 88
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 88 }
+		}
+	}
+	frame = {
+		number = 87
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 87 }
+		}
+	}
+	frame = {
+		number = 86
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 86 }
+		}
+	}
+	frame = {
+		number = 85
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 85 }
+		}
+	}
+	frame = {
+		number = 84
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 84 }
+		}
+	}
+	frame = {
+		number = 83
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 83 }
+		}
+	}
+	frame = {
+		number = 82
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 82 }
+		}
+	}
+	frame = {
+		number = 81
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 81 }
+		}
+	}
+	frame = {
+		number = 80
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 80 }
+		}
+	}
+	frame = {
+		number = 79
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 79 }
+		}
+	}
+	frame = {
+		number = 78
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 78 }
+		}
+	}
+	frame = {
+		number = 77
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 77 }
+		}
+	}
+	frame = {
+		number = 76
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 76 }
+		}
+	}
+	frame = {
+		number = 75
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 75 }
+		}
+	}
+	frame = {
+		number = 74
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 74 }
+		}
+	}
+	frame = {
+		number = 73
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 73 }
+		}
+	}
+	frame = {
+		number = 72
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 72 }
+		}
+	}
+	frame = {
+		number = 71
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 71 }
+		}
+	}
+	frame = {
+		number = 70
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 70 }
+		}
+	}
+	frame = {
+		number = 69
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 69 }
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 68 }
+		}
+	}
+	frame = {
+		number = 67
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 67 }
+		}
+	}
+	frame = {
+		number = 66
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 66 }
+		}
+	}
+	frame = {
+		number = 65
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 65 }
+		}
+	}
+	frame = {
+		number = 64
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 64 }
+		}
+	}
+	frame = {
+		number = 63
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 63 }
+		}
+	}
+	frame = {
+		number = 62
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 62 }
+		}
+	}
+	frame = {
+		number = 61
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 61 }
+		}
+	}
+	frame = {
+		number = 60
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 60 }
+		}
+	}
+	frame = {
+		number = 59
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 59 }
+		}
+	}
+	frame = {
+		number = 58
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 58 }
+		}
+	}
+	frame = {
+		number = 57
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 57 }
+		}
+	}
+	frame = {
+		number = 56
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 56 }
+		}
+	}
+	frame = {
+		number = 55
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 55 }
+		}
+	}
+	frame = {
+		number = 54
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 54 }
+		}
+	}
+	frame = {
+		number = 53
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 53 }
+		}
+	}
+	frame = {
+		number = 52
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 52 }
+		}
+	}
+	frame = {
+		number = 51
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 51 }
+		}
+	}
+	frame = {
+		number = 50
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 50 }
+		}
+	}
+	frame = {
+		number = 49
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 49 }
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 48 }
+		}
+	}
+	frame = {
+		number = 47
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 47 }
+		}
+	}
+	frame = {
+		number = 46
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 46 }
+		}
+	}
+	frame = {
+		number = 45
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 45 }
+		}
+	}
+	frame = {
+		number = 44
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 44 }
+		}
+	}
+	frame = {
+		number = 43
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 43 }
+		}
+	}
+	frame = {
+		number = 42
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 42 }
+		}
+	}
+	frame = {
+		number = 41
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 41 }
+		}
+	}
+	frame = {
+		number = 40
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 40 }
+		}
+	}
+	frame = {
+		number = 39
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 39 }
+		}
+	}
+	frame = {
+		number = 38
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 38 }
+		}
+	}
+	frame = {
+		number = 37
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 37 }
+		}
+	}
+	frame = {
+		number = 36
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 36 }
+		}
+	}
+	frame = {
+		number = 35
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 35 }
+		}
+	}
+	frame = {
+		number = 34
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 34 }
+		}
+	}
+	frame = {
+		number = 33
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 33 }
+		}
+	}
+	frame = {
+		number = 32
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 32 }
+		}
+	}
+	frame = {
+		number = 31
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 31 }
+		}
+	}
+	frame = {
+		number = 30
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 30 }
+		}
+	}
+	frame = {
+		number = 29
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 29 }
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 28 }
+		}
+	}
+	frame = {
+		number = 27
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 27 }
+		}
+	}
+	frame = {
+		number = 26
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 26 }
+		}
+	}
+	frame = {
+		number = 25
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 25 }
+		}
+	}
+	frame = {
+		number = 24
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 24 }
+		}
+	}
+	frame = {
+		number = 23
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 23 }
+		}
+	}
+	frame = {
+		number = 22
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 22 }
+		}
+	}
+	frame = {
+		number = 21
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 21 }
+		}
+	}
+	frame = {
+		number = 20
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 20 }
+		}
+	}
+	frame = {
+		number = 19
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 19 }
+		}
+	}
+	frame = {
+		number = 18
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 18 }
+		}
+	}
+	frame = {
+		number = 17
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 17 }
+		}
+	}
+	frame = {
+		number = 16
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 16 }
+		}
+	}
+	frame = {
+		number = 15
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 15 }
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 14 }
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 13 }
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 12 }
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 11 }
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 10 }
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 9 }
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 8 }
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 7 }
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 6 }
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 5 }
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 4 }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 3 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_bar_bg
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_3 = yes }
+		OR = {
+			NOT = { re_has_religion_mechanic_four_tenets_system_ability_2 = yes }
+			NOT = { re_has_religion_mechanic_four_tenets_system_value = { value = 1 } }
+		}
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_bar_frame
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_3_progress_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_bar_full
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_bar
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_4 = yes }
+		re_has_religion_mechanic_four_tenets_system_value = { value = 1 }
+	}
+	frame = {
+		number = 100
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 100 }
+		}
+	}
+	frame = {
+		number = 99
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 99 }
+		}
+	}
+	frame = {
+		number = 98
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 98 }
+		}
+	}
+	frame = {
+		number = 97
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 97 }
+		}
+	}
+	frame = {
+		number = 96
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 96 }
+		}
+	}
+	frame = {
+		number = 95
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 95 }
+		}
+	}
+	frame = {
+		number = 94
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 94 }
+		}
+	}
+	frame = {
+		number = 93
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 93 }
+		}
+	}
+	frame = {
+		number = 92
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 92 }
+		}
+	}
+	frame = {
+		number = 91
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 91 }
+		}
+	}
+	frame = {
+		number = 90
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 90 }
+		}
+	}
+	frame = {
+		number = 89
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 89 }
+		}
+	}
+	frame = {
+		number = 88
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 88 }
+		}
+	}
+	frame = {
+		number = 87
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 87 }
+		}
+	}
+	frame = {
+		number = 86
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 86 }
+		}
+	}
+	frame = {
+		number = 85
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 85 }
+		}
+	}
+	frame = {
+		number = 84
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 84 }
+		}
+	}
+	frame = {
+		number = 83
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 83 }
+		}
+	}
+	frame = {
+		number = 82
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 82 }
+		}
+	}
+	frame = {
+		number = 81
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 81 }
+		}
+	}
+	frame = {
+		number = 80
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 80 }
+		}
+	}
+	frame = {
+		number = 79
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 79 }
+		}
+	}
+	frame = {
+		number = 78
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 78 }
+		}
+	}
+	frame = {
+		number = 77
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 77 }
+		}
+	}
+	frame = {
+		number = 76
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 76 }
+		}
+	}
+	frame = {
+		number = 75
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 75 }
+		}
+	}
+	frame = {
+		number = 74
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 74 }
+		}
+	}
+	frame = {
+		number = 73
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 73 }
+		}
+	}
+	frame = {
+		number = 72
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 72 }
+		}
+	}
+	frame = {
+		number = 71
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 71 }
+		}
+	}
+	frame = {
+		number = 70
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 70 }
+		}
+	}
+	frame = {
+		number = 69
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 69 }
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 68 }
+		}
+	}
+	frame = {
+		number = 67
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 67 }
+		}
+	}
+	frame = {
+		number = 66
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 66 }
+		}
+	}
+	frame = {
+		number = 65
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 65 }
+		}
+	}
+	frame = {
+		number = 64
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 64 }
+		}
+	}
+	frame = {
+		number = 63
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 63 }
+		}
+	}
+	frame = {
+		number = 62
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 62 }
+		}
+	}
+	frame = {
+		number = 61
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 61 }
+		}
+	}
+	frame = {
+		number = 60
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 60 }
+		}
+	}
+	frame = {
+		number = 59
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 59 }
+		}
+	}
+	frame = {
+		number = 58
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 58 }
+		}
+	}
+	frame = {
+		number = 57
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 57 }
+		}
+	}
+	frame = {
+		number = 56
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 56 }
+		}
+	}
+	frame = {
+		number = 55
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 55 }
+		}
+	}
+	frame = {
+		number = 54
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 54 }
+		}
+	}
+	frame = {
+		number = 53
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 53 }
+		}
+	}
+	frame = {
+		number = 52
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 52 }
+		}
+	}
+	frame = {
+		number = 51
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 51 }
+		}
+	}
+	frame = {
+		number = 50
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 50 }
+		}
+	}
+	frame = {
+		number = 49
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 49 }
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 48 }
+		}
+	}
+	frame = {
+		number = 47
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 47 }
+		}
+	}
+	frame = {
+		number = 46
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 46 }
+		}
+	}
+	frame = {
+		number = 45
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 45 }
+		}
+	}
+	frame = {
+		number = 44
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 44 }
+		}
+	}
+	frame = {
+		number = 43
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 43 }
+		}
+	}
+	frame = {
+		number = 42
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 42 }
+		}
+	}
+	frame = {
+		number = 41
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 41 }
+		}
+	}
+	frame = {
+		number = 40
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 40 }
+		}
+	}
+	frame = {
+		number = 39
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 39 }
+		}
+	}
+	frame = {
+		number = 38
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 38 }
+		}
+	}
+	frame = {
+		number = 37
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 37 }
+		}
+	}
+	frame = {
+		number = 36
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 36 }
+		}
+	}
+	frame = {
+		number = 35
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 35 }
+		}
+	}
+	frame = {
+		number = 34
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 34 }
+		}
+	}
+	frame = {
+		number = 33
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 33 }
+		}
+	}
+	frame = {
+		number = 32
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 32 }
+		}
+	}
+	frame = {
+		number = 31
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 31 }
+		}
+	}
+	frame = {
+		number = 30
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 30 }
+		}
+	}
+	frame = {
+		number = 29
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 29 }
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 28 }
+		}
+	}
+	frame = {
+		number = 27
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 27 }
+		}
+	}
+	frame = {
+		number = 26
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 26 }
+		}
+	}
+	frame = {
+		number = 25
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 25 }
+		}
+	}
+	frame = {
+		number = 24
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 24 }
+		}
+	}
+	frame = {
+		number = 23
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 23 }
+		}
+	}
+	frame = {
+		number = 22
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 22 }
+		}
+	}
+	frame = {
+		number = 21
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 21 }
+		}
+	}
+	frame = {
+		number = 20
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 20 }
+		}
+	}
+	frame = {
+		number = 19
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 19 }
+		}
+	}
+	frame = {
+		number = 18
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 18 }
+		}
+	}
+	frame = {
+		number = 17
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 17 }
+		}
+	}
+	frame = {
+		number = 16
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 16 }
+		}
+	}
+	frame = {
+		number = 15
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 15 }
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 14 }
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 13 }
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 12 }
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 11 }
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 10 }
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 9 }
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 8 }
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 7 }
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 6 }
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 5 }
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 4 }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 3 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			re_has_religion_mechanic_four_tenets_system_value = { value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_bar_bg
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		NOT = { re_has_religion_mechanic_four_tenets_system_ability_4 = yes }
+		OR = {
+			NOT = { re_has_religion_mechanic_four_tenets_system_ability_3 = yes }
+			NOT = { re_has_religion_mechanic_four_tenets_system_value = { value = 1 } }
+		}
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_bar_frame
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_4_progress_tt
+}
+
+custom_button = {
+	name = re_religion_mechanic_four_tenets_system_ability_1_button
+	# if you change this, make sure to change the re_religion_mechanic_four_tenets_system_ability_1_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_1 }
+		}
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_1 = yes
+			}
+			hidden_trigger = {
+				always = no
+			}
+		}
+		else = {
+			has_regency = no
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_1 = yes
+			}
+			custom_tooltip = re_religion_mechanic_four_tenets_system_ability_selected_tt
+			tooltip = {
+				if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_1_modifier_1
+					}
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_1_modifier_1
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_1_modifier_2
+					}
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_1_modifier_2
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_1_modifier_3
+					}
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_1_modifier_3
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+			}
+		}
+		else = {
+			country_event = { id = re_religion_mechanic_four_tenets_system_events.1 tooltip = re_religion_mechanic_four_tenets_system_ability_can_pick_tt }
+			tooltip = {
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_1_modifier_1
+					duration = -1
+				}
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_1_modifier_2
+					duration = -1
+				}
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_1_modifier_3
+					duration = -1
+				}
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_1_button_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_1_button_selected
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_1 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_1_icon
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_1 = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_1_modifier_1
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_1_modifier_2
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_1_modifier_3
+		}
+	}
+}
+
+custom_button = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_button
+	# if you change this, make sure to change the re_religion_mechanic_four_tenets_system_ability_2_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_2 }
+		}
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+			}
+			hidden_trigger = {
+				always = no
+			}
+		}
+		else = {
+			has_regency = no
+			re_has_religion_mechanic_four_tenets_system_ability_1 = yes
+			re_has_religion_mechanic_four_tenets_system_value = { value = 100 }
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+			}
+			custom_tooltip = re_religion_mechanic_four_tenets_system_ability_selected_tt
+			tooltip = {
+				if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_2_modifier_1
+					}
+					change_adm = 1
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_2_modifier_1
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_2_modifier_2
+					}
+					change_dip = 1
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_2_modifier_2
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_2_modifier_3
+					}
+					change_mil = 1
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_2_modifier_3
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+			}
+		}
+		else = {
+			country_event = { id = re_religion_mechanic_four_tenets_system_events.2 tooltip = re_religion_mechanic_four_tenets_system_ability_can_pick_tt }
+			tooltip = {
+				change_adm = 1
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_2_modifier_1
+					duration = -1
+				}
+				change_dip = 1
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_2_modifier_2
+					duration = -1
+				}
+				change_mil = 1
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_2_modifier_3
+					duration = -1
+				}
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_2_button_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_button_selected
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_2_icon
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_2_modifier_1
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_2_modifier_2
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_2_modifier_3
+		}
+	}
+}
+
+custom_button = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_button
+	# if you change this, make sure to change the re_religion_mechanic_four_tenets_system_ability_3_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_3 }
+		}
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+			}
+			hidden_trigger = {
+				always = no
+			}
+		}
+		else = {
+			has_regency = no
+			re_has_religion_mechanic_four_tenets_system_ability_2 = yes
+			re_has_religion_mechanic_four_tenets_system_value = { value = 100 }
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+			}
+			custom_tooltip = re_religion_mechanic_four_tenets_system_ability_selected_tt
+			tooltip = {
+				if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_3_modifier_1
+					}
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_3_modifier_1
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_3_modifier_2
+					}
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_3_modifier_2
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_3_modifier_3
+					}
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_3_modifier_3
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+			}
+		}
+		else = {
+			country_event = { id = re_religion_mechanic_four_tenets_system_events.3 tooltip = re_religion_mechanic_four_tenets_system_ability_can_pick_tt }
+			tooltip = {
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_3_modifier_1
+					duration = -1
+				}
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_3_modifier_2
+					duration = -1
+				}
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_3_modifier_3
+					duration = -1
+				}
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_3_button_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_button_selected
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_3_icon
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_3_modifier_1
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_3_modifier_2
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_3_modifier_3
+		}
+	}
+}
+
+custom_button = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_button
+	# if you change this, make sure to change the re_religion_mechanic_four_tenets_system_ability_4_decision decision accordingly
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_4 }
+		}
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+			}
+			hidden_trigger = {
+				always = no
+			}
+		}
+		else = {
+			has_regency = no
+			re_has_religion_mechanic_four_tenets_system_ability_3 = yes
+			re_has_religion_mechanic_four_tenets_system_value = { value = 100 }
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+			}
+			custom_tooltip = re_religion_mechanic_four_tenets_system_ability_selected_tt
+			tooltip = {
+				if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_4_modifier_1
+					}
+					change_adm = 1
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_4_modifier_1
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_4_modifier_2
+					}
+					change_dip = 1
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_4_modifier_2
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_4_modifier_3
+					}
+					change_mil = 1
+					add_country_modifier = {
+						name = re_religion_mechanic_four_tenets_system_ability_4_modifier_3
+						duration = -1
+						desc = RE_UNTIL_MONARCH_DEATH
+					}
+				}
+			}
+		}
+		else = {
+			country_event = { id = re_religion_mechanic_four_tenets_system_events.4 tooltip = re_religion_mechanic_four_tenets_system_ability_can_pick_tt }
+			tooltip = {
+				change_adm = 1
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_4_modifier_1
+					duration = -1
+				}
+				change_dip = 1
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_4_modifier_2
+					duration = -1
+				}
+				change_mil = 1
+				add_ruler_modifier = {
+					name = re_religion_mechanic_four_tenets_system_ability_4_modifier_3
+					duration = -1
+				}
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_four_tenets_system_ability_4_button_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_button_selected
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+	}
+}
+custom_icon = {
+	name = re_religion_mechanic_four_tenets_system_ability_4_icon
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+		re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_4_modifier_1
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_4_modifier_2
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_ruler_modifier = re_religion_mechanic_four_tenets_system_ability_4_modifier_3
+		}
+	}
+}

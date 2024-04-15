@@ -11,3 +11,5 @@
  re_missionary_assigned_to_state_main_modifier: "Clerical Administration"
  re_missionary_assigned_to_state_modifier: "Clerical Administration"
 
+ # Tooltips:
+ RE_UNTIL_MONARCH_DEATH: "until their ruler dies"

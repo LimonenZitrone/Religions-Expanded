@@ -102,4 +102,59 @@ spriteTypes = {
 		transparencecheck = yes
 		noOfFrames = 2
 	}
+
+	## Four Tenets System
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_button"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_button_selected.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar_empty.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar.dds"
+	}
+	progressbartype = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar.dds"
+		textureFile2 = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar_empty.dds"
+		size = { x = 64 y = 18 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_meditate_button"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_meditate_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_ability_1_icon_strip"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_ability_1_icon_strip.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_ability_2_icon_strip"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_ability_2_icon_strip.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_ability_3_icon_strip"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_ability_3_icon_strip.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_four_tenets_system_ability_4_icon_strip"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_ability_4_icon_strip.dds"
+		noOfFrames = 3
+	}
 }

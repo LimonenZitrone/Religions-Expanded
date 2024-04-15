@@ -8,7 +8,7 @@ re_uses_religion_mechanic_sukha = {
 re_not_uses_religion_mechanic_sukha = {
 	custom_trigger_tooltip = {
 		tooltip = re_not_uses_religion_mechanic_sukha_tt
-		re_uses_religion_mechanic_sukha = yes
+		NOT = { re_uses_religion_mechanic_sukha = yes }
 	}
 }
 

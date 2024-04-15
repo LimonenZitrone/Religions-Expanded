@@ -14,4 +14,18 @@ estate_special = {
 			uses_personal_deities = yes
 		}
 	}
+	modifier_definition = {
+		type = privileges
+		key = re_monthly_religion_mechanic_four_tenets_system_change
+		trigger = {
+			religion = tibetan_buddhism
+		}
+	}
+	modifier_definition = {
+		type = loyalty
+		key = re_monthly_religion_mechanic_four_tenets_system_change_modifier
+		trigger = {
+			religion = tibetan_buddhism
+		}
+	}
 }

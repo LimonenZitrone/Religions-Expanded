@@ -468,3 +468,95 @@
  re_religion_mechanic_hindu_modifier_vishnu_buddha_3: "Major and Minor Deity Combination"
  re_religion_mechanic_hindu_modifier_vishnu_buddha_4: "Major and Minor Deity Combination"
  re_religion_mechanic_hindu_modifier_vishnu_buddha_5: "Major and Minor Deity Combination"
+
+ #################################
+ ## Four Tenets System Mechanic ##
+ #################################
+ # GUIs:
+ re_religion_mechanic_four_tenets_system_title: "Four Tenets System"
+ re_religion_mechanic_four_tenets_system_mechanic_tt: ""
+ re_religion_mechanic_four_tenets_system_meditate_button_tt: "§YMeditate§! \nOur [Root.Monarch.GetTitle] will meditate to increase [Root.Monarch.GetHerHis] Studies' progress."
+ re_religion_mechanic_four_tenets_system_ability_2_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility2ProgressTooltip]"
+ re_religion_mechanic_four_tenets_system_ability_3_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility3ProgressTooltip]"
+ re_religion_mechanic_four_tenets_system_ability_4_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility4ProgressTooltip]"
+ re_religion_mechanic_four_tenets_system_ability_selected_tt: "§OYou have selected the following teaching:§!"
+ re_religion_mechanic_four_tenets_system_ability_can_pick_tt: "§OYou will be able to pick between these §Y3§! options:§!"
+ re_religion_mechanic_four_tenets_system_ability_1_button_tt: "§YPick First Teaching§! \nPick the teaching you want to follow for the first Tenet, §YVaibhasika§!."
+ re_religion_mechanic_four_tenets_system_ability_2_button_tt: "§YPick Second Teaching§! \nPick the teaching you want to follow for the second Tenet, §YSautrantika§!."
+ re_religion_mechanic_four_tenets_system_ability_3_button_tt: "§YPick Third Teaching§! \nPick the teaching you want to follow for the third Tenet, §YYogacara§!."
+ re_religion_mechanic_four_tenets_system_ability_4_button_tt: "§YPick Fourth Teaching§! \nPick the teaching you want to follow for the fourth Tenet, §YMadhyamaka§!."
+
+ # Custom Modifiers:
+ re_monthly_religion_mechanic_four_tenets_system_change: "Monthly Ruler Studies' Progress"
+ re_monthly_religion_mechanic_four_tenets_system_change_modifier: "Monthly Ruler Studies' Progress Modifier"
+
+ # Variables:
+ re_religion_mechanic_four_tenets_system_value: "Ruler Studies' Progress"
+
+ # Scripted Triggers:
+ re_uses_religion_mechanic_four_tenets_system_tt: "Uses the §YFour Tenets System§! mechanic"
+ re_not_uses_religion_mechanic_four_tenets_system_tt: "Does NOT use the §YFour Tenets System§! mechanic"
+
+ # Customizable Localization:
+ re_religion_mechanic_four_tenets_system_next_ability_progress_tt_unlocked: "[This.Monarch.GetName] has already completed [This.Monarch.GetHerHis] Progress for this teaching."
+ re_religion_mechanic_four_tenets_system_next_ability_progress_tt_in_progress: "[This.Monarch.GetName]'s Studies' Progress towards the next teachning is currently at §Y[This.ReGetReligionMechanicFourTenetsSystemValue]%§!. \n--------------\nTotal Monthly Change: [This.ReGetReligionMechanicFourTenetsSystemTotalMonthlyGainValue] \n   Monthly Change: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainValue] \n      Base: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainBaseTooltip] \n   Modified by: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainModifierValue] \n      Unlocking a §YTechnology§! grants us a bonus of §G+25.0%§!\n      for §Y2 years§!. \n      Embracing an §YInstitution§! grants us a bonus of §G+75.0%§!\n      for §Y2 years§!."
+ re_religion_mechanic_four_tenets_system_next_ability_progress_tt_locked: "You have to unlock the previous teaching before progress for the next can start."
+
+ string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_positive: "§G+[This.re_monthly_religion_mechanic_four_tenets_system_value.GetValue]§!"
+ string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_negative: "§R[This.re_monthly_religion_mechanic_four_tenets_system_value.GetValue]§!"
+ string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_neutral: "§Y0.00§!"
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_value_positive: "§G+[This.re_monthly_religion_mechanic_four_tenets_system_value_base.GetValue]§!"
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_value_negative: "§R[This.re_monthly_religion_mechanic_four_tenets_system_value_base.GetValue]§!"
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_value_neutral: "§Y0.00§!"
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_modifier_value_positive: "§G+[This.re_monthly_religion_mechanic_four_tenets_system_modifier_value_base.GetValue]%§!"
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_modifier_value_negative: "§R[This.re_monthly_religion_mechanic_four_tenets_system_modifier_value_base.GetValue]%§!"
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_modifier_value_neutral: "§Y0.00%§!"
+
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_base_tt_dlc: "§G+0.20§! \n      We can further gain up to §G+0.40§! from §YInnovativeness§!."
+ string_re_get_religion_mechanic_four_tenets_system_monthly_gain_base_tt: "§G+0.60§!"
+
+ # Events:
+ re_religion_mechanic_four_tenets_system_events.EVTNAME1: "First Tenet: Vaibhasika"
+ re_religion_mechanic_four_tenets_system_events.EVTDESC1: "The [Root.Monarch.GetTitle] [Root.Monarch.GetName] has decided to select the teaching for the first Tenet. \n\nSelect the teaching you want to practice here."
+ re_religion_mechanic_four_tenets_system_events1.EVTOPT1: "Study §YRupa Dharmas§!."
+ re_religion_mechanic_four_tenets_system_events1.EVTOPT2: "Study §YCitta Dharmas§!."
+ re_religion_mechanic_four_tenets_system_events1.EVTOPT3: "Study §YCaitasika Dharmas§!."
+
+ re_religion_mechanic_four_tenets_system_events.EVTNAME2: "Second Tenet: Sautrantika"
+ re_religion_mechanic_four_tenets_system_events.EVTDESC2: "The [Root.Monarch.GetTitle] [Root.Monarch.GetName] has decided to select the teaching for the second Tenet. \n\nSelect the teaching you want to practice here."
+ re_religion_mechanic_four_tenets_system_events2.EVTOPT1: "Enforce the §YPrinciple of Momentariness§!."
+ re_religion_mechanic_four_tenets_system_events2.EVTOPT2: "Enforce the §YPrinciple of Impermanence§!."
+ re_religion_mechanic_four_tenets_system_events2.EVTOPT3: "Enforce the §YPrinciple of Formlessness§!."
+
+ re_religion_mechanic_four_tenets_system_events.EVTNAME3: "Third Tenet: Yogacara"
+ re_religion_mechanic_four_tenets_system_events.EVTDESC3: "The [Root.Monarch.GetTitle] [Root.Monarch.GetName] has decided to select the teaching for the third Tenet. \n\nSelect the teaching you want to practice here."
+ re_religion_mechanic_four_tenets_system_events3.EVTOPT1: "Meditate to study §YCognition§!."
+ re_religion_mechanic_four_tenets_system_events3.EVTOPT2: "Meditate to study §YPerception§!."
+ re_religion_mechanic_four_tenets_system_events3.EVTOPT3: "Meditate to study §YConsciousness§!."
+
+ re_religion_mechanic_four_tenets_system_events.EVTNAME4: "Fourth Tenet: Madhyamaka"
+ re_religion_mechanic_four_tenets_system_events.EVTDESC4: "The [Root.Monarch.GetTitle] [Root.Monarch.GetName] has decided to select the teaching for the fourth Tenet. \n\nSelect the teaching you want to practice here."
+ re_religion_mechanic_four_tenets_system_events4.EVTOPT1: "Practice §YEmptiness§!."
+ re_religion_mechanic_four_tenets_system_events4.EVTOPT2: "Practice §YCausaility and Change§!."
+ re_religion_mechanic_four_tenets_system_events4.EVTOPT3: "Practice §YEssentialism§!."
+
+ # Decisions:
+
+ # Modifiers:
+ ## Mechanic Modifiers:
+ re_religion_mechanic_four_tenets_system_meditate_modifier: "Ruler Meditation"
+ re_religion_mechanic_four_tenets_system_ability_1_modifier_1: "Study Rupa Dharmas"
+ re_religion_mechanic_four_tenets_system_ability_1_modifier_2: "Study Citta Dharmas"
+ re_religion_mechanic_four_tenets_system_ability_1_modifier_3: "Study Caitasika Dharmas"
+ re_religion_mechanic_four_tenets_system_ability_2_modifier_1: "Principle of Momentariness"
+ re_religion_mechanic_four_tenets_system_ability_2_modifier_2: "Principle of Impermanence"
+ re_religion_mechanic_four_tenets_system_ability_2_modifier_3: "Principle of Formlessness"
+ re_religion_mechanic_four_tenets_system_ability_3_modifier_1: "Meditate to study Cognition"
+ re_religion_mechanic_four_tenets_system_ability_3_modifier_2: "Meditate to study Perception"
+ re_religion_mechanic_four_tenets_system_ability_3_modifier_3: "Meditate to study Consciousness"
+ re_religion_mechanic_four_tenets_system_ability_4_modifier_1: "Practice Emptiness"
+ re_religion_mechanic_four_tenets_system_ability_4_modifier_2: "Practice Causaility and Change"
+ re_religion_mechanic_four_tenets_system_ability_4_modifier_3: "Practice Essentialism"
+ ## On Action Modifiers:
+ re_religion_mechanic_four_tenets_system_new_institution_modifier: "Embraced New Institution"
+ re_religion_mechanic_four_tenets_system_new_tech_modifier: "Unlocked New Technology"

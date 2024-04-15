@@ -1462,6 +1462,7 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			mahayana
+			tibetan_buddhism
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1493,6 +1494,7 @@ eastern = {
 		allowed_conversion = {
 			mahayana
 			buddhism #Theravada
+			tibetan_buddhism
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1524,6 +1526,7 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			buddhism #Theravada
+			tibetan_buddhism
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1583,6 +1586,37 @@ eastern = {
 
 		harmonized_modifier = harmonized_shinto
 
+	}
+
+	# Religions Expanded
+	tibetan_buddhism = {
+		color = { 255 255 255 }
+		icon = 31
+		allowed_conversion = {
+			vajrayana
+			buddhism
+			mahayana
+		}
+
+		country = {
+
+		}
+
+		country_as_secondary = {
+
+		}
+
+		on_convert = {
+			change_religion = tibetan_buddhism
+			add_prestige = -100
+			add_stability = -1
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		heretic = { ZEN }
 	}
 
 	crusade_name = CRUSADE
