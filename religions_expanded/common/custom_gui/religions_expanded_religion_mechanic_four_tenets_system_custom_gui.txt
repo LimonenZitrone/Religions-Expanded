@@ -23,8 +23,22 @@ custom_button = {
 	}
 	trigger = {
 		has_regency = no
-		NOT = { has_ruler_modifier = re_religion_mechanic_four_tenets_system_meditate_modifier }
 		NOT = { re_has_religion_mechanic_four_tenets_system_ability_4 = yes }
+		if = {
+			limit = {
+				has_ruler_flag = re_religion_mechanic_four_tenets_system_meditated
+			}
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt_with_year
+				had_ruler_flag = { flag = re_religion_mechanic_four_tenets_system_meditated days = 2190 }
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt
+				always = yes
+			}
+		}
 	}
 	effect = {
 		if = {
@@ -34,17 +48,25 @@ custom_button = {
 			tooltip = {
 				add_country_modifier = {
 					name = re_religion_mechanic_four_tenets_system_meditate_modifier
-					duration = 1825
-					desc = RE_UNTIL_MONARCH_DEATH_OR_5_YEARS
+					duration = 365
+					desc = RE_UNTIL_MONARCH_DEATH_OR_1_YEAR
 				}
 			}
 		}
 		else = {
+			clr_ruler_flag = re_religion_mechanic_four_tenets_system_meditated
+			set_ruler_flag = re_religion_mechanic_four_tenets_system_meditated
 			add_ruler_modifier = {
 				name = re_religion_mechanic_four_tenets_system_meditate_modifier
-				duration = 1825
+				duration = 365
 			}
 			re_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
+			hidden_effect = {
+				export_to_variable = {
+					which = re_religion_mechanic_four_tenets_system_meditate_used_year
+					value = trigger_value:is_year
+				}
+			}
 		}
 	}
 	tooltip = re_religion_mechanic_four_tenets_system_meditate_button_tt

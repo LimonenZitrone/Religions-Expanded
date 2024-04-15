@@ -1590,7 +1590,7 @@ eastern = {
 
 	# Religions Expanded
 	tibetan_buddhism = {
-		color = { 255 255 255 }
+		color = { 163 60 16 }
 		icon = 31
 		allowed_conversion = {
 			vajrayana
@@ -1599,11 +1599,13 @@ eastern = {
 		}
 
 		country = {
-
+			institution_spread_from_true_faith = 0.2
+			defensiveness = 0.2
 		}
 
 		country_as_secondary = {
-
+			embracement_cost = -0.1
+			defensiveness = 0.1
 		}
 
 		on_convert = {
@@ -1617,6 +1619,8 @@ eastern = {
 		}
 
 		heretic = { ZEN }
+
+		harmonized_modifier = harmonized_tibetan_buddhism
 	}
 
 	crusade_name = CRUSADE

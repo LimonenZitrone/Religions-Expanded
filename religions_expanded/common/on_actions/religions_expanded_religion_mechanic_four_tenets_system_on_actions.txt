@@ -6,6 +6,7 @@ on_monthly_pulse = {
 	if = {
 		limit = {
 			re_uses_religion_mechanic = { mechanic = four_tenets_system }
+			NOT = { re_has_religion_mechanic_four_tenets_system_ability_4 = yes }
 		}
 		re_add_monthly_religion_mechanic_four_tenets_system_value = yes
 	}
@@ -46,6 +47,14 @@ on_tech_taken = {
 			duration = 730
 		}
 		re_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
+	}
+}
+
+on_harmonized_tibetan_buddhism = { #Theravada
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		re_religion_mechanic_four_tenets_system_events.5
 	}
 }
 

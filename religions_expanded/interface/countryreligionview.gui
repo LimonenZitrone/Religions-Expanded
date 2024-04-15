@@ -759,7 +759,6 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = 20
 			fixedsize = yes
-			alwaystransparent = yes
 			scripted = yes
 		}
 

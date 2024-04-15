@@ -474,8 +474,10 @@
  #################################
  # GUIs:
  re_religion_mechanic_four_tenets_system_title: "Four Tenets System"
- re_religion_mechanic_four_tenets_system_mechanic_tt: ""
- re_religion_mechanic_four_tenets_system_meditate_button_tt: "§YMeditate§! \nOur [Root.Monarch.GetTitle] will meditate to increase [Root.Monarch.GetHerHis] Studies' progress."
+ re_religion_mechanic_four_tenets_system_mechanic_tt: "The [Root.Religion.GetName] faith has a scholastic system of §Y4§! Tenets, which are taught in order in a strict hierarchical teaching. The final goal of these teachings is to aid in the attainment of Enlightenment and Buddhahood. \n\nEvery ruler starts without any progress and selected teachings. Over time the ruler's studies' progress will increase and allow to pick one of three choices for each of the §Y4§! teachings. \nOnce the ruler has picked the last teaching, [Root.Monarch.GetSheHe] will also gain a bonus to average lifespan."
+ re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt_with_year: "Our ruler has NOT meditated within the last §Y6 years§! (last is §Y[Root.re_religion_mechanic_four_tenets_system_meditate_used_year.GetValue]§!)"
+ re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt: "Our ruler has NOT meditated within the last §Y6 years§!"
+ re_religion_mechanic_four_tenets_system_meditate_button_tt: "§YMeditate§! \nOur [This.Monarch.GetTitle] will meditate to increase [Root.Monarch.GetHerHis] Studies' progress."
  re_religion_mechanic_four_tenets_system_ability_2_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility2ProgressTooltip]"
  re_religion_mechanic_four_tenets_system_ability_3_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility3ProgressTooltip]"
  re_religion_mechanic_four_tenets_system_ability_4_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility4ProgressTooltip]"
@@ -499,7 +501,7 @@
 
  # Customizable Localization:
  re_religion_mechanic_four_tenets_system_next_ability_progress_tt_unlocked: "[This.Monarch.GetName] has already completed [This.Monarch.GetHerHis] Progress for this teaching."
- re_religion_mechanic_four_tenets_system_next_ability_progress_tt_in_progress: "[This.Monarch.GetName]'s Studies' Progress towards the next teachning is currently at §Y[This.ReGetReligionMechanicFourTenetsSystemValue]%§!. \n--------------\nTotal Monthly Change: [This.ReGetReligionMechanicFourTenetsSystemTotalMonthlyGainValue] \n   Monthly Change: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainValue] \n      Base: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainBaseTooltip] \n   Modified by: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainModifierValue] \n      Unlocking a §YTechnology§! grants us a bonus of §G+25.0%§!\n      for §Y2 years§!. \n      Embracing an §YInstitution§! grants us a bonus of §G+75.0%§!\n      for §Y2 years§!."
+ re_religion_mechanic_four_tenets_system_next_ability_progress_tt_in_progress: "[This.Monarch.GetName]'s Studies' Progress towards the next teachning is currently at §Y[This.ReGetReligionMechanicFourTenetsSystemValue]%§!. \n--------------\nTotal Monthly Change: [This.ReGetReligionMechanicFourTenetsSystemTotalMonthlyGainValue] \n   Monthly Change: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainValue] \n      Base: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainBaseTooltip] \n      We can also gain §G+1.00§! from §YMeditating§! for a short\n      period of time. \n   Modified by: [This.ReGetReligionMechanicFourTenetsSystemMonthlyGainModifierValue] \n      Unlocking a §YTechnology§! grants us a bonus of §G+25.0%§!\n      for §Y2 years§!. \n      Embracing an §YInstitution§! grants us a bonus of §G+75.0%§!\n      for §Y2 years§!."
  re_religion_mechanic_four_tenets_system_next_ability_progress_tt_locked: "You have to unlock the previous teaching before progress for the next can start."
 
  string_re_get_religion_mechanic_four_tenets_system_total_monthly_gain_value_positive: "§G+[This.re_monthly_religion_mechanic_four_tenets_system_value.GetValue]§!"
@@ -540,7 +542,21 @@
  re_religion_mechanic_four_tenets_system_events4.EVTOPT2: "Practice §YCausaility and Change§!."
  re_religion_mechanic_four_tenets_system_events4.EVTOPT3: "Practice §YEssentialism§!."
 
+ re_religion_mechanic_four_tenets_system_events.EVTNAME5: "Harmonization of the Nang Chos Faith"
+ re_religion_mechanic_four_tenets_system_events.EVTDESC5: "Centuries ago the teachings of Buddha started to penetrate our lands and by now it is one of the most widespread religions in [Root.GetName]. While we hold the classics of Confucian learning to be the guiding principle of our [Root.GovernmentName] we also honor the traditions of Buddha and the yearning for an end to the eternal cycle that many of our subjects feel.\nTruly we are a Confucian country ruled by a people of Nang Chos Buddhists."
+ re_religion_mechanic_four_tenets_system_events5.EVTOPT1: "'Submit the people of virtue, assimilate the people with enlightenment.'"
+
  # Decisions:
+ re_religion_mechanic_four_tenets_system_meditate_decision_title: "Meditate"
+ re_religion_mechanic_four_tenets_system_meditate_decision_desc: "Our [This.Monarch.GetTitle] will meditate to increase [Root.Monarch.GetHerHis] Studies' progress."
+ re_religion_mechanic_four_tenets_system_ability_1_decision_title: "Pick First Teaching"
+ re_religion_mechanic_four_tenets_system_ability_1_decision_desc: "Pick the teaching you want to follow for the first Tenet, §YVaibhasika§!."
+ re_religion_mechanic_four_tenets_system_ability_2_decision_title: "Pick Second Teaching"
+ re_religion_mechanic_four_tenets_system_ability_2_decision_desc: "Pick the teaching you want to follow for the second Tenet, §YSautrantika§!."
+ re_religion_mechanic_four_tenets_system_ability_3_decision_title: "Pick Third Teaching"
+ re_religion_mechanic_four_tenets_system_ability_3_decision_desc: "Pick the teaching you want to follow for the third Tenet, §YYogacara§!."
+ re_religion_mechanic_four_tenets_system_ability_4_decision_title: "Pick Fourth Teaching"
+ re_religion_mechanic_four_tenets_system_ability_4_decision_desc: "Pick the teaching you want to follow for the fourth Tenet, §YMadhyamaka§!."
 
  # Modifiers:
  ## Mechanic Modifiers:
@@ -560,3 +576,9 @@
  ## On Action Modifiers:
  re_religion_mechanic_four_tenets_system_new_institution_modifier: "Embraced New Institution"
  re_religion_mechanic_four_tenets_system_new_tech_modifier: "Unlocked New Technology"
+ ## Religion Modifiers:
+ harmonized_tibetan_buddhism: "Harmonized with the Nang Chos Faith"
+ desc_harmonized_tibetan_buddhism: "We have incorporated the Nang Chos faith in our country and national ethos."
+ ## Triggered Modifiers:
+ re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier: "Attained Enlightenment"
+ desc_re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier: "The [Root.Monarch.GetTitle] has studied for a very long time and has picked all §Y4§! teachings, thus attaining full Enlightenment."

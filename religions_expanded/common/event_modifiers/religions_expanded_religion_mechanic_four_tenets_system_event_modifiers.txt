@@ -3,6 +3,7 @@ re_religion_mechanic_four_tenets_system_meditate_modifier = {
 	global_unrest = 2
 	all_power_cost = 0.05
 	diplomatic_reputation = -2
+	re_monthly_religion_mechanic_four_tenets_system_change = 1
 	religion = yes
 }
 re_religion_mechanic_four_tenets_system_ability_1_modifier_1 = {
@@ -61,5 +62,11 @@ re_religion_mechanic_four_tenets_system_new_institution_modifier = {
 }
 re_religion_mechanic_four_tenets_system_new_tech_modifier = {
 	re_monthly_religion_mechanic_four_tenets_system_change_modifier = 0.25
+	religion = yes
+}
+
+# Religion Modifiers:
+harmonized_tibetan_buddhism = {
+	global_institution_spread = 0.1
 	religion = yes
 }

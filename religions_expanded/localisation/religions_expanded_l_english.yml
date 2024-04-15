@@ -13,3 +13,4 @@
 
  # Tooltips:
  RE_UNTIL_MONARCH_DEATH: "until their ruler dies"
+ RE_UNTIL_MONARCH_DEATH_OR_1_YEAR: "for §Y365 days§! or until their ruler dies"

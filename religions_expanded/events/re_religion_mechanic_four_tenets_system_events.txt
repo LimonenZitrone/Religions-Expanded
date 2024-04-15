@@ -237,3 +237,33 @@ country_event = {
 		re_set_religion_mechanic_four_tenets_system_value = { value = 0 }
 	}
 }
+
+# Harmonization
+country_event = {
+	id = re_religion_mechanic_four_tenets_system_events.5
+	title = re_religion_mechanic_four_tenets_system_events.EVTNAME5
+	desc = re_religion_mechanic_four_tenets_system_events.EVTDESC5
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_four_tenets_system_events5.EVTOPT1
+
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_tibetan_buddhism"
+				duration = -1
+			}
+		}
+	}
+}

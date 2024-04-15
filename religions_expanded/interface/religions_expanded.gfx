@@ -122,7 +122,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
-		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar.dds"
+		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_bar_full.dds"
 	}
 	progressbartype = {
 		name = "GFX_re_religion_mechanic_four_tenets_system_bar"

@@ -88,8 +88,10 @@ re_add_monthly_religion_mechanic_four_tenets_system_value = {
 }
 
 re_clear_all_religion_mechanic_four_tenets_system_modifiers = {
+	clr_ruler_flag = re_religion_mechanic_four_tenets_system_meditated
 	set_variable = { which = re_religion_mechanic_four_tenets_system_value value = 0 }
 	set_variable = { which = re_monthly_religion_mechanic_four_tenets_system_value value = 0 }
 	set_variable = { which = re_monthly_religion_mechanic_four_tenets_system_value_base value = 0 }
 	set_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value_base value = 0 }
+	set_variable = { which = re_religion_mechanic_four_tenets_system_meditate_used_year value = 0 }
 }
