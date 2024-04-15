@@ -14,7 +14,7 @@
  re_religion_mechanic_sukha_meditate_not_used_recently_tt: "Our [This.Monarch.GetTitle] has NOT meditated within the last §Y10 years§!"
  re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year: "Has NOT sponsored a festival within the last §Y10 years§! (last in §Y[This.re_religion_mechanic_sukha_sponsor_festival_used_year.GetValue]§!)"
  re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt: "Has NOT sponsored a festival within the last §Y10 years§!"
- re_religion_mechanic_sukha_sponsor_festival_button_tt_choice: "\n§YWe will be able to pick one of the following effects:§!"
+ re_religion_mechanic_sukha_sponsor_festival_button_tt_choice: "\n§OWe will be able to pick one of the following effects:§!"
 
  # Custom Modifiers:
  re_yearly_religion_mechanic_sukha_change: "Yearly Sukha"
@@ -475,18 +475,19 @@
  # GUIs:
  re_religion_mechanic_four_tenets_system_title: "Four Tenets System"
  re_religion_mechanic_four_tenets_system_mechanic_tt: "The [Root.Religion.GetName] faith has a scholastic system of §Y4§! Tenets, which are taught in order in a strict hierarchical teaching. The final goal of these teachings is to aid in the attainment of Enlightenment and Buddhahood. \n\nEvery ruler starts without any progress and selected teachings. Over time the ruler's studies' progress will increase and allow to pick one of three choices for each of the §Y4§! teachings. \nOnce the ruler has picked the last teaching, [Root.Monarch.GetSheHe] will also gain a bonus to average lifespan."
- re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt_with_year: "Our ruler has NOT meditated within the last §Y6 years§! (last is §Y[Root.re_religion_mechanic_four_tenets_system_meditate_used_year.GetValue]§!)"
- re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt: "Our ruler has NOT meditated within the last §Y6 years§!"
  re_religion_mechanic_four_tenets_system_meditate_button_tt: "§YMeditate§! \nOur [This.Monarch.GetTitle] will meditate to increase [Root.Monarch.GetHerHis] Studies' progress."
  re_religion_mechanic_four_tenets_system_ability_2_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility2ProgressTooltip]"
  re_religion_mechanic_four_tenets_system_ability_3_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility3ProgressTooltip]"
  re_religion_mechanic_four_tenets_system_ability_4_progress_tt: "[Root.ReGetReligionMechanicFourTenetsSystemAbility4ProgressTooltip]"
- re_religion_mechanic_four_tenets_system_ability_selected_tt: "§OYou have selected the following teaching:§!"
- re_religion_mechanic_four_tenets_system_ability_can_pick_tt: "§OYou will be able to pick between these §Y3§! options:§!"
  re_religion_mechanic_four_tenets_system_ability_1_button_tt: "§YPick First Teaching§! \nPick the teaching you want to follow for the first Tenet, §YVaibhasika§!."
  re_religion_mechanic_four_tenets_system_ability_2_button_tt: "§YPick Second Teaching§! \nPick the teaching you want to follow for the second Tenet, §YSautrantika§!."
  re_religion_mechanic_four_tenets_system_ability_3_button_tt: "§YPick Third Teaching§! \nPick the teaching you want to follow for the third Tenet, §YYogacara§!."
  re_religion_mechanic_four_tenets_system_ability_4_button_tt: "§YPick Fourth Teaching§! \nPick the teaching you want to follow for the fourth Tenet, §YMadhyamaka§!."
+
+ re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt_with_year: "Our ruler has NOT meditated within the last §Y6 years§! (last is §Y[Root.re_religion_mechanic_four_tenets_system_meditate_used_year.GetValue]§!)"
+ re_religion_mechanic_four_tenets_system_meditated_not_done_recently_tt: "Our ruler has NOT meditated within the last §Y6 years§!"
+ re_religion_mechanic_four_tenets_system_ability_selected_tt: "§OYou have selected the following teaching:§!"
+ re_religion_mechanic_four_tenets_system_ability_can_pick_tt: "§OYou will be able to pick between these §Y3§! options:§!"
 
  # Custom Modifiers:
  re_monthly_religion_mechanic_four_tenets_system_change: "Monthly Ruler Studies' Progress"
