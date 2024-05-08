@@ -2549,31 +2549,6 @@ guiTypes = {
 				position = { x=478 y=144}
 				quadTextureSprite ="GFX_build_interface_building_tab"
 			}
-
-			##################################
-			## Religions Expanded GUI Start ##
-			##################################
-
-			# Currently moved to province_window cause no tooltip in state_window
-			iconType = {
-				name = "re_state_missionary_button_glow"
-				position = { x = 450 y = 63 }
-				spriteType = "GFX_re_state_missionary_button_glow"
-				alwaystransparent = yes
-				scale = 0.65
-				scripted = yes
-			}
-			guiButtonType = {
-				name = "re_state_missionary_button"
-				position = { x = 450 y = 63 }
-				spriteType = "GFX_re_state_missionary_button"
-				scale = 0.65
-				scripted = yes
-			}
-
-			##################################
-			##  Religions Expanded GUI End  ##
-			##################################
 		}
 
 
@@ -2867,21 +2842,25 @@ guiTypes = {
 			##################################
 			## Religions Expanded GUI Start ##
 			##################################
+			windowType = {
+				name = "re_state_missionary_window"
+				position = { x = 272 y = 64 }
+				scripted = yes
 
-			# Currently moved to province_window cause no tooltip in state_window
-	#		iconType = {
-	#			name = "re_state_missionary_button_glow"
-	#			position = { x = 272 y = 64 }
-	#			spriteType = "GFX_re_state_missionary_button_glow"
-	#			alwaystransparent = yes
-	#			scripted = yes
-	#		}
-	#		guiButtonType = {
-	#			name = "re_state_missionary_button"
-	#			position = { x = 272 y = 64 }
-	#			spriteType = "GFX_re_state_missionary_button"
-	#			scripted = yes
-	#		}
+				iconType = {
+					name = "re_state_missionary_button_glow"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_state_missionary_button_glow"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "re_state_missionary_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_state_missionary_button"
+					scripted = yes
+				}
+			}
 
 			##################################
 			##  Religions Expanded GUI End  ##

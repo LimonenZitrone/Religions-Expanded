@@ -1,10 +1,14 @@
-custom_button = {
-	name = re_religion_mechanic_hindu_spend_dedication_button
-	# if you change this, make sure to change the re_religion_mechanic_hindu_spend_dedication_decision decision accordingly
+custom_window = {
+	name = re_religion_mechanic_hindu_window
 	potential = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = hindu }
 	}
+}
+
+custom_button = {
+	name = re_religion_mechanic_hindu_spend_dedication_button
+	# if you change this, make sure to change the re_religion_mechanic_hindu_spend_dedication_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_shiva }
 		NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_brahma }
@@ -88,10 +92,6 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_hindu_reset_minor_deity_button
 	# if you change this, make sure to change the re_religion_mechanic_hindu_reset_minor_deity_decision decision accordingly
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
 	trigger = {
 		if = {
 			limit = {
@@ -120,10 +120,6 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_hindu_toggle_dedication_focus_button
 	# if you change this, make sure to change the re_religion_mechanic_hindu_toggle_dedication_focus_decision decision accordingly
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
 	trigger = {
 		if = {
 			limit = {
@@ -309,29 +305,9 @@ custom_button = {
 	}
 	tooltip = re_religion_mechanic_hindu_toggle_dedication_focus_button_tt
 }
-custom_icon = {
-	name = re_religion_mechanic_hindu_bg
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-}
-custom_icon = {
-	name = re_religion_mechanic_hindu_minor_deity_bg
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-}
 custom_button = {
 	name = re_religion_mechanic_hindu_major_deity_shiva_button
 	# if you change this, make sure to change the re_religion_mechanic_hindu_major_deity_shiva_decision decision accordingly
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-	trigger = {
-	}
 	effect = {
 		if = {
 			limit = {
@@ -366,12 +342,6 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_hindu_major_deity_brahma_button
 	# if you change this, make sure to change the re_religion_mechanic_hindu_major_deity_brahma_decision decision accordingly
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-	trigger = {
-	}
 	effect = {
 		if = {
 			limit = {
@@ -406,12 +376,6 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_hindu_major_deity_vishnu_button
 	# if you change this, make sure to change the re_religion_mechanic_hindu_major_deity_vishnu_decision decision accordingly
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-	trigger = {
-	}
 	effect = {
 		if = {
 			limit = {
@@ -443,33 +407,22 @@ custom_button = {
 	}
 	tooltip = re_religion_mechanic_hindu_major_deity_vishnu_button_tt
 }
-custom_icon = {
-	name = re_religion_mechanic_hindu_right_bg
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-}
 custom_text_box = {
 	name = re_religion_mechanic_hindu_selected_major_deity_name
 	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
+		always = yes
 	}
 	tooltip = re_religion_mechanic_hindu_selected_major_deity_name_tt
 }
 custom_icon = {
 	name = re_religion_mechanic_hindu_dedication_bar_bg
 	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
+		always = yes
 	}
 }
 custom_icon = {
 	name = re_religion_mechanic_hindu_dedication_bar
 	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
 		re_has_religion_mechanic_hindu_value = { major_deity = current value = 1 }
 	}
 	frame = {
@@ -1073,25 +1026,16 @@ custom_icon = {
 		}
 	}
 }
-custom_icon = {
-	name = re_religion_mechanic_hindu_dedication_bar_frame
-	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
-	}
-}
 custom_text_box = {
 	name = re_religion_mechanic_hindu_dedication_level_text
 	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
+		always = yes
 	}
 	tooltip = re_religion_mechanic_hindu_dedication_level_text_tt
 }
 custom_text_box = {
 	name = re_religion_mechanic_hindu_dynamic_modifier_text
 	potential = {
-		ai = no
-		re_uses_religion_mechanic = { mechanic = hindu }
+		always = yes
 	}
 }

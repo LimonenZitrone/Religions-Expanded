@@ -1,17 +1,20 @@
-custom_icon = {
-	name = re_state_missionary_button_glow
+custom_window = {
+	name = re_state_missionary_window
 	potential = {
 		owned_by = FROM
 		is_state = yes
+		FROM = { ai = no }
+	}
+}
+
+custom_icon = {
+	name = re_state_missionary_button_glow
+	potential = {
 		has_province_modifier = re_missionary_assigned_to_state_modifier
 	}
 }
 custom_button = {
 	name = re_state_missionary_button
-	potential = {
-		owned_by = FROM
-		is_state = yes
-	}
 	trigger = {
 		hidden_trigger = {
 			if = {
