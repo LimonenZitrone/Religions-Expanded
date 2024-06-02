@@ -1,13 +1,21 @@
 ﻿l_english:
  # Religions:
- jainism: "Jainism"
+ jainism: "Jainist"
  jainism_religion_desc: ""
+ jainism_string: "Jainism"
  tibetan_buddhism: "Nang Chos"
  tibetan_buddhism_religion_desc: ""
+ tibetan_buddhism_string: "Nang Chos"
+ vidilist: "Vidilist"
+ vidilist_religion_desc: ""
+ vidilist_string: "Vidilism"
 
  # Heresies:
  YAPANIYA: "Yapaniya"
  TARANAPANTH: "Taranapanth"
+ DRUWINGI: "Druwingi"
+ VISAMOKINGAS: "Visamokingas"
+ DIEVISKIS: "Dieviskis"
 
  # Rebels:
  jainism_rebels_title: "Religious"
@@ -22,3 +30,9 @@
  tibetan_buddhism_rebels_army: "$RELIGION$ Army"
  tibetan_buddhism_rebels_demand: "Convert $COUNTRYNAME$"
  tibetan_buddhism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ vidilist_rebels_title: "Religious"
+ vidilist_rebels_name: "$RELIGION$ Zealots"
+ vidilist_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ vidilist_rebels_army: "$RELIGION$ Army"
+ vidilist_rebels_demand: "Convert $COUNTRYNAME$"
+ vidilist_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."

@@ -23,3 +23,16 @@ sound = {
 	name = religion_tibetan_buddhism
 	file = "tab_religion_eastern.wav"
 }
+
+sound = {
+	name = defender_of_the_vidilist_faith
+	file = "claim_defender_faith_coptic.wav"
+}
+sound = {
+	name = start_convert_vidilist
+	file = "start_conversion_norse.wav"
+}
+sound = {
+	name = religion_vidilist
+	file = "tab_religion_pagan.wav"
+}

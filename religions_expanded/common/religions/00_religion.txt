@@ -2493,6 +2493,24 @@ pagan = {
 		heretic = { WAGYLKOOP MOORAMOORA GINGARRURNDE }
 	}
 
+	# Religions Expanded
+	vidilist = {
+		icon = 32
+		color = { 66 70 81 }
+		country = {
+			hostile_attrition = 1
+			diplomatic_reputation = 1
+		}
+		country_as_secondary = {
+			hostile_attrition = 1
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+
+		heretic = { DRUWINGI VISAMOKINGAS DIEVISKIS }
+	}
+
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
 }
