@@ -1,0 +1,27 @@
+re_uses_religion_mechanic_sylvan_affinity = {
+	custom_trigger_tooltip = {
+		tooltip = re_uses_religion_mechanic_sylvan_affinity_tt
+		religion = vidilist
+	}
+}
+
+re_not_uses_religion_mechanic_sylvan_affinity = {
+	custom_trigger_tooltip = {
+		tooltip = re_not_uses_religion_mechanic_sylvan_affinity_tt
+		re_uses_religion_mechanic_sylvan_affinity = yes
+	}
+}
+
+re_has_religion_mechanic_sylvan_affinity_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
+		}
+		[[value]
+			check_variable = { which = re_religion_mechanic_sylvan_affinity_value value = $value$ }
+		]
+		[[which]
+			check_variable = { which = re_religion_mechanic_sylvan_affinity_value which = $which$ }
+		]
+	}
+}

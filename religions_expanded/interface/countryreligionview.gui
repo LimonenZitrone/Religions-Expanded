@@ -985,6 +985,127 @@ guiTypes = {
 			}
 		}
 
+		################################
+		### Sylvan Affinity Mechanic ###
+		################################
+		windowType = {
+			name = "re_religion_mechanic_sylvan_affinity_window"
+			position = { x = 32 y = 237 }
+			scripted = yes
+
+			windowType = {
+				name = "main_buttons_window"
+				position = { x = 0 y = 9 }
+
+				guiButtonType = {
+					name = "re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
+					position = { x = 38 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
+					position = { x = 106 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "side_buttons_window"
+				position = { x = 0 y = 0 }
+
+				guiButtonType = {
+					name = "re_religion_mechanic_sylvan_affinity_sergetoja_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_sergetoja_button"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "re_religion_mechanic_sylvan_affinity_nukirpeja_button"
+					position = { x = 0 y = 45 }
+					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_nukirpeja_button"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "re_religion_mechanic_sylvan_affinity_audeja_button"
+					position = { x = 170 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_audeja_button"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "re_religion_mechanic_sylvan_affinity_verpinancioki_button"
+					position = { x = 170 y = 45 }
+					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_verpinancioki_button"
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "values_window"
+				position = { x = 221 y = 44 }
+
+				windowType = {
+					name = "total_value_window"
+					position = { x = 0 y = 0 }
+
+					iconType = {
+						name = "background"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_value_bg"
+					}
+					instantTextBoxType = {
+						name = "re_religion_mechanic_sylvan_affinity_total_value_title"
+						position = { x = 6 y = 3 }
+						format = left
+						font = "vic_18"
+						maxWidth = 90
+						maxHeight = 20
+						fixedsize = yes
+						scripted = yes
+					}
+					instantTextBoxType = {
+						name = "re_religion_mechanic_sylvan_affinity_total_value"
+						position = { x = 95 y = 3 }
+						format = right
+						font = "vic_18"
+						maxWidth = 45
+						maxHeight = 20
+						fixedsize = yes
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "monthly_value_window"
+					position = { x = 0 y = 25 }
+
+					iconType = {
+						name = "background"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_value_bg"
+					}
+					instantTextBoxType = {
+						name = "re_religion_mechanic_sylvan_affinity_monthly_value_title"
+						position = { x = 6 y = 3 }
+						format = left
+						font = "vic_18"
+						maxWidth = 90
+						maxHeight = 20
+						fixedsize = yes
+						scripted = yes
+					}
+					instantTextBoxType = {
+						name = "re_religion_mechanic_sylvan_affinity_monthly_value"
+						position = { x = 95 y = 3 }
+						format = right
+						font = "vic_18"
+						maxWidth = 45
+						maxHeight = 20
+						fixedsize = yes
+						scripted = yes
+					}
+				}
+			}
+		}
+
 		#########################################
 		##  END Religions Expanded Custom GUI  ##
 		#########################################

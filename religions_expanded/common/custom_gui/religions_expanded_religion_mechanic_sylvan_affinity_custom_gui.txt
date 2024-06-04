@@ -1,0 +1,105 @@
+custom_window = {
+	name = re_religion_mechanic_sylvan_affinity_window
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = sylvan_affinity }
+	}
+}
+
+custom_button = {
+	name = re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button
+	# if you change this, make sure to change the re_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision decision accordingly
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button_tt
+}
+custom_button = {
+	name = re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button
+	# if you change this, make sure to change the re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_decision decision accordingly
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button_tt
+}
+
+custom_button = {
+	name = re_religion_mechanic_sylvan_affinity_sergetoja_button
+	# if you change this, make sure to change the re_religion_mechanic_sylvan_affinity_sergetoja_decision decision accordingly
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_sergetoja_button_tt
+}
+custom_button = {
+	name = re_religion_mechanic_sylvan_affinity_nukirpeja_button
+	# if you change this, make sure to change the re_religion_mechanic_sylvan_affinity_nukirpeja_decision decision accordingly
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_nukirpeja_button_tt
+}
+custom_button = {
+	name = re_religion_mechanic_sylvan_affinity_audeja_button
+	# if you change this, make sure to change the re_religion_mechanic_sylvan_affinity_audeja_decision decision accordingly
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_audeja_button_tt
+}
+custom_button = {
+	name = re_religion_mechanic_sylvan_affinity_verpinancioki_button
+	# if you change this, make sure to change the re_religion_mechanic_sylvan_affinity_verpinancioki_decision decision accordingly
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_verpinancioki_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_sylvan_affinity_total_value_title
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_total_value_tt
+}
+custom_text_box = {
+	name = re_religion_mechanic_sylvan_affinity_total_value
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_total_value_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_sylvan_affinity_monthly_value_title
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_monthly_value_tt
+}
+custom_text_box = {
+	name = re_religion_mechanic_sylvan_affinity_monthly_value
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_sylvan_affinity_monthly_value_tt
+}

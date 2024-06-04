@@ -157,4 +157,34 @@ spriteTypes = {
 		textureFile = "gfx/interface/religion_mechanics/four_tenets_system_mechanic/re_religion_mechanic_four_tenets_system_ability_4_icon_strip.dds"
 		noOfFrames = 3
 	}
+
+	## Seasonal Affinity Mechanic
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_value_bg"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_value_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_sergetoja_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_sergetoja_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_nukirpeja_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_nukirpeja_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_audeja_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_audeja_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_verpinancioki_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_verpinancioki_button.dds"
+	}
 }

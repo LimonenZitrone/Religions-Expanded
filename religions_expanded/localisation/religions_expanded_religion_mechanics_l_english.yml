@@ -583,3 +583,25 @@
  ## Triggered Modifiers:
  re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier: "Attained Enlightenment"
  desc_re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier: "The [Root.Monarch.GetTitle] has studied for a very long time and has picked all §Y4§! teachings, thus attaining full Enlightenment."
+
+ ##############################
+ ## Sylvan Affinity Mechanic ##
+ ##############################
+ # GUIs:
+ re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button_tt: "§YConsecrate a Grove§! \nFound a new grove for the selected Seasonal Affinity."
+ re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button_tt: "§YSelect Seasonal Affinity§! \nDedicate a song to an aspect of the year to select the Seasonal Affinity."
+ re_religion_mechanic_sylvan_affinity_sergetoja_button_tt: "§YSergetoja§! \nWorship the Governing Goddess of Perkunas."
+ re_religion_mechanic_sylvan_affinity_nukirpeja_button_tt: "§YNukirpeja§! \nWorship the Governing Goddess of Saule."
+ re_religion_mechanic_sylvan_affinity_audeja_button_tt: "§YAudeja§! \nWorship the Governing Goddess of Ausrine."
+ re_religion_mechanic_sylvan_affinity_verpinancioki_button_tt: "§YVerpiancioji§! \nWorship the Governing Goddess of Senelis."
+ re_religion_mechanic_sylvan_affinity_total_value_title: "Sylvan Affinity:"
+ re_religion_mechanic_sylvan_affinity_total_value: "[This.ReGetReligionMechanicSylvanAffinityValue]"
+ re_religion_mechanic_sylvan_affinity_total_value_tt: "Sylvan Affinity: §Y[This.ReGetReligionMechanicSylvanAffinityValue]§!"
+ re_religion_mechanic_sylvan_affinity_monthly_value_title: "Monthly Gain:"
+ re_religion_mechanic_sylvan_affinity_monthly_value: "[This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue]"
+ re_religion_mechanic_sylvan_affinity_monthly_value_tt: "Monthly Gain: [This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue]"
+
+ # Customizable Localization:
+ string_re_get_religion_mechanic_sylvan_affinity_total_monthly_gain_value_positive: "§G+[This.re_monthly_religion_mechanic_sylvan_affinity_value.GetValue]§!"
+ string_re_get_religion_mechanic_sylvan_affinity_total_monthly_gain_value_negative: "§R[This.re_monthly_religion_mechanic_sylvan_affinity_value.GetValue]§!"
+ string_re_get_religion_mechanic_sylvan_affinity_total_monthly_gain_value_neutral: "§Y0.00§!"
