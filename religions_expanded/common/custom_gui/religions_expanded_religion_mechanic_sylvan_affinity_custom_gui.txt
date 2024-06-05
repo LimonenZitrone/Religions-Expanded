@@ -26,13 +26,13 @@ custom_button = {
 			}
 		}
 		re_has_religion_mechanic_sylvan_affinity_seasonal_affinity_selected = yes
-		re_has_religion_mechanic_sylvan_affinity_value = { value = 20 }
+		re_has_religion_mechanic_sylvan_affinity_value = { value = 75 }
 		any_owned_province = {
 			has_owner_religion = yes
 		}
 	}
 	effect = {
-		re_add_religion_mechanic_sylvan_affinity_value = { value = -20 }
+		re_add_religion_mechanic_sylvan_affinity_value = { value = -75 }
 		if = {
 			limit = {
 				re_has_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = spring }
