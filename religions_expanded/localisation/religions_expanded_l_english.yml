@@ -10,7 +10,16 @@
  # Event Modifiers:
  re_missionary_assigned_to_state_main_modifier: "Clerical Administration"
  re_missionary_assigned_to_state_modifier: "Clerical Administration"
+ re_religion_reformed_modifier: "Centralized the Faith"
 
  # Tooltips:
  RE_UNTIL_MONARCH_DEATH: "until their ruler dies"
  RE_UNTIL_MONARCH_DEATH_OR_1_YEAR: "for §Y365 days§! or until their ruler dies"
+ re_religion_reform_religion_decision_tt: "\n§Y[Root.GetName]§! can now become the §YDefender of the [Root.Religion.GetName] Faith§!."
+ RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_EASTERN: "A country following an §YEastern§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+ RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC: "A country following a §YDharmic§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+ RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_PAGAN: "A country following a §YPagan§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+
+ # Decisions:
+ re_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
+ re_religion_reform_religion_decision_desc: "The [Root.Religion.GetName] Faith is not as centralized as other religions. This gives us a disadvantage compared to them. We should strive for a stronger centralization to become competitive."

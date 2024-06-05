@@ -305,7 +305,7 @@ country_decisions = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_sergetoja_modifier = yes }
 				}
 				re_has_religion_mechanic_sylvan_affinity_seasonal_affinity_selected = yes
-				re_has_religion_mechanic_sylvan_affinity_value = { value = 6 }
+				re_has_religion_mechanic_sylvan_affinity_value = { value = 7 }
 			}
 		}
 		effect = {
@@ -321,7 +321,7 @@ country_decisions = {
 				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 			}
 			else = {
-				re_add_religion_mechanic_sylvan_affinity_value = { value = -5 }
+				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_sergetoja_modifier_active
 					if = {
@@ -462,7 +462,7 @@ country_decisions = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_nukirpeja_modifier = yes }
 				}
 				re_has_religion_mechanic_sylvan_affinity_seasonal_affinity_selected = yes
-				re_has_religion_mechanic_sylvan_affinity_value = { value = 6 }
+				re_has_religion_mechanic_sylvan_affinity_value = { value = 7 }
 			}
 		}
 		effect = {
@@ -478,7 +478,7 @@ country_decisions = {
 				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 			}
 			else = {
-				re_add_religion_mechanic_sylvan_affinity_value = { value = -5 }
+				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_nukirpeja_modifier_active
 					if = {
@@ -619,7 +619,7 @@ country_decisions = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_audeja_modifier = yes }
 				}
 				re_has_religion_mechanic_sylvan_affinity_seasonal_affinity_selected = yes
-				re_has_religion_mechanic_sylvan_affinity_value = { value = 6 }
+				re_has_religion_mechanic_sylvan_affinity_value = { value = 7 }
 			}
 		}
 		effect = {
@@ -635,7 +635,7 @@ country_decisions = {
 				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 			}
 			else = {
-				re_add_religion_mechanic_sylvan_affinity_value = { value = -5 }
+				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_audeja_modifier_active
 					if = {
@@ -776,7 +776,7 @@ country_decisions = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_verpiancioji_modifier = yes }
 				}
 				re_has_religion_mechanic_sylvan_affinity_seasonal_affinity_selected = yes
-				re_has_religion_mechanic_sylvan_affinity_value = { value = 6 }
+				re_has_religion_mechanic_sylvan_affinity_value = { value = 7 }
 			}
 		}
 		effect = {
@@ -792,7 +792,7 @@ country_decisions = {
 				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 			}
 			else = {
-				re_add_religion_mechanic_sylvan_affinity_value = { value = -5 }
+				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_verpiancioji_modifier_active
 					if = {

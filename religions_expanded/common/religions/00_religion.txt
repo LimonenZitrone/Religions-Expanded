@@ -1453,6 +1453,7 @@ muslim = {
 }
 
 eastern = {
+	defender_of_faith = yes # Religions Expanded
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
@@ -1629,6 +1630,7 @@ eastern = {
 }
 
 dharmic = {
+	defender_of_faith = yes # Religions Expanded
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
@@ -2317,6 +2319,7 @@ dharmic = {
 }
 
 pagan = {
+	defender_of_faith = yes # Religions Expanded
 
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
@@ -2506,6 +2509,10 @@ pagan = {
 		}
 		province = {
 			local_missionary_strength = 0.02
+		}
+
+		on_convert = {
+			re_set_religion_mechanic_sylvan_affinity_value = { value = 0 }
 		}
 
 		heretic = { DRUWINGI VISAMOKINGAS DIEVISKIS }

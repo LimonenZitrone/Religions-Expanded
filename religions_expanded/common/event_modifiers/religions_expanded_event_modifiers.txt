@@ -13,3 +13,11 @@ re_missionary_assigned_to_state_modifier = {
 	local_unrest = 2
 	local_autonomy = 0.05
 }
+
+# Reform Religion Decision
+re_religion_reformed_modifier = {
+	global_missionary_strength = 0.005
+	missionary_maintenance_cost = -0.1
+	global_tax_modifier = -0.1
+	religion = yes
+}

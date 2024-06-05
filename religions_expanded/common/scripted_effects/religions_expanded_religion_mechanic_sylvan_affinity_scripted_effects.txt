@@ -112,6 +112,69 @@ re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = {
 			which = re_monthly_religion_mechanic_sylvan_affinity_value
 			value = modifier:re_monthly_religion_mechanic_sylvan_affinity_change
 		}
+		# Base
+		change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1 }
+		# Vidilist Samogitia
+		if = {
+			limit = {
+				270 = {
+					religion = vidilist
+					has_owner_religion = yes
+				}
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1 }
+		}
+		# Peace
+		if = {
+			limit = {
+				is_at_war = no
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1 }
+		}
+		# Stability
+		if = {
+			limit = {
+				stability = 3
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 3 }
+		}
+		else_if = {
+			limit = {
+				stability = 2
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 2 }
+		}
+		else_if = {
+			limit = {
+				stability = 1
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = 0 }
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = -1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = -1 }
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = -2 }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = -2 }
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = -3 }
+		}
+		# Bankruptcy
+		if = {
+			limit = {
+				is_bankrupt = yes
+			}
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = -2 }
+		}
 		set_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value_base which = re_monthly_religion_mechanic_sylvan_affinity_value } # display
 		export_to_variable = {
 			which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value
