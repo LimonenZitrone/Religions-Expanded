@@ -174,17 +174,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_re_religion_mechanic_sylvan_affinity_sergetoja_button"
 		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_sergetoja_button.dds"
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_sylvan_affinity_nukirpeja_button"
 		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_nukirpeja_button.dds"
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_sylvan_affinity_audeja_button"
 		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_audeja_button.dds"
+		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_re_religion_mechanic_sylvan_affinity_verpinancioki_button"
-		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_verpinancioki_button.dds"
+		name = "GFX_re_religion_mechanic_sylvan_affinity_verpiancioji_button"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_verpiancioji_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_bg"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_icon"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_icon"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_icon"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_icon"
+		textureFile = "gfx/interface/religion_mechanics/sylvan_affinity_mechanic/re_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_icon.dds"
 	}
 }

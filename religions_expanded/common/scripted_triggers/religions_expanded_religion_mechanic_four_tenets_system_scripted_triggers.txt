@@ -8,7 +8,7 @@ re_uses_religion_mechanic_four_tenets_system = {
 re_not_uses_religion_mechanic_four_tenets_system = {
 	custom_trigger_tooltip = {
 		tooltip = re_not_uses_religion_mechanic_four_tenets_system_tt
-		re_uses_religion_mechanic_four_tenets_system = yes
+		NOT = { re_uses_religion_mechanic_four_tenets_system = yes }
 	}
 }
 

@@ -1,0 +1,152 @@
+# Mechanic Modifiers:
+re_religion_mechanic_sylvan_affinity_sergetoja_spring_modifier = {
+	infantry_power = 0.1
+	galley_power = 0.1
+	heavy_ship_power = 0.1
+	discipline = 0.05
+	ship_durability = 0.05
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_sergetoja_summer_modifier = {
+	merc_maintenance_modifier = -0.2
+	mercenary_discipline = 0.075
+	global_ship_cost = -0.2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_sergetoja_fall_modifier = {
+	shock_damage = 0.1
+	morale_damage = 0.1
+	naval_morale_damage = 0.15
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_sergetoja_winter_modifier = {
+	global_defender_dice_roll_bonus = 1
+	fort_maintenance_modifier = -0.25
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+
+re_religion_mechanic_sylvan_affinity_nukirpeja_spring_modifier = {
+	inflation_reduction = 0.2
+	yearly_corruption = -0.2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_nukirpeja_summer_modifier = {
+	war_exhaustion = -0.05
+	prestige = 1
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_nukirpeja_fall_modifier = {
+	legitimacy = 1
+	horde_unity = 1
+	devotion = 1
+	meritocracy = 1
+	republican_tradition = 0.5
+	stability_cost_modifier = -0.2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_nukirpeja_winter_modifier = {
+	diplomatic_reputation = 1
+	envoy_travel_time = -0.3
+	province_warscore_cost = -0.2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+
+re_religion_mechanic_sylvan_affinity_audeja_spring_modifier = {
+	manpower_recovery_speed = 0.2
+	global_tax_modifier = 0.1
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_audeja_summer_modifier = {
+	improve_relation_modifier = 0.2
+	siege_ability = 0.1
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_audeja_fall_modifier = {
+	ae_impact = -0.1
+	trade_efficiency = 0.15
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_audeja_winter_modifier = {
+	all_estate_influence_modifier = -0.1
+	relation_with_other_culture = 25
+	relation_with_same_culture_group = 15
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+
+re_religion_mechanic_sylvan_affinity_verpiancioji_spring_modifier = {
+	technology_cost = -0.1
+	global_institution_spread = 0.2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_verpiancioji_summer_modifier = {
+	idea_cost = -0.1
+	global_unrest = -2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_verpiancioji_fall_modifier = {
+	global_autonomy = -0.05
+	reform_progress_growth = 0.2
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+re_religion_mechanic_sylvan_affinity_verpiancioji_winter_modifier = {
+	vassal_income = 0.25
+	vassal_forcelimit_bonus = 1
+	re_monthly_religion_mechanic_sylvan_affinity_change = -5
+	religion = yes
+}
+
+re_religion_mechanic_sylvan_affinity_spring_grove_province_modifier = {
+	fort_level = 1
+	local_manpower = 1
+	local_sailors = 1000
+}
+re_religion_mechanic_sylvan_affinity_spring_grove_area_modifier = {
+	local_development_cost = -0.15
+	local_manpower_modifier = 0.2
+	local_sailors_modifier = 0.2
+}
+
+re_religion_mechanic_sylvan_affinity_summer_grove_province_modifier = {
+	fort_level = 1
+	global_tax_income = 12
+}
+re_religion_mechanic_sylvan_affinity_summer_grove_area_modifier = {
+	local_tax_modifier = 0.2
+	local_build_cost = -0.2
+	local_build_time = -0.2
+}
+
+re_religion_mechanic_sylvan_affinity_fall_grove_province_modifier = {
+	fort_level = 1
+	trade_goods_size = 2
+	province_trade_power_value = 10
+}
+re_religion_mechanic_sylvan_affinity_fall_grove_area_modifier = {
+	trade_goods_size_modifier = 0.2
+	province_trade_power_modifier = 0.5
+}
+
+re_religion_mechanic_sylvan_affinity_winter_grove_province_modifier = {
+	fort_level = 1
+	local_hostile_attrition = 2
+	max_attrition = 2
+}
+re_religion_mechanic_sylvan_affinity_winter_grove_area_modifier = {
+	local_defensiveness = 0.2
+	local_state_maintenance_modifier = -0.2
+}

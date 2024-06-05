@@ -74,6 +74,12 @@ re_export_monthly_religion_mechanic_four_tenets_system_value_gain = {
 			which = re_monthly_religion_mechanic_four_tenets_system_modifier_value
 			value = modifier:re_monthly_religion_mechanic_four_tenets_system_change_modifier
 		}
+		if = {
+			limit = {
+				NOT = { check_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value value = -1 } }
+			}
+			set_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value value = -1 }
+		}
 		set_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value_base which = re_monthly_religion_mechanic_four_tenets_system_modifier_value } # display
 		multiply_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value_base value = 100 } # display
 		change_variable = { which = re_monthly_religion_mechanic_four_tenets_system_modifier_value value = 1 }

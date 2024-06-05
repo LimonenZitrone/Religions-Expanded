@@ -1,23 +1,29 @@
 estate_special = {
+	# Sukha Mechanic
 	modifier_definition = {
 		type = privileges
 		key = re_yearly_religion_mechanic_sukha_change
 		trigger = {
+			# keep the same as re_uses_religion_mechanic_sukha
 			religion = jainism
 		}
 	}
+	# Hindu Mechanic
 	modifier_definition = {
 		type = privileges
 		key = re_monthly_religion_mechanic_hindu_change
 		trigger = {
+			# keep the same as re_uses_religion_mechanic_hindu
 			religion = hinduism
 			uses_personal_deities = yes
 		}
 	}
+	# Four Tenets System Mechanic
 	modifier_definition = {
 		type = privileges
 		key = re_monthly_religion_mechanic_four_tenets_system_change
 		trigger = {
+			# keep the same as re_uses_religion_mechanic_four_tenets_system
 			religion = tibetan_buddhism
 		}
 	}
@@ -25,7 +31,25 @@ estate_special = {
 		type = loyalty
 		key = re_monthly_religion_mechanic_four_tenets_system_change_modifier
 		trigger = {
+			# keep the same as re_uses_religion_mechanic_four_tenets_system
 			religion = tibetan_buddhism
+		}
+	}
+	# Sylvan Affinity Mechanic
+	modifier_definition = {
+		type = privileges
+		key = re_monthly_religion_mechanic_sylvan_affinity_change
+		trigger = {
+			# keep the same as re_uses_religion_mechanic_sylvan_affinity
+			religion = vidilist
+		}
+	}
+	modifier_definition = {
+		type = loyalty
+		key = re_monthly_religion_mechanic_sylvan_affinity_change_modifier
+		trigger = {
+			# keep the same as re_uses_religion_mechanic_sylvan_affinity
+			religion = vidilist
 		}
 	}
 }

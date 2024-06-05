@@ -249,3 +249,195 @@ defined_text = {
 		localisation_key = MODIFIER_ADVISOR_COST
 	}
 }
+
+defined_text = {
+	name = fort_level
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = FORT_LEVEL
+	}
+}
+
+defined_text = {
+	name = local_manpower
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_MANPOWER_VALUE
+	}
+}
+
+defined_text = {
+	name = local_manpower_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_MANPOWER
+	}
+}
+
+defined_text = {
+	name = local_sailors
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SAILORS
+	}
+}
+
+defined_text = {
+	name = local_sailors_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_SAILORS
+	}
+}
+
+defined_text = {
+	name = global_tax_income
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_TAX_INCOME
+	}
+}
+
+defined_text = {
+	name = local_build_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_BUILD_COST
+	}
+}
+
+defined_text = {
+	name = local_build_time
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_BUILD_TIME
+	}
+}
+
+defined_text = {
+	name = trade_goods_size
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = TRADE_GOODS_SIZE
+	}
+}
+
+defined_text = {
+	name = trade_goods_size_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = TRADE_GOODS_SIZE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = province_trade_power_value
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = PROVINCE_TRADE_VALUE
+	}
+}
+
+defined_text = {
+	name = province_trade_power_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = PROVINCE_TRADE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = local_hostile_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = HOSTILE_ATTRITION
+	}
+}
+
+defined_text = {
+	name = max_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MAX_ATTRITION
+	}
+}
+
+defined_text = {
+	name = local_defensiveness
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_DEFENSIVENESS
+	}
+}
+
+defined_text = {
+	name = local_state_maintenance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = STATE_MAINTENANCE_MODIFIER
+	}
+}
