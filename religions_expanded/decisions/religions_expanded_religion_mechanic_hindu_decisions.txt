@@ -1,4 +1,5 @@
 country_decisions = {
+	# AI Decisions Below
 	re_religion_mechanic_hindu_spend_dedication_decision = {
 		potential = {
 			ai = yes

@@ -117,7 +117,7 @@ re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = {
 		# Vidilist Samogitia
 		if = {
 			limit = {
-				270 = {
+				271 = {
 					religion = vidilist
 					has_owner_religion = yes
 				}

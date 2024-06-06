@@ -1,4 +1,49 @@
 country_decisions = {
+	re_religion_mechanic_sylvan_affinity_stamp_out_the_pagans_decision = {
+		potential = {
+			NOT = { has_global_flag = re_religion_mechanic_sylvan_affinity_stamped_out_the_pagans }
+			current_age = age_of_discovery
+			NOT = { religion = vidilist }
+			samogitia_area = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = samogitia_area
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = advisor_types }
+				}
+				OR = {
+					advisor = theologian
+					advisor = inquisitor
+					advisor = ate_advisor_missionary
+				}
+			}
+			else = {
+				OR = {
+					advisor = theologian
+					advisor = inquisitor
+				}
+			}
+			samogitia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			set_global_flag = re_religion_mechanic_sylvan_affinity_stamped_out_the_pagans
+			country_event = { id = re_religion_mechanic_sylvan_affinity_events.2 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# AI Decisions Below
 	re_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision = {
 		potential = {
 			ai = yes

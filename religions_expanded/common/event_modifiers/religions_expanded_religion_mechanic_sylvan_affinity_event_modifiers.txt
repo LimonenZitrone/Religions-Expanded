@@ -149,3 +149,8 @@ re_religion_mechanic_sylvan_affinity_winter_grove_area_modifier = {
 	local_defensiveness = 0.2
 	local_state_maintenance_modifier = -0.2
 }
+
+# Event Modifiers:
+re_religion_mechanic_sylvan_affinity_assimilation_of_pagans_modifier = {
+	global_heathen_missionary_strength = 0.02
+}

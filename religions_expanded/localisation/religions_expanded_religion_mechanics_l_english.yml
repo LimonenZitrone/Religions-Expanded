@@ -599,7 +599,7 @@
  re_religion_mechanic_sylvan_affinity_total_value_tt: "[This.GetName] currently has §Y[This.ReGetReligionMechanicSylvanAffinityValue]§! Sylvan Affinity. The maximum amount is §Y100.00§!."
  re_religion_mechanic_sylvan_affinity_monthly_value_title: "Monthly Gain:"
  re_religion_mechanic_sylvan_affinity_monthly_value: "[This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue]"
- re_religion_mechanic_sylvan_affinity_monthly_value_tt: "[This.GetName] gets [This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue] Sylvan Affinity each month. \n--------------\nBase: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainValue] \nModified by: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainModifierValue] \n--------------\nThere is a base gain of §G+1.00§! per month. \n--------------\nSylvan Affinity is gained by: \n   - Religious Unity \n   - High Prestige \n   - Positive Stability \n   - Being at Peace \n   - §Y[270.GetName]§! is Vidilist and owned by a Vidilist country \n\nSylvan Affinity is lost by: \n   - Low Prestige \n   - Negative Stability \n   - Being Bankrupt \n   - Active Sylvan Affinity Focuses"
+ re_religion_mechanic_sylvan_affinity_monthly_value_tt: "[This.GetName] gets [This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue] Sylvan Affinity each month. \n--------------\nBase: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainValue] \nModified by: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainModifierValue] \n--------------\nThere is a base gain of §G+1.00§! per month. \n--------------\nSylvan Affinity is gained by: \n   - Religious Unity \n   - High Prestige \n   - Positive Stability \n   - Being at Peace \n   - §Y[271.GetName]§! is Vidilist and owned by a Vidilist country \n\nSylvan Affinity is lost by: \n   - Low Prestige \n   - Negative Stability \n   - Being Bankrupt \n   - Active Sylvan Affinity Focuses"
 
  re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button_tt_spring_selected: "Currently selected Seasonal Affinity: §YSpring§!"
  re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button_tt_summer_selected: "Currently selected Seasonal Affinity: §YSummer§!"
@@ -701,6 +701,8 @@
  re_religion_mechanic_sylvan_affinity_fall_grove_area_modifier: "Nearby Fall Grove"
  re_religion_mechanic_sylvan_affinity_winter_grove_province_modifier: "Winter Grove"
  re_religion_mechanic_sylvan_affinity_winter_grove_area_modifier: "Nearby Winter Grove"
+ ## Event Modifiers:
+ re_religion_mechanic_sylvan_affinity_assimilation_of_pagans_modifier: "Assimilation of the Pagans"
 
  # Events:
  re_religion_mechanic_sylvan_affinity_events.EVTNAME1: "Select Seasonal Affinity"
@@ -709,8 +711,15 @@
  re_religion_mechanic_sylvan_affinity_events1.EVTOPT2: "Songs of Hunting"
  re_religion_mechanic_sylvan_affinity_events1.EVTOPT3: "Songs of Harvesting"
  re_religion_mechanic_sylvan_affinity_events1.EVTOPT4: "Songs of Lament"
+ re_religion_mechanic_sylvan_affinity_events.EVTNAME2: "The Pagans in [271.GetAreaName]"
+ re_religion_mechanic_sylvan_affinity_events.EVTDESC2: "There are still some people living in [271.GetAreaName] that have pagan beliefs. How should we handle the situation? Should we fight them, leave them be or try to assimilate them?"
+ re_religion_mechanic_sylvan_affinity_events2.EVTOPT1: "Stamp them out with vigor."
+ re_religion_mechanic_sylvan_affinity_events2.EVTOPT2: "They are of no importance for us."
+ re_religion_mechanic_sylvan_affinity_events2.EVTOPT3: "Assimilate them slowly."
 
  # Decisions:
+ re_religion_mechanic_sylvan_affinity_stamp_out_the_pagans_decision_title: "Stamp Out the Pagans"
+ re_religion_mechanic_sylvan_affinity_stamp_out_the_pagans_decision_desc: "There are still some people living in [271.GetAreaName] that have pagan beliefs. They might be a minority, but we have to handle the situation eventually."
  re_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision_title: "Consecrate a Grove"
  re_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision_desc: "Found a new grove for the selected Seasonal Affinity. This will apply modifiers to a random owned province and its area for §Y5 years§! depending on the selected Seasonal Affinity."
  re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_decision_title: "Select Seasonal Affinity"
