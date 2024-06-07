@@ -546,6 +546,139 @@ guiTypes = {
 			format = centre
 		}
 
+		###########################################
+		## START Religions Expanded Custom GUI 1 ##
+		###########################################
+
+		######################
+		### Hindu Mechanic ###
+		######################
+		windowType = {
+			name = "re_religion_mechanic_hindu_window"
+			position = { x = 0 y = 230 }
+			scripted = yes
+
+			guiButtonType = {
+				name = "re_religion_mechanic_hindu_spend_dedication_button"
+				position = { x = 17 y = 40 }
+				spriteType = "GFX_re_religion_mechanic_hindu_spend_dedication_button"
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "re_religion_mechanic_hindu_reset_minor_deity_button"
+				position = { x = 137 y = 3 }
+				spriteType = "GFX_re_religion_mechanic_hindu_reset_minor_deity_button"
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "re_religion_mechanic_hindu_toggle_dedication_focus_button"
+				position = { x = 17 y = 68 }
+				spriteType = "GFX_re_religion_mechanic_hindu_toggle_dedication_focus_button"
+				scripted = yes
+			}
+
+			iconType = {
+				name = "re_religion_mechanic_hindu_bg"
+				position = { x = 55 y = 5 }
+				spriteType = "GFX_re_religion_mechanic_hindu_bg"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "re_religion_mechanic_hindu_minor_deity_bg"
+				position = { x = 80 y = 30 }
+				spriteType = "GFX_re_religion_mechanic_hindu_empty_button"
+				scale = 0.8
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "re_religion_mechanic_hindu_major_deity_shiva_button"
+				position = { x = 53 y = 1 }
+				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
+				scale = 0.8
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "re_religion_mechanic_hindu_major_deity_brahma_button"
+				position = { x = 53 y = 60 }
+				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
+				scale = 0.8
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "re_religion_mechanic_hindu_major_deity_vishnu_button"
+				position = { x = 121 y = 35 }
+				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
+				scale = 0.8
+				scripted = yes
+			}
+
+			iconType = {
+				name = "re_religion_mechanic_hindu_right_bg"
+				position = { x = 162 y = 2 }
+				spriteType = "GFX_region_area_banner_red"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "re_religion_mechanic_hindu_selected_major_deity_name"
+				position = { x = 200 y = 8 }
+				font = "vic_18"
+				format = centre
+				maxWidth = 130
+				maxHeight = 20
+				fixedsize = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "re_religion_mechanic_hindu_bar_window"
+				position = { x = 178 y = 45 }
+
+				iconType = {
+					name = "re_religion_mechanic_hindu_dedication_bar_bg"
+					position = { x = 6 y = 5 }
+					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_bg"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "re_religion_mechanic_hindu_dedication_bar"
+					position = { x = 6 y = 5 }
+					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "re_religion_mechanic_hindu_dedication_bar_frame"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_frame"
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "re_religion_mechanic_hindu_dedication_level_text"
+					position = { x = 6 y = 4 }
+					font = "garamond_14"
+					format = centre
+					maxWidth = 135
+					maxHeight = 20
+					fixedsize = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "re_religion_mechanic_hindu_dynamic_modifier_text"
+				position = { x = 134 y = 84 }
+				font = "vic_18"
+				format = centre
+				maxWidth = 235
+				maxHeight = 20
+				fixedsize = yes
+				scripted = yes
+			}
+		}
+
+		###########################################
+		##  END Religions Expanded Custom GUI 1  ##
+		###########################################
+
 ############## ORTHODOX PATRIARCH AUTHORITY	######
 
 		windowType = {
@@ -2358,9 +2491,9 @@ guiTypes = {
 				format = center
 			}
 
-		#########################################
-		## START Religions Expanded Custom GUI ##
-		#########################################
+		###########################################
+		## START Religions Expanded Custom GUI 2 ##
+		###########################################
 
 		######################
 		### Sukha Mechanic ###
@@ -2437,131 +2570,6 @@ guiTypes = {
 				name = "re_religion_mechanic_sukha_sponsor_festival_button"
 				position = { x = 290 y = 5 }
 				spriteType = "GFX_re_religion_mechanic_sukha_sponsor_festival_button"
-				scripted = yes
-			}
-		}
-
-		######################
-		### Hindu Mechanic ###
-		######################
-		windowType = {
-			name = "re_religion_mechanic_hindu_window"
-			position = { x = 0 y = 230 }
-			scripted = yes
-
-			guiButtonType = {
-				name = "re_religion_mechanic_hindu_spend_dedication_button"
-				position = { x = 17 y = 40 }
-				spriteType = "GFX_re_religion_mechanic_hindu_spend_dedication_button"
-				scripted = yes
-			}
-			guiButtonType = {
-				name = "re_religion_mechanic_hindu_reset_minor_deity_button"
-				position = { x = 137 y = 3 }
-				spriteType = "GFX_re_religion_mechanic_hindu_reset_minor_deity_button"
-				scripted = yes
-			}
-			guiButtonType = {
-				name = "re_religion_mechanic_hindu_toggle_dedication_focus_button"
-				position = { x = 17 y = 68 }
-				spriteType = "GFX_re_religion_mechanic_hindu_toggle_dedication_focus_button"
-				scripted = yes
-			}
-
-			iconType = {
-				name = "re_religion_mechanic_hindu_bg"
-				position = { x = 55 y = 5 }
-				spriteType = "GFX_re_religion_mechanic_hindu_bg"
-				alwaystransparent = yes
-			}
-			iconType = {
-				name = "re_religion_mechanic_hindu_minor_deity_bg"
-				position = { x = 80 y = 30 }
-				spriteType = "GFX_re_religion_mechanic_hindu_empty_button"
-				scale = 0.8
-				alwaystransparent = yes
-			}
-			guiButtonType = {
-				name = "re_religion_mechanic_hindu_major_deity_shiva_button"
-				position = { x = 53 y = 1 }
-				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
-				scale = 0.8
-				scripted = yes
-			}
-			guiButtonType = {
-				name = "re_religion_mechanic_hindu_major_deity_brahma_button"
-				position = { x = 53 y = 60 }
-				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
-				scale = 0.8
-				scripted = yes
-			}
-			guiButtonType = {
-				name = "re_religion_mechanic_hindu_major_deity_vishnu_button"
-				position = { x = 121 y = 35 }
-				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
-				scale = 0.8
-				scripted = yes
-			}
-
-			iconType = {
-				name = "re_religion_mechanic_hindu_right_bg"
-				position = { x = 162 y = 2 }
-				spriteType = "GFX_region_area_banner_red"
-				alwaystransparent = yes
-			}
-			instantTextBoxType = {
-				name = "re_religion_mechanic_hindu_selected_major_deity_name"
-				position = { x = 200 y = 8 }
-				font = "vic_18"
-				format = centre
-				maxWidth = 130
-				maxHeight = 20
-				fixedsize = yes
-				scripted = yes
-			}
-			windowType = {
-				name = "re_religion_mechanic_hindu_bar_window"
-				position = { x = 178 y = 45 }
-
-				iconType = {
-					name = "re_religion_mechanic_hindu_dedication_bar_bg"
-					position = { x = 6 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_bg"
-					alwaystransparent = yes
-					scripted = yes
-				}
-				iconType = {
-					name = "re_religion_mechanic_hindu_dedication_bar"
-					position = { x = 6 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar"
-					alwaystransparent = yes
-					scripted = yes
-				}
-				iconType = {
-					name = "re_religion_mechanic_hindu_dedication_bar_frame"
-					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_frame"
-					alwaystransparent = yes
-				}
-				instantTextBoxType = {
-					name = "re_religion_mechanic_hindu_dedication_level_text"
-					position = { x = 6 y = 4 }
-					font = "garamond_14"
-					format = centre
-					maxWidth = 135
-					maxHeight = 20
-					fixedsize = yes
-					scripted = yes
-				}
-			}
-			instantTextBoxType = {
-				name = "re_religion_mechanic_hindu_dynamic_modifier_text"
-				position = { x = 134 y = 84 }
-				font = "vic_18"
-				format = centre
-				maxWidth = 235
-				maxHeight = 20
-				fixedsize = yes
 				scripted = yes
 			}
 		}
@@ -3098,9 +3106,9 @@ guiTypes = {
 			}
 		}
 
-		#########################################
-		##  END Religions Expanded Custom GUI  ##
-		#########################################
+		###########################################
+		##  END Religions Expanded Custom GUI 2  ##
+		###########################################
 
 		windowType = {
 			name = "countryreligionview_convert"
