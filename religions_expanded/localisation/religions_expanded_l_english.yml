@@ -4,7 +4,7 @@
  re_state_missionary_button_tt_currently_active: "A missionary was assigned to §Y[Root.GetAreaName]§!."
  re_state_missionary_button_tt_blocked_no_missionary: "§RYou have no missionaries to assign.§W"
  re_state_missionary_button_tt_blocked_state_not_owned: "§RYou do not own all provinces in the §Y[Root.GetAreaName]§! state as your core provinces.§W"
- re_state_missionary_button_tt_blocked_state_not_converted: "§RAt least §Y1§! province in the §Y[Root.GetAreaName]§! state does not follow the §Y[From.Religion.GetName]§!.§W"
+ re_state_missionary_button_tt_blocked_state_not_converted: "§RAll provinces in the state must follow your religion. At least §Y1§! province in the §Y[Root.GetAreaName]§! state does not follow the §Y[From.Religion.GetName]§! faith.§W"
  re_state_missionary_button_tt_blocked_recently_used: "§RYou can only assign a missionary to a state once per month.§W"
 
  # Event Modifiers:
