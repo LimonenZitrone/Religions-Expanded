@@ -251,8 +251,8 @@ re_religion_mechanic_sukha_sponsor_festival_paryushana_modifier = {
 	religion = yes
 }
 re_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier = {
-	technology_cost = -0.1
-	idea_cost = -0.1
+	technology_cost = -0.05
+	idea_cost = -0.05
 	re_yearly_religion_mechanic_sukha_change = 1
 	religion = yes
 }
