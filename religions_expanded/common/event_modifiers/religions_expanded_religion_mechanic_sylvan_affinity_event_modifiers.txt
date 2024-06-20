@@ -1,10 +1,8 @@
 # Mechanic Modifiers:
 re_religion_mechanic_sylvan_affinity_sergetoja_spring_modifier = {
-	infantry_power = 0.1
-	galley_power = 0.1
-	heavy_ship_power = 0.1
-	discipline = 0.05
-	ship_durability = 0.05
+	cavalry_power = 0.15
+	discipline = 0.025
+	ship_durability = 0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
@@ -16,9 +14,9 @@ re_religion_mechanic_sylvan_affinity_sergetoja_summer_modifier = {
 	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_sergetoja_fall_modifier = {
-	shock_damage = 0.1
-	morale_damage = 0.1
-	naval_morale_damage = 0.15
+	shock_damage = 0.05
+	morale_damage_received = -0.1
+	naval_morale_damage_received = -0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
@@ -66,14 +64,14 @@ re_religion_mechanic_sylvan_affinity_audeja_spring_modifier = {
 	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_audeja_summer_modifier = {
-	improve_relation_modifier = 0.2
-	siege_ability = 0.1
+	ae_impact = -0.1
+	trade_efficiency = 0.15
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_audeja_fall_modifier = {
-	ae_impact = -0.1
-	trade_efficiency = 0.15
+	improve_relation_modifier = 0.2
+	siege_ability = 0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
@@ -115,9 +113,8 @@ re_religion_mechanic_sylvan_affinity_spring_grove_province_modifier = {
 	local_sailors = 1000
 }
 re_religion_mechanic_sylvan_affinity_spring_grove_area_modifier = {
-	local_development_cost = -0.15
-	local_manpower_modifier = 0.2
-	local_sailors_modifier = 0.2
+	local_defensiveness = 0.2
+	local_state_maintenance_modifier = -0.2
 }
 
 re_religion_mechanic_sylvan_affinity_summer_grove_province_modifier = {
@@ -126,8 +123,8 @@ re_religion_mechanic_sylvan_affinity_summer_grove_province_modifier = {
 }
 re_religion_mechanic_sylvan_affinity_summer_grove_area_modifier = {
 	local_tax_modifier = 0.2
-	local_build_cost = -0.2
-	local_build_time = -0.2
+	local_build_cost = -0.1
+	local_build_time = -0.15
 }
 
 re_religion_mechanic_sylvan_affinity_fall_grove_province_modifier = {
@@ -146,8 +143,9 @@ re_religion_mechanic_sylvan_affinity_winter_grove_province_modifier = {
 	max_attrition = 2
 }
 re_religion_mechanic_sylvan_affinity_winter_grove_area_modifier = {
-	local_defensiveness = 0.2
-	local_state_maintenance_modifier = -0.2
+	local_development_cost = -0.1
+	local_manpower_modifier = 0.2
+	local_sailors_modifier = 0.2
 }
 
 # Event Modifiers:
