@@ -18,7 +18,7 @@ religious_unity = {
 	monthly_cultural_unity = 0.1
 
 	# RE:
-	re_monthly_religion_mechanic_sylvan_affinity_change = 1
+	re_monthly_religion_mechanic_sylvan_affinity_change = 0.5
 }
 
 prestige = {

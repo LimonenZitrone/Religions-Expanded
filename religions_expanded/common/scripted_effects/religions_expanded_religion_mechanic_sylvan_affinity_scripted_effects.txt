@@ -136,19 +136,19 @@ re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = {
 			limit = {
 				stability = 3
 			}
-			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 3 }
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1.5 }
 		}
 		else_if = {
 			limit = {
 				stability = 2
 			}
-			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 2 }
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1 }
 		}
 		else_if = {
 			limit = {
 				stability = 1
 			}
-			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 1 }
+			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 0.5 }
 		}
 		else_if = {
 			limit = {
