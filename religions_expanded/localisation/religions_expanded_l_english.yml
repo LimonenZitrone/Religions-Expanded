@@ -23,3 +23,7 @@
  # Decisions:
  re_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
  re_religion_reform_religion_decision_desc: "The [Root.Religion.GetName] Faith is not as centralized as other religions. This gives us a disadvantage compared to them. We should strive for a stronger centralization to become competitive."
+
+ # Vanilla Events:
+ hindu_events.1.j: "Kali will lead us to wisdom."
+ hindu_events.1.k: "Hanuman will lead us to wisdom."
