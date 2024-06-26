@@ -247,18 +247,18 @@ re_religion_mechanic_sukha_modifier_41 = {
 re_religion_mechanic_sukha_sponsor_festival_paryushana_modifier = {
 	stability_cost_modifier = -0.33
 	global_unrest = -2
-	re_yearly_religion_mechanic_sukha_change = 1
+	re_yearly_religion_mechanic_sukha_change = 2
 	religion = yes
 }
 re_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier = {
 	technology_cost = -0.05
 	idea_cost = -0.05
-	re_yearly_religion_mechanic_sukha_change = 1
+	re_yearly_religion_mechanic_sukha_change = 2
 	religion = yes
 }
 re_religion_mechanic_sukha_sponsor_festival_diwali_modifier = {
 	diplomatic_reputation = 2
 	improve_relation_modifier = 0.2
-	re_yearly_religion_mechanic_sukha_change = 1
+	re_yearly_religion_mechanic_sukha_change = 2
 	religion = yes
 }

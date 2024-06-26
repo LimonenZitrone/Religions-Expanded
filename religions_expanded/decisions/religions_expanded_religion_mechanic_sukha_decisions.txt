@@ -75,7 +75,7 @@ country_decisions = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year
-					had_country_flag = { flag = re_religion_mechanic_sukha_sponsor_festival_used days = 3650 }
+					had_country_flag = { flag = re_religion_mechanic_sukha_sponsor_festival_used days = 5475 }
 				}
 			}
 			else = {

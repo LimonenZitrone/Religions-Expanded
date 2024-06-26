@@ -12,8 +12,8 @@
 
  re_religion_mechanic_sukha_meditate_not_used_recently_tt_with_year: "Our [This.Monarch.GetTitle] has NOT meditated within the last §Y10 years§! (last in §Y[This.re_religion_mechanic_sukha_meditate_used_year.GetValue]§!)"
  re_religion_mechanic_sukha_meditate_not_used_recently_tt: "Our [This.Monarch.GetTitle] has NOT meditated within the last §Y10 years§!"
- re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year: "Has NOT sponsored a festival within the last §Y10 years§! (last in §Y[This.re_religion_mechanic_sukha_sponsor_festival_used_year.GetValue]§!)"
- re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt: "Has NOT sponsored a festival within the last §Y10 years§!"
+ re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt_with_year: "Has NOT sponsored a festival within the last §Y15 years§! (last in §Y[This.re_religion_mechanic_sukha_sponsor_festival_used_year.GetValue]§!)"
+ re_religion_mechanic_sukha_sponsor_festival_not_used_recently_tt: "Has NOT sponsored a festival within the last §Y15 years§!"
  re_religion_mechanic_sukha_sponsor_festival_button_tt_choice: "\n§OWe will be able to pick one of the following effects:§!"
 
  # Custom Modifiers:
