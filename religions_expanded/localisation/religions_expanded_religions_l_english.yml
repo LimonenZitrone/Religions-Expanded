@@ -9,6 +9,9 @@
  vidilist: "Vidilist"
  vidilist_religion_desc: ""
  vidilist_string: "Vidilism"
+ nestorian: "Nestorian"
+ nestorian_religion_desc: ""
+ nestorian_string: "Nestorianism"
 
  # Heresies:
  YAPANIYA: "Yapaniya"

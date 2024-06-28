@@ -1,0 +1,36 @@
+re_uses_religion_mechanic_nestorian_patriarchy = {
+	custom_trigger_tooltip = {
+		tooltip = re_uses_religion_mechanic_nestorian_patriarchy_tt
+		religion = nestorian
+	}
+}
+
+re_not_uses_religion_mechanic_nestorian_patriarchy = {
+	custom_trigger_tooltip = {
+		tooltip = re_not_uses_religion_mechanic_nestorian_patriarchy_tt
+		NOT = { re_uses_religion_mechanic_nestorian_patriarchy = yes }
+	}
+}
+
+re_has_religion_mechanic_nestorian_patriarchy_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		}
+		[[value]
+			check_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = $value$ }
+		]
+		[[which]
+			check_variable = { which = re_religion_mechanic_nestorian_patriarchy_value which = $which$ }
+		]
+	}
+}
+
+re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = {
+	custom_trigger_tooltip = {
+		tooltip = re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller_tt
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+		has_country_flag = re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller
+	}
+}

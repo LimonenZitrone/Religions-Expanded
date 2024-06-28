@@ -1,0 +1,283 @@
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_window_open_button
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+				}
+				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+			}
+			else = {
+				re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
+				set_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt
+}
+
+custom_window = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_window
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_close_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+		}
+	}
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_title
+	potential = {
+		always = yes
+	}
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty
+	potential = {
+		NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller }
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty_tt
+}
+custom_shield = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag
+	potential = {
+		has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+	}
+	global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+	open_country = yes
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_influence_title
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_influence_title_tt
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_influence_value
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_influence_value_tt
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title_tt
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_title
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_desc
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button
+	trigger = {
+		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+	}
+	effect = {
+		if = {
+			limit = {
+				has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_active
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interactions_title
+	potential = {
+		always = yes
+	}
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button
+	trigger = {
+	}
+	effect = {
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button_tt
+}

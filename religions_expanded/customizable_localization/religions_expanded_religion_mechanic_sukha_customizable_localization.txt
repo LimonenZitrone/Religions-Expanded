@@ -39,38 +39,3 @@ defined_text = {
 		localisation_key = string_re_get_religion_mechanic_sukha_yearly_gain_value_neutral
 	}
 }
-
-defined_text = {
-	name = GetBogomilismStrengthOfFaithChangeReasonNewHeir
-	random = no
-
-	text = {
-		trigger = {
-			government = monarchy
-		}
-		localisation_key = string_get_bogomilism_strength_of_faith_change_reason_new_heir
-	}
-	text = {
-		trigger = {
-			always = yes
-		}
-		localisation_key = ""
-	}
-}
-defined_text = {
-	name = GetBogomilismStrengthOfFaithChangeReasonDisinheritHeir
-	random = no
-
-	text = {
-		trigger = {
-			government = monarchy
-		}
-		localisation_key = string_get_bogomilism_strength_of_faith_change_reason_disinherit_heir
-	}
-	text = {
-		trigger = {
-			always = yes
-		}
-		localisation_key = ""
-	}
-}

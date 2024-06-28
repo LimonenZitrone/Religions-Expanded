@@ -52,4 +52,13 @@ estate_special = {
 			religion = vidilist
 		}
 	}
+	# Nestorian Patriarchy Mechanic
+	modifier_definition = {
+		type = privileges
+		key = re_yearly_religion_mechanic_nestorian_patriarchy_change
+		trigger = {
+			# keep the same as re_uses_religion_mechanic_nestorian_patriarchy
+			religion = nestorian
+		}
+	}
 }

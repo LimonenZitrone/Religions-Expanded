@@ -847,6 +847,34 @@ christian = {
 		}
 	}
 
+	# Religions Expanded
+	nestorian = {
+		color = { 178 127 0 }
+		icon = 33
+		country = {
+
+		}
+		country_as_secondary = {
+
+		}
+		province = {
+
+		}
+
+		on_convert = {
+			change_religion = nestorian
+			re_set_religion_mechanic_nestorian_patriarchy_value = { value = 0 }
+			add_country_modifier = {
+				name = conversion_zeal
+				duration = 3650
+			}
+		}
+
+		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
+
+		misguided_heretic = yes		# Other christians hate them less
+	}
+
 	harmonized_modifier = harmonized_christian
 
 	crusade_name = CRUSADE
@@ -1464,7 +1492,7 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			mahayana
-			tibetan_buddhism
+			tibetan_buddhism # Religions Expanded
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1496,7 +1524,7 @@ eastern = {
 		allowed_conversion = {
 			mahayana
 			buddhism #Theravada
-			tibetan_buddhism
+			tibetan_buddhism # Religions Expanded
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1528,7 +1556,7 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			buddhism #Theravada
-			tibetan_buddhism
+			tibetan_buddhism # Religions Expanded
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1640,7 +1668,7 @@ dharmic = {
 		icon = 8
 		allowed_conversion = {
 			sikhism
-			jainism
+			jainism # Religions Expanded
 		}
 		country = {
 			tolerance_heathen = 1
@@ -1674,7 +1702,7 @@ dharmic = {
 			hinduism
 			sunni
 			shiite
-			jainism
+			jainism # Religions Expanded
 		}
 		country = {
 			mil_tech_cost_modifier = -0.1

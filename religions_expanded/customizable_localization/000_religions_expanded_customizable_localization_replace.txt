@@ -178,4 +178,10 @@ defined_text = {
 			religion = vidilist
 		}
 	}
+	text = {
+		localisation_key = nestorian_string
+		trigger = {
+			religion = nestorian
+		}
+	}
 }

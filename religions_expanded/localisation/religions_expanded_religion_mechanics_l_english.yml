@@ -732,3 +732,81 @@
  re_religion_mechanic_sylvan_affinity_audeja_decision_desc: "Make offerings to the Governing Goddess of Ausrine."
  re_religion_mechanic_sylvan_affinity_verpiancioji_decision_title: "Verpiancioji"
  re_religion_mechanic_sylvan_affinity_verpiancioji_decision_desc: "Make offerings to the Governing Goddess of Senelis."
+
+ ###################################
+ ## Nestorian Patriarchy Mechanic ##
+ ###################################
+ # GUIs:
+ re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt: "Nestorian Patriarchy \n--------------\nPatriarchal Influence: §Y[This.ReGetReligionMechanicNestorianPatriarchyValue]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_title: "Nestorian Patriarchy"
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title: "Patriarchy \nController"
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt: ""
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty_tt: "There is no §YPatriarchy Controller§! at the moment."
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_tt: "@[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetTag] §Y[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetName]§! is the current §YPatriarchy Controller§!."
+ re_religion_mechanic_nestorian_patriarchy_main_influence_title: "Patriarch Influence"
+ re_religion_mechanic_nestorian_patriarchy_main_influence_title_tt: ""
+ re_religion_mechanic_nestorian_patriarchy_main_influence_value: "[This.ReGetReligionMechanicNestorianPatriarchyValue]"
+ re_religion_mechanic_nestorian_patriarchy_main_influence_value_tt: "We currently have §Y[This.ReGetReligionMechanicNestorianPatriarchyValue]§! Patriarch Influence."
+ re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value: "[This.ReGetReligionMechanicNestorianPatriarchyYearlyGainValue]"
+ re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value_tt: "We currently gain [This.ReGetReligionMechanicNestorianPatriarchyYearlyGainValue] per year."
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title: "Center of Reformation"
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title_tt: ""
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_title: "[This.ReGetReligionMechanicNestorianPatriarchyCurrentCenterOfReformation]"
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_desc: "[This.ReGetReligionMechanicNestorianPatriarchyCurrentCenterOfReformationDesc]"
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt: "§YSelect Center of Reformation§! \nThe §YPatriarchy Controller§! can pick a Center of Reformation. Once selected, this will spread the §YNestorian§! faith to neighboring provinces."
+ re_religion_mechanic_nestorian_patriarchy_main_interactions_title: "Interactions"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title: "Holy Sites"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title_desc: ""
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name: "[151.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button_tt: "§Y[151.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_name: "[4293.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button_tt: "§Y[4293.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_name: "[700.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button_tt: "§Y[700.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_name: "[446.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt: "§Y[446.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_name: "[710.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button_tt: "§Y[710.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_name: "[2313.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button_tt: "§Y[2313.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_name: "[558.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button_tt: "§Y[558.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_name: "[2745.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt: "§Y[2745.GetName]§!"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_name: "[1099.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button_tt: "§Y[1099.GetName]§!"
+
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_active: "The currently active Center of Reformation is §Y[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§!."
+
+ # Custom Modifiers:
+ re_yearly_religion_mechanic_nestorian_patriarchy_change: "Yearly Patriarch Influence"
+
+ # Variables:
+ re_religion_mechanic_nestorian_patriarchy_value: "Patriarch Influence"
+
+ # Scripted Triggers:
+ re_uses_religion_mechanic_nestorian_patriarchy_tt: "Uses the §YNestorian Patriarchy§! mechanic"
+ re_not_uses_religion_mechanic_nestorian_patriarchy_tt: "Does NOT use the §YNestorian Patriarchy§! mechanic"
+ re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller_tt: "Is the §YPatriarchy Controller§!"
+
+ # Scripted Effects:
+ re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller_tt: "§Y[This.GetName]§! becomes the §YPatriarchy Controller§!."
+ re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation_tt: "§Y[This.GetName]§! becomes the active §YCenter of Reformation§!."
+
+ # Customizable Localization:
+ string_re_get_religion_mechanic_nestorian_patriarchy_yearly_gain_value_positive: "§G+[This.re_yearly_religion_mechanic_nestorian_patriarchy_value.GetValue]§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_yearly_gain_value_negative: "§R[This.re_yearly_religion_mechanic_nestorian_patriarchy_value.GetValue]§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_yearly_gain_value_neutral: "§Y0.00§!"
+
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_tt: "[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_tt_not_picked: "No active Center of Reformation"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118: "[118.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816: "[1816.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099: "[1099.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151: "[151.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293: "[4293.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447: "[4447.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358: "[358.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735: "[735.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85: "[85.GetName] Description"
+ string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_not_picked: "The §YPatriarchy Controller§! can pick a Center of Reformation. Once selected, this will spread the §YNestorian§! faith to neighboring provinces."
