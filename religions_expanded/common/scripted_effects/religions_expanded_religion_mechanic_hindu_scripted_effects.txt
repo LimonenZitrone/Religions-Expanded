@@ -349,7 +349,15 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						}
 					}
 				}
-				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.06 }
+				if = {
+					limit = {
+						government = republic
+					}
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.25 }
+				}
+				else = {
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.3 }
+				}
 			}
 			else_if = {
 				limit = {
@@ -368,7 +376,15 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						}
 					}
 				}
-				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.04 }
+				if = {
+					limit = {
+						government = republic
+					}
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.15 }
+				}
+				else = {
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.2 }
+				}
 			}
 			else_if = {
 				limit = {
@@ -387,7 +403,15 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						}
 					}
 				}
-				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.02 }
+				if = {
+					limit = {
+						government = republic
+					}
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.05 }
+				}
+				else = {
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0.1 }
+				}
 			}
 			else_if = {
 				limit = {
@@ -406,7 +430,15 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						}
 					}
 				}
-				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.03 }
+				if = {
+					limit = {
+						government = republic
+					}
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.04 }
+				}
+				else = {
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.08 }
+				}
 			}
 			else_if = {
 				limit = {
@@ -425,7 +457,15 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						}
 					}
 				}
-				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.02 }
+				if = {
+					limit = {
+						government = republic
+					}
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.02 }
+				}
+				else = {
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.04 }
+				}
 			}
 			else_if = {
 				limit = {
@@ -444,7 +484,15 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						}
 					}
 				}
-				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.01 }
+				if = {
+					limit = {
+						government = republic
+					}
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.01 }
+				}
+				else = {
+					set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = -0.01 }
+				}
 			}
 			else = {
 				set_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_skill value = 0 }
