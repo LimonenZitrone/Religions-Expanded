@@ -1,0 +1,64 @@
+namespace = re_religion_mechanic_nestorian_patriarchy_events
+
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.1
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME1
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	major = yes
+	major_trigger = {
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events1.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		tooltip = {
+			re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+		}
+	}
+}
+
+province_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.2
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME2
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			change_religion = nestorian
+			remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events2.EVTOPT1
+
+		trigger = {
+			owner = {
+				religion = nestorian
+			}
+		}
+
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_events.2.tt
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events2.EVTOPT2
+
+		trigger = {
+			owner = {
+				NOT = { religion = nestorian }
+			}
+		}
+
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_events.2.tt
+	}
+}

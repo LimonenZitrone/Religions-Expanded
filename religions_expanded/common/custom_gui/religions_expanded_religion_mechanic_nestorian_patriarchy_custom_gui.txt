@@ -10,6 +10,7 @@ custom_button = {
 				limit = {
 					has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
 				}
+				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
 			}
 			else = {
@@ -33,6 +34,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_close_button
 	effect = {
 		hidden_effect = {
+			clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 			clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
 		}
 	}
@@ -112,10 +114,24 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision decision accordingly
 	trigger = {
 		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+		custom_trigger_tooltip = {
+			tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_not_selected_tt
+			NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation }
+		}
 	}
 	effect = {
+		if = {
+			limit = {
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+			}
+			clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+		}
+		else = {
+			set_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+		}
 		if = {
 			limit = {
 				has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
@@ -130,6 +146,99 @@ custom_button = {
 		}
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon
+	potential = {
+		has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+	}
+	frame = {
+		number = 10
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 118
+			}
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 1816
+			}
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 1099
+			}
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 151
+			}
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 4293
+			}
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 4447
+			}
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 358
+			}
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 735
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				province_id = 85
+			}
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 custom_text_box = {
@@ -155,6 +264,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -170,6 +280,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -185,6 +296,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -200,6 +312,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -215,6 +328,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -230,6 +344,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -245,6 +360,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -260,6 +376,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_decision decision accordingly
 	trigger = {
 	}
 	effect = {
@@ -275,9 +392,376 @@ custom_text_box = {
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_decision decision accordingly
 	trigger = {
 	}
 	effect = {
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button_tt
+}
+
+custom_window = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+		NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation }
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_close_button
+	effect = {
+		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+	}
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_title
+	potential = {
+		always = yes
+	}
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 2
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+		}
+	}
+	effect = {
+		118 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+		}
+	}
+	effect = {
+		1816 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 4
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+		}
+	}
+	effect = {
+		1099 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 5
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+		}
+	}
+	effect = {
+		151 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 6
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+		}
+	}
+	effect = {
+		4293 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 7
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+		}
+	}
+	effect = {
+		4447 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 8
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+		}
+	}
+	effect = {
+		358 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 9
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+		}
+	}
+	effect = {
+		735 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button_tt
+}
+
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 10
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85
+}
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_name
+	potential = {
+		always = yes
+	}
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button
+	trigger = {
+		any_province = {
+			province_religion = nestorian
+			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+		}
+	}
+	effect = {
+		85 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+		custom_tooltip = " "
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button_tt
 }

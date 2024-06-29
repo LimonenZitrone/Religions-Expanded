@@ -187,6 +187,7 @@ spawn_country_religious_rebels = {
 			jainism = 				{ PREV = { spawn_rebels = { type = jainism_rebels size = $size$ } } }
 			tibetan_buddhism = 		{ PREV = { spawn_rebels = { type = tibetan_buddhism_rebels size = $size$ } } }
 			vidilist = 				{ PREV = { spawn_rebels = { type = vidilist_rebels size = $size$ } } }
+			nestorian = 			{ PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ } } }
 		}
 	}
 }
@@ -226,6 +227,7 @@ spawn_province_religious_rebels = {
 		jainism = 				{ spawn_rebels = { type = jainism_rebels size = $size$ } }
 		tibetan_buddhism = 		{ spawn_rebels = { type = tibetan_buddhism_rebels size = $size$ } }
 		vidilist = 				{ spawn_rebels = { type = vidilist_rebels size = $size$ } }
+		nestorian = 			{ spawn_rebels = { type = nestorian_rebels size = $size$ } }
 	}
 }
 
@@ -324,6 +326,7 @@ spawn_rebels_from_unhappy_estate = {
 						jainism =      	{ PREV = { spawn_rebels = { type = jainism_rebels size = $size$ as_if_faction = yes } } }
 						tibetan_buddhism = { PREV = { spawn_rebels = { type = tibetan_buddhism_rebels size = $size$ as_if_faction = yes } } }
 						vidilist =      { PREV = { spawn_rebels = { type = vidilist_rebels size = $size$ as_if_faction = yes } } }
+						nestorian =     { PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ as_if_faction = yes } } }
 					}
 				}
 			}

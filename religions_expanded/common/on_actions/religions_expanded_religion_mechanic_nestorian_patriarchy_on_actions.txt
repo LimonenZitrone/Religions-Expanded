@@ -1,5 +1,291 @@
 on_religion_change = {
-	re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers = yes
+	re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_religion = yes
+	if = {
+		limit = {
+			religion = nestorian
+			NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller }
+		}
+		re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+	}
+	if = {
+		limit = {
+			religion = nestorian
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+		}
+		if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 118
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 1816
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 1099
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 151
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 4293
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 4447
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 358
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 735
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					province_id = 85
+				}
+			}
+			every_owned_province = {
+				limit = {
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+					NOT = { religion = nestorian }
+				}
+				add_permanent_province_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { religion = nestorian }
+			any_owned_province = {
+				has_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+			}
+			remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+		}
+	}
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			has_country_flag = re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller
+			OR = {
+				NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller }
+				AND = {
+					has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+					event_target:re_religion_mechanic_nestorian_patriarchy_patriarch_controller = {
+						NOT = { tag = ROOT }
+					}
+				}
+			}
+		}
+		save_global_event_target_as = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+	}
+}
+
+on_province_owner_change = {
+	if = {
+		limit = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			NOT = { religion = nestorian }
+			owner = {
+				religion = nestorian
+			}
+			OR = {
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 118
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 1816
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 1099
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 151
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 4293
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 4447
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 358
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 735
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+				}
+				AND = {
+					event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+						province_id = 85
+					}
+					re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+				}
+			}
+		}
+		add_permanent_province_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+		}
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+	}
+}
+
+on_province_religion_changed = {
+	if = {
+		limit = {
+			has_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+			religion = nestorian
+		}
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
+	}
 }
 
 on_monthly_pulse = {
@@ -19,7 +305,7 @@ on_annexed = {
 			limit = {
 				re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			}
-			re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers = yes
+			re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_religion = yes
 		}
 	}
 }
