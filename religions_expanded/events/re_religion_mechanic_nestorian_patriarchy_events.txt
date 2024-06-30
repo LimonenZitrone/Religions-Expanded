@@ -47,7 +47,7 @@ province_event = {
 
 		trigger = {
 			owner = {
-				religion = nestorian
+				re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			}
 		}
 
@@ -59,10 +59,69 @@ province_event = {
 
 		trigger = {
 			owner = {
-				NOT = { religion = nestorian }
+				re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			}
 		}
 
 		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_events.2.tt
+	}
+}
+
+province_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.3
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME3
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC3
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+				re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+			}
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events3.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.4
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME4
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC4
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+		NOT = { exists = NPA }
+	}
+
+	mean_time_to_happen = {
+		years = 15
+	}
+
+	immediate = {
+		hidden_effect = {
+			2313 = {
+				province_event = { id = re_religion_mechanic_nestorian_patriarchy_events.3 } # New Patriarchy Controller
+			}
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events4.EVTOPT1
+
+		ai_chance = { factor = 100 }
 	}
 }

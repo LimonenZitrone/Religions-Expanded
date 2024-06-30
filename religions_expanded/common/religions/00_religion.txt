@@ -849,7 +849,7 @@ christian = {
 
 	# Religions Expanded
 	nestorian = {
-		color = { 178 127 0 }
+		color = { 255 255 170 }
 		icon = 33
 		country = {
 

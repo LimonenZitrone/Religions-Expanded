@@ -27,3 +27,7 @@
  # Vanilla Events:
  hindu_events.1.j: "Kali will lead us to wisdom."
  hindu_events.1.k: "Hanuman will lead us to wisdom."
+
+ # Countries:
+ NPA: "Antioch"
+ NPA_ADJ: "Antiochian"
