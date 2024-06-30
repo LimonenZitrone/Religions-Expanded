@@ -236,4 +236,36 @@ spriteTypes = {
 		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
 		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople.dds"
 	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_arbil"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_arbil.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_xian"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_xian.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_herat"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_herat.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_hotan"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_hotan.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_antioch"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_antioch.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_pataliputra"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_pataliputra.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_gyeongju"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_gyeongju.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_socotra"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/re_religion_mechanic_nestorian_patriarchy_holy_site_socotra.dds"
+	}
 }

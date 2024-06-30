@@ -745,7 +745,6 @@ guiTypes = {
 			position = { x = -322 y = -70 }
 			orientation = lower_right
 			spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_button"
-			clicksound = "papacy"
 			scripted = yes
 		}
 
@@ -877,7 +876,7 @@ guiTypes = {
 					format = left
 					font = "vic_18"
 					maxWidth = 300
-					maxHeight = 60
+					maxHeight = 55
 					scrollbartype = "standardtext_slider"
 					scripted = yes
 				}
@@ -896,7 +895,6 @@ guiTypes = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
-						alwaystransparent = yes
 						scripted = yes
 					}
 				}
@@ -950,7 +948,7 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -967,12 +965,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_arbil"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -989,12 +987,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_xian"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -1016,12 +1014,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_herat"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -1038,12 +1036,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_hotan"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -1060,12 +1058,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_antioch"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -1087,12 +1085,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_pataliputra"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -1109,12 +1107,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_gyeongju"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120
@@ -1131,12 +1129,12 @@ guiTypes = {
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_socotra"
 							scripted = yes
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_name"
-							position = { x = 15 y = 12 }
+							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
 							maxWidth = 120

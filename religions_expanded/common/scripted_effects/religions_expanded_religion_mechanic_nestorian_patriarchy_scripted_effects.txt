@@ -331,6 +331,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target = {
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 			}
 			save_event_target_as = nestorian_possible_target
 		}
@@ -440,6 +441,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 			}
 			save_event_target_as = nestorian_possible_target
@@ -448,6 +450,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -464,6 +467,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -488,6 +492,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -504,6 +509,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -528,6 +534,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -544,6 +551,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -568,6 +576,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -584,6 +593,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
@@ -608,6 +618,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				area_for_scope_province = {
 					province_id = event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
@@ -619,6 +630,7 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 			limit = {
 				NOT = { religion = nestorian }
 				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				any_neighbor_province = {
 					province_id = event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation

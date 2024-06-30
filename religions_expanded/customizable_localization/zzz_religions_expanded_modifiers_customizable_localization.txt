@@ -441,3 +441,15 @@ defined_text = {
 		localisation_key = STATE_MAINTENANCE_MODIFIER
 	}
 }
+
+defined_text = {
+	name = local_missionary_strength
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_MISSIONARY_STRENGTH
+	}
+}
