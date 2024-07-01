@@ -1,0 +1,46 @@
+re_gov_name_patriarchy = {
+	rank = {
+		1 = RE_GOV_NAME_PATRIARCHY
+		2 = RE_GOV_NAME_PATRIARCHY
+		3 = RE_GOV_NAME_PATRIARCHY
+	}
+
+	ruler_male = {
+		1 = RE_GOV_RULER_PATRIARCHY
+		2 = RE_GOV_RULER_PATRIARCHY
+		3 = RE_GOV_RULER_PATRIARCHY
+	}
+
+	ruler_female  ={
+		1 = RE_GOV_RULER_PATRIARCHY_fem
+		2 = RE_GOV_RULER_PATRIARCHY_fem
+		3 = RE_GOV_RULER_PATRIARCHY_fem
+	}
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		has_reform = nestorian_patriarchy_antioch_reform
+	}
+}

@@ -31,3 +31,12 @@
  # Countries:
  NPA: "Antioch"
  NPA_ADJ: "Antiochian"
+
+ # Government Reforms:
+ nestorian_patriarchy_antioch_reform: "Patriarchy"
+ nestorian_patriarchy_antioch_reform_desc: ""
+
+ # Government Names:
+ RE_GOV_NAME_PATRIARCHY: "Patriarchy"
+ RE_GOV_RULER_PATRIARCHY: "Patriarch"
+ RE_GOV_RULER_PATRIARCHY_fem: "Matriarch"

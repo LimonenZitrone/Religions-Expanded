@@ -740,7 +740,7 @@
  re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt: "Nestorian Patriarchy \n--------------\nPatriarchal Influence: §Y[This.ReGetReligionMechanicNestorianPatriarchyValue]§!"
  re_religion_mechanic_nestorian_patriarchy_main_title: "Nestorian Patriarchy"
  re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title: "Patriarchy\nController"
- re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt: ""
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt: "A new Patriarchy Controller is selected whenever the ruler of the §YPatriarchy of [NPA.GetName]§! dies."
  re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty_tt: "There is no §YPatriarchy Controller§! at the moment."
  re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_tt: "@[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetTag] §Y[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetName]§! is the current §YPatriarchy Controller§!."
  re_religion_mechanic_nestorian_patriarchy_main_influence_title: "Patriarch Influence"

@@ -310,22 +310,11 @@ on_monarch_death = {
 		limit = {
 			tag = NPA
 			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death }
 		}
 		2313 = {
 			province_event = { id = re_religion_mechanic_nestorian_patriarchy_events.3 } # New Patriarchy Controller
 		}
-	}
-}
-
-on_government_change = {
-	# Antioch Patriarchy
-	if = {
-		limit = {
-			tag = NPA
-			NOT = { government = theocracy }
-		}
-		change_government = theocracy
-		add_government_reform = leading_clergy_reform
 	}
 }
 
@@ -352,13 +341,19 @@ on_country_released = {
 		}
 		change_religion = nestorian
 		change_government = theocracy
-		add_government_reform = leading_clergy_reform
+		add_government_reform = nestorian_patriarchy_antioch_reform
 		adopt_reform_progress = FROM
 		add_country_modifier = {
 			name = no_revolution_here_country_dummy
 			duration = -1
 			hidden = yes
 		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+		define_ruler = {
+			min_age = 60
+			max_age = 70
+		}
+		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
 	}
 	else_if = {
 		limit = {
@@ -388,12 +383,18 @@ on_country_creation = {
 		}
 		change_religion = nestorian
 		change_government = theocracy
-		add_government_reform = leading_clergy_reform
+		add_government_reform = nestorian_patriarchy_antioch_reform
 		add_country_modifier = {
 			name = no_revolution_here_country_dummy
 			duration = -1
 			hidden = yes
 		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+		define_ruler = {
+			min_age = 60
+			max_age = 70
+		}
+		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
 	}
 }
 
@@ -408,12 +409,18 @@ on_create_vassal = {
 		}
 		change_religion = nestorian
 		change_government = theocracy
-		add_government_reform = leading_clergy_reform
+		add_government_reform = nestorian_patriarchy_antioch_reform
 		adopt_reform_progress = FROM
 		add_country_modifier = {
 			name = no_revolution_here_country_dummy
 			duration = -1
 			hidden = yes
 		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+		define_ruler = {
+			min_age = 60
+			max_age = 70
+		}
+		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
 	}
 }
