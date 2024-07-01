@@ -323,6 +323,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = tax_income
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = TAX_INCOME
+	}
+}
+
+defined_text = {
 	name = local_build_cost
 	random = no
 
@@ -331,6 +343,18 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = LOCAL_BUILD_COST
+	}
+}
+
+defined_text = {
+	name = build_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = BUILD_COST
 	}
 }
 
@@ -407,6 +431,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = hostile_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = HOSTILE_ATTRITION
+	}
+}
+
+defined_text = {
 	name = max_attrition
 	random = no
 
@@ -443,6 +479,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = state_maintenance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = STATE_MAINTENANCE_MODIFIER
+	}
+}
+
+defined_text = {
 	name = local_missionary_strength
 	random = no
 
@@ -451,5 +499,101 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = LOCAL_MISSIONARY_STRENGTH
+	}
+}
+
+defined_text = {
+	name = trade_steering
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TRADE_STEERING
+	}
+}
+
+defined_text = {
+	name = global_sailors_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_SAILORS
+	}
+}
+
+defined_text = {
+	name = special_unit_cost_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SPECIAL_UNIT_COST_MODIFIER
+	}
+}
+
+defined_text = {
+	name = shock_damage_received
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SHOCK_DAMAGE_RECIEVED
+	}
+}
+
+defined_text = {
+	name = is_marine_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ONLY_MARINE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = reform_progress_growth
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REFORM_PROGRESS_GROWTH
+	}
+}
+
+defined_text = {
+	name = local_tolerance_of_heathens
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_TOLERANCE_OF_HEATHENS
+	}
+}
+
+defined_text = {
+	name = discipline
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DISCIPLINE
 	}
 }

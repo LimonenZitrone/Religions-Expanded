@@ -457,6 +457,57 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 				NOT = { has_construction = missionary }
 				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					NOT = {
 						province_distance = {
@@ -483,12 +534,62 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 					}
 				}
 				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 200
+						}
+					}
+				}
+				OR = {
 					any_neighbor_province = {
 						religion = nestorian
 					}
 					area_for_scope_province = {
 						religion = nestorian
 					}
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 200
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
 				}
 			}
 			save_event_target_as = nestorian_possible_target
@@ -525,6 +626,27 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 					}
 				}
 				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 150
+						}
+					}
+				}
+				OR = {
 					any_neighbor_province = {
 						religion = nestorian
 					}
@@ -545,9 +667,59 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 					NOT = {
 						province_distance = {
 							who = PREV
+							distance = 150
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
 							distance = 100
 						}
 					}
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 100
+						}
+					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
 				}
 			}
 			save_event_target_as = nestorian_possible_target
@@ -587,8 +759,83 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 					NOT = {
 						province_distance = {
 							who = PREV
+							distance = 100
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
 							distance = 50
 						}
+					}
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 50
+						}
+					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 50
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
 					}
 				}
 			}
@@ -615,6 +862,10 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 					area_for_scope_province = {
 						religion = nestorian
 					}
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
 				}
 			}
 			save_event_target_as = nestorian_possible_target
@@ -637,8 +888,40 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spec
 				NOT = { has_construction = missionary }
 				NOT = { has_province_modifier = religious_zeal_at_conv }
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				area_for_scope_province = {
+					province_id = event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				any_neighbor_province = {
 					province_id = event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				any_neighbor_province = {
+					province_id = event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+				OR = {
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
 				}
 			}
 			save_event_target_as = nestorian_possible_target
@@ -651,6 +934,87 @@ re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers = {
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = 0 }
 	set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value value = 0 }
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_owned_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_4_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_3_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_2_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_4_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_3_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_2_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_4_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_3_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_2_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_4_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_3_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_2_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_4_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_3_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_2_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_4_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_3_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_2_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_1_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_owned_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_nestorian_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_owned_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_nestorian_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_owned_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_nestorian_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_owned_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_owned_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier_2
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier
+	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2
+	every_owned_province = {
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_province_nestorian_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_province_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_9_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_8_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_7_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_6_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_5_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_4_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_3_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_2_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_1_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_9_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_9_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_multiple_modifier
+		remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_multiple_modifier
+	}
 }
 
 # for changing religion or stopping to exist

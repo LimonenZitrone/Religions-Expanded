@@ -19,6 +19,7 @@
  RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_EASTERN: "A country following an §YEastern§! religion must first centralize the faith before being able to become the Defender of the Faith!"
  RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC: "A country following a §YDharmic§! religion must first centralize the faith before being able to become the Defender of the Faith!"
  RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_PAGAN: "A country following a §YPagan§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+ religions_expanded_tooltip_effect_text: "§YEffects:§!"
 
  # Decisions:
  re_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"

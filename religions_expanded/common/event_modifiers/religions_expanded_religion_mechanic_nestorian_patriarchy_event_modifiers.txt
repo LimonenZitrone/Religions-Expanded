@@ -11,3 +11,249 @@ re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier 
 re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier = {
 	local_missionary_strength = 0.01
 }
+
+## Holy Sites:
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier = {
+	picture = "advisor_cost"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_owned_modifier = {
+	advisor_cost = -0.05
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier = {
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_5_modifier = {
+	state_maintenance_modifier = -0.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_4_modifier = {
+	state_maintenance_modifier = -0.16
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_3_modifier = {
+	state_maintenance_modifier = -0.12
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_2_modifier = {
+	state_maintenance_modifier = -0.08
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_1_modifier = {
+	state_maintenance_modifier = -0.04
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_5_modifier = {
+	improve_relation_modifier = 0.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_4_modifier = {
+	improve_relation_modifier = 0.16
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_3_modifier = {
+	improve_relation_modifier = 0.12
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_2_modifier = {
+	improve_relation_modifier = 0.08
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_1_modifier = {
+	improve_relation_modifier = 0.04
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_5_modifier = {
+	discipline = 0.05
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_4_modifier = {
+	discipline = 0.04
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_3_modifier = {
+	discipline = 0.03
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_2_modifier = {
+	discipline = 0.02
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_1_modifier = {
+	discipline = 0.01
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_5_modifier = {
+	state_maintenance_modifier = -0.1
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_4_modifier = {
+	state_maintenance_modifier = -0.08
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_3_modifier = {
+	state_maintenance_modifier = -0.06
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_2_modifier = {
+	state_maintenance_modifier = -0.04
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_1_modifier = {
+	state_maintenance_modifier = -0.02
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_5_modifier = {
+	improve_relation_modifier = 0.1
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_4_modifier = {
+	improve_relation_modifier = 0.08
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_3_modifier = {
+	improve_relation_modifier = 0.06
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_2_modifier = {
+	improve_relation_modifier = 0.04
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_1_modifier = {
+	improve_relation_modifier = 0.02
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_5_modifier = {
+	discipline = 0.025
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_4_modifier = {
+	discipline = 0.02
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_3_modifier = {
+	discipline = 0.015
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_2_modifier = {
+	discipline = 0.01
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_1_modifier = {
+	discipline = 0.005
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_modifier = {
+	picture = "tax_income"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_owned_modifier = {
+	hostile_attrition = 1
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_nestorian_modifier = {
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_9_modifier = {
+	tax_income = 21.6
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_8_modifier = {
+	tax_income = 19.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_7_modifier = {
+	tax_income = 16.8
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_6_modifier = {
+	tax_income = 14.4
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_5_modifier = {
+	tax_income = 12
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_4_modifier = {
+	tax_income = 9.6
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_3_modifier = {
+	tax_income = 7.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_2_modifier = {
+	tax_income = 4.8
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_1_modifier = {
+	tax_income = 2.4
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_9_modifier = {
+	tax_income = 10.8
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_modifier = {
+	tax_income = 9.6
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_modifier = {
+	tax_income = 8.4
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_modifier = {
+	tax_income = 7.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_modifier = {
+	tax_income = 6
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_modifier = {
+	tax_income = 4.8
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_modifier = {
+	tax_income = 3.6
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_modifier = {
+	tax_income = 2.4
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_modifier = {
+	tax_income = 1.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_9_multiple_modifier = {
+	tax_income = 5.4
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_multiple_modifier = {
+	tax_income = 4.8
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_multiple_modifier = {
+	tax_income = 4.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_multiple_modifier = {
+	tax_income = 3.6
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_multiple_modifier = {
+	tax_income = 3
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_multiple_modifier = {
+	tax_income = 2.4
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_multiple_modifier = {
+	tax_income = 1.8
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_multiple_modifier = {
+	tax_income = 1.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_multiple_modifier = {
+	tax_income = 0.6
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier = {
+	picture = "global_trade_goods_size"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_owned_modifier = {
+	trade_steering = 0.05
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_nestorian_modifier = {
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_province_nestorian_modifier = {
+	trade_goods_size = 1
+	local_tax_modifier = 0.3
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_province_modifier = {
+	trade_goods_size = 0.5
+	local_tax_modifier = 0.2
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_modifier = {
+	picture = "province_trade_power_modifier"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_owned_modifier = {
+	reform_progress_growth = 0.05
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_nestorian_modifier = {
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier = {
+	picture = "development_cost"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_owned_modifier = {
+	build_cost = -0.025
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier = {
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier = {
+	picture = "special_unit_cost_modifier"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_owned_modifier = {
+	global_sailors_modifier = 0.15
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier = {
+	shock_damage_received = -0.2
+	is_marine_modifier = yes
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier_2 = {
+	special_unit_cost_modifier = -0.2
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier = {
+	shock_damage_received = -0.1
+	is_marine_modifier = yes
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2 = {
+	special_unit_cost_modifier = -0.1
+}

@@ -190,3 +190,147 @@ defined_text = {
 		localisation_key = "0"
 	}
 }
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite1ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite2ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_2_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_2_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_2_modifier_desc
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite5ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite6ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_6_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_6_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_6_modifier_desc
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite7ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite9ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc
+	}
+}
