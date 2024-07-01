@@ -7,35 +7,35 @@ re_religion_mechanic_hindu_modifier_dedication_focus_ended = {
 
 re_religion_mechanic_hindu_modifier_dedication_focus_0 = {
 	global_tax_modifier = -0.2
-	re_monthly_religion_mechanic_hindu_change = 0.05
+	re_monthly_religion_mechanic_hindu_change = 0.21
 }
 re_religion_mechanic_hindu_modifier_dedication_focus_1 = {
 	global_tax_modifier = -0.5
-	re_monthly_religion_mechanic_hindu_change = 0.07
+	re_monthly_religion_mechanic_hindu_change = 0.25
 }
 re_religion_mechanic_hindu_modifier_dedication_focus_2 = {
 	global_tax_modifier = -0.5
 	development_cost = 0.1
-	re_monthly_religion_mechanic_hindu_change = 0.1
+	re_monthly_religion_mechanic_hindu_change = 0.31
 }
 re_religion_mechanic_hindu_modifier_dedication_focus_3 = {
 	global_tax_modifier = -0.5
 	development_cost = 0.15
 	core_creation = 0.05
-	re_monthly_religion_mechanic_hindu_change = 0.15
+	re_monthly_religion_mechanic_hindu_change = 0.24
 }
 re_religion_mechanic_hindu_modifier_dedication_focus_4 = {
 	global_tax_modifier = -0.5
 	development_cost = 0.15
 	core_creation = 0.1
-	re_monthly_religion_mechanic_hindu_change = 0.2
+	re_monthly_religion_mechanic_hindu_change = 0.22
 }
 re_religion_mechanic_hindu_modifier_dedication_focus_5 = {
 	global_tax_modifier = -0.5
 	development_cost = 0.15
 	core_creation = 0.1
 	administrative_efficiency = -0.05
-	re_monthly_religion_mechanic_hindu_change = 0.25
+	re_monthly_religion_mechanic_hindu_change = 0.1
 }
 
 re_religion_mechanic_hindu_modifier_spent_dedication_shiva = {
