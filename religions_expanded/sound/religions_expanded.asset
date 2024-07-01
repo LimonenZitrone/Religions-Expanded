@@ -43,7 +43,7 @@ sound = {
 }
 sound = {
 	name = start_convert_nestorian
-	file = "start_conversion_orthodox.wav"
+	file = "start_conversion_christian_orthodox.wav"
 }
 sound = {
 	name = religion_nestorian
