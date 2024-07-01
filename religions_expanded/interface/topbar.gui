@@ -1163,14 +1163,14 @@ guiTypes = {
 			windowType = {
 				name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window"
 				if_resolution = {
-					max_width = 1919
-					position = { x = 540 y = 55 }
+					max_width = 1599
+					position = { x = 702 y = 46 }
 				}
 				if_resolution = {
-					min_width = 1920
-					position = { x = 979 y = 47 }
+					min_width = 1600
+					position = { x = 975 y = 46 }
 				}
-				size = { x = 442 y = 487 }
+				size = { x = 288 y = 522 }
 				backGround = "background"
 				moveable = 1
 
@@ -1184,10 +1184,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_title"
-					position = { x = 43 y = 16 }
+					position = { x = 75 y = 27 }
 					format = center
 					font = "vic_18"
-					maxWidth = 350
+					maxWidth = 135
 					maxHeight = 20
 					fixedsize = yes
 					alwaystransparent = yes
@@ -1196,10 +1196,10 @@ guiTypes = {
 
 				windowType = {
 					name = "center_1_window"
-					position = { x = 17 y = 44 }
+					position = { x = 38 y = 70 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1207,29 +1207,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_2_window"
-					position = { x = 17 y = 88 }
+					position = { x = 38 y = 115 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1237,29 +1229,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_3_window"
-					position = { x = 17 y = 132 }
+					position = { x = 38 y = 160 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1267,29 +1251,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_4_window"
-					position = { x = 17 y = 176 }
+					position = { x = 38 y = 205 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1297,29 +1273,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_5_window"
-					position = { x = 17 y = 220 }
+					position = { x = 38 y = 250 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1327,29 +1295,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_6_window"
-					position = { x = 17 y = 264 }
+					position = { x = 38 y = 295 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1357,29 +1317,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_7_window"
-					position = { x = 17 y = 308 }
+					position = { x = 38 y = 340 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1387,29 +1339,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_8_window"
-					position = { x = 17 y = 352 }
+					position = { x = 38 y = 385 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1417,29 +1361,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 				windowType = {
 					name = "center_9_window"
-					position = { x = 17 y = 396 }
+					position = { x = 38 y = 430 }
 
-					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_icon"
+					guiButtonType = {
+						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button"
 						position = { x = 0 y = 0 }
 						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
@@ -1447,29 +1383,21 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_name"
-						position = { x = 52 y = 10 }
-						format = center
+						position = { x = 55 y = 10 }
+						format = left
 						font = "vic_22"
-						maxWidth = 200
+						maxWidth = 153
 						maxHeight = 22
 						fixedsize = yes
-						scripted = yes
-					}
-					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button"
-						position = { x = 260 y = 6 }
-						spriteType = "button_type_1"
-						buttonFont = "vic_18"
-						buttonText = "SELECT"
 						scripted = yes
 					}
 				}
 
 				guiButtonType = {
 					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_close_button"
-					position = { x = 167 y = -46 }
+					position = { x = 105 y = -48 }
 					orientation = lower_left
-					spriteType = "button_type_9"
+					spriteType = "button_type_6"
 					buttonFont = "vic_18"
 					buttonText = "CLOSE"
 					shortcut = "ESCAPE"

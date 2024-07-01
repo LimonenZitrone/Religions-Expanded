@@ -427,19 +427,6 @@ custom_text_box = {
 	}
 }
 
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_icon
-	potential = {
-		always = yes
-	}
-	frame = {
-		number = 2
-		trigger = {
-			always = yes
-		}
-	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118
-}
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_name
 	potential = {
@@ -463,22 +450,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 3
+		number = 2
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_name
 	potential = {
@@ -502,22 +482,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 4
+		number = 3
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_name
 	potential = {
@@ -541,22 +514,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 5
+		number = 4
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_name
 	potential = {
@@ -580,22 +546,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 6
+		number = 5
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_name
 	potential = {
@@ -619,22 +578,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 7
+		number = 6
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_name
 	potential = {
@@ -658,22 +610,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 8
+		number = 7
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_name
 	potential = {
@@ -697,22 +642,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 9
+		number = 8
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_name
 	potential = {
@@ -736,22 +674,15 @@ custom_button = {
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button_tt
-}
-
-custom_icon = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_icon
-	potential = {
-		always = yes
-	}
 	frame = {
-		number = 10
+		number = 9
 		trigger = {
 			always = yes
 		}
 	}
-	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button_tt
 }
+
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_name
 	potential = {
@@ -774,6 +705,12 @@ custom_button = {
 		custom_tooltip = " "
 		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85
 		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+	}
+	frame = {
+		number = 10
+		trigger = {
+			always = yes
+		}
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button_tt
 }
