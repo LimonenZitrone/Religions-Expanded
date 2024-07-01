@@ -844,6 +844,11 @@
  re_religion_mechanic_nestorian_patriarchy_events2.EVTOPT2: "That's not good!"
  re_religion_mechanic_nestorian_patriarchy_events.2.tt: "The religion in §Y[This.GetName]§! changes to §YNestorian§!. \n[This.GetName] gets '§YReligious Zeal§!' for §Y30 years§!, giving the following effects: \n[local_missionary_strength]: §R-100.0%§!"
 
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME5: "The Patriarchy of Antioch"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC5: "The deep devotion of the Nestorians in [2313.GetName] has awakened a desire for an independent state ruled by Patriarchs of the Church. A large part of the population has expressed support for the idea of such an establishment and has now turned to [Root.Monarch.GetName] for approval."
+ re_religion_mechanic_nestorian_patriarchy_events5.EVTOPT1: "We will never support such a state."
+ re_religion_mechanic_nestorian_patriarchy_events5.EVTOPT2: "[2313.GetName] is rightfully theirs."
+
  # Modifiers:
  ## Mechanic Modifiers:
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier: "Nestorian Center of Conversion"
@@ -851,3 +856,5 @@
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier: "Nearby Nestorian Center of Conversion"
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier: "Nestorian Conversion"
  desc_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier: "§Y[Root.GetName]§! is currently getting converted by the Nestorian Center of Conversion in §Y[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§!. \n \nIt takes §Y18§! months for the province to be converted. The conversion is going on for §Y[Root.ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationValue]§! months."
+ ## Opinion Modifiers:
+ re_religion_mechanic_nestorian_patriarchy_no_antioch_opinion: "Declined to make Antioch an independent state"

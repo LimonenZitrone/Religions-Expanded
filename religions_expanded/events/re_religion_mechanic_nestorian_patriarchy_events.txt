@@ -125,3 +125,115 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.5
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME5
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC5
+	picture = POPE_PREACHING_eventPicture
+
+	major = yes
+	major_trigger = {
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+	}
+
+	trigger = {
+		owns = 2313
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_no_antioch }
+		NOT = { exists = NPA }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.9
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { is_defender_of_faith = yes }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { advisor = theologian }
+		}
+		modifier = {
+			factor = 0.9
+			theologian = 2
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events5.EVTOPT1
+
+		ai_chance = {
+			factor = 0.25
+		}
+
+		2313 = {
+			add_core = NPA
+		}
+		add_prestige = -10
+		add_stability = -1
+		every_country = {
+			limit = {
+				NOT = { tag = ROOT }
+				religion = ROOT
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = re_religion_mechanic_nestorian_patriarchy_no_antioch_opinion
+			}
+		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_no_antioch
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events5.EVTOPT2
+
+		ai_chance = {
+			factor = 0.75
+			modifier = {
+				factor = 0
+				is_subject = yes
+				overlord = { ai = no }
+			}
+		}
+
+		2313 = {
+			add_core = NPA
+			cede_province = NPA
+			if = {
+				limit = {
+					is_core = ROOT
+				}
+				remove_core = ROOT
+			}
+		}
+		add_prestige = 25
+		NPA = {
+			change_religion = nestorian
+			hidden_effect = {
+				change_government = theocracy
+				add_government_reform = nestorian_patriarchy_antioch_reform
+				adopt_reform_progress = FROM
+				add_country_modifier = {
+					name = no_revolution_here_country_dummy
+					duration = -1
+					hidden = yes
+				}
+				set_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+				define_ruler = {
+					min_age = 60
+					max_age = 70
+				}
+				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+re_religion_mechanic_nestorian_patriarchy_no_antioch_opinion = {
+	opinion = -20
+	yearly_decay = 2
+}
