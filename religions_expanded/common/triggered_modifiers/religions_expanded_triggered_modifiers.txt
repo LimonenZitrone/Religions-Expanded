@@ -8,3 +8,27 @@ re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier = {
 
 	monarch_lifespan = 0.2
 }
+
+re_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier = {
+	potential = {
+		re_uses_religion_mechanic = { mechanic = hindu }
+	}
+	trigger = {
+		OR = {
+			AND = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				is_ahead_of_time_in_technology = { tech = adm }
+			}
+			AND = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				is_ahead_of_time_in_technology = { tech = dip }
+			}
+			AND = {
+				re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				is_ahead_of_time_in_technology = { tech = mil }
+			}
+		}
+	}
+
+	re_monthly_religion_mechanic_hindu_change = 0.05
+}
