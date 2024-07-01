@@ -468,6 +468,9 @@
  re_religion_mechanic_hindu_modifier_vishnu_buddha_3: "Major and Minor Deity Combination"
  re_religion_mechanic_hindu_modifier_vishnu_buddha_4: "Major and Minor Deity Combination"
  re_religion_mechanic_hindu_modifier_vishnu_buddha_5: "Major and Minor Deity Combination"
+ ## Triggered Modifiers:
+ re_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier: "Ahead of Time in Technology"
+ desc_re_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier: "Being ahead of time in the technology type fitting our major deity will give us a boost in dedication."
 
  #################################
  ## Four Tenets System Mechanic ##
