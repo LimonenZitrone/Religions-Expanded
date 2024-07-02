@@ -19,7 +19,7 @@ country_decisions = {
 				}
 				OR = {
 					re_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = current level = 1 }
-					re_has_religion_mechanic_hindu_value = { major_deity = current value = 50 }
+					re_has_religion_mechanic_hindu_value = { major_deity = current value = 30 }
 				}
 			}
 			else = {
@@ -31,7 +31,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			re_add_religion_mechanic_hindu_value = { major_deity = current value = -50 }
+			re_add_religion_mechanic_hindu_value = { major_deity = current value = -30 }
 			custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_shiva
 			tooltip = {
 				add_country_modifier = {
