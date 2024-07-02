@@ -483,6 +483,66 @@ on_post_mil_advisor_fired = {
 	}
 }
 
+on_adm_tech_taken = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier
+		}
+		if = {
+			limit = {
+				is_ahead_of_time_in_technology = { tech = adm }
+			}
+			add_adm_power = 100
+			add_yearly_manpower = 0.75
+		}
+		else = {
+			add_adm_power = 75
+			add_yearly_manpower = 0.5
+		}
+	}
+}
+
+on_dip_tech_taken = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier
+		}
+		if = {
+			limit = {
+				is_ahead_of_time_in_technology = { tech = dip }
+			}
+			add_dip_power = 100
+			add_yearly_manpower = 0.75
+		}
+		else = {
+			add_dip_power = 75
+			add_yearly_manpower = 0.5
+		}
+	}
+}
+
+on_mil_tech_taken = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier
+		}
+		if = {
+			limit = {
+				is_ahead_of_time_in_technology = { tech = mil }
+			}
+			add_mil_power = 100
+			add_yearly_manpower = 0.75
+		}
+		else = {
+			add_mil_power = 75
+			add_yearly_manpower = 0.5
+		}
+	}
+}
+
 # ROOT = annexing country, FROM = annexed country
 on_annexed = {
 	FROM = {

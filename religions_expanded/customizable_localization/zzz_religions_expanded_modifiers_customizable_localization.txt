@@ -597,3 +597,27 @@ defined_text = {
 		localisation_key = MODIFIER_DISCIPLINE
 	}
 }
+
+defined_text = {
+	name = local_production_efficiency
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LOCAL_PRODUCTION_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = spy_offence
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SPY_OFFENCE
+	}
+}

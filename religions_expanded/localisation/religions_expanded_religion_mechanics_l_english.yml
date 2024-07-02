@@ -860,6 +860,12 @@
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_2_modifier_desc_nestorian: "All owned provinces that border another owned province with a §YFort§! of at least the level §Y1§! gain per level: \n[tax_income]: §G+2.40§! (§G+0.60§! if neighboring two forts, in which case the lower level will be used)"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_2_modifier_desc: "All owned provinces that border another owned province with a §YFort§! of at least the level §Y1§! gain per level: \n[tax_income]: §G+1.20§! (§G+0.60§! if neighboring two forts, in which case the lower level will be used)"
 
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc_owned: "[stability_cost_modifier]: §G-5.0%§! \nAll owned §YNestorian§! provinces of §Y2§! random non-accepted cultures[Root.ReGetReligionMechanicNestorianPatriarchyHolySite3ModifierDescSelectedCultures] gain: \n[local_tax_modifier]: §G+15.0%§! \n[local_manpower_modifier]: §G+15.0%§! \n[local_sailors_modifier]: §G+10.0%§! \n[local_production_efficiency]: §G+10.0%§! \n§YIf there is no valid non-accepted culture, an accepted culture will be used instead and the bonuses are halved.§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc_nestorian: "All owned §YNestorian§! provinces of §Y2§! random non-accepted cultures[Root.ReGetReligionMechanicNestorianPatriarchyHolySite3ModifierDescSelectedCultures] gain: \n[local_tax_modifier]: §G+15.0%§! \n[local_manpower_modifier]: §G+15.0%§! \n[local_sailors_modifier]: §G+10.0%§! \n[local_production_efficiency]: §G+10.0%§! \n§YIf there is no valid non-accepted culture, an accepted culture will be used instead and the bonuses are halved.§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc: "All owned §YNestorian§! provinces of §Y1§! random non-accepted culture[Root.ReGetReligionMechanicNestorianPatriarchyHolySite3ModifierDescSelectedCultures] gain: \n[local_tax_modifier]: §G+15.0%§! \n[local_manpower_modifier]: §G+15.0%§! \n[local_sailors_modifier]: §G+10.0%§! \n[local_production_efficiency]: §G+10.0%§! \n§YIf there is no valid non-accepted culture, an accepted culture will be used instead and the bonuses are halved.§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_selected_cultures: " (§Y[Root.re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1.GetCultureName]§! and §Y[Root.re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_2.GetCultureName]§!)"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_selected_culture: " (§Y[Root.re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1.GetCultureName]§!)"
+
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc_owned: "[trade_steering]: §G+5.0%§! \nAll owned §YCenters of Trade§! with a minimum level of §Y2§! gain: \n[trade_goods_size]: §G+1.00§! \n[local_tax_modifier]: §G+30.0%§!"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc_nestorian: "All owned §YCenters of Trade§! with a minimum level of §Y2§! gain: \n[trade_goods_size]: §G+1.00§! \n[local_tax_modifier]: §G+30.0%§!"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc: "All owned §YCenters of Trade§! with a minimum level of §Y2§! gain: \n[trade_goods_size]: §G+0.50§! \n[local_tax_modifier]: §G+20.0%§!"
@@ -871,6 +877,10 @@
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_owned: "[build_cost]: §G-2.5%§! \nWhen developing an owned §YNestorian§! province, [Root.GetName] has a §Y15.0%§! chance to receive §G1§! additional development for free."
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_nestorian: "When developing an owned §YNestorian§! province, [Root.GetName] has a §Y15.0%§! chance to receive §G1§! additional development for free."
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc: "When developing an owned §YNestorian§! province, [Root.GetName] has a §Y10.0%§! chance to receive §G1§! additional development for free."
+
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc_owned: "[spy_offence]: §G+10.0%§! \nWhen researching a technology, [Root.GetName] receives §G75§! (§G100§! if ahead of time) of the technology's monarch power and §G6§! (§G9§! if ahead of time) months of manpower. \n[idea_cost]: §G-5.0%§! (per Ahead of Time Technology Category) \n§YThis idea cost bonus is checked and applied or removed on monthly tick for as long as this modifier is active.§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc_nestorian: "When researching a technology, [Root.GetName] receives §G75§! (§G100§! if ahead of time) of the technology's monarch power and §G6§! (§G9§! if ahead of time) months of manpower. \n[idea_cost]: §G-5.0%§! (per Ahead of Time Technology Category) \n§YThis idea cost bonus is checked and applied or removed on monthly tick for as long as this modifier is active.§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc: "When researching a technology, [Root.GetName] receives §G75§! (§G100§! if ahead of time) of the technology's monarch power and §G6§! (§G9§! if ahead of time) months of manpower. \n[idea_cost]: §G-2.5%§! (per Ahead of Time Technology Category) \n§YThis idea cost bonus is checked and applied or removed on monthly tick for as long as this modifier is active.§!"
 
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_owned: "[global_sailors_modifier]: §G+15.0%§! \n[special_unit_cost_modifier]: §G-20.0%§! \n[shock_damage_received]: §G-20.0%§! \n[is_marine_modifier]"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_nestorian: "[special_unit_cost_modifier]: §G-20.0%§! \n[shock_damage_received]: §G-20.0%§! \n[is_marine_modifier]"
@@ -964,6 +974,12 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_multiple_modifier: "Pilgrimage Boon from Arbil"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_multiple_modifier: "Pilgrimage Boon from Arbil"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_multiple_modifier: "Pilgrimage Boon from Arbil"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier: "Pilgrimage Boon from Xi'an"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite3ModifierDesc]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_owned_modifier: "Pilgrimage Boon from Xi'an"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_nestorian_modifier: "Pilgrimage Boon from Xi'an"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier: "Pilgrimage Boon from Xi'an"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier: "Pilgrimage Boon from Xi'an"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier: "Pilgrimage Boon from Hotan"
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite5ModifierDesc]"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_owned_modifier: "Pilgrimage Boon from Hotan"
@@ -978,6 +994,10 @@
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite7ModifierDesc]"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_owned_modifier: "Pilgrimage Boon from Pataliputra"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier: "Pilgrimage Boon from Pataliputra"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite8ModifierDesc]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_owned_modifier: "Pilgrimage Boon from Gyeongju"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_modifier: "Pilgrimage Boon from Gyeongju"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier: "Pilgrimage Boon from Socotra"
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite9ModifierDesc]"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_owned_modifier: "Pilgrimage Boon from Socotra"
@@ -985,9 +1005,21 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier_2: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2: "Pilgrimage Boon from Socotra"
-
  ## Opinion Modifiers:
  re_religion_mechanic_nestorian_patriarchy_no_antioch_opinion: "Declined to make Antioch an independent state"
+ ## Triggered Modifiers:
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_3_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_3_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in all technology categories."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_2_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_2_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in two technology categories."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_1_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_1_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in one technology category."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_3_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_3_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in all technology categories."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_2_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_2_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in two technology categories."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_1_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_1_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in one technology category."
 
  # State Edicts:
  re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded: "Silk Road Missionaries"

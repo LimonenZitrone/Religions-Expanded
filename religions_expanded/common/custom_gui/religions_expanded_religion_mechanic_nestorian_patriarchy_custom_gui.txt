@@ -1790,8 +1790,524 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_decision decision accordingly
 	trigger = {
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier }
+		OR = {
+			owns = 700
+			any_owned_province = {
+				province_religion = nestorian
+				has_owner_culture = no
+			}
+		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		custom_tooltip = " "
+		if = {
+			limit = {
+				owns = 700
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc_owned
+		custom_tooltip = " "
+		if = {
+			limit = {
+				NOT = { owns = 700 }
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc_nestorian
+		custom_tooltip = " "
+		if = {
+			limit = {
+				NOT = { owns = 700 }
+				700 = {
+					owner = {
+						re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_base_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_base_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc
+		hidden_effect = {
+			add_country_modifier = {
+				name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					owns = 700
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_owned_modifier
+					duration = 7300
+					hidden = yes
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_nestorian_modifier
+					duration = 7300
+					hidden = yes
+				}
+				if = {
+					limit = {
+						any_owned_province = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+					}
+					random_owned_province = {
+						limit = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+						save_event_target_as = culture_province_target
+					}
+					if = {
+						limit = {
+							has_saved_event_target = culture_province_target
+						}
+						every_owned_province = {
+							limit = {
+								province_religion = nestorian
+								culture = event_target:culture_province_target
+							}
+							add_province_modifier = {
+								name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier
+								duration = 7300
+							}
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = no
+									NOT = { culture = event_target:culture_province_target }
+								}
+							}
+							random_owned_province = {
+								limit = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = no
+									NOT = { culture = event_target:culture_province_target }
+								}
+								save_event_target_as = culture_province_target_2
+							}
+							if = {
+								limit = {
+									has_saved_event_target = culture_province_target_2
+								}
+								every_owned_province = {
+									limit = {
+										province_religion = nestorian
+										culture = event_target:culture_province_target_2
+									}
+									add_province_modifier = {
+										name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier
+										duration = 7300
+									}
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								any_owned_province = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+								}
+							}
+							random_owned_province = {
+								limit = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+								}
+								save_event_target_as = culture_province_target_2
+							}
+							if = {
+								limit = {
+									has_saved_event_target = culture_province_target_2
+								}
+								every_owned_province = {
+									limit = {
+										province_religion = nestorian
+										culture = event_target:culture_province_target_2
+									}
+									add_province_modifier = {
+										name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+										duration = 7300
+									}
+								}
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = yes
+						}
+					}
+					random_owned_province = {
+						limit = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = yes
+						}
+						save_event_target_as = culture_province_target
+					}
+					if = {
+						limit = {
+							has_saved_event_target = culture_province_target
+						}
+						every_owned_province = {
+							limit = {
+								province_religion = nestorian
+								culture = event_target:culture_province_target
+							}
+							add_province_modifier = {
+								name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+								duration = 7300
+							}
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+									NOT = { culture = event_target:culture_province_target }
+								}
+							}
+							random_owned_province = {
+								limit = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+									NOT = { culture = event_target:culture_province_target }
+								}
+								save_event_target_as = culture_province_target_2
+							}
+							if = {
+								limit = {
+									has_saved_event_target = culture_province_target_2
+								}
+								every_owned_province = {
+									limit = {
+										province_religion = nestorian
+										culture = event_target:culture_province_target_2
+									}
+									add_province_modifier = {
+										name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+										duration = 7300
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					700 = {
+						owner = {
+							re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+						}
+					}
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_nestorian_modifier
+					duration = 7300
+					hidden = yes
+				}
+				if = {
+					limit = {
+						any_owned_province = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+					}
+					random_owned_province = {
+						limit = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+						save_event_target_as = culture_province_target
+					}
+					if = {
+						limit = {
+							has_saved_event_target = culture_province_target
+						}
+						every_owned_province = {
+							limit = {
+								province_religion = nestorian
+								culture = event_target:culture_province_target
+							}
+							add_province_modifier = {
+								name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier
+								duration = 7300
+							}
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = no
+									NOT = { culture = event_target:culture_province_target }
+								}
+							}
+							random_owned_province = {
+								limit = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = no
+									NOT = { culture = event_target:culture_province_target }
+								}
+								save_event_target_as = culture_province_target_2
+							}
+							if = {
+								limit = {
+									has_saved_event_target = culture_province_target_2
+								}
+								every_owned_province = {
+									limit = {
+										province_religion = nestorian
+										culture = event_target:culture_province_target_2
+									}
+									add_province_modifier = {
+										name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier
+										duration = 7300
+									}
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								any_owned_province = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+								}
+							}
+							random_owned_province = {
+								limit = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+								}
+								save_event_target_as = culture_province_target_2
+							}
+							if = {
+								limit = {
+									has_saved_event_target = culture_province_target_2
+								}
+								every_owned_province = {
+									limit = {
+										province_religion = nestorian
+										culture = event_target:culture_province_target_2
+									}
+									add_province_modifier = {
+										name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+										duration = 7300
+									}
+								}
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = yes
+						}
+					}
+					random_owned_province = {
+						limit = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = yes
+						}
+						save_event_target_as = culture_province_target
+					}
+					if = {
+						limit = {
+							has_saved_event_target = culture_province_target
+						}
+						every_owned_province = {
+							limit = {
+								province_religion = nestorian
+								culture = event_target:culture_province_target
+							}
+							add_province_modifier = {
+								name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+								duration = 7300
+							}
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+									NOT = { culture = event_target:culture_province_target }
+								}
+							}
+							random_owned_province = {
+								limit = {
+									province_religion = nestorian
+									has_owner_culture = no
+									has_owner_accepted_culture = yes
+									NOT = { culture = event_target:culture_province_target }
+								}
+								save_event_target_as = culture_province_target_2
+							}
+							if = {
+								limit = {
+									has_saved_event_target = culture_province_target_2
+								}
+								every_owned_province = {
+									limit = {
+										province_religion = nestorian
+										culture = event_target:culture_province_target_2
+									}
+									add_province_modifier = {
+										name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+										duration = 7300
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						any_owned_province = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+					}
+					random_owned_province = {
+						limit = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+						save_event_target_as = culture_province_target
+					}
+					if = {
+						limit = {
+							has_saved_event_target = culture_province_target
+						}
+						every_owned_province = {
+							limit = {
+								province_religion = nestorian
+								culture = event_target:culture_province_target
+							}
+							add_province_modifier = {
+								name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier
+								duration = 7300
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = yes
+						}
+					}
+					random_owned_province = {
+						limit = {
+							province_religion = nestorian
+							has_owner_culture = no
+							has_owner_accepted_culture = yes
+						}
+						save_event_target_as = culture_province_target
+					}
+					if = {
+						limit = {
+							has_saved_event_target = culture_province_target
+						}
+						every_owned_province = {
+							limit = {
+								province_religion = nestorian
+								culture = event_target:culture_province_target
+							}
+							add_province_modifier = {
+								name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier
+								duration = 7300
+							}
+						}
+					}
+				}
+			}
+			set_variable = { which = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1 value = 0 }
+			set_variable = { which = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_2 value = 0 }
+			if = {
+				limit = {
+					has_saved_event_target = culture_province_target
+				}
+				event_target:culture_province_target = {
+					ROOT = {
+						export_to_variable = {
+							which = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1
+							value = culture
+							who = PREV
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_saved_event_target = culture_province_target_2
+					}
+					event_target:culture_province_target_2 = {
+						ROOT = {
+							export_to_variable = {
+								which = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_2
+								value = culture
+								who = PREV
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button_tt
 }
@@ -2166,8 +2682,93 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_decision decision accordingly
 	trigger = {
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier }
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		custom_tooltip = " "
+		if = {
+			limit = {
+				owns = 2745
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc_owned
+		custom_tooltip = " "
+		if = {
+			limit = {
+				NOT = { owns = 2745 }
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc_nestorian
+		custom_tooltip = " "
+		if = {
+			limit = {
+				NOT = { owns = 2745 }
+				2745 = {
+					owner = {
+						re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_base_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_base_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc
+		hidden_effect = {
+			add_country_modifier = {
+				name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					owns = 2745
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_owned_modifier
+					duration = 7300
+					hidden = yes
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_modifier
+					duration = 7300
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					2745 = {
+						owner = {
+							re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+						}
+					}
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_modifier
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt
 }
