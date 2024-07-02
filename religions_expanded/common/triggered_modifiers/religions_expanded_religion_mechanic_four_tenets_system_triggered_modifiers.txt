@@ -1,0 +1,10 @@
+re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier = {
+	potential = {
+		re_uses_religion_mechanic = { mechanic = four_tenets_system }
+	}
+	trigger = {
+		re_has_religion_mechanic_four_tenets_system_ability_4 = yes
+	}
+
+	monarch_lifespan = 0.2
+}
