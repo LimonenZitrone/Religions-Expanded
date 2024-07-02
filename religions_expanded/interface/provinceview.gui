@@ -2549,6 +2549,23 @@ guiTypes = {
 				position = { x=478 y=144}
 				quadTextureSprite ="GFX_build_interface_building_tab"
 			}
+			###########################################
+			## START Religions Expanded Custom GUI 1 ##
+			###########################################
+
+			#####################################
+			### Nestorian Patriarchy Mechanic ###
+			#####################################
+			iconType = {
+				name = re_religion_mechanic_nestorian_patriarchy_province_center_of_reformation_target_icon
+				position = { x = 251 y = 239 }
+				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_overlay"
+				scripted = yes
+			}
+
+			###########################################
+			##  END Religions Expanded Custom GUI 1  ##
+			###########################################
 		}
 
 
@@ -2839,9 +2856,9 @@ guiTypes = {
 				borderSize = { x = 0 y = 0 }
 			}
 
-			##################################
-			## Religions Expanded GUI Start ##
-			##################################
+			###########################################
+			## START Religions Expanded Custom GUI 2 ##
+			###########################################
 			windowType = {
 				name = "re_state_missionary_window"
 				position = { x = 272 y = 64 }
@@ -2861,10 +2878,9 @@ guiTypes = {
 					scripted = yes
 				}
 			}
-
-			##################################
-			##  Religions Expanded GUI End  ##
-			##################################
+			###########################################
+			##  END Religions Expanded Custom GUI 2  ##
+			###########################################
 		}
 
 		#### BUILDINGS WINDOW

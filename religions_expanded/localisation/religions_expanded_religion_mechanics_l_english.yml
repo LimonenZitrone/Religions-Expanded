@@ -740,6 +740,7 @@
  ## Nestorian Patriarchy Mechanic ##
  ###################################
  # GUIs:
+ re_religion_mechanic_nestorian_patriarchy_province_center_of_reformation_target_icon_tt: "§Y[Root.GetName]§! is currently getting converted to the §YNestorian§! faith by the Nestorian Center of Conversion in §Y[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§!. \n \nIt takes §Y18§! months for the province to be converted. The conversion is going on for §Y[Root.ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationValue]§! months."
  re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt: "Nestorian Patriarchy \n--------------\nPatriarchal Influence: §Y[This.ReGetReligionMechanicNestorianPatriarchyValue]§!"
  re_religion_mechanic_nestorian_patriarchy_main_title: "Nestorian Patriarchy"
  re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title: "Patriarchy\nController"
@@ -897,7 +898,7 @@
  desc_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier: "§Y[Root.GetName]§! is a Center of Conversion for the §YNestorian§! faith. It will target provinces in nearby regions and convert them within §Y18 months§!. [Root.ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetTooltip]"
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier: "Nearby Nestorian Center of Conversion"
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier: "Nestorian Conversion"
- desc_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier: "§Y[Root.GetName]§! is currently getting converted by the Nestorian Center of Conversion in §Y[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§!. \n \nIt takes §Y18§! months for the province to be converted. The conversion is going on for §Y[Root.ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationValue]§! months."
+ desc_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_modifier: "§Y[Root.GetName]§! is currently getting converted to the §YNestorian§! faith by the Nestorian Center of Conversion in §Y[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§!. \n \nIt takes §Y18§! months for the province to be converted. The conversion is going on for §Y[Root.ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationValue]§! months."
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier: "Pilgrimage Boon from Constantinople"
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite1ModifierDesc]"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_owned_modifier: "Pilgrimage Boon from Constantinople"
