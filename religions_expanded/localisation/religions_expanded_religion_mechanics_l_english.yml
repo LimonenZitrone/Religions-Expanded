@@ -762,8 +762,8 @@
  re_religion_mechanic_nestorian_patriarchy_main_interactions_title: "Interactions"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_1_name: "Help to protect [151.GetName]"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button_tt: "§YHelp to protect [151.GetName]§! \nSend some soldiers to help protect the Holy Site of §Y[151.GetName]§!. This will increase our Patriarch Influence."
- re_religion_mechanic_nestorian_patriarchy_main_interaction_2_name: "Mandate to Proselytizing"
- re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button_tt: "§YMandate to Proselytizing§! \nAsk the Patriarch to grant us a mandate to proselytize heretics and heathens."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_2_name: "Mandate to Proselytize"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button_tt: "§YMandate to Proselytize§! \nAsk the Patriarch to grant us a mandate to proselytize heretics and heathens."
  re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title: "Holy Sites"
  re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title_tt: ""
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name: "[151.GetName]"
@@ -1029,7 +1029,7 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier: "Protection of Constantinople"
- re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier: "Patriarchal Mandate to Proselytizing"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier: "Mandate to Proselytize"
  ## Opinion Modifiers:
  re_religion_mechanic_nestorian_patriarchy_no_constantinople_opinion: "Declined to make Constantinople an independent state"
  ## Province Triggered Modifiers:

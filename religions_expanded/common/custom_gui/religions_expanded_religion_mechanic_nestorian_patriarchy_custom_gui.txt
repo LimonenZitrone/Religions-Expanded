@@ -316,7 +316,7 @@ custom_button = {
 			duration = 3650
 		}
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button_tt
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button_tt
 }
 
 custom_text_box = {
