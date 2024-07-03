@@ -1262,7 +1262,7 @@ theocracy = {
 				blood_theocracy_reform
 
 				# Religions Expanded:
-				nestorian_patriarchy_antioch_reform
+				nestorian_patriarchy_constantinople_reform
 			}
 		}
 		internal_vs_external_mission = {

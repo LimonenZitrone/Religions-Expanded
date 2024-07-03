@@ -1,3 +1,21 @@
+re_religion_mechanic_nestorian_patriarchy_constantinople_province_triggered_modifier = {
+	potential = {
+		owner = {
+			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			NOT = { tag = NPA }
+		}
+	}
+
+	trigger = {
+		owner = {
+			NOT = { overlord_of = NPA }
+		}
+	}
+
+	re_yearly_religion_mechanic_nestorian_patriarchy_change = -10
+	diplomatic_reputation = -1
+}
+
 re_religion_mechanic_nestorian_patriarchy_center_of_reformation_province_triggered_modifier = {
 	hidden = yes
 

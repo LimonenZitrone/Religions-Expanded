@@ -60,6 +60,42 @@ re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = {
 			which = re_yearly_religion_mechanic_nestorian_patriarchy_value
 			value = modifier:re_yearly_religion_mechanic_nestorian_patriarchy_change
 		}
+		set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_modifiers which = re_yearly_religion_mechanic_nestorian_patriarchy_value }
+		# Base:
+		change_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value value = 0.5 }
+		# Missionaries:
+		export_to_variable = {
+			which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_missionaries
+			value = trigger_value:num_of_missionaries
+		}
+		multiply_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_missionaries value = 0.5 }
+		change_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_missionaries }
+		# Tolerance of True Faith:
+		export_to_variable = {
+			which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_ttf
+			value = modifier:tolerance_own
+		}
+		change_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_ttf value = -4 }
+		multiply_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_ttf value = 0.5 }
+		change_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_ttf }
+		# Stability:
+		if = {
+			limit = {
+				stability = 1
+			}
+			set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_stability value = 1 }
+			change_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_stability }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = 0 }
+			}
+			set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_stability value = -1 }
+			change_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_stability }
+		}
+		else = {
+			set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_stability value = 0 }
+		}
 	}
 }
 
@@ -934,6 +970,10 @@ re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers = {
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = 0 }
 	set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value value = 0 }
+	set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_modifiers value = 0 }
+	set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_missionaries value = 0 }
+	set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_ttf value = 0 }
+	set_variable = { which = re_yearly_religion_mechanic_nestorian_patriarchy_value_from_stability value = 0 }
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1 value = 0 }
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_2 value = 0 }
 	remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier

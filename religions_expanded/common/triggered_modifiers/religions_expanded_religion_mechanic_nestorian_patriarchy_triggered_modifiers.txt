@@ -1,3 +1,17 @@
+re_religion_mechanic_nestorian_patriarchy_constantinople_subjugation_triggered_modifier = {
+	potential = {
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		has_discovered = 151
+		NOT = { tag = NPA }
+	}
+
+	trigger = {
+		overlord_of = NPA
+	}
+
+	diplomatic_reputation = -2
+}
+
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_3_ahead_of_time_triggered_modifier = {
 	potential = {
 		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }

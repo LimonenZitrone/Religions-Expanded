@@ -870,9 +870,7 @@ christian = {
 			}
 		}
 
-		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
-
-		misguided_heretic = yes		# Other christians hate them less
+		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY }
 	}
 
 	harmonized_modifier = harmonized_christian

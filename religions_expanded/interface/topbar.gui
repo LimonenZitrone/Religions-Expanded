@@ -915,6 +915,56 @@ guiTypes = {
 					alwaystransparent = yes
 					scripted = yes
 				}
+
+				windowType = {
+					name = "list_window"
+					position = { x = 2 y = 24 }
+
+					windowType = {
+						name = "interaction_1_window"
+						position = { x = 0 y = 0 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_1_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
+					windowType = {
+						name = "interaction_2_window"
+						position = { x = 0 y = 48 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_2_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
+				}
 			}
 
 			windowType = {

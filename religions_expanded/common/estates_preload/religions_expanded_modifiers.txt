@@ -61,4 +61,12 @@ estate_special = {
 			religion = nestorian
 		}
 	}
+	modifier_definition = {
+		type = loyalty
+		key = re_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction
+		trigger = {
+			# keep the same as re_uses_religion_mechanic_nestorian_patriarchy
+			religion = nestorian
+		}
+	}
 }

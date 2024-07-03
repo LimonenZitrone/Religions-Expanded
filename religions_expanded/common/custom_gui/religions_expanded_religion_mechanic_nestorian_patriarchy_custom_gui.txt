@@ -262,6 +262,64 @@ custom_text_box = {
 }
 
 custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_interaction_1_decision decision accordingly
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier }
+		years_of_manpower = 2
+	}
+	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		add_yearly_manpower = -2
+		add_country_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier
+			duration = 3650
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_2_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_interaction_2_decision decision accordingly
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier }
+		years_of_income = 1
+		OR = {
+			NOT = { exists = NPA }
+			AND = {
+				NOT = { war_with = NPA }
+				reverse_has_opinion = {
+					who = NPA
+					value = 150
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier
+			duration = 3650
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button_tt
+}
+
+custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title
 	potential = {
 		always = yes

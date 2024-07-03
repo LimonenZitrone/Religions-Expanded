@@ -12,7 +12,7 @@ re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier 
 	local_missionary_strength = 0.01
 }
 
-## Holy Sites:
+## Holy Site Modifiers:
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier = {
 	picture = "advisor_cost"
 }
@@ -286,4 +286,17 @@ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier = {
 }
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2 = {
 	special_unit_cost_modifier = -0.1
+}
+
+## Interaction Modifiers:
+re_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier = {
+	re_yearly_religion_mechanic_nestorian_patriarchy_change = 1
+	religion = yes
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier = {
+	picture = "re_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction"
+	missionary_maintenance_cost = -0.1
+	re_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction = 0.5
+	religion = yes
 }

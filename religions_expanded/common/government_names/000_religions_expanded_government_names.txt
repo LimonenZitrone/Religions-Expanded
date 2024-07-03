@@ -1,20 +1,20 @@
-re_gov_name_patriarchy = {
+re_gov_name_nestorian_patriarchy = {
 	rank = {
-		1 = RE_GOV_NAME_PATRIARCHY
-		2 = RE_GOV_NAME_PATRIARCHY
-		3 = RE_GOV_NAME_PATRIARCHY
+		1 = RE_GOV_NAME_NESTORIAN_PATRIARCHY
+		2 = RE_GOV_NAME_NESTORIAN_PATRIARCHY
+		3 = RE_GOV_NAME_NESTORIAN_PATRIARCHY
 	}
 
 	ruler_male = {
-		1 = RE_GOV_RULER_PATRIARCHY
-		2 = RE_GOV_RULER_PATRIARCHY
-		3 = RE_GOV_RULER_PATRIARCHY
+		1 = RE_GOV_RULER_NESTORIAN_PATRIARCHY
+		2 = RE_GOV_RULER_NESTORIAN_PATRIARCHY
+		3 = RE_GOV_RULER_NESTORIAN_PATRIARCHY
 	}
 
 	ruler_female  ={
-		1 = RE_GOV_RULER_PATRIARCHY_fem
-		2 = RE_GOV_RULER_PATRIARCHY_fem
-		3 = RE_GOV_RULER_PATRIARCHY_fem
+		1 = RE_GOV_RULER_NESTORIAN_PATRIARCHY_fem
+		2 = RE_GOV_RULER_NESTORIAN_PATRIARCHY_fem
+		3 = RE_GOV_RULER_NESTORIAN_PATRIARCHY_fem
 	}
 	consort_male = {
 		1 = CONSORT
@@ -41,6 +41,6 @@ re_gov_name_patriarchy = {
 	}
 
 	trigger = {
-		has_reform = nestorian_patriarchy_antioch_reform
+		has_reform = nestorian_patriarchy_constantinople_reform
 	}
 }

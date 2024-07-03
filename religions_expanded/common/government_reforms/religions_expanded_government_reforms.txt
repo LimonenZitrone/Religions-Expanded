@@ -1,4 +1,4 @@
-nestorian_patriarchy_antioch_reform = {
+nestorian_patriarchy_constantinople_reform = {
 	potential = {
 		tag = NPA
 	}

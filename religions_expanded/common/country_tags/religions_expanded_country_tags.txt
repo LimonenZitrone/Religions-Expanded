@@ -1,1 +1,1 @@
-NPA = "countries/Nestorian Patriarchy Antioch.txt"
+NPA = "countries/Nestorian Patriarchy Constantinople.txt"
