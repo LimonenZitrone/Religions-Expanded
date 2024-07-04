@@ -12,9 +12,9 @@ re_set_religion_mechanic_nestorian_patriarchy_value = {
 		hidden_effect = {
 			if = {
 				limit = {
-					re_has_religion_mechanic_nestorian_patriarchy_value = { value = 100 }
+					re_has_religion_mechanic_nestorian_patriarchy_value = { value = 200 }
 				}
-				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = 100 }
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = 200 }
 			}
 			else_if = {
 				limit = {
@@ -40,9 +40,9 @@ re_add_religion_mechanic_nestorian_patriarchy_value = {
 		hidden_effect = {
 			if = {
 				limit = {
-					re_has_religion_mechanic_nestorian_patriarchy_value = { value = 100 }
+					re_has_religion_mechanic_nestorian_patriarchy_value = { value = 200 }
 				}
-				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = 100 }
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_value value = 200 }
 			}
 			else_if = {
 				limit = {
@@ -116,10 +116,17 @@ re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = {
 		hidden_effect = {
 			every_country_including_inactive = {
 				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier
 				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 			}
 			save_global_event_target_as = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
 			set_country_flag = re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller
+			add_country_modifier = {
+				name = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier
+				duration = -1
+			}
 			country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.1 }
 			re_religion_mechanic_nestorian_patriarchy_clear_center_of_reformation = yes
 		}
@@ -1092,6 +1099,9 @@ re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_reli
 		else = {
 			clr_country_flag = re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller
 			clear_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier
+			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
+			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier
 		}
 	}
 	if = {

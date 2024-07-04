@@ -1,4 +1,14 @@
 # Mechanic Modifiers:
+re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier = {
+	diplomats = 1
+	prestige = 1
+	advisor_pool = 2
+	ae_impact = -0.2
+	church_loyalty_modifier = 0.1
+	diplomatic_reputation = 1
+	reduced_stab_impacts = yes
+}
+
 re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier = {
 	picture = "re_religion_mechanic_nestorian_patriarchy_center_of_reformation"
 	local_missionary_strength = -0.05
@@ -298,5 +308,32 @@ re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier = {
 	picture = "re_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction"
 	missionary_maintenance_cost = -0.1
 	re_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction = 0.5
+	religion = yes
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier = {
+	relation_with_same_religion = 25
+	reverse_relation_with_same_religion = 25
+	accept_vassalization_reasons = 5
+	religion = yes
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier = {
+	relation_with_heretics = 30
+	reverse_relation_with_heretic_religion = 30
+	tolerance_heretic = 0.5
+	religion = yes
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier = {
+	relation_with_heathens = 30
+	reverse_relation_with_heathen_religion = 30
+	tolerance_heathen = 0.5
+	religion = yes
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier = {
+	warscore_cost_vs_other_religion = -0.1
+	enforce_religion_cost = -0.1
 	religion = yes
 }

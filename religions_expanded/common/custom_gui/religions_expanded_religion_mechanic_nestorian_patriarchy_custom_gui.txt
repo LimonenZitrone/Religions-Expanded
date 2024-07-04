@@ -320,6 +320,120 @@ custom_button = {
 }
 
 custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_interaction_3_decision decision accordingly
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier }
+		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+		dip_power_cost = 150
+		any_known_country = {
+			religion = ROOT
+		}
+	}
+	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		dip_power_cost = 150
+		add_country_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier
+			duration = 3650
+			desc = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier_tt
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_3_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_4_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_4_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_interaction_4_decision decision accordingly
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier }
+		dip_power_cost = 150
+		any_known_country = {
+			religion_group = ROOT
+			NOT = { religion = ROOT }
+		}
+	}
+	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		dip_power_cost = 150
+		add_country_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier
+			duration = 3650
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_4_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_5_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_interaction_5_decision decision accordingly
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier }
+		dip_power_cost = 150
+		any_known_country = {
+			NOT = { religion_group = ROOT }
+		}
+	}
+	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		dip_power_cost = 150
+		add_country_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier
+			duration = 3650
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_name
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button
+	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_interaction_6_decision decision accordingly
+	trigger = {
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier }
+		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+		mil_power_cost = 200
+		any_known_country = {
+			NOT = { religion_group = ROOT }
+		}
+	}
+	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		mil_power_cost = 200
+		add_country_modifier = {
+			name = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
+			duration = 1825
+			desc = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier_tt
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier_tt_2
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button_tt
+}
+
+custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title
 	potential = {
 		always = yes
@@ -337,7 +451,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier }
 		OR = {
 			owns = 151
@@ -354,7 +468,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -1037,7 +1151,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_modifier }
 		OR = {
 			owns = 4293
@@ -1051,7 +1165,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -1848,7 +1962,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier }
 		OR = {
 			owns = 700
@@ -1860,7 +1974,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -2396,7 +2510,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier }
 		OR = {
 			owns = 710
@@ -2407,7 +2521,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -2532,12 +2646,12 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_modifier }
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -2633,7 +2747,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier }
 		OR = {
 			owns = 558
@@ -2644,7 +2758,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -2740,12 +2854,12 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier }
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {
@@ -2841,7 +2955,7 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_decision decision accordingly
 	trigger = {
-		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 20 }
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier }
 		OR = {
 			owns = 1099
@@ -2850,7 +2964,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
-		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -20 }
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
 		custom_tooltip = " "
 		if = {
 			limit = {

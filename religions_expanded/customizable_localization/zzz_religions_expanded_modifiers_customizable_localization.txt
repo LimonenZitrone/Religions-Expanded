@@ -621,3 +621,87 @@ defined_text = {
 		localisation_key = SPY_OFFENCE
 	}
 }
+
+defined_text = {
+	name = diplomats
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_DIPLOMATS
+	}
+}
+
+defined_text = {
+	name = yearly_prestige
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_PRESTIGE
+	}
+}
+
+defined_text = {
+	name = advisor_pool
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ADVISOR_POOL
+	}
+}
+
+defined_text = {
+	name = church_loyalty_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = RE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER
+	}
+}
+
+defined_text = {
+	name = diplomatic_reputation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DIPLO_SKILL
+	}
+}
+
+defined_text = {
+	name = ae_impact
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_AE_IMPACT
+	}
+}
+
+defined_text = {
+	name = reduced_stab_impacts
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REDUCED_STAB_IMPACTS
+	}
+}

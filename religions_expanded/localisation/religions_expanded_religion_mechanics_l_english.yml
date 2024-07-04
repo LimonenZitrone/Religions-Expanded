@@ -744,9 +744,9 @@
  re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt: "Nestorian Patriarchy \n--------------\nPatriarchal Influence: §Y[This.ReGetReligionMechanicNestorianPatriarchyValue]§!"
  re_religion_mechanic_nestorian_patriarchy_main_title: "Nestorian Patriarchy"
  re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title: "Patriarchy\nController"
- re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt: "A new Patriarchy Controller is selected whenever the ruler of the §YPatriarchy of [NPA.GetName]§! dies."
- re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty_tt: "There is no §YPatriarchy Controller§! at the moment."
- re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_tt: "@[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetTag] §Y[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetName]§! is the current §YPatriarchy Controller§!."
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt: "A new Patriarchy Controller is selected whenever the ruler of the §YPatriarchy of [NPA.GetName]§! dies. \n--------------\n§YThe Patriarchy Controller receives the following benefits:§! \n[diplomats]: §G+1§! \n[yearly_prestige]: §G+1.00§! \n[advisor_pool]: §G+2§! \n[diplomatic_reputation]: §G+1.00§! \n[church_loyalty_modifier]: §G+10.0%§! \n[ae_impact]: §G-20.0%§! \n[reduced_stab_impacts]"
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty_tt: "There is no §YPatriarchy Controller§! at the moment. \n--------------\n§YThe Patriarchy Controller receives the following benefits:§! \n[diplomats]: §G+1§! \n[yearly_prestige]: §G+1.00§! \n[advisor_pool]: §G+2§! \n[diplomatic_reputation]: §G+1.00§! \n[church_loyalty_modifier]: §G+10.0%§! \n[ae_impact]: §G-20.0%§! \n[reduced_stab_impacts]"
+ re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_tt: "@[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetTag] §Y[re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetName]§! is the current §YPatriarchy Controller§!. \n--------------\n§YThe Patriarchy Controller receives the following benefits:§! \n[diplomats]: §G+1§! \n[yearly_prestige]: §G+1.00§! \n[advisor_pool]: §G+2§! \n[diplomatic_reputation]: §G+1.00§! \n[church_loyalty_modifier]: §G+10.0%§! \n[ae_impact]: §G-20.0%§! \n[reduced_stab_impacts]"
  re_religion_mechanic_nestorian_patriarchy_main_influence_title: "Patriarch Influence"
  re_religion_mechanic_nestorian_patriarchy_main_influence_title_tt: "§YPatriarch Influence§! \nPatriarch Influence represents our influence on the Patriarchy. \n\nPatriarch Influence is gained by the following actions: \n   - Owned Provinces being converted by a Nestorian Center of Conversion \n\nPatriarch Influence is lost by the following actions: \n   - Converting Provinces with Missionaries \n\nThe yearly change of Patriarch Influence is affected by: \n   - Amount of Missionaries \n   - Stability \n   - Tolerance of the True Faith \n   - Modifiers"
  re_religion_mechanic_nestorian_patriarchy_main_influence_value: "[This.ReGetReligionMechanicNestorianPatriarchyValue]"
@@ -764,6 +764,14 @@
  re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button_tt: "§YHelp to protect [151.GetName]§! \nSend some soldiers to help protect the Holy Site of §Y[151.GetName]§!. This will increase our Patriarch Influence."
  re_religion_mechanic_nestorian_patriarchy_main_interaction_2_name: "Mandate to Proselytize"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button_tt: "§YMandate to Proselytize§! \nAsk the Patriarch to grant us a mandate to proselytize heretics and heathens."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_3_name: "Patriarchal Diplomacy"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_3_button_tt: "§YPatriarchal Diplomacy§! \nSend out envoys in the name of the Patriarch to our brothers in faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_4_name: "Send Envoys to Heretics"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_4_button_tt: "§YSend Envoys to Heretics§! \nSend out envoys to the people that are misguided and believe in a heretic faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_5_name: "Send Envoys to Disbelievers"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button_tt: "§YSend Envoys to Disbelievers§! \nSend out envoys to the people that are misguided and believe in a heathen faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_name: "Spread the Nestorian Faith"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button_tt: "§YSpread the Nestorian Faith§! \nIssue a Patriarchal mandate to spread the Nestorian faith."
  re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title: "Holy Sites"
  re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title_tt: ""
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name: "[151.GetName]"
@@ -805,6 +813,9 @@
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button_tt: "§YSelect [85.GetName] as Center of Conversion§!"
 
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_no_controller: "§ROnly the §YPatriarchy Controller§! can select the Center of Conversion.§W"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier_tt: "for §Y10 years§! or until we are no longer §YPatriarchy Controller§!"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier_tt: "for §Y5 years§! or until we are no longer §YPatriarchy Controller§!"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier_tt_2: "While this modifier is active, we gain access to a peace offer that allows force converting §YHeathens§!."
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_yes: "£yes£ §YIf the Holy Site is owned by [Root.GetName]:§!"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_no: "£no£ §YIf the Holy Site is owned by [Root.GetName]:§!"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_yes: "£yes£ §YOtherwise if the Holy Site is owned by a [Root.Religion.GetName] country:§!"
@@ -927,6 +938,8 @@
 
  # Modifiers:
  ## Mechanic Modifiers:
+ re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier: "Patriarchy Controller"
+ desc_re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier: "We are the Controller of the Nestorian Patriarchy."
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier: "Nestorian Center of Conversion"
  desc_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier: "§Y[Root.GetName]§! is a Center of Conversion for the §YNestorian§! faith. It will target provinces in nearby regions and convert them within §Y18 months§!. [Root.ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetTooltip]"
  re_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier: "Nearby Nestorian Center of Conversion"
@@ -1030,6 +1043,10 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier: "Protection of Constantinople"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier: "Mandate to Proselytize"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier: "Patriarchal Diplomacy"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier: "Sent Envoys to the Heretics"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier: "Sent Envoys to the Disbelievers"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier: "Mandate to Spread the Nestorian Faith"
  ## Opinion Modifiers:
  re_religion_mechanic_nestorian_patriarchy_no_constantinople_opinion: "Declined to make Constantinople an independent state"
  ## Province Triggered Modifiers:

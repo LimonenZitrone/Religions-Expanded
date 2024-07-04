@@ -41,3 +41,11 @@
  RE_GOV_NAME_NESTORIAN_PATRIARCHY: "Patriarchy"
  RE_GOV_RULER_NESTORIAN_PATRIARCHY: "Patriarch"
  RE_GOV_RULER_NESTORIAN_PATRIARCHY_fem: "Matriarch"
+
+ # Modifier Names:
+ RE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "[Root.GetClergyName] Loyalty Equilibrium"
+
+ # Peace Treaties:
+ re_peace_treaty_convert_heathen_desc: "@[From.GetTag] §Y[From.GetName]§! will convert to the §Y[Root.Religion.GetName]§! faith. @[Root.GetTag] §Y[Root.GetName]§! gains §G+5.0§! Prestige."
+ CB_ALLOWED_re_peace_treaty_convert_heathen: "Force Religion (Heathen)"
+ PEACE_re_peace_treaty_convert_heathen: "Force Religion"

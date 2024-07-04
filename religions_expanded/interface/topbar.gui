@@ -964,6 +964,94 @@ guiTypes = {
 							scripted = yes
 						}
 					}
+					windowType = {
+						name = "interaction_3_window"
+						position = { x = 0 y = 96 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_3_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_3_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
+					windowType = {
+						name = "interaction_4_window"
+						position = { x = 0 y = 144 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_4_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_4_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
+					windowType = {
+						name = "interaction_5_window"
+						position = { x = 0 y = 192 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_5_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
+					windowType = {
+						name = "interaction_6_window"
+						position = { x = 0 y = 240 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_6_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
 				}
 			}
 
