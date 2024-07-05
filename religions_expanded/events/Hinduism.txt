@@ -120,7 +120,9 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		has_personal_deity = shiva
+		#has_personal_deity = shiva
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
@@ -188,6 +190,7 @@ country_event = {
 		}
 		add_ruler_modifier = { name = shiva_srishti }
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 	}
 }
 
@@ -199,7 +202,9 @@ country_event = {
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
-		has_personal_deity = shiva
+		#has_personal_deity = shiva
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
@@ -277,6 +282,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 	}
 }
 
@@ -288,7 +294,9 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		has_personal_deity = shiva
+		#has_personal_deity = shiva
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 		is_at_war = yes
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -363,6 +371,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 	}
 }
 
@@ -374,7 +383,9 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		has_personal_deity = shiva
+		#has_personal_deity = shiva
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
@@ -442,6 +453,7 @@ country_event = {
 		}
 		add_ruler_modifier = { name = shiva_tirodhana }
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 	}
 }
 
@@ -453,7 +465,9 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
-		has_personal_deity = shiva
+		#has_personal_deity = shiva
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
 		any_ally = {
@@ -535,6 +549,7 @@ country_event = {
 		}
 		add_ruler_modifier = { name = shiva_anugraha }
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 	}
 }
 
@@ -551,6 +566,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
+		always = no # shakti removed
 		has_personal_deity = shakti
 		any_known_country = {
 			marriage_with = ROOT
@@ -611,6 +627,7 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
+		always = no # shakti removed
 		has_personal_deity = shakti
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -664,6 +681,7 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
+		always = no # shakti removed
 		has_personal_deity = shakti
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -754,6 +772,7 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
+		always = no # shakti removed
 		has_personal_deity = shakti
 		has_ruler_modifier = hindu_shakta_1
 		has_ruler_modifier = jnana
@@ -855,6 +874,7 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
+		always = no # shakti removed
 		has_personal_deity = shakti
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -943,6 +963,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
+		always = no # shakti removed
 		has_personal_deity = shakti
 		has_ruler_modifier = hindu_shakta_2
 		has_ruler_modifier = jnana
@@ -1120,6 +1141,7 @@ country_event = {
 		}
 		add_ruler_modifier = { name = vishnu_lakshmi }
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
 	}
 }
 
@@ -1158,6 +1180,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = -10 }
 	}
 
 	# Lakshmi is the supreme divine
@@ -1207,7 +1230,9 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		has_personal_deity = vishnu
+		#has_personal_deity = vishnu
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
@@ -1293,6 +1318,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
 	}
 }
 
@@ -1323,6 +1349,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
 	}
 }
 
@@ -1401,6 +1428,7 @@ country_event = {
 		}
 		add_prestige = 10
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
 	}
 }
 
@@ -1441,6 +1469,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 	}
 
 	# Shiva is the supreme divine, similar to Vishnu
@@ -1490,7 +1519,9 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	trigger = {
-		has_personal_deity = vishnu
+		#has_personal_deity = vishnu
+		re_uses_religion_mechanic = { mechanic = hindu }
+		re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
@@ -1599,6 +1630,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
 	}
 }
 
@@ -1638,6 +1670,7 @@ country_event = {
 			}
 		}
 		add_ruler_modifier = { name = jnana }
+		re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
 	}
 }
 
@@ -1799,6 +1832,7 @@ country_event = {
 	picture = KING_SICK_IN_BED_eventPicture
 
 	trigger = {
+		always = no # ganga removed
 		has_personal_deity = ganga
 		ruler_age = 60
 		NOT = { has_ruler_modifier = hindu_ganga }
@@ -1842,6 +1876,7 @@ country_event = {
 	picture = EXPLORERS_eventPicture
 
 	trigger = {
+		always = no # ganga removed
 		has_personal_deity = ganga
 		has_country_flag = ganga_funeral
 		has_regency = no
@@ -1906,6 +1941,7 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 
 	trigger = {
+		always = no # ganga removed
 		has_personal_deity = ganga
 		has_country_flag = ganga_funeral
 		has_regency = no
@@ -2192,6 +2228,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
+		always = no # ganga removed
 		has_personal_deity = shakti
 		is_at_war = yes
 		is_heir_leader = yes
@@ -2239,5 +2276,6 @@ country_event = {
 		name = "hindu_events.50.a"
 		custom_tooltip = "hindu_events.50.a.tt" #A reference to the Guru Meditation error on old Amiga computers.
 		add_stability = -1
+		re_add_religion_mechanic_hindu_value = { major_deity = current value = -10 }
 	}
 }
