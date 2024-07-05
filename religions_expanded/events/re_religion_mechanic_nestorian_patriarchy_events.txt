@@ -110,6 +110,7 @@ province_event = {
 	}
 }
 
+# Simulation of the ruler death of the Patriarchy if that doesn't exist
 country_event = {
 	id = re_religion_mechanic_nestorian_patriarchy_events.4
 	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME4
@@ -253,6 +254,14 @@ country_event = {
 				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
 			}
 		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+				re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
+			}
+		}
 	}
 
 	option = {
@@ -299,5 +308,13 @@ country_event = {
 			}
 		}
 		switch_tag = NPA
+		hidden_effect = {
+			every_country = {
+				limit = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+				re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
+			}
+		}
 	}
 }
