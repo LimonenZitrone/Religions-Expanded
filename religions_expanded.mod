@@ -3,6 +3,6 @@ tags={
 	"Religion"
 }
 name="Religions Expanded"
-supported_version="1.37.*"
+supported_version="v1.37.*"
 picture="thumbnail.png"
 path="mod/religions_expanded"
