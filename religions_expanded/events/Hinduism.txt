@@ -20,12 +20,14 @@ country_event = {
 			has_country_flag = brahmin_deity_interaction
 			AND = {
 				NOT = { has_personal_deity = buddha }
-				NOT = { has_personal_deity = shiva }
 				NOT = { has_personal_deity = ganesha }
 				NOT = { has_personal_deity = surya }
-				NOT = { has_personal_deity = ganga }
-				NOT = { has_personal_deity = shakti }
-				NOT = { has_personal_deity = vishnu }
+				NOT = { has_personal_deity = kali }
+				NOT = { has_personal_deity = hanuman }
+				#NOT = { has_personal_deity = shiva }
+				#NOT = { has_personal_deity = ganga }
+				#NOT = { has_personal_deity = shakti }
+				#NOT = { has_personal_deity = vishnu }
 			}
 		}
 	}
