@@ -513,56 +513,56 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						limit = {
 							ruler_has_personality = inspiring_leader_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = bold_fighter_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = tactical_genius_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = strict_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = conqueror_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = martial_educator_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = peasant_revolt_leader_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.09 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.15 }
 					}
 					# Negative
 					if = {
 						limit = {
 							ruler_has_personality = malevolent_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.02 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.03 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = craven_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.04 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.05 }
 					}
 				}
 				else_if = {
@@ -574,68 +574,68 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						limit = {
 							ruler_has_personality = industrious_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = entrepreneur_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = incorruptible_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = scholar_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = architectural_visionary_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = midas_touched_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = legendary_pirate_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.09 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.15 }
 					}
 					# Negative
 					if = {
 						limit = {
 							ruler_has_personality = greedy_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.02 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.03 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = obsessive_perfectionist_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.02 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.03 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = drunkard_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.04 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = embezzler_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.04 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.05 }
 					}
 				}
 				else_if = {
@@ -647,38 +647,38 @@ re_export_monthly_religion_mechanic_hindu_value_gain = {
 						limit = {
 							ruler_has_personality = just_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = righteous_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.03 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.05 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = kind_hearted_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = tolerant_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.06 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = 0.1 }
 					}
 					# Negative
 					if = {
 						limit = {
 							ruler_has_personality = babbling_buffoon_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.02 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.03 }
 					}
 					if = {
 						limit = {
 							ruler_has_personality = cruel_personality
 						}
-						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.04 }
+						change_variable = { which = re_monthly_religion_mechanic_hindu_value_ruler_personality value = -0.05 }
 					}
 				}
 				change_variable = { which = re_monthly_religion_mechanic_hindu_value which = re_monthly_religion_mechanic_hindu_value_ruler_personality }
