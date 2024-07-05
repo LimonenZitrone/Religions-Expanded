@@ -183,7 +183,7 @@
  hanuman: "Hanuman"
  hanuman_desc: "Hanuman Desc"
 
- re_religion_mechanic_hindu_dynamic_modifier_tt: "Depending on the selected §YMajor Deity§! our your §YLevel of Dedication§! towards it, you will gain another bonus."
+ re_religion_mechanic_hindu_dynamic_modifier_tt: "Depending on the selected §YMajor Deity§! and your §YLevel of Dedication§! towards it, you will gain another bonus."
  re_religion_mechanic_hindu_dynamic_modifier_tt_lost: "You will lose the specific bonus gained from the combination of this §YMinor Deity§! and the selected §YMajor Deity§!."
 
  # Variables:
