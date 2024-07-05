@@ -46,11 +46,13 @@ re_religion_mechanic_hindu_modifier_spent_dedication_shiva = {
 re_religion_mechanic_hindu_modifier_spent_dedication_brahma = {
 	build_cost = -0.2
 	build_time = -0.2
+	great_project_upgrade_cost = -0.2
 	religion = yes
 }
 re_religion_mechanic_hindu_modifier_spent_dedication_vishnu = {
 	accept_vassalization_reasons = 10
 	diplomatic_upkeep = 2
+	diplomatic_reputation = 1
 	religion = yes
 }
 
