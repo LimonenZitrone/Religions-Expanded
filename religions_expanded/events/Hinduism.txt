@@ -2228,7 +2228,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		always = no # ganga removed
+		always = no # shakti removed
 		has_personal_deity = shakti
 		is_at_war = yes
 		is_heir_leader = yes
