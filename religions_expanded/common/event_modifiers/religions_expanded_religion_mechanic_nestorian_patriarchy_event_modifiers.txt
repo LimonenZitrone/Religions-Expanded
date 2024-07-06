@@ -278,24 +278,21 @@ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_nestorian_modifier = 
 }
 
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier = {
-	picture = "special_unit_cost_modifier"
+	picture = "hostile_fleet_attrition"
 }
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_owned_modifier = {
 	global_sailors_modifier = 0.15
 }
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier = {
-	shock_damage_received = -0.2
-	is_marine_modifier = yes
 }
-re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier_2 = {
-	special_unit_cost_modifier = -0.2
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_province_nestorian_modifier = {
+	hostile_fleet_attrition = 4
+	hostile_disembark_speed = 0.5
+	local_defender_dice_roll_bonus = 1
 }
-re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier = {
-	shock_damage_received = -0.1
-	is_marine_modifier = yes
-}
-re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2 = {
-	special_unit_cost_modifier = -0.1
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_province_modifier = {
+	hostile_fleet_attrition = 4
+	hostile_disembark_speed = 0.25
 }
 
 ## Interaction Modifiers:
@@ -335,5 +332,11 @@ re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier = {
 re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier = {
 	warscore_cost_vs_other_religion = -0.1
 	enforce_religion_cost = -0.1
+	religion = yes
+}
+
+re_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier = {
+	yearly_corruption = -0.05
+	national_focus_years = -5
 	religion = yes
 }

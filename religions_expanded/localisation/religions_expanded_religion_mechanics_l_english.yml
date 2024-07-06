@@ -772,6 +772,8 @@
  re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button_tt: "§YSend Envoys to Disbelievers§! \nSend out envoys to the people that are misguided and believe in a heathen faith."
  re_religion_mechanic_nestorian_patriarchy_main_interaction_6_name: "Spread the Nestorian Faith"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button_tt: "§YSpread the Nestorian Faith§! \nIssue a Patriarchal mandate to spread the Nestorian faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_7_name: "Request Patriarchal Officials"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_7_button_tt: "§YRequest Patriarchal Officials§! \nAsk the Patriarch to sent some officials to us to help our administration."
  re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title: "Holy Sites"
  re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title_tt: ""
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name: "[151.GetName]"
@@ -919,9 +921,9 @@
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc_nestorian: "When researching a technology, [Root.GetName] receives §G75§! (§G100§! if ahead of time) of the technology's monarch power and §G6§! (§G9§! if ahead of time) months of manpower. \n[idea_cost]: §G-5.0%§! (per Ahead of Time Technology Category) \n§YThis idea cost bonus is checked and applied or removed on monthly tick for as long as this modifier is active.§!"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_8_modifier_desc: "When researching a technology, [Root.GetName] receives §G75§! (§G100§! if ahead of time) of the technology's monarch power and §G6§! (§G9§! if ahead of time) months of manpower. \n[idea_cost]: §G-2.5%§! (per Ahead of Time Technology Category) \n§YThis idea cost bonus is checked and applied or removed on monthly tick for as long as this modifier is active.§!"
 
- string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_owned: "[global_sailors_modifier]: §G+15.0%§! \n[special_unit_cost_modifier]: §G-20.0%§! \n[shock_damage_received]: §G-20.0%§! \n[is_marine_modifier]"
- string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_nestorian: "[special_unit_cost_modifier]: §G-20.0%§! \n[shock_damage_received]: §G-20.0%§! \n[is_marine_modifier]"
- string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc: "[special_unit_cost_modifier]: §G-10.0%§! \n[shock_damage_received]: §G-10.0%§! \n[is_marine_modifier]"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_owned: "[global_sailors_modifier]: §G+15.0%§! \nAll owned coastal §YNestorian§! provinces gain: \n[local_defender_dice_roll_bonus]: §G+1.00§! \n[hostile_disembark_speed]: §G+50.0%§! \n[hostile_fleet_attrition]: §G+4.00§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc_nestorian: "All owned coastal §YNestorian§! provinces gain: \n[local_defender_dice_roll_bonus]: §G+1.00§! \n[hostile_disembark_speed]: §G+50.0%§! \n[hostile_fleet_attrition]: §G+4.00§!"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc: "All owned coastal §YNestorian§! provinces gain: \n[hostile_disembark_speed]: §G+25.0%§! \n[hostile_fleet_attrition]: §G+4.00§!"
 
  # Events:
  re_religion_mechanic_nestorian_patriarchy_events.EVTNAME1: "Patriarchy Controller"
@@ -1042,15 +1044,15 @@
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite9ModifierDesc]"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_owned_modifier: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier: "Pilgrimage Boon from Socotra"
- re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_nestorian_modifier_2: "Pilgrimage Boon from Socotra"
- re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier: "Pilgrimage Boon from Socotra"
- re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_base_modifier_2: "Pilgrimage Boon from Socotra"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_province_nestorian_modifier: "Pilgrimage Boon from Socotra"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_province_modifier: "Pilgrimage Boon from Socotra"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier: "Protection of Constantinople"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier: "Mandate to Proselytize"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier: "Patriarchal Diplomacy"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier: "Sent Envoys to the Heretics"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier: "Sent Envoys to the Disbelievers"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier: "Mandate to Spread the Nestorian Faith"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier: "Patriarchal Officials"
  ## Opinion Modifiers:
  re_religion_mechanic_nestorian_patriarchy_no_constantinople_opinion: "Declined to make Constantinople an independent state"
  ## Province Triggered Modifiers:

@@ -918,7 +918,7 @@ guiTypes = {
 
 				windowType = {
 					name = "list_window"
-					position = { x = 2 y = 24 }
+					position = { x = 2 y = 26 }
 
 					windowType = {
 						name = "interaction_1_window"
@@ -944,7 +944,7 @@ guiTypes = {
 					}
 					windowType = {
 						name = "interaction_2_window"
-						position = { x = 0 y = 48 }
+						position = { x = 0 y = 46 }
 
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button"
@@ -966,7 +966,7 @@ guiTypes = {
 					}
 					windowType = {
 						name = "interaction_3_window"
-						position = { x = 0 y = 96 }
+						position = { x = 0 y = 92 }
 
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_3_button"
@@ -988,7 +988,7 @@ guiTypes = {
 					}
 					windowType = {
 						name = "interaction_4_window"
-						position = { x = 0 y = 144 }
+						position = { x = 0 y = 138 }
 
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_4_button"
@@ -1010,7 +1010,7 @@ guiTypes = {
 					}
 					windowType = {
 						name = "interaction_5_window"
-						position = { x = 0 y = 192 }
+						position = { x = 0 y = 184 }
 
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button"
@@ -1032,7 +1032,7 @@ guiTypes = {
 					}
 					windowType = {
 						name = "interaction_6_window"
-						position = { x = 0 y = 240 }
+						position = { x = 0 y = 230 }
 
 						guiButtonType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button"
@@ -1042,6 +1042,28 @@ guiTypes = {
 						}
 						instantTextBoxType = {
 							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_6_name"
+							position = { x = 30 y = 14 }
+							format = center
+							font = "vic_18_black"
+							maxWidth = 186
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							scripted = yes
+						}
+					}
+					windowType = {
+						name = "interaction_7_window"
+						position = { x = 0 y = 276 }
+
+						guiButtonType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_7_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_7_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"

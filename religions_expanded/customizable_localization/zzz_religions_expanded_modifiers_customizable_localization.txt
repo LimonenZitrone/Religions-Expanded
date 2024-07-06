@@ -705,3 +705,39 @@ defined_text = {
 		localisation_key = MODIFIER_REDUCED_STAB_IMPACTS
 	}
 }
+
+defined_text = {
+	name = local_defender_dice_roll_bonus
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_DEFENDER_DICE_ROLL_BONUS
+	}
+}
+
+defined_text = {
+	name = hostile_disembark_speed
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_HOSTILE_DISEMBARK_SPEED
+	}
+}
+
+defined_text = {
+	name = hostile_fleet_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_HOSTILE_FLEET_ATTRITION
+	}
+}
