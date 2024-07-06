@@ -9,6 +9,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/re_state_missionary_button_glow.dds"
 	}
 
+	# Casus Bellis:
+	spriteType = {
+		name = "GFX_cb_re_religion_mechanic_nestorian_patriarchy_excommunication"
+		texturefile = "gfx/interface/casus_bellis/cb_excommunication.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	# Diplomatic Actions Categories:
+	spriteType = {
+		name = "GFX_diplomacy_action_patriarch_authority"
+		texturefile = "gfx//interface//icon_diplomacy_papacy.dds"
+		alwaystransparent = yes
+	}
+
 	# Religion Mechanics:
 	## Sukha Mechanic:
 	spriteType = {

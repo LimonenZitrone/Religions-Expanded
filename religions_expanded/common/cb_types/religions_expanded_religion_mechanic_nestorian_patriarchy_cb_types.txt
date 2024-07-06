@@ -1,0 +1,24 @@
+cb_re_religion_mechanic_nestorian_patriarchy_excommunication = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		NOT = { has_ruler_modifier = re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier }
+		is_revolutionary = no
+	}
+
+	prerequisites = {
+		religion = FROM
+		FROM = {
+			has_ruler_modifier = re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier
+			is_neighbor_of = ROOT
+		}
+		OR = {
+			hre_religion_treaty = no
+			capital_scope = { is_part_of_hre = no }
+			FROM = { capital_scope = { is_part_of_hre = no } }
+		}
+	}
+
+	war_goal = re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal
+}

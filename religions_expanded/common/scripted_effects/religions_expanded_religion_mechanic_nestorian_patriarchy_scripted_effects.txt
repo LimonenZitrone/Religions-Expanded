@@ -167,6 +167,13 @@ re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = {
 				}
 				play_sound = "new_pope_selected"
 			}
+
+			if = {
+				limit = {
+					has_ruler_modifier = re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier
+				}
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier
+			}
 		}
 	}
 }
@@ -1126,12 +1133,8 @@ re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_reli
 					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 				}
 			}
-			random_country = {
-				limit = {
-					NOT = { tag = PREV }
-					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
-				}
-				re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+			151 = {
+				province_event = { id = re_religion_mechanic_nestorian_patriarchy_events.3 } # New Patriarchy Controller
 			}
 		}
 		else = {

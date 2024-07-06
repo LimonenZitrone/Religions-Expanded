@@ -942,6 +942,15 @@
  re_religion_mechanic_nestorian_patriarchy_events5.EVTOPT2: "[151.GetName] is rightfully theirs."
  re_religion_mechanic_nestorian_patriarchy_events5.EVTOPT3: "[151.GetName] is rightfully theirs. (§YPlay as [NPA.GetName]§!)"
 
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME6: "Excommunication!"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC6: "The Patriarch Controller from @[From.GetTag] §Y[From.GetName]§! has excommunicated @[Root.GetTag] §Y[Root.GetName]§!!"
+ re_religion_mechanic_nestorian_patriarchy_events6.EVTOPT1: "That's terrible!"
+ re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier_tt: "until ruler death"
+
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME7: "Excommunication Lifted!"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC7: "The Patriarch Controller from @[From.GetTag] §Y[From.GetName]§! has lifted the excommunication of @[Root.GetTag] §Y[Root.GetName]§!!"
+ re_religion_mechanic_nestorian_patriarchy_events7.EVTOPT1: "Wonderful!"
+
  # Modifiers:
  ## Mechanic Modifiers:
  re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier: "Patriarchy Controller"
@@ -1053,6 +1062,9 @@
  re_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier: "Sent Envoys to the Disbelievers"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier: "Mandate to Spread the Nestorian Faith"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier: "Patriarchal Officials"
+ ## Diplomatic Action Modifiers:
+ re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier: "Excommunication"
+ desc_re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier: "Our ruler has been excommunicated. May God have mercy on the sinner's soul!"
  ## Opinion Modifiers:
  re_religion_mechanic_nestorian_patriarchy_no_constantinople_opinion: "Declined to make Constantinople an independent state"
  ## Province Triggered Modifiers:
@@ -1081,3 +1093,29 @@
  # Estate Privileges:
  re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary: "Patriarchal Emissary"
  re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetClergyName] and the Patriarch."
+
+ # Casus Bellis:
+ cb_re_religion_mechanic_nestorian_patriarchy_excommunication: "Excommunicated Ruler"
+ cb_re_religion_mechanic_nestorian_patriarchy_excommunication_desc: "Their ruler has been excommunicated."
+
+ # War Goals:
+ re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal: "Take a province"
+ re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal_desc: "War goal is to take a province."
+
+ # New Diplomatic Actions:
+ ## Categories:
+ DIPLOMACYACTION_CATEGORY_patriarch_authority: "Patriarchal actions"
+ ## Actions:
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_title: "Excommunicate"
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_desc: "Do you wish to excommunicate [From.Monarch.GetName]? \nNeighboring [Root.Religion.GetName] countries will gain a Casus Belli against §Y[From.GetName]§! and §Y[From.GetName]§! will suffer severe penalties."
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tooltip: "Excommunication will give them severe penalties and give neighboring [Root.Religion.GetName] nations a Casus Belli against them.\n"
+ re_religion_mechanic_nestorian_patriarchy_action_lift_excommunication_title: "Lift Excommunication"
+ re_religion_mechanic_nestorian_patriarchy_action_lift_excommunication_desc: "Do you wish to lift the excommunication imposed on §Y[From.GetName]§!?"
+ re_religion_mechanic_nestorian_patriarchy_action_lift_excommunication_tooltip: "Lift the excommunication imposed on §Y[From.GetName]§!.\n"
+ ## Trigger Tooltips:
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_recently_used: "§R- We can only excommunicate a ruler every §Y5 years§!.§W"
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_wrong_religion: "§R- We can only excommunicate §Y[Root.Religion.GetName]s§!.§W"
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_wrong_age: "§R- We can only excommunicate countries in the §YAge of Discovery§! and §YAge of Reformation§!.§W"
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_too_influencial: "§R- They have too much influence with the Patriarch.§W"
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_defender_of_faith: "§R- We cannot excommunicate the Defender of the Faith.§W"
+ re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_too_high_opinion: "§R- [NPA.GetName] has a too high opinion of them. It needs to be below §Y0§!.§W"

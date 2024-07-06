@@ -94,11 +94,128 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			random_country = {
+			set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0 }
+			every_country = {
 				limit = {
 					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 				}
-				re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0 }
+				# Prestige
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp
+					value = trigger_value:prestige
+				}
+				divide_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 4 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp }
+				# Legitimacy Equivalent
+				if = {
+					limit = {
+						OR = {
+							uses_legitimacy = yes
+							uses_republican_tradition = yes
+							uses_devotion = yes
+							uses_meritocracy = yes
+							uses_horde_unity = yes
+						}
+					}
+					export_to_variable = {
+						which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp
+						value = trigger_value:legitimacy_equivalent
+					}
+				}
+				else = {
+					set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 100 }
+				}
+				divide_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 4 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp }
+				# Diplomatic Reputation
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp
+					value = modifier:diplomatic_reputation
+				}
+				multiply_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 3 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp }
+				# Corruption
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp
+					value = trigger_value:corruption
+				}
+				multiply_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = -5 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp }
+				# Stability
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp
+					value = trigger_value:stability
+				}
+				multiply_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 5 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp }
+				# Religious Unity
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp
+					value = trigger_value:religious_unity
+				}
+				multiply_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 20 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp }
+				if = {
+					limit = {
+						NOT = { check_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0.001 } }
+					}
+					set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0.001 }
+				}
+				PREV = { change_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = PREV } }
+			}
+			set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_total which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight }
+			random_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_total }
+			if = {
+				limit = {
+					NOT = { check_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0.001 } }
+				}
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0.001 }
+			}
+			every_country = {
+				limit = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+				if = {
+					limit = {
+						PREV = { check_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0.001 } }
+					}
+					PREV = {
+						subtract_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight which = PREV }
+						if = {
+							limit = { NOT = { check_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0.001 } } }
+							PREV = { save_event_target_as = next_patriarchy_controller }
+						}
+					}
+				}
+			}
+			set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0 }
+			set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_total value = 0 }
+			every_country = {
+				limit = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0 }
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_new_controller_weight_temp value = 0 }
+			}
+			if = {
+				limit = {
+					NOT = { has_saved_event_target = next_patriarchy_controller }
+				}
+				random_country = {
+					limit = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+					save_event_target_as = next_patriarchy_controller
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = next_patriarchy_controller
+				}
+				event_target:next_patriarchy_controller = {
+					re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+				}
 			}
 		}
 	}
@@ -316,5 +433,51 @@ country_event = {
 				re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
 			}
 		}
+	}
+}
+
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.6
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME6
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC6
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	major = yes
+	major_trigger = {
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events6.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		tooltip = {
+			add_country_modifier = {
+				name = re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier
+				duration = -1
+				desc = re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier_tt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.7
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME7
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC7
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	major_trigger = {
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events7.EVTOPT1
+
+		ai_chance = { factor = 100 }
 	}
 }

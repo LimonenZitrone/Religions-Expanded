@@ -340,3 +340,15 @@ re_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier = {
 	national_focus_years = -5
 	religion = yes
 }
+
+# Diplomatic Action Modifiers:
+re_religion_mechanic_nestorian_patriarchy_excommunicate_cooldown_modifier = {
+}
+re_religion_mechanic_nestorian_patriarchy_excommunicated_modifier = {
+	prestige = -2
+	re_yearly_religion_mechanic_nestorian_patriarchy_change = -10
+	devotion = -5
+	tolerance_own = -3
+	reverse_relation_with_same_religion = -100
+	religion = yes
+}
