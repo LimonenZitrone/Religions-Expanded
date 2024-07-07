@@ -352,6 +352,11 @@
  re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_4: "[advisor_cost]: §G-15.0%§!"
  re_religion_mechanic_hindu_dynamic_modifier_vishnu_buddha_5: "[advisor_cost]: §G-18.0%§!"
 
+ # Events:
+ re_religion_mechanic_hindu_events.EVTNAME1: "Monument in [monument_province.GetName]"
+ re_religion_mechanic_hindu_events.EVTDESC1: "The construction of our monument in [monument_province.GetName] has been finally completed! It shows the great dedication of the [Root.GetAdjective] people to our gods!"
+ re_religion_mechanic_hindu_events1.EVTOPT1: "Wonderful!"
+
  # Decisions:
  re_religion_mechanic_hindu_spend_dedication_decision_title: "Spend Dedication"
  re_religion_mechanic_hindu_spend_dedication_decision_desc: "Spend some Dedication Progress for short time bonuses."
