@@ -233,6 +233,27 @@ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_mod
 	local_production_efficiency = 0.05
 }
 
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_modifier = {
+	picture = "local_manpower"
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_owned_modifier = {
+	manpower_recovery_speed = 0.05
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_nestorian_modifier = {
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_double_modifier = {
+	local_manpower = 1
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_modifier = {
+	local_manpower = 0.75
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_double_modifier = {
+	local_manpower = 0.75
+}
+re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_modifier = {
+	local_manpower = 0.5
+}
+
 re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier = {
 	picture = "global_trade_goods_size"
 }

@@ -741,3 +741,15 @@ defined_text = {
 		localisation_key = MODIFIER_HOSTILE_FLEET_ATTRITION
 	}
 }
+
+defined_text = {
+	name = manpower_recovery_speed
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MANPOWER_RECOVERY
+	}
+}

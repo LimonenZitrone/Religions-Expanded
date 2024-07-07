@@ -838,6 +838,7 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button_tt_modifier_effect: "[Root.GetName] gets '§YPilgrimage Boon from Pataliputra§!' for §Y20 years§!, giving the following effects:"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button_tt_modifier_effect: "[Root.GetName] gets '§YPilgrimage Boon from Gyeongju§!' for §Y20 years§!, giving the following effects:"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button_tt_modifier_effect: "[Root.GetName] gets '§YPilgrimage Boon from Socotra§!' for §Y20 years§!, giving the following effects:"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt_produced_goods_trigger: "Produces §YSalt§! or a §YMetal§! trade good"
 
  # Custom Modifiers:
  re_yearly_religion_mechanic_nestorian_patriarchy_change: "Yearly Patriarch Influence"
@@ -909,6 +910,10 @@
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_modifier_desc: "All owned §YNestorian§! provinces of §Y1§! random non-accepted culture[Root.ReGetReligionMechanicNestorianPatriarchyHolySite3ModifierDescSelectedCultures] gain: \n[local_tax_modifier]: §G+15.0%§! \n[local_manpower_modifier]: §G+15.0%§! \n[local_sailors_modifier]: §G+10.0%§! \n[local_production_efficiency]: §G+10.0%§! \n§YIf there is no valid non-accepted culture, an accepted culture will be used instead and the bonuses are halved.§!"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_selected_cultures: " (§Y[Root.re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1.GetCultureName]§! and §Y[Root.re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_2.GetCultureName]§!)"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_3_selected_culture: " (§Y[Root.re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_selected_culture_1.GetCultureName]§!)"
+
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc_owned: "[manpower_recovery_speed]: §G+5.0%§! \nAll owned §YNestorian§! provinces that produce §YSalt§! or a §YMetal§! trade good and have a §YManpower§! or §YLand Forcelimit building§! gain: \n[local_manpower]: §G+750§! (§G+1000§! if both buildings are present)"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc_nestorian: "All owned §YNestorian§! provinces that produce §YSalt§! or a §YMetal§! trade good and have a §YManpower§! or §YLand Forcelimit building§! gain: \n[local_manpower]: §G+750§! (§G+1000§! if both buildings are present)"
+ string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc: "All owned §YNestorian§! provinces that produce §YSalt§! or a §YMetal§! trade good and have a §YManpower§! or §YLand Forcelimit building§! gain: \n[local_manpower]: §G+500§! (§G+750§! if both buildings are present)"
 
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc_owned: "[trade_steering]: §G+5.0%§! \nAll owned §YCenters of Trade§! with a minimum level of §Y2§! gain: \n[trade_goods_size]: §G+1.00§! \n[local_tax_modifier]: §G+30.0%§!"
  string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_5_modifier_desc_nestorian: "All owned §YCenters of Trade§! with a minimum level of §Y2§! gain: \n[trade_goods_size]: §G+1.00§! \n[local_tax_modifier]: §G+30.0%§!"
@@ -1036,6 +1041,14 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_nestorian_modifier: "Pilgrimage Boon from Xi'an"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_modifier: "Pilgrimage Boon from Xi'an"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_province_accepted_modifier: "Pilgrimage Boon from Xi'an"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_modifier: "Pilgrimage Boon from Herat"
+ desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite4ModifierDesc]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_owned_modifier: "Pilgrimage Boon from Herat"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_nestorian_modifier: "Pilgrimage Boon from Herat"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_double_modifier: "Pilgrimage Boon from Herat"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_modifier: "Pilgrimage Boon from Herat"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_double_modifier: "Pilgrimage Boon from Herat"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_modifier: "Pilgrimage Boon from Herat"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier: "Pilgrimage Boon from Hotan"
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier: "[Root.ReGetReligionMechanicNestorianPatriarchyHolySite5ModifierDesc]"
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_owned_modifier: "Pilgrimage Boon from Hotan"

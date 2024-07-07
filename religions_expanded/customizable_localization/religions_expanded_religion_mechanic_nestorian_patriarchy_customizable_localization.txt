@@ -421,6 +421,30 @@ defined_text = {
 }
 
 defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySite4ModifierDesc
+	random = no
+
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_owned_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc_owned
+	}
+	text = {
+		trigger = {
+			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_nestorian_modifier
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc_nestorian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc
+	}
+}
+
+defined_text = {
 	name = ReGetReligionMechanicNestorianPatriarchyHolySite5ModifierDesc
 	random = no
 

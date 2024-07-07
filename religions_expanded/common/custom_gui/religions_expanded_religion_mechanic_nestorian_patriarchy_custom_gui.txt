@@ -490,6 +490,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier }
+		has_discovered = 151
 		OR = {
 			owns = 151
 			employed_advisor = {
@@ -1190,6 +1191,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_modifier }
+		has_discovered = 4293
 		OR = {
 			owns = 4293
 			any_owned_province = {
@@ -2001,6 +2003,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier }
+		has_discovered = 700
 		OR = {
 			owns = 700
 			any_owned_province = {
@@ -2531,8 +2534,248 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button
 	# if you change this, make sure to change the re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_decision decision accordingly
 	trigger = {
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
+		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_modifier }
+		has_discovered = 446
+		OR = {
+			owns = 446
+			any_owned_province = {
+				province_religion = nestorian
+				custom_trigger_tooltip = {
+					tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt_produced_goods_trigger
+					OR = {
+						trade_goods = salt
+						trade_goods = copper
+						trade_goods = iron
+						trade_goods = gold
+						AND = {
+							is_expanded_mod_active = { mod = trade_goods }
+							OR = {
+								trade_goods = lead
+								trade_goods = mercury
+								trade_goods = tin
+								trade_goods = silver
+								trade_goods = zinc
+							}
+						}
+					}
+				}
+				OR = {
+					has_manpower_building_trigger = yes
+					has_forcelimit_building_trigger = yes
+				}
+			}
+		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
+		re_add_religion_mechanic_nestorian_patriarchy_value = { value = -75 }
+		custom_tooltip = " "
+		if = {
+			limit = {
+				owns = 446
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_owned_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc_owned
+		custom_tooltip = " "
+		if = {
+			limit = {
+				NOT = { owns = 446 }
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_nestorian_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc_nestorian
+		custom_tooltip = " "
+		if = {
+			limit = {
+				NOT = { owns = 446 }
+				446 = {
+					owner = {
+						re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_base_yes
+		}
+		else = {
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_button_tt_base_no
+		}
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt_modifier_effect
+		custom_tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_4_modifier_desc
+		hidden_effect = {
+			add_country_modifier = {
+				name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					owns = 446
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_owned_modifier
+					duration = 7300
+					hidden = yes
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_nestorian_modifier
+					duration = 7300
+					hidden = yes
+				}
+				every_owned_province = {
+					limit = {
+						province_religion = nestorian
+						OR = {
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
+						}
+						OR = {
+							trade_goods = salt
+							trade_goods = copper
+							trade_goods = iron
+							trade_goods = gold
+							AND = {
+								is_expanded_mod_active = { mod = trade_goods }
+								OR = {
+									trade_goods = lead
+									trade_goods = mercury
+									trade_goods = tin
+									trade_goods = silver
+									trade_goods = zinc
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
+						}
+						add_province_modifier = {
+							name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_double_modifier
+							duration = 7300
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_modifier
+							duration = 7300
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					446 = {
+						owner = {
+							re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+						}
+					}
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_nestorian_modifier
+					duration = 7300
+					hidden = yes
+				}
+				every_owned_province = {
+					limit = {
+						province_religion = nestorian
+						OR = {
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
+						}
+						OR = {
+							trade_goods = salt
+							trade_goods = copper
+							trade_goods = iron
+							trade_goods = gold
+							AND = {
+								is_expanded_mod_active = { mod = trade_goods }
+								OR = {
+									trade_goods = lead
+									trade_goods = mercury
+									trade_goods = tin
+									trade_goods = silver
+									trade_goods = zinc
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
+						}
+						add_province_modifier = {
+							name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_double_modifier
+							duration = 7300
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_nestorian_modifier
+							duration = 7300
+						}
+					}
+				}
+			}
+			else = {
+				every_owned_province = {
+					limit = {
+						province_religion = nestorian
+						OR = {
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
+						}
+						OR = {
+							trade_goods = salt
+							trade_goods = copper
+							trade_goods = iron
+							trade_goods = gold
+							AND = {
+								is_expanded_mod_active = { mod = trade_goods }
+								OR = {
+									trade_goods = lead
+									trade_goods = mercury
+									trade_goods = tin
+									trade_goods = silver
+									trade_goods = zinc
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_manpower_building_trigger = yes
+							has_forcelimit_building_trigger = yes
+						}
+						add_province_modifier = {
+							name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_double_modifier
+							duration = 7300
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_province_modifier
+							duration = 7300
+						}
+					}
+				}
+			}
+		}
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button_tt
 }
@@ -2549,6 +2792,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier }
+		has_discovered = 710
 		OR = {
 			owns = 710
 			any_owned_province = {
@@ -2685,6 +2929,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_modifier }
+		has_discovered = 2313
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
@@ -2786,6 +3031,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier }
+		has_discovered = 558
 		OR = {
 			owns = 558
 			any_owned_province = {
@@ -2893,6 +3139,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_modifier }
+		has_discovered = 2745
 	}
 	effect = {
 		custom_tooltip = religions_expanded_tooltip_effect_text
@@ -2994,6 +3241,7 @@ custom_button = {
 	trigger = {
 		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
 		NOT = { has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_modifier }
+		has_discovered = 1099
 		OR = {
 			owns = 1099
 			any_owned_province = {
@@ -3156,6 +3404,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button
 	trigger = {
+		has_discovered = 118
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
@@ -3188,6 +3437,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button
 	trigger = {
+		has_discovered = 1816
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
@@ -3220,6 +3470,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button
 	trigger = {
+		has_discovered = 1099
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
@@ -3252,6 +3503,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button
 	trigger = {
+		has_discovered = 151
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
@@ -3284,6 +3536,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button
 	trigger = {
+		has_discovered = 4293
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
@@ -3316,6 +3569,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button
 	trigger = {
+		has_discovered = 4447
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
@@ -3348,6 +3602,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button
 	trigger = {
+		has_discovered = 358
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
@@ -3380,6 +3635,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button
 	trigger = {
+		has_discovered = 735
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
@@ -3412,6 +3668,7 @@ custom_text_box = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button
 	trigger = {
+		has_discovered = 85
 		any_province = {
 			province_religion = nestorian
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
