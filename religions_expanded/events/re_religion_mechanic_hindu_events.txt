@@ -8,6 +8,8 @@ country_event = {
 
 	is_triggered_only = yes
 
+	goto = monument_province
+
 	trigger = {
 		has_dlc = "Leviathan"
 		re_uses_religion_mechanic = { mechanic = hindu }
@@ -406,96 +408,116 @@ country_event = {
 	option = {
 		name = re_religion_mechanic_hindu_events1.EVTOPT1
 
-		event_target:monument_province = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				event_target:monument_province = {
 					province_id = 2026
 				}
-				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
 			}
-			else_if = {
-				limit = {
+			re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
+		}
+		else_if = {
+			limit = {
+				event_target:monument_province = {
 					province_id = 541
 				}
-				if = {
-					limit = {
+			}
+			if = {
+				limit = {
+					event_target:monument_province = {
 						has_province_flag = re_religion_mechanic_hindu_flag_monument_3
 					}
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
 				}
-				else = {
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
-				}
+				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
 			}
-			else_if = {
-				limit = {
+			else = {
+				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:monument_province = {
 					OR = {
 						province_id = 2095
 						province_id = 545
 					}
 				}
-				if = {
-					limit = {
+			}
+			if = {
+				limit = {
+					event_target:monument_province = {
 						has_province_flag = re_religion_mechanic_hindu_flag_monument_3
 					}
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 10 }
 				}
-				else = {
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
-				}
+				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 10 }
 			}
-			else_if = {
-				limit = {
+			else = {
+				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:monument_province = {
 					province_id = 4466
 				}
-				if = {
-					limit = {
+			}
+			if = {
+				limit = {
+					event_target:monument_province = {
 						has_province_flag = re_religion_mechanic_hindu_flag_monument_3
 					}
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
-					re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 10 }
 				}
-				else = {
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 2.5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 5 }
-				}
+				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
+				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
+				re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 10 }
 			}
-			else_if = {
-				limit = {
-					province_id = 2690
-				}
-				if = {
-					limit = {
-						has_province_flag = re_religion_mechanic_hindu_flag_monument_3
-					}
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 7.5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 15 }
-					re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 15 }
-				}
-				else_if = {
-					limit = {
-						has_province_flag = re_religion_mechanic_hindu_flag_monument_2
-					}
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
-					re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 10 }
-				}
-				else = {
-					re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 2.5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
-					re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 5 }
-				}
-			}
-			else_if = {
-				limit = {
-					province_id = 631
-				}
+			else = {
 				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 2.5 }
 				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
 				re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 5 }
 			}
+		}
+		else_if = {
+			limit = {
+				event_target:monument_province = {
+					province_id = 2690
+				}
+			}
+			if = {
+				limit = {
+					event_target:monument_province = {
+						has_province_flag = re_religion_mechanic_hindu_flag_monument_3
+					}
+				}
+				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 7.5 }
+				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 15 }
+				re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 15 }
+			}
+			else_if = {
+				limit = {
+					event_target:monument_province = {
+						has_province_flag = re_religion_mechanic_hindu_flag_monument_2
+					}
+				}
+				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 5 }
+				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 10 }
+				re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 10 }
+			}
+			else = {
+				re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 2.5 }
+				re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
+				re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 5 }
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:monument_province = {
+					province_id = 631
+				}
+			}
+			re_add_religion_mechanic_hindu_value = { major_deity = shiva value = 2.5 }
+			re_add_religion_mechanic_hindu_value = { major_deity = vishnu value = 5 }
+			re_add_religion_mechanic_hindu_value = { major_deity = brahma value = 5 }
 		}
 	}
 }
