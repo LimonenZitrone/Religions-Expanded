@@ -132,6 +132,7 @@ custom_button = {
 	trigger = {
 		hidden_trigger = {
 			re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+			NOT = { has_global_flag = re_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation }
 		}
 	}
 	effect = {
@@ -149,6 +150,12 @@ custom_button = {
 				NOT = { re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes }
 			}
 			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_no_controller
+		}
+		else_if = {
+			limit = {
+				has_global_flag = re_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_disabled_for_current_controller
 		}
 	}
 	frame = {
@@ -3378,6 +3385,7 @@ custom_window = {
 		has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 		re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
 		NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation }
+		NOT = { has_global_flag = re_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation }
 	}
 }
 custom_button = {

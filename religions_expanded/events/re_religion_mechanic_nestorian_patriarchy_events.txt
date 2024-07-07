@@ -481,3 +481,204 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.8
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME8
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC8
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT1
+
+		trigger = {
+			has_discovered = 118
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		118 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT2
+
+		trigger = {
+			has_discovered = 1816
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		1816 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT3
+
+		trigger = {
+			has_discovered = 1099
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		1099 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT4
+
+		trigger = {
+			has_discovered = 151
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		151 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT5
+
+		trigger = {
+			has_discovered = 4293
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		4293 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT6
+
+		trigger = {
+			has_discovered = 4447
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		4447 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT7
+
+		trigger = {
+			has_discovered = 358
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		358 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT8
+
+		trigger = {
+			has_discovered = 735
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		735 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT9
+
+		trigger = {
+			has_discovered = 85
+			any_province = {
+				province_religion = nestorian
+				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+
+		85 = {
+			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT10
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	after = {
+		clr_country_flag = re_religion_mechanic_nestorian_patriarchy_selecting_center_of_reformation
+	}
+}

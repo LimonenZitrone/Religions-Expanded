@@ -49,3 +49,22 @@
  re_peace_treaty_convert_heathen_desc: "@[From.GetTag] §Y[From.GetName]§! will convert to the §Y[Root.Religion.GetName]§! faith. @[Root.GetTag] §Y[Root.GetName]§! gains §G+5.0§! Prestige."
  CB_ALLOWED_re_peace_treaty_convert_heathen: "Force Religion (Heathen)"
  PEACE_re_peace_treaty_convert_heathen: "Force Religion"
+
+ re_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation_desc: "The §Y[From.Religion.GetName]§! Center of Conversion in §Y[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§! is destroyed. The Patriarchy Controller will not be able to select another Center of Conversion, only the next Patriarchy Controller will be able to again."
+ CB_ALLOWED_re_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Destroy Center of Conversion"
+ PEACE_re_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Destroy Center of Conversion"
+
+ # Casus Bellis:
+ cb_re_religion_mechanic_nestorian_patriarchy_excommunication: "Excommunicated Ruler"
+ cb_re_religion_mechanic_nestorian_patriarchy_excommunication_desc: "Their ruler has been excommunicated."
+ cb_re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation: "Destroy Center of Conversion"
+ cb_re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_desc: "They are the current Nestorian Patriarchy Controller. We must force them to destroy the Center of Conversion that is spreading the Nestorian faith in our lands!"
+
+ # War Goals:
+ re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal: "Take a province"
+ re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal_desc: "War goal is to take a province."
+ re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_war_goal: "Show Superiority"
+ re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_war_goal_desc: "War goal is to show them superiority by winning battles."
+
+ # War Names:
+ RE_RELIGION_MECHANIC_NESTORIAN_PATRIARCHY_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$ War against the Nestorian Patriarchy"

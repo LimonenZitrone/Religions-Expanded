@@ -12,7 +12,13 @@ spriteTypes = {
 	# Casus Bellis:
 	spriteType = {
 		name = "GFX_cb_re_religion_mechanic_nestorian_patriarchy_excommunication"
-		texturefile = "gfx/interface/casus_bellis/cb_excommunication.tga"
+		texturefile = "gfx/interface/casus_bellis/cb_excommunication.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_cb_re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation"
+		texturefile = "gfx/interface/casus_bellis/cb_religious_conformance.dds"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 	}

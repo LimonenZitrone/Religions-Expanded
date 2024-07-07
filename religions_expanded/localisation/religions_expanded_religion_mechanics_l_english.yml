@@ -820,6 +820,7 @@
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button_tt: "§YSelect [85.GetName] as Center of Conversion§!"
 
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_no_controller: "§ROnly the §YPatriarchy Controller§! can select the Center of Conversion.§W"
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_disabled_for_current_controller: "§RFor the current §YPatriarchy Controller§! it is not possible to select a Center of Conversion due to a Peace Treaty.§W"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier_tt: "for §Y10 years§! or until we are no longer §YPatriarchy Controller§!"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier_tt: "for §Y5 years§! or until we are no longer §YPatriarchy Controller§!"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier_tt_2: "While this modifier is active, we gain access to a peace offer that allows force converting §YHeathens§!."
@@ -960,6 +961,55 @@
  re_religion_mechanic_nestorian_patriarchy_events.EVTNAME7: "Excommunication Lifted!"
  re_religion_mechanic_nestorian_patriarchy_events.EVTDESC7: "The Patriarch Controller from @[From.GetTag] §Y[From.GetName]§! has lifted the excommunication of @[Root.GetTag] §Y[Root.GetName]§!!"
  re_religion_mechanic_nestorian_patriarchy_events7.EVTOPT1: "Wonderful!"
+
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME8: "Select Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC8: "The §YPatriarchy Controller§! can pick a Center of Conversion. Once selected, this will spread the §YNestorian§! faith to provinces in nearby regions and give a small bonus to missionary strength to Nestorian countries in the affected regions. \nThe Center will be abandoned and another can be selected when the next §YPatriarchy Controller§! takes over."
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT1: "Select [118.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT2: "Select [1816.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT3: "Select [1099.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT4: "Select [151.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT5: "Select [4293.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT6: "Select [4447.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT7: "Select [358.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT8: "Select [735.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT9: "Select [85.GetName] as Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_events8.EVTOPT10: "Don't select a Center of Conversion"
+
+ # Decisions:
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision_title: "Select Center of Conversion"
+ re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision_desc: "The §YPatriarchy Controller§! can pick a Center of Conversion. Once selected, this will spread the §YNestorian§! faith to provinces in nearby regions and give a small bonus to missionary strength to Nestorian countries in the affected regions. \nThe Center will be abandoned and another can be selected when the next §YPatriarchy Controller§! takes over."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_1_decision_title: "Help to protect [151.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_1_decision_desc: "Send some soldiers to help protect the Holy Site of §Y[151.GetName]§!. This will increase our Patriarch Influence."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_2_decision_title: "Mandate to Proselytize"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_2_decision_desc: "Ask the Patriarch to grant us a mandate to proselytize heretics and heathens."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_3_decision_title: "Patriarchal Diplomacy"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_3_decision_desc: "Send out envoys in the name of the Patriarch to our brothers in faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_4_decision_title: "Send Envoys to Heretics"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_4_decision_desc: "Send out envoys to the people that are misguided and believe in a heretic faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_5_decision_title: "Send Envoys to Disbelievers"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_5_decision_desc: "Send out envoys to the people that are misguided and believe in a heathen faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_decision_title: "Spread the Nestorian Faith"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_6_decision_desc: "Issue a Patriarchal mandate to spread the Nestorian faith."
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_7_decision_title: "Request Patriarchal Officials"
+ re_religion_mechanic_nestorian_patriarchy_main_interaction_7_decision_desc: "Ask the Patriarch to sent some officials to us to help our administration."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_decision_title: "Holy Site: [151.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_decision_desc: "Send some clerglymen on a pilgrimage to [151.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_decision_title: "Holy Site: [4293.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_decision_desc: "Send some clerglymen on a pilgrimage to [4293.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_decision_title: "Holy Site: [700.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_decision_desc: "Send some clerglymen on a pilgrimage to [700.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_decision_title: "Holy Site: [446.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_decision_desc: "Send some clerglymen on a pilgrimage to [446.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_decision_title: "Holy Site: [710.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_decision_desc: "Send some clerglymen on a pilgrimage to [710.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_decision_title: "Holy Site: [2313.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_decision_desc: "Send some clerglymen on a pilgrimage to [2313.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_decision_title: "Holy Site: [558.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_decision_desc: "Send some clerglymen on a pilgrimage to [558.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_decision_title: "Holy Site: [2745.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_decision_desc: "Send some clerglymen on a pilgrimage to [2745.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_decision_title: "Holy Site: [1099.GetName]"
+ re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_decision_desc: "Send some clerglymen on a pilgrimage to [1099.GetName]. \nBased on who owns the Holy Site, you will get a different bonus when using this action."
 
  # Modifiers:
  ## Mechanic Modifiers:
@@ -1111,14 +1161,6 @@
  # Estate Privileges:
  re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary: "Patriarchal Emissary"
  re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetClergyName] and the Patriarch."
-
- # Casus Bellis:
- cb_re_religion_mechanic_nestorian_patriarchy_excommunication: "Excommunicated Ruler"
- cb_re_religion_mechanic_nestorian_patriarchy_excommunication_desc: "Their ruler has been excommunicated."
-
- # War Goals:
- re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal: "Take a province"
- re_religion_mechanic_nestorian_patriarchy_excommunication_war_goal_desc: "War goal is to take a province."
 
  # New Diplomatic Actions:
  ## Categories:
