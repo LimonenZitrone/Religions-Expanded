@@ -50,6 +50,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			if = {
 				limit = {
 					has_country_flag = re_religion_mechanic_sylvan_affinity_consecrated_new_grove_used
@@ -324,6 +325,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			NOT = { has_country_flag = re_religion_mechanic_sylvan_affinity_selecting_seasonal_affinity }
 			OR = {
 				NOT = { has_country_flag = re_religion_mechanic_sylvan_affinity_seasonal_affinity_selected }
@@ -345,6 +347,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			if = {
 				limit = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_sergetoja_modifier = yes }
@@ -502,6 +505,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			if = {
 				limit = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_nukirpeja_modifier = yes }
@@ -659,6 +663,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			if = {
 				limit = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_audeja_modifier = yes }
@@ -816,6 +821,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			if = {
 				limit = {
 					NOT = { re_has_religion_mechanic_sylvan_affinity_verpiancioji_modifier = yes }
