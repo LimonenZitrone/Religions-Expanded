@@ -235,6 +235,10 @@ spriteTypes = {
 
 	## Nestorian Patriarchy Mechanic
 	spriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_religion_tab_bg"
+		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/re_religion_mechanic_nestorian_patriarchy_religion_tab_bg.dds"
+	}
+	spriteType = {
 		name = "GFX_re_religion_mechanic_nestorian_patriarchy_button"
 		textureFile = "gfx/interface/religion_mechanics/nestorian_patriarchy_mechanic/re_religion_mechanic_nestorian_patriarchy_button.dds"
 	}

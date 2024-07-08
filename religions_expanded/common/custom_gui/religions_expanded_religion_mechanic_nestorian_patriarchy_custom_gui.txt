@@ -3698,3 +3698,74 @@ custom_button = {
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button_tt
 }
+
+# Religion Tab
+custom_window = {
+	name = re_religion_mechanic_nestorian_patriarchy_window
+	potential = {
+		ai = no
+		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+	}
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_current_text
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_current_text_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_patriarch_influence_value
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_patriarch_influence_value_tt
+}
+
+custom_text_box = {
+	name = re_religion_mechanic_nestorian_patriarchy_holy_sites_amount_text
+	potential = {
+		always = yes
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_holy_sites_amount_text_tt
+}
+
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag_empty
+	potential = {
+		NOT = { has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller }
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag_empty_tt
+}
+custom_shield = {
+	name = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag
+	potential = {
+		has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+	}
+	global_event_target = re_religion_mechanic_nestorian_patriarchy_patriarch_controller
+	open_country = yes
+	tooltip = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag_tt
+}
+
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+				}
+				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
+				clr_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+			}
+			else = {
+				re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
+				set_country_flag = re_religion_mechanic_nestorian_patriarchy_main_window_open
+				play_sound = "papacy"
+			}
+		}
+	}
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button_tt
+}

@@ -189,6 +189,23 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyCurrentCenterOfReformationShort
+	random = no
+
+	text = {
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_tt_not_picked_short
+	}
+}
+defined_text = {
 	name = ReGetReligionMechanicNestorianPatriarchyCurrentCenterOfReformationDesc
 	random = no
 
@@ -561,5 +578,490 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_holy_site_9_modifier_desc
+	}
+}
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyHolySitesOwnedByNestorians
+	random = no
+
+	text = {
+		trigger = {
+			151 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			4293 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			700 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			446 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			710 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			2313 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			558 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			2745 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			1099 = {
+				owner = {
+					re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+		}
+		localisation_key = "9"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 8
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "8"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 7
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "7"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 6
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "6"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 5
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "5"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 4
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "4"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 3
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "3"
+	}
+	text = {
+		trigger = {
+			calc_true_if = {
+				amount = 2
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "2"
+	}
+	text = {
+		trigger = {
+			OR = {
+				151 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				4293 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				700 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				446 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				710 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2313 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				558 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				2745 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+				1099 = {
+					owner = {
+						re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					}
+				}
+			}
+		}
+		localisation_key = "1"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
 	}
 }

@@ -12,68 +12,70 @@ country_decisions = {
 			NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_selecting_center_of_reformation }
 			re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
 			NOT = { has_global_flag = re_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation }
-			OR = {
-				AND = {
-					has_discovered = 118
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+			hidden_trigger = {
+				OR = {
+					AND = {
+						has_discovered = 118
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 1816
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+					AND = {
+						has_discovered = 1816
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 1099
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+					AND = {
+						has_discovered = 1099
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 151
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+					AND = {
+						has_discovered = 151
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 4293
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+					AND = {
+						has_discovered = 4293
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 4447
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+					AND = {
+						has_discovered = 4447
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 358
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+					AND = {
+						has_discovered = 358
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 735
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+					AND = {
+						has_discovered = 735
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+						}
 					}
-				}
-				AND = {
-					has_discovered = 85
-					any_province = {
-						province_religion = nestorian
-						re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+					AND = {
+						has_discovered = 85
+						any_province = {
+							province_religion = nestorian
+							re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+						}
 					}
 				}
 			}
