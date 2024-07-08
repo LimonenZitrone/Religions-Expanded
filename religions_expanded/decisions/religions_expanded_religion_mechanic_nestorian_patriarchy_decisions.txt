@@ -1,6 +1,9 @@
 country_decisions = {
 	# AI Decisions Below
 	re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision = {
+		# not the same as re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button
+		# triggers partly taken from the individual center of reformation buttons
+		# AI only event to pick
 		potential = {
 			ai = yes
 			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
