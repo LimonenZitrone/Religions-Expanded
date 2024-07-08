@@ -1880,7 +1880,7 @@ re_clear_all_religion_mechanic_hindu_modifiers = {
 re_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = {
 	if = {
 		limit = {
-			NOT = { re_uses_religion_mechanic = { mechanic = hindu } }
+			re_not_uses_religion_mechanic = { mechanic = hindu }
 		}
 		re_clear_all_religion_mechanic_hindu_modifiers = yes
 	}
