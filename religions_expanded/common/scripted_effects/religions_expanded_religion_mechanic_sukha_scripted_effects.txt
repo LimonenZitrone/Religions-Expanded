@@ -902,7 +902,7 @@ re_clear_all_religion_mechanic_sukha_modifiers = {
 re_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = {
 	if = {
 		limit = {
-			NOT = { re_uses_religion_mechanic = { mechanic = sukha } }
+			re_not_uses_religion_mechanic = { mechanic = sukha }
 		}
 		re_clear_all_religion_mechanic_sukha_modifiers = yes
 		disable_propogate_religion_effect = yes

@@ -1,18 +1,14 @@
 on_startup = {
 	if = {
 		limit = {
+			NOT = { has_global_flag = religions_expanded_vidilist_initialized }
 			started_in = 1444.11.11
 			NOT = { started_in = 1445.1.1 }
-			NOT = { is_year = 1445 }
-			OR = {
-				owns = 271
-				owns = 4535
-			}
 		}
+		set_global_flag = religions_expanded_vidilist_initialized
 		271 = {
 			if = {
 				limit = {
-					owned_by = ROOT
 					NOT = { religion = vidilist }
 				}
 				change_religion = vidilist
@@ -25,7 +21,6 @@ on_startup = {
 		4535 = {
 			if = {
 				limit = {
-					owned_by = ROOT
 					NOT = { religion = vidilist }
 				}
 				change_religion = vidilist
