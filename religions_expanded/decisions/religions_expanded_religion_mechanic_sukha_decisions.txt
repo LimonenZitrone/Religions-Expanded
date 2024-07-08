@@ -6,6 +6,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sukha }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sukha }
 			adm_power = 50
 			NOT = { re_has_religion_mechanic_sukha_value = { value = 100 } }
 			if = {
@@ -54,6 +55,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = sukha }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = sukha }
 			if = {
 				limit = {
 					monthly_income = 500

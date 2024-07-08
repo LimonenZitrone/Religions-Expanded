@@ -6,6 +6,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 			has_regency = no
 			NOT = { re_has_religion_mechanic_four_tenets_system_ability_4 = yes }
 			if = {
@@ -64,6 +65,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 			hidden_trigger = {
 				NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_1 }
 			}
@@ -147,6 +149,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 			hidden_trigger = {
 				NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_2 }
 			}
@@ -238,6 +241,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 			hidden_trigger = {
 				NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_3 }
 			}
@@ -323,6 +327,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = four_tenets_system }
 			hidden_trigger = {
 				NOT = { has_country_flag = re_religion_mechanic_four_tenets_system_selecting_ability_4 }
 			}

@@ -6,6 +6,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = hindu }
 			NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_shiva }
 			NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_brahma }
 			NOT = { has_country_modifier = re_religion_mechanic_hindu_modifier_spent_dedication_vishnu }
@@ -114,6 +115,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = hindu }
 			if = {
 				limit = {
 					has_country_flag = re_religion_mechanic_hindu_picked_minor_deity
@@ -148,6 +150,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = hindu }
 			if = {
 				limit = {
 					re_is_religion_mechanic_hindu_dedication_focus_enabled = yes
@@ -329,6 +332,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		effect = {
 			if = {
@@ -387,6 +391,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		effect = {
 			if = {
@@ -445,6 +450,7 @@ country_decisions = {
 			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		allow = {
+			re_uses_religion_mechanic = { mechanic = hindu }
 		}
 		effect = {
 			if = {
