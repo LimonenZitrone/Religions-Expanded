@@ -192,6 +192,14 @@ re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = {
 		}
 		if = {
 			limit = {
+				owner = {
+					re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+				}
+			}
+			province_event = { id = re_religion_mechanic_nestorian_patriarchy_events.9 }
+		}
+		if = {
+			limit = {
 				has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
 				event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 					province_id = 118

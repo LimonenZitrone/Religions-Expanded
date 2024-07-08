@@ -109,7 +109,6 @@ custom_text_box = {
 	potential = {
 		always = yes
 	}
-	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title_tt
 }
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_title

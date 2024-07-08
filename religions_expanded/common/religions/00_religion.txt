@@ -852,13 +852,13 @@ christian = {
 		color = { 255 255 170 }
 		icon = 33
 		country = {
-
+			missionaries = 1
+			trade_efficiency = 0.1
 		}
 		country_as_secondary = {
-
+			trade_efficiency = 0.1
 		}
 		province = {
-
 		}
 
 		on_convert = {

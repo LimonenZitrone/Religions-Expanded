@@ -28,7 +28,7 @@ cb_re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation = {
 
 	prerequisites_self = {
 		has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
-		NOT = { re_uses_religion_mechanic = { mechanic = nestorian_patriarchy } }
+		re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 		any_owned_province = {
 			OR = {
 				has_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier

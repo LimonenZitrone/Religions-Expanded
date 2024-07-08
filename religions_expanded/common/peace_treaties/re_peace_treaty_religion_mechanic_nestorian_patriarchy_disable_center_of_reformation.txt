@@ -21,7 +21,7 @@ re_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reforma
 
 	is_visible = {
 		has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
-		NOT = { re_uses_religion_mechanic = { mechanic = nestorian_patriarchy } }
+		re_not_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 		FROM = {
 			re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
 		}
