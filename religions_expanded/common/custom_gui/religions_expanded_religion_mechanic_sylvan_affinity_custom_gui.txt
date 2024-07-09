@@ -32,7 +32,9 @@ custom_button = {
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		re_add_religion_mechanic_sylvan_affinity_value = { value = -75 }
+		custom_tooltip = " "
 		if = {
 			limit = {
 				re_has_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = spring }
@@ -335,7 +337,9 @@ custom_button = {
 			custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 		}
 		else = {
+			custom_tooltip = religions_expanded_tooltip_effect_text
 			re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+			custom_tooltip = " "
 			hidden_effect = {
 				set_country_flag = re_religion_mechanic_sylvan_affinity_sergetoja_modifier_active
 				if = {
@@ -481,7 +485,9 @@ custom_button = {
 			custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 		}
 		else = {
+			custom_tooltip = religions_expanded_tooltip_effect_text
 			re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+			custom_tooltip = " "
 			hidden_effect = {
 				set_country_flag = re_religion_mechanic_sylvan_affinity_nukirpeja_modifier_active
 				if = {
@@ -627,7 +633,9 @@ custom_button = {
 			custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 		}
 		else = {
+			custom_tooltip = religions_expanded_tooltip_effect_text
 			re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+			custom_tooltip = " "
 			hidden_effect = {
 				set_country_flag = re_religion_mechanic_sylvan_affinity_audeja_modifier_active
 				if = {
@@ -773,7 +781,9 @@ custom_button = {
 			custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_currently_active
 		}
 		else = {
+			custom_tooltip = religions_expanded_tooltip_effect_text
 			re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+			custom_tooltip = " "
 			hidden_effect = {
 				set_country_flag = re_religion_mechanic_sylvan_affinity_verpiancioji_modifier_active
 				if = {

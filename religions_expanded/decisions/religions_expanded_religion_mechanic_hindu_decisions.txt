@@ -33,21 +33,46 @@ country_decisions = {
 		}
 		effect = {
 			re_add_religion_mechanic_hindu_value = { major_deity = current value = -30 }
-			custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_shiva
+			custom_tooltip = " "
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				}
+				custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_shiva_yes
+			}
+			else = {
+				custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_shiva_no
+			}
 			tooltip = {
 				add_country_modifier = {
 					name = re_religion_mechanic_hindu_modifier_spent_dedication_shiva
 					duration = 7300
 				}
 			}
-			custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_brahma
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				}
+				custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_brahma_yes
+			}
+			else = {
+				custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_brahma_no
+			}
 			tooltip = {
 				add_country_modifier = {
 					name = re_religion_mechanic_hindu_modifier_spent_dedication_brahma
 					duration = 7300
 				}
 			}
-			custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_vishnu
+			if = {
+				limit = {
+					re_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				}
+				custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_vishnu_yes
+			}
+			else = {
+				custom_tooltip = re_religion_mechanic_hindu_spend_dedication_button_tt_vishnu_no
+			}
 			tooltip = {
 				add_country_modifier = {
 					name = re_religion_mechanic_hindu_modifier_spent_dedication_vishnu

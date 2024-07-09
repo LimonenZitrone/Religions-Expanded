@@ -74,6 +74,7 @@ country_decisions = {
 		}
 		effect = {
 			re_add_religion_mechanic_sylvan_affinity_value = { value = -75 }
+			custom_tooltip = " "
 			if = {
 				limit = {
 					re_has_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = spring }
@@ -370,6 +371,7 @@ country_decisions = {
 			}
 			else = {
 				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+				custom_tooltip = " "
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_sergetoja_modifier_active
 					if = {
@@ -528,6 +530,7 @@ country_decisions = {
 			}
 			else = {
 				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+				custom_tooltip = " "
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_nukirpeja_modifier_active
 					if = {
@@ -686,6 +689,7 @@ country_decisions = {
 			}
 			else = {
 				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+				custom_tooltip = " "
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_audeja_modifier_active
 					if = {
@@ -844,6 +848,7 @@ country_decisions = {
 			}
 			else = {
 				re_add_religion_mechanic_sylvan_affinity_value = { value = -6 }
+				custom_tooltip = " "
 				hidden_effect = {
 					set_country_flag = re_religion_mechanic_sylvan_affinity_verpiancioji_modifier_active
 					if = {
