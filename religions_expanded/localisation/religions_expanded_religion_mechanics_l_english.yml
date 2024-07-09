@@ -628,7 +628,7 @@
  re_religion_mechanic_sylvan_affinity_button_tt_fall_no: "£no£ If the §YFall Affinity§! is selected:"
  re_religion_mechanic_sylvan_affinity_button_tt_winter_yes: "£yes£ If the §YWinter Affinity§! is selected:"
  re_religion_mechanic_sylvan_affinity_button_tt_winter_no: "£no£ If the §YWinter Affinity§! is selected:"
- re_religion_mechanic_sylvan_affinity_button_tt_currently_active: "\nThis focus is currently active. Current effects:"
+ re_religion_mechanic_sylvan_affinity_button_tt_currently_active: "\n§YThis focus is currently active. Current effects:§!"
  re_religion_mechanic_sylvan_affinity_until_focus_disabled_tt: "until the focus is disabled"
  re_religion_mechanic_sylvan_affinity_consecrated_new_grove_not_used_recently_tt_with_year: "Has NOT consecrated a Grove within the last §Y10 years§! (last in §Y[Root.re_religion_mechanic_sylvan_affinity_consecrated_new_grove_used_year.GetValue]§!)"
  re_religion_mechanic_sylvan_affinity_consecrated_new_grove_not_used_recently_tt: "Has NOT consecrated a Grove within the last §Y10 years§!"
