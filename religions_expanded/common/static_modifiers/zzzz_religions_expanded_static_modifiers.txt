@@ -56,6 +56,9 @@ prestige = {
 	monthly_divine_authority = 0.1
 	monthly_authority_power = -0.2
 
+	# GE:
+	monthly_italian_dinasties = 0.25
+
 	# RE:
 	re_monthly_religion_mechanic_sylvan_affinity_change = 2
 }
