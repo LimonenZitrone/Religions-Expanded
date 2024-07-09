@@ -3,6 +3,9 @@ tags={
 	"Religion"
 }
 name="Religions Expanded"
-supported_version="v1.37.*"
 picture="thumbnail.png"
+supported_version="v1.37.*"
 path="mod/religions_expanded"
+dependencies={
+	"Trade Goods Expanded"
+}

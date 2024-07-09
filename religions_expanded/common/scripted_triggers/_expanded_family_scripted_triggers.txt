@@ -44,3 +44,7 @@ is_expanded_mod_active_subjects = {
 is_expanded_mod_active_trade_goods = {
 	is_mod_active = "Trade Goods Expanded"
 }
+
+is_expanded_mod_active_religions = {
+	is_mod_active = "Religions"
+}
