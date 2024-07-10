@@ -28,8 +28,8 @@ re_religion_mechanic_sylvan_affinity_sergetoja_winter_modifier = {
 }
 
 re_religion_mechanic_sylvan_affinity_nukirpeja_spring_modifier = {
-	inflation_reduction = 0.2
-	yearly_corruption = -0.2
+	inflation_reduction = 0.15
+	yearly_corruption = -0.15
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
@@ -52,7 +52,7 @@ re_religion_mechanic_sylvan_affinity_nukirpeja_fall_modifier = {
 re_religion_mechanic_sylvan_affinity_nukirpeja_winter_modifier = {
 	diplomatic_reputation = 1
 	envoy_travel_time = -0.3
-	province_warscore_cost = -0.2
+	province_warscore_cost = -0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
@@ -83,13 +83,13 @@ re_religion_mechanic_sylvan_affinity_audeja_winter_modifier = {
 }
 
 re_religion_mechanic_sylvan_affinity_verpiancioji_spring_modifier = {
-	technology_cost = -0.1
+	technology_cost = -0.075
 	global_institution_spread = 0.2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_verpiancioji_summer_modifier = {
-	idea_cost = -0.1
+	idea_cost = -0.075
 	global_unrest = -2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
 	religion = yes

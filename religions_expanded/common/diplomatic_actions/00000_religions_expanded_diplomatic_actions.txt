@@ -9,6 +9,17 @@ giftaction = {
 }
 
 guaranteeaction = {
+	# Compatibility with Force Revoke Guarantee/More Favor Actions:
+	condition = {
+		tooltip = MORE_FAVOR_ACTIONS_REMOVED_GUARANTEE_TT
+		potential = {
+			has_country_flag = revoked_guarantee_from_@FROM
+		}
+		allow = {
+			had_country_flag = { flag = revoked_guarantee_from_@FROM days = 3650 }
+		}
+	}
+
 	effect = {
 		# Vanilla:
 		change_asha_vahishta = { value = 1 }
