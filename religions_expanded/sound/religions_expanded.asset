@@ -49,3 +49,16 @@ sound = {
 	name = religion_nestorian
 	file = "tab_religion_christian.wav"
 }
+
+sound = {
+	name = defender_of_the_manichaeism_faith
+	file = "claim_defender_faith_coptic.wav"
+}
+sound = {
+	name = start_convert_manichaeism
+	file = "start_conversion_zoroastrian.wav"
+}
+sound = {
+	name = religion_manichaeism
+	file = "start_conversion_zoroastrian.wav"
+}

@@ -184,4 +184,10 @@ defined_text = {
 			religion = nestorian
 		}
 	}
+	text = {
+		localisation_key = manichaeism_string
+		trigger = {
+			religion = manichaeism
+		}
+	}
 }

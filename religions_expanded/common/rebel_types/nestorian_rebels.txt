@@ -1,5 +1,5 @@
 ######################################################################
-# nestorian_rebels. Disgruntled fanatics.
+# nestorian rebels. Disgruntled fanatics.
 ######################################################################
 nestorian_rebels = {
 
