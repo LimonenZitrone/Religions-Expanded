@@ -1,0 +1,38 @@
+country_decisions = {
+	re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision = {
+		potential = {
+			NOT = { has_global_flag = re_religion_mechanic_manichaeism_purity_burned_mandean_temples }
+			current_age = age_of_discovery
+			NOT = { religion = manichaeism }
+			owns = 4289
+		}
+		allow = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = advisor_types }
+				}
+				OR = {
+					advisor = theologian
+					advisor = inquisitor
+					advisor = ate_advisor_missionary
+				}
+			}
+			else = {
+				OR = {
+					advisor = theologian
+					advisor = inquisitor
+				}
+			}
+			owns = 4289
+		}
+		effect = {
+			set_global_flag = re_religion_mechanic_manichaeism_purity_burned_mandean_temples
+			country_event = { id = re_religion_mechanic_manichaeism_purity_events.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# AI Decisions Below
+}

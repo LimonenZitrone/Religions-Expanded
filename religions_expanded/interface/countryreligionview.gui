@@ -3181,6 +3181,118 @@ guiTypes = {
 			}
 		}
 
+		###################################
+		### Manichaeism Purity Mechanic ###
+		###################################
+		windowType = {
+			name = "re_religion_mechanic_manichaeism_purity_window"
+			position = { x = 37 y = 235 }
+			scripted = yes
+
+			windowType = {
+				name = "value_window"
+				position = { x = 4 y = 9 }
+
+				iconType = {
+					name = "background"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_value_bg"
+				}
+
+				instantTextBoxType = {
+					name = "re_religion_mechanic_manichaeism_purity_value_text"
+					position = { x = 5 y = 5 }
+					format = center
+					font = "vic_22"
+					maxWidth = 80
+					maxHeight = 20
+					fixedsize = yes
+					scripted = yes
+				}
+			}
+
+			guiButtonType = {
+				name = "re_religion_mechanic_manichaeism_purity_knowledge_button"
+				position = { x = 0 y = 46 }
+				spriteType = "GFX_re_religion_mechanic_manichaeism_purity_knowledge_button"
+				scripted = yes
+			}
+
+			windowType = {
+				name = "top_row_buttons_window"
+				position = { x = 60 y = 5 }
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_wind_button"
+					position = { x = 58 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_wind_button"
+					scripted = yes
+				}
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_light_button"
+					position = { x = 197 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_light_button"
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "bottom_row_buttons_window"
+				position = { x = 60 y = 47 }
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_air_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_air_button"
+					scripted = yes
+				}
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_water_button"
+					position = { x = 58 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_water_button"
+					scripted = yes
+				}
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_fire_button"
+					position = { x = 197 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_fire_button"
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "center_buttons_window"
+				position = { x = 160 y = 0 }
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_moon_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_moon_button"
+					scripted = yes
+				}
+				iconType = {
+					name = "re_religion_mechanic_manichaeism_purity_moon_selected_icon"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_moon_button"
+					scripted = yes
+				}
+
+				guiButtonType = {
+					name = "re_religion_mechanic_manichaeism_purity_sun_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_sun_button"
+					scripted = yes
+				}
+				iconType = {
+					name = "re_religion_mechanic_manichaeism_purity_sun_selected_icon"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_sun_button"
+					scripted = yes
+				}
+			}
+		}
+
 		###########################################
 		##  END Religions Expanded Custom GUI 2  ##
 		###########################################

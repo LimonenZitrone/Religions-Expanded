@@ -1,0 +1,136 @@
+on_startup = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = religions_expanded_manichaeism_initialized }
+			started_in = 1444.11.11
+			NOT = { started_in = 1445.1.1 }
+		}
+		set_global_flag = religions_expanded_manichaeism_initialized
+		4289 = {
+			if = {
+				limit = {
+					NOT = { religion = manichaeism }
+				}
+				change_religion = manichaeism
+				add_permanent_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 1825
+				}
+			}
+		}
+	}
+}
+
+on_religion_change = {
+	re_clear_all_religion_mechanic_manichaeism_purity_modifiers = yes
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+		}
+		re_add_monthly_religion_mechanic_manichaeism_purity_value = yes
+	}
+}
+
+on_dip_tech_taken = {
+	re_add_religion_mechanic_manichaeism_purity_value = { value = 10 }
+}
+
+on_mil_tech_taken = {
+	re_add_religion_mechanic_manichaeism_purity_value = { value = 10 }
+}
+
+on_province_religion_converted = {
+	if = {
+		limit = {
+			has_owner_religion = yes
+			owner = {
+				re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			}
+		}
+		owner = {
+			re_add_religion_mechanic_manichaeism_purity_value = { value = 1 }
+		}
+	}
+}
+
+# ROOT = converted country, FROM = country which force converts ROOT
+on_force_conversion = {
+	if = {
+		limit = {
+			FROM = {
+				re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			}
+			war_with = FROM
+			OR = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = FROM
+				}
+				is_in_war = {
+					attacker_leader = FROM
+					defender_leader = ROOT
+				}
+			}
+		}
+		FROM = {
+			re_add_religion_mechanic_manichaeism_purity_value = { value = 10 }
+		}
+	}
+	else = {
+		FROM = {
+			re_add_religion_mechanic_manichaeism_purity_value = { value = 5 }
+		}
+	}
+}
+
+# ROOT = winning country, FROM = loser country
+on_battle_won_country = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			NOT = { religion_group = FROM }
+		}
+		re_add_religion_mechanic_manichaeism_purity_value = { value = 1 }
+	}
+}
+
+# ROOT = winning country, FROM = loser country
+on_main_war_won = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			NOT = { religion_group = FROM }
+		}
+		re_add_religion_mechanic_manichaeism_purity_value = { value = 5 }
+	}
+}
+
+# ROOT = annexing country, FROM = annexed country
+on_annexed = {
+	FROM = {
+		if = {
+			limit = {
+				re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			}
+			re_clear_all_religion_mechanic_manichaeism_purity_modifiers = yes
+		}
+	}
+}
+
+# ROOT = released country, FROM = releasing country
+on_country_released = {
+	re_clear_all_religion_mechanic_manichaeism_purity_modifiers = yes
+}
+
+# ROOT = released country
+on_country_creation = {
+	re_clear_all_religion_mechanic_manichaeism_purity_modifiers = yes
+}
+
+# ROOT = vassal, FROM = overlord
+on_create_vassal = {
+	re_clear_all_religion_mechanic_manichaeism_purity_modifiers = yes
+}

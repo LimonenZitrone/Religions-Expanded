@@ -13,8 +13,8 @@
  re_religion_reformed_modifier: "Centralized the Faith"
 
  # Tooltips:
- RE_UNTIL_MONARCH_DEATH: "until their ruler dies"
- RE_UNTIL_MONARCH_DEATH_OR_1_YEAR: "for §Y365 days§! or until their ruler dies"
+ RE_UNTIL_MONARCH_DEATH: "until ruler death"
+ RE_UNTIL_MONARCH_DEATH_OR_1_YEAR: "for §Y365 days§! or until ruler death"
  re_religion_reform_religion_decision_tt: "\n§Y[Root.GetName]§! can now become the §YDefender of the [Root.Religion.GetName] Faith§!."
  RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_EASTERN: "A country following an §YEastern§! religion must first centralize the faith before being able to become the Defender of the Faith!"
  RE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC: "A country following a §YDharmic§! religion must first centralize the faith before being able to become the Defender of the Faith!"
@@ -42,7 +42,7 @@
  RE_GOV_RULER_NESTORIAN_PATRIARCHY: "Patriarch"
  RE_GOV_RULER_NESTORIAN_PATRIARCHY_fem: "Matriarch"
 
- # Modifier Names:
+ # Vanilla Modifier Names (for customizable localization):
  RE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "[Root.GetClergyName] Loyalty Equilibrium"
 
  # Peace Treaties:

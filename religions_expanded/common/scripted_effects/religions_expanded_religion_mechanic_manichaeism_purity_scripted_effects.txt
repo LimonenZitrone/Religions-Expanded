@@ -1,0 +1,242 @@
+re_set_religion_mechanic_manichaeism_purity_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+		}
+		[[value]
+			set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = $value$ }
+		]
+		[[which]
+			set_variable = { which = re_religion_mechanic_manichaeism_purity_value which = $which$ }
+		]
+		hidden_effect = {
+			if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_value = { value = 100 }
+				}
+				set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 100 }
+			}
+			else_if = {
+				limit = {
+					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 0 } }
+				}
+				set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 0 }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = yes
+		}
+	}
+}
+
+re_add_religion_mechanic_manichaeism_purity_value = {
+	if = {
+		limit = {
+			re_uses_religion_mechanic = { mechanic = manichaeism_purity }
+		}
+		[[value]
+			change_variable = { which = re_religion_mechanic_manichaeism_purity_value value = $value$ }
+		]
+		[[which]
+			change_variable = { which = re_religion_mechanic_manichaeism_purity_value which = $which$ }
+		]
+		hidden_effect = {
+			if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_value = { value = 100 }
+				}
+				set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 100 }
+			}
+			else_if = {
+				limit = {
+					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 0 } }
+				}
+				set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 0 }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = yes
+		}
+	}
+}
+
+re_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 66 } }
+					calc_true_if = {
+						amount = 3
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+					}
+				}
+				AND = {
+					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 33 } }
+					calc_true_if = {
+						amount = 2
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+						re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+		}
+		else_if = {
+			limit = {
+				re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+		}
+		else_if = {
+			limit = {
+				re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+		}
+		else_if = {
+			limit = {
+				re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+		}
+		else_if = {
+			limit = {
+				re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+			}
+			re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 66 } }
+						calc_true_if = {
+							amount = 3
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+						}
+					}
+					AND = {
+						NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 33 } }
+						calc_true_if = {
+							amount = 2
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+							re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+				}
+				re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+				}
+				re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+				}
+				re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+				}
+				re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+			}
+			else_if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+				}
+				re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+			}
+		}
+	}
+}
+
+re_set_religion_mechanic_manichaeism_purity_liturgical_focus = {
+	custom_tooltip = re_set_religion_mechanic_manichaeism_purity_liturgical_focus_$focus$_tt
+	set_ruler_flag = re_religion_mechanic_manichaeism_purity_liturgical_focus_$focus$
+}
+
+re_add_religion_mechanic_manichaeism_purity_minor_focus = {
+	if = {
+		limit = {
+			re_has_religion_mechanic_manichaeism_purity_liturgical_focus = { focus = moon }
+		}
+		set_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_$focus$
+		add_ruler_modifier = {
+			name = re_religion_mechanic_manichaeism_purity_$focus$_moon_modifier
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			re_has_religion_mechanic_manichaeism_purity_liturgical_focus = { focus = sun }
+		}
+		set_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_$focus$
+		add_ruler_modifier = {
+			name = re_religion_mechanic_manichaeism_purity_$focus$_sun_modifier
+			duration = -1
+		}
+	}
+}
+
+re_remove_religion_mechanic_manichaeism_purity_minor_focus = {
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_$focus$
+	remove_country_modifier = re_religion_mechanic_manichaeism_purity_$focus$_moon_modifier
+	remove_country_modifier = re_religion_mechanic_manichaeism_purity_$focus$_sun_modifier
+}
+
+re_export_monthly_religion_mechanic_manichaeism_purity_value_gain = {
+	hidden_effect = {
+		export_to_variable = {
+			which = re_monthly_religion_mechanic_manichaeism_purity_value
+			value = modifier:re_monthly_religion_mechanic_manichaeism_purity_change
+		}
+	}
+}
+
+re_add_monthly_religion_mechanic_manichaeism_purity_value = {
+	re_export_monthly_religion_mechanic_manichaeism_purity_value_gain = yes
+	re_add_religion_mechanic_manichaeism_purity_value = { which = re_monthly_religion_mechanic_manichaeism_purity_value }
+}
+
+re_clear_all_religion_mechanic_manichaeism_purity_modifiers = {
+	set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 0 }
+	set_variable = { which = re_monthly_religion_mechanic_manichaeism_purity_value value = 0 }
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_liturgical_focus_moon
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_liturgical_focus_sun
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_air
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_wind
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_water
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_light
+	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_fire
+	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+	remove_country_modifier = re_religion_mechanic_manichaeism_purity_knowledge_modifier
+}

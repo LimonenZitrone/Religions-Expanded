@@ -12,6 +12,9 @@
  nestorian: "Nestorian"
  nestorian_religion_desc: ""
  nestorian_string: "Nestorianism"
+ manichaeism: "Manichaean"
+ manichaeism_religion_desc: ""
+ manichaeism_string: "Manichaeism"
 
  # Heresies:
  YAPANIYA: "Yapaniya"
@@ -45,3 +48,9 @@
  nestorian_rebels_army: "$RELIGION$ Army"
  nestorian_rebels_demand: "Convert $COUNTRYNAME$"
  nestorian_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ manichaeism_rebels_title: "Religious"
+ manichaeism_rebels_name: "$RELIGION$ Zealots"
+ manichaeism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ manichaeism_rebels_army: "$RELIGION$ Army"
+ manichaeism_rebels_demand: "Convert $COUNTRYNAME$"
+ manichaeism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."

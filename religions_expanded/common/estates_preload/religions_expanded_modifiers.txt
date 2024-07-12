@@ -69,4 +69,13 @@ estate_special = {
 			religion = nestorian
 		}
 	}
+	# Manichaeism Purity Mechanic
+	modifier_definition = {
+		type = privileges
+		key = re_monthly_religion_mechanic_manichaeism_purity_change
+		trigger = {
+			# keep the same as re_uses_religion_mechanic_manichaeism_purity
+			religion = manichaeism
+		}
+	}
 }

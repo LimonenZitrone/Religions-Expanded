@@ -302,4 +302,51 @@ spriteTypes = {
 		name = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_socotra"
 		textureFile = "gfx/interface/re_religion_mechanics/nestorian_patriarchy_mechanic/holy_sites/mechanic_holy_site_socotra.dds"
 	}
+
+	## Manichaeism Purity Mechanic
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_value_bg"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_value_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_air_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_air_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_fire_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_fire_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_water_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_water_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_wind_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_wind_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_light_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_light_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_knowledge_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_knowledge_button.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_sun_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_sun_button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_manichaeism_purity_moon_button"
+		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_moon_button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
 }

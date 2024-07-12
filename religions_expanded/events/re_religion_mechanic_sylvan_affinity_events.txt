@@ -70,6 +70,7 @@ country_event = {
 
 		ai_chance = { factor = 0 }
 
+		add_years_of_income = -1
 		add_country_modifier = {
 			name = re_religion_mechanic_sylvan_affinity_assimilation_of_pagans_modifier
 			duration = 7300

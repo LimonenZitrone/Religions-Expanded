@@ -1198,3 +1198,85 @@
  re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_too_influencial: "§R- They have too much influence with the Patriarch.§W"
  re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_defender_of_faith: "§R- We cannot excommunicate the Defender of the Faith.§W"
  re_religion_mechanic_nestorian_patriarchy_action_excommunicate_tt_too_high_opinion: "§R- [NPA.GetName] has a too high opinion of them. It needs to be below §Y0§!.§W"
+
+ #################################
+ ## Manichaeism Purity Mechanic ##
+ #################################
+ # GUIs:
+ re_religion_mechanic_manichaeism_purity_value_text: "[This.ReGetReligionMechanicManichaeismPurityValue]"
+ re_religion_mechanic_manichaeism_purity_value_text_tt: "[This.GetName] currently has §Y[This.ReGetReligionMechanicManichaeismPurityValue]§! Purity. The maximum amount is §Y100.00§!. \n\n[This.GetName] gets [This.ReGetReligionMechanicManichaeismPurityMonthlyGainValue] Purity each month. \n--------------\nPurity is gained by the following actions: \n   - Winning a Battle against a Heathen Country: §G+1.00§! \n   - Winning a War against a Heathen Country \n     (War Leader): §G+5.00§! \n   - Researching a Diplomatic Technology: §G+10.00§! \n   - Researching a Military Technology: §G+10.00§! \n   - Converting a Province: §G+1.00§! \n   - Force Converting a Country: §G+5.00§! \n   - Insulting a Heathen Country: §G+3.00§! \n     (§Y10 years§! cooldown) \n   - Sending a Gift to a [This.Religion.GetName] Country: §G+3.00§! \n     (§Y10 years§! cooldown)"
+ re_religion_mechanic_manichaeism_purity_knowledge_button_tt: "§YCall upon the God of Knowledge§! \nMake offerings to the sixth son of the First-Man to make him support the [This.Monarch.GetTitle] in [This.Monarch.GetHerHis] life decisions."
+ re_religion_mechanic_manichaeism_purity_wind_button_tt: "§YRefreshing Wind§! \nMake offerings to the son of the First-Man associated with the element of wind."
+ re_religion_mechanic_manichaeism_purity_water_button_tt: "§YLife-Giving Waters§! \nMake offerings to the son of the First-Man associated with the element of water."
+ re_religion_mechanic_manichaeism_purity_air_button_tt: "§YClear Air§! \nMake offerings to the son of the First-Man associated with the element of air."
+ re_religion_mechanic_manichaeism_purity_light_button_tt: "§YBright Light§! \nMake offerings to the son of the First-Man associated with the element of light."
+ re_religion_mechanic_manichaeism_purity_fire_button_tt: "§YWarming Fire§! \nMake offerings to the son of the First-Man associated with the element of fire."
+ re_religion_mechanic_manichaeism_purity_moon_button_tt: "§YLiturgical Focus: Moon§! \nPick the Liturgical Focus of the Moon for the rest of the [This.Monarch.GetTitle]'s life. \n\nThe selected Liturgical Focus affects what bonuses we gain from the Minor Focuses. The Liturgical Focus '§YMoon§!' grants military, cultural and religious modifiers."
+ re_religion_mechanic_manichaeism_purity_moon_selected_icon_tt: "§YLiturgical Focus: Moon§! \n[This.Monarch.GetTitle] §Y[This.Monarch.GetName]§! has selected the Liturgical Focus '§YMoon§!' until [This.Monarch.GetHerHis] death. \n\nThe selected Liturgical Focus affects what bonuses we gain from the Minor Focuses. The Liturgical Focus '§YMoon§!' grants military, cultural and religious modifiers."
+ re_religion_mechanic_manichaeism_purity_sun_button_tt: "§YLiturgical Focus: Sun§! \nPick the Liturgical Focus of the Sun for the rest of the [This.Monarch.GetTitle]'s life. \n\nThe selected Liturgical Focus affects what bonuses we gain from the Minor Focuses. The Liturgical Focus '§YSun§!' grants economic and diplomatic modifiers."
+ re_religion_mechanic_manichaeism_purity_sun_selected_icon_tt: "§YLiturgical Focus: Sun§! \n[This.Monarch.GetTitle] §Y[This.Monarch.GetName]§! has selected the Liturgical Focus '§YSun§!' until [This.Monarch.GetHerHis] death. \n\nThe selected Liturgical Focus affects what bonuses we gain from the Minor Focuses. The Liturgical Focus '§YSun§!' grants economic and diplomatic modifiers."
+
+ re_religion_mechanic_manichaeism_purity_focus_button_tt_currently_active: "\n§YThis Minor Focus is active. Current effects:§!"
+ re_religion_mechanic_manichaeism_purity_focus_button_tt_moon_yes: "£yes£ If the Liturgical Focus '§YMoon§!' is selected:"
+ re_religion_mechanic_manichaeism_purity_focus_button_tt_moon_no: "£no£ If the Liturgical Focus '§YMoon§!' is selected:"
+ re_religion_mechanic_manichaeism_purity_focus_button_tt_sun_yes: "£yes£ If the Liturgical Focus '§YSun§!' is selected:"
+ re_religion_mechanic_manichaeism_purity_focus_button_tt_sun_no: "£no£ If the Liturgical Focus '§YSun§!' is selected:"
+ re_religion_mechanic_manichaeism_purity_until_ruler_death_or_focus_disabled_tt: "until the focus is disabled or until ruler death"
+
+ # Custom Modifiers:
+ re_monthly_religion_mechanic_manichaeism_purity_change: "Monthly Purity"
+
+ # Variables:
+ re_religion_mechanic_manichaeism_purity_value: "Purity"
+
+ # Scripted Triggers:
+ re_uses_religion_mechanic_manichaeism_purity_tt: "Uses the §YManichaean Purity§! mechanic"
+ re_not_uses_religion_mechanic_manichaeism_purity_tt: "Does NOT use the §YManichaean Purity§! mechanic"
+ re_has_any_religion_mechanic_manichaeism_purity_liturgical_focus_tt: "§Y[This.Monarch.GetName]§! has selected any Liturgical Focus"
+ re_has_not_any_religion_mechanic_manichaeism_purity_liturgical_focus_tt: "§Y[This.Monarch.GetName]§! has NOT selected any Liturgical Focus"
+ re_has_religion_mechanic_manichaeism_purity_liturgical_focus_moon_tt: "§Y[This.Monarch.GetName]§! has selected the Liturgical Focus '§YMoon§!'"
+ re_has_religion_mechanic_manichaeism_purity_liturgical_focus_sun_tt: "§Y[This.Monarch.GetName]§! has selected the Liturgical Focus '§YSun§!'"
+ re_has_religion_mechanic_manichaeism_purity_minor_focus_air_tt: "The Minor Focus '§YClear Air§!' is active"
+ re_has_religion_mechanic_manichaeism_purity_minor_focus_wind_tt: "The Minor Focus '§YRefreshing Wind§!' is active"
+ re_has_religion_mechanic_manichaeism_purity_minor_focus_water_tt: "The Minor Focus '§YLife-Giving Waters§!' is active"
+ re_has_religion_mechanic_manichaeism_purity_minor_focus_light_tt: "The Minor Focus '§YBright Light§!' is active"
+ re_has_religion_mechanic_manichaeism_purity_minor_focus_fire_tt: "The Minor Focus '§YWarming Fire§!' is active"
+ re_religion_mechanic_manichaeism_purity_has_fewer_than_allowed_minor_focuses_tt_less_than_3: "Fewer selected §YMinor Focuses§! than §Y3§!"
+ re_religion_mechanic_manichaeism_purity_has_fewer_than_allowed_minor_focuses_tt_less_than_2: "Fewer selected §YMinor Focuses§! than §Y2§!"
+ re_religion_mechanic_manichaeism_purity_has_fewer_than_allowed_minor_focuses_tt_less_than_1: "Fewer selected §YMinor Focuses§! than §Y1§!"
+
+ # Scripted Effects:
+ re_set_religion_mechanic_manichaeism_purity_liturgical_focus_moon_tt: "The [This.Monarch.GetTitle] §Y[This.Monarch.GetName]§! will now follow the Liturgical Focus of the §YMoon§! until [This.Monarch.GetHerHis] death."
+ re_set_religion_mechanic_manichaeism_purity_liturgical_focus_sun_tt: "The [This.Monarch.GetTitle] §Y[This.Monarch.GetName]§! will now follow the Liturgical Focus of the §YSun§! until [This.Monarch.GetHerHis] death."
+
+ # Customizable Localization:
+ string_re_get_religion_mechanic_manichaeism_purity_monthly_gain_value_positive: "§G+[This.re_monthly_religion_mechanic_manichaeism_purity_value.GetValue]§!"
+ string_re_get_religion_mechanic_manichaeism_purity_monthly_gain_value_negative: "§R[This.re_monthly_religion_mechanic_manichaeism_purity_value.GetValue]§!"
+ string_re_get_religion_mechanic_manichaeism_purity_monthly_gain_value_neutral: "§Y0.00§!"
+
+ # Events:
+ re_religion_mechanic_manichaeism_purity_events.EVTNAME1: "The Burning of the Mandean Temples"
+ re_religion_mechanic_manichaeism_purity_events.EVTDESC1: "Some people living in [4289.GetAreaName] still follow ancient beliefs. Parts of the [Root.Religion.GetName] population of the city have now tried to burn down their last remaining temples. How should we handle the situation? Should we support our brothers in faith, leave them both be or try to assimilate the Mandeans?"
+ re_religion_mechanic_manichaeism_purity_events1.EVTOPT1: "Their religion has no place in our realm."
+ re_religion_mechanic_manichaeism_purity_events1.EVTOPT2: "The situation is irrelevant to us."
+ re_religion_mechanic_manichaeism_purity_events1.EVTOPT3: "Assimilate the Mandeans slowly."
+
+ # Decisions:
+ re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision_title: "Burn the Mandean Temples"
+ re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision_desc: "Some people living in [4289.GetAreaName] still follow ancient beliefs. There are conflicts between them and parts of the [Root.Religion.GetName] population, which we need to handle eventually."
+
+ # Modifiers:
+ ## Mechanic Modifiers:
+ re_religion_mechanic_manichaeism_purity_air_moon_modifier: "Clear Air Focus (Moon)"
+ re_religion_mechanic_manichaeism_purity_air_sun_modifier: "Clear Air Focus (Sun)"
+ re_religion_mechanic_manichaeism_purity_wind_moon_modifier: "Refreshing Wind Focus (Moon)"
+ re_religion_mechanic_manichaeism_purity_wind_sun_modifier: "Refreshing Wind Focus (Sun)"
+ re_religion_mechanic_manichaeism_purity_water_moon_modifier: "Life-Giving Waters Focus (Moon)"
+ re_religion_mechanic_manichaeism_purity_water_sun_modifier: "Life-Giving Waters Focus (Sun)"
+ re_religion_mechanic_manichaeism_purity_light_moon_modifier: "Bright Light Focus (Moon)"
+ re_religion_mechanic_manichaeism_purity_light_sun_modifier: "Bright Light Focus (Sun)"
+ re_religion_mechanic_manichaeism_purity_fire_moon_modifier: "Warming Fire Focus (Moon)"
+ re_religion_mechanic_manichaeism_purity_fire_sun_modifier: "Warming Fire Focus (Sun)"
+ re_religion_mechanic_manichaeism_purity_knowledge_modifier: "Called upon the God of Knowledge"
+ ## Event Modifiers:
+ re_religion_mechanic_manichaeism_purity_assimilation_of_mandeans_modifier: "Assimilation of the Mandeans"
