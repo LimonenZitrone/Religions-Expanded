@@ -1264,6 +1264,22 @@
  # Decisions:
  re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision_title: "Burn the Mandean Temples"
  re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision_desc: "Some people living in [4289.GetAreaName] still follow ancient beliefs. There are conflicts between them and parts of the [Root.Religion.GetName] population, which we need to handle eventually."
+ re_religion_mechanic_manichaeism_purity_knowledge_decision_title: "Call upon the God of Knowledge"
+ re_religion_mechanic_manichaeism_purity_knowledge_decision_desc: "Make offerings to the sixth son of the First-Man to make him support the [This.Monarch.GetTitle] in [This.Monarch.GetHerHis] life decisions."
+ re_religion_mechanic_manichaeism_purity_wind_decision_title: "Refreshing Wind"
+ re_religion_mechanic_manichaeism_purity_wind_decision_desc: "Make offerings to the son of the First-Man associated with the element of wind."
+ re_religion_mechanic_manichaeism_purity_water_decision_title: "Life-Giving Waters"
+ re_religion_mechanic_manichaeism_purity_water_decision_desc: "Make offerings to the son of the First-Man associated with the element of water."
+ re_religion_mechanic_manichaeism_purity_air_decision_title: "Clear Air"
+ re_religion_mechanic_manichaeism_purity_air_decision_desc: "Make offerings to the son of the First-Man associated with the element of air."
+ re_religion_mechanic_manichaeism_purity_light_decision_title: "Bright Light"
+ re_religion_mechanic_manichaeism_purity_light_decision_desc: "Make offerings to the son of the First-Man associated with the element of light."
+ re_religion_mechanic_manichaeism_purity_fire_decision_title: "Warming Fire"
+ re_religion_mechanic_manichaeism_purity_fire_decision_desc: "Make offerings to the son of the First-Man associated with the element of fire."
+ re_religion_mechanic_manichaeism_purity_moon_decision_title: "Liturgical Focus: Moon"
+ re_religion_mechanic_manichaeism_purity_moon_decision_desc: "Pick the Liturgical Focus of the Moon for the rest of the [This.Monarch.GetTitle]'s life. \n\nThe selected Liturgical Focus affects what bonuses we gain from the Minor Focuses. The Liturgical Focus '§YMoon§!' grants military, cultural and religious modifiers."
+ re_religion_mechanic_manichaeism_purity_sun_decision_title: "Liturgical Focus: Sun"
+ re_religion_mechanic_manichaeism_purity_sun_decision_desc: "Pick the Liturgical Focus of the Sun for the rest of the [This.Monarch.GetTitle]'s life. \n\nThe selected Liturgical Focus affects what bonuses we gain from the Minor Focuses. The Liturgical Focus '§YSun§!' grants economic and diplomatic modifiers."
 
  # Modifiers:
  ## Mechanic Modifiers:
