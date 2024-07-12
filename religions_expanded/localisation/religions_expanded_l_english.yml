@@ -11,6 +11,8 @@
  re_missionary_assigned_to_state_main_modifier: "Clerical Administration"
  re_missionary_assigned_to_state_modifier: "Clerical Administration"
  re_religion_reformed_modifier: "Centralized the Faith"
+ re_religion_jainism_estate_jains_guaranteed_autonomy_mod: "Guaranteed Jains Autonomy"
+ desc_re_religion_jainism_estate_jains_guaranteed_autonomy_mod: "The state has guaranteed greater autonomy for the Jains."
 
  # Tooltips:
  RE_UNTIL_MONARCH_DEATH: "until ruler death"
@@ -68,3 +70,16 @@
 
  # War Names:
  RE_RELIGION_MECHANIC_NESTORIAN_PATRIARCHY_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$ War against the Nestorian Patriarchy"
+
+ # State Edicts:
+ re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded: "Silk Road Missionaries"
+ re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries: "Silk Road Missionaries"
+
+ # Estate Privileges:
+ re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary: "Patriarchal Emissary"
+ re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetClergyName] and the Patriarch."
+
+ re_religion_jainism_estate_jains_guaranteed_autonomy: "Guaranteed Jains Autonomy"
+ re_religion_jainism_estate_jains_guaranteed_autonomy_desc: "The [Root.GetJainsName] are held in high regard by our subjects. Granting them greater autonomy would be an effective way to secure their support for the [Root.GovernmentName] and ensure that our differences with them do not erupt into religious strife."
+ re_religion_jainism_estate_jains_guaranteed_autonomy_effect_tooltip: "Every owned province of the §YJainist§! faith gains: \n[local_missionary_strength]: §R-100.0%§! \n[local_religious_unity_contribution]: §G-100.0%§!"
+ re_religion_jainism_estate_jains_guaranteed_autonomy_revoke_effect_tooltip: "The modifier §Y'Guaranteed Jains Autonomy'§! is removed from all owned §YJainist§! provinces."

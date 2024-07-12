@@ -1173,14 +1173,6 @@
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_1_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_1_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in one technology category."
 
- # State Edicts:
- re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded: "Silk Road Missionaries"
- re_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries: "Silk Road Missionaries"
-
- # Estate Privileges:
- re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary: "Patriarchal Emissary"
- re_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetClergyName] and the Patriarch."
-
  # New Diplomatic Actions:
  ## Categories:
  DIPLOMACYACTION_CATEGORY_patriarch_authority: "Patriarchal actions"

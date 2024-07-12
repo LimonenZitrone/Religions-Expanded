@@ -1,26 +1,3 @@
-on_startup = {
-	if = {
-		limit = {
-			NOT = { has_global_flag = religions_expanded_manichaeism_initialized }
-			started_in = 1444.11.11
-			NOT = { started_in = 1445.1.1 }
-		}
-		set_global_flag = religions_expanded_manichaeism_initialized
-		4289 = {
-			if = {
-				limit = {
-					NOT = { religion = manichaeism }
-				}
-				change_religion = manichaeism
-				add_permanent_province_modifier = {
-					name = religious_zeal_at_conv
-					duration = 1825
-				}
-			}
-		}
-	}
-}
-
 on_religion_change = {
 	re_clear_all_religion_mechanic_manichaeism_purity_modifiers = yes
 }

@@ -753,3 +753,15 @@ defined_text = {
 		localisation_key = MANPOWER_RECOVERY
 	}
 }
+
+defined_text = {
+	name = local_religious_unity_contribution
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_RELIGIOUS_UNITY_CONTRIBUTION
+	}
+}

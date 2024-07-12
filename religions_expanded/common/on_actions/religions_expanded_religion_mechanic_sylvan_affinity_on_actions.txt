@@ -1,38 +1,3 @@
-on_startup = {
-	if = {
-		limit = {
-			NOT = { has_global_flag = religions_expanded_vidilist_initialized }
-			started_in = 1444.11.11
-			NOT = { started_in = 1445.1.1 }
-		}
-		set_global_flag = religions_expanded_vidilist_initialized
-		271 = {
-			if = {
-				limit = {
-					NOT = { religion = vidilist }
-				}
-				change_religion = vidilist
-				add_permanent_province_modifier = {
-					name = religious_zeal_at_conv
-					duration = 1825
-				}
-			}
-		}
-		4535 = {
-			if = {
-				limit = {
-					NOT = { religion = vidilist }
-				}
-				change_religion = vidilist
-				add_permanent_province_modifier = {
-					name = religious_zeal_at_conv
-					duration = 1825
-				}
-			}
-		}
-	}
-}
-
 on_religion_change = {
 	re_clear_all_religion_mechanic_sylvan_affinity_modifiers = yes
 }

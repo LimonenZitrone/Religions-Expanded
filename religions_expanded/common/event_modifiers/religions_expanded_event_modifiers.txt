@@ -21,3 +21,10 @@ re_religion_reformed_modifier = {
 	global_tax_modifier = -0.1
 	religion = yes
 }
+
+# Estate Privileges
+re_religion_jainism_estate_jains_guaranteed_autonomy_mod = {
+	religion = yes
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
+}

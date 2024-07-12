@@ -1,0 +1,5 @@
+estate_jains = {
+	privileges = {
+		re_religion_jainism_estate_jains_guaranteed_autonomy
+	}
+}
