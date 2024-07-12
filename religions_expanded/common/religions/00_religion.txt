@@ -2723,7 +2723,7 @@ zoroastrian_group = {
 	# Religions Expanded
 	manichaeism = {
 		icon = 34
-		color = { 222 111 222 }
+		color = { 166 108 146 }
 		allowed_conversion = {
 			zoroastrian
 		}
