@@ -27,7 +27,9 @@ on_startup = {
 				re_religion_initialization_tibetan_buddhism_is_starting_country = yes
 				NOT = { religion = tibetan_buddhism }
 			}
+			set_country_flag = religions_expanded_initial_conversion
 			change_religion = tibetan_buddhism
+			clr_country_flag = religions_expanded_initial_conversion
 		}
 		# vidilist
 		every_province = {

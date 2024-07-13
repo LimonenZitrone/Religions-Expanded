@@ -1638,11 +1638,16 @@ eastern = {
 
 		on_convert = {
 			change_religion = tibetan_buddhism
-			add_prestige = -100
-			add_stability = -1
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
+			if = {
+				limit = {
+					NOT = { has_country_flag = religions_expanded_initial_conversion }
+				}
+				add_prestige = -100
+				add_stability = -1
+				add_country_modifier = {
+					name = "conversion_zeal"
+					duration = 3650
+				}
 			}
 		}
 
