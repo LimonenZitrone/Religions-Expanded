@@ -1,0 +1,94 @@
+# DLC info for the lobby used to show information for new religions and mechanics
+religions_expanded_entry_country_change_religion_tibetan_buddhism = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_country_change_religion_tibetan_buddhism_desc"
+		tooltip_reason = ""
+		weight = 50
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			re_religion_initialization_tibetan_buddhism_is_starting_country = yes
+		}
+	}
+}
+
+religions_expanded_entry_country_religion_info_hinduism = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_country_religion_info_hinduism_desc"
+		tooltip_reason = ""
+		weight = 50
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			religion = hinduism
+		}
+	}
+}
+
+religions_expanded_entry_province_change_religion_jainism = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_province_change_religion_jainism_desc"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			any_owned_province = {
+				re_religion_initialization_jainism_is_starting_province = yes
+			}
+		}
+	}
+}
+
+religions_expanded_entry_province_change_religion_tibetan_buddhism = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_province_change_religion_tibetan_buddhism_desc"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			any_owned_province = {
+				re_religion_initialization_tibetan_buddhism_is_starting_province = yes
+			}
+		}
+	}
+}
+
+religions_expanded_entry_province_change_religion_vidilist = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_province_change_religion_vidilist_desc"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			any_owned_province = {
+				re_religion_initialization_vidilist_is_starting_province = yes
+			}
+		}
+	}
+}
+
+religions_expanded_entry_province_change_religion_nestorian = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_province_change_religion_nestorian_desc"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			any_owned_province = {
+				re_religion_initialization_nestorian_is_starting_province = yes
+			}
+		}
+	}
+}
+
+religions_expanded_entry_province_change_religion_manichaeism = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_province_change_religion_manichaeism_desc"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			any_owned_province = {
+				re_religion_initialization_manichaeism_is_starting_province = yes
+			}
+		}
+	}
+}

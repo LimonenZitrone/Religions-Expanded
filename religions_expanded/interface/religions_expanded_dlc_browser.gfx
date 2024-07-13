@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_religions_expanded_dlcview_bg"
+		textureFile = "gfx/interface/re_lobby_notifications/religions_expanded_dlcview_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_religions_expanded_entry_country_change_religion_tibetan_buddhism"
+		textureFile = "gfx/interface/re_lobby_notifications/country_change_religion_tibetan_buddhism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_country_religion_info_hinduism"
+		textureFile = "gfx/interface/re_lobby_notifications/country_religion_info_hinduism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_tibetan_buddhism"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_tibetan_buddhism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_jainism"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_jainism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_vidilist"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_vidilist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_nestorian"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_nestorian.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_manichaeism"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_manichaeism.dds"
+		legacy_lazy_load = no
+	}
+}

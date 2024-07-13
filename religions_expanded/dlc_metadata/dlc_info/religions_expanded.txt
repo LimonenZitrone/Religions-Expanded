@@ -1,0 +1,83 @@
+# DLC info for the lobby used to show information for new religions and mechanics
+categories = {
+	religions_expanded_category_country_change_religion_tibetan_buddhism = {
+		index = 4
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_country_religion_info_hinduism = {
+		index = 5
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_province_change_religion_jainism = {
+		index = 6
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_province_change_religion_tibetan_buddhism = {
+		index = 7
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_province_change_religion_vidilist = {
+		index = 8
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_province_change_religion_nestorian = {
+		index = 9
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_province_change_religion_manichaeism = {
+		index = 10
+		gui = religions_expanded_category_landing_page
+	}
+}
+
+dlcs = {
+	religions_expanded_entry_country_change_religion_tibetan_buddhism = {
+		name = "Country Religion Change"
+		id = -1
+		category = religions_expanded_category_country_change_religion_tibetan_buddhism
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_country_change_religion_tibetan_buddhism"
+	}
+	religions_expanded_entry_country_religion_info_hinduism = {
+		name = "Country Religion Change"
+		id = -1
+		category = religions_expanded_category_country_religion_info_hinduism
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_country_religion_info_hinduism"
+	}
+	religions_expanded_entry_province_change_religion_jainism = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_jainism
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_jainism"
+	}
+	religions_expanded_entry_province_change_religion_tibetan_buddhism = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_tibetan_buddhism
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_tibetan_buddhism"
+	}
+	religions_expanded_entry_province_change_religion_vidilist = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_vidilist
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_vidilist"
+	}
+	religions_expanded_entry_province_change_religion_nestorian = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_nestorian
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_nestorian"
+	}
+	religions_expanded_entry_province_change_religion_manichaeism = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_manichaeism
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_manichaeism"
+	}
+}

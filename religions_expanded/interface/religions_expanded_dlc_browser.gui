@@ -1,0 +1,104 @@
+guiTypes = {
+	windowType = {
+		name = "religions_expanded_category_landing_page"
+		backGround= "background"
+		position = { x = -630 y = 150 }
+		size = { x = 300 y = 375 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		upsound = ""
+		downsound = ""
+		fullscreen = no
+		orientation = upper_right
+
+		guiButtonType = {
+			name = "background"
+			spriteType = "GFX_religions_expanded_dlcview_bg"
+			position = { x = 0 y = 0 }
+		}
+
+		iconType ={
+			name = "dlc_browser_bg"
+			spriteType = "GFX_pdxo_transparent_black"
+			position = { x = 186 y = -95 }
+		}
+
+		iconType ={
+			name = "dlc_header_image"
+			spriteType = "GFX_pdxo_transparent_black"
+			position = { x = 186 y = 18 }
+		}
+
+        instantTextBoxType = {
+			name = "dlc_title"
+			position = { x = 20 y = 55 }
+			font = "vic_18"
+			text = "STATISTICS"
+			maxWidth = 255
+			maxHeight = 25
+			format = center
+			fixedsize = yes
+		}
+
+        instantTextBoxType = {
+			name = "dlc_desc_and_flavor"
+			position = { x = 30 y = 87 }
+			font = "vic_18"
+			maxWidth = 225
+			maxHeight = 250
+			scrollbartype = "standardlistbox_slider"
+			format = left
+		}
+
+		instantTextBoxType = {
+            name = "dlc_recommended"
+            position = { x = 307 y = 530 }
+            font = "standard_font"
+            borderSize = { x = 4 y = 4 }
+            text = ""
+            maxWidth = 300
+            maxHeight = 25
+            format = center
+        }
+
+		listboxType = {
+			# List of recommended_dlc_entry
+			name = "recommended_dlc_icons_list"
+			position = { x = 330 y = 558 }
+			backGround= ""
+			size = { x = 1000 y = 1000 } # These get inverted by horizontal = yes
+			Orientation = "UPPER_LEFT"
+			horizontal = 1
+			spacing = -5
+			borderSize = { x = 0 y = 0 }
+		}
+
+		guiButtonType = {
+			name = "back_button"
+			quadTextureSprite = "GFX_pdxo_transparent_black"
+			position = { x = 240 y = 620 }
+			buttonText = ""
+			buttonFont = "vic_18"
+		}
+
+		guiButtonType = {
+			name = "view_in_store_button"
+			quadTextureSprite = "GFX_pdxo_transparent_black"
+			position = { x = 540 y = 620 }
+			buttonText = ""
+			buttonFont = "vic_18"
+		}
+
+		guiButtonType = {
+			name = "close_button"
+			quadTextureSprite = "button_type_6"
+			position = { x = 109 y = -32 }
+			orientation = lower_left
+			buttonText = "CLOSE"
+			buttonFont = "vic_18"
+			shortcut = "ESCAPE"
+		}
+	}
+}
