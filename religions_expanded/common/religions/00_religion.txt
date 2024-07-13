@@ -50,7 +50,7 @@ christian = {
 
 		}
 
-		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+		heretic = { WALDENSIAN FRATICELLI LOLLARD SOCINIAN } # Religions Expanded
 
 		papacy = {
 			papal_tag = PAP
@@ -651,6 +651,9 @@ christian = {
 	orthodox = {
 		color = { 178 127 0 }
 		icon = 4
+		allowed_conversion = {
+			bogomilist # Religions Expanded
+		}
 		country = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
@@ -871,6 +874,39 @@ christian = {
 		}
 
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY }
+	}
+
+	# Religions Expanded
+	bogomilist = {
+		color = { 170 0 0 }
+		icon = 35
+		allowed_conversion = {
+			orthodox
+		}
+		country = {
+		}
+		country_as_secondary = {
+		}
+		province = {
+		}
+
+		on_convert = {
+			change_religion = bogomilist
+			add_stability = -1
+			add_prestige = -100
+			add_country_modifier = {
+				name = conversion_zeal
+				duration = 3650
+			}
+		}
+
+		uses_church_power = yes				# Uses church power/aspect mechanics
+
+		aspects = {
+		}
+		aspects_name = BOGOMILIST_ASPECTS
+
+		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
 	}
 
 	harmonized_modifier = harmonized_christian
@@ -2722,7 +2758,7 @@ zoroastrian_group = {
 			blessing_dakhma
 		}
 
-		heretic = { MAZDAKI }
+		heretic = { MAZDAKI } # Religions Expanded
 	}
 
 	# Religions Expanded

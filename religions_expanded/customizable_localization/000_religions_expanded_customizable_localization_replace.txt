@@ -190,4 +190,10 @@ defined_text = {
 			religion = manichaeism
 		}
 	}
+	text = {
+		localisation_key = bogomilist_string
+		trigger = {
+			religion = bogomilist
+		}
+	}
 }

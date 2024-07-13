@@ -1288,3 +1288,11 @@
  re_religion_mechanic_manichaeism_purity_knowledge_modifier: "Called upon the God of Knowledge"
  ## Event Modifiers:
  re_religion_mechanic_manichaeism_purity_assimilation_of_mandeans_modifier: "Assimilation of the Mandeans"
+
+ ######################################
+ ## Bogomilist Church Power Mechanic ##
+ ######################################
+ # General:
+ BOGOMILIST_ASPECTS_POWER_NAME: "Church Power"
+ BOGOMILIST_ASPECTS_LONG: "Religious Action"
+ BOGOMILIST_ASPECTS_SHORT: "action"

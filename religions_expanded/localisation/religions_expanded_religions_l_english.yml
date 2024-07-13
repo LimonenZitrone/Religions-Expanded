@@ -15,6 +15,9 @@
  manichaeism: "Manichaean"
  manichaeism_religion_desc: ""
  manichaeism_string: "Manichaeism"
+ bogomilist: "Bogomilist"
+ bogomilist_religion_desc: ""
+ bogomilist_string: "Bogomilism"
 
  # Heresies:
  YAPANIYA: "Yapaniya"
@@ -54,3 +57,9 @@
  manichaeism_rebels_army: "$RELIGION$ Army"
  manichaeism_rebels_demand: "Convert $COUNTRYNAME$"
  manichaeism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ bogomilist_rebels_title: "Religious"
+ bogomilist_rebels_name: "$RELIGION$ Zealots"
+ bogomilist_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ bogomilist_rebels_army: "$RELIGION$ Army"
+ bogomilist_rebels_demand: "Convert $COUNTRYNAME$"
+ bogomilist_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."

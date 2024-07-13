@@ -189,6 +189,7 @@ spawn_country_religious_rebels = {
 			vidilist = 				{ PREV = { spawn_rebels = { type = vidilist_rebels size = $size$ } } }
 			nestorian = 			{ PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ } } }
 			manichaeism = 			{ PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ } } }
+			bogomilist = 			{ PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ } } }
 		}
 	}
 }
@@ -230,6 +231,7 @@ spawn_province_religious_rebels = {
 		vidilist = 				{ spawn_rebels = { type = vidilist_rebels size = $size$ } }
 		nestorian = 			{ spawn_rebels = { type = nestorian_rebels size = $size$ } }
 		manichaeism = 			{ spawn_rebels = { type = manichaeism_rebels size = $size$ } }
+		bogomilist = 			{ spawn_rebels = { type = bogomilist_rebels size = $size$ } }
 	}
 }
 
@@ -330,6 +332,7 @@ spawn_rebels_from_unhappy_estate = {
 						vidilist =      { PREV = { spawn_rebels = { type = vidilist_rebels size = $size$ as_if_faction = yes } } }
 						nestorian =     { PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ as_if_faction = yes } } }
 						manichaeism =     { PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ as_if_faction = yes } } }
+						bogomilist =     { PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ as_if_faction = yes } } }
 					}
 				}
 			}
