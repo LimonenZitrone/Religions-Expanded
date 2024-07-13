@@ -228,11 +228,6 @@ re_clear_all_religion_mechanic_manichaeism_purity_modifiers = {
 	set_variable = { which = re_monthly_religion_mechanic_manichaeism_purity_value value = 0 }
 	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_liturgical_focus_moon
 	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_liturgical_focus_sun
-	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_air
-	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_wind
-	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_water
-	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_light
-	clr_ruler_flag = re_religion_mechanic_manichaeism_purity_minor_focus_fire
 	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
 	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
 	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }

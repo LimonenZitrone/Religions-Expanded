@@ -878,16 +878,21 @@ christian = {
 
 	# Religions Expanded
 	bogomilist = {
-		color = { 170 0 0 }
+		color = { 169 0 0 }
 		icon = 35
 		allowed_conversion = {
 			orthodox
 		}
 		country = {
+			advisor_cost = -0.1
+			all_estate_influence_modifier = -0.1
 		}
 		country_as_secondary = {
+			advisor_cost = -0.05
+			all_estate_influence_modifier = -0.05
 		}
 		province = {
+			local_missionary_strength = -0.01
 		}
 
 		on_convert = {
@@ -900,9 +905,16 @@ christian = {
 			}
 		}
 
-		uses_church_power = yes				# Uses church power/aspect mechanics
+		uses_church_power = yes
 
 		aspects = {
+			religions_expanded_bogomilist_aspect_dissolve_church_properties
+			religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters
+			religions_expanded_bogomilist_aspect_institute_clerical_administration
+			religions_expanded_bogomilist_aspect_distribute_the_means_of_production
+			religions_expanded_bogomilist_aspect_slacken_recruitment_for_the_holy_war
+			religions_expanded_bogomilist_aspect_standarize_holy_knights
+			religions_expanded_bogomilist_aspect_organize_colonial_voyages
 		}
 		aspects_name = BOGOMILIST_ASPECTS
 

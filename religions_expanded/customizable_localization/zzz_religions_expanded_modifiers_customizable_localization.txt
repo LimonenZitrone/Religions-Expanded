@@ -551,6 +551,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = shock_damage
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SHOCK_DAMAGE
+	}
+}
+
+defined_text = {
 	name = is_marine_modifier
 	random = no
 
@@ -763,5 +775,77 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = MODIFIER_LOCAL_RELIGIOUS_UNITY_CONTRIBUTION
+	}
+}
+
+defined_text = {
+	name = global_tax_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_TAX_MODIFIER
+	}
+}
+
+defined_text = {
+	name = trade_value
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = TRADE_VALUE
+	}
+}
+
+defined_text = {
+	name = cavalry_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = CAVALRY_COST
+	}
+}
+
+defined_text = {
+	name = cavalry_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = CAVALRY_POWER
+	}
+}
+
+defined_text = {
+	name = global_colonial_growth
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COLONIAL_GROWTH
+	}
+}
+
+defined_text = {
+	name = colonist_placement_chance
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = COLONIST_PLACEMENT_CHANCE
 	}
 }

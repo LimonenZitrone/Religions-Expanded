@@ -30,6 +30,20 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	# Church Aspects:
+	## Button Overlay:
+	spriteType = {
+		name = "GFX_anglican_aspects_icon_strip_overlay"
+		texturefile = "gfx/interface/anglican_aspects_icon_strip_overlay.dds"
+		noOfFrames = 2
+	}
+	## Alert Icons:
+	spriteType = {
+		name = "GFX_alert_pick_church_aspect_bogomilist"
+		texturefile = "gfx/interface/alert_pick_church_aspect_bogomilist.dds"
+		alwaystransparent = yes
+	}
+
 	# Religion Mechanics:
 	## Sukha Mechanic:
 	spriteType = {
@@ -348,5 +362,39 @@ spriteTypes = {
 		textureFile = "gfx/interface/re_religion_mechanics/manichaeism_purity_mechanic/mechanic_moon_button.dds"
 		noOfFrames = 2
 		transparencecheck = yes
+	}
+
+	## Bogomilist Church Aspects Mechanic:
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_bg"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_dissolve_church_properties"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_dissolve_church_properties.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_deprivatize_mercantile_charters"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_deprivatize_mercantile_charters.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_institute_clerical_administration"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_institute_clerical_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_distribute_the_means_of_production"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_distribute_the_means_of_production.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_slacken_recruitment_for_the_holy_war"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_slacken_recruitment_for_the_holy_war.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_standarize_holy_knights"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_standarize_holy_knights.dds"
+	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_organize_colonial_voyages"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_organize_colonial_voyages.dds"
 	}
 }

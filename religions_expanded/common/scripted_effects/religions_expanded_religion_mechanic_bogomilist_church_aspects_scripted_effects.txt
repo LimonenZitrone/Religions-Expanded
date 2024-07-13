@@ -1,0 +1,18 @@
+re_clear_all_religion_mechanic_bogomilist_church_aspects_modifiers = {
+	every_owned_province = {
+		limit = {
+			OR = {
+				has_province_modifier = religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_1
+				has_province_modifier = religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_2
+				has_province_modifier = religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_3
+				has_province_modifier = religions_expanded_bogomilist_aspect_institute_clerical_administration_province_modifier_1
+				has_province_modifier = religions_expanded_bogomilist_aspect_institute_clerical_administration_province_modifier_2
+			}
+		}
+		remove_province_modifier = religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_1
+		remove_province_modifier = religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_2
+		remove_province_modifier = religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_3
+		remove_province_modifier = religions_expanded_bogomilist_aspect_institute_clerical_administration_province_modifier_1
+		remove_province_modifier = religions_expanded_bogomilist_aspect_institute_clerical_administration_province_modifier_2
+	}
+}

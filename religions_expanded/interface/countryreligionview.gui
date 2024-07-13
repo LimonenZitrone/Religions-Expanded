@@ -2495,6 +2495,23 @@ guiTypes = {
 		## START Religions Expanded Custom GUI 2 ##
 		###########################################
 
+		#######################################
+		### Anglican Church Aspects Overlay ###
+		#######################################
+		windowType = {
+			name = "re_religion_mechanic_anglican_church_aspects_overlay_window"
+			position = { x = 32 y = 300 }
+			scripted = yes
+
+			iconType = {
+				name = "re_religion_mechanic_anglican_church_aspects_overlay_icon"
+				position = { x = 10 y = -43 }
+				spriteType = "GFX_anglican_aspects_icon_strip_overlay"
+				alwaystransparent = yes
+				scripted = yes
+			}
+		}
+
 		######################
 		### Sukha Mechanic ###
 		######################
@@ -3560,6 +3577,29 @@ guiTypes = {
 				spriteType = "GFX_anglican_overlay_bg"
 				position = { x= -27 y = -72 }
 			}
+
+			###########################################
+			## START Religions Expanded Custom GUI 3 ##
+			###########################################
+
+			##########################################
+			### Bogomilist Church Aspects Mechanic ###
+			##########################################
+			windowType = {
+				name = "re_religion_mechanic_bogomilist_church_aspects_window"
+				position = { x = 8 y = -57 }
+				scripted = yes
+
+				iconType = {
+					name = "background"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_re_religion_mechanic_bogomilist_church_aspects_bg"
+				}
+			}
+
+			###########################################
+			##  END Religions Expanded Custom GUI 3  ##
+			###########################################
 
 			listboxType =
 			{
