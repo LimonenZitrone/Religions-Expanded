@@ -28,6 +28,10 @@ categories = {
 		index = 10
 		gui = religions_expanded_category_landing_page
 	}
+	religions_expanded_category_province_change_religion_bogomilist = {
+		index = 11
+		gui = religions_expanded_category_landing_page
+	}
 }
 
 dlcs = {
@@ -79,5 +83,12 @@ dlcs = {
 		category = religions_expanded_category_province_change_religion_manichaeism
 		recommendations = { }
 		icon = "GFX_religions_expanded_entry_province_change_religion_manichaeism"
+	}
+	religions_expanded_entry_province_change_religion_bogomilist = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_bogomilist
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_bogomilist"
 	}
 }

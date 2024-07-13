@@ -92,3 +92,17 @@ religions_expanded_entry_province_change_religion_manichaeism = {
 		}
 	}
 }
+
+religions_expanded_entry_province_change_religion_bogomilist = {
+	reason = {
+		tooltip_desc = "religions_expanded_entry_province_change_religion_bogomilist_desc"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = religions_expanded_religions_initialized }
+			any_owned_province = {
+				re_religion_initialization_bogomilist_is_starting_province = yes
+			}
+		}
+	}
+}

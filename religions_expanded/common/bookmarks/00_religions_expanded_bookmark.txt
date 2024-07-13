@@ -18,6 +18,8 @@ bookmark = {
 	country = MER
 	# vidilist
 	country = LIT
+	# bogomilist
+	country = BOS
 	# hinduism
 	country = VIJ
 }

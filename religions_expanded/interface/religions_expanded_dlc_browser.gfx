@@ -40,4 +40,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_manichaeism.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_bogomilist"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_bogomilist.dds"
+		legacy_lazy_load = no
+	}
 }

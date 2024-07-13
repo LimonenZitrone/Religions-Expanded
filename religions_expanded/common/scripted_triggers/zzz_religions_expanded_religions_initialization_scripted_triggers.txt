@@ -70,3 +70,12 @@ re_religion_initialization_nestorian_is_starting_province = {
 re_religion_initialization_manichaeism_is_starting_province = {
 	province_id = 4289
 }
+
+# bogomilist
+re_religion_initialization_bogomilist_is_starting_province = {
+	OR = {
+		province_id = 139
+		province_id = 3001
+		province_id = 3002
+	}
+}

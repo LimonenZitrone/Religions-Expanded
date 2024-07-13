@@ -62,3 +62,16 @@ sound = {
 	name = religion_manichaeism
 	file = "start_conversion_zoroastrian.wav"
 }
+
+sound = {
+	name = defender_of_the_bogomilist_faith
+	file = "claim_defender_faith_orthodox.wav"
+}
+sound = {
+	name = start_convert_bogomilist
+	file = "start_conversion_christian_orthodox.wav"
+}
+sound = {
+	name = religion_bogomilist
+	file = "tab_religion_christian.wav"
+}

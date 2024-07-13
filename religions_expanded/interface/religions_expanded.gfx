@@ -372,29 +372,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_dissolve_church_properties"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_dissolve_church_properties.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_deprivatize_mercantile_charters"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_deprivatize_mercantile_charters.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_institute_clerical_administration"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_institute_clerical_administration.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_distribute_the_means_of_production"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_distribute_the_means_of_production.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_slacken_recruitment_for_the_holy_war"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_slacken_recruitment_for_the_holy_war.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_standarize_holy_knights"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_standarize_holy_knights.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_organize_colonial_voyages"
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_organize_colonial_voyages.dds"
+		legacy_lazy_load = no
 	}
 }

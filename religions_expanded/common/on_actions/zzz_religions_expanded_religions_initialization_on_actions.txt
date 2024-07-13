@@ -67,5 +67,13 @@ on_startup = {
 				duration = 1825
 			}
 		}
+		# bogomilist
+		every_province = {
+			limit = {
+				re_religion_initialization_bogomilist_is_starting_province = yes
+				NOT = { religion = bogomilist }
+			}
+			change_religion = bogomilist
+		}
 	}
 }
