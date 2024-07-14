@@ -51,6 +51,31 @@ on_startup = {
 				NOT = { primary_culture = oghuz_culture }
 			}
 			change_primary_culture = oghuz_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				if = {
+					limit = {
+						ruler_culture = turkish
+					}
+					set_ruler_culture = oghuz_culture
+				}
+				if = {
+					limit = {
+						has_heir = yes
+						heir_culture = turkish
+					}
+					set_heir_culture = oghuz_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+						consort_culture = turkish
+					}
+					set_consort_culture = oghuz_culture
+				}
+			}
 		}
 		# farsi_culture
 		every_province = {
@@ -66,6 +91,31 @@ on_startup = {
 				NOT = { primary_culture = farsi_culture }
 			}
 			change_primary_culture = farsi_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				if = {
+					limit = {
+						ruler_culture = persian
+					}
+					set_ruler_culture = farsi_culture
+				}
+				if = {
+					limit = {
+						has_heir = yes
+						heir_culture = persian
+					}
+					set_heir_culture = farsi_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+						consort_culture = persian
+					}
+					set_consort_culture = farsi_culture
+				}
+			}
 		}
 		# manichaean_culture
 		every_province = {
