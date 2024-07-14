@@ -93,3 +93,8 @@
  re_religion_jainism_estate_jains_guaranteed_autonomy_desc: "The [Root.GetJainsName] are held in high regard by our subjects. Granting them greater autonomy would be an effective way to secure their support for the [Root.GovernmentName] and ensure that our differences with them do not erupt into religious strife."
  re_religion_jainism_estate_jains_guaranteed_autonomy_effect_tooltip: "Every owned province of the §YJainist§! faith gains: \n[local_missionary_strength]: §R-100.0%§! \n[local_religious_unity_contribution]: §G-100.0%§!"
  re_religion_jainism_estate_jains_guaranteed_autonomy_revoke_effect_tooltip: "The modifier §Y'Guaranteed Jains Autonomy'§! is removed from all owned §YJainist§! provinces."
+
+ # Ideas:
+ re_anatolian_beyliks_ideas: "Anatolian Ideas"
+ re_anatolian_beyliks_ideas_start: "Anatolian Traditions"
+ re_anatolian_beyliks_ideas_bonus: "Anatolian Ambition"

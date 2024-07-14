@@ -1,0 +1,217 @@
+namespace = re_culture_oghuz_culture_events
+
+province_event = {
+	id = re_culture_oghuz_culture_events.1
+	title = re_culture_oghuz_culture_events.EVTNAME1
+	desc = re_culture_oghuz_culture_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		culture = oghuz_culture
+		NOT = { has_province_flag = re_culture_oghuz_culture_was_converted }
+		owner = {
+			NOT = { has_country_flag = re_culture_oghuz_culture_picked_oghuz_culture }
+		}
+		any_neighbor_province = {
+			owned_by = ROOT
+			culture_group = turko_semitic
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 30
+		modifier = {
+			factor = 1.25
+			has_terrain = hills
+		}
+		modifier = {
+			factor = 1.5
+			has_terrain = highlands
+		}
+		modifier = {
+			factor = 2
+			has_terrain = mountain
+		}
+		modifier = {
+			factor = 0.66
+			owner = {
+				primary_culture = turkish
+				has_country_flag = re_culture_oghuz_culture_picked_turkish
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = turko_semitic
+			}
+		}
+		modifier = {
+			factor = 0.9
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = turko_semitic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = turko_semitic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			calc_true_if = {
+				amount = 4
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = turko_semitic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			calc_true_if = {
+				amount = 5
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = turko_semitic
+				}
+			}
+		}
+	}
+
+	option = {
+		name = re_culture_oghuz_culture_events1.EVTOPT1
+
+		change_culture = turkish
+	}
+}
+
+country_event = {
+	id = re_culture_oghuz_culture_events.2
+	title = re_culture_oghuz_culture_events.EVTNAME2
+	desc = re_culture_oghuz_culture_events.EVTDESC2
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		primary_culture = oghuz_culture
+		NOT = { has_country_flag = re_culture_oghuz_culture_picked_oghuz_culture }
+		NOT = { has_country_flag = re_culture_oghuz_culture_picked_turkish }
+		num_of_owned_provinces_with = {
+			value = 20
+			culture = turkish
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = turkish
+			}
+		}
+	}
+
+	option = {
+		name = re_culture_oghuz_culture_events2.EVTOPT1
+
+		ai_chance = {
+			factor = 0.66
+			modifier = {
+				factor = 10
+				tag = TUR
+			}
+		}
+
+		set_country_flag = re_culture_oghuz_culture_picked_turkish
+		change_primary_culture = turkish
+		add_accepted_culture_or_dip_power = { culture = oghuz_culture dip_reward = no free = yes }
+	}
+
+	option = {
+		name = re_culture_oghuz_culture_events2.EVTOPT2
+
+		ai_chance = {
+			factor = 0.33
+			modifier = {
+				factor = 0
+				tag = TUR
+			}
+		}
+
+		set_country_flag = re_culture_oghuz_culture_picked_oghuz_culture
+		custom_tooltip = re_culture_oghuz_culture_events.2.tt
+		every_owned_province = {
+			limit = {
+				culture = turkish
+			}
+			add_unrest = 5
+		}
+	}
+}
+
+country_event = {
+	id = re_culture_oghuz_culture_events.3
+	title = re_culture_oghuz_culture_events.EVTNAME3
+	desc = re_culture_oghuz_culture_events.EVTDESC3
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		primary_culture = oghuz_culture
+		NOT = { has_country_flag = re_culture_oghuz_culture_new_customs_of_the_turkish_people }
+		NOT = { has_country_flag = re_culture_oghuz_culture_picked_oghuz_culture }
+		NOT = { has_country_flag = re_culture_oghuz_culture_picked_turkish }
+		OR = {
+			tag = KAR
+			tag = CND
+			tag = DUL
+			tag = RAM
+			tag = ERE
+			tag = AYD
+			tag = MEN
+			tag = SRU
+			tag = GRM
+		}
+		any_owned_province = {
+			culture = turkish
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = re_culture_oghuz_culture_events3.EVTOPT1
+
+		ai_chance = { factor = 0.7 }
+
+		set_country_flag = re_culture_oghuz_culture_picked_oghuz_culture
+		custom_tooltip = re_culture_oghuz_culture_events.2.tt
+		every_owned_province = {
+			limit = {
+				culture = turkish
+			}
+			add_unrest = 5
+		}
+	}
+
+	option = {
+		name = re_culture_oghuz_culture_events3.EVTOPT2
+
+		ai_chance = { factor = 0.3 }
+
+		custom_tooltip = re_culture_oghuz_culture_events.3.tt
+		set_country_flag = re_culture_oghuz_culture_new_customs_of_the_turkish_people
+	}
+}

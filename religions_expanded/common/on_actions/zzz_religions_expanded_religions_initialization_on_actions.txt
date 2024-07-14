@@ -29,7 +29,7 @@ on_startup = {
 			}
 			change_religion = tibetan_buddhism
 		}
-		every_country = {
+		every_country_including_inactive = {
 			limit = {
 				re_religion_initialization_tibetan_buddhism_is_starting_country = yes
 				NOT = { religion = tibetan_buddhism }
