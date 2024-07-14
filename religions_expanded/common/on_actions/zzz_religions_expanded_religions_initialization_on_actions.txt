@@ -3,7 +3,6 @@ on_startup = {
 		limit = {
 			NOT = { has_global_flag = religions_expanded_religions_initialized }
 			started_in = 1444.11.11
-			NOT = { started_in = 1445.1.1 }
 		}
 		set_global_flag = religions_expanded_religions_initialized
 		# jainism
