@@ -1,0 +1,33 @@
+﻿l_english:
+ # Culture Groups:
+ aramaic_culture_group: "Aramaic"
+
+ # Cultures:
+ avshars_culture: "Avshars"
+ farsi_culture: "Farsi"
+ qashqai_culture: "Qashqai"
+ kalmyk_culture: "Kalmyk"
+ oghuz_culture: "Oghuz"
+ coptic_culture: "Coptic"
+ assyrian_culture: "Assyrian"
+ manichaean_culture: "Manichaean"
+ chaldean_culture: "Chaldean"
+
+ # Events:
+ re_culture_aramaic_culture_group_events.EVTNAME1: "Emergence of the Chaldean culture"
+ re_culture_aramaic_culture_group_events.EVTDESC1: "The long time the population of [407.GetName] has been living under [407.Religion.GetGroupName] and [407.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ re_culture_aramaic_culture_group_events1.EVTOPT1: "Interesting."
+
+ re_culture_aramaic_culture_group_events.EVTNAME2: "Emergence of the Babylonian culture"
+ re_culture_aramaic_culture_group_events.EVTDESC2: "The long time the population of [410.GetName] has been living under [410.Religion.GetGroupName] and [410.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ re_culture_aramaic_culture_group_events2.EVTOPT1: "Interesting."
+
+ re_culture_aramaic_culture_group_events.EVTNAME3: "Emergence of the Phoenician culture"
+ re_culture_aramaic_culture_group_events.EVTDESC3: "The long time the population of [1855.GetName] has been living under [1855.Religion.GetGroupName] and [1855.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ re_culture_aramaic_culture_group_events3.EVTOPT1: "Interesting."
+
+ # Decisions:
+ re_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"
+ re_culture_decision_convert_to_assyrian_culture_desc: "We own an important province of the Assyrian culture and have [Root.Religion.GetGroupName] influences, so we should adopt the Assyrian culture."
+ re_culture_decision_convert_to_manichaean_culture_title: "Adopt the Manichaean culture"
+ re_culture_decision_convert_to_manichaean_culture_desc: "We own an important province of the Manichaean culture and have [Root.Religion.GetGroupName] influences, so we should adopt the Manichaean culture."

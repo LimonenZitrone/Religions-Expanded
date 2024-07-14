@@ -1,0 +1,16 @@
+# for new cultures
+color = { 33 210 72 }
+color = { 97 139 90 }
+color = { 242 174 172 }
+color = { 135 66 61 }
+color = { 250 4 37 }
+color = { 191 255 67 }
+color = { 212 182 54 }
+color = { 5 168 228 }
+color = { 200 28 203 }
+color = { 188 139 30 }
+color = { 138 255 35 }
+color = { 18 48 168 }
+color = { 222 14 54 }
+color = { 161 112 30 }
+color = { 63 90 64 }

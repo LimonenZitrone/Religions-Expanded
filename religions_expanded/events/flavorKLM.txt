@@ -60,10 +60,11 @@ country_event = {
 						}
 					}
 					change_religion = tibetan_buddhism
+					change_primary_culture = kalmyk_culture
 				}
 				2417 = {
 					change_religion = tibetan_buddhism
-					change_culture = oirats
+					change_culture = kalmyk_culture
 				}
 			}
 		}

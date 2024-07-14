@@ -1,0 +1,188 @@
+# Vanilla Culture Groups
+iranian	= {
+	# Vanilla Cultures
+	# parthian moved to this group was in lost_cultures_group
+	parthian = { #EU Rome
+		dynasty_names = {
+			Aramid Arid Arkhid Asinid Arsacid Deiocid Menid Pacorid Savacid Vardanid
+		}
+		male_names = {
+			Abdagas Ara Aram Aramu Arbaces Ardashir Argishti Ariovast Arkha Armin Arsaces Arsames Artabanus Artabazus Artasyras Artavazd
+			Artaxias Aryanes Asheri Asina Ashina Astashpa Astyages Atamaita Aturpat Bagayash Bayad Chosroes Cyaxares Cyrus Darius Deioces
+			Evagoras Fravarti Gaumata Gobryas Gotarzes Haldita Hidarnes Hydarnes Manchihr Mardonius Martiya Mazaces Megabyzus Menua Nambed
+			Napad Orodes Orxines Osroes Oxydates Pacorus Peucestas Phraates Phraortes Rusa 	Sames Sarduri Sarsamas Savaces Shapur Sinatruces
+			Tigraios Tigranes Tiridates Umamaita Upadarma Vahbarz Vardanes Vologases Vonones Xerxes
+		}
+		female_names = {
+			Amestris Amytis Anzaza Artazostre Artystone Atossa Barsine Damaspia Mandane Parmys Parysatis Phaedymia Rinu Stateira Vashti
+		}
+	}
+
+	# New Cultures
+	avshars_culture = {
+	}
+	farsi_culture = {
+		primary = FRS
+	}
+}
+
+altaic = {
+	# Vanilla Cultures
+	# azerbaijani moved to this group was in iranian
+	azerbaijani = {
+		primary = ARL
+		province = { local_has_qizilbash = yes }
+		dynasty_names = {
+			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
+			Talysh "Haji Chalabi"
+		}
+		male_names = {
+			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
+		}
+		female_names = {
+			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand
+			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha
+			Adila Ikram
+		}
+	}
+
+	# New Cultures
+	qashqai_culture = {
+	}
+	kalmyk_culture = {
+	}
+	oghuz_culture = {
+		province = { local_has_qizilbash = yes }
+		dynasty_names = {
+			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
+			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
+			"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
+			"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu"
+		}
+		male_names = {
+			Mehmet Mustafa Murat Ahmet Selim Osman Mahmut Süleyman Bayezid Orhan Abdulaziz Abdülhamit Ibrahim
+			Abdülmecit Abdullah Cem Cihangir Alaattin Isa Musa Ömer Seyfettin Yakup Yusuf Giyasettin Numan
+			Ali Davut Hasan Hüseyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin
+			Nizamettin Sinan Ferhat Salih Ismail Cüneyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas
+			Dursun Ramazan Recep Abdulrahman Hayrettin
+			Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz
+			Aydin Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars
+			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David
+			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi
+			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun
+			Kemal Kiliç Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad
+			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk
+			Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay
+			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Uluç Umur Yakut Yaman Yinal
+			Yunus
+		}
+		female_names = {
+			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu
+			Bozçin Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gulçiçek Gulay Gulbahar Gulfem
+			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale
+			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica
+			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tekçe Tura
+			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep Hürrem Mihrimah Nurbanu
+			Handan Alime Kösem Hüma
+		}
+	}
+}
+
+sudanese = {
+	# New Cultures
+	coptic_culture = {
+	}
+}
+
+# New Culture Groups
+aramaic_culture_group = {
+	graphical_culture = muslimgfx
+
+	dynasty_names = {
+		Abidaoud Abidaouds Ablahad Acar Barno Benyamin Dnkha Gwargis Koshaba Kuriakose Lazar Malik
+		Nisan Sargis Shashoua Esho Kahana Oraha Oshana Yono Akkara Bihram Nimrud Nehorai Abadi Abeles
+	}
+	male_names = {
+		Abba Abdes Abgar Acar Addai Ahiqar
+		Akiva Aqiba Aram Ashur Av Avira
+		Barabbas Barsoum Bartholome Boanergas Davit Daniyel Dhvh Eashoa Ghazaros Ghiwarghis Habet Ieshua Ishak Kepha
+		Kheshvan Maccabee Malkos Marqos Mirh Mirhbandaq Nohra Noy Pusai Qardagh Quriaqos Renda Sahdona Samyaza She'ila
+		Thaddai Tishrey Yachouh Yahshua Yanai Yohanan Zanziru Mikayel Movses Samson Samvel Soghomon Hovhannes Hovsep
+		Petros Poghos Andreas Hakob Philipos Zaqar Abram Torghom Habet Ghukas Manvel
+	}
+	female_names = {
+		Abigail Adele Akiva Asilah Ayala Babatha Barah Bat-Zabbai Bruria Chaya Chuldu Esther Hanna Hyrut
+		Iaba Idra Katerine Marfa Mariam Marta Michak Noura Noya Phasaelis Rachel Rebecca Renda Shira Symacho
+		Tabitha Talia Tamar Tevet Thada Thaddea Xiamara Yachouh Yeghisabet Yeva Yolitha Yvon
+	}
+
+	# Vanilla Cultures
+	# phoenician moved to this group was in lost_cultures_group
+	phoenician = { #EU Rome
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid
+		Milkiramid Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram
+			Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
+	}
+	# babylonian moved to this group was in lost_cultures_group
+	babylonian = {
+		dynasty_names = {
+			Amorite Sealand Larsa Kassite
+		}
+		male_names = {
+			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" "Sabum" "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar
+		}
+		female_names = {
+			Nana Allatu Belit Zirrabanit Tiamat
+		}
+	}
+	# aramaic moved to this group was in lost_cultures_group
+	aramaic = { #EU Rome
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid
+			Milkiramid Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram
+			Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
+	}
+	# hebrew moved to this group was in lost_cultures_group
+	hebrew = { #EU Rome
+		dynasty_names = {
+			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid
+			Oferid Omrid Pinchasid Raananid Shemidid Yairid
+		}
+		male_names = {
+			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori
+			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hodaviah Honio Meir Nahum
+			Nathan Nehemiah Nikanor Nir Obadiah  Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nogah Shamgar Shammai
+			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
+		}
+		female_names = {
+			Adena Adi Adva Ahuva Alexandra Aliza Alte Arieh Asher Basia Boaz Chanah Cypros Danya Dara Dina Doris Dov Dvora Elisheva Esther
+			Galia Galit Leah Liat Liora Machla Mariamne Marni Maya Meital Menahem Milka Naamah Nahal Nava Nissa Orah Orit Osher Rachel Raisa
+			Rivka Salampsio Sarah Shayna Tamar Tirtza Yael Yocheved
+		}
+	}
+
+	# New Cultures
+	assyrian_culture = {
+	}
+	manichaean_culture = {
+	}
+	chaldean_culture = {
+	}
+}

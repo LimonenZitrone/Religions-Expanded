@@ -1,0 +1,79 @@
+on_startup = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = religions_expanded_cultures_initialized }
+			started_in = 1444.11.11
+		}
+		set_global_flag = religions_expanded_cultures_initialized
+		# coptic_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_coptic_culture_is_starting_province = yes
+				NOT = { culture = coptic_culture }
+			}
+			change_culture = coptic_culture
+		}
+		# assyrian_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_assyrian_culture_is_starting_province = yes
+				NOT = { culture = assyrian_culture }
+			}
+			change_culture = assyrian_culture
+		}
+		# avshars_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_avshars_culture_is_starting_province = yes
+				NOT = { culture = avshars_culture }
+			}
+			change_culture = avshars_culture
+		}
+		# qashqai_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_qashqai_culture_is_starting_province = yes
+				NOT = { culture = qashqai_culture }
+			}
+			change_culture = qashqai_culture
+		}
+		# oghuz_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_oghuz_culture_is_starting_province = yes
+				NOT = { culture = oghuz_culture }
+			}
+			change_culture = oghuz_culture
+		}
+		every_country = {
+			limit = {
+				re_culture_initialization_oghuz_culture_is_starting_country = yes
+				NOT = { primary_culture = oghuz_culture }
+			}
+			change_primary_culture = oghuz_culture
+		}
+		# farsi_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_farsi_culture_is_starting_province = yes
+				NOT = { culture = farsi_culture }
+			}
+			change_culture = farsi_culture
+		}
+		every_country = {
+			limit = {
+				re_culture_initialization_farsi_culture_is_starting_country = yes
+				NOT = { primary_culture = farsi_culture }
+			}
+			change_primary_culture = farsi_culture
+		}
+		# manichaean_culture
+		every_province = {
+			limit = {
+				re_culture_initialization_manichaean_culture_is_starting_province = yes
+				NOT = { culture = manichaean_culture }
+			}
+			change_culture = manichaean_culture
+		}
+	}
+}

@@ -26,14 +26,24 @@
  # Decisions:
  re_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
  re_religion_reform_religion_decision_desc: "The [Root.Religion.GetName] Faith is not as centralized as other religions. This gives us a disadvantage compared to them. We should strive for a stronger centralization to become competitive."
+ re_formable_decision_assyria_title: "Form Assyria"
+ re_formable_decision_assyria_desc: "Since we have aquired the Assyrian culture, we must unify the Assyrian people in the nation of Assyria!"
+ re_formable_decision_empire_of_light_title: "Form the Empire of Light"
+ re_formable_decision_empire_of_light_desc: "We have to unify the Manichaean people in a spiritual Empire!"
 
  # Vanilla Events:
  hindu_events.1.j: "Kali will lead us to wisdom."
  hindu_events.1.k: "Hanuman will lead us to wisdom."
 
  # Countries:
+ ## Tags:
  NPA: "Constantinople"
  NPA_ADJ: "Patriarchal"
+ ## Renames:
+ RE_FORMABLE_ASSYRIA: "Assyria"
+ RE_FORMABLE_ASSYRIA_ADJ: "Assyrian"
+ RE_FORMABLE_EMPIRE_OF_LIGHT: "Empire of Light"
+ RE_FORMABLE_EMPIRE_OF_LIGHT_ADJ: "Manichaean"
 
  # Government Reforms:
  nestorian_patriarchy_constantinople_reform: "Patriarchy"

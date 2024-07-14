@@ -5,6 +5,14 @@ on_startup = {
 			started_in = 1444.11.11
 		}
 		set_global_flag = religions_expanded_religions_initialized
+		# coptic
+		every_province = {
+			limit = {
+				re_religion_initialization_coptic_is_starting_province = yes
+				NOT = { religion = coptic }
+			}
+			change_religion = coptic
+		}
 		# jainism
 		every_province = {
 			limit = {

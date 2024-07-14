@@ -63,3 +63,9 @@
  bogomilist_rebels_army: "$RELIGION$ Army"
  bogomilist_rebels_demand: "Convert $COUNTRYNAME$"
  bogomilist_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+
+ # Decisions:
+ re_religion_decision_convert_to_nestorian_title: "Convert to the Nestorian faith"
+ re_religion_decision_convert_to_nestorian_desc: "We follow the Assyrian culture and should restore the Church of Assyria!"
+ re_religion_decision_convert_to_manichaeism_title: "Convert to the Manichaean faith"
+ re_religion_decision_convert_to_manichaeism_desc: "We follow the Manichaean culture, it's time to also convert our religion to the old faith!"

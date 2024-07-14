@@ -1,0 +1,85 @@
+country_decisions = {
+	# nestorian
+	re_religion_decision_convert_to_nestorian = {
+		color = { 255 255 170 }
+		potential = {
+			primary_culture = assyrian_culture
+			religion_group = christian
+			NOT = { religion = nestorian }
+		}
+		provinces_to_highlight = {
+			culture = assyrian_culture
+			owned_by = ROOT
+		}
+		allow = {
+			primary_culture = assyrian_culture
+			stability = 1
+			is_free_or_tributary_trigger = yes
+			development_in_provinces = {
+				value = 50
+				culture = assyrian_culture
+			}
+		}
+		effect = {
+			add_stability = -1
+			change_religion = nestorian
+			tooltip = {
+				# applied on religion change
+				add_country_modifier = {
+					name = conversion_zeal
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					tag = PER
+					tag = TUR
+				}
+			}
+		}
+	}
+
+	# manichaeism
+	re_religion_decision_convert_to_manichaeism = {
+		color = { 166 108 146 }
+		potential = {
+			primary_culture = manichaean_culture
+			OR = {
+				religion_group = christian
+				religion_group = zoroastrian_group
+			}
+			NOT = { religion = manichaeism }
+		}
+		provinces_to_highlight = {
+			culture = manichaean_culture
+			owned_by = ROOT
+		}
+		allow = {
+			primary_culture = manichaean_culture
+			stability = 1
+			is_free_or_tributary_trigger = yes
+			development_in_provinces = {
+				value = 50
+				culture = manichaean_culture
+			}
+		}
+		effect = {
+			add_stability = -1
+			change_religion = manichaeism
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					tag = PER
+					tag = TUR
+				}
+			}
+		}
+	}
+}
