@@ -1,4 +1,10 @@
 ﻿l_english:
+ # Startup Screen:
+ string_start_religion_mechanic_title_plural_re_religion_tibetan_buddhism: "The [Root.GetName] are Nang Chos"
+ string_start_religion_mechanic_title_re_religion_tibetan_buddhism: "[Root.GetName] is Nang Chos"
+
+ string_start_re_religion_tibetan_buddhism: "The §YNang Chos§! faith gives the following modifiers: \nFort Defense: §G+20.0%§! \nInstitution Spread In True Faith Provinces: §G+20.0%§! \n\nThe §YNang Chos§! faith uses the §YFour Tenets System§! mechanic: \nThere is a scholastic system of §Y4§! Tenets, which are taught in order in a strict hierarchical teaching. The final goal of these teachings is to aid in the attainment of Enlightenment and Buddhahood. \nEvery ruler starts without any progress and selected teachings. Over time the ruler's studies' progress will increase and allow to pick one of three choices for each of the §Y4§! teachings, granting a bonus til ruler death. \nOnce the ruler has picked the last teaching, [Root.Monarch.GetSheHe] will also gain a bonus to average lifespan."
+
  # Bookmarks:
  RELIGIONS_EXPANDED_BOOKMARK_INDIA: "§OIndia & Tibet§! (§MReligions Expanded§!)"
  RELIGIONS_EXPANDED_BOOKMARK_INDIA_DESC: "New religions: §YNang Chos§! and §YJainist§!. Changed religions: §YHindu§!. The mechanic of §YHindu§! was changed compared to Vanilla. \n\nThe following countries will follow or own provinces that will follow §YNang Chos§! after game start: @UTS §YTsang§!, @LDK §YLadakh§!, @GUG §YGuge§!, @PHA §YU§!, @KAM §YKham§!, @KRC §YKorchin§! and @OIR §YOirat§!. \nThe following countries will own §YJainist§! provinces after game start: @MER §YMewar§!, @KAT §YKutch§! and @BAH §YBahmanis§!. \nStarting provinces and countries for §YHindu§! were not changed compared to Vanilla."
