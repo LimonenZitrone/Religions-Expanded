@@ -4,42 +4,89 @@
  RELIGIONS_EXPANDED_BOOKMARK_DESC: "The following countries will follow or own provinces that will follow §YNang Chos§! after game start: @LDK §YLadakh§!, @GUG §YGuge§!, @UTS §YTsang§!, @PHA §YU§!, @KAM §YKham§!, @KRC §YKorchin§! and @OIR §YOirat§!. The following countries will own §YNestorian§! provinces after game start: @KHA §YMongolia§!, @KAS §YYarkand§!, @TIM §YTimurids§!, @MHR §YMahra§!, @QAR §YQara Qoyunlu§! and @AKK §YAq Qoyunlu§!. The following country will own the §YManichaean§! province after game start: @MSY §YMushasha§!. The following countries will own §YJainist§! provinces after game start: @MER §YMewar§!, @KAT §YKutch§! and @BAH §YBahmanis§!. The following country will own §YVidilist§! provinces after game start: @LIT §YLithuania§!. The following countries will own §YBogomilist§! provinces after game start: @BOS §YBosnia§!, @HRZ §YHerzegovina§! and @TUR §YOttomans§!. The mechanic of the §YHindu§! faith has been changed. If not affected by the changes above, provinces and countries following the §YHindu§! faith were not changed compared to Vanilla."
 
  # Notifications (using the DLC Buttons):
- DLC_religions_expanded_entry_country_change_religion_tibetan_buddhism_TOOLTIP_INSTANT: "At game start the §Ycountry religion§! will change to §YNang Chos§!."
- LANDING_religions_expanded_entry_country_change_religion_tibetan_buddhism_TEXT: "The country religion will change to §YNang Chos§! at game start."
- LANDING_religions_expanded_entry_country_change_religion_tibetan_buddhism_FLAVOR_TEXT: "§YNang Chos§! is a Buddhist faith that is mostly situated in Tibet. \n\nBase Modifiers: \n   Fort Defense: §G+20.0%§! \n   Institution Spread In True Faith Provinces: §G+20.0%§! \n\nThe religion uses the §YFour Tenets System§! mechanic, which allows picking up to §Y4§! modifiers over time that stay until the ruler dies."
- religions_expanded_entry_country_change_religion_tibetan_buddhism_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
-
+ religions_expanded_lobby_info_entry_tooltip: "Click for more details."
+ religions_expanded_lobby_info_religion_entry_tooltip: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ religions_expanded_lobby_info_culture_entry_tooltip: "Country and province culture changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ ## Religion:
+ ### Country Info:
  DLC_religions_expanded_entry_country_religion_info_hinduism_TOOLTIP_INSTANT: "The mechanic for the §YHindu§! faith has been changed."
  LANDING_religions_expanded_entry_country_religion_info_hinduism_TEXT: "The mechanic for the §YHindu§! faith has been changed."
  LANDING_religions_expanded_entry_country_religion_info_hinduism_FLAVOR_TEXT: "The religion now uses a combination of §YMinor Deities§! and §YMajor Deities§!. The Minor Deities work mechanically like in Vanilla, however the Deities and their bonuses have been changed and they have an additional bonus that depends on the selected Major Deity and the dedication towards it. Each Major Deity has §Y6§! levels of dedication."
- religions_expanded_entry_country_religion_info_hinduism_desc: "Click for more details."
 
- DLC_religions_expanded_entry_province_change_religion_jainism_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YJainist§!."
+ ### Country:
+ DLC_religions_expanded_entry_country_change_religion_tibetan_buddhism_TOOLTIP_INSTANT: "At game start the §Ycountry religion§! will change to §YNang Chos§!."
+ LANDING_religions_expanded_entry_country_change_religion_tibetan_buddhism_TEXT: "The country religion will change to §YNang Chos§! at game start."
+ LANDING_religions_expanded_entry_country_change_religion_tibetan_buddhism_FLAVOR_TEXT: "§YNang Chos§! is a Buddhist faith that is mostly situated in Tibet. \n\nBase Modifiers: \n   Fort Defense: §G+20.0%§! \n   Institution Spread In True Faith Provinces: §G+20.0%§! \n\nThe religion uses the §YFour Tenets System§! mechanic, which allows picking up to §Y4§! modifiers over time that stay until the ruler dies."
+
+ ### Province:
+ DLC_religions_expanded_entry_province_change_religion_jainism_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YJainist§! (§lDharmic§!)."
  LANDING_religions_expanded_entry_province_change_religion_jainism_TEXT: "The following provinces will change to §YJainist§! at game start: §YKutch§!, §YSatara§!, §YGorwar§!, §YMandsaur§!, §YKolhapur§!, §YVagad§! and §YBhilwara§!. \n\n§OConverting to Jainism is possible via the religion tab as any other Dharmic faith as well as via rebels.§!"
- LANDING_religions_expanded_entry_province_change_religion_jainism_FLAVOR_TEXT: "§YJainism§! is a Dharmic faith that is situated in India. \n\nBase Modifiers: \n   National Unrest: §G-2.00§! \n   Improve Relations: §G+20.0%§! \n\nThe religion uses the §YSukha§! mechanic, which applies a scaled bonus based on a value between §Y0§! and §Y100§!."
- religions_expanded_entry_province_change_religion_jainism_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ LANDING_religions_expanded_entry_province_change_religion_jainism_FLAVOR_TEXT: "§YJainism§! is a §lDharmic§! faith that is situated in India. \n\nBase Modifiers: \n   National Unrest: §G-2.00§! \n   Improve Relations: §G+20.0%§! \n\nThe religion uses the §YSukha§! mechanic, which applies a scaled bonus based on a value between §Y0§! and §Y100§!."
 
- DLC_religions_expanded_entry_province_change_religion_tibetan_buddhism_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YNang Chos§!."
+ DLC_religions_expanded_entry_province_change_religion_tibetan_buddhism_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YNang Chos§! (§lBuddhist§!)."
  LANDING_religions_expanded_entry_province_change_religion_tibetan_buddhism_TEXT: "The following provinces will change to §YNang Chos§! at game start: §YShigatse§!, §YLhasa§!, §YTachienlu§!, §YGyegu§!, §YDornogovi§!, §YXilin Gol§!, §YLadakh§!, §YEreen§!, §YZasagt§!, §YTsaparang§!, §YNyingchi§!, §YQamdo§!, §YMarkam§!, §YDege§!, §YGarze§!, §YGovi§!, §YKhara Narin Ula§!, §YNagchu§!, §YDundgovi§!, §YSakya§!, §YGyirong§!, §YPurang§!, §YNedong§!, §YTsurphu§!, §YDamxung§!, §YRutog§!, §YSkardu§!, §YSainshand§!, §YUrad§!, §YUjimqin§!, §YKorchin§! and §YNoyon§!. \n\n§OConverting to Nang Chos is possible via the religion tab as any other Buddhist faith as well as via rebels.§!"
- LANDING_religions_expanded_entry_province_change_religion_tibetan_buddhism_FLAVOR_TEXT: "§YNang Chos§! is a Buddhist faith that is mostly situated in Tibet. \n\nBase Modifiers: \n   Fort Defense: §G+20.0%§! \n   Institution Spread In True Faith Provinces: §G+20.0%§! \n\nThe religion uses the §YFour Tenets System§! mechanic, which allows picking up to §Y4§! modifiers over time that stay until the ruler dies."
- religions_expanded_entry_province_change_religion_tibetan_buddhism_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ LANDING_religions_expanded_entry_province_change_religion_tibetan_buddhism_FLAVOR_TEXT: "§YNang Chos§! is a §lBuddhist§! faith that is mostly situated in Tibet. \n\nBase Modifiers: \n   Fort Defense: §G+20.0%§! \n   Institution Spread In True Faith Provinces: §G+20.0%§! \n\nThe religion uses the §YFour Tenets System§! mechanic, which allows picking up to §Y4§! modifiers over time that stay until the ruler dies."
 
- DLC_religions_expanded_entry_province_change_religion_vidilist_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YVidilist§!."
+ DLC_religions_expanded_entry_province_change_religion_vidilist_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YVidilist§! (§lPagan§!)."
  LANDING_religions_expanded_entry_province_change_religion_vidilist_TEXT: "The following provinces will change to §YVidilist§! at game start: §YZemaitija§! and §YVilkmerge§!. \n\nIt will not be possible to convert them for the first §Y5 years§! and rebels can be triggered via decision once. \n§OConverting to Vidilist is only possible via rebels!§!"
- LANDING_religions_expanded_entry_province_change_religion_vidilist_FLAVOR_TEXT: "§YVidilist§! is a Pagan faith that is situated in the Baltic. \n\nBase Modifiers: \n   Attrition for Enemies: §G+1.00§! \n   Diplomatic Reputation: §G+1.00§! \n\nThe religion uses the §YSylvan Affinity§! mechanic, which allows picking a seasonal affinity and focuses (similar to fervor focuses) with bonuses depending on the selected seasonal affinity."
- religions_expanded_entry_province_change_religion_vidilist_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ LANDING_religions_expanded_entry_province_change_religion_vidilist_FLAVOR_TEXT: "§YVidilist§! is a §lPagan§! faith that is situated in the Baltic. \n\nBase Modifiers: \n   Attrition for Enemies: §G+1.00§! \n   Diplomatic Reputation: §G+1.00§! \n\nThe religion uses the §YSylvan Affinity§! mechanic, which allows picking a seasonal affinity and focuses (similar to fervor focuses) with bonuses depending on the selected seasonal affinity."
 
- DLC_religions_expanded_entry_province_change_religion_nestorian_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YNestorian§!."
+ DLC_religions_expanded_entry_province_change_religion_nestorian_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YNestorian§! (§lChristian§!)."
  LANDING_religions_expanded_entry_province_change_religion_nestorian_TEXT: "The following provinces will change to §YNestorian§! at game start: §YHotan§!, §YSetsen§!, §YKashgar§!, §YOnan Gol§!, §YSuqutra§!, §YPyeongyang§!, §YKuqa§!, §YBitlis§!, §YUrmia§!, §YTermez§! and §YOrkhon§!. \n\nIt will not be possible to convert them for the first §Y5 years§!. \n§OConverting to Nestorian is only possible via rebels!§!"
- LANDING_religions_expanded_entry_province_change_religion_nestorian_FLAVOR_TEXT: "§YNestorian§! is a Christian faith that is situated in Asia. \n\nBase Modifiers: \n   Trade Efficiency: §G+10.0%§! \n   Missionaries: §G+1§! \n\nThe religion uses the §YNestorian Patriarchy§! mechanic, which works similar to the Papacy. There is a Patriarch Controller that gains specific bonuses and is selected on the death of the current Patriarch. Additionally countries can spend Patriarch Influence on bonuses depending on Holy Sites."
- religions_expanded_entry_province_change_religion_nestorian_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ LANDING_religions_expanded_entry_province_change_religion_nestorian_FLAVOR_TEXT: "§YNestorian§! is a §lChristian§! faith that is situated in Asia. \n\nBase Modifiers: \n   Trade Efficiency: §G+10.0%§! \n   Missionaries: §G+1§! \n\nThe religion uses the §YNestorian Patriarchy§! mechanic, which works similar to the Papacy. There is a Patriarch Controller that gains specific bonuses and is selected on the death of the current Patriarch. Additionally countries can spend Patriarch Influence on bonuses depending on Holy Sites."
 
- DLC_religions_expanded_entry_province_change_religion_manichaeism_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YManichaean§!."
+ DLC_religions_expanded_entry_province_change_religion_manichaeism_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YManichaean§! (§lZoroastrian§!)."
  LANDING_religions_expanded_entry_province_change_religion_manichaeism_TEXT: "The following provinces will change to §YManichaean§! at game start: §YShushtar§!. \n\nIt will not be possible to convert them for the first §Y5 years§! and rebels can be triggered via decision once. \n§OConverting to Manichaean is only possible via rebels!§!"
- LANDING_religions_expanded_entry_province_change_religion_manichaeism_FLAVOR_TEXT: "§YManichaean§! is a Zoroastrian faith that is situated in Persia. \n\nBase Modifiers: \n   Max Promoted Cultures: §G+2.00§! \n   Land Fire Damage: §G+10.0%§! \n\nThe religion uses the §YPurity§! mechanic, which allows picking a Liturgical Focus for the lifespan of the ruler as well as up to §Y3§! Minor Focuses, which differ in bonus depending on the selected Liturgical Focus."
- religions_expanded_entry_province_change_religion_manichaeism_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ LANDING_religions_expanded_entry_province_change_religion_manichaeism_FLAVOR_TEXT: "§YManichaean§! is a §lZoroastrian§! faith that is situated in Persia. \n\nBase Modifiers: \n   Max Promoted Cultures: §G+2.00§! \n   Land Fire Damage: §G+10.0%§! \n\nThe religion uses the §YPurity§! mechanic, which allows picking a Liturgical Focus for the lifespan of the ruler as well as up to §Y3§! Minor Focuses, which differ in bonus depending on the selected Liturgical Focus."
 
- DLC_religions_expanded_entry_province_change_religion_bogomilist_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YBogomilist§!."
+ DLC_religions_expanded_entry_province_change_religion_bogomilist_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YBogomilist§! (§lChristian§!)."
  LANDING_religions_expanded_entry_province_change_religion_bogomilist_TEXT: "The following provinces will change to §YBogomilist§! at game start: §YHum§!, §YÜsküp§! and §YVisoki§!. \n\n§OConverting to Bogomilist is possible via the religion tab as the Orthodox faith as well as via rebels!§!"
- LANDING_religions_expanded_entry_province_change_religion_bogomilist_FLAVOR_TEXT: "§YBogomilist§! is a Christian faith that is situated in the Balkans. \n\nBase Modifiers: \n   Advisor Costs: §G-10.0%§! \n   All Estates Influence Modifier: §Y-10.0%§! \n\nThe religion uses §Ychurch aspects§!, which allow sacrifizing a building in a province for an area wide or country wide bonus."
- religions_expanded_entry_province_change_religion_bogomilist_desc: "Country and province religion changes at game start are not visualized in the lobby. \n--------------\nClick for more details."
+ LANDING_religions_expanded_entry_province_change_religion_bogomilist_FLAVOR_TEXT: "§YBogomilist§! is a §lChristian§! faith that is situated in the Balkans. \n\nBase Modifiers: \n   Advisor Costs: §G-10.0%§! \n   All Estates Influence Modifier: §Y-10.0%§! \n\nThe religion uses §Ychurch aspects§!, which allow sacrifizing a building in a province for an area wide or country wide bonus."
+
+ DLC_religions_expanded_entry_province_change_religion_coptic_TOOLTIP_INSTANT: "At game start the §Yreligion§! of at least one owned §Yprovince§! will change to §YCoptic§! (§lChristian§!)."
+ LANDING_religions_expanded_entry_province_change_religion_coptic_TEXT: "The following provinces will change to §YCoptic§! at game start: §YUshmunayn§! and §YGirga§!."
+ LANDING_religions_expanded_entry_province_change_religion_coptic_FLAVOR_TEXT: "§YCoptic§! is a §lChristian§! faith that is situated in parts of Eastern Africa, Anatolia and Caucasia. \n§YCoptic§! was not changed compared to Vanilla."
+
+ ## Culture:
+ ### Country Info:
+ DLC_religions_expanded_entry_country_culture_info_azerbaijani_TOOLTIP_INSTANT: "The culture §YAzerbaijani§! has been moved to the culture group §lAltaic§!."
+ LANDING_religions_expanded_entry_country_culture_info_azerbaijani_TEXT: "The culture group the culture §YAzerbaijani§! is in was changed."
+ LANDING_religions_expanded_entry_country_culture_info_azerbaijani_FLAVOR_TEXT: "§YAzerbaijani§! was in the §lIranian§! culture group in Vanilla and has been moved to the §lAltaic§! culture group."
+
+ ### Country:
+ DLC_religions_expanded_entry_country_change_culture_oghuz_culture_TOOLTIP_INSTANT: "At game start the §Yprimary culture§! will change to §YOghuz§! (§lAltaic§!)."
+ LANDING_religions_expanded_entry_country_change_culture_oghuz_culture_TEXT: "The primary culture will change to §YOghuz§! at game start."
+ LANDING_religions_expanded_entry_country_change_culture_oghuz_culture_FLAVOR_TEXT: "§YOghuz§! is part of the §lAltaic§! culture group. \n\n§YTurkish§! developed due to the Arabian influence spreading to the §YOhguz§! culture. \n§YOghuz§! provinces neighboring provinces of the same owner that have a culture of the §lLevantine§! culture group will flip to §YTurkish§! over time."
+
+ DLC_religions_expanded_entry_country_change_culture_farsi_culture_TOOLTIP_INSTANT: "At game start the §Yprimary culture§! will change to §YFarsi§! (§lIranian§!)."
+ LANDING_religions_expanded_entry_country_change_culture_farsi_culture_TEXT: "The primary culture will change to §YFarsi§! at game start."
+ LANDING_religions_expanded_entry_country_change_culture_farsi_culture_FLAVOR_TEXT: "§YFarsi§! is part of the §lIranian§! culture group. \n\nThe primary country of this culture is @FRS §YFars§!."
+
+ ### Province:
+ DLC_religions_expanded_entry_province_change_culture_coptic_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YCoptic§! (§lSudanese§!)."
+ LANDING_religions_expanded_entry_province_change_culture_coptic_culture_TEXT: "The following provinces will change to §YCoptic§! at game start: §YUshmunayn§! and §YGirga§!."
+ LANDING_religions_expanded_entry_province_change_culture_coptic_culture_FLAVOR_TEXT: "§YCoptic§! is part of the §lSudanese§! culture group."
+
+ DLC_religions_expanded_entry_province_change_culture_assyrian_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YAssyrian§! (§lAramaic§!)."
+ LANDING_religions_expanded_entry_province_change_culture_assyrian_culture_TEXT: "The following provinces will change to §YAssyrian§! at game start: §YHotan§!, §YSetsen§!, §YKashgar§!, §YOnan Gol§!, §YSuqutra§!, §YPyeongyang§!, §YKuqa§!, §YUrmia§!, §YBitlis§!, §YTermez§! and §YOrkhon§!."
+ LANDING_religions_expanded_entry_province_change_culture_assyrian_culture_FLAVOR_TEXT: "§YAssyrian§! is part of the §lAramaic§! culture group."
+
+ DLC_religions_expanded_entry_province_change_culture_avshars_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YAvshars§! (§lIranian§!)."
+ LANDING_religions_expanded_entry_province_change_culture_avshars_culture_TEXT: "The following provinces will change to §YAvshars§! at game start: §YKayseri§!."
+ LANDING_religions_expanded_entry_province_change_culture_avshars_culture_FLAVOR_TEXT: "§YAvshars§! is part of the §lIranian§! culture group."
+
+ DLC_religions_expanded_entry_province_change_culture_qashqai_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YQashqai§! (§lAltaic§!)."
+ LANDING_religions_expanded_entry_province_change_culture_qashqai_culture_TEXT: "The following provinces will change to §YQashqai§! at game start: §YDashtistan§!, §YKazerun§! and §YSiraf§!."
+ LANDING_religions_expanded_entry_province_change_culture_qashqai_culture_FLAVOR_TEXT: "§YQashqai§! is part of the §lAltaic§! culture group."
+
+ DLC_religions_expanded_entry_province_change_culture_oghuz_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YOghuz§! (§lAltaic§!)."
+ LANDING_religions_expanded_entry_province_change_culture_oghuz_culture_TEXT: "The following provinces will change to §YOghuz§! at game start: §YKocaeli§!, §YHüdavendigar§!, §YSugla§!, §YMentese§!, §YKütahya§!, §YKonya§!, §YKaraman§!, §YKastamonu§!, §YAnkara§!, §YAdana§!, §YSinop§!, §YSivas§!, §YMarash§!, §YAmasya§!, §YHamid§!, §YKarasi§!, §YSaruhan§!, §YTekke§!, §YBolu§!, §YBozok§!, §YIçel§!, §YMalatya§!, §YAyntab§!, §YAksaray§!, §YDenizli§!, §YAydin§!, §YDivrigi§!, §YKarahisar§!, §YSultanönü§!, §YKangiri§!, §YKirshehir§! and §YTokat§!."
+ LANDING_religions_expanded_entry_province_change_culture_oghuz_culture_FLAVOR_TEXT: "§YOghuz§! is part of the §lAltaic§! culture group. \n\n§YTurkish§! developed due to the Arabian influence spreading to the §YOhguz§! culture. \n§YOghuz§! provinces neighboring provinces of the same owner that have a culture of the §lLevantine§! culture group will flip to §YTurkish§! over time."
+
+ DLC_religions_expanded_entry_province_change_culture_farsi_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YFarsi§! (§lIranian§!)."
+ LANDING_religions_expanded_entry_province_change_culture_farsi_culture_TEXT: "The following provinces will change to §YFarsi§! at game start: §YShiraz§!, §YBandar Langeh§!, §YLarestan§!, §YFasa§! and §YDarab§!."
+ LANDING_religions_expanded_entry_province_change_culture_farsi_culture_FLAVOR_TEXT: "§YFarsi§! is part of the §lIranian§! culture group. \n\nThe primary country of this culture is @FRS §YFars§!."
+
+ DLC_religions_expanded_entry_province_change_culture_manichaean_culture_TOOLTIP_INSTANT: "At game start the §Yculture§! of at least one owned §Yprovince§! will change to §YManichaean§! (§lAramaic§!)."
+ LANDING_religions_expanded_entry_province_change_culture_manichaean_culture_TEXT: "The following provinces will change to §YManichaean§! at game start: §YHoveyzeh§!."
+ LANDING_religions_expanded_entry_province_change_culture_manichaean_culture_FLAVOR_TEXT: "§YManichaean§! is part of the §lAramaic§! culture group."

@@ -1,40 +1,56 @@
 # DLC info for the lobby used to show information for new religions and mechanics
 categories = {
-	religions_expanded_category_country_change_religion_tibetan_buddhism = {
-		index = 4
-		gui = religions_expanded_category_landing_page
-	}
+	# Country Info
 	religions_expanded_category_country_religion_info_hinduism = {
-		index = 5
+		index = 100
 		gui = religions_expanded_category_landing_page
 	}
+	# Country
+	religions_expanded_category_country_change_religion_tibetan_buddhism = {
+		index = 200
+		gui = religions_expanded_category_landing_page
+	}
+	# Province
 	religions_expanded_category_province_change_religion_jainism = {
-		index = 6
+		index = 300
 		gui = religions_expanded_category_landing_page
 	}
 	religions_expanded_category_province_change_religion_tibetan_buddhism = {
-		index = 7
+		index = 301
 		gui = religions_expanded_category_landing_page
 	}
 	religions_expanded_category_province_change_religion_vidilist = {
-		index = 8
+		index = 302
 		gui = religions_expanded_category_landing_page
 	}
 	religions_expanded_category_province_change_religion_nestorian = {
-		index = 9
+		index = 303
 		gui = religions_expanded_category_landing_page
 	}
 	religions_expanded_category_province_change_religion_manichaeism = {
-		index = 10
+		index = 304
 		gui = religions_expanded_category_landing_page
 	}
 	religions_expanded_category_province_change_religion_bogomilist = {
-		index = 11
+		index = 305
+		gui = religions_expanded_category_landing_page
+	}
+	religions_expanded_category_province_change_religion_coptic = {
+		index = 306
 		gui = religions_expanded_category_landing_page
 	}
 }
 
 dlcs = {
+	# Country Info
+	religions_expanded_entry_country_religion_info_hinduism = {
+		name = "Country Religion Info"
+		id = -1
+		category = religions_expanded_category_country_religion_info_hinduism
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_country_religion_info_hinduism"
+	}
+	# Country
 	religions_expanded_entry_country_change_religion_tibetan_buddhism = {
 		name = "Country Religion Change"
 		id = -1
@@ -42,13 +58,7 @@ dlcs = {
 		recommendations = { }
 		icon = "GFX_religions_expanded_entry_country_change_religion_tibetan_buddhism"
 	}
-	religions_expanded_entry_country_religion_info_hinduism = {
-		name = "Country Religion Change"
-		id = -1
-		category = religions_expanded_category_country_religion_info_hinduism
-		recommendations = { }
-		icon = "GFX_religions_expanded_entry_country_religion_info_hinduism"
-	}
+	# Province
 	religions_expanded_entry_province_change_religion_jainism = {
 		name = "Owned Provinces' Religion Change"
 		id = -1
@@ -90,5 +100,12 @@ dlcs = {
 		category = religions_expanded_category_province_change_religion_bogomilist
 		recommendations = { }
 		icon = "GFX_religions_expanded_entry_province_change_religion_bogomilist"
+	}
+	religions_expanded_entry_province_change_religion_coptic = {
+		name = "Owned Provinces' Religion Change"
+		id = -1
+		category = religions_expanded_category_province_change_religion_coptic
+		recommendations = { }
+		icon = "GFX_religions_expanded_entry_province_change_religion_coptic"
 	}
 }

@@ -5,6 +5,25 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
+	# Cultures:
+	spriteType = {
+		name = "GFX_religions_expanded_entry_country_culture_info"
+		textureFile = "gfx/interface/re_lobby_notifications/country_culture_info.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_country_change_culture"
+		textureFile = "gfx/interface/re_lobby_notifications/country_change_culture.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_culture"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_culture.dds"
+		legacy_lazy_load = no
+	}
+
+	# Religions:
+	## Country:
 	spriteType = {
 		name = "GFX_religions_expanded_entry_country_change_religion_tibetan_buddhism"
 		textureFile = "gfx/interface/re_lobby_notifications/country_change_religion_tibetan_buddhism.dds"
@@ -15,6 +34,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/re_lobby_notifications/country_religion_info_hinduism.dds"
 		legacy_lazy_load = no
 	}
+	## Province:
 	spriteType = {
 		name = "GFX_religions_expanded_entry_province_change_religion_tibetan_buddhism"
 		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_tibetan_buddhism.dds"
@@ -43,6 +63,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_religions_expanded_entry_province_change_religion_bogomilist"
 		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_bogomilist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_religions_expanded_entry_province_change_religion_coptic"
+		textureFile = "gfx/interface/re_lobby_notifications/province_change_religion_coptic.dds"
 		legacy_lazy_load = no
 	}
 }
