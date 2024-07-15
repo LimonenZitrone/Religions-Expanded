@@ -338,6 +338,27 @@ defined_text = {
 		localisation_key = "0"
 	}
 }
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationEndValue
+	random = no
+
+	text = {
+		trigger = {
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+			has_saved_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_target
+			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+				check_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 1 }
+			}
+		}
+		localisation_key = "[re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
 
 defined_text = {
 	name = ReGetReligionMechanicNestorianPatriarchyHolySite1ModifierDesc

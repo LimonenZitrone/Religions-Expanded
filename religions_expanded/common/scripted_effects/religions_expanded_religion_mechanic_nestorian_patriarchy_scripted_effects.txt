@@ -416,6 +416,7 @@ re_religion_mechanic_nestorian_patriarchy_clear_center_of_reformation = {
 				remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier
 				clr_province_flag = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_setup
 				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_time value = 0 }
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 0 }
 			}
 			clear_global_event_target = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
 		}
@@ -529,6 +530,27 @@ re_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target = {
 			}
 			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_time value = 0 }
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time
+					value = trigger_value:development
+					who = event_target:nestorian_possible_target
+				}
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = -6 }
+				divide_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 2 }
+				change_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 12 }
+				round_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time }
+				if = {
+					limit = {
+						check_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 36 }
+					}
+					set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 36 }
+				}
+				else_if = {
+					limit = {
+						NOT = { check_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 12 } }
+					}
+					set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 12 }
+				}
 			}
 		}
 	}
