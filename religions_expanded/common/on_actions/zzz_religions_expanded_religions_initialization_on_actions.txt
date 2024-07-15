@@ -1,4 +1,4 @@
-1444.11.11 = {
+on_startup = {
 	if = {
 		limit = {
 			NOT = { has_global_flag = religions_expanded_religions_initialized }
