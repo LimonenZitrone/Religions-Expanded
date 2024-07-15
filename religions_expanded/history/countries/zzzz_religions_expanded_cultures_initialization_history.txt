@@ -1,4 +1,4 @@
-on_startup = {
+1444.11.11 = {
 	if = {
 		limit = {
 			NOT = { has_global_flag = religions_expanded_cultures_initialized }
