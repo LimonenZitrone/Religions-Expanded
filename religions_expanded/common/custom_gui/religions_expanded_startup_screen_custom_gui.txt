@@ -1,0 +1,436 @@
+# Main Window
+custom_window = {
+	name = religions_expanded_startup_screen_window
+	potential = {
+		ai = no
+		has_country_flag = show_religions_expanded_startup_screen_window
+	}
+}
+custom_button = {
+	name = religions_expanded_startup_screen_close_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_religions_expanded_startup_screen_window
+			clr_country_flag = show_religions_expanded_startup_screen_window_religions
+			clr_country_flag = show_religions_expanded_startup_screen_window_cultures
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 0 }
+		}
+	}
+}
+
+# Tabs Buttons
+custom_button = {
+	name = religions_expanded_startup_screen_tab_cultures_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_religions_expanded_startup_screen_window_religions
+			set_country_flag = show_religions_expanded_startup_screen_window_cultures
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 0 }
+		}
+	}
+	tooltip = religions_expanded_startup_screen_tab_cultures_button_tt
+}
+custom_button = {
+	name = religions_expanded_startup_screen_tab_religions_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_religions_expanded_startup_screen_window_cultures
+			set_country_flag = show_religions_expanded_startup_screen_window_religions
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 0 }
+		}
+	}
+	tooltip = religions_expanded_startup_screen_tab_religions_button_tt
+}
+
+# Religions Window
+custom_window = {
+	name = religions_expanded_startup_screen_religions_window
+	potential = {
+		ai = no
+		has_country_flag = show_religions_expanded_startup_screen_window_religions
+	}
+}
+custom_text_box = {
+	name = religions_expanded_startup_screen_left_title_religions
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = religions_expanded_startup_screen_right_title_religions
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = religions_expanded_startup_screen_text_religions
+	potential = {
+		always = yes
+	}
+}
+## jainism
+custom_button = {
+	name = religions_expanded_startup_screen_religion_1_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 1 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 1 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_religion_1_button_tt
+}
+## tibetan_buddhism
+custom_button = {
+	name = religions_expanded_startup_screen_religion_2_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 2 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_religion_2_button_tt
+}
+## vidilist
+custom_button = {
+	name = religions_expanded_startup_screen_religion_3_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 3 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 3 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_religion_3_button_tt
+}
+## nestorian
+custom_button = {
+	name = religions_expanded_startup_screen_religion_4_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 4 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 4 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_religion_4_button_tt
+}
+## manichaeism
+custom_button = {
+	name = religions_expanded_startup_screen_religion_5_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 5 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 5 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_religion_5_button_tt
+}
+## bogomilist
+custom_button = {
+	name = religions_expanded_startup_screen_religion_6_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 6 }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 6 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_religion_6_button_tt
+}
+
+# Cultures Window
+custom_window = {
+	name = religions_expanded_startup_screen_cultures_window
+	potential = {
+		ai = no
+		has_country_flag = show_religions_expanded_startup_screen_window_cultures
+	}
+}
+custom_text_box = {
+	name = religions_expanded_startup_screen_left_title_cultures
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = religions_expanded_startup_screen_right_title_cultures
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = religions_expanded_startup_screen_text_cultures
+	potential = {
+		always = yes
+	}
+}
+## lost_cultures_group
+custom_button = {
+	name = religions_expanded_startup_screen_culture_1_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 1 }
+		}
+		if = {
+			limit = {
+				culture_group = lost_cultures_group
+			}
+			custom_tooltip = religions_expanded_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 1 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_culture_1_button_tt
+}
+custom_icon = {
+	name = religions_expanded_startup_screen_culture_1_primary_icon
+	potential = {
+		culture_group = lost_cultures_group
+	}
+}
+## turko_semitic
+custom_button = {
+	name = religions_expanded_startup_screen_culture_2_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 2 }
+		}
+		if = {
+			limit = {
+				culture_group = turko_semitic
+			}
+			custom_tooltip = religions_expanded_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_culture_2_button_tt
+}
+custom_icon = {
+	name = religions_expanded_startup_screen_culture_2_primary_icon
+	potential = {
+		culture_group = turko_semitic
+	}
+}
+## iranian
+custom_button = {
+	name = religions_expanded_startup_screen_culture_3_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 3 }
+		}
+		if = {
+			limit = {
+				culture_group = iranian
+			}
+			custom_tooltip = religions_expanded_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 3 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_culture_3_button_tt
+}
+custom_icon = {
+	name = religions_expanded_startup_screen_culture_3_primary_icon
+	potential = {
+		culture_group = iranian
+	}
+}
+## altaic
+custom_button = {
+	name = religions_expanded_startup_screen_culture_4_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 4 }
+		}
+		if = {
+			limit = {
+				culture_group = altaic
+			}
+			custom_tooltip = religions_expanded_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 4 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_culture_4_button_tt
+}
+custom_icon = {
+	name = religions_expanded_startup_screen_culture_4_primary_icon
+	potential = {
+		culture_group = altaic
+	}
+}
+## sudanese
+custom_button = {
+	name = religions_expanded_startup_screen_culture_5_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 5 }
+		}
+		if = {
+			limit = {
+				culture_group = sudanese
+			}
+			custom_tooltip = religions_expanded_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 5 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_culture_5_button_tt
+}
+custom_icon = {
+	name = religions_expanded_startup_screen_culture_5_primary_icon
+	potential = {
+		culture_group = sudanese
+	}
+}
+## aramaic_culture_group
+custom_button = {
+	name = religions_expanded_startup_screen_culture_6_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = religions_expanded_startup_screen_window_selected_culture value = 6 }
+		}
+		if = {
+			limit = {
+				culture_group = aramaic_culture_group
+			}
+			custom_tooltip = religions_expanded_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 6 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = religions_expanded_startup_screen_culture_6_button_tt
+}
+custom_icon = {
+	name = religions_expanded_startup_screen_culture_6_primary_icon
+	potential = {
+		culture_group = aramaic_culture_group
+	}
+}

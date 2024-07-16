@@ -1,0 +1,24 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_re_startup_screen_bg"
+		textureFile = "gfx/interface/re_startup_screen/re_startup_screen_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_startup_screen_tab_button"
+		textureFile = "gfx/interface/re_startup_screen/re_startup_screen_tab_button.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_re_startup_screen_culture_button"
+		textureFile = "gfx/interface/re_startup_screen/re_startup_screen_culture_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_re_startup_screen_religion_button"
+		textureFile = "gfx/interface/re_startup_screen/re_startup_screen_religion_button.dds"
+		noOfFrames = 2
+	}
+}

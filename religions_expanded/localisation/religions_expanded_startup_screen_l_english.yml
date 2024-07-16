@@ -1,0 +1,38 @@
+﻿l_english:
+ # GUIs:
+ religions_expanded_startup_screen_header: "Religions Expanded Content"
+ religions_expanded_startup_screen_tab_religions_text: "Religions"
+ religions_expanded_startup_screen_tab_religions_button_tt: "Select the §YReligions§! tab."
+ religions_expanded_startup_screen_tab_cultures_text: "Cultures"
+ religions_expanded_startup_screen_tab_cultures_button_tt: "Select the §YCultures§! tab."
+ religions_expanded_startup_screen_left_title_religions: "Religions"
+ religions_expanded_startup_screen_right_title_religions: "[This.GetReligionsExpandedStartUpScreenRightTitleReligions]"
+ religions_expanded_startup_screen_text_religions: "[This.GetReligionsExpandedStartUpScreenTextReligions]"
+ religions_expanded_startup_screen_left_title_cultures: "Cultures"
+ religions_expanded_startup_screen_right_title_cultures: "[This.GetReligionsExpandedStartUpScreenRightTitleCultures]"
+ religions_expanded_startup_screen_text_cultures: "[This.GetReligionsExpandedStartUpScreenTextCultures]"
+
+ religions_expanded_startup_screen_religion_1_button_tt: "Click to show details for the §YJainist§! faith."
+ religions_expanded_startup_screen_religion_2_button_tt: "Click to show details for the §YNang Chos§! faith."
+ religions_expanded_startup_screen_religion_3_button_tt: "Click to show details for the §YVidilist§! faith."
+ religions_expanded_startup_screen_religion_4_button_tt: "Click to show details for the §YNestorian§! faith."
+ religions_expanded_startup_screen_religion_5_button_tt: "Click to show details for the §YManichaean§! faith."
+ religions_expanded_startup_screen_religion_6_button_tt: "Click to show details for the §YBogomilist§! faith."
+
+ religions_expanded_startup_screen_culture_1_button_tt: "Click to show details for the §YLost Cultures§! culture group."
+ religions_expanded_startup_screen_culture_2_button_tt: "Click to show details for the §YLevantine§! culture group."
+ religions_expanded_startup_screen_culture_3_button_tt: "Click to show details for the §YIranian§! culture group."
+ religions_expanded_startup_screen_culture_4_button_tt: "Click to show details for the §YAltaic§! culture group."
+ religions_expanded_startup_screen_culture_5_button_tt: "Click to show details for the §YSudanese§! culture group."
+ religions_expanded_startup_screen_culture_6_button_tt: "Click to show details for the §YAramaic§! culture group."
+
+ religions_expanded_startup_screen_culture_button_tt_current: "The [Root.GetAdjective] primary culture §Y[Root.Culture.GetName]§! is part of the §Y[Root.Culture.GetGroupName]§! culture group."
+
+ # Customizable Localization:
+ string_religions_expanded_startup_screen_right_title_religions: "[This.GetReligionsExpandedStartUpScreenReligionSelectedName]"
+ string_religions_expanded_startup_screen_text_religions: "[This.GetReligionsExpandedStartUpScreenReligionSelectedText]"
+ string_religions_expanded_startup_screen_text_religions_none: "\n\n\n\n\n\n                                     No Religion Selected"
+
+ string_religions_expanded_startup_screen_right_title_cultures: "[This.GetReligionsExpandedStartUpScreenCultureSelectedName]"
+ string_religions_expanded_startup_screen_text_cultures: "[This.GetReligionsExpandedStartUpScreenCultureSelectedText]"
+ string_religions_expanded_startup_screen_text_cultures_none: "\n\n\n\n\n\n                                 No Culture Group Selected"

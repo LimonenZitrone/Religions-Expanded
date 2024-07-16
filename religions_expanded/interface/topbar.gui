@@ -737,6 +737,681 @@ guiTypes = {
 		## START Religions Expanded Custom GUI ##
 		#########################################
 
+		#########################################
+		### Religions Expanded Startup Screen ###
+		#########################################
+		windowType = {
+			name = "religions_expanded_startup_screen_window"
+			position = { x = -419 y = -278 }
+			size = { x = 800 y = 550 }
+			orientation = center
+			backGround = "background"
+			moveable = 1
+			scripted = yes
+
+			guiButtonType = {
+				name = "background"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_re_startup_screen_bg"
+			}
+
+			instantTextBoxType = {
+				name = "religions_expanded_startup_screen_header"
+				position = { x = 205 y = 43 }
+				font = "vic_29"
+				format = center
+				maxWidth = 420
+				maxHeight = 20
+				fixedsize = yes
+				alwaystransparent = yes
+				text = "religions_expanded_startup_screen_header"
+			}
+
+			windowType = {
+				name = "religions_expanded_startup_screen_religions_window"
+				position = { x = 0 y = 0 }
+				scripted = yes
+
+				windowType = {
+					name = "tabs_window"
+					position = { x = 260 y = 79 }
+
+					windowType = {
+						name = "tab_religions_window"
+						position = { x = 0 y = 0 }
+
+						iconType = {
+							name = "selected_tab_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_startup_screen_tab_button"
+							frame = 2
+						}
+
+						instantTextBoxType = {
+							name = "tab_text"
+							position = { x = 15 y = 15 }
+							font = "vic_22"
+							format = center
+							maxWidth = 127
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "religions_expanded_startup_screen_tab_religions_text"
+						}
+					}
+					windowType = {
+						name = "tab_cultures_window"
+						position = { x = 160 y = 0 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_tab_cultures_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_startup_screen_tab_button"
+							scripted = yes
+						}
+
+						instantTextBoxType = {
+							name = "tab_text"
+							position = { x = 15 y = 15 }
+							font = "vic_22"
+							format = center
+							maxWidth = 127
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "religions_expanded_startup_screen_tab_cultures_text"
+						}
+					}
+				}
+				windowType = {
+					name = "titles_window"
+					position = { x = 100 y = 131 }
+
+					instantTextBoxType = {
+						name = "religions_expanded_startup_screen_left_title_religions"
+						position = { x = 1 y = 0 }
+						font = "vic_18"
+						format = center
+						maxWidth = 135
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+						scripted = yes
+					}
+
+					instantTextBoxType = {
+						name = "religions_expanded_startup_screen_right_title_religions"
+						position = { x = 222 y = 0 }
+						font = "vic_18"
+						format = center
+						maxWidth = 415
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "text_window"
+					position = { x = 320 y = 170 }
+
+					instantTextBoxType = {
+						name = "religions_expanded_startup_screen_text_religions"
+						position = { x = 0 y = 0 }
+						font = "vic_18"
+						format = left
+						maxWidth = 405
+						maxHeight = 289
+						scrollbartype = "standardtext_slider"
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "list_window"
+					position = { x = 93 y = 164 }
+
+					windowType = {
+						name = "religion_1_window"
+						position = { x = 0 y = 0 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_religion_1_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_religion_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_religion_1_icon"
+							position = { x = 7 y = 9 }
+							spriteType = "GFX_icon_religion"
+							scale = 0.5
+							frame = 30
+							alwaystransparent = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_religion_1_button_text"
+							position = { x = 40 y = 17 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "jainism"
+						}
+					}
+					windowType = {
+						name = "religion_2_window"
+						position = { x = 0 y = 46 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_religion_2_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_religion_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_religion_2_icon"
+							position = { x = 7 y = 9 }
+							spriteType = "GFX_icon_religion"
+							scale = 0.5
+							frame = 31
+							alwaystransparent = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_religion_2_button_text"
+							position = { x = 40 y = 17 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "tibetan_buddhism"
+						}
+					}
+					windowType = {
+						name = "religion_3_window"
+						position = { x = 0 y = 92 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_religion_3_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_religion_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_religion_3_icon"
+							position = { x = 7 y = 9 }
+							spriteType = "GFX_icon_religion"
+							scale = 0.5
+							frame = 32
+							alwaystransparent = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_religion_3_button_text"
+							position = { x = 40 y = 17 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "vidilist"
+						}
+					}
+					windowType = {
+						name = "religion_4_window"
+						position = { x = 0 y = 138 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_religion_4_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_religion_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_religion_4_icon"
+							position = { x = 7 y = 9 }
+							spriteType = "GFX_icon_religion"
+							scale = 0.5
+							frame = 33
+							alwaystransparent = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_religion_4_button_text"
+							position = { x = 40 y = 17 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "nestorian"
+						}
+					}
+					windowType = {
+						name = "religion_5_window"
+						position = { x = 0 y = 184 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_religion_5_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_religion_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_religion_5_icon"
+							position = { x = 7 y = 9 }
+							spriteType = "GFX_icon_religion"
+							scale = 0.5
+							frame = 34
+							alwaystransparent = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_religion_5_button_text"
+							position = { x = 40 y = 17 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "manichaeism"
+						}
+					}
+					windowType = {
+						name = "religion_6_window"
+						position = { x = 0 y = 230 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_religion_6_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_religion_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_religion_6_icon"
+							position = { x = 7 y = 9 }
+							spriteType = "GFX_icon_religion"
+							scale = 0.5
+							frame = 35
+							alwaystransparent = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_religion_6_button_text"
+							position = { x = 40 y = 17 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "bogomilist"
+						}
+					}
+				}
+			}
+
+			windowType = {
+				name = "religions_expanded_startup_screen_cultures_window"
+				position = { x = 0 y = 0 }
+				scripted = yes
+
+				windowType = {
+					name = "tabs_window"
+					position = { x = 260 y = 79 }
+
+					windowType = {
+						name = "tab_religions_window"
+						position = { x = 0 y = 0 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_tab_religions_button"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_startup_screen_tab_button"
+							scripted = yes
+						}
+
+						instantTextBoxType = {
+							name = "tab_text"
+							position = { x = 15 y = 15 }
+							font = "vic_22"
+							format = center
+							maxWidth = 127
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "religions_expanded_startup_screen_tab_religions_text"
+						}
+					}
+					windowType = {
+						name = "tab_cultures_window"
+						position = { x = 160 y = 0 }
+
+						iconType = {
+							name = "selected_tab_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_re_startup_screen_tab_button"
+							frame = 2
+						}
+
+						instantTextBoxType = {
+							name = "tab_text"
+							position = { x = 15 y = 15 }
+							font = "vic_22"
+							format = center
+							maxWidth = 127
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "religions_expanded_startup_screen_tab_cultures_text"
+						}
+					}
+				}
+				windowType = {
+					name = "titles_window"
+					position = { x = 100 y = 131 }
+
+					instantTextBoxType = {
+						name = "religions_expanded_startup_screen_left_title_cultures"
+						position = { x = 1 y = 0 }
+						font = "vic_18"
+						format = center
+						maxWidth = 135
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+						scripted = yes
+					}
+
+					instantTextBoxType = {
+						name = "religions_expanded_startup_screen_right_title_cultures"
+						position = { x = 222 y = 0 }
+						font = "vic_18"
+						format = center
+						maxWidth = 415
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "text_window"
+					position = { x = 320 y = 170 }
+
+					instantTextBoxType = {
+						name = "religions_expanded_startup_screen_text_cultures"
+						position = { x = 0 y = 0 }
+						font = "vic_18"
+						format = left
+						maxWidth = 405
+						maxHeight = 289
+						scrollbartype = "standardtext_slider"
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "list_window"
+					position = { x = 93 y = 167 }
+
+					windowType = {
+						name = "culture_1_window"
+						position = { x = 0 y = 0 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_culture_1_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_culture_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_culture_1_primary_icon"
+							position = { x = 7 y = 4 }
+							spriteType = "GFX_primary_culture_icon"
+							scale = 0.75
+							alwaystransparent = yes
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_culture_1_button_text"
+							position = { x = 40 y = 10 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "lost_cultures_group"
+						}
+					}
+					windowType = {
+						name = "culture_2_window"
+						position = { x = 0 y = 34 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_culture_2_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_culture_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_culture_2_primary_icon"
+							position = { x = 7 y = 4 }
+							spriteType = "GFX_primary_culture_icon"
+							scale = 0.75
+							alwaystransparent = yes
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_culture_2_button_text"
+							position = { x = 40 y = 10 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "turko_semitic"
+						}
+					}
+					windowType = {
+						name = "culture_3_window"
+						position = { x = 0 y = 68 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_culture_3_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_culture_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_culture_3_primary_icon"
+							position = { x = 7 y = 4 }
+							spriteType = "GFX_primary_culture_icon"
+							scale = 0.75
+							alwaystransparent = yes
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_culture_3_button_text"
+							position = { x = 40 y = 10 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "iranian"
+						}
+					}
+					windowType = {
+						name = "culture_4_window"
+						position = { x = 0 y = 102 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_culture_4_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_culture_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_culture_4_primary_icon"
+							position = { x = 7 y = 4 }
+							spriteType = "GFX_primary_culture_icon"
+							scale = 0.75
+							alwaystransparent = yes
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_culture_4_button_text"
+							position = { x = 40 y = 10 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "altaic"
+						}
+					}
+					windowType = {
+						name = "culture_5_window"
+						position = { x = 0 y = 136 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_culture_5_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_culture_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_culture_5_primary_icon"
+							position = { x = 7 y = 4 }
+							spriteType = "GFX_primary_culture_icon"
+							scale = 0.75
+							alwaystransparent = yes
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_culture_5_button_text"
+							position = { x = 40 y = 10 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "sudanese"
+						}
+					}
+					windowType = {
+						name = "culture_6_window"
+						position = { x = 0 y = 170 }
+
+						guiButtonType = {
+							name = "religions_expanded_startup_screen_culture_6_button"
+							position = { x = 2 y = 2 }
+							spriteType = "GFX_re_startup_screen_culture_button"
+							scripted = yes
+						}
+						iconType = {
+							name = "religions_expanded_startup_screen_culture_6_primary_icon"
+							position = { x = 7 y = 4 }
+							spriteType = "GFX_primary_culture_icon"
+							scale = 0.75
+							alwaystransparent = yes
+							scripted = yes
+						}
+						instantTextBoxType = {
+							name = "religions_expanded_startup_screen_culture_6_button_text"
+							position = { x = 40 y = 10 }
+							font = "vic_18"
+							format = left
+							maxWidth = 98
+							maxHeight = 20
+							fixedsize = yes
+							alwaystransparent = yes
+							text = "aramaic_culture_group"
+						}
+					}
+				#	windowType = {
+				#		name = "culture_7_window"
+				#		position = { x = 0 y = 204 }
+				#
+				#		guiButtonType = {
+				#			name = "religions_expanded_startup_screen_culture_7_button"
+				#			position = { x = 2 y = 2 }
+				#			spriteType = "GFX_re_startup_screen_culture_button"
+				#			scripted = yes
+				#		}
+				#		iconType = {
+				#			name = "religions_expanded_startup_screen_culture_7_primary_icon"
+				#			position = { x = 7 y = 4 }
+				#			spriteType = "GFX_primary_culture_icon"
+				#			scale = 0.75
+				#			alwaystransparent = yes
+				#			scripted = yes
+				#		}
+				#		instantTextBoxType = {
+				#			name = "religions_expanded_startup_screen_culture_7_button_text"
+				#			position = { x = 40 y = 10 }
+				#			font = "vic_18"
+				#			format = left
+				#			maxWidth = 98
+				#			maxHeight = 20
+				#			fixedsize = yes
+				#			alwaystransparent = yes
+				#			text = "Culture Placeholder"
+				#		}
+				#	}
+				#	windowType = {
+				#		name = "culture_8_window"
+				#		position = { x = 0 y = 238 }
+				#
+				#		guiButtonType = {
+				#			name = "religions_expanded_startup_screen_culture_8_button"
+				#			position = { x = 2 y = 2 }
+				#			spriteType = "GFX_re_startup_screen_culture_button"
+				#			scripted = yes
+				#		}
+				#		iconType = {
+				#			name = "religions_expanded_startup_screen_culture_8_primary_icon"
+				#			position = { x = 7 y = 4 }
+				#			spriteType = "GFX_primary_culture_icon"
+				#			scale = 0.75
+				#			alwaystransparent = yes
+				#			scripted = yes
+				#		}
+				#		instantTextBoxType = {
+				#			name = "religions_expanded_startup_screen_culture_8_button_text"
+				#			position = { x = 40 y = 10 }
+				#			font = "vic_18"
+				#			format = left
+				#			maxWidth = 98
+				#			maxHeight = 20
+				#			fixedsize = yes
+				#			alwaystransparent = yes
+				#			text = "Culture Placeholder"
+				#		}
+				#	}
+				}
+			}
+
+			guiButtonType = {
+				name = "religions_expanded_startup_screen_close_button"
+				position = { x = 365 y = -90 }
+				orientation = lower_left
+				spriteType = "button_type_9"
+				buttonFont = "vic_18"
+				buttonText = "CLOSE"
+				clicksound = "close_window"
+				shortcut = "ESCAPE"
+				scripted = yes
+			}
+		}
+
 		#####################################
 		### Nestorian Patriarchy Mechanic ###
 		#####################################

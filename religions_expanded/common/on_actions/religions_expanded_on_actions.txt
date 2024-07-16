@@ -9,6 +9,17 @@ on_startup = {
 			add_province_triggered_modifier = re_on_monthly_tick_triggered_modifier
 		}
 	}
+	# Startup Screen:
+	if = {
+		limit = {
+			ai = no
+			NOT = { has_country_flag = religions_expanded_had_startup_screen_window }
+		}
+		set_country_flag = religions_expanded_had_startup_screen_window
+		set_country_flag = show_religions_expanded_startup_screen_window
+		set_country_flag = show_religions_expanded_startup_screen_window_religions
+		set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 0 }
+	}
 }
 
 # ROOT = province, FROM = old owner

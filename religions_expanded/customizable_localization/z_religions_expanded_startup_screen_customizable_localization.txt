@@ -1,0 +1,273 @@
+# Religions
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenRightTitleReligions
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 0 } }
+		}
+		localisation_key = string_religions_expanded_startup_screen_right_title_religions
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenReligionSelectedName
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 1 }
+		}
+		localisation_key = jainism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 2 }
+		}
+		localisation_key = tibetan_buddhism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 3 }
+		}
+		localisation_key = vidilist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 4 }
+		}
+		localisation_key = nestorian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 5 }
+		}
+		localisation_key = manichaeism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 6 }
+		}
+		localisation_key = bogomilist
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenTextReligions
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 0 } }
+		}
+		localisation_key = string_religions_expanded_startup_screen_text_religions
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_religions_expanded_startup_screen_text_religions_none
+	}
+}
+
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenReligionSelectedText
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 1 }
+		}
+		localisation_key = re_startup_text_jainism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 2 }
+		}
+		localisation_key = re_startup_text_tibetan_buddhism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 3 }
+		}
+		localisation_key = re_startup_text_vidilist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 4 }
+		}
+		localisation_key = re_startup_text_nestorian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 5 }
+		}
+		localisation_key = re_startup_text_manichaeism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 6 }
+		}
+		localisation_key = re_startup_text_bogomilist
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+# Cultures
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenRightTitleCultures
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 0 } }
+		}
+		localisation_key = string_religions_expanded_startup_screen_right_title_cultures
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenCultureSelectedName
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 1 }
+		}
+		localisation_key = lost_cultures_group
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 2 }
+		}
+		localisation_key = turko_semitic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 3 }
+		}
+		localisation_key = iranian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 4 }
+		}
+		localisation_key = altaic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 5 }
+		}
+		localisation_key = sudanese
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 6 }
+		}
+		localisation_key = aramaic_culture_group
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenTextCultures
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 0 } }
+		}
+		localisation_key = string_religions_expanded_startup_screen_text_cultures
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_religions_expanded_startup_screen_text_cultures_none
+	}
+}
+
+defined_text = {
+	name = GetReligionsExpandedStartUpScreenCultureSelectedText
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 1 }
+		}
+		localisation_key = re_startup_text_lost_cultures_group
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 2 }
+		}
+		localisation_key = re_startup_text_turko_semitic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 3 }
+		}
+		localisation_key = re_startup_text_iranian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 4 }
+		}
+		localisation_key = re_startup_text_altaic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 5 }
+		}
+		localisation_key = re_startup_text_sudanese
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_culture value = 6 }
+		}
+		localisation_key = re_startup_text_aramaic_culture_group
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
