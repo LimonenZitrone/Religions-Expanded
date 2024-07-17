@@ -65,7 +65,24 @@
  bogomilist_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
  # Decisions:
+ re_religion_decision_vidilist_stamp_out_the_pagans_title: "Stamp Out the Pagans"
+ re_religion_decision_vidilist_stamp_out_the_pagans_desc: "There are still some people living in [271.GetAreaName] that have pagan beliefs. They might be a minority, but we have to handle the situation eventually."
+ re_religion_decision_manichaeism_burn_mandean_temples_title: "Burn the Mandean Temples"
+ re_religion_decision_manichaeism_burn_mandean_temples_desc: "Some people living in [4289.GetAreaName] still follow ancient beliefs. There are conflicts between them and parts of the [Root.Religion.GetName] population, which we need to handle eventually."
  re_religion_decision_convert_to_nestorian_title: "Convert to the Nestorian faith"
  re_religion_decision_convert_to_nestorian_desc: "We follow the Assyrian culture and should restore the Church of Assyria!"
  re_religion_decision_convert_to_manichaeism_title: "Convert to the Manichaean faith"
  re_religion_decision_convert_to_manichaeism_desc: "We follow the Manichaean culture, it's time to also convert our religion to the old faith!"
+
+ # Events:
+ re_religion_vidilist_events.EVTNAME1: "The Pagans in [271.GetAreaName]"
+ re_religion_vidilist_events.EVTDESC1: "There are still some people living in [271.GetAreaName] that have pagan beliefs. How should we handle the situation? Should we fight them, leave them be or try to assimilate them?"
+ re_religion_vidilist_events1.EVTOPT1: "Stamp them out with vigor."
+ re_religion_vidilist_events1.EVTOPT2: "They are of no importance for us."
+ re_religion_vidilist_events1.EVTOPT3: "Assimilate them slowly."
+
+ re_religion_manichaeism_events.EVTNAME1: "The Burning of the Mandean Temples"
+ re_religion_manichaeism_events.EVTDESC1: "Some people living in [4289.GetAreaName] still follow ancient beliefs. Parts of the [Root.Religion.GetName] population of the city have now tried to burn down their last remaining temples. How should we handle the situation? Should we support our brothers in faith, leave them both be or try to assimilate the Mandeans?"
+ re_religion_manichaeism_events1.EVTOPT1: "Their religion has no place in our realm."
+ re_religion_manichaeism_events1.EVTOPT2: "The situation is irrelevant to us."
+ re_religion_manichaeism_events1.EVTOPT3: "Assimilate the Mandeans slowly."
