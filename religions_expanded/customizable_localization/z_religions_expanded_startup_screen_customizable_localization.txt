@@ -57,6 +57,12 @@ defined_text = {
 		}
 		localisation_key = bogomilist
 	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 7 }
+		}
+		localisation_key = hinduism
+	}
 
 	# Fallback
 	text = {
@@ -81,7 +87,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localisation_key = string_religions_expanded_startup_screen_text_religions_none
+		localisation_key = ""
 	}
 }
 
@@ -124,6 +130,12 @@ defined_text = {
 			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 6 }
 		}
 		localisation_key = re_startup_text_bogomilist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = religions_expanded_startup_screen_window_selected_religion value = 7 }
+		}
+		localisation_key = re_startup_text_hinduism
 	}
 
 	# Fallback
@@ -218,7 +230,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localisation_key = string_religions_expanded_startup_screen_text_cultures_none
+		localisation_key = ""
 	}
 }
 

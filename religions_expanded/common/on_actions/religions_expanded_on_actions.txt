@@ -19,6 +19,7 @@ on_startup = {
 		set_country_flag = show_religions_expanded_startup_screen_window
 		set_country_flag = show_religions_expanded_startup_screen_window_religions
 		set_variable = { which = religions_expanded_startup_screen_window_selected_religion value = 0 }
+		set_variable = { which = religions_expanded_startup_screen_window_religions_selected_page value = 1 }
 	}
 }
 

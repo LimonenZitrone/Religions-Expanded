@@ -59,6 +59,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = culture_conversion_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_CULTURE_CONVERSION_COST
+	}
+}
+
+defined_text = {
 	name = local_unrest
 	random = no
 
@@ -199,6 +211,18 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = MODIFIER_IDEA_COST
+	}
+}
+
+defined_text = {
+	name = technology_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TECHNOLOGY_COST
 	}
 }
 
@@ -847,5 +871,65 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = COLONIST_PLACEMENT_CHANCE
+	}
+}
+
+defined_text = {
+	name = institution_spread_from_true_faith
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_INSTITUTION_SPREAD_FROM_TRUE_FAITH
+	}
+}
+
+defined_text = {
+	name = missionaries
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_MISSIONARIES
+	}
+}
+
+defined_text = {
+	name = num_accepted_cultures
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ACCEPTED_CULTURES
+	}
+}
+
+defined_text = {
+	name = fire_damage
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_FIRE_DAMAGE
+	}
+}
+
+defined_text = {
+	name = all_estate_influence_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ALL_ESTATE_INFLUENCE_MODIFIER
 	}
 }
