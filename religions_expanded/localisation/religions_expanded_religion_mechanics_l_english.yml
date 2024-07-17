@@ -722,15 +722,8 @@
  re_religion_mechanic_sylvan_affinity_events1.EVTOPT2: "Songs of Hunting"
  re_religion_mechanic_sylvan_affinity_events1.EVTOPT3: "Songs of Harvesting"
  re_religion_mechanic_sylvan_affinity_events1.EVTOPT4: "Songs of Lament"
- re_religion_mechanic_sylvan_affinity_events.EVTNAME2: "The Pagans in [271.GetAreaName]"
- re_religion_mechanic_sylvan_affinity_events.EVTDESC2: "There are still some people living in [271.GetAreaName] that have pagan beliefs. How should we handle the situation? Should we fight them, leave them be or try to assimilate them?"
- re_religion_mechanic_sylvan_affinity_events2.EVTOPT1: "Stamp them out with vigor."
- re_religion_mechanic_sylvan_affinity_events2.EVTOPT2: "They are of no importance for us."
- re_religion_mechanic_sylvan_affinity_events2.EVTOPT3: "Assimilate them slowly."
 
  # Decisions:
- re_religion_mechanic_sylvan_affinity_stamp_out_the_pagans_decision_title: "Stamp Out the Pagans"
- re_religion_mechanic_sylvan_affinity_stamp_out_the_pagans_decision_desc: "There are still some people living in [271.GetAreaName] that have pagan beliefs. They might be a minority, but we have to handle the situation eventually."
  re_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision_title: "Consecrate a Grove"
  re_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision_desc: "Found a new grove for the selected Seasonal Affinity. This will apply modifiers to a random owned province and its area for §Y5 years§! depending on the selected Seasonal Affinity."
  re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_decision_title: "Select Seasonal Affinity"
@@ -1246,16 +1239,7 @@
  string_re_get_religion_mechanic_manichaeism_purity_monthly_gain_value_negative: "§R[This.re_monthly_religion_mechanic_manichaeism_purity_value.GetValue]§!"
  string_re_get_religion_mechanic_manichaeism_purity_monthly_gain_value_neutral: "§Y0.00§!"
 
- # Events:
- re_religion_mechanic_manichaeism_purity_events.EVTNAME1: "The Burning of the Mandean Temples"
- re_religion_mechanic_manichaeism_purity_events.EVTDESC1: "Some people living in [4289.GetAreaName] still follow ancient beliefs. Parts of the [Root.Religion.GetName] population of the city have now tried to burn down their last remaining temples. How should we handle the situation? Should we support our brothers in faith, leave them both be or try to assimilate the Mandeans?"
- re_religion_mechanic_manichaeism_purity_events1.EVTOPT1: "Their religion has no place in our realm."
- re_religion_mechanic_manichaeism_purity_events1.EVTOPT2: "The situation is irrelevant to us."
- re_religion_mechanic_manichaeism_purity_events1.EVTOPT3: "Assimilate the Mandeans slowly."
-
  # Decisions:
- re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision_title: "Burn the Mandean Temples"
- re_religion_mechanic_manichaeism_purity_burn_mandean_temples_decision_desc: "Some people living in [4289.GetAreaName] still follow ancient beliefs. There are conflicts between them and parts of the [Root.Religion.GetName] population, which we need to handle eventually."
  re_religion_mechanic_manichaeism_purity_knowledge_decision_title: "Call upon the God of Knowledge"
  re_religion_mechanic_manichaeism_purity_knowledge_decision_desc: "Make offerings to the sixth son of the First-Man to make him support the [This.Monarch.GetTitle] in [This.Monarch.GetHerHis] life decisions."
  re_religion_mechanic_manichaeism_purity_wind_decision_title: "Refreshing Wind"
