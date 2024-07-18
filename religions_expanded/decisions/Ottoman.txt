@@ -18,7 +18,7 @@ country_decisions = {
 			is_at_war = no
 			OR = {
 				primary_culture = turkish
-				primary_culture = oghuz
+				primary_culture = oghuz_culture
 			}
 			religion_group = muslim
 			controls = 151
