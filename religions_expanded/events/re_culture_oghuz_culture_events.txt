@@ -21,6 +21,10 @@ province_event = {
 	mean_time_to_happen = {
 		years = 30
 		modifier = {
+			factor = 0.33
+			province_id = 151
+		}
+		modifier = {
 			factor = 1.25
 			has_terrain = hills
 		}
