@@ -43,7 +43,7 @@ country_decisions = {
 			re_has_religion_mechanic_manichaeism_purity_value = { value = 75 }
 			development_in_provinces = {
 				value = 1000
-				culture = manichaean_culture
+				province_religion = manichaeism
 			}
 		}
 		effect = {
