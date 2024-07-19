@@ -38,6 +38,7 @@ guiTypes = {
 			maxHeight = 109
 			Orientation = "UPPER_LEFT"
 			format = left
+			fixedsize = yes
 		}
 
 		guiButtonType = {
