@@ -584,3 +584,33 @@ religions_expanded_bogomilist_aspect_organize_colonial_voyages = {
 		}
 	}
 }
+
+religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle = {
+	sprite = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_promote_ascetic_lifestyle"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+		custom_tooltip = religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle_tt
+		hidden_effect = {
+			remove_country_modifier = religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle_modifier
+			add_country_modifier = {
+				name = religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle_modifier
+				duration = 3650
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			NOT = { treasury = 5000 }
+		}
+		modifier = {
+			factor = 0
+			tax_income_percentage = 33
+		}
+	}
+}

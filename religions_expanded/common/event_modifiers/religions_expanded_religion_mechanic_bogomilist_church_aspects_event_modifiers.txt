@@ -86,3 +86,10 @@ religions_expanded_bogomilist_aspect_organize_colonial_voyages_modifier_2 = {
 	colonist_placement_chance = 0.1
 	religion = yes
 }
+
+religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle_modifier = {
+	global_tax_modifier = -0.2
+	build_cost = -0.1
+	build_time = -0.1
+	religion = yes
+}

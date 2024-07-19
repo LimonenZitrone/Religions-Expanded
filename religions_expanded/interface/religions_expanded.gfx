@@ -404,4 +404,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_organize_colonial_voyages.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_re_religion_mechanic_bogomilist_church_aspects_aspect_promote_ascetic_lifestyle"
+		textureFile = "gfx/interface/re_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_promote_ascetic_lifestyle.dds"
+		legacy_lazy_load = no
+	}
 }

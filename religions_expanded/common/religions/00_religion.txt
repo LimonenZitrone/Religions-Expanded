@@ -916,6 +916,7 @@ christian = {
 			religions_expanded_bogomilist_aspect_slacken_recruitment_for_the_holy_war
 			religions_expanded_bogomilist_aspect_standarize_holy_knights
 			religions_expanded_bogomilist_aspect_organize_colonial_voyages
+			religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle
 		}
 		aspects_name = BOGOMILIST_ASPECTS
 

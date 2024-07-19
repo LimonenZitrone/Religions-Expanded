@@ -395,6 +395,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = build_time
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = BUILD_TIME
+	}
+}
+
+defined_text = {
 	name = trade_goods_size
 	random = no
 

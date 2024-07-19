@@ -1303,6 +1303,10 @@
  religions_expanded_bogomilist_aspect_organize_colonial_voyages: "Organize Colonial Voyages"
  desc_religions_expanded_bogomilist_aspect_organize_colonial_voyages: "A random §YBogomilist§! province with a §YNaval Forcelimit Building§! will be selected. Matching provinces with a higher level building are prioritized if available. \n\nThe cooldown of the action is §Y20 years§!."
  religions_expanded_bogomilist_aspect_organize_colonial_voyages_tt: "The selected province loses the naval forcelimit building. Depending on the removed building, §Y[Root.GetName]§! gains §G+20.00§! or §G+10.00§! [global_colonial_growth] and §G+20.0%§! or §G+10.0%§! [colonist_placement_chance] for §Y20 years§!."
+ religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle: "Promote Ascetic Lifestyle"
+ desc_religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle: "If the applied modifier is already active, it will be removed first so that you will always get it for §Y10 years§!. \n\nThis action has no cooldown."
+ religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle_tt: "Gain §R-20.0%§! [global_tax_modifier], §G-10.0%§! [build_cost] and §G-10.0%§! [build_time] for §Y10 years§!."
+
  # Modifiers:
  ## Church Aspect Modifiers:
  religions_expanded_bogomilist_aspect_dissolve_church_properties_modifier_1: "Dissolved Church Properties"
@@ -1328,3 +1332,4 @@
  religions_expanded_bogomilist_aspect_standarize_holy_knights_modifier_2: "Standardized Holy Knights"
  religions_expanded_bogomilist_aspect_organize_colonial_voyages_modifier_1: "Organized Colonial Voyages"
  religions_expanded_bogomilist_aspect_organize_colonial_voyages_modifier_2: "Organized Colonial Voyages"
+ religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle_modifier: "Promoted Ascetic Lifestyle"
