@@ -867,6 +867,7 @@ christian = {
 		on_convert = {
 			change_religion = nestorian
 			re_set_religion_mechanic_nestorian_patriarchy_value = { value = 0 }
+			re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
 			add_country_modifier = {
 				name = conversion_zeal
 				duration = 3650
@@ -1686,6 +1687,7 @@ eastern = {
 
 		on_convert = {
 			change_religion = tibetan_buddhism
+			re_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
 			if = {
 				limit = {
 					NOT = { has_country_flag = religions_expanded_initial_conversion }
@@ -2382,6 +2384,7 @@ dharmic = {
 			change_religion = jainism
 			enable_propogate_religion_effect = yes
 			re_set_religion_mechanic_sukha_value = { value = 0 }
+			re_export_yearly_religion_mechanic_sukha_value_gain = yes
 			add_prestige = -50
 			add_country_modifier = {
 				name = "conversion_zeal"
@@ -2591,7 +2594,9 @@ pagan = {
 		}
 
 		on_convert = {
+			change_religion = vidilist
 			re_set_religion_mechanic_sylvan_affinity_value = { value = 0 }
+			re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = yes
 		}
 
 		heretic = { DRUWINGI VISAMOKINGAS DIEVISKIS }
@@ -2783,7 +2788,7 @@ zoroastrian_group = {
 		country = {
 			fire_damage = 0.1
 			num_accepted_cultures = 2
-			re_monthly_religion_mechanic_manichaeism_purity_change = -0.15
+			re_monthly_religion_mechanic_manichaeism_purity_change = -0.25
 		}
 		country_as_secondary = {
 			fire_damage = 0.1
@@ -2794,6 +2799,7 @@ zoroastrian_group = {
 		on_convert = {
 			change_religion = manichaeism
 			re_set_religion_mechanic_manichaeism_purity_value = { value = 0 }
+			re_export_monthly_religion_mechanic_manichaeism_purity_value_gain = yes
 		}
 
 		heretic = { MAZDAKI }

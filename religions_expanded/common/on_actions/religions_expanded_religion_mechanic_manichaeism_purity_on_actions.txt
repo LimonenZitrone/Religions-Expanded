@@ -28,7 +28,14 @@ on_province_religion_converted = {
 			}
 		}
 		owner = {
-			re_add_religion_mechanic_manichaeism_purity_value = { value = 1 }
+			export_to_variable = {
+				which = re_religion_mechanic_manichaeism_purtiy_conversion_target_dev
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { which = re_religion_mechanic_manichaeism_purtiy_conversion_target_dev value = 0.05 }
+			re_add_religion_mechanic_manichaeism_purity_value = { which = re_religion_mechanic_manichaeism_purtiy_conversion_target_dev }
+			set_variable = { which = re_religion_mechanic_manichaeism_purtiy_conversion_target_dev value = 0 }
 		}
 	}
 }
