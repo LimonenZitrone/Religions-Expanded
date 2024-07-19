@@ -845,3 +845,441 @@ province_event = {
 		}
 	}
 }
+
+# Fire event to pick advisor or lose bonuses
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.10
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME10
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC10
+	picture = ADVISOR_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_adm_advisor
+		NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_adm_advisor }
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						NOT = {
+							employed_advisor = {
+								category = ADM
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_level value = 5 }
+							NOT = {
+								employed_advisor = {
+									category = ADM
+									skill = 5
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_level value = 4 }
+							NOT = {
+								employed_advisor = {
+									category = ADM
+									skill = 4
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_level value = 3 }
+							NOT = {
+								employed_advisor = {
+									category = ADM
+									skill = 3
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_level value = 2 }
+							NOT = {
+								employed_advisor = {
+									category = ADM
+									skill = 2
+								}
+							}
+						}
+					}
+				}
+				country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.11 }
+			}
+			else = {
+				re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_adm_advisor = yes
+			}
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events10.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Pick advisor or lose bonuses
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.11
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME11
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC11
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_adm_advisor
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events11.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 3 }
+			}
+		}
+
+		re_religion_mechanic_nestorian_patriarchy_hire_new_supported_adm_advisor = yes
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_keep_adm_advisor_bonuses_from_holy_site_interaction_tt
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events11.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1000
+				NOT = { years_of_income = 3 }
+			}
+		}
+
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_lose_adm_advisor_bonuses_from_holy_site_interaction_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+				}
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_5_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_4_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_2_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_1_modifier
+			}
+			else = {
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_5_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_4_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_2_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_1_modifier
+			}
+		}
+	}
+
+	after = {
+		re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_adm_advisor = yes
+	}
+}
+
+# Fire event to pick advisor or lose bonuses
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.12
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME12
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC12
+	picture = ADVISOR_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_dip_advisor
+		NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_dip_advisor }
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						NOT = {
+							employed_advisor = {
+								category = ADM
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_level value = 5 }
+							NOT = {
+								employed_advisor = {
+									category = DIP
+									skill = 5
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_level value = 4 }
+							NOT = {
+								employed_advisor = {
+									category = DIP
+									skill = 4
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_level value = 3 }
+							NOT = {
+								employed_advisor = {
+									category = DIP
+									skill = 3
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_level value = 2 }
+							NOT = {
+								employed_advisor = {
+									category = DIP
+									skill = 2
+								}
+							}
+						}
+					}
+				}
+				country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.13 }
+			}
+			else = {
+				re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_dip_advisor = yes
+			}
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events12.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Pick advisor or lose bonuses
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.13
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME13
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC13
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_dip_advisor
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events13.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 3 }
+			}
+		}
+
+		re_religion_mechanic_nestorian_patriarchy_hire_new_supported_dip_advisor = yes
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_keep_dip_advisor_bonuses_from_holy_site_interaction_tt
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events13.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1000
+				NOT = { years_of_income = 3 }
+			}
+		}
+
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_lose_dip_advisor_bonuses_from_holy_site_interaction_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+				}
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_5_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_4_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_2_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_1_modifier
+			}
+			else = {
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_5_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_4_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_2_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_1_modifier
+			}
+		}
+	}
+
+	after = {
+		re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_dip_advisor = yes
+	}
+}
+
+# Fire event to pick advisor or lose bonuses
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.14
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME14
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC14
+	picture = ADVISOR_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_mil_advisor
+		NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_mil_advisor }
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						NOT = {
+							employed_advisor = {
+								category = MIL
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_level value = 5 }
+							NOT = {
+								employed_advisor = {
+									category = MIL
+									skill = 5
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_level value = 4 }
+							NOT = {
+								employed_advisor = {
+									category = MIL
+									skill = 4
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_level value = 3 }
+							NOT = {
+								employed_advisor = {
+									category = MIL
+									skill = 3
+								}
+							}
+						}
+						AND = {
+							check_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_level value = 2 }
+							NOT = {
+								employed_advisor = {
+									category = MIL
+									skill = 2
+								}
+							}
+						}
+					}
+				}
+				country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.15 }
+			}
+			else = {
+				re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_mil_advisor = yes
+			}
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events14.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Pick advisor or lose bonuses
+country_event = {
+	id = re_religion_mechanic_nestorian_patriarchy_events.15
+	title = re_religion_mechanic_nestorian_patriarchy_events.EVTNAME15
+	desc = re_religion_mechanic_nestorian_patriarchy_events.EVTDESC15
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_mil_advisor
+		}
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events15.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 3 }
+			}
+		}
+
+		re_religion_mechanic_nestorian_patriarchy_hire_new_supported_mil_advisor = yes
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_keep_mil_advisor_bonuses_from_holy_site_interaction_tt
+	}
+
+	option = {
+		name = re_religion_mechanic_nestorian_patriarchy_events15.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1000
+				NOT = { years_of_income = 3 }
+			}
+		}
+
+		custom_tooltip = re_religion_mechanic_nestorian_patriarchy_lose_mil_advisor_bonuses_from_holy_site_interaction_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+				}
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_5_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_4_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_2_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_1_modifier
+			}
+			else = {
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_5_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_4_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_3_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_2_modifier
+				remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_1_modifier
+			}
+		}
+	}
+
+	after = {
+		re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_mil_advisor = yes
+	}
+}

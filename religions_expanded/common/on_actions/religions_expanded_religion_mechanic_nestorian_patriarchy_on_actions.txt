@@ -451,81 +451,78 @@ on_mil_development = {
 	}
 }
 
-on_post_adm_advisor_fired = {
+on_pre_adm_advisor_fired = {
 	if = {
 		limit = {
 			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier
-		}
-		if = {
-			limit = {
-				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+			OR = {
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_5_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_4_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_3_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_2_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_1_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_5_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_4_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_3_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_2_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_1_modifier
 			}
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_5_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_4_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_3_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_2_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_adm_1_modifier
+			NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_adm_advisor }
 		}
-		else = {
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_5_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_4_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_3_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_2_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_adm_1_modifier
-		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_adm_advisor
+		re_religion_mechanic_nestorian_patriarchy_flag_current_supported_adm_advisor = yes
+		country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.10 days = 1 } # 1 day delay to ensure it fires after the new advisor has been set, when replacing an advjsor
 	}
 }
 
-on_post_dip_advisor_fired = {
+on_pre_dip_advisor_fired = {
 	if = {
 		limit = {
 			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier
-		}
-		if = {
-			limit = {
-				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+			OR = {
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_5_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_4_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_3_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_2_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_1_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_5_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_4_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_3_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_2_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_1_modifier
 			}
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_5_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_4_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_3_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_2_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_dip_1_modifier
+			NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_dip_advisor }
 		}
-		else = {
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_5_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_4_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_3_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_2_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_dip_1_modifier
-		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_dip_advisor
+		re_religion_mechanic_nestorian_patriarchy_flag_current_supported_dip_advisor = yes
+		country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.12 days = 1 } # 1 day delay to ensure it fires after the new advisor has been set, when replacing an advjsor
 	}
 }
 
-on_post_mil_advisor_fired = {
+on_pre_mil_advisor_fired = {
 	if = {
 		limit = {
 			re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier
-		}
-		if = {
-			limit = {
-				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier
+			OR = {
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_5_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_4_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_3_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_2_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_1_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_5_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_4_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_3_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_2_modifier
+				has_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_1_modifier
 			}
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_5_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_4_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_3_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_2_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_mil_1_modifier
+			NOT = { has_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_mil_advisor }
 		}
-		else = {
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_5_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_4_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_3_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_2_modifier
-			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_mil_1_modifier
-		}
+		set_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_mil_advisor
+		re_religion_mechanic_nestorian_patriarchy_flag_current_supported_mil_advisor = yes
+		country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.14 days = 1 } # 1 day delay to ensure it fires after the new advisor has been set, when replacing an advjsor
 	}
 }
 

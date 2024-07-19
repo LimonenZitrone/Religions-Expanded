@@ -904,6 +904,13 @@ christian = {
 				name = conversion_zeal
 				duration = 3650
 			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = re_religion_bogomilist_money_received }
+				}
+				set_country_flag = re_religion_bogomilist_money_received
+				add_years_of_income = 1
+			}
 		}
 
 		uses_church_power = yes

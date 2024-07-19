@@ -987,6 +987,27 @@
  re_religion_mechanic_nestorian_patriarchy_events.EVTDESC9: "The Nestorian Patriarchy Controller from [re_religion_mechanic_nestorian_patriarchy_patriarch_controller.GetName] has established a Center of Conversion in [Root.GetName]. Unless we force them by war to destroy it again, it will spread the Nestorian faith to nearby provinces until the next Patriarchy Controller is selected."
  re_religion_mechanic_nestorian_patriarchy_events9.EVTOPT1: "That's terrible!"
 
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME11: "Administrative Advisor Lost"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC11: "We have lost our Administrative Advisor. Due to us having the bonus from the pilgrimage to the holy site of [151.GetName] right now, this means if we don't hire the advisor suggested here, we will lose its bonuses for the Administrative Advisor."
+ re_religion_mechanic_nestorian_patriarchy_events11.EVTOPT1: "Keep the bonuses."
+ re_religion_mechanic_nestorian_patriarchy_events11.EVTOPT2: "Lose the bonuses."
+ re_religion_mechanic_nestorian_patriarchy_keep_adm_advisor_bonuses_from_holy_site_interaction_tt: "\nWe §Gkeep§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Administrative Advisor ([state_maintenance_modifier]: §G-2.0%§! or §G-4.0%§! per skill level)."
+ re_religion_mechanic_nestorian_patriarchy_lose_adm_advisor_bonuses_from_holy_site_interaction_tt: "We §Rlose§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Administrative Advisor ([state_maintenance_modifier]: §G-2.0%§! or §G-4.0%§! per skill level)."
+
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME13: "Diplomatic Advisor Lost"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC13: "We have lost our Diplomatic Advisor. Due to us having the bonus from the pilgrimage to the holy site of [151.GetName] right now, this means if we don't hire the advisor suggested here, we will lose its bonuses for the Diplomatic Advisor."
+ re_religion_mechanic_nestorian_patriarchy_events13.EVTOPT1: "Keep the bonuses."
+ re_religion_mechanic_nestorian_patriarchy_events13.EVTOPT2: "Lose the bonuses."
+ re_religion_mechanic_nestorian_patriarchy_keep_dip_advisor_bonuses_from_holy_site_interaction_tt: "\nWe §Gkeep§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Diplomatic Advisor ([improve_relation_modifier]: §G+2.0%§! or §G+4.0%§! per skill level)."
+ re_religion_mechanic_nestorian_patriarchy_lose_dip_advisor_bonuses_from_holy_site_interaction_tt: "We §Rlose§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Diplomatic Advisor ([improve_relation_modifier]: §G+2.0%§! or §G+4.0%§! per skill level)."
+
+ re_religion_mechanic_nestorian_patriarchy_events.EVTNAME15: "Military Advisor Lost"
+ re_religion_mechanic_nestorian_patriarchy_events.EVTDESC15: "We have lost our Military Advisor. Due to us having the bonus from the pilgrimage to the holy site of [151.GetName] right now, this means if we don't hire the advisor suggested here, we will lose its bonuses for the Military Advisor."
+ re_religion_mechanic_nestorian_patriarchy_events15.EVTOPT1: "Keep the bonuses."
+ re_religion_mechanic_nestorian_patriarchy_events15.EVTOPT2: "Lose the bonuses."
+ re_religion_mechanic_nestorian_patriarchy_keep_mil_advisor_bonuses_from_holy_site_interaction_tt: "\nWe §Gkeep§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Military Advisor ([discipline]: §G+0.5%§! or §G+1.0%§! per skill level)."
+ re_religion_mechanic_nestorian_patriarchy_lose_mil_advisor_bonuses_from_holy_site_interaction_tt: "We §Rlose§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Military Advisor ([discipline]: §G+0.5%§! or §G+1.0%§! per skill level)."
+
  # Decisions:
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision_title: "Select Center of Conversion"
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision_desc: "The §YPatriarchy Controller§! can pick a Center of Conversion. Once selected, this will spread the §YNestorian§! faith to provinces in nearby regions and give a small bonus to missionary strength to Nestorian countries in the affected regions. \nThe Center will be abandoned and another can be selected when the next §YPatriarchy Controller§! takes over."
