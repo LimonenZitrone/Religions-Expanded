@@ -34,12 +34,10 @@ country_decisions = {
 	re_formable_decision_empire_of_light = {
 		major = yes
 		potential = {
-			primary_culture = manichaean_culture
 			re_uses_religion_mechanic = { mechanic = manichaeism_purity }
 			NOT = { has_global_flag = re_formable_empire_of_light }
 		}
 		allow = {
-			primary_culture = manichaean_culture
 			re_has_religion_mechanic_manichaeism_purity_value = { value = 75 }
 			development_in_provinces = {
 				value = 1000
