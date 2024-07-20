@@ -184,7 +184,6 @@ re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = {
 	hidden_effect = {
 		re_religion_mechanic_nestorian_patriarchy_clear_center_of_reformation = yes
 		save_global_event_target_as = re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
-		set_province_flag = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_setup
 		add_province_triggered_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_province_triggered_modifier
 		add_permanent_province_modifier = {
 			name = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier
@@ -414,7 +413,6 @@ re_religion_mechanic_nestorian_patriarchy_clear_center_of_reformation = {
 			event_target:re_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
 				remove_province_triggered_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_province_triggered_modifier
 				remove_province_modifier = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_modifier
-				clr_province_flag = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_setup
 				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_time value = 0 }
 				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 0 }
 			}

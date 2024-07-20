@@ -31,6 +31,9 @@ re_peace_treaty_convert_heathen = {
 		FROM = {
 			change_religion = ROOT
 			force_converted = yes
+			capital_scope = {
+				change_religion = ROOT
+			}
 		}
 	}
 	ai_weight = {
