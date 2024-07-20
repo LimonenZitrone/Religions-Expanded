@@ -1106,6 +1106,7 @@ re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_adm_
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_master_of_mint
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_inquisitor
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_natural_scientist
+	ate_re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_adm_advisor = yes
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_level value = 0 }
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_adm_advisor
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_adm_advisor
@@ -1193,55 +1194,80 @@ re_religion_mechanic_nestorian_patriarchy_flag_current_supported_adm_advisor = {
 		}
 		set_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_natural_scientist
 	}
+	else_if = {
+		limit = {
+			is_expanded_mod_active = { mod = advisor_types }
+		}
+		ate_re_religion_mechanic_nestorian_patriarchy_flag_current_supported_adm_advisor = yes
+	}
 	else = {
 		set_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_treasurer
 	}
 }
 re_religion_mechanic_nestorian_patriarchy_hire_new_supported_adm_advisor = {
-	trigger_switch = {
-		on_trigger = has_country_flag
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_treasurer = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = treasurer
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_treasurer
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_philosopher
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_artist
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_theologian
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_master_of_mint
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_inquisitor
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_natural_scientist
 			}
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_philosopher = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = philosopher
+		trigger_switch = {
+			on_trigger = has_country_flag
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_treasurer = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = treasurer
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_philosopher = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = philosopher
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_artist = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = artist
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_theologian = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = theologian
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_master_of_mint = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = master_of_mint
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_inquisitor = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = inquisitor
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_natural_scientist = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = adm
+					type = natural_scientist
+				}
 			}
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_artist = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = artist
-			}
+	}
+	else_if = {
+		limit = {
+			is_expanded_mod_active = { mod = advisor_types }
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_theologian = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = theologian
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_master_of_mint = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = master_of_mint
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_inquisitor = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = inquisitor
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_natural_scientist = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = adm
-				type = natural_scientist
-			}
-		}
+		ate_re_religion_mechanic_nestorian_patriarchy_hire_new_supported_adm_advisor = yes
 	}
 }
 
@@ -1253,6 +1279,7 @@ re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_dip_
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_colonial_governor
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_navigator
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_spymaster
+	ate_re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_dip_advisor = yes
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_level value = 0 }
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_dip_advisor
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_dip_advisor
@@ -1340,55 +1367,80 @@ re_religion_mechanic_nestorian_patriarchy_flag_current_supported_dip_advisor = {
 		}
 		set_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_spymaster
 	}
+	else_if = {
+		limit = {
+			is_expanded_mod_active = { mod = advisor_types }
+		}
+		ate_re_religion_mechanic_nestorian_patriarchy_flag_current_supported_dip_advisor = yes
+	}
 	else = {
 		set_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_statesman
 	}
 }
 re_religion_mechanic_nestorian_patriarchy_hire_new_supported_dip_advisor = {
-	trigger_switch = {
-		on_trigger = has_country_flag
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_statesman = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = statesman
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_statesman
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_diplomat
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_naval_reformer
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_trader
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_colonial_governor
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_navigator
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_spymaster
 			}
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_diplomat = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = diplomat
+		trigger_switch = {
+			on_trigger = has_country_flag
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_statesman = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = statesman
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_diplomat = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = diplomat
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_naval_reformer = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = naval_reformer
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_trader = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = trader
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_colonial_governor = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = colonial_governor
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_navigator = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = navigator
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_spymaster = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = dip
+					type = spymaster
+				}
 			}
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_naval_reformer = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = naval_reformer
-			}
+	}
+	else_if = {
+		limit = {
+			is_expanded_mod_active = { mod = advisor_types }
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_trader = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = trader
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_colonial_governor = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = colonial_governor
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_navigator = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = navigator
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_spymaster = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = dip
-				type = spymaster
-			}
-		}
+		ate_re_religion_mechanic_nestorian_patriarchy_hire_new_supported_dip_advisor = yes
 	}
 }
 
@@ -1400,6 +1452,7 @@ re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_mil_
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_recruitmaster
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_fortification_expert
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_quartermaster
+	ate_re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_mil_advisor = yes
 	set_variable = { which = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_level value = 0 }
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_picking_supported_mil_advisor
 	clr_country_flag = re_religion_mechanic_nestorian_patriarchy_checking_supported_mil_advisor
@@ -1487,55 +1540,80 @@ re_religion_mechanic_nestorian_patriarchy_flag_current_supported_mil_advisor = {
 		}
 		set_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_quartermaster
 	}
+	else_if = {
+		limit = {
+			is_expanded_mod_active = { mod = advisor_types }
+		}
+		ate_re_religion_mechanic_nestorian_patriarchy_flag_current_supported_mil_advisor = yes
+	}
 	else = {
 		set_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_organiser
 	}
 }
 re_religion_mechanic_nestorian_patriarchy_hire_new_supported_mil_advisor = {
-	trigger_switch = {
-		on_trigger = has_country_flag
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_organiser = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = army_organiser
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_organiser
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_reformer
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_commandant
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_grand_captain
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_recruitmaster
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_fortification_expert
+				has_country_flag = re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_quartermaster
 			}
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_reformer = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = army_reformer
+		trigger_switch = {
+			on_trigger = has_country_flag
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_organiser = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = army_organiser
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_reformer = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = army_reformer
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_commandant = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = commandant
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_grand_captain = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = grand_captain
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_recruitmaster = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = recruitmaster
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_fortification_expert = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = fortification_expert
+				}
+			}
+			re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_quartermaster = {
+				re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
+					category = mil
+					type = quartermaster
+				}
 			}
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_commandant = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = commandant
-			}
+	}
+	else_if = {
+		limit = {
+			is_expanded_mod_active = { mod = advisor_types }
 		}
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_grand_captain = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = grand_captain
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_recruitmaster = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = recruitmaster
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_fortification_expert = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = fortification_expert
-			}
-		}
-		re_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_quartermaster = {
-			re_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
-				category = mil
-				type = quartermaster
-			}
-		}
+		ate_re_religion_mechanic_nestorian_patriarchy_hire_new_supported_mil_advisor = yes
 	}
 }
 
