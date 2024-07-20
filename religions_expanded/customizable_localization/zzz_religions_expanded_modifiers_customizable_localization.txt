@@ -945,3 +945,15 @@ defined_text = {
 		localisation_key = MODIFIER_ALL_ESTATE_INFLUENCE_MODIFIER
 	}
 }
+
+defined_text = {
+	name = warscore_cost_vs_other_religion
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_WARSCORE_COST_VS_OTHER_RELIGION
+	}
+}

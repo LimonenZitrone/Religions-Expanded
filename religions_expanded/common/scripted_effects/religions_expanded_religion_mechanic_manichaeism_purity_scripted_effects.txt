@@ -22,6 +22,23 @@ re_set_religion_mechanic_manichaeism_purity_value = {
 				}
 				set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 0 }
 			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_value = { value = 90 }
+					NOT = { has_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_manichaeism_purity_high_purity_modifier
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 90 } }
+					has_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier
+				}
+				remove_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier
+			}
 			re_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = yes
 		}
 	}
@@ -50,6 +67,23 @@ re_add_religion_mechanic_manichaeism_purity_value = {
 					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 0 } }
 				}
 				set_variable = { which = re_religion_mechanic_manichaeism_purity_value value = 0 }
+			}
+			if = {
+				limit = {
+					re_has_religion_mechanic_manichaeism_purity_value = { value = 90 }
+					NOT = { has_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier }
+				}
+				add_country_modifier = {
+					name = re_religion_mechanic_manichaeism_purity_high_purity_modifier
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { re_has_religion_mechanic_manichaeism_purity_value = { value = 90 } }
+					has_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier
+				}
+				remove_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier
 			}
 			re_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = yes
 		}
@@ -234,4 +268,5 @@ re_clear_all_religion_mechanic_manichaeism_purity_modifiers = {
 	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
 	re_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
 	remove_country_modifier = re_religion_mechanic_manichaeism_purity_knowledge_modifier
+	remove_country_modifier = re_religion_mechanic_manichaeism_purity_high_purity_modifier
 }

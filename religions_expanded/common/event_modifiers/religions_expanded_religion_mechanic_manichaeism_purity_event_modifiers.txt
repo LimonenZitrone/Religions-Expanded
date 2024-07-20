@@ -44,6 +44,10 @@ re_religion_mechanic_manichaeism_purity_knowledge_modifier = {
 	culture_conversion_cost = -0.15
 }
 
+re_religion_mechanic_manichaeism_purity_high_purity_modifier = {
+	warscore_cost_vs_other_religion = -0.15
+}
+
 # Diplomatic Actions Modifiers:
 re_religion_mechanic_manichaeism_purity_insult_cooldown_modifier = {
 }
