@@ -8,6 +8,7 @@ on_annexed = {
 			clr_country_flag = re_formable_assyria
 			restore_country_name = yes
 			restore_country_color = yes
+			swap_free_idea_group = yes
 		}
 		if = {
 			limit = {
@@ -30,6 +31,7 @@ on_primary_culture_changed = {
 		clr_country_flag = re_formable_assyria
 		restore_country_name = yes
 		restore_country_color = yes
+		swap_free_idea_group = yes
 	}
 }
 

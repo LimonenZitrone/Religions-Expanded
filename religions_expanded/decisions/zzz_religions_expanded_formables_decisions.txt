@@ -18,6 +18,10 @@ country_decisions = {
 			set_country_flag = re_formable_assyria
 			override_country_name = RE_FORMABLE_ASSYRIA
 			change_country_color = { color = { 255 215 0 } }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
 			mashriq_region = {
 				limit = {
 					NOT = { is_core = ROOT }
