@@ -256,6 +256,17 @@ spriteTypes = {
 		name = "GFX_re_religion_mechanic_nestorian_patriarchy_button"
 		textureFile = "gfx/interface/re_religion_mechanics/nestorian_patriarchy_mechanic/mechanic_button.dds"
 	}
+	frameAnimatedSpriteType = {
+		name = "GFX_re_religion_mechanic_nestorian_patriarchy_button_overlay"
+		texturefile = "gfx/interface/re_religion_mechanics/nestorian_patriarchy_mechanic/mechanic_button_overlay.dds"
+		noOfFrames = 13
+		loadType = "INGAME"
+		alwaystransparent = yes
+		animation_rate_fps = 13
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 2.0
+	}
 	spriteType = {
 		name = "GFX_re_religion_mechanic_nestorian_patriarchy_bg"
 		textureFile = "gfx/interface/re_religion_mechanics/nestorian_patriarchy_mechanic/mechanic_bg.dds"

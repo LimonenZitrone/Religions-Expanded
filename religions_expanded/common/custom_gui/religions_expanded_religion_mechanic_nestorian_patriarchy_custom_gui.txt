@@ -8,13 +8,22 @@ custom_icon = {
 }
 
 # Topbar
-custom_button = {
-	name = re_religion_mechanic_nestorian_patriarchy_main_window_open_button
+custom_window = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_open_button_window
 	potential = {
 		ai = no
 		re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 	}
+}
+custom_button = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_window_open_button
 	effect = {
+		if = {
+			limit = {
+				re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
+			}
+			custom_tooltip = re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt_could_use_holy_site_button
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -31,6 +40,12 @@ custom_button = {
 		}
 	}
 	tooltip = re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt
+}
+custom_icon = {
+	name = re_religion_mechanic_nestorian_patriarchy_main_window_open_button_overlay
+	potential = {
+		re_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
+	}
 }
 
 custom_window = {

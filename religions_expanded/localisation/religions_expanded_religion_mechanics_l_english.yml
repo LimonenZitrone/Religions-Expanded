@@ -824,6 +824,7 @@
  re_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button_text: "Patriarchy"
  re_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button_tt: "Open the §YNestorian Patriarchy§! window."
 
+ re_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt_could_use_holy_site_button: "You have enough Patriarch Influence to afford a holy site interaction. You may want to check if you fulfill the other conditions and can use a holy site interaction."
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_no_controller: "§ROnly the §YPatriarchy Controller§! can select the Center of Conversion.§W"
  re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button_tt_blocked_disabled_for_current_controller: "§RFor the current §YPatriarchy Controller§! it is not possible to select a Center of Conversion due to a Peace Treaty.§W"
  re_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier_tt: "for §Y10 years§! or until we are no longer §YPatriarchy Controller§!"

@@ -1533,14 +1533,29 @@ guiTypes = {
 		#####################################
 		### Nestorian Patriarchy Mechanic ###
 		#####################################
-		guiButtonType = {
-			name = "re_religion_mechanic_nestorian_patriarchy_main_window_open_button"
+		# Open Button Window
+		windowType = {
+			name = "re_religion_mechanic_nestorian_patriarchy_main_open_button_window"
 			position = { x = -322 y = -70 }
 			orientation = lower_right
-			spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_button"
 			scripted = yes
+
+			guiButtonType = {
+				name = "re_religion_mechanic_nestorian_patriarchy_main_window_open_button"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_button"
+				scripted = yes
+			}
+			iconType = {
+				name = "re_religion_mechanic_nestorian_patriarchy_main_window_open_button_overlay"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_button_overlay"
+				alwaystransparent = yes
+				scripted = yes
+			}
 		}
 
+		# Main Window
 		windowType = {
 			name = "re_religion_mechanic_nestorian_patriarchy_main_window"
 			position = { x = -500 y = -370 }
