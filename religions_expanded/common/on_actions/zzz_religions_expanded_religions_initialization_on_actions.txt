@@ -21,6 +21,22 @@ on_startup = {
 			}
 			change_religion = jainism
 		}
+		560 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_jainism_jharkhand_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_jainism_jharkhand_province_triggered_modifier
+			}
+		}
+		2058 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_jainism_mewar_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_jainism_mewar_province_triggered_modifier
+			}
+		}
 		# tibetan_buddhism
 		every_province = {
 			limit = {
@@ -38,6 +54,14 @@ on_startup = {
 			change_religion = tibetan_buddhism
 			clr_country_flag = religions_expanded_initial_conversion
 		}
+		677 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_tibetan_buddhism_lhasa_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_tibetan_buddhism_lhasa_province_triggered_modifier
+			}
+		}
 		# vidilist
 		every_province = {
 			limit = {
@@ -48,6 +72,22 @@ on_startup = {
 			add_permanent_province_modifier = {
 				name = religious_zeal_at_conv
 				duration = 1825
+			}
+		}
+		4745 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_vidilist_rugen_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_vidilist_rugen_province_triggered_modifier
+			}
+		}
+		38 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_vidilist_riga_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_vidilist_riga_province_triggered_modifier
 			}
 		}
 		# nestorian
@@ -62,6 +102,22 @@ on_startup = {
 				duration = 1825
 			}
 		}
+		151 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_nestorian_constantinople_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_nestorian_constantinople_province_triggered_modifier
+			}
+		}
+		710 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_nestorian_khotan_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_nestorian_khotan_province_triggered_modifier
+			}
+		}
 		# manichaeism
 		every_province = {
 			limit = {
@@ -74,6 +130,22 @@ on_startup = {
 				duration = 1825
 			}
 		}
+		410 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_manichaeism_baghdad_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_manichaeism_baghdad_province_triggered_modifier
+			}
+		}
+		4329 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_manichaeism_fasa_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_manichaeism_fasa_province_triggered_modifier
+			}
+		}
 		# bogomilist
 		every_province = {
 			limit = {
@@ -81,6 +153,14 @@ on_startup = {
 				NOT = { religion = bogomilist }
 			}
 			change_religion = bogomilist
+		}
+		2750 = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = re_bogomilist_plovdiv_province_triggered_modifier }
+				}
+				add_province_triggered_modifier = re_bogomilist_plovdiv_province_triggered_modifier
+			}
 		}
 	}
 }

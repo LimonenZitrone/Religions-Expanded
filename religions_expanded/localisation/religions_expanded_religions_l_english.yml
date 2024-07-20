@@ -86,3 +86,16 @@
  re_religion_manichaeism_events1.EVTOPT1: "Their religion has no place in our realm."
  re_religion_manichaeism_events1.EVTOPT2: "The situation is irrelevant to us."
  re_religion_manichaeism_events1.EVTOPT3: "Assimilate the Mandeans slowly."
+
+ # Modifiers:
+ ## Province Triggered Modifiers:
+ re_bogomilist_plovdiv_province_triggered_modifier: "The Conquest of Plovdiv"
+ re_jainism_mewar_province_triggered_modifier: "The Conquest of Mewar"
+ re_jainism_jharkhand_province_triggered_modifier: "The Conquest of Jharkhand"
+ re_nestorian_constantinople_province_triggered_modifier: "The Conquest of Constantinople"
+ re_nestorian_khotan_province_triggered_modifier: "The Conquest of Hotan"
+ re_vidilist_rugen_province_triggered_modifier: "The Conquest of Rügen"
+ re_vidilist_riga_province_triggered_modifier: "The Conquest of Riga"
+ re_manichaeism_baghdad_province_triggered_modifier: "The Conquest of Baghdad"
+ re_manichaeism_fasa_province_triggered_modifier: "The Conquest of Fasa"
+ re_tibetan_buddhism_lhasa_province_triggered_modifier: "The Conquest of Lhasa"
