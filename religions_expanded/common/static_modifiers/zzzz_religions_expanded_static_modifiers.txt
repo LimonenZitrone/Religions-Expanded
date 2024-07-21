@@ -4,7 +4,7 @@ innovativeness = {
 	army_tradition_decay = -0.01
 	navy_tradition_decay = -0.01
 
-	# RE:
+	# Religions Expanded:
 	re_monthly_religion_mechanic_four_tenets_system_change = 0.4
 }
 
@@ -17,7 +17,7 @@ religious_unity = {
 	yearly_harmony = 1
 	monthly_cultural_unity = 0.1
 
-	# RE:
+	# Religions Expanded:
 	re_monthly_religion_mechanic_sylvan_affinity_change = 0.5
 }
 
@@ -56,9 +56,9 @@ prestige = {
 	monthly_divine_authority = 0.1
 	monthly_authority_power = -0.2
 
-	# GE:
+	# Governments Expanded:
 	monthly_italian_dinasties = 0.25
 
-	# RE:
+	# Religions Expanded:
 	re_monthly_religion_mechanic_sylvan_affinity_change = 2
 }

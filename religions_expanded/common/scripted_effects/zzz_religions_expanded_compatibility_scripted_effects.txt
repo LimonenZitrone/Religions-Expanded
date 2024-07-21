@@ -1,4 +1,4 @@
-# For ATE:
+# For Advisor Types Expanded:
 ate_re_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_adm_advisor = {
 }
 ate_re_religion_mechanic_nestorian_patriarchy_flag_current_supported_adm_advisor = {
