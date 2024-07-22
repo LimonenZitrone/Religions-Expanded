@@ -329,6 +329,19 @@ custom_button = {
 			limit = {
 				re_has_religion_mechanic_sylvan_affinity_sergetoja_modifier = yes
 			}
+			if = {
+				limit = {
+					NOT = { had_country_flag = { flag = re_religion_mechanic_sylvan_affinity_sergetoja_modifier_active days = 90 } }
+				}
+				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_disabled_too_soon
+				hidden_effect = {
+					remove_country_modifier = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+					add_country_modifier = {
+						name = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+						duration = 365
+					}
+				}
+			}
 			clr_country_flag = re_religion_mechanic_sylvan_affinity_sergetoja_modifier_active
 			remove_country_modifier = re_religion_mechanic_sylvan_affinity_sergetoja_spring_modifier
 			remove_country_modifier = re_religion_mechanic_sylvan_affinity_sergetoja_summer_modifier
@@ -476,6 +489,19 @@ custom_button = {
 		if = {
 			limit = {
 				re_has_religion_mechanic_sylvan_affinity_nukirpeja_modifier = yes
+			}
+			if = {
+				limit = {
+					NOT = { had_country_flag = { flag = re_religion_mechanic_sylvan_affinity_nukirpeja_modifier_active days = 90 } }
+				}
+				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_disabled_too_soon
+				hidden_effect = {
+					remove_country_modifier = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+					add_country_modifier = {
+						name = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+						duration = 365
+					}
+				}
 			}
 			clr_country_flag = re_religion_mechanic_sylvan_affinity_nukirpeja_modifier_active
 			remove_country_modifier = re_religion_mechanic_sylvan_affinity_nukirpeja_spring_modifier
@@ -625,6 +651,19 @@ custom_button = {
 			limit = {
 				re_has_religion_mechanic_sylvan_affinity_audeja_modifier = yes
 			}
+			if = {
+				limit = {
+					NOT = { had_country_flag = { flag = re_religion_mechanic_sylvan_affinity_audeja_modifier_active days = 90 } }
+				}
+				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_disabled_too_soon
+				hidden_effect = {
+					remove_country_modifier = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+					add_country_modifier = {
+						name = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+						duration = 365
+					}
+				}
+			}
 			clr_country_flag = re_religion_mechanic_sylvan_affinity_audeja_modifier_active
 			remove_country_modifier = re_religion_mechanic_sylvan_affinity_audeja_spring_modifier
 			remove_country_modifier = re_religion_mechanic_sylvan_affinity_audeja_summer_modifier
@@ -772,6 +811,19 @@ custom_button = {
 		if = {
 			limit = {
 				re_has_religion_mechanic_sylvan_affinity_verpiancioji_modifier = yes
+			}
+			if = {
+				limit = {
+					NOT = { had_country_flag = { flag = re_religion_mechanic_sylvan_affinity_verpiancioji_modifier_active days = 90 } }
+				}
+				custom_tooltip = re_religion_mechanic_sylvan_affinity_button_tt_disabled_too_soon
+				hidden_effect = {
+					remove_country_modifier = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+					add_country_modifier = {
+						name = re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier
+						duration = 365
+					}
+				}
 			}
 			clr_country_flag = re_religion_mechanic_sylvan_affinity_verpiancioji_modifier_active
 			remove_country_modifier = re_religion_mechanic_sylvan_affinity_verpiancioji_spring_modifier

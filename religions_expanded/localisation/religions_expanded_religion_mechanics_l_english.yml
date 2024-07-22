@@ -610,7 +610,7 @@
  re_religion_mechanic_sylvan_affinity_total_value_tt: "[This.GetName] currently has §Y[This.ReGetReligionMechanicSylvanAffinityValue]§! Sylvan Affinity. The maximum amount is §Y100.00§!."
  re_religion_mechanic_sylvan_affinity_monthly_value_title: "Monthly Gain:"
  re_religion_mechanic_sylvan_affinity_monthly_value: "[This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue]"
- re_religion_mechanic_sylvan_affinity_monthly_value_tt: "[This.GetName] gets [This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue] Sylvan Affinity each month. \n--------------\nBase: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainValue] \nModified by: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainModifierValue] \n--------------\nThere is a base gain of §G+1.00§! per month. \n--------------\nSylvan Affinity is gained by: \n   - Religious Unity \n   - High Prestige \n   - Positive Stability \n   - Being at Peace \n   - §Y[271.GetName]§! is Vidilist and owned by a Vidilist country \n\nSylvan Affinity is lost by: \n   - Low Prestige \n   - Negative Stability \n   - Being Bankrupt \n   - Active Sylvan Affinity Focuses"
+ re_religion_mechanic_sylvan_affinity_monthly_value_tt: "[This.GetName] gets [This.ReGetReligionMechanicSylvanAffinityTotalMonthlyGainValue] Sylvan Affinity each month. \n--------------\nBase: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainValue] \nModified by: [This.ReGetReligionMechanicSylvanAffinityMonthlyGainModifierValue] \n--------------\nThere is a base gain of §G+1.00§! per month. \n--------------\nSylvan Affinity is gained by: \n   - Religious Unity: §G+0.005§! (per percent) \n   - High Prestige: §G+0.02§! (per point) \n   - Positive Stability: §G+0.50§! (per level) \n   - Being at Peace: §G+1.00§! \n   - §Y[271.GetName]§! is Vidilist and owned by a Vidilist \n     country: §G+1.00§! \n\nSylvan Affinity is lost by: \n   - Low Prestige: §R-0.02§! (per point) \n   - Negative Stability: §R-1.00§! (per point) \n   - Being Bankrupt: §R-2.00§! \n   - Active Sylvan Affinity Focuses: §R-6.00§! (per focus) \n   - Disabling a Sylvan Affinity Focus when it was active \n     for less than §Y3 months§!: §R-1.00§! (for 1 year)"
 
  re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button_tt_spring_selected: "Currently selected Seasonal Affinity: §YSpring§!"
  re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button_tt_summer_selected: "Currently selected Seasonal Affinity: §YSummer§!"
@@ -629,6 +629,7 @@
  re_religion_mechanic_sylvan_affinity_button_tt_winter_yes: "£yes£ If the §YWinter Affinity§! is selected:"
  re_religion_mechanic_sylvan_affinity_button_tt_winter_no: "£no£ If the §YWinter Affinity§! is selected:"
  re_religion_mechanic_sylvan_affinity_button_tt_currently_active: "\n§YThis focus is currently active. Current effects:§!"
+ re_religion_mechanic_sylvan_affinity_button_tt_disabled_too_soon: "§RThis focus is active for less than §Y3 months§!, disabling it now will reduce our Monthly Sylvan Affinity gain for §Y1 year§!.§W"
  re_religion_mechanic_sylvan_affinity_until_focus_disabled_tt: "until the focus is disabled"
  re_religion_mechanic_sylvan_affinity_consecrated_new_grove_not_used_recently_tt_with_year: "Has NOT consecrated a Grove within the last §Y10 years§! (last in §Y[Root.re_religion_mechanic_sylvan_affinity_consecrated_new_grove_used_year.GetValue]§!)"
  re_religion_mechanic_sylvan_affinity_consecrated_new_grove_not_used_recently_tt: "Has NOT consecrated a Grove within the last §Y10 years§!"
@@ -688,6 +689,8 @@
 
  # Modifiers:
  ## Mechanic Modifiers:
+ re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier: "Unsatisfactory Offerings"
+ desc_re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier: "We have made offerings to a Goddess, but didn't keep the focus active for at least §Y3 months§!."
  re_religion_mechanic_sylvan_affinity_sergetoja_spring_modifier: "Sergetoja (Spring)"
  re_religion_mechanic_sylvan_affinity_sergetoja_summer_modifier: "Sergetoja (Summer)"
  re_religion_mechanic_sylvan_affinity_sergetoja_fall_modifier: "Sergetoja (Fall)"

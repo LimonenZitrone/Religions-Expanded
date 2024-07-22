@@ -1,43 +1,43 @@
 # Mechanic Modifiers:
+re_religion_mechanic_sylvan_affinity_focus_disabled_too_soon_modifier = {
+	re_monthly_religion_mechanic_sylvan_affinity_change = -1
+	religion = yes
+}
+
+## Focuses:
 re_religion_mechanic_sylvan_affinity_sergetoja_spring_modifier = {
 	cavalry_power = 0.15
 	discipline = 0.025
 	ship_durability = 0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_sergetoja_summer_modifier = {
 	merc_maintenance_modifier = -0.2
 	mercenary_discipline = 0.075
 	global_ship_cost = -0.2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_sergetoja_fall_modifier = {
 	shock_damage = 0.05
 	morale_damage_received = -0.1
 	naval_morale_damage_received = -0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_sergetoja_winter_modifier = {
 	global_defender_dice_roll_bonus = 1
 	fort_maintenance_modifier = -0.25
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 
 re_religion_mechanic_sylvan_affinity_nukirpeja_spring_modifier = {
 	inflation_reduction = 0.15
 	yearly_corruption = -0.15
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_nukirpeja_summer_modifier = {
 	war_exhaustion = -0.05
 	prestige = 1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_nukirpeja_fall_modifier = {
 	legitimacy = 1
@@ -47,66 +47,57 @@ re_religion_mechanic_sylvan_affinity_nukirpeja_fall_modifier = {
 	republican_tradition = 0.5
 	stability_cost_modifier = -0.2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_nukirpeja_winter_modifier = {
 	diplomatic_reputation = 1
 	envoy_travel_time = -0.3
 	province_warscore_cost = -0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 
 re_religion_mechanic_sylvan_affinity_audeja_spring_modifier = {
 	manpower_recovery_speed = 0.2
 	global_tax_modifier = 0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_audeja_summer_modifier = {
 	ae_impact = -0.1
 	trade_efficiency = 0.15
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_audeja_fall_modifier = {
 	improve_relation_modifier = 0.2
 	siege_ability = 0.1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_audeja_winter_modifier = {
 	all_estate_influence_modifier = -0.1
 	reverse_relation_with_heathen_religion = 25
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 
 re_religion_mechanic_sylvan_affinity_verpiancioji_spring_modifier = {
 	technology_cost = -0.075
 	global_institution_spread = 0.2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_verpiancioji_summer_modifier = {
 	idea_cost = -0.075
 	global_unrest = -2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_verpiancioji_fall_modifier = {
 	global_autonomy = -0.05
 	reform_progress_growth = 0.2
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 re_religion_mechanic_sylvan_affinity_verpiancioji_winter_modifier = {
 	vassal_income = 0.25
 	vassal_forcelimit_bonus = 1
 	re_monthly_religion_mechanic_sylvan_affinity_change = -6
-	religion = yes
 }
 
+## Groves:
 re_religion_mechanic_sylvan_affinity_spring_grove_province_modifier = {
 	fort_level = 1
 	local_manpower = 1
