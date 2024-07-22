@@ -5,7 +5,10 @@ re_culture_initialization_coptic_culture_is_starting_province = {
 
 # assyrian_culture
 re_culture_initialization_assyrian_culture_is_starting_province = {
-	re_religion_initialization_nestorian_is_starting_province = yes
+	OR = {
+		province_id = 2206
+		province_id = 4296
+	}
 }
 
 # avshars_culture

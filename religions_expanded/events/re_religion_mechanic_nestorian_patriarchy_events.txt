@@ -495,9 +495,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 118
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -531,9 +534,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 1816
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -567,9 +573,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 1099
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -603,9 +612,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 151
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -639,9 +651,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 4293
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -675,9 +690,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 4447
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -711,9 +729,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 358
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -747,9 +768,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 735
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 
@@ -783,9 +807,12 @@ country_event = {
 
 		trigger = {
 			has_discovered = 85
-			any_province = {
-				province_religion = nestorian
+			any_capital_province = {
 				re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+				province_religion = nestorian
+				owner = {
+					country_religion = nestorian
+				}
 			}
 		}
 

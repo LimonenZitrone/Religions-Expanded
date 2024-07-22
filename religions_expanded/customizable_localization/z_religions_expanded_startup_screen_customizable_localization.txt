@@ -87,7 +87,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localisation_key = ""
+		localisation_key = string_religions_expanded_startup_screen_text_religions_none
 	}
 }
 
@@ -230,7 +230,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localisation_key = ""
+		localisation_key = string_religions_expanded_startup_screen_text_cultures_none
 	}
 }
 

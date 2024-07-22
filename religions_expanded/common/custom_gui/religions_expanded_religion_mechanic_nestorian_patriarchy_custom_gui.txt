@@ -3427,12 +3427,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button
 	trigger = {
 		has_discovered = 118
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 118 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		118 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3460,12 +3464,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button
 	trigger = {
 		has_discovered = 1816
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1816 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		1816 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3493,12 +3501,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button
 	trigger = {
 		has_discovered = 1099
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 1099 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		1099 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3526,12 +3538,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button
 	trigger = {
 		has_discovered = 151
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 151 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		151 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3559,12 +3575,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button
 	trigger = {
 		has_discovered = 4293
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4293 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		4293 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3592,12 +3612,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button
 	trigger = {
 		has_discovered = 4447
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 4447 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		4447 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3625,12 +3649,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button
 	trigger = {
 		has_discovered = 358
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 358 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		358 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3658,12 +3686,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button
 	trigger = {
 		has_discovered = 735
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 735 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		735 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
@@ -3691,12 +3723,16 @@ custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button
 	trigger = {
 		has_discovered = 85
-		any_province = {
-			province_religion = nestorian
+		any_capital_province = {
 			re_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = 85 }
+			province_religion = nestorian
+			owner = {
+				country_religion = nestorian
+			}
 		}
 	}
 	effect = {
+		custom_tooltip = religions_expanded_tooltip_effect_text
 		85 = {
 			re_set_religion_mechanic_nestorian_patriarchy_center_of_reformation = yes
 		}
