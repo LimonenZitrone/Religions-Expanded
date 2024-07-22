@@ -1,0 +1,85 @@
+namespace = religions_expanded_alerts_events
+
+country_event = {
+	id = religions_expanded_alerts_events.100
+	title = religions_expanded_alerts_events.EVTNAME100
+	desc = religions_expanded_alerts_events.EVTDESC100
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = religions_expanded_alerts_events_100_active }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = religions_expanded_alerts_events_100_active
+		}
+	}
+
+	option = {
+		name = religions_expanded_alerts_events100.EVTOPT1
+
+		trigger = {
+		}
+
+		ai_chance = { factor = 0 }
+
+		custom_tooltip = religions_expanded_alerts_events.100.tt.1
+		clr_country_flag = religions_expanded_alert_religion_mechanic_disabled
+	}
+
+	option = {
+		name = religions_expanded_alerts_events100.EVTOPT0
+
+		ai_chance = { factor = 100 }
+
+		custom_tooltip = religions_expanded_alerts_events.100.tt.0
+	}
+
+	after = {
+		clr_country_flag = religions_expanded_alerts_events_100_active
+	}
+}
+
+country_event = {
+	id = religions_expanded_alerts_events.1
+	title = religions_expanded_alerts_events.EVTNAME1
+	desc = religions_expanded_alerts_events.EVTDESC1
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = religions_expanded_alerts_events_1_active }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = religions_expanded_alerts_events_1_active
+			clr_country_flag = religions_expanded_alert_religion_mechanic_disabled
+		}
+	}
+
+	option = {
+		name = religions_expanded_alerts_events1.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		custom_tooltip = religions_expanded_alerts_events.1.tt.1
+		set_country_flag = religions_expanded_alert_religion_mechanic_disabled
+	}
+
+	option = {
+		name = religions_expanded_alerts_events1.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		custom_tooltip = religions_expanded_alerts_events.1.tt.2
+	}
+
+	after = {
+		clr_country_flag = religions_expanded_alerts_events_1_active
+	}
+}

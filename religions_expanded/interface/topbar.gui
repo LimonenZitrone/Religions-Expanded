@@ -736,6 +736,20 @@ guiTypes = {
 		#########################################
 		## START Religions Expanded Custom GUI ##
 		#########################################
+		#################################
+		### Religions Expanded Alerts ###
+		#################################
+		windowType = {
+			name = "religions_expanded_alerts_window"
+			position = { x = 150 y = 79 }
+
+			guiButtonType = {
+				name = "religions_expanded_alert_button_religion_mechanic"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_religions_expanded_alert_icons_strip"
+				scripted = yes
+			}
+		}
 
 		#########################################
 		### Religions Expanded Startup Screen ###

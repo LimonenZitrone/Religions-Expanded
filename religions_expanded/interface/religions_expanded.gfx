@@ -9,6 +9,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/re_state_missionary_button_glow.dds"
 	}
 
+	# Alerts:
+	spriteType = {
+		name = "GFX_religions_expanded_alert_icons_strip"
+		textureFile = "gfx/interface/religions_expanded_alert_icons_strip.dds"
+		noOfFrames = 5
+		transparencecheck = yes
+	}
+
 	# Casus Bellis:
 	spriteType = {
 		name = "GFX_cb_re_religion_mechanic_nestorian_patriarchy_excommunication"
