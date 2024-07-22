@@ -144,21 +144,6 @@ aramaic_culture_group = {
 			Nana Allatu Belit Zirrabanit Tiamat
 		}
 	}
-	# aramaic moved to this group was in lost_cultures_group
-	aramaic = { #EU Rome
-		dynasty_names = {
-			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid
-			Milkiramid Philosirid
-		}
-		male_names = {
-			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
-			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram
-			Paltibaal Philosir
-		}
-		female_names = {
-			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
-		}
-	}
 	# hebrew moved to this group was in lost_cultures_group
 	hebrew = { #EU Rome
 		dynasty_names = {
