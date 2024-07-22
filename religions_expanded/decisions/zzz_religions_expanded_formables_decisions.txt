@@ -22,6 +22,12 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 }
 			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			mashriq_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -54,6 +60,16 @@ country_decisions = {
 			set_country_flag = re_formable_empire_of_light
 			override_country_name = RE_FORMABLE_EMPIRE_OF_LIGHT
 			change_country_color = { color = { 166 108 146 } }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
 		}
 		ai_will_do = {
 			factor = 1

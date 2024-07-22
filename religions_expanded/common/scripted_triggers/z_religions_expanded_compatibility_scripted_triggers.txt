@@ -6,3 +6,11 @@ is_in_war_with_cb_that_disallows_taking_subjects_re = {
 		casus_belli = cb_re_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation
 	}
 }
+
+# For Historical Ideas Expanded:
+re_is_rename_formable_with_unique_ideas = {
+	OR = {
+		has_country_flag = re_formable_assyria
+		has_country_flag = re_formable_empire_of_light
+	}
+}
