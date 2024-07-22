@@ -176,6 +176,7 @@ re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = {
 			change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = -2 }
 		}
 		set_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value_base which = re_monthly_religion_mechanic_sylvan_affinity_value } # display
+		# Modifier
 		export_to_variable = {
 			which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value
 			value = modifier:re_monthly_religion_mechanic_sylvan_affinity_change_modifier
@@ -189,7 +190,12 @@ re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = {
 		set_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value_base which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value } # display
 		multiply_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value_base value = 100 } # display
 		change_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value value = 1 }
-		multiply_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value }
+		if = {
+			limit = {
+				check_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value value = 0 }
+			}
+			multiply_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_value which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value }
+		}
 		set_variable = { which = re_monthly_religion_mechanic_sylvan_affinity_modifier_value value = 0 }
 	}
 }
