@@ -40,7 +40,17 @@ country_event = {
 	}
 
 	option = {
+		name = hinduism
+
+		ai_chance = { factor = 0 }
+
+		change_religion = hinduism
+	}
+
+	option = {
 		name = jainism
+
+		highlight = yes
 
 		ai_chance = { factor = 0 }
 
@@ -50,6 +60,8 @@ country_event = {
 	option = {
 		name = tibetan_buddhism
 
+		highlight = yes
+
 		ai_chance = { factor = 0 }
 
 		change_religion = tibetan_buddhism
@@ -57,6 +69,8 @@ country_event = {
 
 	option = {
 		name = vidilist
+
+		highlight = yes
 
 		ai_chance = { factor = 0 }
 
@@ -66,6 +80,8 @@ country_event = {
 	option = {
 		name = nestorian
 
+		highlight = yes
+
 		ai_chance = { factor = 0 }
 
 		change_religion = nestorian
@@ -74,6 +90,8 @@ country_event = {
 	option = {
 		name = manichaeism
 
+		highlight = yes
+
 		ai_chance = { factor = 0 }
 
 		change_religion = manichaeism
@@ -81,6 +99,8 @@ country_event = {
 
 	option = {
 		name = bogomilist
+
+		highlight = yes
 
 		ai_chance = { factor = 0 }
 

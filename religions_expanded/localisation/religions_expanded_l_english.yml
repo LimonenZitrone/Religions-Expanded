@@ -37,7 +37,7 @@
 
  # Events:
  religions_expanded_events.EVTNAME2: "Console: Change Religion"
- religions_expanded_events.EVTDESC2: "Pick which new religion you want to convert to."
+ religions_expanded_events.EVTDESC2: "Pick which new or altered religion you want to convert to."
 
  # Countries:
  ## Tags:
