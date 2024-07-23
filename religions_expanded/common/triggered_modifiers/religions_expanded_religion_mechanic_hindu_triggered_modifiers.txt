@@ -21,3 +21,14 @@ re_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier = {
 
 	re_monthly_religion_mechanic_hindu_change = 0.05
 }
+
+re_religion_mechanic_hindu_religious_ideas_5_triggered_modifier = {
+	potential = {
+		re_uses_religion_mechanic = { mechanic = hindu }
+	}
+	trigger = {
+		religious_ideas = 5
+	}
+
+	re_monthly_religion_mechanic_hindu_change = 0.05
+}

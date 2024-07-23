@@ -137,6 +137,9 @@
  re_religion_mechanic_sukha_sponsor_festival_paryushana_modifier: "Paryushana"
  re_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier: "Nandishwar Ashtahnika"
  re_religion_mechanic_sukha_sponsor_festival_diwali_modifier: "Diwali"
+ ## Triggered Modifiers:
+ re_religion_mechanic_sukha_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
+ desc_re_religion_mechanic_sukha_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
 
  ####################
  ## Hindu Mechanic ##
@@ -479,6 +482,8 @@
  ## Triggered Modifiers:
  re_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier: "Ahead of Time in Technology"
  desc_re_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier: "Being ahead of time in the technology type fitting our major deity will give us a boost in dedication."
+ re_religion_mechanic_hindu_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
+ desc_re_religion_mechanic_hindu_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
 
  #################################
  ## Four Tenets System Mechanic ##
@@ -594,6 +599,8 @@
  ## Triggered Modifiers:
  re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier: "Attained Enlightenment"
  desc_re_religion_mechanic_four_tenets_system_full_teachings_triggered_modifier: "The [Root.Monarch.GetTitle] has studied for a very long time and has picked all §Y4§! teachings, thus attaining full Enlightenment."
+ re_religion_mechanic_four_tenets_system_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
+ desc_re_religion_mechanic_four_tenets_system_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
 
  ##############################
  ## Sylvan Affinity Mechanic ##
@@ -717,6 +724,9 @@
  re_religion_mechanic_sylvan_affinity_winter_grove_area_modifier: "Nearby Winter Grove"
  ## Event Modifiers:
  re_religion_mechanic_sylvan_affinity_assimilation_of_pagans_modifier: "Assimilation of the Pagans"
+ ## Triggered Modifiers:
+ re_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
+ desc_re_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
 
  # Events:
  re_religion_mechanic_sylvan_affinity_events.EVTNAME1: "Select Seasonal Affinity"
@@ -1190,6 +1200,8 @@
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_2_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in two technology categories."
  re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_1_ahead_of_time_triggered_modifier: "Pilgrimage Boon from Gyeongju"
  desc_re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_1_ahead_of_time_triggered_modifier: "We have sent a pilgrimage to Gyeongju and are receiving the bonuses from that while also being ahead of time in one technology category."
+ re_religion_mechanic_nestorian_patriarchy_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
+ desc_re_religion_mechanic_nestorian_patriarchy_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
 
  # New Diplomatic Actions:
  ## Categories:
@@ -1299,6 +1311,9 @@
  desc_re_religion_mechanic_manichaeism_purity_high_purity_modifier: "A §YPurity§! of at least §Y90§! gives us this bonus."
  ## Event Modifiers:
  re_religion_mechanic_manichaeism_purity_assimilation_of_mandeans_modifier: "Assimilation of the Mandeans"
+ ## Triggered Modifiers:
+ re_religion_mechanic_manichaeism_purity_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
+ desc_re_religion_mechanic_manichaeism_purity_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
 
  ######################################
  ## Bogomilist Church Power Mechanic ##

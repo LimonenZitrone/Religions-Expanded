@@ -1,0 +1,10 @@
+re_religion_mechanic_sukha_religious_ideas_5_triggered_modifier = {
+	potential = {
+		re_uses_religion_mechanic = { mechanic = sukha }
+	}
+	trigger = {
+		religious_ideas = 5
+	}
+
+	re_yearly_religion_mechanic_sukha_change = 0.1
+}
