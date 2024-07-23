@@ -26,3 +26,64 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = religions_expanded_events.2
+	title = religions_expanded_events.EVTNAME2
+	desc = religions_expanded_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+	}
+
+	option = {
+		name = jainism
+
+		ai_chance = { factor = 0 }
+
+		change_religion = jainism
+	}
+
+	option = {
+		name = tibetan_buddhism
+
+		ai_chance = { factor = 0 }
+
+		change_religion = tibetan_buddhism
+	}
+
+	option = {
+		name = vidilist
+
+		ai_chance = { factor = 0 }
+
+		change_religion = vidilist
+	}
+
+	option = {
+		name = nestorian
+
+		ai_chance = { factor = 0 }
+
+		change_religion = nestorian
+	}
+
+	option = {
+		name = manichaeism
+
+		ai_chance = { factor = 0 }
+
+		change_religion = manichaeism
+	}
+
+	option = {
+		name = bogomilist
+
+		ai_chance = { factor = 0 }
+
+		change_religion = bogomilist
+	}
+}

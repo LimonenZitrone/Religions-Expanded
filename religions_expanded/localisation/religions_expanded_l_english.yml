@@ -35,6 +35,10 @@
  hindu_events.1.j: "Kali will lead us to wisdom."
  hindu_events.1.k: "Hanuman will lead us to wisdom."
 
+ # Events:
+ religions_expanded_events.EVTNAME2: "Console: Change Religion"
+ religions_expanded_events.EVTDESC2: "Pick which new religion you want to convert to."
+
  # Countries:
  ## Tags:
  NPA: "Constantinople"
