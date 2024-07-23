@@ -73,6 +73,9 @@
  re_religion_decision_convert_to_nestorian_desc: "We follow the Assyrian culture and should restore the Church of Assyria!"
  re_religion_decision_convert_to_manichaeism_title: "Convert to the Manichaean faith"
  re_religion_decision_convert_to_manichaeism_desc: "We follow the Manichaean culture, it's time to also convert our religion to the old faith!"
+ re_religion_decision_spawn_bogomilist_center_of_reformation_title: "Create a [Root.Religion.GetName] Center"
+ re_religion_decision_spawn_bogomilist_center_of_reformation_desc: "After having consolidated the lands of the former Bulgarian Empire, which was the birth place of Bogomilism, it is time to create a center of reformation for our faith!"
+ re_religion_decision_spawn_bogomilist_center_of_reformation_tt: "A §Y[Root.Religion.GetName]§! Center of Reformation will appear in §Y[4704.GetName]§!."
 
  # Events:
  re_religion_vidilist_events.EVTNAME1: "The Pagans in [271.GetAreaName]"
@@ -99,3 +102,6 @@
  re_manichaeism_baghdad_province_triggered_modifier: "The Conquest of Baghdad"
  re_manichaeism_fasa_province_triggered_modifier: "The Conquest of Fasa"
  re_tibetan_buddhism_lhasa_province_triggered_modifier: "The Conquest of Lhasa"
+
+ # Centers of Reformation:
+ bogomilist_center_of_reformation: "Center of Reformation"

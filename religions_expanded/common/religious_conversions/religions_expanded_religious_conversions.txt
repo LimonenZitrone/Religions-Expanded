@@ -1,0 +1,121 @@
+bogomilist_center_of_reformation = {
+
+	religion = bogomilist
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0
+	base_conversion_speed = 2.5
+
+	target_province_weights = {
+		factor = 2
+
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			province_id = 118
+			religion = catholic
+			owner = {
+				religion = catholic
+			}
+		}
+		modifier = {
+			factor = 0
+			province_id = 151
+			religion = orthodox
+			owner = {
+				religion = orthodox
+			}
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = catholic }
+			NOT = { religion = orthodox }
+		}
+		modifier = {
+			factor = 0.5
+			religion = catholic
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 1
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 2
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 3
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 4
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 5
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				religion = bogomilist
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+		# HRE is more resistant to reformation when the Pope is an Imperial Prince
+		modifier = {
+			factor = 0.75
+			is_part_of_hre = yes
+			PAP = {
+				is_part_of_hre = yes
+			}
+		}
+	}
+}

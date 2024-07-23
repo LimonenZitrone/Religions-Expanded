@@ -162,4 +162,100 @@ country_decisions = {
 			}
 		}
 	}
+
+	# bogomilist
+	re_religion_decision_spawn_bogomilist_center_of_reformation = {
+		color = { 190 0 0 }
+		potential = {
+			religion = bogomilist
+			NOT = { has_global_flag = re_religion_spawned_bogomilist_center_of_reformation }
+			OR = {
+				ai = no
+				is_or_was_tag = { tag = BUL }
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bulgaria_area
+				area = silistria_area
+				area = macedonia_area
+				area = serbia_area
+				area = northern_greece_area
+				province_id = 1764
+				province_id = 149
+				province_id = 4705
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				has_owner_religion = no
+			}
+		}
+		allow = {
+			is_or_was_tag = { tag = BUL }
+			religion = bogomilist
+			if = {
+				limit = {
+					uses_church_aspects = yes
+				}
+				church_power = 100
+			}
+			bulgaria_area = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			silistria_area = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			macedonia_area = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			serbia_area = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			northern_greece_area = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			1764 = {
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			149 = {
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+			4705 = {
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+		}
+		effect = {
+			set_global_flag = re_religion_spawned_bogomilist_center_of_reformation
+			if = {
+				limit = {
+					uses_church_aspects = yes
+				}
+				add_church_power = -100
+			}
+			custom_tooltip = re_religion_decision_spawn_bogomilist_center_of_reformation_tt
+			hidden_effect = {
+				set_country_flag = re_religion_spawning_bogomilist_center_of_reformation
+				4704 = {
+					add_reform_center = bogomilist
+				}
+				clr_country_flag = re_religion_spawning_bogomilist_center_of_reformation
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

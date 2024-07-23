@@ -884,6 +884,10 @@ christian = {
 		allowed_conversion = {
 			orthodox
 		}
+		allowed_center_conversion = {
+			catholic
+			orthodox
+		}
 		country = {
 			advisor_cost = -0.1
 			all_estate_influence_modifier = -0.1
@@ -894,6 +898,10 @@ christian = {
 		}
 		province = {
 			local_missionary_strength = -0.01
+		}
+
+		will_get_center = {
+			has_country_flag = re_religion_spawning_bogomilist_center_of_reformation # only via decision
 		}
 
 		on_convert = {
