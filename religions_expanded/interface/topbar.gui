@@ -739,6 +739,7 @@ guiTypes = {
 		#################################
 		### Religions Expanded Alerts ###
 		#################################
+		# Alerts
 		windowType = {
 			name = "religions_expanded_alerts_window"
 			position = { x = 150 y = 79 }
@@ -748,6 +749,82 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_religions_expanded_alert_icons_strip"
 				scripted = yes
+			}
+		}
+
+		# Popup for disabling
+		windowType = {
+			name = "religions_expanded_alerts_popup_window"
+			position = { x = -250 y = -160 }
+			size = { x = 500 y = 320 }
+			orientation = center
+			backGround = "background"
+			moveable = 1
+			scripted = yes
+
+			guiButtonType = {
+				name = "background"
+				spriteType = "SandboxFloaterBackground"
+			}
+
+			iconType = {
+				name = "message_band"
+				position = { x = -15 y = 14 }
+				spriteType = "GFX_message_band"
+			}
+
+			windowType = {
+				name = "texts_window"
+				position = { x = 59 y = 36 }
+
+				instantTextBoxType = {
+					name = "religions_expanded_alerts_popup_title"
+					position = { x = 0 y = 0 }
+					font = "vic_22"
+					maxWidth = 380
+					maxHeight = 24
+					format = center
+					fixedsize = yes
+					alwaystransparent = yes
+					scripted = yes
+				}
+
+				instantTextBoxType = {
+					name = "religions_expanded_alerts_popup_desc"
+					position = { x = 0 y = 39 }
+					font = "vic_18"
+					maxWidth = 380
+					maxHeight = 181
+					format = center
+					scrollbartype = "standardtext_slider"
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "buttons_window"
+				position = { x = 77 y = 270 }
+
+				guiButtonType = {
+					name = "religions_expanded_alerts_popup_cancel_button"
+					position = { x = 0 y = 0 }
+					spriteType = "largefloaterbutton"
+					buttonText = "CANCEL"
+					buttonFont = "vic_18"
+					shortcut = "z"
+					extra_shortcut = "ESCAPE"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "religions_expanded_alerts_popup_accept_button"
+					position = { x = 197 y = 0 }
+					spriteType = "largefloaterbutton"
+					buttonText = "OK"
+					buttonFont = "vic_18"
+					shortcut = "c"
+					extra_shortcut = "RETURN"
+					clicksound = ok_click
+					scripted = yes
+				}
 			}
 		}
 

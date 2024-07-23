@@ -41,7 +41,7 @@ custom_button = {
 	effect = {
 		custom_tooltip = religions_expanded_alert_button_religion_mechanic_tt_delayed
 		hidden_effect = {
-			country_event = { id = religions_expanded_alerts_events.1 }
+			set_country_flag = religions_expanded_dismissing_alert
 		}
 	}
 	frame = {
@@ -76,4 +76,42 @@ custom_button = {
 		}
 	}
 	tooltip = religions_expanded_alert_button_religion_mechanic_tt
+}
+
+custom_window = {
+	name = religions_expanded_alerts_popup_window
+	potential = {
+		ai = no
+		has_country_flag = religions_expanded_dismissing_alert
+	}
+}
+custom_text_box = {
+	name = religions_expanded_alerts_popup_title
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = religions_expanded_alerts_popup_desc
+	potential = {
+		always = yes
+	}
+}
+custom_button = {
+	name = religions_expanded_alerts_popup_cancel_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = religions_expanded_alert_religion_mechanic_disabled
+			clr_country_flag = religions_expanded_dismissing_alert
+		}
+	}
+}
+custom_button = {
+	name = religions_expanded_alerts_popup_accept_button
+	effect = {
+		hidden_effect = {
+			set_country_flag = religions_expanded_alert_religion_mechanic_disabled
+			clr_country_flag = religions_expanded_dismissing_alert
+		}
+	}
 }
