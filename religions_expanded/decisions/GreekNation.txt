@@ -7,7 +7,7 @@ country_decisions = {
 			151 = {
 				OR = {
 					culture = turkish
-					culture = oghuz_culture
+					culture = oghuz_culture # Religions Expanded
 					religion_group = muslim
 				}
 			}
