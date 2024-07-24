@@ -2399,6 +2399,9 @@ dharmic = {
 		on_convert = {
 			change_religion = jainism
 			enable_propogate_religion_effect = yes
+			tooltip = {
+				disable_estate_effect = { estate = estate_jains }
+			}
 			re_set_religion_mechanic_sukha_value = { value = 0 }
 			re_export_yearly_religion_mechanic_sukha_value_gain = yes
 			add_prestige = -50
