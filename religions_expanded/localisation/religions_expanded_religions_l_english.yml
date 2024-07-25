@@ -105,3 +105,6 @@
 
  # Centers of Reformation:
  bogomilist_center_of_reformation: "Center of Reformation"
+
+ # Tooltips:
+ re_religion_jainism_estate_brahmins_tt: "We need to fulfill the same requirements as a §YHindu§! country to gain access to the §YBrahmins§! estate."

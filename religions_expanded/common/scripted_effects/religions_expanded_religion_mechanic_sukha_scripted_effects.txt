@@ -905,6 +905,35 @@ re_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = {
 			re_not_uses_religion_mechanic = { mechanic = sukha }
 		}
 		re_clear_all_religion_mechanic_sukha_modifiers = yes
-		disable_propogate_religion_effect = yes
+		if = {
+			limit = {
+				has_country_flag = re_religion_jainism_propagate_religion
+			}
+			clr_country_flag = re_religion_jainism_propagate_religion
+			if = {
+				limit = {
+					has_country_flag = re_religion_jainism_propagate_religion_already_active
+				}
+				clr_country_flag = re_religion_jainism_propagate_religion_already_active
+			}
+			else = {
+				disable_propogate_religion_effect = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = re_religion_jainism_unlocked_estate_brahmins
+			}
+			clr_country_flag = re_religion_jainism_unlocked_estate_brahmins
+			if = {
+				limit = {
+					has_country_flag = re_religion_jainism_unlocked_estate_brahmins_already_active
+				}
+				clr_country_flag = re_religion_jainism_unlocked_estate_brahmins_already_active
+			}
+			else = {
+				clr_country_flag = unlocked_estate_brahmins_flag
+			}
+		}
 	}
 }

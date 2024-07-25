@@ -2398,7 +2398,41 @@ dharmic = {
 
 		on_convert = {
 			change_religion = jainism
-			enable_propogate_religion_effect = yes
+			set_country_flag = re_religion_jainism_propagate_religion
+			if = {
+				limit = {
+					NOT = { has_country_flag = can_use_propagate_religion }
+				}
+				enable_propogate_religion_effect = yes
+			}
+			else = {
+				set_country_flag = re_religion_jainism_propagate_religion_already_active
+				tooltip = {
+					enable_propogate_religion_effect = yes
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Dharma"
+						has_dlc = "Winds of Change"
+					}
+				}
+				set_country_flag = re_religion_jainism_unlocked_estate_brahmins
+				if = {
+					limit = {
+						NOT = { has_unlocked_estate = { estate = estate_brahmins } }
+					}
+					unlock_estate = { estate = estate_brahmins }
+				}
+				else = {
+					set_country_flag = re_religion_jainism_unlocked_estate_brahmins_already_active
+					tooltip = {
+						unlock_estate = { estate = estate_brahmins }
+					}
+				}
+				custom_tooltip = re_religion_jainism_estate_brahmins_tt
+			}
 			tooltip = {
 				disable_estate_effect = { estate = estate_jains }
 			}
