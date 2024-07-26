@@ -593,7 +593,6 @@ on_annexed = {
 			limit = {
 				re_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			}
-			re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_religion = yes
 			if = {
 				limit = {
 					tag = NPA
@@ -604,7 +603,16 @@ on_annexed = {
 					}
 					re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
 				}
+				if = {
+					limit = {
+						NOT = { re_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes }
+					}
+					151 = {
+						province_event = { id = re_religion_mechanic_nestorian_patriarchy_events.3 } # New Patriarchy Controller
+					}
+				}
 			}
+			re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_religion = yes
 		}
 	}
 }
