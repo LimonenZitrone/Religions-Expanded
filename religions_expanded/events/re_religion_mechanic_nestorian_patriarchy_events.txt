@@ -242,7 +242,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 15
+		months = 144
 	}
 
 	immediate = {
