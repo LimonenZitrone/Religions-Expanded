@@ -108,18 +108,22 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title # text box
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title_tt
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_influence_title # text box
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_influence_title_tt
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_influence_value # text box
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_influence_value_tt
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value # text box
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value_tt
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title # text box
@@ -136,10 +140,12 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon # icon
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon_tt
 }
 custom_text_box = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon # icon
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon_tt
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_interactions_title # text box
@@ -176,6 +182,7 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title # text box
 	potential = { always = no }
+	tooltip = re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title_tt
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name # text box
@@ -220,36 +227,45 @@ custom_button = {
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_118
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1816
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_1099
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_151
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4293
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_4447
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_358
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_735
 }
 custom_button = {
 	name = re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_name # text box
 	potential = { always = no }
+	tooltip = string_re_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_desc_tt_85
 }
