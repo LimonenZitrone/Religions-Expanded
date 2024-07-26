@@ -156,6 +156,33 @@ re_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = {
 				name = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier
 				duration = -1
 			}
+			if = {
+				limit = {
+					NOT = { exists = NPA }
+				}
+				set_global_flag = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_saved
+				NPA = {
+					set_saved_name = {
+						key = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name
+						type = advisor
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_saved
+				}
+				clr_global_flag = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_saved
+				NPA = {
+					clear_saved_name = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name
+				}
+			}
+			NPA = {
+				export_to_variable = {
+					which = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_year
+					value = trigger_value:is_year
+				}
+			}
 			country_event = { id = re_religion_mechanic_nestorian_patriarchy_events.1 }
 			re_religion_mechanic_nestorian_patriarchy_clear_center_of_reformation = yes
 			play_sound = "papal_controller"
@@ -1749,6 +1776,18 @@ re_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_reli
 			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
 			remove_country_modifier = re_religion_mechanic_nestorian_patriarchy_patriarch_controller_modifier
 			clr_global_flag = re_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation
+			if = {
+				limit = {
+					has_global_flag = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_saved
+				}
+				clr_global_flag = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_saved
+				NPA = {
+					clear_saved_name = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name
+				}
+			}
+			NPA = {
+				set_variable = { which = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_year value = 0 }
+			}
 		}
 	}
 	if = {

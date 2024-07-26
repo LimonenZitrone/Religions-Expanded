@@ -1098,3 +1098,27 @@ defined_text = {
 		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_patriarchy_controller_bonuses
 	}
 }
+
+defined_text = {
+	name = ReGetReligionMechanicNestorianPatriarchyPatriarchRulerName
+	random = no
+
+	text = {
+		trigger = {
+			exists = NPA
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_npa
+	}
+	text = {
+		trigger = {
+			has_global_flag = re_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_saved
+		}
+		localisation_key = string_re_get_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
