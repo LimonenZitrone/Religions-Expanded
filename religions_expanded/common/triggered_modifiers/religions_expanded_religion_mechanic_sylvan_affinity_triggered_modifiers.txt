@@ -6,5 +6,5 @@ re_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier = {
 		religious_ideas = 5
 	}
 
-	re_monthly_religion_mechanic_sylvan_affinity_change = 0.15
+	re_monthly_religion_mechanic_sylvan_affinity_change = 0.25
 }
