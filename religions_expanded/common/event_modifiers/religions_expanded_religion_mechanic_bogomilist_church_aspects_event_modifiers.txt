@@ -1,10 +1,10 @@
 # Church Aspect Modifiers:
 religions_expanded_bogomilist_aspect_dissolve_church_properties_modifier_1 = {
-	global_tax_modifier = 0.2
+	global_tax_modifier = 0.3
 	religion = yes
 }
 religions_expanded_bogomilist_aspect_dissolve_church_properties_modifier_2 = {
-	global_tax_modifier = 0.1
+	global_tax_modifier = 0.15
 	religion = yes
 }
 
@@ -42,15 +42,15 @@ religions_expanded_bogomilist_aspect_institute_clerical_administration_province_
 }
 
 religions_expanded_bogomilist_aspect_distribute_the_means_of_production_modifier_1 = {
-	production_efficiency = 0.15
+	production_efficiency = 0.3
 	religion = yes
 }
 religions_expanded_bogomilist_aspect_distribute_the_means_of_production_modifier_2 = {
-	production_efficiency = 0.1
+	production_efficiency = 0.2
 	religion = yes
 }
 religions_expanded_bogomilist_aspect_distribute_the_means_of_production_modifier_3 = {
-	production_efficiency = 0.05
+	production_efficiency = 0.1
 	religion = yes
 }
 
@@ -65,14 +65,12 @@ religions_expanded_bogomilist_aspect_standarize_holy_knights_modifier = {
 }
 religions_expanded_bogomilist_aspect_standarize_holy_knights_modifier_1 = {
 	shock_damage = 0.1
-	cavalry_cost = -0.2
-	cavalry_power = 0.2
+	cavalry_power = 0.25
 	religion = yes
 }
 religions_expanded_bogomilist_aspect_standarize_holy_knights_modifier_2 = {
 	shock_damage = 0.05
-	cavalry_cost = -0.1
-	cavalry_power = 0.1
+	cavalry_power = 0.15
 	religion = yes
 }
 
