@@ -1424,8 +1424,8 @@ guiTypes = {
 			{
 				name ="deity_icon"
 				spriteType = "GFX_hindu_deities_strip"
-				position = { x = 52 y = -37 } # Religions Expanded
-				scale = 0.8 # Religions Expanded
+				position = { x = 52 y = -36 } # Religions Expanded
+				scale = 0.817 # Religions Expanded
 			}
 
 			instantTextBoxType = {
