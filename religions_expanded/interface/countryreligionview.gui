@@ -592,21 +592,21 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "re_religion_mechanic_hindu_major_deity_shiva_button"
-				position = { x = 53 y = 1 }
+				position = { x = 53 y = 2 }
 				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
 				scale = 0.8
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "re_religion_mechanic_hindu_major_deity_brahma_button"
-				position = { x = 53 y = 60 }
+				position = { x = 53 y = 59 }
 				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
 				scale = 0.8
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "re_religion_mechanic_hindu_major_deity_vishnu_button"
-				position = { x = 121 y = 35 }
+				position = { x = 119 y = 35 }
 				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
 				scale = 0.8
 				scripted = yes
