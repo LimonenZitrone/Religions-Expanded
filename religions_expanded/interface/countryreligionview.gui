@@ -1395,17 +1395,17 @@ guiTypes = {
 			iconType =
 			{
 				name ="religion_overlay_hindu_bg"
-				spriteType = "GFX_frontend_checksum" # transparent
+				spriteType = "GFX_frontend_checksum" # Religions Expanded (transparent)
 				position = { x= 0 y = -70 }
 				alwaystransparent = yes
 			}
 
-			guiButtonType = {
+			guiButtonType = { # Religions Expanded (moved further up in the file)
 				name = "pick_deity"
-				position = { x=48 y = -40}
-				quadTextureSprite ="GFX_re_religion_mechanic_hindu_empty_button"
-				scale = 0.8
-				buttonText = ""
+				position = { x=48 y = -40} # Religions Expanded
+				quadTextureSprite ="GFX_re_religion_mechanic_hindu_empty_button" # Religions Expanded
+				scale = 0.8 # Religions Expanded
+				buttonText = "" # Religions Expanded
 				buttonFont = "vic_18"
 				Orientation = "LEFT"
 			}
@@ -1414,42 +1414,42 @@ guiTypes = {
 			{
 				name ="no_deity_icon"
 				spriteType = "GFX_icon_religion"
-				position = { x = 52 y = -37 }
+				position = { x = 52 y = -37 } # Religions Expanded
 				Orientation = "UPPER_LEFT"
-				scale = 0.515
-				alwaystransparent = yes
+				scale = 0.515 # Religions Expanded
+				alwaystransparent = yes # Religions Expanded
 			}
 
 			iconType =
 			{
 				name ="deity_icon"
 				spriteType = "GFX_hindu_deities_strip"
-				position = { x = 52 y = -37 }
-				scale = 0.8
+				position = { x = 52 y = -37 } # Religions Expanded
+				scale = 0.8 # Religions Expanded
 			}
 
 			instantTextBoxType = {
 				name = "deity_name"
-				position = { x= 168 y = -42 }
+				position = { x= 168 y = -42 } # Religions Expanded
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "RV_NO_DEITY"
-				maxWidth = 130
+				maxWidth = 130 # Religions Expanded
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
-				format = centre
+				format = centre # Religions Expanded
 			}
 
 			instantTextBoxType = {
 				name = "deity_effect"
-				position = { x = 102 y = -4 }
+				position = { x = 102 y = -4 } # Religions Expanded
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 235
+				maxWidth = 235 # Religions Expanded
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
-				format = centre
+				format = centre # Religions Expanded
 			}
 		}
 
@@ -3639,31 +3639,33 @@ guiTypes = {
 		{
 			name ="deity_item_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= 5 y = -4 }
+			position = { x= 16 y = -4 } # Religions Expanded
 		}
 
 		instantTextBoxType = {
 			name = "deity_item_name"
-			position = { x= -42 y = 7 }
+			position = { x= -42 y = 0 } # Religions Expanded
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityName"
-			maxWidth = 32
-			maxHeight = 24
+			maxWidth = 50 # Religions Expanded
+			maxHeight = 37 # Religions Expanded
 			Orientation = "UPPER_LEFT"
 			format = left
+			vertical_alignment = center # Religions Expanded
 		}
 
 		instantTextBoxType = {
 			name = "deity_item_effect"
-			position = { x = 58 y = -2 }
+			position = { x = 62 y = 0 } # Religions Expanded
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityEffect"
 			maxWidth = 256
-			maxHeight = 40
+			maxHeight = 37
 			Orientation = "UPPER_LEFT"
 			format = left
+			vertical_alignment = center # Religions Expanded
 		}
 
 		guiButtonType = {
