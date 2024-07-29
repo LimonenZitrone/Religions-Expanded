@@ -252,11 +252,11 @@
  string_rce_get_religion_mechanic_hindu_monthly_gain_value_from_other_neutral: "§Y0.00§!"
 
  rce_religion_mechanic_hindu_major_deity_name_shiva: "Shiva"
- rce_religion_mechanic_hindu_major_deity_desc_shiva: "Shiva Desc"
+ rce_religion_mechanic_hindu_major_deity_desc_shiva: "Shiva is the god of transformation through destruction and the Lord of Dance."
  rce_religion_mechanic_hindu_major_deity_name_brahma: "Brahma"
  rce_religion_mechanic_hindu_major_deity_desc_brahma: "Brahma Desc"
  rce_religion_mechanic_hindu_major_deity_name_vishnu: "Vishnu"
- rce_religion_mechanic_hindu_major_deity_desc_vishnu: "Vishnu Desc"
+ rce_religion_mechanic_hindu_major_deity_desc_vishnu: "Vishnu is the all-pervading god who sustains the world."
  rce_religion_mechanic_hindu_major_deity_name_none: "§WNo Major Deity§!"
  rce_religion_mechanic_hindu_major_deity_desc_none: "--------------\nYou have not selected a major deity yet."
 
