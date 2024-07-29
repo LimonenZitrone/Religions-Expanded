@@ -16,8 +16,8 @@
  string_religions_expanded_alert_text_religion_mechanic_nestorian_patriarchy: "You have enough §YPatriarch Influence§! ([This.ReGetReligionMechanicNestorianPatriarchyValue]) to afford a holy site interaction. You may want to check if you fullfil the other conditions and can use a holy site interaction."
 
  # Decisions:
- re_religion_enable_alerts_decision_title: "Religions Expanded Dismissed Alerts Settings"
- re_religion_enable_alerts_decision_desc: "By using this decision you can reenable dismissed alerts from the §YReligions Expanded§! mod."
+ re_religion_enable_alerts_decision_title: "Dismissed Alerts Settings (RCE)"
+ re_religion_enable_alerts_decision_desc: "By using this decision you can reenable dismissed alerts from the §YReligions & Cultures Expanded§! mod."
 
  # Events:
  religions_expanded_alerts_events.EVTNAME100: "Dismissed Alerts"

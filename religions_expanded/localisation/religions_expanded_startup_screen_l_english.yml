@@ -1,8 +1,8 @@
 ﻿l_english:
  # GUIs:
- religions_expanded_startup_screen_window_open_button_tt: "Open the §YReligions Expanded Content§! window."
+ religions_expanded_startup_screen_window_open_button_tt: "Open the §YReligions & Cultures Expanded Content§! window."
 
- religions_expanded_startup_screen_header: "Religions Expanded Content"
+ religions_expanded_startup_screen_header: "Religions & Cultures Expanded Content"
  religions_expanded_startup_screen_tab_religions_text: "Religions"
  religions_expanded_startup_screen_tab_religions_button_tt: "Select the §YReligions§! tab."
  religions_expanded_startup_screen_tab_cultures_text: "Cultures"
