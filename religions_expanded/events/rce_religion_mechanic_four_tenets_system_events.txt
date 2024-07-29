@@ -1,0 +1,239 @@
+namespace = rce_religion_mechanic_four_tenets_system_events
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.1
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME1
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_1
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events1.EVTOPT1
+
+		add_ruler_modifier = {
+			name = rce_religion_mechanic_four_tenets_system_ability_1_modifier_1
+			duration = -1
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events1.EVTOPT2
+
+		add_ruler_modifier = {
+			name = rce_religion_mechanic_four_tenets_system_ability_1_modifier_2
+			duration = -1
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events1.EVTOPT3
+
+		add_ruler_modifier = {
+			name = rce_religion_mechanic_four_tenets_system_ability_1_modifier_3
+			duration = -1
+		}
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_1
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.2
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME2
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_2
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events2.EVTOPT1
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_1 = yes
+			}
+			change_adm = 1
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_1
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events2.EVTOPT2
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_1 = yes
+			}
+			change_dip = 1
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_2
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events2.EVTOPT3
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_1 = yes
+			}
+			change_mil = 1
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_3
+				duration = -1
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_2
+		rce_set_religion_mechanic_four_tenets_system_value = { value = 0 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.3
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME3
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC3
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_3
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events3.EVTOPT1
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_2 = yes
+			}
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_3_modifier_1
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events3.EVTOPT2
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_2 = yes
+			}
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_3_modifier_2
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events3.EVTOPT3
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_2 = yes
+			}
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_3_modifier_3
+				duration = -1
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_3
+		rce_set_religion_mechanic_four_tenets_system_value = { value = 0 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.4
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME4
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC4
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_4
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events4.EVTOPT1
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_3 = yes
+			}
+			change_adm = 1
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_1
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events4.EVTOPT2
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_3 = yes
+			}
+			change_dip = 1
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_2
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events4.EVTOPT3
+
+		if = {
+			limit = {
+				rce_has_religion_mechanic_four_tenets_system_ability_3 = yes
+			}
+			change_mil = 1
+			add_ruler_modifier = {
+				name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_3
+				duration = -1
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_four_tenets_system_selecting_ability_4
+		rce_set_religion_mechanic_four_tenets_system_value = { value = 0 }
+	}
+}

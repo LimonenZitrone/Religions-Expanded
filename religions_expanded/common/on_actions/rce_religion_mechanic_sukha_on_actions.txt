@@ -1,0 +1,209 @@
+on_religion_change = {
+	rce_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = yes
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		# yearly value / 12 is added
+		rce_add_yearly_religion_mechanic_sukha_value = yes
+	}
+}
+
+on_new_monarch = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		set_variable = { which = rce_religion_mechanic_sukha_value_temp which = rce_religion_mechanic_sukha_value }
+		divide_variable = { which = rce_religion_mechanic_sukha_value_temp value = 2 }
+		rce_set_religion_mechanic_sukha_value = { which = rce_religion_mechanic_sukha_value_temp }
+		set_variable = { which = rce_religion_mechanic_sukha_value_temp value = 0 }
+	}
+}
+
+# ROOT = Province, FROM = Country who Propogated
+on_convert_by_trade_policy = {
+	FROM = {
+		if = {
+			limit = {
+				rce_uses_religion_mechanic = { mechanic = sukha }
+			}
+			export_to_variable = {
+				which = rce_religion_mechanic_sukha_prov_dev
+				value = trigger_value:development
+				who = ROOT
+			}
+			multiply_variable = { which = rce_religion_mechanic_sukha_prov_dev value = 0.1 }
+			rce_add_religion_mechanic_sukha_value = { which = rce_religion_mechanic_sukha_prov_dev }
+			set_variable = { which = rce_religion_mechanic_sukha_prov_dev value = 0 }
+		}
+	}
+}
+
+on_culture_promoted = {
+	rce_add_religion_mechanic_sukha_value = { value = 5 }
+}
+
+on_culture_demoted = {
+	rce_add_religion_mechanic_sukha_value = { value = -10 }
+}
+
+# ROOT = alliance sender, FROM = alliance accepter
+on_alliance_created = {
+	rce_add_religion_mechanic_sukha_value = { value = 5 }
+	FROM = {
+		rce_add_religion_mechanic_sukha_value = { value = 5 }
+	}
+}
+
+# ROOT = sender, FROM = target
+on_alliance_broken = {
+	rce_add_religion_mechanic_sukha_value = { value = -10 }
+}
+
+# ROOT = marriage sender, FROM = marriage accepter
+on_royal_marriage = {
+	rce_add_religion_mechanic_sukha_value = { value = 5 }
+	FROM = {
+		rce_add_religion_mechanic_sukha_value = { value = 5 }
+	}
+}
+
+# ROOT = sender, FROM = target
+on_royal_marriage_broken = {
+	rce_add_religion_mechanic_sukha_value = { value = -10 }
+}
+
+# ROOT = Province
+on_adm_development = {
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = 0.2 }
+	}
+}
+
+# ROOT = Province
+on_adm_exploited = {
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = -2 }
+	}
+}
+
+# ROOT = Province
+on_dip_development = {
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = 0.2 }
+	}
+}
+
+# ROOT = Province
+on_dip_exploited = {
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = -2 }
+	}
+}
+
+# ROOT = Province
+on_mil_development = {
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = 0.2 }
+	}
+}
+
+# ROOT = Province
+on_mil_exploited = {
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = -2 }
+	}
+}
+
+# ROOT = Province
+on_province_culture_converted = {
+	owner = {
+		if = {
+			limit = {
+				rce_uses_religion_mechanic = { mechanic = sukha }
+			}
+			export_to_variable = {
+				which = rce_religion_mechanic_sukha_prov_dev
+				value = trigger_value:development
+				who = ROOT
+			}
+			multiply_variable = { which = rce_religion_mechanic_sukha_prov_dev value = -0.05 }
+			rce_add_religion_mechanic_sukha_value = { which = rce_religion_mechanic_sukha_prov_dev }
+			set_variable = { which = rce_religion_mechanic_sukha_prov_dev value = 0 }
+		}
+	}
+}
+
+# ROOT = converted country, FROM = country which force converts
+on_force_conversion = {
+	FROM = {
+		rce_add_religion_mechanic_sukha_value = { value = -10 }
+	}
+}
+
+# ROOT = country doing the pillaging, FROM = country pillaged
+on_pillaged_capital = {
+	rce_add_religion_mechanic_sukha_value = { value = -5 }
+}
+
+on_heir_disinherited = {
+	rce_add_religion_mechanic_sukha_value = { value = -20 }
+}
+
+# ROOT = annexing country, FROM = annexed country
+on_annexed = {
+	FROM = {
+		if = {
+			limit = {
+				rce_uses_religion_mechanic = { mechanic = sukha }
+			}
+			rce_clear_all_religion_mechanic_sukha_modifiers = yes
+		}
+	}
+}
+
+# ROOT = released country, FROM = releasing country
+on_country_released = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		rce_clear_all_religion_mechanic_sukha_modifiers = yes
+		rce_set_religion_mechanic_sukha_value = { value = 0 }
+	}
+	else = {
+		rce_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = yes
+	}
+}
+
+# ROOT = released country
+on_country_creation = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		rce_clear_all_religion_mechanic_sukha_modifiers = yes
+		rce_set_religion_mechanic_sukha_value = { value = 0 }
+	}
+	else = {
+		rce_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = yes
+	}
+}
+
+# ROOT = vassal, FROM = overlord
+on_create_vassal = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		rce_clear_all_religion_mechanic_sukha_modifiers = yes
+		rce_set_religion_mechanic_sukha_value = { value = 0 }
+	}
+	else = {
+		rce_clear_all_religion_mechanic_sukha_modifiers_when_changing_religion = yes
+	}
+}

@@ -1,0 +1,895 @@
+rce_bogomilist_aspect_dissolve_church_properties = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_dissolve_church_properties"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = {
+			has_country_modifier = rce_bogomilist_aspect_dissolve_church_properties_modifier_1
+			hidden_trigger = {
+				has_country_modifier = rce_bogomilist_aspect_dissolve_church_properties_modifier_2
+			}
+		}
+		any_owned_province = {
+			has_owner_religion = yes
+			OR = {
+				has_building = cathedral
+				has_building = temple
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_dissolve_church_properties_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = cathedral
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_dissolve_church_properties_modifier_1
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = cathedral
+					}
+					remove_building = cathedral
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_dissolve_church_properties_modifier_2
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = temple
+					}
+					remove_building = temple
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_tax = 1
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+				}
+				clr_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			NOT = { monthly_income = 20 }
+		}
+	}
+}
+
+rce_bogomilist_aspect_deprivatize_mercantile_charters = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_deprivatize_mercantile_charters"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = {
+			has_country_modifier = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_1
+			hidden_trigger = {
+				has_country_modifier = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_2
+			}
+			hidden_trigger = {
+				has_country_modifier = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_3
+			}
+		}
+		any_owned_province = {
+			has_owner_religion = yes
+			OR = {
+				has_building = stock_exchange
+				has_building = trade_depot
+				has_building = marketplace
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_deprivatize_mercantile_charters_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = stock_exchange
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_1
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = stock_exchange
+					}
+					remove_building = stock_exchange
+					area = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = rce_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_1
+							duration = 3650
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = trade_depot
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_2
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = trade_depot
+					}
+					remove_building = trade_depot
+					area = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = rce_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_2
+							duration = 3650
+						}
+					}
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_3
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = marketplace
+					}
+					remove_building = marketplace
+					area = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = rce_bogomilist_aspect_deprivatize_mercantile_charters_province_modifier_3
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+rce_bogomilist_aspect_institute_clerical_administration = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_institute_clerical_administration"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = { has_country_modifier = rce_bogomilist_aspect_institute_clerical_administration_modifier }
+		any_owned_province = {
+			has_owner_religion = yes
+			OR = {
+				has_building = town_hall
+				has_building = courthouse
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_institute_clerical_administration_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = rce_bogomilist_aspect_institute_clerical_administration_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = town_hall
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = town_hall
+					}
+					remove_building = town_hall
+					area = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = rce_bogomilist_aspect_institute_clerical_administration_province_modifier_1
+							duration = 3650
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = courthouse
+					}
+					remove_building = courthouse
+					area = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = rce_bogomilist_aspect_institute_clerical_administration_province_modifier_2
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			governing_capacity_percentage = 0.75
+		}
+	}
+}
+
+rce_bogomilist_aspect_distribute_the_means_of_production = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_distribute_the_means_of_production"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = {
+			has_country_modifier = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_1
+			hidden_trigger = {
+				has_country_modifier = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_2
+			}
+			hidden_trigger = {
+				has_country_modifier = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_3
+			}
+		}
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = trade_goods }
+			}
+			any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					has_building = steam_factory
+					has_building = counting_house
+					has_building = workshop
+				}
+			}
+		}
+		else = {
+			any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					has_building = counting_house
+					has_building = workshop
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = trade_goods }
+			}
+			custom_tooltip = rce_bogomilist_aspect_distribute_the_means_of_production_tt_tge
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_distribute_the_means_of_production_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = steam_factory
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_1
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = steam_factory
+					}
+					remove_building = steam_factory
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = counting_house
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_2
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = counting_house
+					}
+					remove_building = counting_house
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_3
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = workshop
+					}
+					remove_building = workshop
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_production = 1
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+				}
+				clr_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_slacken_recruitment_for_the_holy_war"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = { has_country_modifier = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_modifier }
+		is_at_war = yes
+		any_owned_province = {
+			has_owner_religion = yes
+			OR = {
+				has_building = training_fields
+				has_building = barracks
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = training_fields
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = training_fields
+					}
+					remove_building = training_fields
+					ROOT = {
+						add_years_of_owned_provinces_manpower = {
+							years = 4
+							trigger = {
+								area = PREV
+							}
+							custom_tooltip = string_empty
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = barracks
+					}
+					remove_building = barracks
+					ROOT = {
+						add_years_of_owned_provinces_manpower = {
+							years = 2
+							trigger = {
+								area = PREV
+							}
+							custom_tooltip = string_empty
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			war_score = 50
+		}
+		modifier = {
+			factor = 0
+			manpower_percentage = 0.5
+		}
+		modifier = {
+			factor = 5
+			NOT = { manpower_percentage = 0.3 }
+			manpower_percentage = 0.1
+		}
+		modifier = {
+			factor = 10
+			NOT = { manpower_percentage = 0.1 }
+		}
+	}
+}
+
+rce_bogomilist_aspect_standarize_holy_knights = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_standarize_holy_knights"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = { has_country_modifier = rce_bogomilist_aspect_standarize_holy_knights_modifier }
+		any_owned_province = {
+			has_owner_religion = yes
+			OR = {
+				has_building = conscription_center
+				has_building = regimental_camp
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_standarize_holy_knights_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = rce_bogomilist_aspect_standarize_holy_knights_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = conscription_center
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_standarize_holy_knights_modifier_1
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = conscription_center
+					}
+					remove_building = conscription_center
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_standarize_holy_knights_modifier_2
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = regimental_camp
+					}
+					remove_building = regimental_camp
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = {
+						has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+					}
+					add_base_manpower = 1
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+				}
+				clr_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = { land_forcelimit = 50 }
+		}
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+rce_bogomilist_aspect_organize_colonial_voyages = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_organize_colonial_voyages"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+		NOT = {
+			has_country_modifier = rce_bogomilist_aspect_organize_colonial_voyages_modifier_1
+			hidden_trigger = {
+				has_country_modifier = rce_bogomilist_aspect_organize_colonial_voyages_modifier_2
+			}
+		}
+		any_owned_province = {
+			has_owner_religion = yes
+			OR = {
+				has_building = grand_shipyard
+				has_building = shipyard
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_organize_colonial_voyages_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						has_owner_religion = yes
+						has_building = grand_shipyard
+					}
+				}
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_organize_colonial_voyages_modifier_1
+					duration = 7300
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = grand_shipyard
+					}
+					remove_building = grand_shipyard
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_bogomilist_aspect_organize_colonial_voyages_modifier_2
+					duration = 7300
+				}
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = shipyard
+					}
+					remove_building = shipyard
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_colonies = 1 }
+		}
+		modifier = {
+			factor = 2
+			num_of_colonies = 3
+		}
+	}
+}
+
+rce_bogomilist_aspect_promote_ascetic_lifestyle = {
+	sprite = "GFX_rce_religion_mechanic_bogomilist_church_aspects_aspect_promote_ascetic_lifestyle"
+	cost = 100
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+		custom_tooltip = rce_bogomilist_aspect_promote_ascetic_lifestyle_tt
+		hidden_effect = {
+			remove_country_modifier = rce_bogomilist_aspect_promote_ascetic_lifestyle_modifier
+			add_country_modifier = {
+				name = rce_bogomilist_aspect_promote_ascetic_lifestyle_modifier
+				duration = 3650
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			NOT = { treasury = 5000 }
+		}
+		modifier = {
+			factor = 0
+			tax_income_percentage = 33
+		}
+	}
+}

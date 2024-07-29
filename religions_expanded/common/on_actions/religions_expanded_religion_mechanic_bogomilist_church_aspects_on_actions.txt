@@ -1,3 +1,0 @@
-on_religion_change = {
-	re_clear_all_religion_mechanic_bogomilist_church_aspects_modifiers = yes
-}

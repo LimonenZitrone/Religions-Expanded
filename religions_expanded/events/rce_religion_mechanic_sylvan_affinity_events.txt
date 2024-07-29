@@ -1,0 +1,34 @@
+namespace = rce_religion_mechanic_sylvan_affinity_events
+
+country_event = {
+	id = rce_religion_mechanic_sylvan_affinity_events.1
+	title = rce_religion_mechanic_sylvan_affinity_events.EVTNAME1
+	desc = rce_religion_mechanic_sylvan_affinity_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events1.EVTOPT1
+
+		rce_set_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = spring }
+	}
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events1.EVTOPT2
+
+		rce_set_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = summer }
+	}
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events1.EVTOPT3
+
+		rce_set_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = fall }
+	}
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events1.EVTOPT4
+
+		rce_set_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = winter }
+	}
+}

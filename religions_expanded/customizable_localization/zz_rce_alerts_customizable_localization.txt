@@ -1,0 +1,62 @@
+defined_text = {
+	name = GetRCEAlertTextReligionMechanic
+	random = no
+
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = sylvan_affinity }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_sylvan_affinity
+	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = four_tenets_system }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_four_tenets_system
+	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			rce_has_not_any_religion_mechanic_manichaeism_purity_liturgical_focus = yes
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_manichaeism_purity_liturical_focus
+	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_manichaeism_purity
+	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+			NOT = { has_saved_global_event_target = rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation }
+			NOT = { has_global_flag = rce_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation }
+			rce_has_religion_mechanic_nestorian_patriarchy_value = { value = 75 }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_center_of_reformation_and_holy_site_interaction
+	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+			NOT = { has_saved_global_event_target = rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation }
+			NOT = { has_global_flag = rce_religion_mechanic_nestorian_patriarchy_no_new_center_of_reformation }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_center_of_reformation
+	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}

@@ -1,0 +1,41 @@
+namespace = rce_religion_mechanic_sukha_events
+
+country_event = {
+	id = rce_religion_mechanic_sukha_events.1
+	title = rce_religion_mechanic_sukha_events.EVTNAME1
+	desc = rce_religion_mechanic_sukha_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_sukha_events1.EVTOPT1
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_sukha_sponsor_festival_paryushana_modifier
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_sukha_events1.EVTOPT2
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_sukha_events1.EVTOPT3
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_sukha_sponsor_festival_diwali_modifier
+			duration = 1825
+		}
+	}
+
+	after = {
+		rce_export_yearly_religion_mechanic_sukha_value_gain = yes
+	}
+}

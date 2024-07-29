@@ -1,0 +1,122 @@
+# DLC info for the lobby used to show information for new cultures
+categories = {
+	# Country Info
+	rce_category_country_culture_info_azerbaijani = {
+		index = 400
+		gui = rce_category_landing_page
+	}
+	# Country
+	rce_category_country_change_culture_oghuz_culture = {
+		index = 500
+		gui = rce_category_landing_page
+	}
+	rce_category_country_change_culture_farsi_culture = {
+		index = 501
+		gui = rce_category_landing_page
+	}
+	# Province
+	rce_category_province_change_culture_coptic_culture = {
+		index = 600
+		gui = rce_category_landing_page
+	}
+	rce_category_province_change_culture_assyrian_culture = {
+		index = 601
+		gui = rce_category_landing_page
+	}
+	rce_category_province_change_culture_avshars_culture = {
+		index = 602
+		gui = rce_category_landing_page
+	}
+	rce_category_province_change_culture_qashqai_culture = {
+		index = 603
+		gui = rce_category_landing_page
+	}
+	rce_category_province_change_culture_oghuz_culture = {
+		index = 704
+		gui = rce_category_landing_page
+	}
+	rce_category_province_change_culture_farsi_culture = {
+		index = 705
+		gui = rce_category_landing_page
+	}
+	rce_category_province_change_culture_manichaean_culture = {
+		index = 706
+		gui = rce_category_landing_page
+	}
+}
+
+dlcs = {
+	# Country Info
+	rce_entry_country_culture_info_azerbaijani = {
+		name = "Primary Culture Info"
+		id = -1
+		category = rce_category_country_culture_info_azerbaijani
+		recommendations = { }
+		icon = "GFX_rce_entry_country_culture_info"
+	}
+	# Country
+	rce_entry_country_change_culture_oghuz_culture = {
+		name = "Primary Culture Change"
+		id = -1
+		category = rce_category_country_change_culture_oghuz_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_country_change_culture"
+	}
+	rce_entry_country_change_culture_farsi_culture = {
+		name = "Primary Culture Change"
+		id = -1
+		category = rce_category_country_change_culture_farsi_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_country_change_culture"
+	}
+	# Province
+	rce_entry_province_change_culture_coptic_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_coptic_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+	rce_entry_province_change_culture_assyrian_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_assyrian_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+	rce_entry_province_change_culture_avshars_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_avshars_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+	rce_entry_province_change_culture_qashqai_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_qashqai_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+	rce_entry_province_change_culture_oghuz_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_oghuz_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+	rce_entry_province_change_culture_farsi_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_farsi_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+	rce_entry_province_change_culture_manichaean_culture = {
+		name = "Owned Provinces' Culture Change"
+		id = -1
+		category = rce_category_province_change_culture_manichaean_culture
+		recommendations = { }
+		icon = "GFX_rce_entry_province_change_culture"
+	}
+}

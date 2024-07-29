@@ -1,0 +1,24 @@
+# For Advisor Types Expanded:
+ate_rce_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_adm_advisor = {
+}
+ate_rce_religion_mechanic_nestorian_patriarchy_flag_current_supported_adm_advisor = {
+	set_country_flag = rce_religion_mechanic_nestorian_patriarchy_supported_adm_advisor_type_treasurer
+}
+ate_rce_religion_mechanic_nestorian_patriarchy_hire_new_supported_adm_advisor = {
+}
+
+ate_rce_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_dip_advisor = {
+}
+ate_rce_religion_mechanic_nestorian_patriarchy_flag_current_supported_dip_advisor = {
+	set_country_flag = rce_religion_mechanic_nestorian_patriarchy_supported_dip_advisor_type_statesman
+}
+ate_rce_religion_mechanic_nestorian_patriarchy_hire_new_supported_dip_advisor = {
+}
+
+ate_rce_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_mil_advisor = {
+}
+ate_rce_religion_mechanic_nestorian_patriarchy_flag_current_supported_mil_advisor = {
+	set_country_flag = rce_religion_mechanic_nestorian_patriarchy_supported_mil_advisor_type_army_organiser
+}
+ate_rce_religion_mechanic_nestorian_patriarchy_hire_new_supported_mil_advisor = {
+}

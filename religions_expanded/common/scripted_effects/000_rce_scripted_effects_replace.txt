@@ -1,0 +1,601 @@
+on_built_tax_building_effect = {
+	# Vanilla:
+	if = {
+		limit = {
+			owner = { has_country_flag = can_place_center_of_reformation }
+			is_reformation_center = no
+			expelling_minorities = no
+			NOT = {
+				any_neighbor_province = {
+					is_reformation_center = yes
+				}
+			}
+			NOT = {
+				any_province = {
+					area = PREV
+					is_reformation_center = yes
+					religion = zoroastrian
+				}
+			}
+			OR = {
+				has_owner_religion = yes
+				NOT = { has_active_triggered_province_modifier = religious_center }
+			}
+		}
+		if = {
+			limit = { development = 31 }
+			custom_tooltip = TOO_MUCH_DEV_FOR_CENTER_OF_CONVERSION_TT
+		}
+		else = {
+			hidden_effect = {
+				owner = {
+					clr_country_flag = can_place_center_of_reformation
+				}
+				1 = {
+					change_variable = {
+						which = zoroastrian_reform_center_counter
+						value = 1
+					}
+				}
+			}
+			change_religion = zoroastrian
+			add_reform_center = zoroastrian
+		}
+	}
+
+	# Religions & Cultures Expanded:
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = 3 }
+	}
+}
+
+on_province_tax_building_destroyed_estate_privileges_effect = {
+	# Vanilla:
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					religion = buddhism
+					religion = mahayana
+					religion = vajrayana
+				}
+				has_estate_privilege = estate_church_karma_temples
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_government_attribute = buffed_monastic_temples
+				}
+				add_karma = -5
+			}
+			else = {
+				add_karma = -3
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = catholic
+				has_estate_privilege = estate_church_influence_temples
+			}
+		}
+		FROM = {
+			add_papal_influence = -3
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = gets_manpower_from_tax_buildings
+			}
+		}
+		if = {
+			limit = {
+				has_owner_religion = yes
+				has_building = cathedral
+				NOT = { has_province_modifier = estate_nobles_religious_conscription_cathedral }
+			}
+			add_province_modifier = {
+				name = estate_nobles_religious_conscription_cathedral
+				duration = -1
+			}
+			remove_province_modifier = estate_nobles_religious_conscription_temple
+		}
+		else_if = {
+			limit = {
+				has_owner_religion = yes
+				has_building = temple
+				NOT = { has_province_modifier = estate_nobles_religious_conscription_temple }
+			}
+			add_province_modifier = {
+				name = estate_nobles_religious_conscription_temple
+				duration = -1
+			}
+			remove_province_modifier = estate_nobles_religious_conscription_cathedral
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_province_modifier = estate_nobles_religious_conscription_temple
+					has_province_modifier = estate_nobles_religious_conscription_cathedral
+				}
+			}
+			remove_province_modifier = estate_nobles_religious_conscription_temple
+			remove_province_modifier = estate_nobles_religious_conscription_cathedral
+		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_church_development_of_temples_mod
+		}
+		remove_province_modifier = estate_church_development_of_temples_mod
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_brahmins_development_of_temples_mod
+		}
+		remove_province_modifier = estate_brahmins_development_of_temples_mod
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_dhimmi_development_of_communities_mod
+		}
+		remove_province_modifier = estate_dhimmi_development_of_communities_mod
+	}
+
+	# Religions & Cultures Expanded:
+	owner = {
+		rce_add_religion_mechanic_sukha_value = { value = -3 }
+	}
+}
+
+spawn_country_religious_rebels = {
+	owner = {
+		trigger_switch = {
+			on_trigger = religion
+			anglican =              { PREV = { spawn_rebels = { type = anglican_rebels size = $size$ } } }
+			hussite =               { PREV = { spawn_rebels = { type = hussite_rebels size = $size$ } } }
+			animism =               { PREV = { spawn_rebels = { type = animism_rebels size = $size$ } } }
+			buddhism =              { PREV = { spawn_rebels = { type = buddhism_rebels size = $size$ } } }
+			catholic =              { PREV = { spawn_rebels = { type = catholic_rebels size = $size$ } } }
+			confucianism =          { PREV = { spawn_rebels = { type = confucianism_rebels size = $size$ } } }
+			coptic =                { PREV = { spawn_rebels = { type = coptic_rebels size = $size$ } } }
+			hinduism =              { PREV = { spawn_rebels = { type = hinduism_rebels size = $size$ } } }
+			ibadi =                 { PREV = { spawn_rebels = { type = ibadi_rebels size = $size$ } } }
+			inti =                  { PREV = { spawn_rebels = { type = inti_rebels size = $size$ } } }
+			jewish =                { PREV = { spawn_rebels = { type = jewish_rebels size = $size$ } } }
+			mahayana =              { PREV = { spawn_rebels = { type = mahayana_rebels size = $size$ } } }
+			mesoamerican_religion = { PREV = { spawn_rebels = { type = maya_rebels size = $size$ } } }
+			nahuatl =               { PREV = { spawn_rebels = { type = nahuatl_rebels size = $size$ } } }
+			norse_pagan_reformed =  { PREV = { spawn_rebels = { type = norse_pagan_reformed_rebels size = $size$ } } }
+			orthodox =              { PREV = { spawn_rebels = { type = orthodox_rebels size = $size$ } } }
+			protestant =            { PREV = { spawn_rebels = { type = protestant_rebels size = $size$ } } }
+			reformed =              { PREV = { spawn_rebels = { type = reformed_rebels size = $size$ } } }
+			shamanism =             { PREV = { spawn_rebels = { type = shamanism_rebels size = $size$ } } }
+			shiite =                { PREV = { spawn_rebels = { type = shiite_rebels size = $size$ } } }
+			shinto =                { PREV = { spawn_rebels = { type = shinto_rebels size = $size$ } } }
+			sikhism =               { PREV = { spawn_rebels = { type = sikhism_rebels size = $size$ } } }
+			sunni =                 { PREV = { spawn_rebels = { type = sunni_rebels size = $size$ } } }
+			tengri_pagan_reformed = { PREV = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } } }
+			totemism =              { PREV = { spawn_rebels = { type = totemism_rebels size = $size$ } } }
+			vajrayana =             { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ } } }
+			zoroastrian =           { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ } } }
+			dreamtime =             { PREV = { spawn_rebels = { type = dreamtime_rebels size = $size$ } } }
+			# Religions & Cultures Expanded:
+			jainism = 				{ PREV = { spawn_rebels = { type = jainism_rebels size = $size$ } } }
+			tibetan_buddhism = 		{ PREV = { spawn_rebels = { type = tibetan_buddhism_rebels size = $size$ } } }
+			vidilist = 				{ PREV = { spawn_rebels = { type = vidilist_rebels size = $size$ } } }
+			nestorian = 			{ PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ } } }
+			manichaeism = 			{ PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ } } }
+			bogomilist = 			{ PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ } } }
+		}
+	}
+}
+
+spawn_province_religious_rebels = {
+	trigger_switch = {
+		on_trigger = religion
+		anglican =              { spawn_rebels = { type = anglican_rebels size = $size$ } }
+		hussite =               { spawn_rebels = { type = hussite_rebels size = $size$ } }
+		animism =               { spawn_rebels = { type = animism_rebels size = $size$ } }
+		buddhism =              { spawn_rebels = { type = buddhism_rebels size = $size$ } }
+		catholic =              { spawn_rebels = { type = catholic_rebels size = $size$ } }
+		confucianism =          { spawn_rebels = { type = confucianism_rebels size = $size$ } }
+		coptic =                { spawn_rebels = { type = coptic_rebels size = $size$ } }
+		hinduism =              { spawn_rebels = { type = hinduism_rebels size = $size$ } }
+		ibadi =                 { spawn_rebels = { type = ibadi_rebels size = $size$ } }
+		inti =                  { spawn_rebels = { type = inti_rebels size = $size$ } }
+		jewish =                { spawn_rebels = { type = jewish_rebels size = $size$ } }
+		mahayana =              { spawn_rebels = { type = mahayana_rebels size = $size$ } }
+		mesoamerican_religion = { spawn_rebels = { type = maya_rebels size = $size$ } }
+		nahuatl =               { spawn_rebels = { type = nahuatl_rebels size = $size$ } }
+		norse_pagan_reformed =  { spawn_rebels = { type = norse_pagan_reformed_rebels size = $size$ } }
+		orthodox =              { spawn_rebels = { type = orthodox_rebels size = $size$ } }
+		protestant =            { spawn_rebels = { type = protestant_rebels size = $size$ } }
+		reformed =              { spawn_rebels = { type = reformed_rebels size = $size$ } }
+		shamanism =             { spawn_rebels = { type = shamanism_rebels size = $size$ } }
+		shiite =                { spawn_rebels = { type = shiite_rebels size = $size$ } }
+		shinto =                { spawn_rebels = { type = shinto_rebels size = $size$ } }
+		sikhism =               { spawn_rebels = { type = sikhism_rebels size = $size$ } }
+		sunni =                 { spawn_rebels = { type = sunni_rebels size = $size$ } }
+		tengri_pagan_reformed = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } }
+		totemism =              { spawn_rebels = { type = totemism_rebels size = $size$ } }
+		vajrayana =             { spawn_rebels = { type = vajrayana_rebels size = $size$ } }
+		zoroastrian =           { spawn_rebels = { type = zoroastrian_rebels size = $size$ } }
+		dreamtime =             { spawn_rebels = { type = dreamtime_rebels size = $size$ } }
+		# Religions & Cultures Expanded:
+		jainism = 				{ spawn_rebels = { type = jainism_rebels size = $size$ } }
+		tibetan_buddhism = 		{ spawn_rebels = { type = tibetan_buddhism_rebels size = $size$ } }
+		vidilist = 				{ spawn_rebels = { type = vidilist_rebels size = $size$ } }
+		nestorian = 			{ spawn_rebels = { type = nestorian_rebels size = $size$ } }
+		manichaeism = 			{ spawn_rebels = { type = manichaeism_rebels size = $size$ } }
+		bogomilist = 			{ spawn_rebels = { type = bogomilist_rebels size = $size$ } }
+	}
+}
+
+spawn_rebels_from_unhappy_estate = {
+	if = {
+		limit = {
+			owner = {
+				NOT = { disabled_rebels_from_seized_land_for_estate = { estate = all } }
+				NOT = { has_government_attribute = seizing_land_no_rebels }
+			}
+		}
+		random_list = {
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_nobles } }
+						has_estate = estate_nobles
+						NOT = {
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 30
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							OR = {
+								primary_culture = polish
+								primary_culture = polish_new
+							}
+						}
+					}
+					spawn_rebels = {
+						type = polish_noble_rebels
+						size = $size$
+						estate = estate_nobles
+						as_if_faction = yes
+					}
+				}
+				else = {
+					spawn_rebels = {
+						type = noble_rebels
+						size = $size$
+						estate = estate_nobles
+						as_if_faction = yes
+					}
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_church } }
+						has_estate = estate_church
+						NOT = {
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 30
+							}
+						}
+					}
+				}
+				owner = {
+					trigger_switch = {
+						on_trigger = religion
+						anglican =      { PREV = { spawn_rebels = { type = anglican_rebels size = $size$ as_if_faction = yes } } }
+						hussite =      { PREV = { spawn_rebels = { type = hussite_rebels size = $size$ as_if_faction = yes } } }
+						animism =       { PREV = { spawn_rebels = { type = animism_rebels size = $size$ as_if_faction = yes } } }
+						buddhism =      { PREV = { spawn_rebels = { type = buddhism_rebels size = $size$ as_if_faction = yes } } }
+						catholic =      { PREV = { spawn_rebels = { type = catholic_rebels size = $size$ as_if_faction = yes } } }
+						confucianism =  { PREV = { spawn_rebels = { type = confucianism_rebels size = $size$ as_if_faction = yes } } }
+						coptic =        { PREV = { spawn_rebels = { type = coptic_rebels size = $size$ as_if_faction = yes } } }
+						hinduism =      { PREV = { spawn_rebels = { type = hinduism_rebels size = $size$ as_if_faction = yes } } }
+						ibadi =         { PREV = { spawn_rebels = { type = ibadi_rebels size = $size$ as_if_faction = yes } } }
+						inti =          { PREV = { spawn_rebels = { type = inti_rebels size = $size$ as_if_faction = yes } } }
+						jewish =        { PREV = { spawn_rebels = { type = jewish_rebels size = $size$ as_if_faction = yes } } }
+						mahayana =      { PREV = { spawn_rebels = { type = mahayana_rebels size = $size$ as_if_faction = yes } } }
+						mesoamerican_religion = { PREV = { spawn_rebels = { type = maya_rebels size = $size$ as_if_faction = yes } } }
+						nahuatl =       { PREV = { spawn_rebels = { type = nahuatl_rebels size = $size$ as_if_faction = yes } } }
+						norse_pagan_reformed = { PREV = { spawn_rebels = { type = norse_pagan_reformed_rebels size = $size$ as_if_faction = yes } } }
+						orthodox =      { PREV = { spawn_rebels = { type = orthodox_rebels size = $size$ as_if_faction = yes } } }
+						protestant =    { PREV = { spawn_rebels = { type = protestant_rebels size = $size$ as_if_faction = yes } } }
+						reformed =      { PREV = { spawn_rebels = { type = reformed_rebels size = $size$ as_if_faction = yes } } }
+						shamanism =     { PREV = { spawn_rebels = { type = shamanism_rebels size = $size$ as_if_faction = yes } } }
+						shiite =        { PREV = { spawn_rebels = { type = shiite_rebels size = $size$ as_if_faction = yes } } }
+						shinto =        { PREV = { spawn_rebels = { type = shinto_rebels size = $size$ as_if_faction = yes } } }
+						sikhism =       { PREV = { spawn_rebels = { type = sikhism_rebels size = $size$ as_if_faction = yes } } }
+						sunni =         { PREV = { spawn_rebels = { type = sunni_rebels size = $size$ as_if_faction = yes } } }
+						tengri_pagan_reformed = { PREV = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ as_if_faction = yes } } }
+						totemism =      { PREV = { spawn_rebels = { type = totemism_rebels size = $size$ as_if_faction = yes } } }
+						vajrayana =     { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ as_if_faction = yes } } }
+						zoroastrian =   { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ as_if_faction = yes } } }
+						dreamtime =      { PREV = { spawn_rebels = { type = dreamtime_rebels size = $size$ as_if_faction = yes } } }
+						# Religions & Cultures Expanded:
+						jainism =      	{ PREV = { spawn_rebels = { type = jainism_rebels size = $size$ as_if_faction = yes } } }
+						tibetan_buddhism = { PREV = { spawn_rebels = { type = tibetan_buddhism_rebels size = $size$ as_if_faction = yes } } }
+						vidilist =      { PREV = { spawn_rebels = { type = vidilist_rebels size = $size$ as_if_faction = yes } } }
+						nestorian =     { PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ as_if_faction = yes } } }
+						manichaeism =     { PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ as_if_faction = yes } } }
+						bogomilist =     { PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ as_if_faction = yes } } }
+					}
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_rajput } }
+						has_estate = estate_rajput
+						NOT = {
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = $size$
+					estate = estate_rajput
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_maratha } }
+						has_estate = estate_maratha
+						NOT = {
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = $size$
+					estate = estate_maratha
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_burghers } }
+						has_estate = estate_burghers
+						NOT = {
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = $size$
+					estate = estate_burghers
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_jains } }
+						has_estate = estate_jains
+						NOT = {
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = $size$
+					estate = estate_jains
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_vaisyas } }
+						has_estate = estate_vaisyas
+						NOT = {
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = $size$
+					estate = estate_vaisyas
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_dhimmi } }
+						has_estate = estate_dhimmi
+						NOT = {
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = $size$
+					estate = estate_dhimmi
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_brahmins } }
+						has_estate = estate_brahmins
+						NOT = {
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = hinduism_rebels
+					size = $size$
+					estate = estate_brahmins
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_cossacks } }
+						has_estate = estate_cossacks
+						NOT = {
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = cossack_rebels
+					size = $size$
+					estate = estate_cossacks
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_nomadic_tribes } }
+						has_estate = estate_nomadic_tribes
+						NOT = {
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = tribal_rebels
+					size = $size$
+					estate = estate_nomadic_tribes
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_janissaries } }
+						has_estate = estate_janissaries
+						NOT = {
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = janissary_rebels
+					size = $size$
+					estate = estate_janissaries
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_eunuchs } }
+						has_estate = estate_eunuchs
+						NOT = {
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = eunuch_rebels
+					size = $size$
+					estate = estate_eunuchs
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_qizilbash } }
+						has_estate = estate_qizilbash
+						NOT = {
+							estate_loyalty = {
+								estate = estate_qizilbash
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = qizilbash_rebels
+					size = $size$
+					estate = estate_qizilbash
+					as_if_faction = yes
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_ghulams } }
+						has_estate = estate_ghulams
+						NOT = {
+							estate_loyalty = {
+								estate = estate_ghulams
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = ghulams_rebels
+					size = $size$
+					estate = estate_ghulams
+					as_if_faction = yes
+				}
+			}
+		}
+	}
+}

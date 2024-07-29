@@ -8,23 +8,23 @@ ganesha = {
 	trigger = {}
 	sprite = 1
 	effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
 			export_to_variable = {
-				which = re_religion_mechanic_hindu_picked_minor_deity_year
+				which = rce_religion_mechanic_hindu_picked_minor_deity_year
 				value = trigger_value:is_year
 			}
 		}
 	}
 	removed_effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt_lost
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt_lost
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_variable = { which = rce_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
 		}
 	}
 	ai_will_do = {
@@ -47,23 +47,23 @@ kali = {
 	trigger = {}
 	sprite = 2
 	effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
 			export_to_variable = {
-				which = re_religion_mechanic_hindu_picked_minor_deity_year
+				which = rce_religion_mechanic_hindu_picked_minor_deity_year
 				value = trigger_value:is_year
 			}
 		}
 	}
 	removed_effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt_lost
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt_lost
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_variable = { which = rce_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
 		}
 	}
 	ai_will_do = {
@@ -86,23 +86,23 @@ surya = {
 	trigger = {}
 	sprite = 3
 	effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
 			export_to_variable = {
-				which = re_religion_mechanic_hindu_picked_minor_deity_year
+				which = rce_religion_mechanic_hindu_picked_minor_deity_year
 				value = trigger_value:is_year
 			}
 		}
 	}
 	removed_effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt_lost
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt_lost
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_variable = { which = rce_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
 		}
 	}
 	ai_will_do = {
@@ -125,23 +125,23 @@ hanuman = {
 	trigger = {}
 	sprite = 4
 	effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
 			export_to_variable = {
-				which = re_religion_mechanic_hindu_picked_minor_deity_year
+				which = rce_religion_mechanic_hindu_picked_minor_deity_year
 				value = trigger_value:is_year
 			}
 		}
 	}
 	removed_effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt_lost
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt_lost
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_variable = { which = rce_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
 		}
 	}
 	ai_will_do = {
@@ -186,23 +186,23 @@ buddha = {
 		}
 	}
 	effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_country_flag = re_religion_mechanic_hindu_picked_minor_deity
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
 			export_to_variable = {
-				which = re_religion_mechanic_hindu_picked_minor_deity_year
+				which = rce_religion_mechanic_hindu_picked_minor_deity_year
 				value = trigger_value:is_year
 			}
 		}
 	}
 	removed_effect = {
-		custom_tooltip = re_religion_mechanic_hindu_dynamic_modifier_tt_lost
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt_lost
 		hidden_effect = {
-			re_update_religion_mechanic_hindu_dynamic_modifier = yes
-			clr_country_flag = re_religion_mechanic_hindu_picked_minor_deity
-			set_variable = { which = re_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_variable = { which = rce_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
 		}
 	}
 	ai_will_do = {

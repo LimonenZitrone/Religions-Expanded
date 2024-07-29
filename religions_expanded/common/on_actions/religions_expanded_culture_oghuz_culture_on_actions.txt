@@ -1,8 +1,0 @@
-on_province_culture_converted = {
-	if = {
-		limit = {
-			culture = oghuz_culture
-		}
-		set_province_flag = re_culture_oghuz_culture_was_converted
-	}
-}

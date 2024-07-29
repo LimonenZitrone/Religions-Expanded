@@ -10150,7 +10150,7 @@ lost_cultures_group = {
 			"Ridala" "Saaremaa" "Vaiga" "Turaida"
 		}
 	}
-	# phoenician moved to other group (re_culture_group_aramaic)
+	# phoenician moved to other group (aramaic_culture_group)
 	scanian = {
 		male_names = {
 			Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard
@@ -10218,8 +10218,8 @@ lost_cultures_group = {
 			Æthelburh Seaxburh Wihtburh
 		}
 	}
-	# phoenician moved to other group (re_culture_group_aramaic)
-	# babylonian moved to other group (re_culture_group_aramaic)
+	# phoenician moved to other group (aramaic_culture_group)
+	# babylonian moved to other group (aramaic_culture_group)
 	etrurian = { #EU Rome
 		dynasty_names = {
 			Aemilia Antonia Atilia Atia Aufidia Aurelia Caecilia Calpurnia Cassia Claudia
@@ -10260,7 +10260,7 @@ lost_cultures_group = {
 			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
 		}
 	}
-	# hebrew moved to other group (re_culture_group_aramaic)
+	# hebrew moved to other group (aramaic_culture_group)
 	scythian = { #EU Rome
 		dynasty_names = {
 			Abeacid Galatid Madyid Palacid Partatid

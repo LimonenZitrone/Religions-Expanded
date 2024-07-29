@@ -1,0 +1,29 @@
+custom_window = {
+	name = rce_religion_mechanic_anglican_church_aspects_overlay_window
+	potential = {
+		uses_church_aspects = yes
+		OR = {
+			religion = anglican
+			rce_uses_religion_mechanic = { mechanic = bogomilist_church_aspects }
+		}
+	}
+}
+
+custom_icon = {
+	name = rce_religion_mechanic_anglican_church_aspects_overlay_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 2
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = bogomilist_church_aspects }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

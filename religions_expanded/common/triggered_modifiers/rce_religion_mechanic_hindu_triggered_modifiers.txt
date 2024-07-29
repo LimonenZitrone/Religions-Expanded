@@ -1,0 +1,34 @@
+rce_religion_mechanic_hindu_ahead_of_time_in_tech_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = hindu }
+	}
+	trigger = {
+		OR = {
+			AND = {
+				rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+				is_ahead_of_time_in_technology = { tech = adm }
+			}
+			AND = {
+				rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+				is_ahead_of_time_in_technology = { tech = dip }
+			}
+			AND = {
+				rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+				is_ahead_of_time_in_technology = { tech = mil }
+			}
+		}
+	}
+
+	rce_monthly_religion_mechanic_hindu_change = 0.05
+}
+
+rce_religion_mechanic_hindu_religious_ideas_5_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = hindu }
+	}
+	trigger = {
+		religious_ideas = 5
+	}
+
+	rce_monthly_religion_mechanic_hindu_change = 0.05
+}

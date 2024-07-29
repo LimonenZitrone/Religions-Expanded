@@ -1,0 +1,14 @@
+bookmark = {
+	name = "RCE_BOOKMARK_EASTERN_EUROPE"
+	desc = "RCE_BOOKMARK_EASTERN_EUROPE_DESC"
+	date = 1444.11.11
+
+	center = 155
+	default = yes
+
+	# vidilist
+	country = LIT
+	# bogomilist
+	country = BOS
+	country = HRZ
+}

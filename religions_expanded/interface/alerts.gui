@@ -31,7 +31,7 @@ guiTypes = {
 
 	positionType = {
 		name = "alerticon_startposition"
-		position = { x = 185 y = 78 } # Religions Expanded
+		position = { x = 185 y = 78 } # Religions & Cultures Expanded
 	}
 
 	positionType = {

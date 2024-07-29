@@ -18,7 +18,7 @@ country_decisions = {
 			is_at_war = no
 			OR = {
 				primary_culture = turkish
-				primary_culture = oghuz_culture # Religions Expanded
+				primary_culture = oghuz_culture # Religions & Cultures Expanded
 			}
 			religion_group = muslim
 			controls = 151
@@ -37,7 +37,7 @@ country_decisions = {
 			add_core = 151
 			151 = {
 				move_capital_effect = yes
-				change_culture = ROOT # Religions Expanded
+				change_culture = ROOT # Religions & Cultures Expanded
 				change_religion = ROOT
 				rename_capital = Kostantiniyye
 			}

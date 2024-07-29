@@ -1,0 +1,601 @@
+# Open Button
+custom_button = {
+	name = rce_startup_screen_window_open_button
+	potential = {
+		ai = no
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = show_rce_startup_screen_window
+				}
+				clr_country_flag = show_rce_startup_screen_window
+				clr_country_flag = show_rce_startup_screen_window_religions
+				clr_country_flag = show_rce_startup_screen_window_cultures
+				set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
+				set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+				set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
+				set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+			}
+			else = {
+				set_country_flag = show_rce_startup_screen_window
+				set_country_flag = show_rce_startup_screen_window_religions
+				set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
+				set_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+			}
+		}
+	}
+	tooltip = rce_startup_screen_window_open_button_tt
+}
+# Main Window
+custom_window = {
+	name = rce_startup_screen_window
+	potential = {
+		ai = no
+		has_country_flag = show_rce_startup_screen_window
+	}
+}
+custom_button = {
+	name = rce_startup_screen_close_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_rce_startup_screen_window
+			clr_country_flag = show_rce_startup_screen_window_religions
+			clr_country_flag = show_rce_startup_screen_window_cultures
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
+			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+		}
+	}
+}
+
+# Tabs Buttons
+custom_button = {
+	name = rce_startup_screen_tab_cultures_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_rce_startup_screen_window_religions
+			set_country_flag = show_rce_startup_screen_window_cultures
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
+			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 1 }
+		}
+	}
+	tooltip = rce_startup_screen_tab_cultures_button_tt
+}
+custom_button = {
+	name = rce_startup_screen_tab_religions_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_rce_startup_screen_window_cultures
+			set_country_flag = show_rce_startup_screen_window_religions
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+		}
+	}
+	tooltip = rce_startup_screen_tab_religions_button_tt
+}
+
+# Religions Window
+custom_window = {
+	name = rce_startup_screen_religions_window
+	potential = {
+		has_country_flag = show_rce_startup_screen_window_religions
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_left_title_religions
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_right_title_religions
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_text_religions
+	potential = {
+		always = yes
+	}
+}
+## List Page Windows
+custom_window = {
+	name = rce_startup_screen_religions_list_page_1_window
+	potential = {
+		is_variable_equal = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+	}
+}
+custom_window = {
+	name = rce_startup_screen_religions_list_page_2_window
+	potential = {
+		is_variable_equal = { which = rce_startup_screen_window_religions_selected_page value = 2 }
+	}
+}
+### List Pages Control Window
+custom_button = {
+	name = rce_startup_screen_list_prev_page_button_religions
+	trigger = {
+		hidden_trigger = {
+			check_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+			NOT = { is_variable_equal = { which = rce_startup_screen_window_religions_selected_page value = 1 } }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = rce_startup_screen_window_religions_selected_page value = -1 }
+		}
+	}
+	tooltip = rce_startup_screen_list_prev_page_button_tt
+}
+custom_button = {
+	name = rce_startup_screen_list_next_page_button_religions
+	trigger = {
+		hidden_trigger = {
+			NOT = { check_variable = { which = rce_startup_screen_window_religions_selected_page value = 2 } }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+		}
+	}
+	tooltip = rce_startup_screen_list_next_page_button_tt
+}
+custom_text_box = {
+	name = rce_startup_screen_list_pages_text_religions
+	potential = {
+		always = yes
+	}
+}
+### Religions
+#### jainism
+custom_button = {
+	name = rce_startup_screen_religion_1_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 1 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 1 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_1_button_tt
+}
+#### tibetan_buddhism
+custom_button = {
+	name = rce_startup_screen_religion_2_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 2 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_2_button_tt
+}
+#### vidilist
+custom_button = {
+	name = rce_startup_screen_religion_3_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 3 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 3 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_3_button_tt
+}
+#### nestorian
+custom_button = {
+	name = rce_startup_screen_religion_4_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 4 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 4 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_4_button_tt
+}
+#### manichaeism
+custom_button = {
+	name = rce_startup_screen_religion_5_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 5 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 5 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_5_button_tt
+}
+#### bogomilist
+custom_button = {
+	name = rce_startup_screen_religion_6_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 6 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 6 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_6_button_tt
+}
+#### hinduism
+custom_button = {
+	name = rce_startup_screen_religion_7_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 7 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 7 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_religion_7_button_tt
+}
+
+# Cultures Window
+custom_window = {
+	name = rce_startup_screen_cultures_window
+	potential = {
+		has_country_flag = show_rce_startup_screen_window_cultures
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_left_title_cultures
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_right_title_cultures
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_text_cultures
+	potential = {
+		always = yes
+	}
+}
+## List Page Windows
+custom_window = {
+	name = rce_startup_screen_cultures_list_page_1_window
+	potential = {
+		is_variable_equal = { which = rce_startup_screen_window_cultures_selected_page value = 1 }
+	}
+}
+### List Pages Control Window
+custom_button = {
+	name = rce_startup_screen_list_prev_page_button_cultures
+	potential = { always = no } # currently invisible, because max pages is 1
+	trigger = {
+		hidden_trigger = {
+			check_variable = { which = rce_startup_screen_window_cultures_selected_page value = 1 }
+			NOT = { is_variable_equal = { which = rce_startup_screen_window_cultures_selected_page value = 1 } }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = rce_startup_screen_window_cultures_selected_page value = -1 }
+		}
+	}
+	tooltip = rce_startup_screen_list_prev_page_button_tt
+}
+custom_button = {
+	name = rce_startup_screen_list_next_page_button_cultures
+	potential = { always = no } # currently invisible, because max pages is 1
+	trigger = {
+		hidden_trigger = {
+			NOT = { check_variable = { which = rce_startup_screen_window_cultures_selected_page value = 1 } }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = rce_startup_screen_window_cultures_selected_page value = 1 }
+		}
+	}
+	tooltip = rce_startup_screen_list_next_page_button_tt
+}
+custom_text_box = {
+	name = rce_startup_screen_list_pages_text_cultures
+	potential = {
+		always = no # currently invisible, because max pages is 1
+	}
+}
+### Cultures
+#### lost_cultures_group
+custom_button = {
+	name = rce_startup_screen_culture_1_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 1 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = lost_cultures_group
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 1 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_1_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_1_primary_icon
+	potential = {
+		culture_group = lost_cultures_group
+	}
+}
+#### turko_semitic
+custom_button = {
+	name = rce_startup_screen_culture_2_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 2 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = turko_semitic
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_2_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_2_primary_icon
+	potential = {
+		culture_group = turko_semitic
+	}
+}
+#### iranian
+custom_button = {
+	name = rce_startup_screen_culture_3_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 3 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = iranian
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 3 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_3_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_3_primary_icon
+	potential = {
+		culture_group = iranian
+	}
+}
+#### altaic
+custom_button = {
+	name = rce_startup_screen_culture_4_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 4 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = altaic
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 4 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_4_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_4_primary_icon
+	potential = {
+		culture_group = altaic
+	}
+}
+#### sudanese
+custom_button = {
+	name = rce_startup_screen_culture_5_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 5 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = sudanese
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 5 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_5_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_5_primary_icon
+	potential = {
+		culture_group = sudanese
+	}
+}
+#### aramaic_culture_group
+custom_button = {
+	name = rce_startup_screen_culture_6_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 6 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = aramaic_culture_group
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 6 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_6_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_6_primary_icon
+	potential = {
+		culture_group = aramaic_culture_group
+	}
+}

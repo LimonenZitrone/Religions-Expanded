@@ -50,7 +50,7 @@ christian = {
 
 		}
 
-		heretic = { WALDENSIAN FRATICELLI LOLLARD SOCINIAN } # Religions Expanded
+		heretic = { WALDENSIAN FRATICELLI LOLLARD SOCINIAN } # Religions & Cultures Expanded
 
 		papacy = {
 			papal_tag = PAP
@@ -652,7 +652,7 @@ christian = {
 		color = { 178 127 0 }
 		icon = 4
 		allowed_conversion = {
-			bogomilist # Religions Expanded
+			bogomilist # Religions & Cultures Expanded
 		}
 		country = {
 			stability_cost_modifier = -0.1
@@ -815,7 +815,7 @@ christian = {
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
-		color = { 150 190 0 } # Religions Expanded
+		color = { 150 190 0 } # Religions & Cultures Expanded
 		icon = 14
 		country = {
 			defensiveness = 0.15
@@ -850,7 +850,7 @@ christian = {
 		}
 	}
 
-	# Religions Expanded
+	# Religions & Cultures Expanded
 	nestorian = {
 		color = { 255 255 170 }
 		icon = 33
@@ -866,8 +866,8 @@ christian = {
 
 		on_convert = {
 			change_religion = nestorian
-			re_set_religion_mechanic_nestorian_patriarchy_value = { value = 0 }
-			re_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
+			rce_set_religion_mechanic_nestorian_patriarchy_value = { value = 0 }
+			rce_export_yearly_religion_mechanic_nestorian_patriarchy_value_gain = yes
 			add_country_modifier = {
 				name = conversion_zeal
 				duration = 3650
@@ -877,7 +877,7 @@ christian = {
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY }
 	}
 
-	# Religions Expanded
+	# Religions & Cultures Expanded
 	bogomilist = {
 		color = { 169 0 0 }
 		icon = 35
@@ -901,7 +901,7 @@ christian = {
 		}
 
 		will_get_center = {
-			has_country_flag = re_religion_spawning_bogomilist_center_of_reformation # only via decision
+			has_country_flag = rce_religion_spawning_bogomilist_center_of_reformation # only via decision
 		}
 
 		on_convert = {
@@ -914,9 +914,9 @@ christian = {
 			}
 			if = {
 				limit = {
-					NOT = { has_country_flag = re_religion_bogomilist_money_received }
+					NOT = { has_country_flag = rce_religion_bogomilist_money_received }
 				}
-				set_country_flag = re_religion_bogomilist_money_received
+				set_country_flag = rce_religion_bogomilist_money_received
 				add_years_of_income = 1
 			}
 		}
@@ -924,14 +924,14 @@ christian = {
 		uses_church_power = yes
 
 		aspects = {
-			religions_expanded_bogomilist_aspect_dissolve_church_properties
-			religions_expanded_bogomilist_aspect_deprivatize_mercantile_charters
-			religions_expanded_bogomilist_aspect_institute_clerical_administration
-			religions_expanded_bogomilist_aspect_distribute_the_means_of_production
-			religions_expanded_bogomilist_aspect_slacken_recruitment_for_the_holy_war
-			religions_expanded_bogomilist_aspect_standarize_holy_knights
-			religions_expanded_bogomilist_aspect_organize_colonial_voyages
-			religions_expanded_bogomilist_aspect_promote_ascetic_lifestyle
+			rce_bogomilist_aspect_dissolve_church_properties
+			rce_bogomilist_aspect_deprivatize_mercantile_charters
+			rce_bogomilist_aspect_institute_clerical_administration
+			rce_bogomilist_aspect_distribute_the_means_of_production
+			rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war
+			rce_bogomilist_aspect_standarize_holy_knights
+			rce_bogomilist_aspect_organize_colonial_voyages
+			rce_bogomilist_aspect_promote_ascetic_lifestyle
 		}
 		aspects_name = BOGOMILIST_ASPECTS
 
@@ -1544,7 +1544,7 @@ muslim = {
 }
 
 eastern = {
-	defender_of_faith = yes # Religions Expanded
+	defender_of_faith = yes # Religions & Cultures Expanded
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
@@ -1555,7 +1555,7 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			mahayana
-			tibetan_buddhism # Religions Expanded
+			tibetan_buddhism # Religions & Cultures Expanded
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1587,7 +1587,7 @@ eastern = {
 		allowed_conversion = {
 			mahayana
 			buddhism #Theravada
-			tibetan_buddhism # Religions Expanded
+			tibetan_buddhism # Religions & Cultures Expanded
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1619,7 +1619,7 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			buddhism #Theravada
-			tibetan_buddhism # Religions Expanded
+			tibetan_buddhism # Religions & Cultures Expanded
 		}
 		country = {
 			tolerance_heretic = 2
@@ -1681,7 +1681,7 @@ eastern = {
 
 	}
 
-	# Religions Expanded
+	# Religions & Cultures Expanded
 	tibetan_buddhism = {
 		color = { 163 60 16 }
 		icon = 31
@@ -1703,10 +1703,10 @@ eastern = {
 
 		on_convert = {
 			change_religion = tibetan_buddhism
-			re_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
+			rce_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
 			if = {
 				limit = {
-					NOT = { has_country_flag = religions_expanded_initial_conversion }
+					NOT = { has_country_flag = rce_initial_conversion }
 				}
 				add_prestige = -100
 				add_stability = -1
@@ -1727,7 +1727,7 @@ eastern = {
 }
 
 dharmic = {
-	defender_of_faith = yes # Religions Expanded
+	defender_of_faith = yes # Religions & Cultures Expanded
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
@@ -1737,7 +1737,7 @@ dharmic = {
 		icon = 8
 		allowed_conversion = {
 			sikhism
-			jainism # Religions Expanded
+			jainism # Religions & Cultures Expanded
 		}
 		country = {
 			tolerance_heathen = 1
@@ -1771,7 +1771,7 @@ dharmic = {
 			hinduism
 			sunni
 			shiite
-			jainism # Religions Expanded
+			jainism # Religions & Cultures Expanded
 		}
 		country = {
 			mil_tech_cost_modifier = -0.1
@@ -2377,7 +2377,7 @@ dharmic = {
 		}
 	}
 
-	# Religions Expanded
+	# Religions & Cultures Expanded
 	jainism = {
 		color = { 47 57 119 }
 		icon = 30
@@ -2398,7 +2398,7 @@ dharmic = {
 
 		on_convert = {
 			change_religion = jainism
-			set_country_flag = re_religion_jainism_propagate_religion
+			set_country_flag = rce_religion_jainism_propagate_religion
 			if = {
 				limit = {
 					NOT = { has_country_flag = can_use_propagate_religion }
@@ -2406,7 +2406,7 @@ dharmic = {
 				enable_propogate_religion_effect = yes
 			}
 			else = {
-				set_country_flag = re_religion_jainism_propagate_religion_already_active
+				set_country_flag = rce_religion_jainism_propagate_religion_already_active
 				tooltip = {
 					enable_propogate_religion_effect = yes
 				}
@@ -2418,7 +2418,7 @@ dharmic = {
 						has_dlc = "Winds of Change"
 					}
 				}
-				set_country_flag = re_religion_jainism_unlocked_estate_brahmins
+				set_country_flag = rce_religion_jainism_unlocked_estate_brahmins
 				if = {
 					limit = {
 						NOT = { has_unlocked_estate = { estate = estate_brahmins } }
@@ -2426,18 +2426,18 @@ dharmic = {
 					unlock_estate = { estate = estate_brahmins }
 				}
 				else = {
-					set_country_flag = re_religion_jainism_unlocked_estate_brahmins_already_active
+					set_country_flag = rce_religion_jainism_unlocked_estate_brahmins_already_active
 					tooltip = {
 						unlock_estate = { estate = estate_brahmins }
 					}
 				}
-				custom_tooltip = re_religion_jainism_estate_brahmins_tt
+				custom_tooltip = rce_religion_jainism_estate_brahmins_tt
 			}
 			tooltip = {
 				disable_estate_effect = { estate = estate_jains }
 			}
-			re_set_religion_mechanic_sukha_value = { value = 0 }
-			re_export_yearly_religion_mechanic_sukha_value_gain = yes
+			rce_set_religion_mechanic_sukha_value = { value = 0 }
+			rce_export_yearly_religion_mechanic_sukha_value_gain = yes
 			add_prestige = -50
 			add_country_modifier = {
 				name = "conversion_zeal"
@@ -2454,7 +2454,7 @@ dharmic = {
 }
 
 pagan = {
-	defender_of_faith = yes # Religions Expanded
+	defender_of_faith = yes # Religions & Cultures Expanded
 
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
@@ -2631,7 +2631,7 @@ pagan = {
 		heretic = { WAGYLKOOP MOORAMOORA GINGARRURNDE }
 	}
 
-	# Religions Expanded
+	# Religions & Cultures Expanded
 	vidilist = {
 		icon = 32
 		color = { 66 70 81 }
@@ -2648,8 +2648,8 @@ pagan = {
 
 		on_convert = {
 			change_religion = vidilist
-			re_set_religion_mechanic_sylvan_affinity_value = { value = 0 }
-			re_export_monthly_religion_mechanic_sylvan_affinity_value_gain = yes
+			rce_set_religion_mechanic_sylvan_affinity_value = { value = 0 }
+			rce_export_monthly_religion_mechanic_sylvan_affinity_value_gain = yes
 		}
 
 		heretic = { DRUWINGI VISAMOKINGAS DIEVISKIS }
@@ -2795,9 +2795,9 @@ zoroastrian_group = {
 	defender_of_faith = yes
 	zoroastrian = {
 		icon = 26
-		color = { 178 38 76 } # Religions Expanded
+		color = { 178 38 76 } # Religions & Cultures Expanded
 		allowed_conversion = {
-			manichaeism # Religions Expanded
+			manichaeism # Religions & Cultures Expanded
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -2828,10 +2828,10 @@ zoroastrian_group = {
 			blessing_dakhma
 		}
 
-		heretic = { MAZDAKI } # Religions Expanded
+		heretic = { MAZDAKI } # Religions & Cultures Expanded
 	}
 
-	# Religions Expanded
+	# Religions & Cultures Expanded
 	manichaeism = {
 		icon = 34
 		color = { 166 108 146 }
@@ -2841,7 +2841,7 @@ zoroastrian_group = {
 		country = {
 			fire_damage = 0.1
 			num_accepted_cultures = 2
-			re_monthly_religion_mechanic_manichaeism_purity_change = -0.25
+			rce_monthly_religion_mechanic_manichaeism_purity_change = -0.25
 		}
 		country_as_secondary = {
 			fire_damage = 0.1
@@ -2851,8 +2851,8 @@ zoroastrian_group = {
 
 		on_convert = {
 			change_religion = manichaeism
-			re_set_religion_mechanic_manichaeism_purity_value = { value = 0 }
-			re_export_monthly_religion_mechanic_manichaeism_purity_value_gain = yes
+			rce_set_religion_mechanic_manichaeism_purity_value = { value = 0 }
+			rce_export_monthly_religion_mechanic_manichaeism_purity_value_gain = yes
 		}
 
 		heretic = { MAZDAKI }

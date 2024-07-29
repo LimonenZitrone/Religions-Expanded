@@ -4439,7 +4439,7 @@ tur_persian_conquest = {
 					limit = {
 						OR = {
 							culture = turkish
-							culture = oghuz_culture # Religions Expanded
+							culture = oghuz_culture # Religions & Cultures Expanded
 						}
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -4450,7 +4450,7 @@ tur_persian_conquest = {
 					limit = {
 						OR = {
 							culture = turkish
-							culture = oghuz_culture # Religions Expanded
+							culture = oghuz_culture # Religions & Cultures Expanded
 						}
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -4472,7 +4472,7 @@ tur_persian_conquest = {
 		provinces_to_highlight = {
 			OR = {
 				culture = turkish
-				culture = oghuz_culture # Religions Expanded
+				culture = oghuz_culture # Religions & Cultures Expanded
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -4480,7 +4480,7 @@ tur_persian_conquest = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					culture = turkish
-					culture = oghuz_culture # Religions Expanded
+					culture = oghuz_culture # Religions & Cultures Expanded
 				}
 				value = 30
 			}

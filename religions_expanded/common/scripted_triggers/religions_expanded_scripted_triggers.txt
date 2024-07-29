@@ -1,7 +1,0 @@
-re_uses_religion_mechanic = {
-	re_uses_religion_mechanic_$mechanic$ = yes
-}
-
-re_not_uses_religion_mechanic = {
-	re_not_uses_religion_mechanic_$mechanic$ = yes
-}

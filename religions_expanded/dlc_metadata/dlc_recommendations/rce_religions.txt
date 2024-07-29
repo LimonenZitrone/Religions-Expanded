@@ -1,0 +1,118 @@
+# DLC info for the lobby used to show information for new religions and mechanics
+# Country Info
+rce_entry_country_religion_info_hinduism = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_entry_tooltip"
+		tooltip_reason = ""
+		weight = 60
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			religion = hinduism
+		}
+	}
+}
+# Country
+rce_entry_country_change_religion_tibetan_buddhism = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 50
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			rce_religion_initialization_tibetan_buddhism_is_starting_country = yes
+		}
+	}
+}
+
+# Province
+rce_entry_province_change_religion_jainism = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_jainism_is_starting_province = yes
+			}
+		}
+	}
+}
+rce_entry_province_change_religion_tibetan_buddhism = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_tibetan_buddhism_is_starting_province = yes
+			}
+		}
+	}
+}
+rce_entry_province_change_religion_vidilist = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_vidilist_is_starting_province = yes
+			}
+		}
+	}
+}
+rce_entry_province_change_religion_nestorian = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_nestorian_is_starting_province = yes
+			}
+		}
+	}
+}
+rce_entry_province_change_religion_manichaeism = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_manichaeism_is_starting_province = yes
+			}
+		}
+	}
+}
+rce_entry_province_change_religion_bogomilist = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_bogomilist_is_starting_province = yes
+			}
+		}
+	}
+}
+rce_entry_province_change_religion_coptic = {
+	reason = {
+		tooltip_desc = "rce_lobby_info_religion_entry_tooltip"
+		tooltip_reason = ""
+		weight = 40
+		trigger = {
+			NOT = { has_global_flag = rce_religions_initialized }
+			any_owned_province = {
+				rce_religion_initialization_coptic_is_starting_province = yes
+			}
+		}
+	}
+}

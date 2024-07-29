@@ -1,0 +1,20 @@
+ottoman_great_navy = {
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			primary_culture = turkish
+			primary_culture = oghuz_culture # Religions & Cultures Expanded
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		global_ship_cost = -0.1
+		naval_forcelimit_modifier = 0.2
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 18
+}

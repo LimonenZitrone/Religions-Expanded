@@ -1,0 +1,5 @@
+estate_church = {
+	privileges = {
+		rce_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary
+	}
+}

@@ -49,7 +49,7 @@ country_decisions = {
 		allow = {
 			OR = {
 				religion = vajrayana
-				religion = tibetan_buddhism # Religions Expanded
+				religion = tibetan_buddhism # Religions & Cultures Expanded
 			}
 			is_at_war = no
 			is_free_or_tributary_trigger = yes

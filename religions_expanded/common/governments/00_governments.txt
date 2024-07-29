@@ -1261,7 +1261,7 @@ theocracy = {
 				egyptian_government_reform
 				blood_theocracy_reform
 
-				# Religions Expanded:
+				# Religions & Cultures Expanded:
 				nestorian_patriarchy_constantinople_reform
 			}
 		}

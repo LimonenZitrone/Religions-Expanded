@@ -546,80 +546,80 @@ guiTypes = {
 			format = centre
 		}
 
-		###########################################
-		## START Religions Expanded Custom GUI 1 ##
-		###########################################
+		######################################################
+		## START Religions & Cultures Expanded Custom GUI 1 ##
+		######################################################
 
 		######################
 		### Hindu Mechanic ###
 		######################
 		windowType = {
-			name = "re_religion_mechanic_hindu_window"
+			name = "rce_religion_mechanic_hindu_window"
 			position = { x = 0 y = 230 }
 			scripted = yes
 
 			guiButtonType = {
-				name = "re_religion_mechanic_hindu_spend_dedication_button"
+				name = "rce_religion_mechanic_hindu_spend_dedication_button"
 				position = { x = 17 y = 40 }
-				spriteType = "GFX_re_religion_mechanic_hindu_spend_dedication_button"
+				spriteType = "GFX_rce_religion_mechanic_hindu_spend_dedication_button"
 				scripted = yes
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_hindu_reset_minor_deity_button"
+				name = "rce_religion_mechanic_hindu_reset_minor_deity_button"
 				position = { x = 137 y = 3 }
-				spriteType = "GFX_re_religion_mechanic_hindu_reset_minor_deity_button"
+				spriteType = "GFX_rce_religion_mechanic_hindu_reset_minor_deity_button"
 				scripted = yes
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_hindu_toggle_dedication_focus_button"
+				name = "rce_religion_mechanic_hindu_toggle_dedication_focus_button"
 				position = { x = 17 y = 68 }
-				spriteType = "GFX_re_religion_mechanic_hindu_toggle_dedication_focus_button"
+				spriteType = "GFX_rce_religion_mechanic_hindu_toggle_dedication_focus_button"
 				scripted = yes
 			}
 
 			iconType = {
-				name = "re_religion_mechanic_hindu_bg"
+				name = "rce_religion_mechanic_hindu_bg"
 				position = { x = 55 y = 5 }
-				spriteType = "GFX_re_religion_mechanic_hindu_bg"
+				spriteType = "GFX_rce_religion_mechanic_hindu_bg"
 				alwaystransparent = yes
 			}
 			iconType = {
-				name = "re_religion_mechanic_hindu_minor_deity_bg"
+				name = "rce_religion_mechanic_hindu_minor_deity_bg"
 				position = { x = 80 y = 30 }
-				spriteType = "GFX_re_religion_mechanic_hindu_empty_button"
+				spriteType = "GFX_rce_religion_mechanic_hindu_empty_button"
 				scale = 0.8
 				alwaystransparent = yes
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_hindu_major_deity_shiva_button"
+				name = "rce_religion_mechanic_hindu_major_deity_shiva_button"
 				position = { x = 53 y = 2 }
-				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_shiva"
+				spriteType = "GFX_rce_religion_mechanic_hindu_major_deity_shiva"
 				scale = 0.8
 				scripted = yes
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_hindu_major_deity_brahma_button"
+				name = "rce_religion_mechanic_hindu_major_deity_brahma_button"
 				position = { x = 53 y = 59 }
-				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_brahma"
+				spriteType = "GFX_rce_religion_mechanic_hindu_major_deity_brahma"
 				scale = 0.8
 				scripted = yes
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_hindu_major_deity_vishnu_button"
+				name = "rce_religion_mechanic_hindu_major_deity_vishnu_button"
 				position = { x = 119 y = 35 }
-				spriteType = "GFX_re_religion_mechanic_hindu_major_deity_vishnu"
+				spriteType = "GFX_rce_religion_mechanic_hindu_major_deity_vishnu"
 				scale = 0.8
 				scripted = yes
 			}
 
 			iconType = {
-				name = "re_religion_mechanic_hindu_right_bg"
+				name = "rce_religion_mechanic_hindu_right_bg"
 				position = { x = 162 y = 2 }
 				spriteType = "GFX_region_area_banner_red"
 				alwaystransparent = yes
 			}
 			instantTextBoxType = {
-				name = "re_religion_mechanic_hindu_selected_major_deity_name"
+				name = "rce_religion_mechanic_hindu_selected_major_deity_name"
 				position = { x = 200 y = 8 }
 				font = "vic_18"
 				format = centre
@@ -629,31 +629,31 @@ guiTypes = {
 				scripted = yes
 			}
 			windowType = {
-				name = "re_religion_mechanic_hindu_bar_window"
+				name = "rce_religion_mechanic_hindu_bar_window"
 				position = { x = 178 y = 45 }
 
 				iconType = {
-					name = "re_religion_mechanic_hindu_dedication_bar_bg"
+					name = "rce_religion_mechanic_hindu_dedication_bar_bg"
 					position = { x = 6 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_bg"
+					spriteType = "GFX_rce_religion_mechanic_hindu_dedication_bar_bg"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_hindu_dedication_bar"
+					name = "rce_religion_mechanic_hindu_dedication_bar"
 					position = { x = 6 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar"
+					spriteType = "GFX_rce_religion_mechanic_hindu_dedication_bar"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_hindu_dedication_bar_frame"
+					name = "rce_religion_mechanic_hindu_dedication_bar_frame"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_hindu_dedication_bar_frame"
+					spriteType = "GFX_rce_religion_mechanic_hindu_dedication_bar_frame"
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
-					name = "re_religion_mechanic_hindu_dedication_level_text"
+					name = "rce_religion_mechanic_hindu_dedication_level_text"
 					position = { x = 6 y = 4 }
 					font = "garamond_14"
 					format = centre
@@ -664,7 +664,7 @@ guiTypes = {
 				}
 			}
 			instantTextBoxType = {
-				name = "re_religion_mechanic_hindu_dynamic_modifier_text"
+				name = "rce_religion_mechanic_hindu_dynamic_modifier_text"
 				position = { x = 134 y = 84 }
 				font = "vic_18"
 				format = centre
@@ -675,9 +675,9 @@ guiTypes = {
 			}
 		}
 
-		###########################################
-		##  END Religions Expanded Custom GUI 1  ##
-		###########################################
+		######################################################
+		##  END Religions & Cultures Expanded Custom GUI 1  ##
+		######################################################
 
 ############## ORTHODOX PATRIARCH AUTHORITY	######
 
@@ -1395,17 +1395,17 @@ guiTypes = {
 			iconType =
 			{
 				name ="religion_overlay_hindu_bg"
-				spriteType = "GFX_frontend_checksum" # Religions Expanded (transparent)
+				spriteType = "GFX_frontend_checksum" # Religions & Cultures Expanded (transparent)
 				position = { x= 0 y = -70 }
 				alwaystransparent = yes
 			}
 
-			guiButtonType = { # Religions Expanded (moved further up in the file)
+			guiButtonType = { # Religions & Cultures Expanded (moved further up in the file)
 				name = "pick_deity"
-				position = { x=48 y = -40} # Religions Expanded
-				quadTextureSprite ="GFX_re_religion_mechanic_hindu_empty_button" # Religions Expanded
-				scale = 0.8 # Religions Expanded
-				buttonText = "" # Religions Expanded
+				position = { x=48 y = -40} # Religions & Cultures Expanded
+				quadTextureSprite ="GFX_rce_religion_mechanic_hindu_empty_button" # Religions & Cultures Expanded
+				scale = 0.8 # Religions & Cultures Expanded
+				buttonText = "" # Religions & Cultures Expanded
 				buttonFont = "vic_18"
 				Orientation = "LEFT"
 			}
@@ -1414,42 +1414,42 @@ guiTypes = {
 			{
 				name ="no_deity_icon"
 				spriteType = "GFX_icon_religion"
-				position = { x = 52 y = -37 } # Religions Expanded
+				position = { x = 52 y = -37 } # Religions & Cultures Expanded
 				Orientation = "UPPER_LEFT"
-				scale = 0.515 # Religions Expanded
-				alwaystransparent = yes # Religions Expanded
+				scale = 0.515 # Religions & Cultures Expanded
+				alwaystransparent = yes # Religions & Cultures Expanded
 			}
 
 			iconType =
 			{
 				name ="deity_icon"
 				spriteType = "GFX_hindu_deities_strip"
-				position = { x = 52 y = -36 } # Religions Expanded
-				scale = 0.817 # Religions Expanded
+				position = { x = 52 y = -36 } # Religions & Cultures Expanded
+				scale = 0.817 # Religions & Cultures Expanded
 			}
 
 			instantTextBoxType = {
 				name = "deity_name"
-				position = { x= 168 y = -42 } # Religions Expanded
+				position = { x= 168 y = -42 } # Religions & Cultures Expanded
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "RV_NO_DEITY"
-				maxWidth = 130 # Religions Expanded
+				maxWidth = 130 # Religions & Cultures Expanded
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
-				format = centre # Religions Expanded
+				format = centre # Religions & Cultures Expanded
 			}
 
 			instantTextBoxType = {
 				name = "deity_effect"
-				position = { x = 102 y = -4 } # Religions Expanded
+				position = { x = 102 y = -4 } # Religions & Cultures Expanded
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 235 # Religions Expanded
+				maxWidth = 235 # Religions & Cultures Expanded
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
-				format = centre # Religions Expanded
+				format = centre # Religions & Cultures Expanded
 			}
 		}
 
@@ -2491,20 +2491,20 @@ guiTypes = {
 				format = center
 			}
 
-		###########################################
-		## START Religions Expanded Custom GUI 2 ##
-		###########################################
+		######################################################
+		## START Religions & Cultures Expanded Custom GUI 2 ##
+		######################################################
 
 		#######################################
 		### Anglican Church Aspects Overlay ###
 		#######################################
 		windowType = {
-			name = "re_religion_mechanic_anglican_church_aspects_overlay_window"
+			name = "rce_religion_mechanic_anglican_church_aspects_overlay_window"
 			position = { x = 32 y = 300 }
 			scripted = yes
 
 			iconType = {
-				name = "re_religion_mechanic_anglican_church_aspects_overlay_icon"
+				name = "rce_religion_mechanic_anglican_church_aspects_overlay_icon"
 				position = { x = 10 y = -43 }
 				spriteType = "GFX_anglican_aspects_icon_strip_overlay"
 				alwaystransparent = yes
@@ -2516,18 +2516,18 @@ guiTypes = {
 		### Sukha Mechanic ###
 		######################
 		windowType = {
-			name = "re_religion_mechanic_sukha_window"
+			name = "rce_religion_mechanic_sukha_window"
 			position = { x = 0 y = 240 }
 			scripted = yes
 
 			iconType = {
-				name = "re_religion_mechanic_sukha_banner"
+				name = "rce_religion_mechanic_sukha_banner"
 				position = { x = 50 y = 0 }
 				spriteType = "GFX_region_area_banner_red"
 				alwaystransparent = yes
 			}
 			instantTextBoxType = {
-				name = "re_religion_mechanic_sukha_title"
+				name = "rce_religion_mechanic_sukha_title"
 				position = { x = 95 y = 6 }
 				font = "vic_18"
 				format = centre
@@ -2537,7 +2537,7 @@ guiTypes = {
 				scripted = yes
 			}
 			instantTextBoxType = {
-				name = "re_religion_mechanic_sukha_value_text"
+				name = "rce_religion_mechanic_sukha_value_text"
 				position = { x = 95 y = 26 }
 				font = "vic_18"
 				format = centre
@@ -2547,46 +2547,46 @@ guiTypes = {
 				scripted = yes
 			}
 			windowType = {
-				name = "re_religion_mechanic_sukha_bar_window"
+				name = "rce_religion_mechanic_sukha_bar_window"
 				position = { x = 18 y = 55 }
 
 				iconType = {
-					name = "re_religion_mechanic_sukha_bar_bg"
+					name = "rce_religion_mechanic_sukha_bar_bg"
 					position = { x = 14 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_sukha_bar_bg"
+					spriteType = "GFX_rce_religion_mechanic_sukha_bar_bg"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_sukha_bar"
+					name = "rce_religion_mechanic_sukha_bar"
 					position = { x = 14 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_sukha_bar"
+					spriteType = "GFX_rce_religion_mechanic_sukha_bar"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_sukha_bar_overlay"
+					name = "rce_religion_mechanic_sukha_bar_overlay"
 					position = { x = 14 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_sukha_bar_overlay"
+					spriteType = "GFX_rce_religion_mechanic_sukha_bar_overlay"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_sukha_bar_frame"
+					name = "rce_religion_mechanic_sukha_bar_frame"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_sukha_bar_frame"
+					spriteType = "GFX_rce_religion_mechanic_sukha_bar_frame"
 					alwaystransparent = yes
 				}
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_sukha_meditate_button"
+				name = "rce_religion_mechanic_sukha_meditate_button"
 				position = { x = 240 y = 5 }
-				spriteType = "GFX_re_religion_mechanic_sukha_meditate_button"
+				spriteType = "GFX_rce_religion_mechanic_sukha_meditate_button"
 				scripted = yes
 			}
 			guiButtonType = {
-				name = "re_religion_mechanic_sukha_sponsor_festival_button"
+				name = "rce_religion_mechanic_sukha_sponsor_festival_button"
 				position = { x = 290 y = 5 }
-				spriteType = "GFX_re_religion_mechanic_sukha_sponsor_festival_button"
+				spriteType = "GFX_rce_religion_mechanic_sukha_sponsor_festival_button"
 				scripted = yes
 			}
 		}
@@ -2595,18 +2595,18 @@ guiTypes = {
 		### Four Tenets System Mechanic ###
 		##################################
 		windowType = {
-			name = "re_religion_mechanic_four_tenets_system_window"
+			name = "rce_religion_mechanic_four_tenets_system_window"
 			position = { x = 30 y = 237 }
 			scripted = yes
 
 			iconType = {
-				name = "re_religion_mechanic_four_tenets_system_banner"
+				name = "rce_religion_mechanic_four_tenets_system_banner"
 				position = { x = 8 y = 0 }
 				spriteType = "GFX_war_overview_land_banner"
 				alwaystransparent = yes
 			}
 			instantTextBoxType = {
-				name = "re_religion_mechanic_four_tenets_system_title"
+				name = "rce_religion_mechanic_four_tenets_system_title"
 				position = { x = 27 y = 8 }
 				font = "vic_18"
 				format = centre
@@ -2617,205 +2617,205 @@ guiTypes = {
 			}
 
 			guiButtonType = {
-				name = "re_religion_mechanic_four_tenets_system_meditate_button"
+				name = "rce_religion_mechanic_four_tenets_system_meditate_button"
 				position = { x = 257 y = 1 }
-				spriteType = "GFX_re_religion_mechanic_four_tenets_system_meditate_button"
+				spriteType = "GFX_rce_religion_mechanic_four_tenets_system_meditate_button"
 				scripted = yes
 			}
 
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_2_bar_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_2_bar_window"
 				position = { x = 43 y = 51 }
 
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_bar_bg"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_bar_bg"
 					position = { x = 0 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_bg"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_bar"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_bar"
 					position = { x = 0 y = 4 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_bar_full"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_bar_full"
 					position = { x = 0 y = 4 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_full"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_bar_frame"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_bar_frame"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_frame"
 					scripted = yes
 				}
 			}
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_3_bar_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_3_bar_window"
 				position = { x = 143 y = 51 }
 
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_bar_bg"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_bar_bg"
 					position = { x = 0 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_bg"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_bar"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_bar"
 					position = { x = 0 y = 4 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_bar_full"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_bar_full"
 					position = { x = 0 y = 4 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_full"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_bar_frame"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_bar_frame"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_frame"
 					scripted = yes
 				}
 			}
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_4_bar_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_4_bar_window"
 				position = { x = 243 y = 51 }
 
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_bar_bg"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_bar_bg"
 					position = { x = 0 y = 5 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_bg"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_bg"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_bar"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_bar"
 					position = { x = 0 y = 4 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_bar_full"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_bar_full"
 					position = { x = 0 y = 4 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_full"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_full"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_bar_frame"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_bar_frame"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_bar_frame"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_bar_frame"
 					scripted = yes
 				}
 			}
 
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_1_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_1_window"
 				position = { x = 0 y = 40 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_1_button"
+					name = "rce_religion_mechanic_four_tenets_system_ability_1_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_1_button_selected"
+					name = "rce_religion_mechanic_four_tenets_system_ability_1_button_selected"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button_selected"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_1_icon"
+					name = "rce_religion_mechanic_four_tenets_system_ability_1_icon"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_1_icon_strip"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_ability_1_icon_strip"
 					alwaystransparent = yes
 					scripted = yes
 				}
 			}
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_2_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_2_window"
 				position = { x = 100 y = 40 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_button"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_button_selected"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_button_selected"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button_selected"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_2_icon"
+					name = "rce_religion_mechanic_four_tenets_system_ability_2_icon"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_2_icon_strip"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_ability_2_icon_strip"
 					alwaystransparent = yes
 					scripted = yes
 				}
 			}
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_3_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_3_window"
 				position = { x = 200 y = 40 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_button"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_button_selected"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_button_selected"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button_selected"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_3_icon"
+					name = "rce_religion_mechanic_four_tenets_system_ability_3_icon"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_3_icon_strip"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_ability_3_icon_strip"
 					alwaystransparent = yes
 					scripted = yes
 				}
 			}
 			windowType = {
-				name = "re_religion_mechanic_four_tenets_system_ability_4_window"
+				name = "rce_religion_mechanic_four_tenets_system_ability_4_window"
 				position = { x = 300 y = 40 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_button"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_button_selected"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_button_selected"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_button_selected"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_button_selected"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_four_tenets_system_ability_4_icon"
+					name = "rce_religion_mechanic_four_tenets_system_ability_4_icon"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_four_tenets_system_ability_4_icon_strip"
+					spriteType = "GFX_rce_religion_mechanic_four_tenets_system_ability_4_icon_strip"
 					alwaystransparent = yes
 					scripted = yes
 				}
@@ -2826,7 +2826,7 @@ guiTypes = {
 		### Sylvan Affinity Mechanic ###
 		################################
 		windowType = {
-			name = "re_religion_mechanic_sylvan_affinity_window"
+			name = "rce_religion_mechanic_sylvan_affinity_window"
 			position = { x = 32 y = 237 }
 			scripted = yes
 
@@ -2835,15 +2835,15 @@ guiTypes = {
 				position = { x = 0 y = 9 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
+					name = "rce_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
 					position = { x = 38 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_consecrate_new_grove_button"
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
+					name = "rce_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
 					position = { x = 106 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_select_seasonal_affinity_button"
 					scripted = yes
 				}
 			}
@@ -2852,27 +2852,27 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_sergetoja_button"
+					name = "rce_religion_mechanic_sylvan_affinity_sergetoja_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_sergetoja_button"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_sergetoja_button"
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_nukirpeja_button"
+					name = "rce_religion_mechanic_sylvan_affinity_nukirpeja_button"
 					position = { x = 0 y = 45 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_nukirpeja_button"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_nukirpeja_button"
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_audeja_button"
+					name = "rce_religion_mechanic_sylvan_affinity_audeja_button"
 					position = { x = 170 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_audeja_button"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_audeja_button"
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_verpiancioji_button"
+					name = "rce_religion_mechanic_sylvan_affinity_verpiancioji_button"
 					position = { x = 170 y = 45 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_verpiancioji_button"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_verpiancioji_button"
 					scripted = yes
 				}
 			}
@@ -2887,10 +2887,10 @@ guiTypes = {
 					iconType = {
 						name = "background"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_value_bg"
+						spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_value_bg"
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_total_value_title"
+						name = "rce_religion_mechanic_sylvan_affinity_total_value_title"
 						position = { x = 6 y = 3 }
 						format = left
 						font = "vic_18"
@@ -2900,7 +2900,7 @@ guiTypes = {
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_total_value"
+						name = "rce_religion_mechanic_sylvan_affinity_total_value"
 						position = { x = 95 y = 3 }
 						format = right
 						font = "vic_18"
@@ -2917,10 +2917,10 @@ guiTypes = {
 					iconType = {
 						name = "background"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_value_bg"
+						spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_value_bg"
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_monthly_value_title"
+						name = "rce_religion_mechanic_sylvan_affinity_monthly_value_title"
 						position = { x = 6 y = 3 }
 						format = left
 						font = "vic_18"
@@ -2930,7 +2930,7 @@ guiTypes = {
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_monthly_value"
+						name = "rce_religion_mechanic_sylvan_affinity_monthly_value"
 						position = { x = 95 y = 3 }
 						format = right
 						font = "vic_18"
@@ -2943,14 +2943,14 @@ guiTypes = {
 			}
 
 			windowType = {
-				name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_window"
+				name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_window"
 				position = { x = -39 y = -9 }
 				scripted = yes
 
 				iconType = {
 					name = "background"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_bg"
+					spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_bg"
 				}
 
 				windowType = {
@@ -2960,10 +2960,10 @@ guiTypes = {
 					iconType = {
 						name = "season_icon"
 						position = { x = 4 y = 4 }
-						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_icon"
+						spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_icon"
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_title"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_title"
 						position = { x = 85 y = 4 }
 						format = center
 						font = "vic_29"
@@ -2973,7 +2973,7 @@ guiTypes = {
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_desc"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_desc"
 						position = { x = 85 y = 28 }
 						format = center
 						font = "vic_18"
@@ -2984,7 +2984,7 @@ guiTypes = {
 						scripted = yes
 					}
 					guiButtonType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_button"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_spring_button"
 						position = { x = 372 y = 27 }
 						spriteType = "GFX_standard_button_71"
 						buttonText = "SELECT"
@@ -2999,10 +2999,10 @@ guiTypes = {
 					iconType = {
 						name = "season_icon"
 						position = { x = 4 y = 4 }
-						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_icon"
+						spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_icon"
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_title"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_title"
 						position = { x = 85 y = 5 }
 						format = center
 						font = "vic_29"
@@ -3012,7 +3012,7 @@ guiTypes = {
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_desc"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_desc"
 						position = { x = 85 y = 28 }
 						format = center
 						font = "vic_18"
@@ -3023,7 +3023,7 @@ guiTypes = {
 						scripted = yes
 					}
 					guiButtonType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_button"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_summer_button"
 						position = { x = 372 y = 27 }
 						spriteType = "GFX_standard_button_71"
 						buttonText = "SELECT"
@@ -3038,10 +3038,10 @@ guiTypes = {
 					iconType = {
 						name = "season_icon"
 						position = { x = 4 y = 4 }
-						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_icon"
+						spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_icon"
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_title"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_title"
 						position = { x = 85 y = 4 }
 						format = center
 						font = "vic_29"
@@ -3051,7 +3051,7 @@ guiTypes = {
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_desc"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_desc"
 						position = { x = 85 y = 28 }
 						format = center
 						font = "vic_18"
@@ -3062,7 +3062,7 @@ guiTypes = {
 						scripted = yes
 					}
 					guiButtonType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_button"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_fall_button"
 						position = { x = 372 y = 27 }
 						spriteType = "GFX_standard_button_71"
 						buttonText = "SELECT"
@@ -3077,10 +3077,10 @@ guiTypes = {
 					iconType = {
 						name = "season_icon"
 						position = { x = 4 y = 4 }
-						spriteType = "GFX_re_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_icon"
+						spriteType = "GFX_rce_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_icon"
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_title"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_title"
 						position = { x = 85 y = 4 }
 						format = center
 						font = "vic_29"
@@ -3090,7 +3090,7 @@ guiTypes = {
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_desc"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_desc"
 						position = { x = 85 y = 28 }
 						format = center
 						font = "vic_18"
@@ -3101,7 +3101,7 @@ guiTypes = {
 						scripted = yes
 					}
 					guiButtonType = {
-						name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_button"
+						name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_winter_button"
 						position = { x = 372 y = 27 }
 						spriteType = "GFX_standard_button_71"
 						buttonText = "SELECT"
@@ -3111,7 +3111,7 @@ guiTypes = {
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_close_button"
+					name = "rce_religion_mechanic_sylvan_affinity_seasonal_affinity_selection_close_button"
 					position = { x = 245 y = 353 }
 					spriteType = "GFX_standard_button_71"
 					buttonText = "BACK"
@@ -3127,18 +3127,18 @@ guiTypes = {
 		### Nestorian Patriarchy Mechanic ###
 		#####################################
 		windowType = {
-			name = "re_religion_mechanic_nestorian_patriarchy_window"
+			name = "rce_religion_mechanic_nestorian_patriarchy_window"
 			position = { x = 41 y = 238 }
 			scripted = yes
 
 			iconType = {
 				name = "background"
 				position = { x = 0 y = 0 }
-				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_religion_tab_bg"
+				spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_religion_tab_bg"
 			}
 
 			instantTextBoxType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_center_of_reformation_current_text"
+				name = "rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_current_text"
 				position = { x = 10 y = 13 }
 				format = center
 				font = "vic_22"
@@ -3149,7 +3149,7 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_patriarch_influence_value"
+				name = "rce_religion_mechanic_nestorian_patriarchy_patriarch_influence_value"
 				position = { x = 37 y = 58 }
 				format = center
 				font = "vic_22"
@@ -3160,7 +3160,7 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_holy_sites_amount_text"
+				name = "rce_religion_mechanic_nestorian_patriarchy_holy_sites_amount_text"
 				position = { x = 158 y = 58 }
 				format = center
 				font = "vic_22"
@@ -3175,13 +3175,13 @@ guiTypes = {
 				position = { x = 241 y = 6 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag_empty"
+					name = "rce_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag_empty"
 					position = { x = 0 y = 0 }
 					spriteType = "GFX_shield_small"
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag"
+					name = "rce_religion_mechanic_nestorian_patriarchy_patriarch_controller_flag"
 					position = { x = 0 y = 0 }
 					spriteType = "GFX_shield_small"
 					scripted = yes
@@ -3189,11 +3189,11 @@ guiTypes = {
 			}
 
 			guiButtonType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button"
+				name = "rce_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button"
 				position = { x = 210 y = 52 }
 				spriteType = "GFX_button_straight_96_32"
 				buttonFont = "vic_18"
-				buttonText = "re_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button_text"
+				buttonText = "rce_religion_mechanic_nestorian_patriarchy_main_window_religion_tab_open_button_text"
 				scripted = yes
 			}
 		}
@@ -3202,7 +3202,7 @@ guiTypes = {
 		### Manichaeism Purity Mechanic ###
 		###################################
 		windowType = {
-			name = "re_religion_mechanic_manichaeism_purity_window"
+			name = "rce_religion_mechanic_manichaeism_purity_window"
 			position = { x = 37 y = 235 }
 			scripted = yes
 
@@ -3213,11 +3213,11 @@ guiTypes = {
 				iconType = {
 					name = "background"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_value_bg"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_value_bg"
 				}
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_manichaeism_purity_value_text"
+					name = "rce_religion_mechanic_manichaeism_purity_value_text"
 					position = { x = 5 y = 5 }
 					format = center
 					font = "vic_22"
@@ -3229,9 +3229,9 @@ guiTypes = {
 			}
 
 			guiButtonType = {
-				name = "re_religion_mechanic_manichaeism_purity_knowledge_button"
+				name = "rce_religion_mechanic_manichaeism_purity_knowledge_button"
 				position = { x = 0 y = 46 }
-				spriteType = "GFX_re_religion_mechanic_manichaeism_purity_knowledge_button"
+				spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_knowledge_button"
 				scripted = yes
 			}
 
@@ -3240,16 +3240,16 @@ guiTypes = {
 				position = { x = 60 y = 5 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_wind_button"
+					name = "rce_religion_mechanic_manichaeism_purity_wind_button"
 					position = { x = 58 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_wind_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_wind_button"
 					scripted = yes
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_light_button"
+					name = "rce_religion_mechanic_manichaeism_purity_light_button"
 					position = { x = 197 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_light_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_light_button"
 					scripted = yes
 				}
 			}
@@ -3258,23 +3258,23 @@ guiTypes = {
 				position = { x = 60 y = 47 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_air_button"
+					name = "rce_religion_mechanic_manichaeism_purity_air_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_air_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_air_button"
 					scripted = yes
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_water_button"
+					name = "rce_religion_mechanic_manichaeism_purity_water_button"
 					position = { x = 58 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_water_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_water_button"
 					scripted = yes
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_fire_button"
+					name = "rce_religion_mechanic_manichaeism_purity_fire_button"
 					position = { x = 197 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_fire_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_fire_button"
 					scripted = yes
 				}
 			}
@@ -3283,36 +3283,36 @@ guiTypes = {
 				position = { x = 160 y = 0 }
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_moon_button"
+					name = "rce_religion_mechanic_manichaeism_purity_moon_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_moon_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_moon_button"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_manichaeism_purity_moon_selected_icon"
+					name = "rce_religion_mechanic_manichaeism_purity_moon_selected_icon"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_moon_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_moon_button"
 					scripted = yes
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_manichaeism_purity_sun_button"
+					name = "rce_religion_mechanic_manichaeism_purity_sun_button"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_sun_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_sun_button"
 					scripted = yes
 				}
 				iconType = {
-					name = "re_religion_mechanic_manichaeism_purity_sun_selected_icon"
+					name = "rce_religion_mechanic_manichaeism_purity_sun_selected_icon"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_manichaeism_purity_sun_button"
+					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_sun_button"
 					scripted = yes
 				}
 			}
 		}
 
-		###########################################
-		##  END Religions Expanded Custom GUI 2  ##
-		###########################################
+		######################################################
+		##  END Religions & Cultures Expanded Custom GUI 2  ##
+		######################################################
 
 		windowType = {
 			name = "countryreligionview_convert"
@@ -3578,28 +3578,28 @@ guiTypes = {
 				position = { x= -27 y = -72 }
 			}
 
-			###########################################
-			## START Religions Expanded Custom GUI 3 ##
-			###########################################
+			######################################################
+			## START Religions & Cultures Expanded Custom GUI 3 ##
+			######################################################
 
 			##########################################
 			### Bogomilist Church Aspects Mechanic ###
 			##########################################
 			windowType = {
-				name = "re_religion_mechanic_bogomilist_church_aspects_window"
+				name = "rce_religion_mechanic_bogomilist_church_aspects_window"
 				position = { x = 8 y = -57 }
 				scripted = yes
 
 				iconType = {
 					name = "background"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_bogomilist_church_aspects_bg"
+					spriteType = "GFX_rce_religion_mechanic_bogomilist_church_aspects_bg"
 				}
 			}
 
-			###########################################
-			##  END Religions Expanded Custom GUI 3  ##
-			###########################################
+			######################################################
+			##  END Religions & Cultures Expanded Custom GUI 3  ##
+			######################################################
 
 			listboxType =
 			{
@@ -3639,25 +3639,25 @@ guiTypes = {
 		{
 			name ="deity_item_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= 16 y = -4 } # Religions Expanded
+			position = { x= 16 y = -4 } # Religions & Cultures Expanded
 		}
 
 		instantTextBoxType = {
 			name = "deity_item_name"
-			position = { x= -42 y = 0 } # Religions Expanded
+			position = { x= -42 y = 0 } # Religions & Cultures Expanded
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityName"
-			maxWidth = 50 # Religions Expanded
-			maxHeight = 37 # Religions Expanded
+			maxWidth = 50 # Religions & Cultures Expanded
+			maxHeight = 37 # Religions & Cultures Expanded
 			Orientation = "UPPER_LEFT"
 			format = left
-			vertical_alignment = center # Religions Expanded
+			vertical_alignment = center # Religions & Cultures Expanded
 		}
 
 		instantTextBoxType = {
 			name = "deity_item_effect"
-			position = { x = 62 y = 0 } # Religions Expanded
+			position = { x = 62 y = 0 } # Religions & Cultures Expanded
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityEffect"
@@ -3665,7 +3665,7 @@ guiTypes = {
 			maxHeight = 37
 			Orientation = "UPPER_LEFT"
 			format = left
-			vertical_alignment = center # Religions Expanded
+			vertical_alignment = center # Religions & Cultures Expanded
 		}
 
 		guiButtonType = {

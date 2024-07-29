@@ -25,7 +25,7 @@ country_decisions = {
 			is_emperor_of_china = no
 			OR = {
 				primary_culture = turkish
-				primary_culture = oghuz_culture # Religions Expanded
+				primary_culture = oghuz_culture # Religions & Cultures Expanded
 			}
 			is_colonial_nation = no
 			OR = {
@@ -129,5 +129,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
 }

@@ -1,6 +1,0 @@
-custom_window = {
-	name = re_religion_mechanic_bogomilist_church_aspects_window
-	potential = {
-		re_uses_religion_mechanic = { mechanic = bogomilist_church_aspects }
-	}
-}

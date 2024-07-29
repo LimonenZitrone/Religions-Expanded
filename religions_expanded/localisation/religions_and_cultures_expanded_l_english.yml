@@ -1,0 +1,161 @@
+﻿l_english:
+ # GUIs:
+ rce_state_missionary_button_tt: "§YClerical Administration§! \nYour missionary will take over the administration in the [Root.GetAreaName] state for you. \n\nOnce assigned, the missionary will not be able to be used for conversion. At monthly tick he will be completely removed, until he is unassigned from this task again. Unassigning him will not automatically add him back to automatic conversion, if he was assigned there previously. \n--------------\nThis will have the following effects for the state: \n[statewide_governing_cost]: §G-20.0%§! \n[local_tax_modifier]: §G+25.0%§! \n[local_development_cost]: §G-5.0%§! \n[local_culture_conversion_time]: §G-10.0%§! \n[local_unrest]: §R+2.00§! \n[local_monthly_autonomy]: §R+0.05§!"
+ rce_state_missionary_button_tt_currently_active: "A missionary was assigned to §Y[Root.GetAreaName]§!."
+ rce_state_missionary_button_tt_blocked_no_missionary: "§RYou have no missionaries to assign.§W"
+ rce_state_missionary_button_tt_blocked_state_not_owned: "§RYou do not own all provinces in the §Y[Root.GetAreaName]§! state as your core provinces.§W"
+ rce_state_missionary_button_tt_blocked_state_not_converted: "§RAll provinces in the state must follow your religion. At least §Y1§! province in the §Y[Root.GetAreaName]§! state does not follow the §Y[From.Religion.GetName]§! faith.§W"
+ rce_state_missionary_button_tt_blocked_recently_used: "§RYou can only assign a missionary to a state once per month.§W"
+
+ # Event Modifiers:
+ rce_missionary_assigned_to_state_main_modifier: "Clerical Administration"
+ rce_missionary_assigned_to_state_modifier: "Clerical Administration"
+ rce_religion_reformed_modifier: "Centralized the Faith"
+ rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "Guaranteed Jains Autonomy"
+ desc_rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "The state has guaranteed greater autonomy for the Jains."
+ harmonized_tibetan_buddhism: "Harmonized with the Nang Chos Faith"
+ desc_harmonized_tibetan_buddhism: "We have incorporated the Nang Chos faith in our country and national ethos."
+
+ # Tooltips:
+ RCE_UNTIL_MONARCH_DEATH: "until ruler death"
+ RCE_UNTIL_MONARCH_DEATH_OR_1_YEAR: "for §Y365 days§! or until ruler death"
+ rce_religion_reform_religion_decision_tt: "\n§Y[Root.GetName]§! can now become the §YDefender of the [Root.Religion.GetName] Faith§!."
+ RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_EASTERN: "A country following an §YEastern§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+ RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC: "A country following a §YDharmic§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+ RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_PAGAN: "A country following a §YPagan§! religion must first centralize the faith before being able to become the Defender of the Faith!"
+ rce_tooltip_effect_text: "§YEffects:§!"
+
+ # Decisions:
+ rce_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
+ rce_religion_reform_religion_decision_desc: "The [Root.Religion.GetName] Faith is not as centralized as other religions. This gives us a disadvantage compared to them. We should strive for a stronger centralization to become competitive."
+ rce_formable_decision_assyria_title: "Form Assyria"
+ rce_formable_decision_assyria_desc: "Since we have aquired the Assyrian culture, we must unify the Assyrian people in the nation of Assyria!"
+ rce_formable_decision_empire_of_light_title: "Form the Empire of Light"
+ rce_formable_decision_empire_of_light_desc: "We have to unify the Manichaean people in a spiritual Empire!"
+
+ # Vanilla Events:
+ hindu_events.1.j: "Kali will lead us to wisdom."
+ hindu_events.1.k: "Hanuman will lead us to wisdom."
+
+ # Events:
+ rce_events.EVTNAME1: "Console: Change Religion"
+ rce_events.EVTDESC1: "Pick which new or altered religion you want to convert to."
+ rce_events1.EVTOPT1: "Cancel."
+
+ # Countries:
+ ## Tags:
+ NPA: "Constantinople"
+ NPA_ADJ: "Patriarchal"
+ ## Renames:
+ RCE_FORMABLE_ASSYRIA: "Assyria"
+ RCE_FORMABLE_ASSYRIA_ADJ: "Assyrian"
+ RCE_FORMABLE_EMPIRE_OF_LIGHT: "Empire of Light"
+ RCE_FORMABLE_EMPIRE_OF_LIGHT_ADJ: "Manichaean"
+
+ # Government Reforms:
+ nestorian_patriarchy_constantinople_reform: "Patriarchy"
+ nestorian_patriarchy_constantinople_reform_desc: "A political structure where the nation is governed by a spiritual leader, the Patriarch, the highest ranking office of the Nestorian Church."
+
+ # Government Names:
+ RCE_GOV_NAME_NESTORIAN_PATRIARCHY: "Patriarchy"
+ RCE_GOV_RULER_NESTORIAN_PATRIARCHY: "Patriarch"
+ RCE_GOV_RULER_NESTORIAN_PATRIARCHY_fem: "Matriarch"
+
+ # Vanilla Modifier Names (for customizable localization):
+ RCE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "[Root.GetClergyName] Loyalty Equilibrium"
+
+ # Peace Treaties:
+ rce_peace_treaty_convert_heathen_desc: "@[From.GetTag] §Y[From.GetName]§! will convert to the §Y[Root.Religion.GetName]§! faith. @[Root.GetTag] §Y[Root.GetName]§! gains §G+5.0§! Prestige."
+ CB_ALLOWED_rce_peace_treaty_convert_heathen: "Force Religion (Heathen)"
+ PEACE_rce_peace_treaty_convert_heathen: "Force Religion"
+
+ rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation_desc: "The §Y[From.Religion.GetName]§! Center of Conversion in §Y[rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§! is destroyed. The Patriarchy Controller will not be able to select another Center of Conversion, only the next Patriarchy Controller will be able to again."
+ CB_ALLOWED_rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Destroy Center of Conversion"
+ PEACE_rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Destroy Center of Conversion"
+
+ # Casus Bellis:
+ cb_rce_religion_mechanic_nestorian_patriarchy_excommunication: "Excommunicated Ruler"
+ cb_rce_religion_mechanic_nestorian_patriarchy_excommunication_desc: "Their ruler has been excommunicated."
+ cb_rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation: "Destroy Center of Conversion"
+ cb_rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_desc: "They are the current Nestorian Patriarchy Controller. We must force them to destroy the Center of Conversion that is spreading the Nestorian faith in our lands!"
+
+ # War Goals:
+ rce_religion_mechanic_nestorian_patriarchy_excommunication_war_goal: "Take a province"
+ rce_religion_mechanic_nestorian_patriarchy_excommunication_war_goal_desc: "War goal is to take a province."
+ rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_war_goal: "Show Superiority"
+ rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_war_goal_desc: "War goal is to show them superiority by winning battles."
+
+ # War Names:
+ RCE_RELIGION_MECHANIC_NESTORIAN_PATRIARCHY_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$ War against the Nestorian Patriarchy"
+
+ # State Edicts:
+ rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded: "Silk Road Missionaries"
+ rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries: "Silk Road Missionaries"
+
+ # Estate Privileges:
+ rce_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary: "Patriarchal Emissary"
+ rce_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetClergyName] and the Patriarch."
+
+ rce_religion_jainism_estate_jains_guaranteed_autonomy: "Guaranteed Jains Autonomy"
+ rce_religion_jainism_estate_jains_guaranteed_autonomy_desc: "The [Root.GetJainsName] are held in high regard by our subjects. Granting them greater autonomy would be an effective way to secure their support for the [Root.GovernmentName] and ensure that our differences with them do not erupt into religious strife."
+ rce_religion_jainism_estate_jains_guaranteed_autonomy_effect_tooltip: "Every owned province of the §YJainist§! faith gains: \n[local_missionary_strength]: §R-100.0%§! \n[local_religious_unity_contribution]: §G-100.0%§!"
+ rce_religion_jainism_estate_jains_guaranteed_autonomy_revoke_effect_tooltip: "The modifier §Y'Guaranteed Jains Autonomy'§! is removed from all owned §YJainist§! provinces."
+
+ # Ideas:
+ rce_anatolian_beyliks_ideas: "Anatolian Ideas"
+ rce_anatolian_beyliks_ideas_start: "Anatolian Traditions"
+ rce_anatolian_beyliks_ideas_bonus: "Anatolian Ambition"
+
+ rce_NPA_ideas: "Patriarchal Ideas"
+ rce_NPA_ideas_start: "Patriarchal Traditions"
+ rce_NPA_ideas_bonus: "Patriarchal Ambition"
+ rce_NPA_ideas_1: "Custodians of the City of World's Desire"
+ rce_NPA_ideas_1_desc: "Since Constantinople is the beating heart of the Nestorian Church it lies with us to defend and nurture it. It has been a long time since it sat at the peak of Europe, so it is our duty to lift it back to those heights once more."
+ rce_NPA_ideas_2: "Legacy of Nestorius"
+ rce_NPA_ideas_2_desc: "Born in 386, Nestorius identified properly the Nature of Christ even though many shunned him for his truths, living by his ideas and spreading his word is the most important task for anyone who calls himself a follower of his rite."
+ rce_NPA_ideas_3: "Silk Road Trade"
+ rce_NPA_ideas_3_desc: "Sitting neatly at the end of the Silk Road, the Bosphorus is the natural destination for all Asian goods, and all Asian goods belong to our Merchants to ensure the prosperity of all Nestorians."
+ rce_NPA_ideas_4: "Mediator between Greeks and Turks"
+ rce_NPA_ideas_4_desc: "Caught in the middle of a centuries old rivalry, if we want to guarantee the cohesion between our Anatolian and European lands, we must learn to mediate between the two people, ideally through a common faith."
+ rce_NPA_ideas_5: "Gateway to the East"
+ rce_NPA_ideas_5_desc: "West and East, Persia and Rome, India and Greece, for millennia has this land served as the gateway to the far lands of Asia. The roads once built and walked by Alexander has already been followed by our missionaries, connections and friends in faraway places ready to aid us in our struggles."
+ rce_NPA_ideas_6: "Restoration of the Eastern Rite"
+ rce_NPA_ideas_6_desc: "The Nestorian Church has seen better days, but it has been a while since the Mongolian courts called themselves true believers. Yet the current era has been marked with a resurgence, and we sit at the helm of it."
+ rce_NPA_ideas_7: "Defending the Land"
+ rce_NPA_ideas_7_desc: "We are a peaceful folk and tolerance is among our core tenets, but many others don't share that attitude and so we won't avoid using force to defend our values, land and people with all the fury we can muster."
+
+ rce_assyria_ideas: "Assyrian Ideas"
+ rce_assyria_ideas_start: "Assyrian Traditions"
+ rce_assyria_ideas_bonus: "Assyrian Ambition"
+ rce_assyria_ideas_1: "Land between Rivers"
+ rce_assyria_ideas_1_desc: ""
+ rce_assyria_ideas_2: "Cradle of Civilization"
+ rce_assyria_ideas_2_desc: ""
+ rce_assyria_ideas_3: "Children of an Empire"
+ rce_assyria_ideas_3_desc: ""
+ rce_assyria_ideas_4: "Dreams of a Dying Culture"
+ rce_assyria_ideas_4_desc: ""
+ rce_assyria_ideas_5: "Center of the Fertile Crescent"
+ rce_assyria_ideas_5_desc: ""
+ rce_assyria_ideas_6: "Coffers for foreign banners"
+ rce_assyria_ideas_6_desc: ""
+ rce_assyria_ideas_7: "Formalize the Aramaic Language"
+ rce_assyria_ideas_7_desc: ""
+
+ rce_empire_of_light_ideas: "Manichaean Ideas"
+ rce_empire_of_light_ideas_start: "Manichaean Traditions"
+ rce_empire_of_light_ideas_bonus: "Manichaean Ambition"
+ rce_empire_of_light_ideas_1: "Seven Prayers Army"
+ rce_empire_of_light_ideas_1_desc: ""
+ rce_empire_of_light_ideas_2: "Defeating the Five Kingdoms of Darkness"
+ rce_empire_of_light_ideas_2_desc: ""
+ rce_empire_of_light_ideas_3: "Luminous Crusade"
+ rce_empire_of_light_ideas_3_desc: ""
+ rce_empire_of_light_ideas_4: "The Gospels of Mani"
+ rce_empire_of_light_ideas_4_desc: ""
+ rce_empire_of_light_ideas_5: "Cleansing with Fire"
+ rce_empire_of_light_ideas_5_desc: ""
+ rce_empire_of_light_ideas_6: "Patronize Religious Art"
+ rce_empire_of_light_ideas_6_desc: ""
+ rce_empire_of_light_ideas_7: "Help them see the Light"
+ rce_empire_of_light_ideas_7_desc: ""

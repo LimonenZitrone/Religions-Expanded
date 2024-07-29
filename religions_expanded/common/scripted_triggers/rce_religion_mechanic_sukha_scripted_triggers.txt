@@ -1,0 +1,73 @@
+rce_uses_religion_mechanic_sukha = {
+	custom_trigger_tooltip = {
+		tooltip = rce_uses_religion_mechanic_sukha_tt
+		religion = jainism
+	}
+}
+
+rce_not_uses_religion_mechanic_sukha = {
+	custom_trigger_tooltip = {
+		tooltip = rce_not_uses_religion_mechanic_sukha_tt
+		NOT = { rce_uses_religion_mechanic_sukha = yes }
+	}
+}
+
+rce_has_religion_mechanic_sukha_value = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		[[value]
+			check_variable = { which = rce_religion_mechanic_sukha_value value = $value$ }
+		]
+		[[which]
+			check_variable = { which = rce_religion_mechanic_sukha_value which = $which$ }
+		]
+	}
+}
+
+rce_has_any_religion_mechanic_sukha_modifiers = {
+	OR = {
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_1
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_2
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_3
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_4
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_5
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_6
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_7
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_8
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_9
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_10
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_11
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_12
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_13
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_14
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_15
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_16
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_17
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_18
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_19
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_20
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_21
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_22
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_23
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_24
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_25
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_26
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_27
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_28
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_29
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_30
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_31
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_32
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_33
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_34
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_35
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_36
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_37
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_38
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_39
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_40
+		has_country_modifier = rce_religion_mechanic_sukha_modifier_41
+	}
+}

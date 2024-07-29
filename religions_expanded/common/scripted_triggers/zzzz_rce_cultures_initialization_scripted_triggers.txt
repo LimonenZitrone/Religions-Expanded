@@ -1,0 +1,53 @@
+# coptic_culture
+rce_culture_initialization_coptic_culture_is_starting_province = {
+	rce_religion_initialization_coptic_is_starting_province = yes
+}
+
+# assyrian_culture
+rce_culture_initialization_assyrian_culture_is_starting_province = {
+	OR = {
+		province_id = 2206
+		province_id = 4296
+	}
+}
+
+# avshars_culture
+rce_culture_initialization_avshars_culture_is_starting_province = {
+	province_id = 2301
+}
+
+# qashqai_culture
+rce_culture_initialization_qashqai_culture_is_starting_province = {
+	OR = {
+		province_id = 430
+		province_id = 4331
+		province_id = 4332
+	}
+}
+
+# oghuz_culture
+rce_culture_initialization_oghuz_culture_is_starting_province = {
+	culture = turkish
+}
+rce_culture_initialization_oghuz_culture_is_starting_country = {
+	primary_culture = turkish
+}
+
+# farsi_culture
+rce_culture_initialization_farsi_culture_is_starting_province = {
+	OR = {
+		province_id = 2218
+		province_id = 2219
+		province_id = 2223
+		province_id = 4329
+		province_id = 4330
+	}
+}
+rce_culture_initialization_farsi_culture_is_starting_country = {
+	tag = FRS
+}
+
+# manichaean_culture
+rce_culture_initialization_manichaean_culture_is_starting_province = {
+	province_id = 4290
+}

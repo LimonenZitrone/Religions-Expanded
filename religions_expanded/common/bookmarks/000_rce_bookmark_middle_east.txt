@@ -1,0 +1,15 @@
+bookmark = {
+	name = "RCE_BOOKMARK_MIDDLE_EAST"
+	desc = "RCE_BOOKMARK_MIDDLE_EAST_DESC"
+	date = 1444.11.11
+
+	center = 2211
+	default = yes
+
+	# nestorian
+	country = QAR
+	country = BTL
+	country = MHR
+	# manichaeism
+	country = MSY
+}

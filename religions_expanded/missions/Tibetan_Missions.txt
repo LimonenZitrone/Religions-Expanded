@@ -521,7 +521,7 @@ tib_slot_4 = {
 		trigger = {
 			tibet_region = {
 				type = all
-				religion = ROOT # Religions Expanded
+				religion = ROOT # Religions & Cultures Expanded
 				owned_by = ROOT
 			}
 			num_of_owned_provinces_with = {

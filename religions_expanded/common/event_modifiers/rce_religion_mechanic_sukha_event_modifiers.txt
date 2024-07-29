@@ -1,0 +1,264 @@
+# Mechanic Modifiers:
+rce_religion_mechanic_sukha_modifier_1 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+}
+rce_religion_mechanic_sukha_modifier_2 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.00375
+	production_efficiency = 0.005
+	development_cost = -0.0025
+}
+rce_religion_mechanic_sukha_modifier_3 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0075
+	production_efficiency = 0.01
+	development_cost = -0.005
+}
+rce_religion_mechanic_sukha_modifier_4 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.01125
+	production_efficiency = 0.015
+	development_cost = -0.0075
+}
+rce_religion_mechanic_sukha_modifier_5 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.015
+	production_efficiency = 0.02
+	development_cost = -0.01
+}
+rce_religion_mechanic_sukha_modifier_6 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.01875
+	production_efficiency = 0.025
+	development_cost = -0.0125
+}
+rce_religion_mechanic_sukha_modifier_7 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0225
+	production_efficiency = 0.03
+	development_cost = -0.015
+}
+rce_religion_mechanic_sukha_modifier_8 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.02625
+	production_efficiency = 0.035
+	development_cost = -0.0175
+}
+rce_religion_mechanic_sukha_modifier_9 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.03
+	production_efficiency = 0.04
+	development_cost = -0.02
+}
+rce_religion_mechanic_sukha_modifier_10 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.03375
+	production_efficiency = 0.045
+	development_cost = -0.0225
+}
+rce_religion_mechanic_sukha_modifier_11 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0375
+	production_efficiency = 0.05
+	development_cost = -0.025
+}
+rce_religion_mechanic_sukha_modifier_12 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.04125
+	production_efficiency = 0.055
+	development_cost = -0.0275
+}
+rce_religion_mechanic_sukha_modifier_13 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.045
+	production_efficiency = 0.06
+	development_cost = -0.03
+}
+rce_religion_mechanic_sukha_modifier_14 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.04875
+	production_efficiency = 0.065
+	development_cost = -0.0325
+}
+rce_religion_mechanic_sukha_modifier_15 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0525
+	production_efficiency = 0.07
+	development_cost = -0.035
+}
+rce_religion_mechanic_sukha_modifier_16 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.05625
+	production_efficiency = 0.075
+	development_cost = -0.0375
+}
+rce_religion_mechanic_sukha_modifier_17 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.06
+	production_efficiency = 0.08
+	development_cost = -0.04
+}
+rce_religion_mechanic_sukha_modifier_18 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.06375
+	production_efficiency = 0.085
+	development_cost = -0.0425
+}
+rce_religion_mechanic_sukha_modifier_19 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0675
+	production_efficiency = 0.09
+	development_cost = -0.045
+}
+rce_religion_mechanic_sukha_modifier_20 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.07125
+	production_efficiency = 0.095
+	development_cost = -0.0475
+}
+rce_religion_mechanic_sukha_modifier_21 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.075
+	production_efficiency = 0.1
+	development_cost = -0.05
+}
+rce_religion_mechanic_sukha_modifier_22 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.07875
+	production_efficiency = 0.105
+	development_cost = -0.0525
+}
+rce_religion_mechanic_sukha_modifier_23 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0825
+	production_efficiency = 0.11
+	development_cost = -0.055
+}
+rce_religion_mechanic_sukha_modifier_24 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.08625
+	production_efficiency = 0.115
+	development_cost = -0.0575
+}
+rce_religion_mechanic_sukha_modifier_25 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.09
+	production_efficiency = 0.12
+	development_cost = -0.06
+}
+rce_religion_mechanic_sukha_modifier_26 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.09375
+	production_efficiency = 0.125
+	development_cost = -0.0625
+}
+rce_religion_mechanic_sukha_modifier_27 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.0975
+	production_efficiency = 0.13
+	development_cost = -0.065
+}
+rce_religion_mechanic_sukha_modifier_28 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.10125
+	production_efficiency = 0.135
+	development_cost = -0.0675
+}
+rce_religion_mechanic_sukha_modifier_29 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.105
+	production_efficiency = 0.14
+	development_cost = -0.07
+}
+rce_religion_mechanic_sukha_modifier_30 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.10875
+	production_efficiency = 0.145
+	development_cost = -0.0725
+}
+rce_religion_mechanic_sukha_modifier_31 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.1125
+	production_efficiency = 0.15
+	development_cost = -0.075
+}
+rce_religion_mechanic_sukha_modifier_32 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.11625
+	production_efficiency = 0.155
+	development_cost = -0.0775
+}
+rce_religion_mechanic_sukha_modifier_33 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.12
+	production_efficiency = 0.16
+	development_cost = -0.08
+}
+rce_religion_mechanic_sukha_modifier_34 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.12375
+	production_efficiency = 0.165
+	development_cost = -0.0825
+}
+rce_religion_mechanic_sukha_modifier_35 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.1275
+	production_efficiency = 0.17
+	development_cost = -0.085
+}
+rce_religion_mechanic_sukha_modifier_36 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.13125
+	production_efficiency = 0.175
+	development_cost = -0.0875
+}
+rce_religion_mechanic_sukha_modifier_37 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.135
+	production_efficiency = 0.18
+	development_cost = -0.09
+}
+rce_religion_mechanic_sukha_modifier_38 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.13875
+	production_efficiency = 0.185
+	development_cost = -0.0925
+}
+rce_religion_mechanic_sukha_modifier_39 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.1425
+	production_efficiency = 0.19
+	development_cost = -0.095
+}
+rce_religion_mechanic_sukha_modifier_40 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.14625
+	production_efficiency = 0.195
+	development_cost = -0.0975
+}
+rce_religion_mechanic_sukha_modifier_41 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_tax_modifier = -0.15
+	production_efficiency = 0.2
+	development_cost = -0.1
+}
+
+# Event Modifiers:
+rce_religion_mechanic_sukha_sponsor_festival_paryushana_modifier = {
+	stability_cost_modifier = -0.33
+	global_unrest = -2
+	rce_yearly_religion_mechanic_sukha_change = 2
+	religion = yes
+}
+rce_religion_mechanic_sukha_sponsor_festival_nandishwar_ashtahnika_modifier = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+	rce_yearly_religion_mechanic_sukha_change = 2
+	religion = yes
+}
+rce_religion_mechanic_sukha_sponsor_festival_diwali_modifier = {
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.2
+	rce_yearly_religion_mechanic_sukha_change = 2
+	religion = yes
+}

@@ -1,0 +1,29 @@
+can_claim_defender_of_faith = {
+	condition = {
+		tooltip = RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_EASTERN
+		potential = {
+			religion_group = eastern
+		}
+		allow = {
+			has_country_modifier = rce_religion_reformed_modifier
+		}
+	}
+	condition = {
+		tooltip = RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC
+		potential = {
+			religion_group = dharmic
+		}
+		allow = {
+			has_country_modifier = rce_religion_reformed_modifier
+		}
+	}
+	condition = {
+		tooltip = RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_PAGAN
+		potential = {
+			religion_group = pagan
+		}
+		allow = {
+			has_country_modifier = rce_religion_reformed_modifier
+		}
+	}
+}

@@ -57,12 +57,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ISR
-			change_primary_culture = hebrew # Religions Expanded
+			change_primary_culture = hebrew # Religions & Cultures Expanded
 			palestine_area = {
 				limit = {
 					owned_by = ROOT
 				}
-				change_culture = hebrew # Religions Expanded
+				change_culture = hebrew # Religions & Cultures Expanded
 			}
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes

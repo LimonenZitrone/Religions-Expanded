@@ -1,0 +1,14 @@
+rce_uses_religion_mechanic_bogomilist_church_aspects = {
+	custom_trigger_tooltip = {
+		tooltip = rce_uses_religion_mechanic_bogomilist_church_aspects_tt
+		religion = bogomilist
+		uses_church_aspects = yes
+	}
+}
+
+rce_not_uses_religion_mechanic_bogomilist_church_aspects = {
+	custom_trigger_tooltip = {
+		tooltip = rce_not_uses_religion_mechanic_bogomilist_church_aspects_tt
+		NOT = { rce_uses_religion_mechanic_bogomilist_church_aspects = yes }
+	}
+}

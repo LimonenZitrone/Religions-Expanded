@@ -1,0 +1,414 @@
+on_religion_change = {
+	rce_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = yes
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = hindu }
+		}
+		rce_add_monthly_religion_mechanic_hindu_value = yes
+	}
+}
+
+on_yearly_pulse = {
+	country_event = { id = rce_religion_mechanic_hindu_events.1 }
+}
+
+on_province_owner_change = {
+	if = {
+		limit = {
+			has_dlc = "Leviathan"
+			owner = {
+				rce_uses_religion_mechanic = { mechanic = hindu }
+			}
+			OR = {
+				AND = {
+					province_id = 2026
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = chola_temples
+						tier = 3
+					}
+				}
+				AND = {
+					province_id = 541
+					OR = {
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+							has_great_project = {
+								type = hampi
+								tier = 3
+							}
+						}
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+							has_great_project = {
+								type = hampi
+								tier = 2
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 2095
+					OR = {
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+							has_great_project = {
+								type = kashi_vishwanath
+								tier = 3
+							}
+						}
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+							has_great_project = {
+								type = kashi_vishwanath
+								tier = 2
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 545
+					OR = {
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+							has_great_project = {
+								type = ellora_caves
+								tier = 3
+							}
+						}
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+							has_great_project = {
+								type = ellora_caves
+								tier = 2
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 4466
+					OR = {
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+							has_great_project = {
+								type = khajuraho
+								tier = 3
+							}
+						}
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+							has_great_project = {
+								type = khajuraho
+								tier = 2
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 2690
+					OR = {
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+							has_great_project = {
+								type = prambanan_temple
+								tier = 3
+							}
+						}
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+							has_great_project = {
+								type = prambanan_temple
+								tier = 2
+							}
+						}
+						AND = {
+							NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_1 }
+							has_great_project = {
+								type = prambanan_temple
+								tier = 1
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 631
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = pura_besakih
+						tier = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				province_id = 2026
+				NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+				has_great_project = {
+					type = chola_temples
+					tier = 3
+				}
+			}
+			set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+		}
+		else_if = {
+			limit = {
+				province_id = 541
+				OR = {
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+						has_great_project = {
+							type = hampi
+							tier = 3
+						}
+					}
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+						has_great_project = {
+							type = hampi
+							tier = 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = hampi
+						tier = 3
+					}
+				}
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+			else = {
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 2095
+				OR = {
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+						has_great_project = {
+							type = kashi_vishwanath
+							tier = 3
+						}
+					}
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+						has_great_project = {
+							type = kashi_vishwanath
+							tier = 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = kashi_vishwanath
+						tier = 3
+					}
+				}
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+			else = {
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 545
+				OR = {
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+						has_great_project = {
+							type = ellora_caves
+							tier = 3
+						}
+					}
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+						has_great_project = {
+							type = ellora_caves
+							tier = 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = ellora_caves
+						tier = 3
+					}
+				}
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+			else = {
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 4466
+				OR = {
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+						has_great_project = {
+							type = khajuraho
+							tier = 3
+						}
+					}
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+						has_great_project = {
+							type = khajuraho
+							tier = 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = khajuraho
+						tier = 3
+					}
+				}
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+			else = {
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 2690
+				OR = {
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+						has_great_project = {
+							type = prambanan_temple
+							tier = 3
+						}
+					}
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+						has_great_project = {
+							type = prambanan_temple
+							tier = 2
+						}
+					}
+					AND = {
+						NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_1 }
+						has_great_project = {
+							type = prambanan_temple
+							tier = 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+					has_great_project = {
+						type = prambanan_temple
+						tier = 3
+					}
+				}
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_1
+			}
+			else_if = {
+				limit = {
+					NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_2 }
+					has_great_project = {
+						type = prambanan_temple
+						tier = 2
+					}
+				}
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_2
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_1
+			}
+			else = {
+				set_province_flag = rce_religion_mechanic_hindu_flag_monument_1
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 631
+				NOT = { has_province_flag = rce_religion_mechanic_hindu_flag_monument_3 }
+				has_great_project = {
+					type = pura_besakih
+					tier = 3
+				}
+			}
+			set_province_flag = rce_religion_mechanic_hindu_flag_monument_3
+		}
+	}
+}
+
+# ROOT = annexing country, FROM = annexed country
+on_annexed = {
+	FROM = {
+		if = {
+			limit = {
+				rce_uses_religion_mechanic = { mechanic = hindu }
+			}
+			rce_clear_all_religion_mechanic_hindu_modifiers = yes
+		}
+	}
+}
+
+# ROOT = released country, FROM = releasing country
+on_country_released = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = hindu }
+		}
+		rce_clear_all_religion_mechanic_hindu_modifiers = yes
+	}
+	else = {
+		rce_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = yes
+	}
+}
+
+# ROOT = released country
+on_country_creation = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = hindu }
+		}
+		rce_clear_all_religion_mechanic_hindu_modifiers = yes
+	}
+	else = {
+		rce_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = yes
+	}
+}
+
+# ROOT = vassal, FROM = overlord
+on_create_vassal = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = hindu }
+		}
+		rce_clear_all_religion_mechanic_hindu_modifiers = yes
+	}
+	else = {
+		rce_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = yes
+	}
+}

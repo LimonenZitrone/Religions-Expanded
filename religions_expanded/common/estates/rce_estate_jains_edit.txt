@@ -1,0 +1,9 @@
+estate_jains = {
+	trigger = {
+		NOT = { religion = jainism }
+	}
+
+	privileges = {
+		rce_religion_jainism_estate_jains_guaranteed_autonomy
+	}
+}

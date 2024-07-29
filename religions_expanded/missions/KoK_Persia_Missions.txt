@@ -2526,14 +2526,14 @@ kok_persia_mission_zoroastrian_slot_3 = {
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = PER }
-			religion_group = zoroastrian_group # Religions Expanded
+			religion_group = zoroastrian_group # Religions & Cultures Expanded
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 		}
 		effect = {
 			if = {
 				limit = {
-					religion = zoroastrian # Religions Expanded
+					religion = zoroastrian # Religions & Cultures Expanded
 				}
 				custom_tooltip = per_reborn_in_fire_bt
 				hidden_effect = {

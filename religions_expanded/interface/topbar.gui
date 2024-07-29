@@ -733,28 +733,28 @@ guiTypes = {
 			}
 		}
 
-		#########################################
-		## START Religions Expanded Custom GUI ##
-		#########################################
-		#################################
-		### Religions Expanded Alerts ###
-		#################################
+		####################################################
+		## START Religions & Cultures Expanded Custom GUI ##
+		####################################################
+		############################################
+		### Religions & Cultures Expanded Alerts ###
+		############################################
 		# Alerts
 		windowType = {
-			name = "religions_expanded_alerts_window"
+			name = "rce_alerts_window"
 			position = { x = 150 y = 79 }
 
 			guiButtonType = {
-				name = "religions_expanded_alert_button_religion_mechanic"
+				name = "rce_alert_button_religion_mechanic"
 				position = { x = 0 y = 0 }
-				spriteType = "GFX_religions_expanded_alert_icons_strip"
+				spriteType = "GFX_rce_alert_icons_strip"
 				scripted = yes
 			}
 		}
 
 		# Popup for disabling
 		windowType = {
-			name = "religions_expanded_alerts_popup_window"
+			name = "rce_alerts_popup_window"
 			position = { x = -250 y = -160 }
 			size = { x = 500 y = 320 }
 			orientation = center
@@ -778,7 +778,7 @@ guiTypes = {
 				position = { x = 59 y = 36 }
 
 				instantTextBoxType = {
-					name = "religions_expanded_alerts_popup_title"
+					name = "rce_alerts_popup_title"
 					position = { x = 0 y = 0 }
 					font = "vic_22"
 					maxWidth = 380
@@ -790,7 +790,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "religions_expanded_alerts_popup_desc"
+					name = "rce_alerts_popup_desc"
 					position = { x = 0 y = 39 }
 					font = "vic_18"
 					maxWidth = 380
@@ -805,7 +805,7 @@ guiTypes = {
 				position = { x = 77 y = 270 }
 
 				guiButtonType = {
-					name = "religions_expanded_alerts_popup_cancel_button"
+					name = "rce_alerts_popup_cancel_button"
 					position = { x = 0 y = 0 }
 					spriteType = "largefloaterbutton"
 					buttonText = "CANCEL"
@@ -815,7 +815,7 @@ guiTypes = {
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "religions_expanded_alerts_popup_accept_button"
+					name = "rce_alerts_popup_accept_button"
 					position = { x = 197 y = 0 }
 					spriteType = "largefloaterbutton"
 					buttonText = "OK"
@@ -828,19 +828,19 @@ guiTypes = {
 			}
 		}
 
-		#########################################
-		### Religions Expanded Startup Screen ###
-		#########################################
+		####################################################
+		### Religions & Cultures Expanded Startup Screen ###
+		####################################################
 		guiButtonType = {
-			name = "religions_expanded_startup_screen_window_open_button"
+			name = "rce_startup_screen_window_open_button"
 			position = { x = -277 y = 10 }
 			orientation = upper_right
-			spriteType = "GFX_re_startup_screen_open_button"
+			spriteType = "GFX_rce_startup_screen_open_button"
 			scripted = yes
 		}
 
 		windowType = {
-			name = "religions_expanded_startup_screen_window"
+			name = "rce_startup_screen_window"
 			position = { x = -440 y = -267 }
 			size = { x = 842 y = 572 }
 			orientation = center
@@ -851,11 +851,11 @@ guiTypes = {
 			guiButtonType = {
 				name = "background"
 				position = { x = 0 y = 0 }
-				spriteType = "GFX_re_startup_screen_bg"
+				spriteType = "GFX_rce_startup_screen_bg"
 			}
 
 			instantTextBoxType = {
-				name = "religions_expanded_startup_screen_header"
+				name = "rce_startup_screen_header"
 				position = { x = 205 y = 43 }
 				font = "vic_29"
 				format = center
@@ -863,11 +863,11 @@ guiTypes = {
 				maxHeight = 20
 				fixedsize = yes
 				alwaystransparent = yes
-				text = "religions_expanded_startup_screen_header"
+				text = "rce_startup_screen_header"
 			}
 
 			windowType = {
-				name = "religions_expanded_startup_screen_religions_window"
+				name = "rce_startup_screen_religions_window"
 				position = { x = 0 y = 0 }
 				scripted = yes
 
@@ -882,7 +882,7 @@ guiTypes = {
 						iconType = {
 							name = "selected_tab_icon"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_startup_screen_tab_button"
+							spriteType = "GFX_rce_startup_screen_tab_button"
 							frame = 2
 						}
 
@@ -895,7 +895,7 @@ guiTypes = {
 							maxHeight = 20
 							fixedsize = yes
 							alwaystransparent = yes
-							text = "religions_expanded_startup_screen_tab_religions_text"
+							text = "rce_startup_screen_tab_religions_text"
 						}
 					}
 					windowType = {
@@ -903,9 +903,9 @@ guiTypes = {
 						position = { x = 160 y = 0 }
 
 						guiButtonType = {
-							name = "religions_expanded_startup_screen_tab_cultures_button"
+							name = "rce_startup_screen_tab_cultures_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_startup_screen_tab_button"
+							spriteType = "GFX_rce_startup_screen_tab_button"
 							scripted = yes
 						}
 
@@ -918,7 +918,7 @@ guiTypes = {
 							maxHeight = 20
 							fixedsize = yes
 							alwaystransparent = yes
-							text = "religions_expanded_startup_screen_tab_cultures_text"
+							text = "rce_startup_screen_tab_cultures_text"
 						}
 					}
 				}
@@ -927,7 +927,7 @@ guiTypes = {
 					position = { x = 100 y = 131 }
 
 					instantTextBoxType = {
-						name = "religions_expanded_startup_screen_left_title_religions"
+						name = "rce_startup_screen_left_title_religions"
 						position = { x = 1 y = 0 }
 						font = "vic_18"
 						format = center
@@ -939,7 +939,7 @@ guiTypes = {
 					}
 
 					instantTextBoxType = {
-						name = "religions_expanded_startup_screen_right_title_religions"
+						name = "rce_startup_screen_right_title_religions"
 						position = { x = 222 y = 0 }
 						font = "vic_18"
 						format = center
@@ -955,7 +955,7 @@ guiTypes = {
 					position = { x = 320 y = 170 }
 
 					instantTextBoxType = {
-						name = "religions_expanded_startup_screen_text_religions"
+						name = "rce_startup_screen_text_religions"
 						position = { x = 0 y = 0 }
 						font = "vic_18"
 						format = left
@@ -970,7 +970,7 @@ guiTypes = {
 					position = { x = 93 y = 164 }
 
 					windowType = {
-						name = "religions_expanded_startup_screen_religions_list_page_1_window"
+						name = "rce_startup_screen_religions_list_page_1_window"
 						position = { x = 0 y = 0 }
 						scripted = yes
 
@@ -979,13 +979,13 @@ guiTypes = {
 							position = { x = 0 y = 0 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_1_button"
+								name = "rce_startup_screen_religion_1_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_1_icon"
+								name = "rce_startup_screen_religion_1_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -993,7 +993,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_1_button_text"
+								name = "rce_startup_screen_religion_1_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1009,13 +1009,13 @@ guiTypes = {
 							position = { x = 0 y = 46 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_2_button"
+								name = "rce_startup_screen_religion_2_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_2_icon"
+								name = "rce_startup_screen_religion_2_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -1023,7 +1023,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_2_button_text"
+								name = "rce_startup_screen_religion_2_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1039,13 +1039,13 @@ guiTypes = {
 							position = { x = 0 y = 92 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_3_button"
+								name = "rce_startup_screen_religion_3_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_3_icon"
+								name = "rce_startup_screen_religion_3_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -1053,7 +1053,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_3_button_text"
+								name = "rce_startup_screen_religion_3_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1069,13 +1069,13 @@ guiTypes = {
 							position = { x = 0 y = 138 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_4_button"
+								name = "rce_startup_screen_religion_4_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_4_icon"
+								name = "rce_startup_screen_religion_4_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -1083,7 +1083,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_4_button_text"
+								name = "rce_startup_screen_religion_4_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1099,13 +1099,13 @@ guiTypes = {
 							position = { x = 0 y = 184 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_5_button"
+								name = "rce_startup_screen_religion_5_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_5_icon"
+								name = "rce_startup_screen_religion_5_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -1113,7 +1113,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_5_button_text"
+								name = "rce_startup_screen_religion_5_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1129,13 +1129,13 @@ guiTypes = {
 							position = { x = 0 y = 230 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_6_button"
+								name = "rce_startup_screen_religion_6_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_6_icon"
+								name = "rce_startup_screen_religion_6_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -1143,7 +1143,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_6_button_text"
+								name = "rce_startup_screen_religion_6_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1156,7 +1156,7 @@ guiTypes = {
 						}
 					}
 					windowType = {
-						name = "religions_expanded_startup_screen_religions_list_page_2_window"
+						name = "rce_startup_screen_religions_list_page_2_window"
 						position = { x = 0 y = 0 }
 						scripted = yes
 
@@ -1165,13 +1165,13 @@ guiTypes = {
 							position = { x = 0 y = 0 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_religion_7_button"
+								name = "rce_startup_screen_religion_7_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_religion_button"
+								spriteType = "GFX_rce_startup_screen_religion_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_religion_7_icon"
+								name = "rce_startup_screen_religion_7_icon"
 								position = { x = 7 y = 9 }
 								spriteType = "GFX_icon_religion"
 								scale = 0.5
@@ -1179,7 +1179,7 @@ guiTypes = {
 								alwaystransparent = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_religion_7_button_text"
+								name = "rce_startup_screen_religion_7_button_text"
 								position = { x = 40 y = 17 }
 								font = "vic_18"
 								format = left
@@ -1197,21 +1197,21 @@ guiTypes = {
 						position = { x = 16 y = 287 }
 
 						guiButtonType = {
-							name = "religions_expanded_startup_screen_list_prev_page_button_religions"
+							name = "rce_startup_screen_list_prev_page_button_religions"
 							position = { x = 0 y = 0 }
 							spriteType = "button_left"
 							scripted = yes
 						}
 
 						guiButtonType = {
-							name = "religions_expanded_startup_screen_list_next_page_button_religions"
+							name = "rce_startup_screen_list_next_page_button_religions"
 							position = { x = 90 y = 0 }
 							spriteType = "button_right"
 							scripted = yes
 						}
 
 						instantTextBoxType = {
-							name = "religions_expanded_startup_screen_list_pages_text_religions"
+							name = "rce_startup_screen_list_pages_text_religions"
 							position = { x = 29 y = 5 }
 							font = "vic_22"
 							format = center
@@ -1226,7 +1226,7 @@ guiTypes = {
 			}
 
 			windowType = {
-				name = "religions_expanded_startup_screen_cultures_window"
+				name = "rce_startup_screen_cultures_window"
 				position = { x = 0 y = 0 }
 				scripted = yes
 
@@ -1239,9 +1239,9 @@ guiTypes = {
 						position = { x = 0 y = 0 }
 
 						guiButtonType = {
-							name = "religions_expanded_startup_screen_tab_religions_button"
+							name = "rce_startup_screen_tab_religions_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_startup_screen_tab_button"
+							spriteType = "GFX_rce_startup_screen_tab_button"
 							scripted = yes
 						}
 
@@ -1254,7 +1254,7 @@ guiTypes = {
 							maxHeight = 20
 							fixedsize = yes
 							alwaystransparent = yes
-							text = "religions_expanded_startup_screen_tab_religions_text"
+							text = "rce_startup_screen_tab_religions_text"
 						}
 					}
 					windowType = {
@@ -1264,7 +1264,7 @@ guiTypes = {
 						iconType = {
 							name = "selected_tab_icon"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_startup_screen_tab_button"
+							spriteType = "GFX_rce_startup_screen_tab_button"
 							frame = 2
 						}
 
@@ -1277,7 +1277,7 @@ guiTypes = {
 							maxHeight = 20
 							fixedsize = yes
 							alwaystransparent = yes
-							text = "religions_expanded_startup_screen_tab_cultures_text"
+							text = "rce_startup_screen_tab_cultures_text"
 						}
 					}
 				}
@@ -1286,7 +1286,7 @@ guiTypes = {
 					position = { x = 100 y = 131 }
 
 					instantTextBoxType = {
-						name = "religions_expanded_startup_screen_left_title_cultures"
+						name = "rce_startup_screen_left_title_cultures"
 						position = { x = 1 y = 0 }
 						font = "vic_18"
 						format = center
@@ -1298,7 +1298,7 @@ guiTypes = {
 					}
 
 					instantTextBoxType = {
-						name = "religions_expanded_startup_screen_right_title_cultures"
+						name = "rce_startup_screen_right_title_cultures"
 						position = { x = 222 y = 0 }
 						font = "vic_18"
 						format = center
@@ -1314,7 +1314,7 @@ guiTypes = {
 					position = { x = 320 y = 170 }
 
 					instantTextBoxType = {
-						name = "religions_expanded_startup_screen_text_cultures"
+						name = "rce_startup_screen_text_cultures"
 						position = { x = 0 y = 0 }
 						font = "vic_18"
 						format = left
@@ -1329,7 +1329,7 @@ guiTypes = {
 					position = { x = 93 y = 167 }
 
 					windowType = {
-						name = "religions_expanded_startup_screen_cultures_list_page_1_window"
+						name = "rce_startup_screen_cultures_list_page_1_window"
 						position = { x = 0 y = 0 }
 						scripted = yes
 
@@ -1338,13 +1338,13 @@ guiTypes = {
 							position = { x = 0 y = 0 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_culture_1_button"
+								name = "rce_startup_screen_culture_1_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_culture_button"
+								spriteType = "GFX_rce_startup_screen_culture_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_culture_1_primary_icon"
+								name = "rce_startup_screen_culture_1_primary_icon"
 								position = { x = 7 y = 4 }
 								spriteType = "GFX_primary_culture_icon"
 								scale = 0.75
@@ -1352,7 +1352,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_culture_1_button_text"
+								name = "rce_startup_screen_culture_1_button_text"
 								position = { x = 12 y = 10 }
 								font = "vic_18"
 								format = center
@@ -1368,13 +1368,13 @@ guiTypes = {
 							position = { x = 0 y = 34 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_culture_2_button"
+								name = "rce_startup_screen_culture_2_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_culture_button"
+								spriteType = "GFX_rce_startup_screen_culture_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_culture_2_primary_icon"
+								name = "rce_startup_screen_culture_2_primary_icon"
 								position = { x = 7 y = 4 }
 								spriteType = "GFX_primary_culture_icon"
 								scale = 0.75
@@ -1382,7 +1382,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_culture_2_button_text"
+								name = "rce_startup_screen_culture_2_button_text"
 								position = { x = 12 y = 10 }
 								font = "vic_18"
 								format = center
@@ -1398,13 +1398,13 @@ guiTypes = {
 							position = { x = 0 y = 68 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_culture_3_button"
+								name = "rce_startup_screen_culture_3_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_culture_button"
+								spriteType = "GFX_rce_startup_screen_culture_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_culture_3_primary_icon"
+								name = "rce_startup_screen_culture_3_primary_icon"
 								position = { x = 7 y = 4 }
 								spriteType = "GFX_primary_culture_icon"
 								scale = 0.75
@@ -1412,7 +1412,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_culture_3_button_text"
+								name = "rce_startup_screen_culture_3_button_text"
 								position = { x = 12 y = 10 }
 								font = "vic_18"
 								format = center
@@ -1428,13 +1428,13 @@ guiTypes = {
 							position = { x = 0 y = 102 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_culture_4_button"
+								name = "rce_startup_screen_culture_4_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_culture_button"
+								spriteType = "GFX_rce_startup_screen_culture_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_culture_4_primary_icon"
+								name = "rce_startup_screen_culture_4_primary_icon"
 								position = { x = 7 y = 4 }
 								spriteType = "GFX_primary_culture_icon"
 								scale = 0.75
@@ -1442,7 +1442,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_culture_4_button_text"
+								name = "rce_startup_screen_culture_4_button_text"
 								position = { x = 12 y = 10 }
 								font = "vic_18"
 								format = center
@@ -1458,13 +1458,13 @@ guiTypes = {
 							position = { x = 0 y = 136 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_culture_5_button"
+								name = "rce_startup_screen_culture_5_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_culture_button"
+								spriteType = "GFX_rce_startup_screen_culture_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_culture_5_primary_icon"
+								name = "rce_startup_screen_culture_5_primary_icon"
 								position = { x = 7 y = 4 }
 								spriteType = "GFX_primary_culture_icon"
 								scale = 0.75
@@ -1472,7 +1472,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_culture_5_button_text"
+								name = "rce_startup_screen_culture_5_button_text"
 								position = { x = 12 y = 10 }
 								font = "vic_18"
 								format = center
@@ -1488,13 +1488,13 @@ guiTypes = {
 							position = { x = 0 y = 170 }
 
 							guiButtonType = {
-								name = "religions_expanded_startup_screen_culture_6_button"
+								name = "rce_startup_screen_culture_6_button"
 								position = { x = 2 y = 2 }
-								spriteType = "GFX_re_startup_screen_culture_button"
+								spriteType = "GFX_rce_startup_screen_culture_button"
 								scripted = yes
 							}
 							iconType = {
-								name = "religions_expanded_startup_screen_culture_6_primary_icon"
+								name = "rce_startup_screen_culture_6_primary_icon"
 								position = { x = 7 y = 4 }
 								spriteType = "GFX_primary_culture_icon"
 								scale = 0.75
@@ -1502,7 +1502,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "religions_expanded_startup_screen_culture_6_button_text"
+								name = "rce_startup_screen_culture_6_button_text"
 								position = { x = 12 y = 10 }
 								font = "vic_18"
 								format = center
@@ -1518,13 +1518,13 @@ guiTypes = {
 					#		position = { x = 0 y = 204 }
 					#
 					#		guiButtonType = {
-					#			name = "religions_expanded_startup_screen_culture_7_button"
+					#			name = "rce_startup_screen_culture_7_button"
 					#			position = { x = 2 y = 2 }
-					#			spriteType = "GFX_re_startup_screen_culture_button"
+					#			spriteType = "GFX_rce_startup_screen_culture_button"
 					#			scripted = yes
 					#		}
 					#		iconType = {
-					#			name = "religions_expanded_startup_screen_culture_7_primary_icon"
+					#			name = "rce_startup_screen_culture_7_primary_icon"
 					#			position = { x = 7 y = 4 }
 					#			spriteType = "GFX_primary_culture_icon"
 					#			scale = 0.75
@@ -1532,7 +1532,7 @@ guiTypes = {
 					#			scripted = yes
 					#		}
 					#		instantTextBoxType = {
-					#			name = "religions_expanded_startup_screen_culture_7_button_text"
+					#			name = "rce_startup_screen_culture_7_button_text"
 					#			position = { x = 12 y = 10 }
 					#			font = "vic_18"
 					#			format = center
@@ -1548,13 +1548,13 @@ guiTypes = {
 					#		position = { x = 0 y = 238 }
 					#
 					#		guiButtonType = {
-					#			name = "religions_expanded_startup_screen_culture_8_button"
+					#			name = "rce_startup_screen_culture_8_button"
 					#			position = { x = 2 y = 2 }
-					#			spriteType = "GFX_re_startup_screen_culture_button"
+					#			spriteType = "GFX_rce_startup_screen_culture_button"
 					#			scripted = yes
 					#		}
 					#		iconType = {
-					#			name = "religions_expanded_startup_screen_culture_8_primary_icon"
+					#			name = "rce_startup_screen_culture_8_primary_icon"
 					#			position = { x = 7 y = 4 }
 					#			spriteType = "GFX_primary_culture_icon"
 					#			scale = 0.75
@@ -1562,7 +1562,7 @@ guiTypes = {
 					#			scripted = yes
 					#		}
 					#		instantTextBoxType = {
-					#			name = "religions_expanded_startup_screen_culture_8_button_text"
+					#			name = "rce_startup_screen_culture_8_button_text"
 					#			position = { x = 12 y = 10 }
 					#			font = "vic_18"
 					#			format = center
@@ -1580,21 +1580,21 @@ guiTypes = {
 						position = { x = 16 y = 284 }
 
 						guiButtonType = {
-							name = "religions_expanded_startup_screen_list_prev_page_button_cultures"
+							name = "rce_startup_screen_list_prev_page_button_cultures"
 							position = { x = 0 y = 0 }
 							spriteType = "button_left"
 							scripted = yes
 						}
 
 						guiButtonType = {
-							name = "religions_expanded_startup_screen_list_next_page_button_cultures"
+							name = "rce_startup_screen_list_next_page_button_cultures"
 							position = { x = 90 y = 0 }
 							spriteType = "button_right"
 							scripted = yes
 						}
 
 						instantTextBoxType = {
-							name = "religions_expanded_startup_screen_list_pages_text_cultures"
+							name = "rce_startup_screen_list_pages_text_cultures"
 							position = { x = 29 y = 5 }
 							font = "vic_22"
 							format = center
@@ -1609,7 +1609,7 @@ guiTypes = {
 			}
 
 			guiButtonType = {
-				name = "religions_expanded_startup_screen_close_button"
+				name = "rce_startup_screen_close_button"
 				position = { x = 365 y = -112 }
 				orientation = lower_left
 				spriteType = "button_type_9"
@@ -1626,21 +1626,21 @@ guiTypes = {
 		#####################################
 		# Open Button Window
 		windowType = {
-			name = "re_religion_mechanic_nestorian_patriarchy_main_open_button_window"
+			name = "rce_religion_mechanic_nestorian_patriarchy_main_open_button_window"
 			position = { x = -322 y = -70 }
 			orientation = lower_right
 			scripted = yes
 
 			guiButtonType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_main_window_open_button"
+				name = "rce_religion_mechanic_nestorian_patriarchy_main_window_open_button"
 				position = { x = 0 y = 0 }
-				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_button"
+				spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_button"
 				scripted = yes
 			}
 			iconType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_main_window_open_button_overlay"
+				name = "rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_overlay"
 				position = { x = 0 y = 0 }
-				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_button_overlay"
+				spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_button_overlay"
 				alwaystransparent = yes
 				scripted = yes
 			}
@@ -1648,7 +1648,7 @@ guiTypes = {
 
 		# Main Window
 		windowType = {
-			name = "re_religion_mechanic_nestorian_patriarchy_main_window"
+			name = "rce_religion_mechanic_nestorian_patriarchy_main_window"
 			position = { x = -500 y = -370 }
 			size = { x = 1000 y = 691 }
 			orientation = center
@@ -1660,11 +1660,11 @@ guiTypes = {
 			guiButtonType = {
 				name = "background"
 				position = { x = 0 y = 0 }
-				spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_bg"
+				spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_bg"
 			}
 
 			instantTextBoxType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_main_title"
+				name = "rce_religion_mechanic_nestorian_patriarchy_main_title"
 				position = { x = 380 y = 44 }
 				format = center
 				font = "vic_29"
@@ -1680,7 +1680,7 @@ guiTypes = {
 				position = { x = 115 y = 87 }
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title"
 					position = { x = 0 y = 0 }
 					format = center
 					font = "vic_18"
@@ -1691,13 +1691,13 @@ guiTypes = {
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag_empty"
 					position = { x = 8 y = 45 }
 					spriteType = "GFX_shield_thin"
 					scripted = yes
 				}
 				guiButtonType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_flag"
 					position = { x = 8 y = 45 }
 					spriteType = "GFX_shield_thin"
 					scripted = yes
@@ -1709,7 +1709,7 @@ guiTypes = {
 				position = { x = 339 y = 87 }
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_influence_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_influence_title"
 					position = { x = 0 y = 0 }
 					format = center
 					font = "vic_18"
@@ -1720,7 +1720,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_influence_value"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_influence_value"
 					position = { x = 24 y = 50 }
 					format = center
 					font = "vic_29"
@@ -1731,7 +1731,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_yearly_influence_value"
 					position = { x = 24 y = 86 }
 					format = center
 					font = "vic_29"
@@ -1747,7 +1747,7 @@ guiTypes = {
 				position = { x = 530 y = 87 }
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_title"
 					position = { x = 105 y = 0 }
 					format = center
 					font = "vic_18"
@@ -1759,7 +1759,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_title"
 					position = { x = 12 y = 32 }
 					format = left
 					font = "vic_18"
@@ -1771,7 +1771,7 @@ guiTypes = {
 					scripted = yes
 				}
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_desc"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_current_desc"
 					position = { x = 12 y = 53 }
 					format = left
 					font = "vic_18"
@@ -1786,15 +1786,15 @@ guiTypes = {
 					position = { x = 337 y = 29 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scripted = yes
 					}
 					iconType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_icon"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scripted = yes
 					}
 				}
@@ -1805,7 +1805,7 @@ guiTypes = {
 				position = { x = 45 y = 291 }
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_interactions_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_interactions_title"
 					position = { x = 52 y = 0 }
 					format = center
 					font = "vic_18"
@@ -1825,13 +1825,13 @@ guiTypes = {
 						position = { x = 0 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_1_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_1_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1847,13 +1847,13 @@ guiTypes = {
 						position = { x = 0 y = 46 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_2_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_2_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1869,13 +1869,13 @@ guiTypes = {
 						position = { x = 0 y = 92 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_3_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_3_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_3_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_3_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1891,13 +1891,13 @@ guiTypes = {
 						position = { x = 0 y = 138 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_4_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_4_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1913,13 +1913,13 @@ guiTypes = {
 						position = { x = 0 y = 184 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_5_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_5_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1935,13 +1935,13 @@ guiTypes = {
 						position = { x = 0 y = 230 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_6_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_6_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1957,13 +1957,13 @@ guiTypes = {
 						position = { x = 0 y = 276 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_7_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_interaction_button"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_interaction_button"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_interaction_7_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_name"
 							position = { x = 30 y = 14 }
 							format = center
 							font = "vic_18_black"
@@ -1982,7 +1982,7 @@ guiTypes = {
 				position = { x = 305 y = 216 }
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_holy_sites_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_sites_title"
 					position = { x = 218 y = 0 }
 					format = center
 					font = "vic_18"
@@ -2001,13 +2001,13 @@ guiTypes = {
 						position = { x = 0 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_1_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_constantinople"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_1_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2023,13 +2023,13 @@ guiTypes = {
 						position = { x = 215 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_arbil"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_arbil"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_2_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2045,13 +2045,13 @@ guiTypes = {
 						position = { x = 430 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_3_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_xian"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_xian"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_3_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_3_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2072,13 +2072,13 @@ guiTypes = {
 						position = { x = 0 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_4_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_herat"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_herat"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_4_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_4_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2094,13 +2094,13 @@ guiTypes = {
 						position = { x = 215 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_5_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_hotan"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_hotan"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_5_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_5_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2116,13 +2116,13 @@ guiTypes = {
 						position = { x = 430 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_6_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_antioch"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_antioch"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_6_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_6_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2143,13 +2143,13 @@ guiTypes = {
 						position = { x = 0 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_pataliputra"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_pataliputra"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_7_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2165,13 +2165,13 @@ guiTypes = {
 						position = { x = 215 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_8_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_gyeongju"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_gyeongju"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_8_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_8_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2187,13 +2187,13 @@ guiTypes = {
 						position = { x = 430 y = 0 }
 
 						guiButtonType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_9_button"
 							position = { x = 0 y = 0 }
-							spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_holy_site_socotra"
+							spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_holy_site_socotra"
 							scripted = yes
 						}
 						instantTextBoxType = {
-							name = "re_religion_mechanic_nestorian_patriarchy_main_holy_site_9_name"
+							name = "rce_religion_mechanic_nestorian_patriarchy_main_holy_site_9_name"
 							position = { x = 15 y = 11 }
 							format = left
 							font = "vic_18"
@@ -2208,7 +2208,7 @@ guiTypes = {
 			}
 
 			guiButtonType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_main_close_button"
+				name = "rce_religion_mechanic_nestorian_patriarchy_main_close_button"
 				position = { x = 445 y = -44 }
 				orientation = lower_left
 				spriteType = "button_type_9"
@@ -2221,7 +2221,7 @@ guiTypes = {
 
 			# Center of Reformation Selection Window
 			windowType = {
-				name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window"
+				name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window"
 				if_resolution = {
 					max_width = 1599
 					position = { x = 702 y = 46 }
@@ -2238,11 +2238,11 @@ guiTypes = {
 				guiButtonType = {
 					name = "background"
 					position = { x = 0 y = 0 }
-					spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_centers_of_reformation_bg"
+					spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_centers_of_reformation_bg"
 				}
 
 				instantTextBoxType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_title"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_title"
 					position = { x = 75 y = 27 }
 					format = center
 					font = "vic_18"
@@ -2258,14 +2258,14 @@ guiTypes = {
 					position = { x = 38 y = 70 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_1_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2280,14 +2280,14 @@ guiTypes = {
 					position = { x = 38 y = 115 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_2_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2302,14 +2302,14 @@ guiTypes = {
 					position = { x = 38 y = 160 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_3_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2324,14 +2324,14 @@ guiTypes = {
 					position = { x = 38 y = 205 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_4_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2346,14 +2346,14 @@ guiTypes = {
 					position = { x = 38 y = 250 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_5_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2368,14 +2368,14 @@ guiTypes = {
 					position = { x = 38 y = 295 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_6_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2390,14 +2390,14 @@ guiTypes = {
 					position = { x = 38 y = 340 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_7_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2412,14 +2412,14 @@ guiTypes = {
 					position = { x = 38 y = 385 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_8_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2434,14 +2434,14 @@ guiTypes = {
 					position = { x = 38 y = 430 }
 
 					guiButtonType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_button"
 						position = { x = 0 y = 0 }
-						spriteType = "GFX_re_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
+						spriteType = "GFX_rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_icons"
 						scale = 0.55
 						scripted = yes
 					}
 					instantTextBoxType = {
-						name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_name"
+						name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_9_name"
 						position = { x = 55 y = 10 }
 						format = left
 						font = "vic_22"
@@ -2453,7 +2453,7 @@ guiTypes = {
 				}
 
 				guiButtonType = {
-					name = "re_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_close_button"
+					name = "rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_close_button"
 					position = { x = 105 y = -48 }
 					orientation = lower_left
 					spriteType = "button_type_6"
@@ -2466,9 +2466,9 @@ guiTypes = {
 			}
 		}
 
-		#########################################
-		##  END Religions Expanded Custom GUI  ##
-		#########################################
+		####################################################
+		##  END Religions & Cultures Expanded Custom GUI  ##
+		####################################################
 	} ### end of "topbar"
 
 	windowType = {
