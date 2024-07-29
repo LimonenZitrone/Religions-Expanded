@@ -326,6 +326,9 @@ religions_expanded_bogomilist_aspect_distribute_the_means_of_production = {
 			hidden_trigger = {
 				has_country_modifier = religions_expanded_bogomilist_aspect_distribute_the_means_of_production_modifier_2
 			}
+			hidden_trigger = {
+				has_country_modifier = religions_expanded_bogomilist_aspect_distribute_the_means_of_production_modifier_3
+			}
 		}
 		if = {
 			limit = {
