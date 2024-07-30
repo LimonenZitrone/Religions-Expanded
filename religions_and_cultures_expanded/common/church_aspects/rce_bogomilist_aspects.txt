@@ -37,6 +37,7 @@ rce_bogomilist_aspect_dissolve_church_properties = {
 						has_owner_religion = yes
 						has_building = cathedral
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.1 }
 					remove_building = cathedral
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -93,6 +94,7 @@ rce_bogomilist_aspect_dissolve_church_properties = {
 						has_owner_religion = yes
 						has_building = temple
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.1 }
 					remove_building = temple
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -181,6 +183,7 @@ rce_bogomilist_aspect_deprivatize_mercantile_charters = {
 						has_owner_religion = yes
 						has_building = stock_exchange
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.2 }
 					remove_building = stock_exchange
 					area = {
 						limit = { owned_by = ROOT }
@@ -207,6 +210,7 @@ rce_bogomilist_aspect_deprivatize_mercantile_charters = {
 						has_owner_religion = yes
 						has_building = trade_depot
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.2 }
 					remove_building = trade_depot
 					area = {
 						limit = { owned_by = ROOT }
@@ -227,6 +231,7 @@ rce_bogomilist_aspect_deprivatize_mercantile_charters = {
 						has_owner_religion = yes
 						has_building = marketplace
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.2 }
 					remove_building = marketplace
 					area = {
 						limit = { owned_by = ROOT }
@@ -278,6 +283,7 @@ rce_bogomilist_aspect_institute_clerical_administration = {
 						has_owner_religion = yes
 						has_building = town_hall
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.3 }
 					remove_building = town_hall
 					area = {
 						limit = { owned_by = ROOT }
@@ -294,6 +300,7 @@ rce_bogomilist_aspect_institute_clerical_administration = {
 						has_owner_religion = yes
 						has_building = courthouse
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.3 }
 					remove_building = courthouse
 					area = {
 						limit = { owned_by = ROOT }
@@ -381,6 +388,7 @@ rce_bogomilist_aspect_distribute_the_means_of_production = {
 						has_owner_religion = yes
 						has_building = steam_factory
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.4 }
 					remove_building = steam_factory
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -461,6 +469,7 @@ rce_bogomilist_aspect_distribute_the_means_of_production = {
 						has_owner_religion = yes
 						has_building = counting_house
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.4 }
 					remove_building = counting_house
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -517,6 +526,7 @@ rce_bogomilist_aspect_distribute_the_means_of_production = {
 						has_owner_religion = yes
 						has_building = workshop
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.4 }
 					remove_building = workshop
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -593,6 +603,7 @@ rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war = {
 						has_owner_religion = yes
 						has_building = training_fields
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.5 }
 					remove_building = training_fields
 					ROOT = {
 						add_years_of_owned_provinces_manpower = {
@@ -611,6 +622,7 @@ rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war = {
 						has_owner_religion = yes
 						has_building = barracks
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.5 }
 					remove_building = barracks
 					ROOT = {
 						add_years_of_owned_provinces_manpower = {
@@ -685,6 +697,7 @@ rce_bogomilist_aspect_standarize_holy_knights = {
 						has_owner_religion = yes
 						has_building = conscription_center
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.6 }
 					remove_building = conscription_center
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -741,6 +754,7 @@ rce_bogomilist_aspect_standarize_holy_knights = {
 						has_owner_religion = yes
 						has_building = regimental_camp
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.6 }
 					remove_building = regimental_camp
 					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_dev_chance
 					area = {
@@ -829,6 +843,7 @@ rce_bogomilist_aspect_organize_colonial_voyages = {
 						has_owner_religion = yes
 						has_building = grand_shipyard
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.7 }
 					remove_building = grand_shipyard
 				}
 			}
@@ -842,6 +857,7 @@ rce_bogomilist_aspect_organize_colonial_voyages = {
 						has_owner_religion = yes
 						has_building = shipyard
 					}
+					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.7 }
 					remove_building = shipyard
 				}
 			}

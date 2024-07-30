@@ -1,0 +1,236 @@
+namespace = rce_religion_mechanic_bogomilist_church_aspects_events
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.1
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME1
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC1
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events1.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_dissolve_church_properties_modifier_1
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_dissolve_church_properties_tt_used_cathedral
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_dissolve_church_properties_tt_used_temple
+		}
+	}
+}
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.2
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME2
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC2
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events2.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_1
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_deprivatize_mercantile_charters_tt_used_stock_exchange
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_deprivatize_mercantile_charters_modifier_2
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_deprivatize_mercantile_charters_tt_used_trade_depot
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_deprivatize_mercantile_charters_tt_used_marketplace
+		}
+	}
+}
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.3
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME3
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC3
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events3.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				has_province_modifier = rce_bogomilist_aspect_institute_clerical_administration_province_modifier_1
+			}
+			custom_tooltip = rce_bogomilist_aspect_institute_clerical_administration_tt_used_town_hall
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_institute_clerical_administration_tt_used_courthouse
+		}
+	}
+}
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.4
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME4
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC4
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events4.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_1
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_steam_factory
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_distribute_the_means_of_production_modifier_2
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_counting_house
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_workshop
+		}
+	}
+}
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.5
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME5
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC5
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_building = training_fields
+				}
+				set_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events5.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				has_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields
+			}
+			clr_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields
+			custom_tooltip = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields
+			tooltip = {
+				owner = {
+					add_years_of_owned_provinces_manpower = {
+						years = 4
+						trigger = {
+							area = PREV
+						}
+						custom_tooltip = string_empty
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_barracks
+			tooltip = {
+				owner = {
+					add_years_of_owned_provinces_manpower = {
+						years = 2
+						trigger = {
+							area = PREV
+						}
+						custom_tooltip = string_empty
+					}
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.6
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME6
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC6
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events6.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_standarize_holy_knights_modifier_1
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_standarize_holy_knights_tt_used_conscription_center
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_standarize_holy_knights_tt_used_regimental_camp
+		}
+	}
+}
+
+province_event = {
+	id = rce_religion_mechanic_bogomilist_church_aspects_events.7
+	title = rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME7
+	desc = rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC7
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_bogomilist_church_aspects_events7.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_bogomilist_aspect_organize_colonial_voyages_modifier_1
+				}
+			}
+			custom_tooltip = rce_bogomilist_aspect_organize_colonial_voyages_tt_used_grand_shipyard
+		}
+		else = {
+			custom_tooltip = rce_bogomilist_aspect_organize_colonial_voyages_tt_used_shipyard
+		}
+	}
+}

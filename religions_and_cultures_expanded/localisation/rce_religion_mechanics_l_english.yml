@@ -1318,6 +1318,11 @@
  BOGOMILIST_ASPECTS_POWER_NAME: "Church Power"
  BOGOMILIST_ASPECTS_LONG: "Religious Action"
  BOGOMILIST_ASPECTS_SHORT: "action"
+
+ # Scripted Triggers:
+ rce_uses_religion_mechanic_bogomilist_church_aspects_tt: "Uses the §YBogomilist Church Aspects§! mechanic"
+ rce_not_uses_religion_mechanic_bogomilist_church_aspects_tt: "Does NOT use the §YBogomilist Church Aspects§! mechanic"
+
  # Church Aspects:
  rce_bogomilist_aspect_dissolve_church_properties: "Dissolve Church Properties"
  desc_rce_bogomilist_aspect_dissolve_church_properties: "A random §YBogomilist§! province with a §YTaxation Building§! will be selected. Matching provinces with a higher level building are prioritized if available. \n\nThe cooldown of the action is §Y10 years§!."
@@ -1344,6 +1349,51 @@
  rce_bogomilist_aspect_promote_ascetic_lifestyle: "Promote Ascetic Lifestyle"
  desc_rce_bogomilist_aspect_promote_ascetic_lifestyle: "If the applied modifier is already active, it will be removed first so that you will always get it for §Y10 years§!. \n\nThis action has no cooldown."
  rce_bogomilist_aspect_promote_ascetic_lifestyle_tt: "Gain §R-20.0%§! [global_tax_modifier], §G-10.0%§! [build_cost] and §G-10.0%§! [build_time] for §Y10 years§!."
+
+ # Events
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME1: "Dissolved Church Properties in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC1: "The province [Root.GetName] was selected for the 'Dissolve Church Properties' aspect. It has lost its taxation building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events1.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_dissolve_church_properties_tt_used_cathedral: "§Y[Root.GetName]§! lost its §YCathedral§!. \n§G6§! Base Tax were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [global_tax_modifier]: §G+30.0%§!"
+ rce_bogomilist_aspect_dissolve_church_properties_tt_used_temple: "§Y[Root.GetName]§! lost its §YChurch§!. \n§G3§! Base Tax were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [global_tax_modifier]: §G+15.0%§!"
+
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME2: "Deprivatized Mercantile Charters in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC2: "The province [Root.GetName] was selected for the 'Deprivatize Mercantile Charters' aspect. It has lost its trade building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events2.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_deprivatize_mercantile_charters_tt_used_stock_exchange: "§Y[Root.GetName]§! lost its §YStock Exchange§!. \nAll owned provinces in the §Y[Root.GetAreaName]§! area gained the following bonuses for §Y10 years§!: \n   [trade_value]: §G+3.00§! \n\n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [trade_efficiency]: §G+15.0%§!"
+ rce_bogomilist_aspect_deprivatize_mercantile_charters_tt_used_trade_depot: "§Y[Root.GetName]§! lost its §YTrade Depot§!. \nAll owned provinces in the §Y[Root.GetAreaName]§! area gained the following bonuses for §Y10 years§!: \n   [trade_value]: §G+2.00§! \n\n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [trade_efficiency]: §G+10.0%§!"
+ rce_bogomilist_aspect_deprivatize_mercantile_charters_tt_used_marketplace: "§Y[Root.GetName]§! lost its §YMarketplace§!. \nAll owned provinces in the §Y[Root.GetAreaName]§! area gained the following bonuses for §Y10 years§!: \n   [trade_value]: §G+1.00§! \n\n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [trade_efficiency]: §G+5.0%§!"
+
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME3: "Instituted Clerical Administration in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC3: "The province [Root.GetName] was selected for the 'Institute Clerical Administration' aspect. It has lost its government building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events3.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_institute_clerical_administration_tt_used_town_hall: "§Y[Root.GetName]§! lost its §YTown Hall§!. \nAll owned provinces in the §Y[Root.GetAreaName]§! area gained the following bonuses for §Y10 years§!: \n   [local_development_cost]: §G-20.0%§!"
+ rce_bogomilist_aspect_institute_clerical_administration_tt_used_courthouse: "§Y[Root.GetName]§! lost its §YCourthouse§!. \nAll owned provinces in the §Y[Root.GetAreaName]§! area gained the following bonuses for §Y10 years§!: \n   [local_development_cost]: §G-10.0%§!"
+
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME4: "Distributed the Means of Production in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC4: "The province [Root.GetName] was selected for the 'Distribute the Means of Production' aspect. It has lost its production building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events4.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_steam_factory: "§Y[Root.GetName]§! lost its §YSteam Factory§!. \n§G9§! Base Production were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [production_efficiency]: §G+30.0%§!"
+ rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_counting_house: "§Y[Root.GetName]§! lost its §YCounting House§!. \n§G6§! Base Production were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [production_efficiency]: §G+20.0%§!"
+ rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_workshop: "§Y[Root.GetName]§! lost its §YWorkshop§!. \n§G3§! Base Production were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [production_efficiency]: §G+10.0%§!"
+
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME5: "Slackened Recruitment for the Holy War in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC5: "The province [Root.GetName] was selected for the 'Slacken Recruitment for the Holy War' aspect. It has lost its manpower building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events5.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields: "§Y[Root.GetName]§! lost its §YTraining Fields§!. \n[Root.GetName] has gained §G4.00§! years of manpower from owned provinces in the §Y[Root.GetAreaName]§! area, which amounts to the following:"
+ rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_barracks: "§Y[Root.GetName]§! lost its §YBarracks§!. \n[Root.GetName] has gained §G2.00§! years of manpower from owned provinces in the §Y[Root.GetAreaName]§! area, which amounts to the following:"
+
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME6: "Standardized Holy Knights in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC6: "The province [Root.GetName] was selected for the 'Standardize Holy Knights' aspect. It has lost its forcelimit building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events6.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_standarize_holy_knights_tt_used_conscription_center: "§Y[Root.GetName]§! lost its §YConscription Center§!. \n§G6§! Base Manpower were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [shock_damage]: §G+10.0%§! \n   [cavalry_power]: §G+25.0%§!"
+ rce_bogomilist_aspect_standarize_holy_knights_tt_used_regimental_camp: "§Y[Root.GetName]§! lost its §YRegimental Camp§!. \n§G3§! Base Manpower were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [shock_damage]: §G+5.0%§! \n   [cavalry_power]: §G+15.0%§!"
+
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME7: "Organized Colonial Voyages in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC7: "The province [Root.GetName] was selected for the 'Organize Colonial Voyages' aspect. It has lost its naval forcelimit building and the bonus was applied."
+ rce_religion_mechanic_bogomilist_church_aspects_events7.EVTOPT1: "Ok."
+ rce_bogomilist_aspect_organize_colonial_voyages_tt_used_grand_shipyard: "§Y[Root.GetName]§! lost its §YGrand Shipyard§!. \n[Root.Owner.GetName] gained the following bonuses for §Y20 years§!: \n   [global_colonial_growth]: §G+20.00§! \n   [colonist_placement_chance]: §G+20.0%§!"
+ rce_bogomilist_aspect_organize_colonial_voyages_tt_used_shipyard: "§Y[Root.GetName]§! lost its §YShipyard§!. \n[Root.Owner.GetName] gained the following bonuses for §Y20 years§!: \n   [global_colonial_growth]: §G+10.00§! \n   [colonist_placement_chance]: §G+10.0%§!"
 
  # Modifiers:
  ## Church Aspect Modifiers:
