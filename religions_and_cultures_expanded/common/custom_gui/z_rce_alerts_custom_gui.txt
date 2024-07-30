@@ -17,6 +17,7 @@ custom_button = {
 						NOT = { rce_has_religion_mechanic_four_tenets_system_ability_4 = yes }
 					}
 				}
+				has_regency = no
 			}
 			AND = {
 				rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
