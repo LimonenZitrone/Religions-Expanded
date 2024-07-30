@@ -19,14 +19,17 @@ rce_religion_mechanic_four_tenets_system_ability_1_modifier_3 = {
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_2_modifier_1 = {
+	country_admin_power = 1
 	trade_efficiency = 0.1
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_2_modifier_2 = {
+	country_diplomatic_power = 1
 	morale_damage = 0.1
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_2_modifier_3 = {
+	country_military_power = 1
 	build_cost = -0.1
 	religion = yes
 }
@@ -43,14 +46,17 @@ rce_religion_mechanic_four_tenets_system_ability_3_modifier_3 = {
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_4_modifier_1 = {
+	country_admin_power = 1
 	diplomats = 1
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_4_modifier_2 = {
+	country_diplomatic_power = 1
 	merchants = 1
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_4_modifier_3 = {
+	country_military_power = 1
 	global_manpower_modifier = 0.2
 	religion = yes
 }

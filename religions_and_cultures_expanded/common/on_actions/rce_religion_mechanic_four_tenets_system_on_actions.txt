@@ -50,12 +50,8 @@ on_tech_taken = {
 	}
 }
 
-on_harmonized_tibetan_buddhism = {
-	on_harmonized_effect = yes
-	on_harmonized_religion_estate_privileges_effect = yes
-	events = {
-		rce_religion_tibetan_buddhism_events.1
-	}
+on_monarch_death = {
+	rce_set_religion_mechanic_four_tenets_system_value = { value = 0 }
 }
 
 # ROOT = annexing country, FROM = annexed country

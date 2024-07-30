@@ -67,7 +67,6 @@ country_event = {
 			limit = {
 				rce_has_religion_mechanic_four_tenets_system_ability_1 = yes
 			}
-			change_adm = 1
 			add_ruler_modifier = {
 				name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_1
 				duration = -1
@@ -82,7 +81,6 @@ country_event = {
 			limit = {
 				rce_has_religion_mechanic_four_tenets_system_ability_1 = yes
 			}
-			change_dip = 1
 			add_ruler_modifier = {
 				name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_2
 				duration = -1
@@ -97,7 +95,6 @@ country_event = {
 			limit = {
 				rce_has_religion_mechanic_four_tenets_system_ability_1 = yes
 			}
-			change_mil = 1
 			add_ruler_modifier = {
 				name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_3
 				duration = -1
@@ -194,7 +191,6 @@ country_event = {
 			limit = {
 				rce_has_religion_mechanic_four_tenets_system_ability_3 = yes
 			}
-			change_adm = 1
 			add_ruler_modifier = {
 				name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_1
 				duration = -1
@@ -209,7 +205,6 @@ country_event = {
 			limit = {
 				rce_has_religion_mechanic_four_tenets_system_ability_3 = yes
 			}
-			change_dip = 1
 			add_ruler_modifier = {
 				name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_2
 				duration = -1
@@ -224,7 +219,6 @@ country_event = {
 			limit = {
 				rce_has_religion_mechanic_four_tenets_system_ability_3 = yes
 			}
-			change_mil = 1
 			add_ruler_modifier = {
 				name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_3
 				duration = -1

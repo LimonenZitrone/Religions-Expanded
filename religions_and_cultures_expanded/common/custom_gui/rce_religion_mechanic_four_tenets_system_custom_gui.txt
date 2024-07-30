@@ -305,7 +305,6 @@ custom_button = {
 					limit = {
 						has_ruler_modifier = rce_religion_mechanic_four_tenets_system_ability_2_modifier_1
 					}
-					change_adm = 1
 					add_country_modifier = {
 						name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_1
 						duration = -1
@@ -316,7 +315,6 @@ custom_button = {
 					limit = {
 						has_ruler_modifier = rce_religion_mechanic_four_tenets_system_ability_2_modifier_2
 					}
-					change_dip = 1
 					add_country_modifier = {
 						name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_2
 						duration = -1
@@ -327,7 +325,6 @@ custom_button = {
 					limit = {
 						has_ruler_modifier = rce_religion_mechanic_four_tenets_system_ability_2_modifier_3
 					}
-					change_mil = 1
 					add_country_modifier = {
 						name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_3
 						duration = -1
@@ -339,17 +336,14 @@ custom_button = {
 		else = {
 			country_event = { id = rce_religion_mechanic_four_tenets_system_events.2 tooltip = rce_religion_mechanic_four_tenets_system_ability_can_pick_tt }
 			tooltip = {
-				change_adm = 1
 				add_ruler_modifier = {
 					name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_1
 					duration = -1
 				}
-				change_dip = 1
 				add_ruler_modifier = {
 					name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_2
 					duration = -1
 				}
-				change_mil = 1
 				add_ruler_modifier = {
 					name = rce_religion_mechanic_four_tenets_system_ability_2_modifier_3
 					duration = -1
@@ -533,7 +527,6 @@ custom_button = {
 					limit = {
 						has_ruler_modifier = rce_religion_mechanic_four_tenets_system_ability_4_modifier_1
 					}
-					change_adm = 1
 					add_country_modifier = {
 						name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_1
 						duration = -1
@@ -544,7 +537,6 @@ custom_button = {
 					limit = {
 						has_ruler_modifier = rce_religion_mechanic_four_tenets_system_ability_4_modifier_2
 					}
-					change_dip = 1
 					add_country_modifier = {
 						name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_2
 						duration = -1
@@ -555,7 +547,6 @@ custom_button = {
 					limit = {
 						has_ruler_modifier = rce_religion_mechanic_four_tenets_system_ability_4_modifier_3
 					}
-					change_mil = 1
 					add_country_modifier = {
 						name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_3
 						duration = -1
@@ -567,17 +558,14 @@ custom_button = {
 		else = {
 			country_event = { id = rce_religion_mechanic_four_tenets_system_events.4 tooltip = rce_religion_mechanic_four_tenets_system_ability_can_pick_tt }
 			tooltip = {
-				change_adm = 1
 				add_ruler_modifier = {
 					name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_1
 					duration = -1
 				}
-				change_dip = 1
 				add_ruler_modifier = {
 					name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_2
 					duration = -1
 				}
-				change_mil = 1
 				add_ruler_modifier = {
 					name = rce_religion_mechanic_four_tenets_system_ability_4_modifier_3
 					duration = -1

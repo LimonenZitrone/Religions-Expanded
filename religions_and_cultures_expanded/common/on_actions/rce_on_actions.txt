@@ -138,3 +138,11 @@ on_monthly_pulse = {
 	}
 	set_variable = { which = rce_num_of_missionaries_temp value = 0 }
 }
+
+on_harmonized_tibetan_buddhism = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		rce_religion_tibetan_buddhism_events.1
+	}
+}
