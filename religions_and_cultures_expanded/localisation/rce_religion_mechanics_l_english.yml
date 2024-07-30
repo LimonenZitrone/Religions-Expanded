@@ -1377,7 +1377,7 @@
  rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_counting_house: "§Y[Root.GetName]§! lost its §YCounting House§!. \n§G6§! Base Production were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [production_efficiency]: §G+20.0%§!"
  rce_bogomilist_aspect_distribute_the_means_of_production_tt_used_workshop: "§Y[Root.GetName]§! lost its §YWorkshop§!. \n§G3§! Base Production were distributed in owned provinces in the §Y[Root.GetAreaName]§! area. \n[Root.Owner.GetName] gained the following bonuses for §Y10 years§!: \n   [production_efficiency]: §G+10.0%§!"
 
- rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME5: "Slackened Recruitment for the Holy War in §Y[Root.GetName]§!"
+ rce_religion_mechanic_bogomilist_church_aspects_events.EVTNAME5: "Slackened Recruitment in §Y[Root.GetName]§!"
  rce_religion_mechanic_bogomilist_church_aspects_events.EVTDESC5: "The province [Root.GetName] was selected for the 'Slacken Recruitment for the Holy War' aspect. It has lost its manpower building and the bonus was applied."
  rce_religion_mechanic_bogomilist_church_aspects_events5.EVTOPT1: "Ok."
  rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields: "§Y[Root.GetName]§! lost its §YTraining Fields§!. \n[Root.GetName] has gained §G4.00§! years of manpower from owned provinces in the §Y[Root.GetAreaName]§! area, which amounts to the following:"

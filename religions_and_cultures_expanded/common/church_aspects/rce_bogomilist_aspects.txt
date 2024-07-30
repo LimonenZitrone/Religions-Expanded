@@ -605,15 +605,22 @@ rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war = {
 					}
 					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.5 }
 					remove_building = training_fields
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
 					ROOT = {
 						add_years_of_owned_provinces_manpower = {
 							years = 4
 							trigger = {
-								area = PREV
+								OR = {
+									has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
+									area_for_scope_province = {
+										has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
+									}
+								}
 							}
 							custom_tooltip = string_empty
 						}
 					}
+					clr_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
 				}
 			}
 			else = {
@@ -624,15 +631,22 @@ rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war = {
 					}
 					province_event = { id = rce_religion_mechanic_bogomilist_church_aspects_events.5 }
 					remove_building = barracks
+					set_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
 					ROOT = {
 						add_years_of_owned_provinces_manpower = {
 							years = 2
 							trigger = {
-								area = PREV
+								OR = {
+									has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
+									area_for_scope_province = {
+										has_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
+									}
+								}
 							}
 							custom_tooltip = string_empty
 						}
 					}
+					clr_province_flag = rce_religion_mechanic_bogomilist_church_aspects_province_considered_for_manpower
 				}
 			}
 		}

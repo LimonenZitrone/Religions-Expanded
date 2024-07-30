@@ -138,6 +138,7 @@ province_event = {
 				}
 				set_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt_training_fields
 			}
+			set_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
 		}
 	}
 
@@ -157,7 +158,12 @@ province_event = {
 					add_years_of_owned_provinces_manpower = {
 						years = 4
 						trigger = {
-							area = PREV
+							OR = {
+								has_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
+								area_for_scope_province = {
+									has_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
+								}
+							}
 						}
 						custom_tooltip = string_empty
 					}
@@ -171,13 +177,19 @@ province_event = {
 					add_years_of_owned_provinces_manpower = {
 						years = 2
 						trigger = {
-							area = PREV
+							OR = {
+								has_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
+								area_for_scope_province = {
+									has_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
+								}
+							}
 						}
 						custom_tooltip = string_empty
 					}
 				}
 			}
 		}
+		clr_province_flag = rce_bogomilist_aspect_slacken_recruitment_for_the_holy_war_tt
 	}
 }
 
