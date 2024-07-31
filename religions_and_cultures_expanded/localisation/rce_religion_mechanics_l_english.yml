@@ -1272,6 +1272,16 @@
  string_rce_get_religion_mechanic_manichaeism_purity_monthly_gain_value_negative: "§R[This.rce_monthly_religion_mechanic_manichaeism_purity_value.GetValue]§!"
  string_rce_get_religion_mechanic_manichaeism_purity_monthly_gain_value_neutral: "§Y0.00§!"
 
+ # Events:
+ rce_religion_mechanic_manichaeism_purity_events.EVTNAME1: "Minor Focus removed"
+ rce_religion_mechanic_manichaeism_purity_events.EVTDESC1: "At least one Minor Focus has been removed, because our Purity has decreased below the threshold of supporting the amount of Minor Focuses we had selected."
+ rce_religion_mechanic_manichaeism_purity_events1.EVTOPT1: "Ok."
+ rce_religion_mechanic_manichaeism_purity_events.1.tt.1: "§RThe Minor Focus '§YWarming Fire§!' has been removed. \nIt gave us the following bonuses, which no longer apply:§W"
+ rce_religion_mechanic_manichaeism_purity_events.1.tt.2: "§RThe Minor Focus '§YBright Light§!' has been removed. \nIt gave us the following bonuses, which no longer apply:§W"
+ rce_religion_mechanic_manichaeism_purity_events.1.tt.3: "§RThe Minor Focus '§YLife-Giving Waters§!' has been removed. \nIt gave us the following bonuses, which no longer apply:§W"
+ rce_religion_mechanic_manichaeism_purity_events.1.tt.4: "§RThe Minor Focus '§YRefreshing Wind§!' has been removed. \nIt gave us the following bonuses, which no longer apply:§W"
+ rce_religion_mechanic_manichaeism_purity_events.1.tt.5: "§RThe Minor Focus '§YClear Air§!' has been removed. \nIt gave us the following bonuses, which no longer apply:§W"
+
  # Decisions:
  rce_religion_mechanic_manichaeism_purity_knowledge_decision_title: "Call upon the God of Knowledge"
  rce_religion_mechanic_manichaeism_purity_knowledge_decision_desc: "Make offerings to the sixth son of the First-Man to make him support the [This.Monarch.GetTitle] in [This.Monarch.GetHerHis] life decisions."

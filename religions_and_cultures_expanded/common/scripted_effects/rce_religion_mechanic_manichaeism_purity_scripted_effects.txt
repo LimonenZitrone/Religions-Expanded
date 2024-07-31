@@ -109,56 +109,46 @@ rce_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = {
 				rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
 			}
 			rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+			set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_fire
 		}
 		else_if = {
 			limit = {
 				rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
 			}
 			rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+			set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_light
 		}
 		else_if = {
 			limit = {
 				rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
 			}
 			rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+			set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_water
 		}
 		else_if = {
 			limit = {
 				rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
 			}
 			rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+			set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_wind
 		}
 		else_if = {
 			limit = {
 				rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
 			}
 			rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+			set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_air
 		}
 		if = {
 			limit = {
-				OR = {
-					AND = {
-						NOT = { rce_has_religion_mechanic_manichaeism_purity_value = { value = 66 } }
-						calc_true_if = {
-							amount = 3
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
-						}
-					}
-					AND = {
-						NOT = { rce_has_religion_mechanic_manichaeism_purity_value = { value = 33 } }
-						calc_true_if = {
-							amount = 2
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
-							rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
-						}
-					}
+				NOT = { rce_has_religion_mechanic_manichaeism_purity_value = { value = 33 } }
+				calc_true_if = {
+					amount = 2
+					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
 				}
 			}
 			if = {
@@ -166,32 +156,38 @@ rce_remove_religion_mechanic_manichaeism_purity_minor_focuses_if_too_many = {
 					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
 				}
 				rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = fire }
+				set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_fire
 			}
 			else_if = {
 				limit = {
 					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
 				}
 				rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = light }
+				set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_light
 			}
 			else_if = {
 				limit = {
 					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
 				}
 				rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = water }
+				set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_water
 			}
 			else_if = {
 				limit = {
 					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
 				}
 				rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = wind }
+				set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_wind
 			}
 			else_if = {
 				limit = {
 					rce_has_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
 				}
 				rce_remove_religion_mechanic_manichaeism_purity_minor_focus = { focus = air }
+				set_country_flag = rce_remove_religion_mechanic_manichaeism_purity_minor_focus_tt_air
 			}
 		}
+		country_event = { id = rce_religion_mechanic_manichaeism_purity_events.1 }
 	}
 }
 
