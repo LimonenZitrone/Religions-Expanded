@@ -119,6 +119,10 @@ country_event = {
 		months = 60
 		modifier = {
 			factor = 0.5
+			accepted_culture = turkish
+		}
+		modifier = {
+			factor = 0.5
 			num_of_owned_provinces_with = {
 				value = 30
 				culture = turkish
