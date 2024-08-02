@@ -2,3 +2,7 @@
  MODIFIER_COUNTRY_ADMIN_POWER:1 "Monthly £adm£Administrative Power"
  MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "Monthly £dip£Diplomatic Power"
  MODIFIER_COUNTRY_MILITARY_POWER:1 "Monthly £mil£Military Power"
+
+ province_is_buddhist_or_accepts_buddhism_at:1 "The Religion of §Y[Root.GetName]§! is either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§! and is either the State, the Syncretic or the Harmonized Religion of the owner."
+ province_is_buddhist_or_accepts_buddhism_bt:1 "The Religion of §Y[Root.GetName]§! is §YConfucian§! and the owner has harmonized either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§!."
+ province_is_buddhist_or_accepts_buddhism_ct:1 "The Religion of §Y[Root.GetName]§! is §YTengri§! and the owner has either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§! as their Syncretic Religion."
