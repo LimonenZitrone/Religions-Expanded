@@ -1,22 +1,22 @@
 ﻿l_english:
  # Religions:
  jainism: "Jainist"
- jainism_religion_desc: ""
+ jainism_religion_desc: "Jainism is the name of an ancient Indian religion with its roots in the teachings of Mahavira, who is considered the 24th Tirthankara (spiritual teacher) in a long line of enlightened beings. Jainism emphasizes non-violence, truth, and asceticism, with the ultimate goal of achieving liberation (moksha) from the cycle of birth and death. \n\nIn 1444, Jainism is a prominent religion in western and central India, known for its strict ethical code and its influence on Indian culture and philosophy. Despite its smaller number of adherents compared to Hinduism and Islam, Jainism continues to maintain a strong community and religious tradition."
  jainism_string: "Jainism"
  tibetan_buddhism: "Nang Chos"
- tibetan_buddhism_religion_desc: ""
+ tibetan_buddhism_religion_desc: "Nang Chos is a Vajrayana Buddhist tradition with its roots in the teachings brought to Tibet by Padmasambhava and other Indian masters. It emphasizes the use of rituals, meditation, and the guidance of spiritual teachers, or lamas, to achieve enlightenment. \n\nIn 1444, Nang Chos is the dominant religious tradition in Tibet and has a significant presence in neighboring regions such as Mongolia and parts of China. It is known for its unique practices, including the use of mandalas, mantras, and tantric rituals. This tradition will continue to shape Tibetan culture and spirituality, despite facing periods of persecution and political upheaval."
  tibetan_buddhism_string: "Nang Chos"
  vidilist: "Vidilist"
- vidilist_religion_desc: ""
+ vidilist_religion_desc: "Vidilism is the name of an ancient polytheistic tradition with its roots in the indigenous beliefs of the Baltic peoples, including the Lithuanians, Latvians, and Old Prussians. It centers on the worship of natural forces and deities, reverence for ancestors, and rituals tied to the agricultural calendar. \n\nIn 1444, Vidilism is still practiced in parts of the Baltic region, most notably Samogetia, though it is increasingly threatened by the expansion of Christianity, particularly Catholicism and Eastern Orthodoxy. The resilience of its followers and the deep connection to their cultural identity will allow elements of Vidilism to survive and be revived in later centuries, despite the pressures of religious conversion."
  vidilist_string: "Vidilism"
  nestorian: "Nestorian"
- nestorian_religion_desc: ""
+ nestorian_religion_desc: "Nestorianism is the name of a Christian tradition with its roots in the teachings of Nestorius, who emphasized the distinction between the divine and human natures of Jesus Christ. This belief led to the formation of the Church of the East, which spread across Asia. \n\nIn 1444, Nestorianism is a significant but persecuted Christian tradition, with communities stretching from the Middle East to China, having established itself in places like Persia, India, and along the Silk Road. Despite facing persecution and pressure from both Islamic and other Christian authorities, Nestorianism will continue to maintain a presence in certain regions, preserving its distinct theological and cultural identity."
  nestorian_string: "Nestorianism"
  manichaeism: "Manichaean"
- manichaeism_religion_desc: ""
+ manichaeism_religion_desc: "Manichaen is the name of a dualistic religion with its roots in the teachings of the prophet Mani, who synthesized elements of Christianity, Zoroastrianism, and Buddhism. It emphasizes the cosmic struggle between the forces of light and darkness and promotes asceticism and spiritual knowledge as paths to salvation. \n\nIn 1444, Manichaeism has largely declined due to intense persecution by dominant religious and political powers, but remnants of its communities can still be found in isolated regions of Central Asia, China and Mesopotamia. Though its influence has waned, Manichaeism's profound ideas on dualism and spiritual struggle will continue to resonate and be studied in various cultural and religious contexts."
  manichaeism_string: "Manichaeism"
  bogomilist: "Bogomilist"
- bogomilist_religion_desc: ""
+ bogomilist_religion_desc: "Bogomilism is the name of a Christian dualist and Gnostic tradition with its roots in the teachings of the Bulgarian priest Bogomil. It rejects the material world as the creation of an evil demiurge and emphasizes asceticism and spiritual purity. \n\nIn 1444, Bogomilism is a significant religious movement in the Balkans, especially in Bulgaria and Bosnia, but it faces intense persecution from both the Catholic and Orthodox Churches. This persecution will likely lead to its decline and the assimilation of its adherents into other Christian denominations."
  bogomilist_string: "Bogomilism"
 
  # Heresies:

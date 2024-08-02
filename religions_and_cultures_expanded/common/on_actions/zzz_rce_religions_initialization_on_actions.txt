@@ -118,6 +118,15 @@ on_startup = {
 				add_province_triggered_modifier = rce_nestorian_khotan_province_triggered_modifier
 			}
 		}
+		KOR = {
+			if = {
+				limit = {
+					religion = confucianism
+					NOT = { has_harmonized_with = christian }
+				}
+				add_harmonized_religion = nestorian
+			}
+		}
 		# manichaeism
 		every_province = {
 			limit = {

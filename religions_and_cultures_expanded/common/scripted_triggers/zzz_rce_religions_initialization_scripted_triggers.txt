@@ -76,7 +76,11 @@ rce_religion_initialization_nestorian_is_starting_province = {
 
 # manichaeism
 rce_religion_initialization_manichaeism_is_starting_province = {
-	province_id = 4289
+	OR = {
+		province_id = 2119
+		province_id = 2152
+		province_id = 4289
+	}
 }
 
 # bogomilist
