@@ -64,10 +64,10 @@ rce_export_monthly_religion_mechanic_four_tenets_system_value_gain = {
 			limit = {
 				has_dlc = "Rule Britannia"
 			}
-			change_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value value = 0.2 } # Base Gain
+			change_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value value = 0.3 } # Base Gain
 		}
 		else = {
-			change_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value value = 0.6 } # Base Gain (Higher cause no Innovativeness)
+			change_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value value = 0.8 } # Base Gain (Higher cause no Innovativeness)
 		}
 		set_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value_base which = rce_monthly_religion_mechanic_four_tenets_system_value } # display
 		# Modifier

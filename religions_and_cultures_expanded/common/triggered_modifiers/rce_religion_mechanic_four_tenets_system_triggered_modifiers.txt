@@ -17,5 +17,5 @@ rce_religion_mechanic_four_tenets_system_religious_ideas_5_triggered_modifier = 
 		religious_ideas = 5
 	}
 
-	rce_monthly_religion_mechanic_four_tenets_system_change = 0.1
+	rce_monthly_religion_mechanic_four_tenets_system_change = 0.3
 }

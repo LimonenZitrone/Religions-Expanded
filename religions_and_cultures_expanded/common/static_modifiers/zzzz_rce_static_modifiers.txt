@@ -5,7 +5,7 @@ innovativeness = {
 	navy_tradition_decay = -0.01
 
 	# Religions & Cultures Expanded:
-	rce_monthly_religion_mechanic_four_tenets_system_change = 0.4
+	rce_monthly_religion_mechanic_four_tenets_system_change = 0.5
 }
 
 religious_unity = {
