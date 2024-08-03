@@ -261,6 +261,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/rce_religion_mechanics/nestorian_patriarchy_mechanic/mechanic_religion_tab_bg.dds"
 	}
 	spriteType = {
+		name = "GFX_rce_religion_mechanic_nestorian_patriarchy_value_bg"
+		textureFile = "gfx/interface/rce_religion_mechanics/nestorian_patriarchy_mechanic/mechanic_value_bg.dds"
+	}
+	spriteType = {
 		name = "GFX_rce_religion_mechanic_nestorian_patriarchy_button"
 		textureFile = "gfx/interface/rce_religion_mechanics/nestorian_patriarchy_mechanic/mechanic_button.dds"
 	}

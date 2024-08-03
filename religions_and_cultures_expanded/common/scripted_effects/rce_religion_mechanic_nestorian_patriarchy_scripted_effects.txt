@@ -22,6 +22,8 @@ rce_set_religion_mechanic_nestorian_patriarchy_value = {
 				}
 				set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value value = 0 }
 			}
+			set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value_short which = rce_religion_mechanic_nestorian_patriarchy_value }
+			round_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value_short value = -1 } # display without decimals
 		}
 	}
 }
@@ -50,6 +52,8 @@ rce_add_religion_mechanic_nestorian_patriarchy_value = {
 				}
 				set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value value = 0 }
 			}
+			set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value_short which = rce_religion_mechanic_nestorian_patriarchy_value }
+			round_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value_short value = -1 } # display without decimals
 		}
 	}
 }
@@ -1644,6 +1648,7 @@ rce_clear_all_religion_mechanic_nestorian_patriarchy_modifiers = {
 	clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_selection_window_open
 	clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_main_window_open
 	set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value value = 0 }
+	set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_value_short value = 0 }
 	set_variable = { which = rce_yearly_religion_mechanic_nestorian_patriarchy_value value = 0 }
 	set_variable = { which = rce_yearly_religion_mechanic_nestorian_patriarchy_value_from_modifiers value = 0 }
 	set_variable = { which = rce_yearly_religion_mechanic_nestorian_patriarchy_value_from_missionaries value = 0 }

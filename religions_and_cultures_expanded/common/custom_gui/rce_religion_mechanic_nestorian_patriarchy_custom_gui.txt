@@ -15,6 +15,12 @@ custom_window = {
 		rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 	}
 }
+custom_text_box = {
+	name = rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_value
+	potential = {
+		always = yes
+	}
+}
 custom_button = {
 	name = rce_religion_mechanic_nestorian_patriarchy_main_window_open_button
 	effect = {

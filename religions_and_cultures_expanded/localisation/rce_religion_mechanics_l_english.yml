@@ -748,6 +748,7 @@
  ###################################
  # GUIs:
  rce_religion_mechanic_nestorian_patriarchy_province_center_of_reformation_target_icon_tt: "§Y[Root.GetName]§! is currently getting converted to the §YNestorian§! faith by the Nestorian Center of Conversion in §Y[rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§!. \n \nIt takes §Y[This.RceGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationEndValue]§! months for the province to be converted. The conversion is going on for §Y[Root.RceGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationValue]§! months."
+ rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_value: "[This.RceGetReligionMechanicNestorianPatriarchyValueShort]"
  rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_tt: "Nestorian Patriarchy \n--------------\nPatriarchal Influence: §Y[This.RceGetReligionMechanicNestorianPatriarchyValue]§!"
  rce_religion_mechanic_nestorian_patriarchy_main_title: "Nestorian Patriarchy"
  rce_religion_mechanic_nestorian_patriarchy_main_patriarch_controller_title: "Patriarchy\nController"

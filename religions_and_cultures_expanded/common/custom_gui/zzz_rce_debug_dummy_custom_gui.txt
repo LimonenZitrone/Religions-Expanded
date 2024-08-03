@@ -93,6 +93,10 @@ custom_button = {
 }
 
 custom_button = {
+	name = rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_value # text box
+	potential = { always = no }
+}
+custom_button = {
 	name = rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_overlay # icon
 	potential = { always = no }
 }

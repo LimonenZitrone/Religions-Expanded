@@ -15,6 +15,23 @@ defined_text = {
 		localisation_key = "0"
 	}
 }
+defined_text = {
+	name = RceGetReligionMechanicNestorianPatriarchyValueShort
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_nestorian_patriarchy_value = { value = 0.001 }
+		}
+		localisation_key = "[This.rce_religion_mechanic_nestorian_patriarchy_value_short.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
 
 defined_text = {
 	name = RceGetReligionMechanicNestorianPatriarchyYearlyGainValue
