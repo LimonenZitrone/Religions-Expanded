@@ -1,4 +1,8 @@
 rce_clear_all_religion_mechanic_bogomilist_church_aspects_modifiers = {
+	set_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 0 }
+	set_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_adm value = 0 }
+	set_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_dip value = 0 }
+	set_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_mil value = 0 }
 	every_owned_province = {
 		limit = {
 			OR = {

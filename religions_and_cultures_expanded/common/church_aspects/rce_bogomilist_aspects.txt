@@ -83,6 +83,8 @@ rce_bogomilist_aspect_dissolve_church_properties = {
 					}
 					add_base_tax = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_adm value = 6 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 6 }
 			}
 			else = {
 				add_country_modifier = {
@@ -122,6 +124,8 @@ rce_bogomilist_aspect_dissolve_church_properties = {
 					}
 					add_base_tax = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_adm value = 3 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 3 }
 			}
 			every_owned_province = {
 				limit = {
@@ -452,6 +456,8 @@ rce_bogomilist_aspect_distribute_the_means_of_production = {
 					}
 					add_base_production = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_dip value = 9 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 9 }
 			}
 			else_if = {
 				limit = {
@@ -515,6 +521,8 @@ rce_bogomilist_aspect_distribute_the_means_of_production = {
 					}
 					add_base_production = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_dip value = 6 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 6 }
 			}
 			else = {
 				add_country_modifier = {
@@ -554,6 +562,8 @@ rce_bogomilist_aspect_distribute_the_means_of_production = {
 					}
 					add_base_production = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_dip value = 3 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 3 }
 			}
 			every_owned_province = {
 				limit = {
@@ -757,6 +767,8 @@ rce_bogomilist_aspect_standarize_holy_knights = {
 					}
 					add_base_manpower = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_mil value = 6 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 6 }
 			}
 			else = {
 				add_country_modifier = {
@@ -796,6 +808,8 @@ rce_bogomilist_aspect_standarize_holy_knights = {
 					}
 					add_base_manpower = 1
 				}
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_mil value = 3 }
+				change_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 3 }
 			}
 			every_owned_province = {
 				limit = {

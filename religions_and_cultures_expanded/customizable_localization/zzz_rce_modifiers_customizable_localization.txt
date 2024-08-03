@@ -1,3 +1,4 @@
+# Vanilla:
 defined_text = {
 	name = statewide_governing_cost
 	random = no
@@ -955,5 +956,18 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = MODIFIER_WARSCORE_COST_VS_OTHER_RELIGION
+	}
+}
+
+# Religions & Cultures Expanded:
+defined_text = {
+	name = rce_monthly_religion_mechanic_manichaeism_purity_change
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_monthly_religion_mechanic_manichaeism_purity_change
 	}
 }

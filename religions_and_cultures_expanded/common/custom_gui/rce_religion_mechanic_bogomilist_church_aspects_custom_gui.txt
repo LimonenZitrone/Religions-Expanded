@@ -4,3 +4,17 @@ custom_window = {
 		rce_uses_religion_mechanic = { mechanic = bogomilist_church_aspects }
 	}
 }
+custom_text_box = {
+	name = rce_religion_mechanic_bogomilist_church_aspects_dev_value
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_bogomilist_church_aspects_dev_value_tt
+}
+
+custom_window = {
+	name = rce_religion_mechanic_bogomilist_church_aspects_selection_window
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = bogomilist_church_aspects }
+	}
+}

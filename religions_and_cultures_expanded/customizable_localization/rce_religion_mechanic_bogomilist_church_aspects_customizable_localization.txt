@@ -1,0 +1,71 @@
+defined_text = {
+	name = RceGetReligionMechanicBogomilistChurchAspectsDevCounterTotal
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total value = 1 }
+		}
+		localisation_key = "[This.rce_religion_mechanic_bogomilist_church_aspects_dev_counter_total.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicBogomilistChurchAspectsDevCounterAdm
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_adm value = 1 }
+		}
+		localisation_key = "[This.rce_religion_mechanic_bogomilist_church_aspects_dev_counter_adm.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicBogomilistChurchAspectsDevCounterDip
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_dip value = 1 }
+		}
+		localisation_key = "[This.rce_religion_mechanic_bogomilist_church_aspects_dev_counter_dip.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicBogomilistChurchAspectsDevCounterMil
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = rce_religion_mechanic_bogomilist_church_aspects_dev_counter_mil value = 1 }
+		}
+		localisation_key = "[This.rce_religion_mechanic_bogomilist_church_aspects_dev_counter_mil.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}

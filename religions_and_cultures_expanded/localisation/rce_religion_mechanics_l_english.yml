@@ -1330,6 +1330,10 @@
  BOGOMILIST_ASPECTS_LONG: "Religious Action"
  BOGOMILIST_ASPECTS_SHORT: "action"
 
+ # GUIs:
+ rce_religion_mechanic_bogomilist_church_aspects_dev_value: "[This.RceGetReligionMechanicBogomilistChurchAspectsDevCounterTotal]"
+ rce_religion_mechanic_bogomilist_church_aspects_dev_value_tt: "Some religious actions of the §Y[This.Religion.GetName]§! faith distribute development in owned provinces. \n--------------\nSo far we have gained §Y[This.RceGetReligionMechanicBogomilistChurchAspectsDevCounterTotal]§! £icon_development_in_text£ development from religious actions: \n   Base Tax: §Y[This.RceGetReligionMechanicBogomilistChurchAspectsDevCounterAdm]§! £icon_tax_base£ \n   Base Production: §Y[This.RceGetReligionMechanicBogomilistChurchAspectsDevCounterDip]§! £icon_production_in_text£ \n   Base Manpower: §Y[This.RceGetReligionMechanicBogomilistChurchAspectsDevCounterMil]§! £icon_manpower_in_text£"
+
  # Scripted Triggers:
  rce_uses_religion_mechanic_bogomilist_church_aspects_tt: "Uses the §YBogomilist Church Aspects§! mechanic"
  rce_not_uses_religion_mechanic_bogomilist_church_aspects_tt: "Does NOT use the §YBogomilist Church Aspects§! mechanic"

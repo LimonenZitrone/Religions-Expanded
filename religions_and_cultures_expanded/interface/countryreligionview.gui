@@ -2512,6 +2512,31 @@ guiTypes = {
 			}
 		}
 
+		##########################################
+		### Bogomilist Church Aspects Mechanic ###
+		##########################################
+		windowType = {
+			name = "rce_religion_mechanic_bogomilist_church_aspects_window"
+			position = { x = 265 y = 282 }
+			scripted = yes
+
+			iconType = {
+				name = "value_bg"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_rce_religion_mechanic_bogomilist_church_aspects_dev_value_bg"
+			}
+			instantTextBoxType = {
+				name = "rce_religion_mechanic_bogomilist_church_aspects_dev_value"
+				position = { x = 31 y = 5 }
+				font = "vic_22"
+				format = center
+				maxWidth = 35
+				maxHeight = 20
+				fixedsize = yes
+				scripted = yes
+			}
+		}
+
 		######################
 		### Sukha Mechanic ###
 		######################
@@ -3586,7 +3611,7 @@ guiTypes = {
 			### Bogomilist Church Aspects Mechanic ###
 			##########################################
 			windowType = {
-				name = "rce_religion_mechanic_bogomilist_church_aspects_window"
+				name = "rce_religion_mechanic_bogomilist_church_aspects_selection_window"
 				position = { x = 8 y = -57 }
 				scripted = yes
 
