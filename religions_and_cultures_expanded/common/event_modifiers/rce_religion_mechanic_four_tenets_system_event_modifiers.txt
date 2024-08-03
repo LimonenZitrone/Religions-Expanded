@@ -3,7 +3,7 @@ rce_religion_mechanic_four_tenets_system_meditate_modifier = {
 	global_unrest = 2
 	all_power_cost = 0.05
 	diplomatic_reputation = -2
-	rce_monthly_religion_mechanic_four_tenets_system_change = 2.5
+	rce_monthly_religion_mechanic_four_tenets_system_change = 1.5
 	religion = yes
 }
 rce_religion_mechanic_four_tenets_system_ability_1_modifier_1 = {
