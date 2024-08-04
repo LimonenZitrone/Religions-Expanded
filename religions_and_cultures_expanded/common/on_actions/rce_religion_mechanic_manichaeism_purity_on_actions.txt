@@ -76,6 +76,9 @@ on_battle_won_country = {
 		limit = {
 			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
 			NOT = { religion_group = FROM }
+			FROM = {
+				NOT = { tag = REB }
+			}
 		}
 		rce_add_religion_mechanic_manichaeism_purity_value = { value = 1 }
 	}
