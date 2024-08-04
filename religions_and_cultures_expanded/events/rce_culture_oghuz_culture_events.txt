@@ -19,7 +19,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 144 # 12 years
+		months = 72 # 6 years
 		modifier = {
 			factor = 0.33
 			province_id = 151
@@ -124,7 +124,7 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			num_of_owned_provinces_with = {
-				value = 30
+				value = 25
 				culture = turkish
 			}
 		}
