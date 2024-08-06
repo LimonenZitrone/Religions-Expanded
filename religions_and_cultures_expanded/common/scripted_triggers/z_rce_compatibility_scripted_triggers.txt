@@ -14,7 +14,7 @@ rce_is_rename_formable_with_unique_ideas = {
 		has_country_flag = rce_formable_empire_of_light
 		AND = {
 			tag = EGY
-			primary_culture = coptic_culture
+			has_country_flag = rce_formable_coptic_egypt
 		}
 	}
 }

@@ -8,6 +8,7 @@ country_decisions = {
 		allow = {
 			primary_culture = assyrian_culture
 			is_at_war = no
+			is_free_or_tributary_trigger = yes
 			num_of_owned_provinces_with = {
 				value = 10
 				culture = assyrian_culture
@@ -45,12 +46,13 @@ country_decisions = {
 	rce_formable_decision_empire_of_light = {
 		major = yes
 		potential = {
-			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			religion = manichaeism
 			NOT = { has_global_flag = rce_formable_empire_of_light }
 		}
 		allow = {
 			rce_has_religion_mechanic_manichaeism_purity_value = { value = 75 }
 			is_at_war = no
+			is_free_or_tributary_trigger = yes
 			development_in_provinces = {
 				value = 1000
 				province_religion = manichaeism
@@ -81,10 +83,12 @@ country_decisions = {
 	rce_formable_decision_coptic_egypt = {
 		major = yes
 		potential = {
-			NOT = { exists = EGY }
-			NOT = { has_country_flag = formed_egypt_flag }
 			primary_culture = coptic_culture
 			religion_group = christian
+			NOT = { exists = EGY }
+			NOT = { has_country_flag = formed_egypt_flag }
+			NOT = { has_country_flag = rce_formable_coptic_egypt }
+			NOT = { has_reform = celestial_empire }
 			was_never_end_game_tag_trigger = yes
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
@@ -92,7 +96,6 @@ country_decisions = {
 			NOT = { tag = ARB }
 			NOT = { tag = MAM }
 			NOT = { tag = NBI }
-			NOT = { has_reform = celestial_empire }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -124,6 +127,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			override_country_name = RCE_FORMABLE_COPTIC_EGYPT
+			set_country_flag = rce_formable_coptic_egypt
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -151,7 +155,6 @@ country_decisions = {
 				}
 				add_permanent_claim = EGY
 			}
-			set_country_flag = formed_egypt_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

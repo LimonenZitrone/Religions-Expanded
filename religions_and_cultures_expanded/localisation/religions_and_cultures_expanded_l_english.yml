@@ -32,8 +32,8 @@
  rce_formable_decision_assyria_desc: "Since we have aquired the Assyrian culture, we must unify the Assyrian people in the nation of Assyria!"
  rce_formable_decision_empire_of_light_title: "Form the Empire of Light"
  rce_formable_decision_empire_of_light_desc: "We have to unify the Manichaean people in a spiritual Empire!"
- rce_formable_decision_coptic_egypt_title: "Form Egypt"
- rce_formable_decision_coptic_egypt_desc: "Found the Egyptian nation, drawing on the rich history of the Nile Delta to establish a modern state in the region."
+ rce_formable_decision_coptic_egypt_title: "Form Kemet"
+ rce_formable_decision_coptic_egypt_desc: "Found the Kemet nation, drawing on the rich history of the Nile Delta to establish a modern state in the region."
 
  # Vanilla Events:
  hindu_events.1.j: "Kali will lead us to wisdom."

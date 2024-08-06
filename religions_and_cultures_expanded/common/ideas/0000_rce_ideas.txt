@@ -138,7 +138,7 @@ rce_coptic_egypt_ideas = {
 
 	trigger = {
 		tag = EGY
-		primary_culture = coptic_culture
+		has_country_flag = rce_formable_coptic_egypt
 	}
 	free = yes
 
