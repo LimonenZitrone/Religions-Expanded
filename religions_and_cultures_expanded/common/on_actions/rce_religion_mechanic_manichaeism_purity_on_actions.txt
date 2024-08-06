@@ -40,6 +40,28 @@ on_province_religion_converted = {
 	}
 }
 
+# ROOT = province, FROM = propagating country
+on_convert_by_trade_policy = {
+	if = {
+		limit = {
+			has_owner_religion = yes
+			owner = {
+				rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = rce_religion_mechanic_manichaeism_purtiy_conversion_target_dev
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { which = rce_religion_mechanic_manichaeism_purtiy_conversion_target_dev value = 0.05 }
+			rce_add_religion_mechanic_manichaeism_purity_value = { which = rce_religion_mechanic_manichaeism_purtiy_conversion_target_dev }
+			set_variable = { which = rce_religion_mechanic_manichaeism_purtiy_conversion_target_dev value = 0 }
+		}
+	}
+}
+
 # ROOT = converted country, FROM = country which force converts ROOT
 on_force_conversion = {
 	if = {
