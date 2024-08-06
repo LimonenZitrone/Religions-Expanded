@@ -311,25 +311,25 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 1 }
 		}
-		localisation_key = RCE_FORMABLE_ASSYRIA
+		localisation_key = NPA
 	}
 	text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 2 }
 		}
-		localisation_key = RCE_FORMABLE_EMPIRE_OF_LIGHT
+		localisation_key = RCE_FORMABLE_ASSYRIA
 	}
 	text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 3 }
 		}
-		localisation_key = RCE_FORMABLE_COPTIC_EGYPT
+		localisation_key = RCE_FORMABLE_EMPIRE_OF_LIGHT
 	}
 	text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 4 }
 		}
-		localisation_key = NPA
+		localisation_key = RCE_FORMABLE_COPTIC_EGYPT
 	}
 
 	# Fallback
@@ -367,25 +367,25 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 1 }
 		}
-		localisation_key = rce_startup_text_rce_formable_assyria
+		localisation_key = rce_startup_text_rce_formable_NPA
 	}
 	text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 2 }
 		}
-		localisation_key = rce_startup_text_rce_formable_empire_of_light
+		localisation_key = rce_startup_text_rce_formable_assyria
 	}
 	text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 3 }
 		}
-		localisation_key = rce_startup_text_rce_formable_coptic_egypt
+		localisation_key = rce_startup_text_rce_formable_empire_of_light
 	}
 	text = {
 		trigger = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 4 }
 		}
-		localisation_key = rce_startup_text_rce_formable_NPA
+		localisation_key = rce_startup_text_rce_formable_coptic_egypt
 	}
 
 	# Fallback

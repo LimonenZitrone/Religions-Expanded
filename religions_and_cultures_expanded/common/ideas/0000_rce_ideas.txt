@@ -82,6 +82,7 @@ rce_assyria_ideas = {
 	}
 	rce_assyria_ideas_7 = {
 		global_unrest = -2
+		culture_conversion_time = -0.1
 	}
 }
 
@@ -92,7 +93,7 @@ rce_empire_of_light_ideas = {
 	}
 
 	bonus = {
-		fire_damage = 0.15
+		fire_damage_received = -0.15
 	}
 
 	trigger = {
@@ -101,7 +102,7 @@ rce_empire_of_light_ideas = {
 	free = yes
 
 	rce_empire_of_light_ideas_1 = {
-		infantry_fire = 0.75
+		infantry_fire = 0.5
 	}
 	rce_empire_of_light_ideas_2 = {
 		manpower_in_true_faith_provinces = 0.25

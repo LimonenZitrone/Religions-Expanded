@@ -60,6 +60,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = culture_conversion_time
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_CULTURE_CONVERSION_TIME
+	}
+}
+
+defined_text = {
 	name = culture_conversion_cost
 	random = no
 
@@ -932,6 +944,18 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = MODIFIER_FIRE_DAMAGE
+	}
+}
+
+defined_text = {
+	name = fire_damage_received
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_FIRE_DAMAGE_RECIEVED
 	}
 }
 

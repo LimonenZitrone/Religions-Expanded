@@ -1741,7 +1741,7 @@ guiTypes = {
 								maxHeight = 20
 								fixedsize = yes
 								alwaystransparent = yes
-								text = "RCE_FORMABLE_ASSYRIA"
+								text = "NPA"
 							}
 						}
 						windowType = {
@@ -1763,7 +1763,7 @@ guiTypes = {
 								maxHeight = 20
 								fixedsize = yes
 								alwaystransparent = yes
-								text = "RCE_FORMABLE_EMPIRE_OF_LIGHT"
+								text = "RCE_FORMABLE_ASSYRIA"
 							}
 						}
 						windowType = {
@@ -1785,7 +1785,7 @@ guiTypes = {
 								maxHeight = 20
 								fixedsize = yes
 								alwaystransparent = yes
-								text = "RCE_FORMABLE_COPTIC_EGYPT"
+								text = "RCE_FORMABLE_EMPIRE_OF_LIGHT"
 							}
 						}
 						windowType = {
@@ -1807,7 +1807,7 @@ guiTypes = {
 								maxHeight = 20
 								fixedsize = yes
 								alwaystransparent = yes
-								text = "NPA"
+								text = "RCE_FORMABLE_COPTIC_EGYPT"
 							}
 						}
 					#	windowType = {
