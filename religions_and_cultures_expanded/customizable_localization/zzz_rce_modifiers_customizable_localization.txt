@@ -961,6 +961,102 @@ defined_text = {
 
 # Religions & Cultures Expanded:
 defined_text = {
+	name = rce_yearly_religion_mechanic_sukha_change
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_yearly_religion_mechanic_sukha_change
+	}
+}
+
+defined_text = {
+	name = rce_monthly_religion_mechanic_hindu_change
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_monthly_religion_mechanic_hindu_change
+	}
+}
+
+defined_text = {
+	name = rce_monthly_religion_mechanic_four_tenets_system_change
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_monthly_religion_mechanic_four_tenets_system_change
+	}
+}
+
+defined_text = {
+	name = rce_monthly_religion_mechanic_four_tenets_system_change_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_monthly_religion_mechanic_four_tenets_system_change_modifier
+	}
+}
+
+defined_text = {
+	name = rce_monthly_religion_mechanic_sylvan_affinity_change
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_monthly_religion_mechanic_sylvan_affinity_change
+	}
+}
+
+defined_text = {
+	name = rce_monthly_religion_mechanic_sylvan_affinity_change_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_monthly_religion_mechanic_sylvan_affinity_change_modifier
+	}
+}
+
+defined_text = {
+	name = rce_yearly_religion_mechanic_nestorian_patriarchy_change
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_yearly_religion_mechanic_nestorian_patriarchy_change
+	}
+}
+
+defined_text = {
+	name = rce_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction
+	}
+}
+
+defined_text = {
 	name = rce_monthly_religion_mechanic_manichaeism_purity_change
 	random = no
 

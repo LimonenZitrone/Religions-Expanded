@@ -6,3 +6,5 @@
  province_is_buddhist_or_accepts_buddhism_at:1 "The Religion of §Y[Root.GetName]§! is either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§! and is either the State, the Syncretic or the Harmonized Religion of the owner."
  province_is_buddhist_or_accepts_buddhism_bt:1 "The Religion of §Y[Root.GetName]§! is §YConfucian§! and the owner has harmonized either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§!."
  province_is_buddhist_or_accepts_buddhism_ct:1 "The Religion of §Y[Root.GetName]§! is §YTengri§! and the owner has either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§! as their Syncretic Religion."
+
+ inquisition_desc:1 "Establish a state-sanctioned Inquisition to maintain the religious purity of our populace by rooting out heretics and blasphemers. \n\n§YOther religious mechanics not having a modifier listed here may receive a bonus via triggered modifier after completing this idea.§!"

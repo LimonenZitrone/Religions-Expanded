@@ -6,5 +6,5 @@ rce_religion_mechanic_sukha_religious_ideas_5_triggered_modifier = {
 		religious_ideas = 5
 	}
 
-	rce_yearly_religion_mechanic_sukha_change = 0.1
+	rce_yearly_religion_mechanic_sukha_change = 0.25
 }
