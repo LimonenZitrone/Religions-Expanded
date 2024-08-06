@@ -16,13 +16,18 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
+		name = "GFX_rce_startup_screen_religion_button"
+		textureFile = "gfx/interface/rce_startup_screen/rce_startup_screen_religion_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_rce_startup_screen_culture_button"
 		textureFile = "gfx/interface/rce_startup_screen/rce_startup_screen_culture_button.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_rce_startup_screen_religion_button"
-		textureFile = "gfx/interface/rce_startup_screen/rce_startup_screen_religion_button.dds"
+		name = "GFX_rce_startup_screen_formable_button"
+		textureFile = "gfx/interface/rce_startup_screen/rce_startup_screen_formable_button.dds"
 		noOfFrames = 2
 	}
 

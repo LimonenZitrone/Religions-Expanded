@@ -959,6 +959,258 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = mercenary_manpower
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MERCENARY_MANPOWER
+	}
+}
+
+defined_text = {
+	name = leader_siege
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LEADER_SIEGE
+	}
+}
+
+defined_text = {
+	name = development_cost_in_primary_culture
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DEVELOPMENT_COST_IN_PRIMARY_CULTURE
+	}
+}
+
+defined_text = {
+	name = yearly_legitimacy
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_LEGITIMACY
+	}
+}
+
+defined_text = {
+	name = yearly_republican_tradition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_REPUBLICAN_TRADITION
+	}
+}
+
+defined_text = {
+	name = governing_capacity_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GOVERNING_CAPACITY_MODIFIER
+	}
+}
+
+defined_text = {
+	name = merc_maintenance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MERC_MAINTENANCE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = mercenary_discipline
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MERCENARY_DISCIPLINE
+	}
+}
+
+defined_text = {
+	name = infantry_fire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_INFANTRY_FIRE
+	}
+}
+
+defined_text = {
+	name = manpower_in_true_faith_provinces
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MANPOWER_IN_TRUE_FAITH_PROVINCES
+	}
+}
+
+defined_text = {
+	name = global_missionary_strength
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_MISSIONARY_STRENGTH
+	}
+}
+
+defined_text = {
+	name = enforce_religion_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ENFORCE_RELIGION_COST
+	}
+}
+
+defined_text = {
+	name = artillery_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ARTILLERY_COST
+	}
+}
+
+defined_text = {
+	name = backrow_artillery_damage
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_BACKROW_ARTILLERY_DAMAGE
+	}
+}
+
+defined_text = {
+	name = morale_damage_received
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MORALE_DAMAGE_RECIEVED
+	}
+}
+
+defined_text = {
+	name = monarch_admin_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MONARCH_ADMIN_POWER
+	}
+}
+
+defined_text = {
+	name = global_ship_trade_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_SHIP_TRADE_POWER
+	}
+}
+
+defined_text = {
+	name = naval_forcelimit_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = NAVAL_FORCELIMIT_MODIFIER
+	}
+}
+
+defined_text = {
+	name = global_prov_trade_power_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_PROV_TRADE_POWER_MODIFIER
+	}
+}
+
+defined_text = {
+	name = great_project_upgrade_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GREAT_PROJECT_UPGRADE_COST
+	}
+}
+
+defined_text = {
+	name = global_trade_goods_size_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_TRADE_GOODS_SIZE_MODIFIER
+	}
+}
+
 # Religions & Cultures Expanded:
 defined_text = {
 	name = rce_yearly_religion_mechanic_sukha_change

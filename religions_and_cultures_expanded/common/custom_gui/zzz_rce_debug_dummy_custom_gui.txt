@@ -91,6 +91,22 @@ custom_button = {
 	name = rce_startup_screen_list_pages_text_cultures # text box
 	potential = { always = no }
 }
+custom_button = {
+	name = rce_startup_screen_left_title_formables # text box
+	potential = { always = no }
+}
+custom_button = {
+	name = rce_startup_screen_right_title_formables # text box
+	potential = { always = no }
+}
+custom_button = {
+	name = rce_startup_screen_text_formables # text box
+	potential = { always = no }
+}
+custom_button = {
+	name = rce_startup_screen_list_pages_text_formables # text box
+	potential = { always = no }
+}
 
 custom_button = {
 	name = rce_religion_mechanic_nestorian_patriarchy_main_window_open_button_value # text box

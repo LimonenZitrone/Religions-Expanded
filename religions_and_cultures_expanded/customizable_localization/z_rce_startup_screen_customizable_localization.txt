@@ -283,3 +283,116 @@ defined_text = {
 		localisation_key = ""
 	}
 }
+
+# Formables
+defined_text = {
+	name = GetRCEStartUpScreenRightTitleFormables
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 0 } }
+		}
+		localisation_key = string_rce_startup_screen_right_title_formables
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetRCEStartUpScreenFormableSelectedName
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 1 }
+		}
+		localisation_key = RCE_FORMABLE_ASSYRIA
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 2 }
+		}
+		localisation_key = RCE_FORMABLE_EMPIRE_OF_LIGHT
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 3 }
+		}
+		localisation_key = RCE_FORMABLE_COPTIC_EGYPT
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 4 }
+		}
+		localisation_key = NPA
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetRCEStartUpScreenTextFormables
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 0 } }
+		}
+		localisation_key = string_rce_startup_screen_text_formables
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_rce_startup_screen_text_formables_none
+	}
+}
+
+defined_text = {
+	name = GetRCEStartUpScreenFormableSelectedText
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 1 }
+		}
+		localisation_key = rce_startup_text_rce_formable_assyria
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 2 }
+		}
+		localisation_key = rce_startup_text_rce_formable_empire_of_light
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 3 }
+		}
+		localisation_key = rce_startup_text_rce_formable_coptic_egypt
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 4 }
+		}
+		localisation_key = rce_startup_text_rce_formable_NPA
+	}
+
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}

@@ -13,10 +13,13 @@ custom_button = {
 				clr_country_flag = show_rce_startup_screen_window
 				clr_country_flag = show_rce_startup_screen_window_religions
 				clr_country_flag = show_rce_startup_screen_window_cultures
+				clr_country_flag = show_rce_startup_screen_window_formables
 				set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
 				set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+				set_variable = { which = rce_startup_screen_window_selected_formable value = 0 }
 				set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
 				set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+				set_variable = { which = rce_startup_screen_window_formables_selected_page value = 0 }
 			}
 			else = {
 				set_country_flag = show_rce_startup_screen_window
@@ -43,39 +46,65 @@ custom_button = {
 			clr_country_flag = show_rce_startup_screen_window
 			clr_country_flag = show_rce_startup_screen_window_religions
 			clr_country_flag = show_rce_startup_screen_window_cultures
+			clr_country_flag = show_rce_startup_screen_window_formables
 			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
 			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 0 }
 			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
 			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+			set_variable = { which = rce_startup_screen_window_formables_selected_page value = 0 }
 		}
 	}
 }
 
 # Tabs Buttons
 custom_button = {
+	name = rce_startup_screen_tab_religions_button
+	effect = {
+		hidden_effect = {
+			clr_country_flag = show_rce_startup_screen_window_cultures
+			clr_country_flag = show_rce_startup_screen_window_formables
+			set_country_flag = show_rce_startup_screen_window_religions
+			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 0 }
+			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+			set_variable = { which = rce_startup_screen_window_formables_selected_page value = 0 }
+		}
+	}
+	tooltip = rce_startup_screen_tab_religions_button_tt
+}
+custom_button = {
 	name = rce_startup_screen_tab_cultures_button
 	effect = {
 		hidden_effect = {
 			clr_country_flag = show_rce_startup_screen_window_religions
+			clr_country_flag = show_rce_startup_screen_window_formables
 			set_country_flag = show_rce_startup_screen_window_cultures
 			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
 			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 0 }
 			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
 			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 1 }
+			set_variable = { which = rce_startup_screen_window_formables_selected_page value = 0 }
 		}
 	}
 	tooltip = rce_startup_screen_tab_cultures_button_tt
 }
 custom_button = {
-	name = rce_startup_screen_tab_religions_button
+	name = rce_startup_screen_tab_formables_button
 	effect = {
 		hidden_effect = {
+			clr_country_flag = show_rce_startup_screen_window_religions
 			clr_country_flag = show_rce_startup_screen_window_cultures
-			set_country_flag = show_rce_startup_screen_window_religions
+			set_country_flag = show_rce_startup_screen_window_formables
 			set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
 			set_variable = { which = rce_startup_screen_window_selected_culture value = 0 }
-			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 0 }
+			set_variable = { which = rce_startup_screen_window_religions_selected_page value = 0 }
 			set_variable = { which = rce_startup_screen_window_cultures_selected_page value = 0 }
+			set_variable = { which = rce_startup_screen_window_formables_selected_page value = 1 }
 		}
 	}
 	tooltip = rce_startup_screen_tab_religions_button_tt
@@ -598,4 +627,168 @@ custom_icon = {
 	potential = {
 		culture_group = aramaic_culture_group
 	}
+}
+
+# Formables Window
+custom_window = {
+	name = rce_startup_screen_formables_window
+	potential = {
+		has_country_flag = show_rce_startup_screen_window_formables
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_left_title_formables
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_right_title_formables
+	potential = {
+		always = yes
+	}
+}
+custom_text_box = {
+	name = rce_startup_screen_text_formables
+	potential = {
+		always = yes
+	}
+}
+## List Page Windows
+custom_window = {
+	name = rce_startup_screen_formables_list_page_1_window
+	potential = {
+		is_variable_equal = { which = rce_startup_screen_window_formables_selected_page value = 1 }
+	}
+}
+### List Pages Control Window
+custom_button = {
+	name = rce_startup_screen_list_prev_page_button_formables
+	potential = { always = no } # currently invisible, because max pages is 1
+	trigger = {
+		hidden_trigger = {
+			check_variable = { which = rce_startup_screen_window_formables_selected_page value = 1 }
+			NOT = { is_variable_equal = { which = rce_startup_screen_window_formables_selected_page value = 1 } }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = rce_startup_screen_window_formables_selected_page value = -1 }
+		}
+	}
+	tooltip = rce_startup_screen_list_prev_page_button_tt
+}
+custom_button = {
+	name = rce_startup_screen_list_next_page_button_formables
+	potential = { always = no } # currently invisible, because max pages is 1
+	trigger = {
+		hidden_trigger = {
+			NOT = { check_variable = { which = rce_startup_screen_window_formables_selected_page value = 1 } }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = rce_startup_screen_window_formables_selected_page value = 1 }
+		}
+	}
+	tooltip = rce_startup_screen_list_next_page_button_tt
+}
+custom_text_box = {
+	name = rce_startup_screen_list_pages_text_formables
+	potential = {
+		always = no # currently invisible, because max pages is 1
+	}
+}
+### Formables
+#### RCE_FORMABLE_ASSYRIA
+custom_button = {
+	name = rce_startup_screen_formable_1_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 1 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 1 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_formable_1_button_tt
+}
+#### RCE_FORMABLE_EMPIRE_OF_LIGHT
+custom_button = {
+	name = rce_startup_screen_formable_2_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 2 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 2 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_formable_2_button_tt
+}
+#### RCE_FORMABLE_COPTIC_EGYPT
+custom_button = {
+	name = rce_startup_screen_formable_3_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 3 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 3 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_formable_3_button_tt
+}
+#### NPA
+custom_button = {
+	name = rce_startup_screen_formable_4_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 4 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 4 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_formable_4_button_tt
 }
