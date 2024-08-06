@@ -125,3 +125,45 @@ rce_empire_of_light_ideas = {
 		missionaries = 1
 	}
 }
+
+rce_coptic_egypt_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		morale_damage_received = -0.1
+	}
+
+	bonus = {
+		trade_steering = 0.25
+	}
+
+	trigger = {
+		tag = EGY
+		primary_culture = coptic_culture
+	}
+	free = yes
+
+	rce_coptic_egypt_ideas_1 = {
+		development_cost_in_primary_culture = -0.2
+	}
+	rce_coptic_egypt_ideas_2 = {
+		monarch_admin_power = 1
+	}
+	rce_coptic_egypt_ideas_3 = {
+		production_efficiency = 0.1
+	}
+	rce_coptic_egypt_ideas_4 = {
+		global_ship_trade_power = 0.3
+		naval_forcelimit_modifier = 0.25
+	}
+	rce_coptic_egypt_ideas_5 = {
+		culture_conversion_cost = -0.15
+		prestige = 1
+	}
+	rce_coptic_egypt_ideas_6 = {
+		global_prov_trade_power_modifier = 0.2
+	}
+	rce_coptic_egypt_ideas_7 = {
+		build_cost = -0.1
+		great_project_upgrade_cost = -0.15
+	}
+}

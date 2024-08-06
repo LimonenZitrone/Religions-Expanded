@@ -32,6 +32,8 @@
  rce_formable_decision_assyria_desc: "Since we have aquired the Assyrian culture, we must unify the Assyrian people in the nation of Assyria!"
  rce_formable_decision_empire_of_light_title: "Form the Empire of Light"
  rce_formable_decision_empire_of_light_desc: "We have to unify the Manichaean people in a spiritual Empire!"
+ rce_formable_decision_coptic_egypt_title: "Form Egypt"
+ rce_formable_decision_coptic_egypt_desc: "Found the Egyptian nation, drawing on the rich history of the Nile Delta to establish a modern state in the region."
 
  # Vanilla Events:
  hindu_events.1.j: "Kali will lead us to wisdom."
@@ -56,6 +58,8 @@
  RCE_FORMABLE_ASSYRIA_ADJ: "Assyrian"
  RCE_FORMABLE_EMPIRE_OF_LIGHT: "Empire of Light"
  RCE_FORMABLE_EMPIRE_OF_LIGHT_ADJ: "Manichaean"
+ RCE_FORMABLE_COPTIC_EGYPT: "Kemet"
+ RCE_FORMABLE_COPTIC_EGYPT_ADJ: "Kemetic"
 
  # Government Reforms:
  nestorian_patriarchy_constantinople_reform: "Patriarchy"
@@ -164,3 +168,21 @@
  rce_empire_of_light_ideas_6_desc: "Monuments to all prophets, Jesus and Buddha, Mani and Zarathustra, ballads and writing, only a cultured mind can truly comprehend the world we are defending!\n\n"
  rce_empire_of_light_ideas_7: "Help them see the Light"
  rce_empire_of_light_ideas_7_desc: "Not all those who initially oppose the teachings of Mani do so with malevolence, it is our duty to also teach and help those wo struggle with the truths to understand them live by them.\n\n"
+
+ rce_coptic_egypt_ideas: "Kemetic Ideas"
+ rce_coptic_egypt_ideas_start: "Kemetic Traditions"
+ rce_coptic_egypt_ideas_bonus: "Kemetic Ambition"
+ rce_coptic_egypt_ideas_1: "Centralization Works"
+ rce_coptic_egypt_ideas_1_desc: "Our nation can no longer be left behind as great powers around us consolidate their rule and their absolutist power. A series of urbanization reforms will serve our people and elevate our status.\n\n"
+ rce_coptic_egypt_ideas_2: "Descendants of the Pharaohs"
+ rce_coptic_egypt_ideas_2_desc: "We are the children of Menes, Akhenaten and Ramesses. However it was the betrayal of Tjahapimu that saw the ascendence of the last native ruler of Egypt, Nectanebo II, in 340 BC. It is in our blood to restore native rule to Egypt and see it prosper under our hand!\n\n"
+ rce_coptic_egypt_ideas_3: "Nile Production"
+ rce_coptic_egypt_ideas_3_desc: "The Nile has fed our people for millennia. In order to properly exploit its output we will westernize our production methods and develop proper infrastructure across the entire bank.\n\n"
+ rce_coptic_egypt_ideas_4: "Mediterranean Shipwrights"
+ rce_coptic_egypt_ideas_4_desc: "Much of our domain envelops a large part of the Mediterranean coast. As a result, our people have become adept at repairing our vessels and maintaining them at sea.\n\n"
+ rce_coptic_egypt_ideas_5: "True People of Egypt"
+ rce_coptic_egypt_ideas_5_desc: "Persians, Macedonians, Romans, Arabs and Circassians. This land has seen itself subjugated by externals foes time and time again, but it wasn't until Arab rule that our people were pushed to the fringes of the Nile and its cities, we must push out these invaders so the Nile can heal at last.\n\n"
+ rce_coptic_egypt_ideas_6: "Crossroads of Continents"
+ rce_coptic_egypt_ideas_6_desc: "We stand at a geographically advantageous position. As such, this allows us to manipulate our mercantile conduct and impose our influence on the global markets with relative ease.\n\n"
+ rce_coptic_egypt_ideas_7: "Monument Builders"
+ rce_coptic_egypt_ideas_7_desc: "The great Pyramids, only of the great wonders to stand proud and healthy, is a testiment to our ability to touch the skies with our monuments. We are the greatest of builders able to turn empty sand into metropolises and to turn remote oases into bustling mercantile hubs that would make the Italians turn pale in awe.\n\n"

@@ -1,0 +1,22 @@
+# Egypt & Nubia
+358 = { "Rakodi" "Rakodi" }
+359 = { "Phiom" "Phiom" }
+360 = { "Ne" "Ne" }
+361 = { "di-Kesromi" "di-Kesrosmi" }
+362 = { "di-Rasid" "di-Rasid" }
+363 = { "Damiadi" "Damiadi" }
+365 = { "Sina" "Sina" }
+1228 = { "Biriki Bsasi" "Biriki Bsasi" }
+1231 = { "Jeb" "Jeb" }
+1233 = { "Hib" "Hib" }
+1234 = { "Brim" "Brim" }
+2316 = { "Dandato" "Dandato" }
+2318 = { "di-Barsioi" "di-Barsioi" }
+2319 = { "Manwalod" "Manwalod" }
+2322 = { "Bohoun" "Bohoun" }
+4316 = { "Jani" "Jani" }
+4317 = { "Dmone" "Dmone" }
+4318 = { "Bedbah" "Bedbah" }
+4319 = { "Sne" "Sne" }
+4320 = { "Din" "Din" }
+4323 = { "Ouobs Bisaf" "Ouobs Bisaf" }
