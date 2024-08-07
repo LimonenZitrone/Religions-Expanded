@@ -11,11 +11,12 @@
 1233 = { "Hib" "Hib" }
 1234 = { "Brim" "Brim" }
 2316 = { "Dandato" "Dandato" }
+2317 = { "Dmone" "Dmone" }
 2318 = { "di-Barsioi" "di-Barsioi" }
 2319 = { "Manwalod" "Manwalod" }
 2322 = { "Bohoun" "Bohoun" }
 4316 = { "Jani" "Jani" }
-4317 = { "Dmone" "Dmone" }
+4317 = { "eb-Dimenhor" "eb-Dimenhor" }
 4318 = { "Bedbah" "Bedbah" }
 4319 = { "Sne" "Sne" }
 4320 = { "Din" "Din" }
