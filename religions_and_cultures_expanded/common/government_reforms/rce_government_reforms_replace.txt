@@ -1,3 +1,4 @@
+# Monarchy:
 beylik_government = {
 	icon = "noble_muslim"
 	allow_normal_conversion = yes
@@ -69,5 +70,130 @@ bulgarian_tsardom_reform = {
 	fixed_rank = 3
 	ai = {
 		factor = 100
+	}
+}
+
+nayankara_reform = {
+	icon = "nayankara_system"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Dharma"
+		technology_group = indian
+		OR = {
+			religion_group = dharmic
+			religion = buddhism
+			religion = vajrayana
+			religion = mahayana
+			religion = tibetan_buddhism # Religions & Cultures Expanded
+		}
+		OR = {
+			culture_group = dravidian
+			primary_culture = oriya
+			primary_culture = sinhala
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	legacy_equivalent = feudal_monarchy
+	nation_designer_trigger = {
+		technology_group = indian
+		OR = {
+			religion_group = dharmic
+			religion = buddhism
+			religion = vajrayana
+			religion = mahayana
+			religion = tibetan_buddhism # Religions & Cultures Expanded
+		}
+		OR = {
+			culture_group = dravidian
+			primary_culture = oriya
+			primary_culture = sinhala
+		}
+	}
+	modifiers = {
+		vassal_forcelimit_bonus = 1
+		global_manpower_modifier = 0.15
+	}
+}
+
+# Common:
+head_of_the_reformed_church_reform = {
+	icon = "regionally_elected_commanders"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = { religion = catholic }
+		NOT = { religion = coptic }
+		NOT = { religion = orthodox }
+		NOT = { religion = nestorian } # Religions & Cultures Expanded
+		religion_group = christian
+	}
+	modifiers = {
+		church_influence_modifier = -0.05
+		global_tax_modifier = 0.15
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 0.25
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_defender_of_faith = yes }
+				add_country_modifier = {
+					name = gov_improved_defender_of_faith_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	post_removed_effect = {
+		remove_country_modifier = gov_improved_defender_of_faith_mod
+	}
+	custom_attributes = {
+		improved_defender_of_faith = yes	#Being Defender of Faith increases Dip Rep, Tolerance and Morale
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+empower_buddhist_temples_reform = {
+	icon = "religious_harmony_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		OR = {
+			religion = buddhism
+			religion = vajrayana
+			religion = mahayana
+			religion = tibetan_buddhism # Religions & Cultures Expanded
+		}
+	}
+	modifiers = {
+		church_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		yearly_karma_decay = 0.05
+		stability_cost_modifier = -0.1
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		custom_attributes = {
+			#clergy_estate_agendas_gives_karma = yes	#Adds Karma by 10
+			#seizing_land_takes_karma = yes	#Reduces Karma by 10
+			buffed_monastic_temples = yes
+			enable_karma_decision = yes	#Allows decision every 20 years to add or remove 10 Karma
+		}
+	}
+
+	ai = {
+		factor = 1
 	}
 }
