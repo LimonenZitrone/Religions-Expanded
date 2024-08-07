@@ -91,6 +91,24 @@ altaic = {
 sudanese = {
 	# New Cultures
 	coptic_culture = {
+		dynasty_names = {
+			Tedros Boutros Salib Sawiris Ghali Gebreyesus Elshenawy Mikhail Nessim Tawadros Zaher Malek Atalla
+			Massoud Nashaat Ramzie Sedki Erian Sidhom Nasrallah Kedwany Dawoud Gamil Stino Bassily Anise Sarofim
+			Ebeid Younan Bebawi Asyut Missael Serapion Angaelos Miday Nour Sidky Hinein Ghalioungui Mina Bakhoum
+		}
+		male_names = {
+			Amoun Anoup Atre Vane Venipi Venofer Ves Evonh Kellouj Naverho Nahrow Weršenoufi Paesi Pambo Pamin
+			Pilihej Pemsah Panau Phanisnew Panehas Panine Paniran Phenoub Patapi Paphnouti Pašonti Pahor Pakhom
+			Petephre Pisoura Pisennoufi Phib Pijimi Harmine Herwoj Jamoul Jijuy Jori Šenouti Šinousi
+			Atnasius Alaksandrus Andarawus Basalyus Buqtur Gawargius Abifanius Wadamun Qiryaqus Kirullus Karus Murqus
+			Bulus Butrus Latsun Tiwuduraki Tawadrus Sawaris Filubatir Arpokrator Isidoros Labib Gawdat Aziz Menassa
+			Younan Mofeed Anouar Chafik Jirjis
+		}
+		female_names = {
+			Asenneth Asnat Loule Menrit Taisi Tampro Taloušem Tasuni Taroow Teçose Dajaša Tapšay Thoumisi Kouloje
+			Thello Jemmahor Šošen Afrusina Damiana Irini Darkun Dulaji Kliubatra Takla Arabsima Hiraisi Thiudura
+			Sinklitika Evelyn Margaret
+		}
 	}
 }
 
