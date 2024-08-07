@@ -8,9 +8,14 @@ province_event = {
 
 	trigger = {
 		culture = oghuz_culture
-		NOT = { has_province_flag = rce_culture_oghuz_culture_was_converted }
 		owner = {
 			NOT = { has_country_flag = rce_culture_oghuz_culture_picked_oghuz_culture }
+		}
+		OR = {
+			NOT = { has_province_flag = rce_culture_oghuz_culture_was_converted }
+			owner = {
+				primary_culture = turkish
+			}
 		}
 		any_neighbor_province = {
 			owned_by = ROOT
