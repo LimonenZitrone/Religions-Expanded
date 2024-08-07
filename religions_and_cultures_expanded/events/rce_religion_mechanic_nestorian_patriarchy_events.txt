@@ -369,6 +369,12 @@ country_event = {
 					max_age = 70
 				}
 				clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+				every_province = {
+					limit = {
+						has_discovered = ROOT
+					}
+					discover_country = NPA
+				}
 			}
 		}
 		hidden_effect = {
