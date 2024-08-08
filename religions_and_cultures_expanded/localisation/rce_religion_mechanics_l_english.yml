@@ -1026,6 +1026,27 @@
  rce_religion_mechanic_nestorian_patriarchy_keep_mil_advisor_bonuses_from_holy_site_interaction_tt: "\nWe §Gkeep§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Military Advisor ([discipline]: §G+0.5%§! or §G+1.0%§! per skill level)."
  rce_religion_mechanic_nestorian_patriarchy_lose_mil_advisor_bonuses_from_holy_site_interaction_tt: "We §Rlose§! the bonuses from '§YPilgrimage Boon from Constantinople§!' for the Military Advisor ([discipline]: §G+0.5%§! or §G+1.0%§! per skill level)."
 
+ rce_religion_mechanic_nestorian_patriarchy_events.EVTNAME16: "Travelling Missionary asks for Financial Aid"
+ rce_religion_mechanic_nestorian_patriarchy_events.EVTDESC16: "One of our missionaries seeks to travel the Silk Road to visit the various Holy Sites along its treacherous path. However he came to our court to ask for additional funds in his journey, if we pledge our assistance he promises he will find a way to honor it."
+ rce_religion_mechanic_nestorian_patriarchy_events16.EVTOPT1: "Grant a modest sum."
+ rce_religion_mechanic_nestorian_patriarchy_events16.EVTOPT2: "Grant a large sum and additional escorts."
+ rce_religion_mechanic_nestorian_patriarchy_events16.EVTOPT3: "His journey is his own."
+ rce_religion_mechanic_nestorian_patriarchy_events.16.tt.1: "There is a moderate chance his journey will be successful..."
+ rce_religion_mechanic_nestorian_patriarchy_events.16.tt.2: "There is a high chance his journey will be successful..."
+ rce_religion_mechanic_nestorian_patriarchy_events.16.tt.3: "There is a low chance his journey will be successful..."
+
+ rce_religion_mechanic_nestorian_patriarchy_events.EVTNAME17: "Travelling Missionary returns"
+ rce_religion_mechanic_nestorian_patriarchy_events.EVTDESC17: "The man who left for the Silk Road arrived back at our court and the many different things he brought with him are truly magnificent!"
+ rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT1: "Such a man must be at our court permanently."
+ rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT2: "His knowledge is truly vast."
+ rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT3: "Ask him to display the goods in the Palace."
+ rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT4: "Maybe we can do more..."
+ rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT5: "Investigate the writings he brought."
+
+ rce_religion_mechanic_nestorian_patriarchy_events.EVTNAME18: "Missionary gone missing"
+ rce_religion_mechanic_nestorian_patriarchy_events.EVTDESC18: "It has been a long time since we last got a message from the man who sought riches in foreign lands. We have to presume at this point that he has perished."
+ rce_religion_mechanic_nestorian_patriarchy_events18.EVTOPT1: "Truly terrible!"
+
  # Decisions:
  rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision_title: "Select Center of Conversion"
  rce_religion_mechanic_nestorian_patriarchy_main_center_of_reformation_decision_desc: "The §YPatriarchy Controller§! can pick a Center of Conversion. Once selected, this will spread the §YNestorian§! faith to provinces in nearby regions and give a small bonus to missionary strength to Nestorian countries in the affected regions. \nThe Center will be abandoned and another can be selected when the next §YPatriarchy Controller§! takes over."
@@ -1184,6 +1205,14 @@
  ## Diplomatic Action Modifiers:
  rce_religion_mechanic_nestorian_patriarchy_excommunicated_modifier: "Excommunication"
  desc_rce_religion_mechanic_nestorian_patriarchy_excommunicated_modifier: "Our ruler has been excommunicated. May God have mercy on the sinner's soul!"
+ ## Event Modifiers:
+ rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_large_modifier: "Travelling Missionary"
+ rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_modifier: "Travelling Missionary"
+ rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_large_modifier: "Exhibition of Exotic Goods"
+ rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_modifier: "Exhibition of Exotic Goods"
+ rce_religion_mechanic_nestorian_patriarchy_exotic_silk_production_modifier: "Exotic Silk Production"
+ rce_religion_mechanic_nestorian_patriarchy_scholar_of_foreign_writing_large_modifier: "Scholar of Foreign Writing"
+ rce_religion_mechanic_nestorian_patriarchy_scholar_of_foreign_writing_modifier: "Scholar of Foreign Writing"
  ## Opinion Modifiers:
  rce_religion_mechanic_nestorian_patriarchy_no_constantinople_opinion: "Declined to make Constantinople an independent state"
  ## Province Triggered Modifiers:

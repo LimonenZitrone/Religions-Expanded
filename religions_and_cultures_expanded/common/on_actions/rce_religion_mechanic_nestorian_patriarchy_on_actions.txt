@@ -586,6 +586,12 @@ on_mil_tech_taken = {
 	}
 }
 
+on_five_year_pulse_2 = {
+	random_events = {
+		100 = rce_religion_mechanic_nestorian_patriarchy_events.16
+	}
+}
+
 # ROOT = annexing country, FROM = annexed country
 on_annexed = {
 	FROM = {

@@ -1322,3 +1322,355 @@ country_event = {
 		rce_religion_mechanic_nestorian_patriarchy_clear_flags_for_current_supported_mil_advisor = yes
 	}
 }
+
+country_event = {
+	id = rce_religion_mechanic_nestorian_patriarchy_events.16
+	title = rce_religion_mechanic_nestorian_patriarchy_events.EVTNAME16
+	desc = rce_religion_mechanic_nestorian_patriarchy_events.EVTDESC16
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		NOT = { has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary }
+		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_cooldown_modifier }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+			set_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events16.EVTOPT1
+
+		add_years_of_income = -1
+		rce_add_religion_mechanic_nestorian_patriarchy_value = { value = 10 }
+		custom_tooltip = rce_religion_mechanic_nestorian_patriarchy_events.16.tt.1
+		hidden_effect = {
+			random_list = {
+				85 = {
+					country_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.17 days = 500 random = 300 }
+				}
+				15 = {
+					country_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.18 days = 500 random = 300 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events16.EVTOPT2
+
+		add_years_of_income = -2
+		add_stability_or_adm_power = yes
+		rce_add_religion_mechanic_nestorian_patriarchy_value = { value = 15 }
+		custom_tooltip = rce_religion_mechanic_nestorian_patriarchy_events.16.tt.2
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+			random_list = {
+				65 = {
+					country_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.17 days = 500 random = 300 }
+				}
+				35 = {
+					country_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.18 days = 500 random = 300 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events16.EVTOPT3
+
+		add_prestige = -10
+		custom_tooltip = rce_religion_mechanic_nestorian_patriarchy_events.16.tt.3
+		hidden_effect = {
+			random_list = {
+				40 = {
+					country_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.17 days = 500 random = 300 }
+				}
+				60 = {
+					country_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.18 days = 500 random = 300 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_nestorian_patriarchy_events.17
+	title = rce_religion_mechanic_nestorian_patriarchy_events.EVTNAME17
+	desc = rce_religion_mechanic_nestorian_patriarchy_events.EVTDESC17
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_province
+				}
+				random_owned_province = {
+					limit = {
+						trade_goods = silk
+						has_province_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_in_province
+					}
+					save_event_target_as = target_province
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						OR = {
+							trade_goods = cloth
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = livestock
+						}
+					}
+					save_event_target_as = target_province
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		add_prestige = 20
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
+			}
+			if = {
+				limit = {
+					has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+				}
+				define_advisor = {
+					type = ate_advisor_missionary
+					skill = 2
+					cost_multiplier = 0.25
+				}
+			}
+			else = {
+				define_advisor = {
+					type = ate_advisor_missionary
+					skill = 2
+					cost_multiplier = 0.5
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+				}
+				define_advisor = {
+					type = inquisitor
+					skill = 2
+					cost_multiplier = 0.25
+				}
+			}
+			else = {
+				define_advisor = {
+					type = inquisitor
+					skill = 2
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT2
+
+		ai_chance = { factor = 0.33 }
+
+		hidden_effect = {
+			remove_country_modifier = rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_large_modifier
+			remove_country_modifier = rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_modifier
+		}
+		if = {
+			limit = {
+				has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_large_modifier
+				duration = 5475
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_modifier
+				duration = 5475
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT3
+
+		ai_chance = { factor = 0.66 }
+
+		hidden_effect = {
+			capital_scope = {
+				remove_province_modifier = rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_large_modifier
+				remove_province_modifier = rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_modifier
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_large_modifier
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			capital_scope = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_modifier
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT4
+
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = industrious_personality
+				ruler_has_personality = entrepreneur_personality
+				ruler_has_personality = architectural_visionary_personality
+			}
+			hidden_trigger = {
+				has_saved_event_target = target_province
+			}
+		}
+
+		goto = target_province
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.1
+				has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_province
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_province }
+			}
+			set_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_province
+			event_target:target_province = {
+				set_province_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_in_province
+				change_trade_goods = silk
+			}
+			if = {
+				limit = {
+					has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+				}
+				event_target:target_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_nestorian_patriarchy_exotic_silk_production_modifier
+						duration = 7300
+					}
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_base_production = 3
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events17.EVTOPT5
+
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = free_thinker_personality
+				ruler_has_personality = scholar_personality
+				ruler_has_personality = patron_of_arts_personality
+			}
+		}
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_nestorian_patriarchy_scholar_of_foreign_writing_large_modifier
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = rce_religion_mechanic_nestorian_patriarchy_scholar_of_foreign_writing_modifier
+				duration = 3650
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary
+		clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+		add_country_modifier = {
+			name = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_cooldown_modifier
+			duration = 3650
+			hidden = yes
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_nestorian_patriarchy_events.18
+	title = rce_religion_mechanic_nestorian_patriarchy_events.EVTNAME18
+	desc = rce_religion_mechanic_nestorian_patriarchy_events.EVTDESC18
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		has_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary
+	}
+
+	option = {
+		name = rce_religion_mechanic_nestorian_patriarchy_events18.EVTOPT1
+
+		rce_add_religion_mechanic_nestorian_patriarchy_value = { value = -5 }
+		hidden_effect = {
+			clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary
+			clr_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_large_sum_spent
+		}
+	}
+}

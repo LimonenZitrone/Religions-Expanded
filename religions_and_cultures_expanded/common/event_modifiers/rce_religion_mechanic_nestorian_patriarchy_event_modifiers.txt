@@ -373,3 +373,47 @@ rce_religion_mechanic_nestorian_patriarchy_excommunicated_modifier = {
 	reverse_relation_with_same_religion = -100
 	religion = yes
 }
+
+# Event Modifiers:
+rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_large_modifier = {
+	trade_efficiency = 0.1
+	envoy_travel_time = -0.15
+	diplomatic_reputation = 1
+	religion = yes
+}
+rce_religion_mechanic_nestorian_patriarchy_travelling_missionary_modifier = {
+	trade_efficiency = 0.1
+	envoy_travel_time = -0.15
+	religion = yes
+}
+
+rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_large_modifier = {
+	picture = "institution_growth"
+	prestige = 1
+	province_trade_power_value = 25
+	institution_growth = 12
+}
+rce_religion_mechanic_nestorian_patriarchy_exhibition_of_exotic_goods_modifier = {
+	picture = "institution_growth"
+	prestige = 1
+	province_trade_power_value = 10
+	institution_growth = 6
+}
+
+rce_religion_mechanic_nestorian_patriarchy_exotic_silk_production_modifier = {
+	trade_goods_size = 2
+}
+
+rce_religion_mechanic_nestorian_patriarchy_scholar_of_foreign_writing_large_modifier = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+	religion = yes
+}
+rce_religion_mechanic_nestorian_patriarchy_scholar_of_foreign_writing_modifier = {
+	technology_cost = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_cooldown_modifier = {
+	religion = yes
+}
