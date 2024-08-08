@@ -288,6 +288,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = same_religion_advisor_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SAME_RELIGION_ADVISOR_COST
+	}
+}
+
+defined_text = {
 	name = fort_level
 	random = no
 

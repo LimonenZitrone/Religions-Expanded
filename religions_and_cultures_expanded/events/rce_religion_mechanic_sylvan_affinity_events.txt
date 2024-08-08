@@ -32,3 +32,124 @@ country_event = {
 		rce_set_religion_mechanic_sylvan_affinity_seasonal_affinity = { season = winter }
 	}
 }
+
+country_event = {
+	id = rce_religion_mechanic_sylvan_affinity_events.2
+	title = rce_religion_mechanic_sylvan_affinity_events.EVTNAME2
+	desc = rce_religion_mechanic_sylvan_affinity_events.EVTDESC2
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	goto = grove_province
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = sylvan_affinity }
+		any_owned_province = {
+			OR = {
+				has_province_modifier = rce_religion_mechanic_sylvan_affinity_spring_grove_province_modifier
+				has_province_modifier = rce_religion_mechanic_sylvan_affinity_summer_grove_province_modifier
+				has_province_modifier = rce_religion_mechanic_sylvan_affinity_fall_grove_province_modifier
+				has_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_province_modifier
+			}
+			NOT = { has_province_modifier = rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 1.25
+			any_owned_province = {
+				OR = {
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_spring_grove_province_modifier
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_summer_grove_province_modifier
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_fall_grove_province_modifier
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_province_modifier
+				}
+				NOT = { has_province_modifier = rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier }
+				NOT = { development = 10 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			any_owned_province = {
+				OR = {
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_spring_grove_province_modifier
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_summer_grove_province_modifier
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_fall_grove_province_modifier
+					has_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_province_modifier
+				}
+				NOT = { has_province_modifier = rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier }
+				development = 30
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = rce_religion_mechanic_sylvan_affinity_spring_grove_province_modifier
+						has_province_modifier = rce_religion_mechanic_sylvan_affinity_summer_grove_province_modifier
+						has_province_modifier = rce_religion_mechanic_sylvan_affinity_fall_grove_province_modifier
+						has_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_province_modifier
+					}
+					NOT = { has_province_modifier = rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier }
+				}
+				save_event_target_as = grove_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events2.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		add_prestige = -10
+		event_target:grove_province = {
+			anti_tax_rebels = 1
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events2.EVTOPT2
+
+		ai_chance = { factor = 1 }
+
+		event_target:grove_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 10
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_sylvan_affinity_events2.EVTOPT3
+
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = just_personality
+				ruler_has_personality = kind_hearted_personality
+				ruler_has_personality = silver_tongue_personality
+				ruler_has_personality = charismatic_negotiator_personality
+			}
+		}
+
+		ai_chance = { factor = 10 }
+
+		event_target:grove_province = {
+			add_province_modifier = {
+				name = rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier
+				duration = 3650
+			}
+		}
+	}
+}

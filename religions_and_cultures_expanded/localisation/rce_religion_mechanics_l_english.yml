@@ -717,6 +717,7 @@
  rce_religion_mechanic_sylvan_affinity_winter_grove_area_modifier: "Nearby Winter Grove"
  ## Event Modifiers:
  rce_religion_mechanic_sylvan_affinity_assimilation_of_pagans_modifier: "Assimilation of the Pagans"
+ rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier: "Compromised with Grove-Arsonists"
  ## Triggered Modifiers:
  rce_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
  desc_rce_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
@@ -728,6 +729,12 @@
  rce_religion_mechanic_sylvan_affinity_events1.EVTOPT2: "Songs of Hunting"
  rce_religion_mechanic_sylvan_affinity_events1.EVTOPT3: "Songs of Harvesting"
  rce_religion_mechanic_sylvan_affinity_events1.EVTOPT4: "Songs of Lament"
+
+ rce_religion_mechanic_sylvan_affinity_events.EVTNAME2: "Upset Peasantry burns down Grove"
+ rce_religion_mechanic_sylvan_affinity_events.EVTDESC2: "A large mob of unruly peasants have burned down the newly established Grove in [grove_province.GetName] in protest. They are disgruntled about our investment towards the place of worship instead of focusing on the plight of the poor."
+ rce_religion_mechanic_sylvan_affinity_events2.EVTOPT1: "Their issues don't concern us."
+ rce_religion_mechanic_sylvan_affinity_events2.EVTOPT2: "Grant them some concessions."
+ rce_religion_mechanic_sylvan_affinity_events2.EVTOPT3: "Try to compromise with our people."
 
  # Decisions:
  rce_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision_title: "Consecrate a Grove"
@@ -912,7 +919,7 @@
 
  string_rce_get_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_target_tt: "\n\nThis Center of Conversion is currently converting §Y[rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation_target.GetName]§! to the §YNestorian§! faith. \nIt takes §Y[This.RceGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationEndValue]§! months for the province to be converted. The conversion is going on for §Y[Root.RceGetReligionMechanicNestorianPatriarchyCenterOfReformationTargetConversionDurationValue]§! months."
 
- string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc_owned: "[advisor_cost]: §G-5.00%§! \n[state_maintenance_modifier]: §G-4.0%§! (per £adm£ Advisor Skill) \n[improve_relation_modifier]: §G+4.0%§! (per £dip£ Advisor Skill) \n[discipline]: §G+1.0%§! (per £mil£ Advisor Skill) \n§YThese are applied based on advisor skill level when the action is used. Should you lose the advisor, you will also lose the modifier.§!"
+ string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc_owned: "[same_religion_advisor_cost]: §G-10.00%§! \n[state_maintenance_modifier]: §G-4.0%§! (per £adm£ Advisor Skill) \n[improve_relation_modifier]: §G+4.0%§! (per £dip£ Advisor Skill) \n[discipline]: §G+1.0%§! (per £mil£ Advisor Skill) \n§YThese are applied based on advisor skill level when the action is used. Should you lose the advisor, you will also lose the modifier.§!"
  string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc_nestorian: "[state_maintenance_modifier]: §G-4.0%§! (per £adm£ Advisor Skill) \n[improve_relation_modifier]: §G+4.0%§! (per £dip£ Advisor Skill) \n[discipline]: §G+1.0%§! (per £mil£ Advisor Skill) \n§YThese are applied based on advisor skill level when the action is used. Should you lose the advisor, you will also lose the modifier.§!"
  string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_1_modifier_desc: "[state_maintenance_modifier]: §G-2.0%§! (per £adm£ Advisor Skill) \n[improve_relation_modifier]: §G+2.0%§! (per £dip£ Advisor Skill) \n[discipline]: §G+0.5%§! (per £mil£ Advisor Skill) \n§YThese are applied based on advisor skill level when the action is used. Should you lose the advisor, you will also lose the modifier.§!"
 

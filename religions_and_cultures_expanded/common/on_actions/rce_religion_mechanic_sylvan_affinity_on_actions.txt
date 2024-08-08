@@ -11,6 +11,12 @@ on_monthly_pulse = {
 	}
 }
 
+on_bi_yearly_pulse_5 = {
+	random_events = {
+		100 = rce_religion_mechanic_sylvan_affinity_events.2
+	}
+}
+
 # ROOT = annexing country, FROM = annexed country
 on_annexed = {
 	FROM = {

@@ -24,10 +24,10 @@ rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_region_modifier
 
 ## Holy Site Modifiers:
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_1_modifier = {
-	picture = "advisor_cost"
+	picture = "same_religion_advisor_cost"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_1_owned_modifier = {
-	advisor_cost = -0.05
+	same_religion_advisor_cost = -0.1
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_1_nestorian_modifier = {
 }
