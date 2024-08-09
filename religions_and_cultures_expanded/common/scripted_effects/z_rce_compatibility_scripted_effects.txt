@@ -1,0 +1,36 @@
+# For Ages & Splendor Expanded:
+rce_gain_religious_power_from_splendor = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		rce_add_religion_mechanic_sukha_value = { value = 25 }
+	}
+	else_if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = four_tenets_system }
+		}
+		rce_add_religion_mechanic_four_tenets_system_value = { value = 25 }
+	}
+	else_if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = sylvan_affinity }
+		}
+		rce_add_religion_mechanic_sylvan_affinity_value = { value = 50 }
+	}
+	else_if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		}
+		rce_add_religion_mechanic_nestorian_patriarchy_value = { value = 50 }
+	}
+	else_if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
+		}
+		rce_add_religion_mechanic_manichaeism_purity_value = { value = 25 }
+	}
+	else = {
+		custom_tooltip = ase_spend_additional_splendor_entry_button_no_effect
+	}
+}
