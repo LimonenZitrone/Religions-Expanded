@@ -1426,7 +1426,6 @@ country_event = {
 				random_owned_province = {
 					limit = {
 						trade_goods = silk
-						has_province_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_in_province
 					}
 					save_event_target_as = target_province
 				}
@@ -1586,7 +1585,6 @@ country_event = {
 			}
 			set_country_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_province
 			event_target:target_province = {
-				set_province_flag = rce_religion_mechanic_nestorian_patriarchy_event_travelling_missionary_received_silk_in_province
 				change_trade_goods = silk
 			}
 			if = {
