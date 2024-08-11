@@ -5,6 +5,7 @@ rce_religion_mechanic_manichaeism_purity_air_moon_modifier = {
 }
 rce_religion_mechanic_manichaeism_purity_air_sun_modifier = {
 	improve_relation_modifier = 0.15
+	ae_impact = -0.1
 }
 
 rce_religion_mechanic_manichaeism_purity_water_moon_modifier = {
@@ -20,6 +21,7 @@ rce_religion_mechanic_manichaeism_purity_wind_moon_modifier = {
 }
 rce_religion_mechanic_manichaeism_purity_wind_sun_modifier = {
 	global_tax_modifier = 0.2
+	state_maintenance_modifier = -0.15
 }
 
 rce_religion_mechanic_manichaeism_purity_light_moon_modifier = {
@@ -28,6 +30,7 @@ rce_religion_mechanic_manichaeism_purity_light_moon_modifier = {
 }
 rce_religion_mechanic_manichaeism_purity_light_sun_modifier = {
 	trade_efficiency = 0.15
+	trade_steering = 0.2
 }
 
 rce_religion_mechanic_manichaeism_purity_fire_moon_modifier = {
@@ -36,6 +39,7 @@ rce_religion_mechanic_manichaeism_purity_fire_moon_modifier = {
 rce_religion_mechanic_manichaeism_purity_fire_sun_modifier = {
 	diplomats = 1
 	diplomatic_reputation = 1
+	accept_vassalization_reasons = 10
 }
 
 rce_religion_mechanic_manichaeism_purity_knowledge_modifier = {

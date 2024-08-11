@@ -94,7 +94,25 @@
  rce_religion_tibetan_buddhism_events.EVTDESC1: "Centuries ago the teachings of Buddha started to penetrate our lands and by now it is one of the most widespread religions in [Root.GetName]. While we hold the classics of Confucian learning to be the guiding principle of our [Root.GovernmentName] we also honor the traditions of Buddha and the yearning for an end to the eternal cycle that many of our subjects feel.\nTruly we are a Confucian country ruled by a people of Nang Chos Buddhists."
  rce_religion_tibetan_buddhism_events1.EVTOPT1: "'Submit the people of virtue, assimilate the people with enlightenment.'"
 
+ rce_religion_jainism_events.EVTNAME1: "Hindu Festival in [target_province.GetName] attacked!"
+ rce_religion_jainism_events.EVTDESC1: "A small Hindu community in one of the districts of [target_province.GetCapitalName] was attacked by a mob of Jain fundamentalists during a festival. \nClaiming that these heretics dared to worship false gods they viciously assaulted the Hindus and burned down houses and workshops."
+ rce_religion_jainism_events1.EVTOPT1: "We shall not tolerate intolerance."
+ rce_religion_jainism_events1.EVTOPT2: "Now is not a time for punishment."
+ rce_religion_jainism_events1.EVTOPT3: "What they did was no crime!"
+ rce_religion_jainism_events1.EVTOPT4: "We should foster forgiveness and cooperation."
+ rce_religion_jainism_events.1.tt: "Every owned province following the §YHindu§! faith gains §R6§! unrest."
+
+ rce_religion_jainism_events.EVTNAME2: "Coup of the Chahamanas"
+ rce_religion_jainism_events.EVTDESC2: "The Chahamanas have lurked in the shadows every since their kingdom fell to the Karnata Raj of [VIJ.GetName]. But now that a new Jain state has emerged in Southern India once again they emerge from their slumber any with the support of many who know the myths and legends of their dynasty they have risen up to take control once again."
+ rce_religion_jainism_events2.EVTOPT1: "They are truly the more worthy rulers."
+ rce_religion_jainism_events2.EVTOPT2: "Who are they to claim the throne?"
+
  # Modifiers:
+ ## Event Modifiers:
+ rce_religion_jainism_fundamentalists_punished_modifier: "Jain Fundamentalists Punished"
+ rce_religion_jainism_government_sponsored_reconstruction_modifier: "Government Sponsored Reconstruction"
+ rce_religion_jainism_sanctioned_hindu_persecution_modifier: "Sanctioned Hindu Persecution"
+ rce_religion_jainism_jain_hindu_cooperation_modifier: "Jain-Hindu Cooperation"
  ## Province Triggered Modifiers:
  rce_bogomilist_plovdiv_province_triggered_modifier: "The Conquest of Plovdiv"
  rce_jainism_mewar_province_triggered_modifier: "The Conquest of Mewar"

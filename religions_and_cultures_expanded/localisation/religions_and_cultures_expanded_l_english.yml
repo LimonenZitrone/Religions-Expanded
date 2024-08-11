@@ -1,11 +1,12 @@
 ﻿l_english:
  # GUIs:
- rce_state_missionary_button_tt: "§YClerical Administration§! \nYour missionary will take over the administration in the [Root.GetAreaName] state for you. \n\nOnce assigned, the missionary will not be able to be used for conversion. At monthly tick he will be completely removed, until he is unassigned from this task again. Unassigning him will not automatically add him back to automatic conversion, if he was assigned there previously. \n--------------\nThis will have the following effects for the state: \n[statewide_governing_cost]: §G-20.0%§! \n[local_tax_modifier]: §G+25.0%§! \n[local_development_cost]: §G-5.0%§! \n[local_culture_conversion_time]: §G-10.0%§! \n[local_unrest]: §R+2.00§! \n[local_monthly_autonomy]: §R+0.05§!"
+ rce_state_missionary_button_tt: "§YClerical Administration§! \nYour missionary will take over the administration in the [Root.GetAreaName] state for you. \n\nOnce assigned, the missionary will not be able to be used for conversion. At monthly tick he will be completely removed, until he is unassigned from this task again. Unassigning him will not automatically add him back to automatic conversion, if he was assigned there previously. \nThe missionary can only be unassigned again after §Y1 year§!. \n--------------\nThis will have the following effects for the state: \n[statewide_governing_cost]: §G-20.0%§! \n[local_tax_modifier]: §G+25.0%§! \n[local_development_cost]: §G-5.0%§! \n[local_culture_conversion_time]: §G-10.0%§! \n[local_unrest]: §R+2.00§! \n[local_monthly_autonomy]: §R+0.05§!"
  rce_state_missionary_button_tt_currently_active: "A missionary was assigned to §Y[Root.GetAreaName]§!."
  rce_state_missionary_button_tt_blocked_no_missionary: "§RYou have no missionaries to assign.§W"
  rce_state_missionary_button_tt_blocked_state_not_owned: "§RYou do not own all provinces in the §Y[Root.GetAreaName]§! state as your core provinces.§W"
  rce_state_missionary_button_tt_blocked_state_not_converted: "§RAll provinces in the state must follow your religion. At least §Y1§! province in the §Y[Root.GetAreaName]§! state does not follow the §Y[From.Religion.GetName]§! faith.§W"
  rce_state_missionary_button_tt_blocked_recently_used: "§RYou can only assign a missionary to a state once per month.§W"
+ rce_state_missionary_button_tt_blocked_cannot_remove_before_1_year: "--------------\n§RYou must wait §Y1 year§! until you can unassign the missionary from the state again. The missionary was assigned in §Y[This.rce_missionary_assigned_to_state_year.GetValue]§!.§W"
 
  # Event Modifiers:
  rce_missionary_assigned_to_state_main_modifier: "Clerical Administration"
@@ -60,6 +61,8 @@
  RCE_FORMABLE_EMPIRE_OF_LIGHT_ADJ: "Manichaean"
  RCE_FORMABLE_COPTIC_EGYPT: "Kemet"
  RCE_FORMABLE_COPTIC_EGYPT_ADJ: "Kemetic"
+ RCE_FORMABLE_CHAHAMANA_NADU: "Chahamana Nadu"
+ RCE_FORMABLE_CHAHAMANA_NADU_ADJ: "Chahamana"
 
  # Government Reforms:
  nestorian_patriarchy_constantinople_reform: "Patriarchy"

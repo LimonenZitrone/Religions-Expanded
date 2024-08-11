@@ -412,6 +412,7 @@ custom_button = {
 		rce_has_not_any_religion_mechanic_manichaeism_purity_liturgical_focus = yes
 	}
 	effect = {
+		custom_tooltip = rce_tooltip_effect_text
 		rce_set_religion_mechanic_manichaeism_purity_liturgical_focus = { focus = moon }
 	}
 	frame = {
@@ -446,6 +447,7 @@ custom_button = {
 		rce_has_not_any_religion_mechanic_manichaeism_purity_liturgical_focus = yes
 	}
 	effect = {
+		custom_tooltip = rce_tooltip_effect_text
 		rce_set_religion_mechanic_manichaeism_purity_liturgical_focus = { focus = sun }
 	}
 	frame = {

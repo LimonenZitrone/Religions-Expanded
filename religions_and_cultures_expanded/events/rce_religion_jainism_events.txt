@@ -1,0 +1,343 @@
+namespace = rce_religion_jainism_events
+
+country_event = {
+	id = rce_religion_jainism_events.1
+	title = rce_religion_jainism_events.EVTNAME1
+	desc = rce_religion_jainism_events.EVTDESC1
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	is_triggered_only = yes
+
+	goto = target_province
+
+	trigger = {
+		religion = jainism
+		any_owned_province = {
+			NOT = { has_province_modifier = rce_religion_jainism_fundamentalists_punished_modifier }
+			NOT = { has_province_modifier = rce_religion_jainism_government_sponsored_reconstruction_modifier }
+			NOT = { has_province_modifier = rce_religion_jainism_jain_hindu_cooperation_modifier }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_modifier = rce_religion_jainism_fundamentalists_punished_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_government_sponsored_reconstruction_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_jain_hindu_cooperation_modifier }
+				}
+				save_event_target_as = target_province
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_modifier = rce_religion_jainism_fundamentalists_punished_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_government_sponsored_reconstruction_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_jain_hindu_cooperation_modifier }
+					religion = hinduism
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events1.EVTOPT1
+
+		ai_chance = { factor = 0.25 }
+
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+		event_target:target_province = {
+			add_province_modifier = {
+				name = rce_religion_jainism_fundamentalists_punished_modifier
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events1.EVTOPT2
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_sukha_value = { value = 5 }
+		event_target:target_province = {
+			add_province_modifier = {
+				name = rce_religion_jainism_government_sponsored_reconstruction_modifier
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events1.EVTOPT3
+
+		highlight = yes
+
+		trigger = {
+			any_owned_province = {
+				religion = hinduism
+			}
+		}
+
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			remove_country_modifier = rce_religion_jainism_sanctioned_hindu_persecution_modifier
+		}
+		add_country_modifier = {
+			name = rce_religion_jainism_sanctioned_hindu_persecution_modifier
+			duration = 7300
+		}
+		custom_tooltip = rce_religion_jainism_events.1.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = hinduism
+				}
+				add_unrest = 6
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events1.EVTOPT4
+
+		highlight = yes
+
+		trigger = {
+			rce_has_religion_mechanic_sukha_value = { value = 60 }
+		}
+
+		ai_chance = { factor = 0.25 }
+
+		add_prestige = 10
+		event_target:target_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rce_religion_jainism_jain_hindu_cooperation_modifier
+					duration = 5475
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_jainism_events.2
+	title = rce_religion_jainism_events.EVTNAME2
+	desc = rce_religion_jainism_events.EVTDESC2
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	goto = target_province_1
+
+	trigger = {
+		religion = jainism
+		total_development = 300
+		capital_scope = {
+			OR = {
+				region = deccan_region
+				region = coromandel_region
+			}
+		}
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = target_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_island = no
+					island = no
+				}
+				save_event_target_as = target_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_island = no
+					island = no
+					is_capital = no
+				}
+				save_event_target_as = target_province_1
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:target_province_1 }
+				}
+				save_event_target_as = target_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:target_province_1 }
+					is_island = no
+					island = no
+				}
+				save_event_target_as = target_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:target_province_1 }
+					is_island = no
+					island = no
+					is_capital = no
+				}
+				save_event_target_as = target_province_2
+			}
+			if = {
+				limit = {
+					has_saved_event_target = target_province_2
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+					}
+					save_event_target_as = target_province_3
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						is_island = no
+						island = no
+					}
+					save_event_target_as = target_province_3
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						is_island = no
+						island = no
+						is_capital = no
+					}
+					save_event_target_as = target_province_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events2.EVTOPT1
+
+		ai_chance = { factor = 0.1 }
+
+		event_target:target_province_1 = {
+			noble_rebels = 2
+		}
+		if = {
+			limit = {
+				has_saved_event_target = target_province_2
+			}
+			event_target:target_province_2 = {
+				noble_rebels = 2
+			}
+			if = {
+				limit = {
+					has_saved_event_target = target_province_3
+				}
+				event_target:target_province_3 = {
+					noble_rebels = 2
+				}
+			}
+		}
+		custom_tooltip = " "
+		override_country_name = RCE_FORMABLE_CHAHAMANA_NADU
+		add_stability = -2
+		tooltip = {
+			kill_ruler = yes
+			kill_heir = { }
+		}
+		define_ruler = {
+			dynasty = "Chahamanas"
+			change_adm = 3
+			change_dip = 3
+			change_mil = 3
+		}
+		hidden_effect = {
+			kill_heir = { allow_new_heir = no }
+		}
+		if = {
+			limit = {
+				owns_core_province = 2032
+			}
+			2032 = {
+				move_capital_effect = yes
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 3
+			}
+		}
+		else = {
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events2.EVTOPT2
+
+		ai_chance = { factor = 0.9 }
+
+		event_target:target_province_1 = {
+			pretender_rebels = 2
+		}
+		if = {
+			limit = {
+				has_saved_event_target = target_province_2
+			}
+			event_target:target_province_2 = {
+				pretender_rebels = 2
+			}
+			if = {
+				limit = {
+					has_saved_event_target = target_province_3
+				}
+				event_target:target_province_3 = {
+					pretender_rebels = 2
+				}
+			}
+		}
+		custom_tooltip = " "
+		add_stability_or_adm_power = yes
+		add_prestige = 20
+		if = {
+			limit = {
+				ADM = 6
+			}
+			add_adm_power = 100
+		}
+		else = {
+			change_adm = 1
+		}
+		if = {
+			limit = {
+				DIP = 6
+			}
+			add_dip_power = 100
+		}
+		else = {
+			change_dip = 1
+		}
+	}
+}

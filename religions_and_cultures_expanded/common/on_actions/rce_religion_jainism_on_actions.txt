@@ -1,0 +1,5 @@
+on_five_year_pulse_2 = {
+	random_events = {
+		100 = rce_religion_jainism_events.1
+	}
+}

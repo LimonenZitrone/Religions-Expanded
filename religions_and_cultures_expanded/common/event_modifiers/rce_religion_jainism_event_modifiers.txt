@@ -1,0 +1,16 @@
+# Event Modifiers:
+rce_religion_jainism_fundamentalists_punished_modifier = {
+	local_unrest = 6
+}
+rce_religion_jainism_government_sponsored_reconstruction_modifier = {
+	local_build_cost = -0.1
+	local_development_cost = -0.1
+}
+rce_religion_jainism_sanctioned_hindu_persecution_modifier = {
+	global_heretic_missionary_strength = 0.03
+}
+rce_religion_jainism_jain_hindu_cooperation_modifier = {
+	picture = "local_unrest"
+	province_trade_power_value = 5
+	local_unrest = -4
+}

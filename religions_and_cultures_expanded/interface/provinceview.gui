@@ -2877,6 +2877,13 @@ guiTypes = {
 					spriteType = "GFX_rce_state_missionary_button"
 					scripted = yes
 				}
+				iconType = {
+					name = "rce_state_missionary_button_overlay"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_state_missionary_button"
+					alwaystransparent = yes
+					scripted = yes
+				}
 			}
 			######################################################
 			##  END Religions & Cultures Expanded Custom GUI 2  ##
