@@ -341,3 +341,178 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = rce_religion_jainism_events.3
+	title = rce_religion_jainism_events.EVTNAME3
+	desc = rce_religion_jainism_events.EVTDESC3
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	goto = target_province
+
+	trigger = {
+		religion = jainism
+		any_owned_province = {
+			has_owner_religion = yes
+			NOT = { has_province_modifier = rce_religion_jainism_sponsored_festival_modifier }
+			NOT = { has_province_modifier = rce_religion_jainism_eased_taxation_modifier }
+			NOT = { has_province_modifier = rce_religion_jainism_ruler_attended_festivities_modifier }
+			NOT = { has_province_modifier = rce_religion_jainism_ruler_attended_provided_labour_for_festival_modifier }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_religion = yes
+					NOT = { has_province_modifier = rce_religion_jainism_sponsored_festival_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_eased_taxation_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_ruler_attended_festivities_modifier }
+					NOT = { has_province_modifier = rce_religion_jainism_ruler_provided_labour_for_festival_modifier }
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events3.EVTOPT1
+
+		ai_chance = {
+			factor = 0.75
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 1.5 }
+			}
+		}
+
+		add_years_of_income = -0.5
+		rce_add_religion_mechanic_sukha_value = { value = 10 }
+		event_target:target_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rce_religion_jainism_sponsored_festival_modifier
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events3.EVTOPT2
+
+		ai_chance = { factor = 0.25 }
+
+		rce_add_religion_mechanic_sukha_value = { value = 15 }
+		event_target:target_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 20
+				add_province_modifier = {
+					name = rce_religion_jainism_eased_taxation_modifier
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events3.EVTOPT3
+
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = kind_hearted_personality
+				ruler_has_personality = benevolent_personality
+				ruler_has_personality = pious_personality
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.75 }
+			}
+		}
+
+		add_years_of_income = -0.25
+		rce_add_religion_mechanic_sukha_value = { value = 20 }
+		event_target:target_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rce_religion_jainism_ruler_attended_festivities_modifier
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events3.EVTOPT4
+
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = fierce_negotiator_personality
+				ruler_has_personality = inspiring_leader_personality
+				ruler_has_personality = zealot_personality
+			}
+		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { manpower_percentage = 0.5 }
+			}
+		}
+
+		add_yearly_manpower = -0.5
+		rce_add_religion_mechanic_sukha_value = { value = 10 }
+		event_target:target_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rce_religion_jainism_ruler_provided_labour_for_festival_modifier
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_jainism_events3.EVTOPT5
+
+		ai_chance = { factor = 0 }
+
+		add_prestige = -5
+		rce_add_religion_mechanic_sukha_value = { value = -5 }
+		event_target:target_province = {
+			add_unrest = 2
+		}
+	}
+}

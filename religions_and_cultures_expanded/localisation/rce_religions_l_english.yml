@@ -107,12 +107,24 @@
  rce_religion_jainism_events2.EVTOPT1: "They are truly the more worthy rulers."
  rce_religion_jainism_events2.EVTOPT2: "Who are they to claim the throne?"
 
+ rce_religion_jainism_events.EVTNAME3: "Celebrating Paryushana in [target_province.GetName]"
+ rce_religion_jainism_events.EVTDESC3: "Paryushana Parva is the annual [Root.Religion.GetName] festival celebrating Union and the coming together of the community. The people will usually recite ten chapters of the Tattvartha Sutra on ten consecutive days with a special worship being done to celebrate the Sugandh Dashami for the sixth day. The festival is then followed by a procession to a local [Root.Religion.GetName] Temple and is then concluded with a rounds of prayers where people will ask for forgiveness for any offenses they may have committed during the last year. \n\nHowever the people of [target_province.GetName] have struggled financially during the last year and have asked the court for financial help to organize this year's festival."
+ rce_religion_jainism_events3.EVTOPT1: "Helping each other is what this festival is about!"
+ rce_religion_jainism_events3.EVTOPT2: "Let's ease the tax burden instead to aid them!"
+ rce_religion_jainism_events3.EVTOPT3: "Let's attend their festivities in Person!"
+ rce_religion_jainism_events3.EVTOPT4: "Send in soldiers to help with the festival!"
+ rce_religion_jainism_events3.EVTOPT5: "We can't help them."
+
  # Modifiers:
  ## Event Modifiers:
  rce_religion_jainism_fundamentalists_punished_modifier: "Jain Fundamentalists Punished"
  rce_religion_jainism_government_sponsored_reconstruction_modifier: "Government Sponsored Reconstruction"
  rce_religion_jainism_sanctioned_hindu_persecution_modifier: "Sanctioned Hindu Persecution"
  rce_religion_jainism_jain_hindu_cooperation_modifier: "Jain-Hindu Cooperation"
+ rce_religion_jainism_sponsored_festival_modifier: "Sponsored Festival"
+ rce_religion_jainism_eased_taxation_modifier: "Eased Taxation"
+ rce_religion_jainism_ruler_attended_festivities_modifier: "Ruler Attended Festivities"
+ rce_religion_jainism_ruler_provided_labour_for_festival_modifier: "Provided Labour for Festival"
  ## Province Triggered Modifiers:
  rce_bogomilist_plovdiv_province_triggered_modifier: "The Conquest of Plovdiv"
  rce_jainism_mewar_province_triggered_modifier: "The Conquest of Mewar"

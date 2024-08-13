@@ -14,3 +14,19 @@ rce_religion_jainism_jain_hindu_cooperation_modifier = {
 	province_trade_power_value = 5
 	local_unrest = -4
 }
+
+rce_religion_jainism_sponsored_festival_modifier = {
+	local_unrest = -2
+	local_production_efficiency = 0.1
+}
+rce_religion_jainism_eased_taxation_modifier = {
+	local_tax_modifier = -0.2
+}
+rce_religion_jainism_ruler_attended_festivities_modifier = {
+	local_unrest = -5
+	local_production_efficiency = 0.15
+}
+rce_religion_jainism_ruler_provided_labour_for_festival_modifier = {
+	local_unrest = -3
+	local_development_cost = -0.1
+}
