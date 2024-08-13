@@ -284,7 +284,7 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier = {
 	picture = "development_cost"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_owned_modifier = {
-	build_cost = -0.025
+	build_cost = -0.05
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier = {
 }

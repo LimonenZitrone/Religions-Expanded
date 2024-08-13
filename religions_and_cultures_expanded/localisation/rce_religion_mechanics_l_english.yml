@@ -945,7 +945,7 @@
  string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_6_modifier_desc_nestorian: "Unlocks the state edict '§YSilk Road Missionaries§!', giving the following effects: \n[province_trade_power_modifier]: §G+50.0%§! \n[local_unrest]: §G-2.00§! \nNon-§YNestorian§! provinces in the state are more likely to be targeted by an active §YCenter of Conversion§!."
  string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_6_modifier_desc: "Unlocks the state edict '§YSilk Road Missionaries§!', giving the following effects: \n[province_trade_power_modifier]: §G+50.0%§! \n[local_tolerance_of_heathens]: §G+2.00§! \nNon-§YNestorian§! provinces in the state are more likely to be targeted by an active §YCenter of Conversion§!."
 
- string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_owned: "[build_cost]: §G-2.5%§! \nWhen developing an owned §YNestorian§! province, [Root.GetName] has a §Y15.0%§! chance to receive §G1§! additional development for free."
+ string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_owned: "[build_cost]: §G-5.0%§! \nWhen developing an owned §YNestorian§! province, [Root.GetName] has a §Y15.0%§! chance to receive §G1§! additional development for free."
  string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc_nestorian: "When developing an owned §YNestorian§! province, [Root.GetName] has a §Y15.0%§! chance to receive §G1§! additional development for free."
  string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_7_modifier_desc: "When developing an owned §YNestorian§! province, [Root.GetName] has a §Y10.0%§! chance to receive §G1§! additional development for free."
 

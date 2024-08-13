@@ -588,6 +588,7 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 		limit = {
 			has_saved_global_event_target = rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
 		}
+		# 1
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -610,6 +611,31 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 			}
 			save_event_target_as = nestorian_possible_target
 		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 2
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -648,6 +674,47 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 			}
 			save_event_target_as = nestorian_possible_target
 		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 3
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -700,6 +767,47 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 						}
 					}
 				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 200
+						}
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 4
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 200
+						}
+					}
+				}
 				OR = {
 					any_neighbor_province = {
 						religion = nestorian
@@ -750,6 +858,63 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 					NOT = {
 						province_distance = {
 							who = PREV
+							distance = 200
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 200
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 5
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
 							distance = 150
 						}
 					}
@@ -778,6 +943,47 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 			}
 			save_event_target_as = nestorian_possible_target
 		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 150
+						}
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 150
+						}
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 6
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -832,6 +1038,63 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 			}
 			save_event_target_as = nestorian_possible_target
 		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 150
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 150
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 7
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -884,6 +1147,47 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 						}
 					}
 				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 100
+						}
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 8
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 100
+						}
+					}
+				}
 				OR = {
 					any_neighbor_province = {
 						religion = nestorian
@@ -934,6 +1238,63 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 					NOT = {
 						province_distance = {
 							who = PREV
+							distance = 100
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 100
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 9
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
 							distance = 50
 						}
 					}
@@ -962,6 +1323,47 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 			}
 			save_event_target_as = nestorian_possible_target
 		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 50
+						}
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 50
+						}
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 10
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -1016,6 +1418,63 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 			}
 			save_event_target_as = nestorian_possible_target
 		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 50
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation = {
+					NOT = {
+						province_distance = {
+							who = PREV
+							distance = 50
+						}
+					}
+				}
+				OR = {
+					any_neighbor_province = {
+						religion = nestorian
+					}
+					area_for_scope_province = {
+						religion = nestorian
+					}
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 11
 		random_province = {
 			limit = {
 				NOT = { religion = nestorian }
@@ -1050,6 +1509,37 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 				NOT = { has_construction = missionary }
 				NOT = { has_province_modifier = religious_zeal_at_conv }
 				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				area_for_scope_province = {
+					province_id = event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				area_for_scope_province = {
+					province_id = event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		# 12
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
 				any_neighbor_province = {
 					province_id = event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
 				}
@@ -1069,6 +1559,36 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target_spe
 					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
 					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
 				}
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				any_neighbor_province = {
+					province_id = event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+				owner = { religion = nestorian }
+			}
+			save_event_target_as = nestorian_possible_target
+		}
+		random_province = {
+			limit = {
+				NOT = { religion = nestorian }
+				NOT = { has_construction = missionary }
+				NOT = { has_province_modifier = religious_zeal_at_conv }
+				rce_religion_mechanic_nestorian_patriarchy_is_in_regions_for_center_of_reformation = { id = $id$ }
+				any_neighbor_province = {
+					province_id = event_target:rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation
+				}
+				OR = {
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries_upgraded
+					has_state_edict = rce_religion_mechanic_nestorian_patriarchy_state_edict_silk_road_missionaries
+				}
+				owner = { religion = nestorian }
 			}
 			save_event_target_as = nestorian_possible_target
 		}
