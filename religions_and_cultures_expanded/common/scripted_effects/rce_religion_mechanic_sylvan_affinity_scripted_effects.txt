@@ -337,6 +337,7 @@ rce_clear_all_religion_mechanic_sylvan_affinity_modifiers = {
 				has_province_modifier = rce_religion_mechanic_sylvan_affinity_fall_grove_area_modifier
 				has_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_province_modifier
 				has_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_area_modifier
+				has_province_modifier = rce_religion_mechanic_sylvan_affinity_tree_of_life_location_modifier
 			}
 		}
 		remove_province_modifier = rce_religion_mechanic_sylvan_affinity_spring_grove_province_modifier
@@ -347,5 +348,6 @@ rce_clear_all_religion_mechanic_sylvan_affinity_modifiers = {
 		remove_province_modifier = rce_religion_mechanic_sylvan_affinity_fall_grove_area_modifier
 		remove_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_province_modifier
 		remove_province_modifier = rce_religion_mechanic_sylvan_affinity_winter_grove_area_modifier
+		remove_province_modifier = rce_religion_mechanic_sylvan_affinity_tree_of_life_location_modifier
 	}
 }

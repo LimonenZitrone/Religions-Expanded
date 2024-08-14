@@ -718,6 +718,7 @@
  ## Event Modifiers:
  rce_religion_mechanic_sylvan_affinity_assimilation_of_pagans_modifier: "Assimilation of the Pagans"
  rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier: "Compromised with Grove-Arsonists"
+ rce_religion_mechanic_sylvan_affinity_tree_of_life_location_modifier: "Tree of Life Location"
  ## Triggered Modifiers:
  rce_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier: "Inquisition (Idea)"
  desc_rce_religion_mechanic_sylvan_affinity_religious_ideas_5_triggered_modifier: "We have completed the '§YInquisition§!' idea from the '§YReligions Ideas§!' idea group. Bonuses to new mechanics is given via this modifier instead of the idea directly."
@@ -735,6 +736,12 @@
  rce_religion_mechanic_sylvan_affinity_events2.EVTOPT1: "Their issues don't concern us."
  rce_religion_mechanic_sylvan_affinity_events2.EVTOPT2: "Grant them some concessions."
  rce_religion_mechanic_sylvan_affinity_events2.EVTOPT3: "Try to compromise with our people."
+
+ rce_religion_mechanic_sylvan_affinity_events.EVTNAME3: "Beautiful Clearing discovered"
+ rce_religion_mechanic_sylvan_affinity_events.EVTDESC3: "One lone wandering scholar came across a gorgeous circular clearing, nestled neatly in the deep forest. However, in the very center of it stands a large oak, strong and proud, a tree seemingly so old it might have been around at the birth of Dievas himself. It stretches into the sky, providing shelter for whoever wanders into the embrace of its expanse. \nBut as we look upon his report and vivid description, we have to decide what should be done with such a discovery. Do we bless this place and consecrate it into a grove for the priests or maybe leave it untouched..."
+ rce_religion_mechanic_sylvan_affinity_events3.EVTOPT1: "Bless it!"
+ rce_religion_mechanic_sylvan_affinity_events3.EVTOPT2: "Leave it untouched!"
+ rce_religion_mechanic_sylvan_affinity_events3.EVTOPT3: "Send in someone to study the tree."
 
  # Decisions:
  rce_religion_mechanic_sylvan_affinity_consecrate_new_grove_decision_title: "Consecrate a Grove"

@@ -149,3 +149,9 @@ rce_religion_mechanic_sylvan_affinity_compromised_with_grove_arsonists_modifier 
 	local_tax_modifier = -0.15
 	local_unrest = -2
 }
+
+rce_religion_mechanic_sylvan_affinity_tree_of_life_location_modifier = {
+	picture = "rce_monthly_religion_mechanic_sylvan_affinity_change"
+	rce_monthly_religion_mechanic_sylvan_affinity_change = 1
+	trade_goods_size = 3
+}
