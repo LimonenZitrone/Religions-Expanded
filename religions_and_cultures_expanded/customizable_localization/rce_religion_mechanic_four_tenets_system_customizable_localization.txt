@@ -101,6 +101,36 @@ defined_text = {
 }
 
 defined_text = {
+	name = RceGetReligionMechanicFourTenetsSystemMonthlyGainGovernmentTooltip
+	random = no
+
+	text = {
+		trigger = {
+			uses_republican_tradition = yes
+		}
+		localisation_key = string_rce_get_religion_mechanic_four_tenets_system_monthly_gain_tt_government_republic
+	}
+	text = {
+		trigger = {
+			uses_devotion = yes
+		}
+		localisation_key = string_rce_get_religion_mechanic_four_tenets_system_monthly_gain_tt_government_theocracy_dlc
+	}
+	text = {
+		trigger = {
+			government = theocracy
+		}
+		localisation_key = string_rce_get_religion_mechanic_four_tenets_system_monthly_gain_tt_government_theocracy
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
 	name = RceGetReligionMechanicFourTenetsSystemTotalMonthlyGainValue
 	random = no
 

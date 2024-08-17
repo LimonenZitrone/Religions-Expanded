@@ -359,7 +359,7 @@ country_event = {
 			NOT = { has_province_modifier = rce_religion_jainism_sponsored_festival_modifier }
 			NOT = { has_province_modifier = rce_religion_jainism_eased_taxation_modifier }
 			NOT = { has_province_modifier = rce_religion_jainism_ruler_attended_festivities_modifier }
-			NOT = { has_province_modifier = rce_religion_jainism_ruler_attended_provided_labour_for_festival_modifier }
+			NOT = { has_province_modifier = rce_religion_jainism_ruler_provided_labour_for_festival_modifier }
 		}
 	}
 

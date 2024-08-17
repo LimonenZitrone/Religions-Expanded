@@ -52,6 +52,18 @@ on_tech_taken = {
 
 on_monarch_death = {
 	rce_set_religion_mechanic_four_tenets_system_value = { value = 0 }
+	if = {
+		limit = {
+			government = theocracy
+		}
+		rce_add_religion_mechanic_four_tenets_system_value = { value = 100 }
+	}
+	else_if = {
+		limit = {
+			government = republic
+		}
+		rce_add_religion_mechanic_four_tenets_system_value = { value = 50 }
+	}
 }
 
 # ROOT = annexing country, FROM = annexed country

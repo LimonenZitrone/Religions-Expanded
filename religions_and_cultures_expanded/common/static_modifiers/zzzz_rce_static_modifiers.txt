@@ -62,3 +62,38 @@ prestige = {
 	# Religions & Cultures Expanded:
 	rce_monthly_religion_mechanic_sylvan_affinity_change = 2
 }
+
+devotion = {
+	# Vanilla:
+	papal_influence = 2
+	monthly_fervor_increase = 2
+	church_power_modifier = 0.5
+	harmonization_speed = 0.5
+	monthly_piety_accelerator = 0.01
+	yearly_authority = 0.5
+	monthly_divine_authority = 0.1
+	yearly_patriarch_authority = 0.01
+	yearly_doom_reduction = 0.5
+	yearly_karma_decay = 0.1
+	prestige = 2
+	global_tax_modifier = 0.50
+	church_loyalty_modifier = 0.1
+	brahmins_hindu_loyalty_modifier = 0.1
+	reform_progress_growth = 0.5
+
+	# Religions & Cultures Expanded:
+	rce_monthly_religion_mechanic_four_tenets_system_change = 1
+}
+
+republican_tradition = {
+	# Vanilla:
+	global_unrest = -2
+	rr_jacobins_influence = 0.1
+	reform_progress_growth = 1.0
+	burghers_loyalty_modifier = 0.05
+	vaisyas_loyalty_modifier = 0.05
+	monthly_authority_power = -0.05
+
+	# Religions & Cultures Expanded:
+	rce_monthly_religion_mechanic_four_tenets_system_change = 1
+}

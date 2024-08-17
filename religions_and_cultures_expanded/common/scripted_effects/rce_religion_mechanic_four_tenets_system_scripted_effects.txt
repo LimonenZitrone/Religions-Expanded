@@ -69,6 +69,13 @@ rce_export_monthly_religion_mechanic_four_tenets_system_value_gain = {
 		else = {
 			change_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value value = 0.8 } # Base Gain (Higher cause no Innovativeness)
 		}
+		if = {
+			limit = {
+				NOT = { uses_devotion = yes }
+				government = theocracy
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value value = 0.5 } # Theocracy
+		}
 		set_variable = { which = rce_monthly_religion_mechanic_four_tenets_system_value_base which = rce_monthly_religion_mechanic_four_tenets_system_value } # display
 		# Modifier
 		export_to_variable = {

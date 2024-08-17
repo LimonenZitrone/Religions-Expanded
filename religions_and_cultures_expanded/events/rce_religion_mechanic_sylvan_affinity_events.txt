@@ -355,11 +355,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				rce_has_religion_mechanic_sylvan_affinity_seasonal_affinity = { value = 80 }
+				rce_has_religion_mechanic_sylvan_affinity_value = { value = 80 }
 			}
 			modifier = {
 				factor = 5
-				NOT = { rce_has_religion_mechanic_sylvan_affinity_seasonal_affinity = { value = 20 } }
+				NOT = { rce_has_religion_mechanic_sylvan_affinity_value = { value = 20 } }
 			}
 		}
 
@@ -390,7 +390,7 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 0
-				NOT = { rce_has_religion_mechanic_sylvan_affinity_seasonal_affinity = { value = 80 } }
+				NOT = { rce_has_religion_mechanic_sylvan_affinity_value = { value = 80 } }
 			}
 		}
 
