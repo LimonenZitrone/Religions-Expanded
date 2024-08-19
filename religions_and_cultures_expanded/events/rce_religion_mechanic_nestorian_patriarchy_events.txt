@@ -98,6 +98,13 @@ province_event = {
 			every_country = {
 				limit = {
 					rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					OR = {
+						NOT = { has_saved_event_target = invalid_next_patriarchy_controller }
+						AND = {
+							has_saved_event_target = invalid_next_patriarchy_controller
+							NOT = { tag = event_target:invalid_next_patriarchy_controller }
+						}
+					}
 				}
 				set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_new_controller_weight value = 0 }
 				# Prestige
@@ -175,6 +182,13 @@ province_event = {
 			every_country = {
 				limit = {
 					rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+					OR = {
+						NOT = { has_saved_event_target = invalid_next_patriarchy_controller }
+						AND = {
+							has_saved_event_target = invalid_next_patriarchy_controller
+							NOT = { tag = event_target:invalid_next_patriarchy_controller }
+						}
+					}
 				}
 				if = {
 					limit = {
@@ -200,11 +214,27 @@ province_event = {
 			}
 			if = {
 				limit = {
-					NOT = { has_saved_event_target = next_patriarchy_controller }
+					OR = {
+						NOT = { has_saved_event_target = next_patriarchy_controller }
+						AND = {
+							has_saved_event_target = next_patriarchy_controller
+							has_saved_event_target = invalid_next_patriarchy_controller
+							event_target:next_patriarchy_controller = {
+								tag = event_target:invalid_next_patriarchy_controller
+							}
+						}
+					}
 				}
 				random_country = {
 					limit = {
 						rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+						OR = {
+							NOT = { has_saved_event_target = invalid_next_patriarchy_controller }
+							AND = {
+								has_saved_event_target = invalid_next_patriarchy_controller
+								NOT = { tag = event_target:invalid_next_patriarchy_controller }
+							}
+						}
 					}
 					save_event_target_as = next_patriarchy_controller
 				}
@@ -375,6 +405,12 @@ country_event = {
 					}
 					discover_country = NPA
 				}
+				if = {
+					limit = {
+						is_lacking_institutions = yes
+					}
+					embrace_institutions_of = ROOT
+				}
 			}
 		}
 		hidden_effect = {
@@ -433,6 +469,12 @@ country_event = {
 						has_discovered = ROOT
 					}
 					discover_country = NPA
+				}
+				if = {
+					limit = {
+						is_lacking_institutions = yes
+					}
+					embrace_institutions_of = ROOT
 				}
 			}
 		}

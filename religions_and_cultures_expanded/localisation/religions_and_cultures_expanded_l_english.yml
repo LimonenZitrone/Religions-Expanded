@@ -16,6 +16,8 @@
  desc_rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "The state has guaranteed greater autonomy for the Jains."
  harmonized_tibetan_buddhism: "Harmonized with the Nang Chos Faith"
  desc_harmonized_tibetan_buddhism: "We have incorporated the Nang Chos faith in our country and national ethos."
+ rce_formable_nestorian_kingdom_of_god_modifier: "The Kingdom of God"
+ desc_rce_formable_nestorian_kingdom_of_god_modifier: "The Patriarch has declared himself as the custodian of the Kingdom of God on Earth."
 
  # Tooltips:
  RCE_UNTIL_MONARCH_DEATH: "until ruler death"
@@ -35,6 +37,8 @@
  rce_formable_decision_empire_of_light_desc: "We have to unify the Manichaean people in a spiritual Empire!"
  rce_formable_decision_coptic_egypt_title: "Form Kemet"
  rce_formable_decision_coptic_egypt_desc: "Found the Kemet nation, drawing on the rich history of the Nile Delta to establish a modern state in the region."
+ rce_formable_decision_nestorian_kingdom_of_god_title: "Declare the Kingdom of God"
+ rce_formable_decision_nestorian_kingdom_of_god_desc: "With the lands of the Balkans and Anatolia under the temporal power of the Patriarch rather than any Emperor or King it is now justified to declare this state the Kingdom of God on Earth."
 
  # Vanilla Events:
  hindu_events.1.j: "Kali will lead us to wisdom."
@@ -63,6 +67,8 @@
  RCE_FORMABLE_COPTIC_EGYPT_ADJ: "Kemetic"
  RCE_FORMABLE_CHAHAMANA_NADU: "Chahamana Nadu"
  RCE_FORMABLE_CHAHAMANA_NADU_ADJ: "Chahamana"
+ RCE_FORMABLE_NESTORIAN_KINGDOM_OF_GOD: "Kingdom of God"
+ RCE_FORMABLE_NESTORIAN_KINGDOM_OF_GOD_ADJ: "Patriarchal"
 
  # Government Reforms:
  nestorian_patriarchy_constantinople_reform: "Patriarchy"

@@ -231,3 +231,154 @@ country_event = {
 		rce_set_religion_mechanic_four_tenets_system_value = { value = 0 }
 	}
 }
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.5
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME5
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC5
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = four_tenets_system }
+		has_regency = no
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 1
+			OR = {
+				trade_goods = coffee
+				trade_goods = tea
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events5.EVTOPT1
+
+		rce_add_religion_mechanic_four_tenets_system_value = { value = 15 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.6
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME6
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC6
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = four_tenets_system }
+		has_regency = no
+		NOT = { has_country_modifier = rce_religion_mechanic_four_tenets_system_dedicated_theology_teacher_modifier }
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
+			}
+			OR = {
+				advisor = philosopher
+				advisor = natural_scientist
+				advisor = theologian
+				advisor = ate_advisor_administrative_genius
+				advisor = ate_advisor_free_thinker
+				advisor = ate_advisor_scholar
+				advisor = ate_advisor_inventor
+			}
+		}
+		else = {
+			OR = {
+				advisor = philosopher
+				advisor = natural_scientist
+				advisor = theologian
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events6.EVTOPT1
+
+		remove_advisor_by_category = ADM
+		add_country_modifier = {
+			name = rce_religion_mechanic_four_tenets_system_dedicated_theology_teacher_modifier
+			duration = 5475
+		}
+		rce_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events6.EVTOPT2
+
+		rce_add_religion_mechanic_four_tenets_system_value = { value = -15 }
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.7
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME7
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC7
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = four_tenets_system }
+		has_regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events7.EVTOPT1
+
+		rce_add_religion_mechanic_four_tenets_system_value = { value = -15 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_four_tenets_system_events.8
+	title = rce_religion_mechanic_four_tenets_system_events.EVTNAME8
+	desc = rce_religion_mechanic_four_tenets_system_events.EVTDESC8
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = four_tenets_system }
+		has_regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events8.EVTOPT1
+
+		rce_add_religion_mechanic_four_tenets_system_value = { value = 15 }
+	}
+
+	option = {
+		name = rce_religion_mechanic_four_tenets_system_events8.EVTOPT2
+
+		add_prestige_or_monarch_power = { amount = 20 }
+	}
+}

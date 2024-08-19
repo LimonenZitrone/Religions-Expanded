@@ -66,6 +66,15 @@ on_monarch_death = {
 	}
 }
 
+on_five_year_pulse_2 = {
+	random_events = {
+		100 = rce_religion_mechanic_four_tenets_system_events.5
+		100 = rce_religion_mechanic_four_tenets_system_events.6
+		100 = rce_religion_mechanic_four_tenets_system_events.7
+		100 = rce_religion_mechanic_four_tenets_system_events.8
+	}
+}
+
 # ROOT = annexing country, FROM = annexed country
 on_annexed = {
 	FROM = {

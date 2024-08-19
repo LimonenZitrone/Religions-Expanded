@@ -70,3 +70,9 @@ rce_religion_mechanic_four_tenets_system_new_tech_modifier = {
 	rce_monthly_religion_mechanic_four_tenets_system_change_modifier = 0.25
 	religion = yes
 }
+
+# Event Modifiers:
+rce_religion_mechanic_four_tenets_system_dedicated_theology_teacher_modifier = {
+	rce_monthly_religion_mechanic_four_tenets_system_change = 1
+	religion = yes
+}

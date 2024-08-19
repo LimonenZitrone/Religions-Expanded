@@ -2293,6 +2293,7 @@ rce_clear_all_religion_mechanic_nestorian_patriarchy_modifiers_when_changing_rel
 					rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 				}
 			}
+			save_event_target_as = invalid_next_patriarchy_controller
 			151 = {
 				province_event = { id = rce_religion_mechanic_nestorian_patriarchy_events.3 } # New Patriarchy Controller
 			}
