@@ -65,7 +65,7 @@ rce_jainism_jharkhand_province_triggered_modifier = {
 }
 
 ## nestorian
-rce_nestorian_constantinople_province_triggered_modifier = {
+rce_nestorian_marash_province_triggered_modifier = {
 	potential = {
 	}
 

@@ -102,12 +102,12 @@ on_startup = {
 				duration = 1825
 			}
 		}
-		151 = {
+		332 = {
 			if = {
 				limit = {
-					NOT = { has_province_modifier = rce_nestorian_constantinople_province_triggered_modifier }
+					NOT = { has_province_modifier = rce_nestorian_marash_province_triggered_modifier }
 				}
-				add_province_triggered_modifier = rce_nestorian_constantinople_province_triggered_modifier
+				add_province_triggered_modifier = rce_nestorian_marash_province_triggered_modifier
 			}
 		}
 		710 = {
