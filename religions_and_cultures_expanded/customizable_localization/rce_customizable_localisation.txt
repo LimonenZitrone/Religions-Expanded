@@ -1,0 +1,17 @@
+defined_text = {
+	name = rce_religion_decision_convert_to_nestorian_desc
+	random = no
+
+	text = {
+		trigger = {
+			primary_culture = assyrian_culture
+		}
+		localisation_key = rce_religion_decision_convert_to_nestorian_desc_assyrian
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_religion_decision_convert_to_nestorian_desc_christian
+	}
+}

@@ -131,85 +131,85 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_owned_modifier = {
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_nestorian_modifier = {
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_9_modifier = {
-	tax_income = 21.6
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_8_modifier = {
-	tax_income = 19.2
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_7_modifier = {
-	tax_income = 16.8
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_6_modifier = {
 	tax_income = 14.4
 }
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_8_modifier = {
+	tax_income = 12.8
+}
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_7_modifier = {
+	tax_income = 11.2
+}
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_6_modifier = {
+	tax_income = 9.6
+}
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_5_modifier = {
-	tax_income = 12
+	tax_income = 8
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_4_modifier = {
-	tax_income = 9.6
+	tax_income = 6.4
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_3_modifier = {
-	tax_income = 7.2
+	tax_income = 4.8
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_2_modifier = {
-	tax_income = 4.8
+	tax_income = 3.2
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_nestorian_fort_1_modifier = {
-	tax_income = 2.4
+	tax_income = 1.6
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_9_modifier = {
-	tax_income = 10.8
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_modifier = {
-	tax_income = 9.6
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_modifier = {
-	tax_income = 8.4
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_modifier = {
 	tax_income = 7.2
 }
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_modifier = {
+	tax_income = 6.4
+}
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_modifier = {
+	tax_income = 5.6
+}
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_modifier = {
+	tax_income = 4.8
+}
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_modifier = {
-	tax_income = 6
+	tax_income = 4
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_modifier = {
-	tax_income = 4.8
+	tax_income = 3.2
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_modifier = {
-	tax_income = 3.6
+	tax_income = 2.4
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_modifier = {
-	tax_income = 2.4
+	tax_income = 1.6
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_modifier = {
-	tax_income = 1.2
+	tax_income = 0.8
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_9_multiple_modifier = {
-	tax_income = 5.4
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_multiple_modifier = {
-	tax_income = 4.8
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_multiple_modifier = {
-	tax_income = 4.2
-}
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_multiple_modifier = {
 	tax_income = 3.6
 }
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_multiple_modifier = {
-	tax_income = 3
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_8_multiple_modifier = {
+	tax_income = 3.2
 }
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_multiple_modifier = {
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_7_multiple_modifier = {
+	tax_income = 2.8
+}
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_6_multiple_modifier = {
 	tax_income = 2.4
 }
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_multiple_modifier = {
-	tax_income = 1.8
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_5_multiple_modifier = {
+	tax_income = 2
 }
-rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_multiple_modifier = {
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_4_multiple_modifier = {
+	tax_income = 1.6
+}
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_3_multiple_modifier = {
 	tax_income = 1.2
 }
+rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_2_multiple_modifier = {
+	tax_income = 0.8
+}
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_2_province_fort_1_multiple_modifier = {
-	tax_income = 0.6
+	tax_income = 0.4
 }
 
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier = {

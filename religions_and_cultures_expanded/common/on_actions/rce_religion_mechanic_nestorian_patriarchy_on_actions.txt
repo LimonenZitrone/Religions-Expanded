@@ -322,6 +322,24 @@ on_province_religion_converted = {
 			set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_conversion_target_dev value = 0 }
 			set_variable = { which = rce_religion_mechanic_nestorian_patriarchy_conversion_target_dev_modifier value = 0 }
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier
+					}
+				}
+				add_random_development = 2
+			}
+			else = {
+				add_random_development = 1
+			}
+		}
 	}
 }
 

@@ -872,6 +872,78 @@ christian = {
 				name = conversion_zeal
 				duration = 3650
 			}
+			151 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			4293 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			700 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			446 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			710 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			2313 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			558 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			2745 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
+			1099 = {
+				if = {
+					limit = {
+						NOT = { has_discovered = ROOT }
+					}
+					discover_country = ROOT
+				}
+			}
 		}
 
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY }

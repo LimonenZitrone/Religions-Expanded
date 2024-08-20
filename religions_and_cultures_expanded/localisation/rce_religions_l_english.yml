@@ -70,7 +70,7 @@
  rce_religion_decision_manichaeism_burn_mandean_temples_title: "Burn the Mandean Temples"
  rce_religion_decision_manichaeism_burn_mandean_temples_desc: "Some people living in [4289.GetAreaName] still follow ancient beliefs. There are conflicts between them and parts of the [Root.Religion.GetName] population, which we need to handle eventually."
  rce_religion_decision_convert_to_nestorian_title: "Convert to the Nestorian faith"
- rce_religion_decision_convert_to_nestorian_desc: "We follow the Assyrian culture and should restore the Church of Assyria!"
+ rce_religion_decision_convert_to_nestorian_desc: "[rce_religion_decision_convert_to_nestorian_desc]"
  rce_religion_decision_convert_to_manichaeism_title: "Convert to the Manichaean faith"
  rce_religion_decision_convert_to_manichaeism_desc: "We follow the Manichaean culture, it's time to also convert our religion to the old faith!"
  rce_religion_decision_spawn_bogomilist_center_of_reformation_title: "Create a [Root.Religion.GetName] Center"
@@ -142,3 +142,7 @@
 
  # Tooltips:
  rce_religion_jainism_estate_brahmins_tt: "We need to fulfill the same requirements as a §YHindu§! country to gain access to the §YBrahmins§! estate."
+
+ # Customizable Localization:
+ rce_religion_decision_convert_to_nestorian_desc_assyrian: "We follow the Assyrian culture and should restore the Church of Assyria!"
+ rce_religion_decision_convert_to_nestorian_desc_christian: "The Nestorian faith is spreading quickly through our realm. Fighting the believers becomes harder and harder the longer we wait. Maybe we should give in and convert to the Nestorian faith..."

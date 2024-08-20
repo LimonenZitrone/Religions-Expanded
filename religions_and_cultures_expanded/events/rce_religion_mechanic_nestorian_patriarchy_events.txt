@@ -59,6 +59,24 @@ province_event = {
 		}
 
 		custom_tooltip = rce_religion_mechanic_nestorian_patriarchy_events.2.tt
+		if = {
+			limit = {
+				owner = {
+					has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier
+					}
+				}
+				add_random_development = 2
+			}
+			else = {
+				add_random_development = 1
+			}
+		}
 		owner = {
 			rce_add_religion_mechanic_nestorian_patriarchy_value = { which = rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_target_dev }
 		}

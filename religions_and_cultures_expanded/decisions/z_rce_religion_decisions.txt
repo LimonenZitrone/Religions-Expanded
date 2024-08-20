@@ -48,21 +48,63 @@ country_decisions = {
 	rce_religion_decision_convert_to_nestorian = {
 		color = { 255 255 170 }
 		potential = {
-			primary_culture = assyrian_culture
 			religion_group = christian
 			NOT = { religion = nestorian }
+			OR = {
+				primary_culture = assyrian_culture
+				dominant_religion = nestorian
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = BYZ }
+			NOT = { tag = ETH }
 		}
 		provinces_to_highlight = {
-			culture = assyrian_culture
 			owned_by = ROOT
+			OR = {
+				AND = {
+					culture = assyrian_culture
+					ROOT = {
+						primary_culture = assyrian_culture
+						NOT = {
+							development_in_provinces = {
+								value = 50
+								culture = assyrian_culture
+							}
+						}
+					}
+				}
+				AND = {
+					NOT = { religion = nestorian }
+					ROOT = {
+						NOT = { primary_culture = assyrian_culture }
+						NOT = {
+							num_of_religion = {
+								religion = nestorian
+								value = 0.9
+							}
+						}
+					}
+				}
+			}
 		}
 		allow = {
-			primary_culture = assyrian_culture
 			stability = 1
 			is_free_or_tributary_trigger = yes
-			development_in_provinces = {
-				value = 50
-				culture = assyrian_culture
+			if = {
+				limit = {
+					primary_culture = assyrian_culture
+				}
+				primary_culture = assyrian_culture
+				development_in_provinces = {
+					value = 50
+					culture = assyrian_culture
+				}
+			}
+			else = {
+				num_of_religion = {
+					religion = nestorian
+					value = 0.9
+				}
 			}
 		}
 		effect = {
@@ -83,6 +125,9 @@ country_decisions = {
 				OR = {
 					tag = PER
 					tag = TUR
+					is_emperor = yes
+					is_defender_of_faith = yes
+					is_papal_controller = yes
 				}
 			}
 		}
