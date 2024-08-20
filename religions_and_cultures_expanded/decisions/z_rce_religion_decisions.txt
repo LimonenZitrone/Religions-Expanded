@@ -178,6 +178,8 @@ country_decisions = {
 				religion_group = zoroastrian_group
 			}
 			NOT = { religion = manichaeism }
+			NOT = { tag = PAP }
+			NOT = { tag = NPA }
 		}
 		provinces_to_highlight = {
 			culture = manichaean_culture
