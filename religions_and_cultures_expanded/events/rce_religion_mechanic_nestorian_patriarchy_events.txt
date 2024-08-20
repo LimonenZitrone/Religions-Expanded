@@ -405,6 +405,7 @@ country_event = {
 				remove_core = ROOT
 			}
 			change_culture = greek
+			change_religion = nestorian
 		}
 		add_prestige = 25
 		NPA = {
@@ -470,6 +471,7 @@ country_event = {
 				remove_core = ROOT
 			}
 			change_culture = greek
+			change_religion = nestorian
 		}
 		add_prestige = 25
 		NPA = {

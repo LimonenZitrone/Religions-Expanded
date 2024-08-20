@@ -80,7 +80,7 @@ country_decisions = {
 						NOT = {
 							num_of_religion = {
 								religion = nestorian
-								value = 0.9
+								value = 0.75
 							}
 						}
 					}
@@ -103,7 +103,7 @@ country_decisions = {
 			else = {
 				num_of_religion = {
 					religion = nestorian
-					value = 0.9
+					value = 0.75
 				}
 			}
 		}
