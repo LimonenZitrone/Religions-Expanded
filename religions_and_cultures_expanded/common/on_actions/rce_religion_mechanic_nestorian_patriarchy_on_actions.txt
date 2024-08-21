@@ -304,7 +304,7 @@ on_province_religion_converted = {
 				value = trigger_value:development
 				who = PREV
 			}
-			divide_variable = { which = rce_religion_mechanic_nestorian_patriarchy_conversion_target_dev value = -2 }
+			divide_variable = { which = rce_religion_mechanic_nestorian_patriarchy_conversion_target_dev value = -3 }
 			export_to_variable = {
 				which = rce_religion_mechanic_nestorian_patriarchy_conversion_target_dev_modifier
 				value = modifier:rce_religion_mechanic_nestorian_patriarchy_change_malus_from_conversion_reduction
