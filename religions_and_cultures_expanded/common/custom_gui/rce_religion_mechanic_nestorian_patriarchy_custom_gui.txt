@@ -299,11 +299,11 @@ custom_button = {
 	# if you change this, make sure to change the rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier }
-		years_of_manpower = 2
+		years_of_manpower = 1.5
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		add_yearly_manpower = -2
+		add_yearly_manpower = -1.5
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier
 			duration = 3650

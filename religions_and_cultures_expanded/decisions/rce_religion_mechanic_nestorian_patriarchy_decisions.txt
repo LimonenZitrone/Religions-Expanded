@@ -127,10 +127,10 @@ country_decisions = {
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier }
-			years_of_manpower = 2
+			years_of_manpower = 1.5
 		}
 		effect = {
-			add_yearly_manpower = -2
+			add_yearly_manpower = -1.5
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier
 				duration = 3650

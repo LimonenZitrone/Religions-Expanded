@@ -420,7 +420,16 @@ country_event = {
 					duration = -1
 					hidden = yes
 				}
-				set_country_flag = rce_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								had_country_flag = { flag = rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller days = 3650 }
+							}
+						}
+					}
+					set_country_flag = rce_religion_mechanic_nestorian_patriarchy_no_new_patriarchy_controller_on_ruler_death
+				}
 				define_ruler = {
 					min_age = 60
 					max_age = 70
