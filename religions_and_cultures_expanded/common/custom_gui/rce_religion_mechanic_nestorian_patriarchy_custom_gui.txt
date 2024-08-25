@@ -324,7 +324,15 @@ custom_button = {
 	# if you change this, make sure to change the rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier }
-		years_of_income = 1
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			treasury = 5000
+		}
+		else = {
+			years_of_income = 1
+		}
 		OR = {
 			tag = NPA
 			NOT = { exists = NPA }
@@ -339,7 +347,15 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		add_years_of_income = -1
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			add_treasury = -5000
+		}
+		else = {
+			add_years_of_income = -1
+		}
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier
 			duration = 3650

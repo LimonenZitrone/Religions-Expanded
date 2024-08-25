@@ -158,7 +158,15 @@ country_decisions = {
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier }
-			years_of_income = 1
+			if = {
+				limit = {
+					monthly_income = 417
+				}
+				treasury = 5000
+			}
+			else = {
+				years_of_income = 1
+			}
 			OR = {
 				tag = NPA
 				NOT = { exists = NPA }
@@ -172,7 +180,15 @@ country_decisions = {
 			}
 		}
 		effect = {
-			add_years_of_income = -1
+			if = {
+				limit = {
+					monthly_income = 417
+				}
+				add_treasury = -5000
+			}
+			else = {
+				add_years_of_income = -1
+			}
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_2_modifier
 				duration = 3650
@@ -186,7 +202,16 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { years_of_income = 4 }
+				OR = {
+					AND = {
+						monthly_income = 417
+						NOT = { treasury = 20000 }
+					}
+					AND = {
+						NOT = { monthly_income = 417 }
+						NOT = { years_of_income = 4 }
+					}
+				}
 			}
 			modifier = {
 				factor = 0

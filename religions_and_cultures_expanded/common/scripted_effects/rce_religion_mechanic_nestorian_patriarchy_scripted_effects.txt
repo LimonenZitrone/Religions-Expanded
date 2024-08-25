@@ -1600,7 +1600,15 @@ rce_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
 		limit = {
 			check_variable = { which = rce_religion_mechanic_nestorian_patriarchy_supported_$category$_advisor_level value = 5 }
 		}
-		add_years_of_income = -1.5
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			add_treasury = -6250
+		}
+		else = {
+			add_years_of_income = -1.25
+		}
 		hire_advisor = {
 			type = $type$
 			skill = 5
@@ -1610,7 +1618,15 @@ rce_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
 		limit = {
 			check_variable = { which = rce_religion_mechanic_nestorian_patriarchy_supported_$category$_advisor_level value = 4 }
 		}
-		add_years_of_income = -1.25
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			add_treasury = -5000
+		}
+		else = {
+			add_years_of_income = -1
+		}
 		hire_advisor = {
 			type = $type$
 			skill = 4
@@ -1620,7 +1636,15 @@ rce_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
 		limit = {
 			check_variable = { which = rce_religion_mechanic_nestorian_patriarchy_supported_$category$_advisor_level value = 3 }
 		}
-		add_years_of_income = -1
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			add_treasury = -3750
+		}
+		else = {
+			add_years_of_income = -0.75
+		}
 		hire_advisor = {
 			type = $type$
 			skill = 3
@@ -1630,14 +1654,30 @@ rce_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
 		limit = {
 			check_variable = { which = rce_religion_mechanic_nestorian_patriarchy_supported_$category$_advisor_level value = 2 }
 		}
-		add_years_of_income = -0.75
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			add_treasury = -2500
+		}
+		else = {
+			add_years_of_income = -0.5
+		}
 		hire_advisor = {
 			type = $type$
 			skill = 2
 		}
 	}
 	else = {
-		add_years_of_income = -0.5
+		if = {
+			limit = {
+				monthly_income = 417
+			}
+			add_treasury = -1250
+		}
+		else = {
+			add_years_of_income = -0.25
+		}
 		hire_advisor = {
 			type = $type$
 			skill = 1
