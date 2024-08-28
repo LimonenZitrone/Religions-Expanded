@@ -1105,6 +1105,26 @@ defined_text = {
 }
 
 defined_text = {
+	name = RceGetReligionMechanicNestorianPatriarchyHolySiteOwnedByNestorianOrNotTooltip
+	random = no
+
+	text = {
+		trigger = {
+			owner = {
+				rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			}
+		}
+		localisation_key = string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_owned_by_nestorian_tooltip
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_rce_get_religion_mechanic_nestorian_patriarchy_holy_site_owned_by_non_nestorian_tooltip
+	}
+}
+
+defined_text = {
 	name = RceGetReligionMechanicNestorianPatriarchyPatriarchyControllerBonuses
 	random = no
 
