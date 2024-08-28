@@ -299,11 +299,11 @@ custom_button = {
 	# if you change this, make sure to change the rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier }
-		years_of_manpower = 1.5
+		years_of_manpower = 1
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		add_yearly_manpower = -1.5
+		add_yearly_manpower = -1
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier
 			duration = 3650
@@ -376,14 +376,14 @@ custom_button = {
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier }
 		rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
-		dip_power_cost = 150
+		dip_power_cost = 100
 		any_known_country = {
 			religion = ROOT
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		dip_power_cost = 150
+		dip_power_cost = 100
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier
 			duration = 3650
@@ -404,7 +404,7 @@ custom_button = {
 	# if you change this, make sure to change the rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier }
-		dip_power_cost = 150
+		dip_power_cost = 50
 		any_known_country = {
 			religion_group = ROOT
 			NOT = { religion = ROOT }
@@ -412,7 +412,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		dip_power_cost = 150
+		dip_power_cost = 50
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier
 			duration = 3650
@@ -432,14 +432,14 @@ custom_button = {
 	# if you change this, make sure to change the rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier }
-		dip_power_cost = 150
+		dip_power_cost = 50
 		any_known_country = {
 			NOT = { religion_group = ROOT }
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		dip_power_cost = 150
+		dip_power_cost = 50
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier
 			duration = 3650
@@ -460,14 +460,14 @@ custom_button = {
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier }
 		rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
-		mil_power_cost = 200
+		mil_power_cost = 150
 		any_known_country = {
 			NOT = { religion_group = ROOT }
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		mil_power_cost = 200
+		mil_power_cost = 150
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
 			duration = 1825
@@ -489,7 +489,7 @@ custom_button = {
 	# if you change this, make sure to change the rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_decision decision accordingly
 	trigger = {
 		NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier }
-		adm_power_cost = 150
+		adm_power_cost = 100
 		OR = {
 			tag = NPA
 			NOT = { exists = NPA }
@@ -504,7 +504,7 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		adm_power_cost = 150
+		adm_power_cost = 100
 		add_country_modifier = {
 			name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier
 			duration = 3650

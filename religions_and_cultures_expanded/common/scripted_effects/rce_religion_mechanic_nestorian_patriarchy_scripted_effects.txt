@@ -563,7 +563,7 @@ rce_religion_mechanic_nestorian_patriarchy_pick_center_of_reformation_target = {
 					who = event_target:nestorian_possible_target
 				}
 				change_variable = { which = rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = -6 }
-				divide_variable = { which = rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 2 }
+				divide_variable = { which = rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 2.5 }
 				change_variable = { which = rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time value = 12 }
 				round_variable = { which = rce_religion_mechanic_nestorian_patriarchy_center_of_reformation_conversion_end_time }
 				if = {

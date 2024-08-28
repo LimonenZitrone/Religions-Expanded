@@ -127,10 +127,10 @@ country_decisions = {
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier }
-			years_of_manpower = 1.5
+			years_of_manpower = 1
 		}
 		effect = {
-			add_yearly_manpower = -1.5
+			add_yearly_manpower = -1
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_1_modifier
 				duration = 3650
@@ -145,7 +145,7 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { years_of_manpower = 5 }
+				NOT = { years_of_manpower = 3 }
 			}
 		}
 	}
@@ -229,13 +229,13 @@ country_decisions = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier }
 			rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
-			dip_power_cost = 150
+			dip_power_cost = 100
 			any_known_country = {
 				religion = ROOT
 			}
 		}
 		effect = {
-			dip_power_cost = 150
+			dip_power_cost = 100
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_3_modifier
 				duration = 3650
@@ -273,14 +273,14 @@ country_decisions = {
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier }
-			dip_power_cost = 150
+			dip_power_cost = 50
 			any_known_country = {
 				religion_group = ROOT
 				NOT = { religion = ROOT }
 			}
 		}
 		effect = {
-			dip_power_cost = 150
+			dip_power_cost = 50
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_4_modifier
 				duration = 3650
@@ -318,13 +318,13 @@ country_decisions = {
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier }
-			dip_power_cost = 150
+			dip_power_cost = 50
 			any_known_country = {
 				NOT = { religion_group = ROOT }
 			}
 		}
 		effect = {
-			dip_power_cost = 150
+			dip_power_cost = 50
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_5_modifier
 				duration = 3650
@@ -362,13 +362,13 @@ country_decisions = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier }
 			rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
-			mil_power_cost = 200
+			mil_power_cost = 150
 			any_known_country = {
 				NOT = { religion_group = ROOT }
 			}
 		}
 		effect = {
-			mil_power_cost = 200
+			mil_power_cost = 150
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
 				duration = 1825
@@ -389,7 +389,7 @@ country_decisions = {
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			NOT = { has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier }
-			adm_power_cost = 150
+			adm_power_cost = 100
 			OR = {
 				tag = NPA
 				NOT = { exists = NPA }
@@ -403,7 +403,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			adm_power_cost = 150
+			adm_power_cost = 100
 			add_country_modifier = {
 				name = rce_religion_mechanic_nestorian_patriarchy_main_interaction_7_modifier
 				duration = 3650
@@ -411,6 +411,10 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 500 }
+			}
 			modifier = {
 				factor = 0
 				NOT = { corruption = 3 }
