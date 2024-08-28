@@ -216,7 +216,7 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_3_modifier = {
 	picture = "production_efficiency"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_3_owned_modifier = {
-	stability_cost_modifier = -0.05
+	stability_cost_modifier = -0.1
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_3_nestorian_modifier = {
 }
@@ -237,7 +237,7 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_4_modifier = {
 	picture = "local_manpower"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_4_owned_modifier = {
-	manpower_recovery_speed = 0.05
+	manpower_recovery_speed = 0.1
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_4_nestorian_modifier = {
 }
@@ -258,7 +258,7 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_5_modifier = {
 	picture = "global_trade_goods_size"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_5_owned_modifier = {
-	trade_steering = 0.05
+	trade_steering = 0.1
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_5_nestorian_modifier = {
 }
@@ -275,7 +275,7 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_6_modifier = {
 	picture = "province_trade_power_modifier"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_6_owned_modifier = {
-	reform_progress_growth = 0.05
+	reform_progress_growth = 0.1
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_6_nestorian_modifier = {
 }
@@ -284,7 +284,7 @@ rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_modifier = {
 	picture = "development_cost"
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_owned_modifier = {
-	build_cost = -0.05
+	build_cost = -0.1
 }
 rce_religion_mechanic_nestorian_patriarchy_main_holy_site_7_nestorian_modifier = {
 }

@@ -1604,10 +1604,10 @@ rce_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
 			limit = {
 				monthly_income = 417
 			}
-			add_treasury = -6250
+			add_treasury = -5000
 		}
 		else = {
-			add_years_of_income = -1.25
+			add_years_of_income = -1
 		}
 		hire_advisor = {
 			type = $type$
@@ -1622,10 +1622,10 @@ rce_religion_mechanic_nestorian_patriarchy_define_supported_advisor = {
 			limit = {
 				monthly_income = 417
 			}
-			add_treasury = -5000
+			add_treasury = -4250
 		}
 		else = {
-			add_years_of_income = -1
+			add_years_of_income = -0.85
 		}
 		hire_advisor = {
 			type = $type$
