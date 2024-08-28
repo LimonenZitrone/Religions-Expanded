@@ -2,6 +2,7 @@
 rce_missionary_assigned_to_state_main_modifier = {
 	statewide_governing_cost = -0.2
 	missionaries = -1
+	rce_yearly_religion_mechanic_nestorian_patriarchy_change = 0.5
 }
 
 rce_missionary_assigned_to_state_modifier = {

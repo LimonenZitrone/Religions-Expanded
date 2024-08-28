@@ -44,6 +44,25 @@ on_province_owner_change = {
 				}
 				remove_province_modifier = rce_missionary_assigned_to_state_modifier
 			}
+			clr_province_flag = rce_missionary_assigned_to_state_flag
+			set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
+		}
+	}
+	if = {
+		limit = {
+			any_owned_province = {
+				has_province_flag = rce_missionary_assigned_to_state_flag
+				NOT = { has_province_modifier = rce_missionary_assigned_to_state_modifier }
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = rce_missionary_assigned_to_state_flag
+				NOT = { has_province_modifier = rce_missionary_assigned_to_state_main_modifier }
+				NOT = { has_province_modifier = rce_missionary_assigned_to_state_modifier }
+			}
+			clr_province_flag = rce_missionary_assigned_to_state_flag
+			set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
 		}
 	}
 }
@@ -69,6 +88,8 @@ on_province_religion_changed = {
 				}
 				remove_province_modifier = rce_missionary_assigned_to_state_modifier
 			}
+			clr_province_flag = rce_missionary_assigned_to_state_flag
+			set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
 		}
 	}
 }
@@ -97,6 +118,8 @@ on_monthly_pulse = {
 				}
 				remove_province_modifier = rce_missionary_assigned_to_state_modifier
 			}
+			clr_province_flag = rce_missionary_assigned_to_state_flag
+			set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
 		}
 	}
 	export_to_variable = {
@@ -132,6 +155,8 @@ on_monthly_pulse = {
 						}
 						remove_province_modifier = rce_missionary_assigned_to_state_modifier
 					}
+					clr_province_flag = rce_missionary_assigned_to_state_flag
+					set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
 				}
 			}
 		}
