@@ -25,6 +25,7 @@ defined_text = {
 	text = {
 		trigger = {
 			primary_culture = assyrian_culture
+			religion_group = christian
 		}
 		localisation_key = rce_religion_decision_convert_to_nestorian_desc_assyrian
 	}
