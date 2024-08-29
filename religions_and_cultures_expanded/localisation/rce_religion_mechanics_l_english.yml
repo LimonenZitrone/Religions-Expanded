@@ -992,7 +992,7 @@
 
  string_rce_get_religion_mechanic_nestorian_patriarchy_patriarchy_controller_bonuses: "§YThe Patriarchy Controller receives the following benefits:§! \n[diplomats]: §G+1§! \n[yearly_prestige]: §G+1.00§! \n[advisor_pool]: §G+2§! \n[diplomatic_reputation]: §G+1.00§! \n[church_loyalty_modifier]: §G+10.0%§! \n[ae_impact]: §G-20.0%§! \n[reduced_stab_impacts]"
 
- string_rce_get_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_npa: "\n--------------\nCurrent Patriarch: §Y[NPA.Monarch.GetName] [NPA.Monarch.Dynasty.GetName]§! \nYear of Election: §Y[NPA.rce_religion_mechanic_nestorian_patriarchy_patriarch_ruler_year.GetValue]§!"
+ string_rce_get_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name_npa: "\n--------------\nCurrent Patriarch: §Y[NPA.Monarch.GetName]§! \nYear of Election: §Y[NPA.rce_religion_mechanic_nestorian_patriarchy_patriarch_ruler_year.GetValue]§!"
  string_rce_get_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name: "\n--------------\nCurrent Patriarch: §Y[NPA.rce_religion_mechanic_nestorian_patriarchy_patriarch_ruler_name.GetName]§! \nYear of Election: §Y[NPA.rce_religion_mechanic_nestorian_patriarchy_patriarch_ruler_year.GetValue]§!"
 
  # Events:
