@@ -35,7 +35,7 @@
  rce_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
  rce_religion_reform_religion_decision_desc: "The [Root.Religion.GetName] Faith is not as centralized as other religions. This gives us a disadvantage compared to them. We should strive for a stronger centralization to become competitive."
  rce_formable_decision_assyria_title: "Form Assyria"
- rce_formable_decision_assyria_desc: "Since we have aquired the Assyrian culture, we must unify the Assyrian people in the nation of Assyria!"
+ rce_formable_decision_assyria_desc: "Since we have acquired the Assyrian culture, we must unify the Assyrian people in the nation of Assyria!"
  rce_formable_decision_empire_of_light_title: "Form the Empire of Light"
  rce_formable_decision_empire_of_light_desc: "We have to unify the Manichaean people in a spiritual Empire!"
  rce_formable_decision_coptic_egypt_title: "Form Kemet"
@@ -44,8 +44,8 @@
  rce_formable_decision_nestorian_kingdom_of_god_desc: "With the lands of the Balkans and Anatolia under the temporal power of the Patriarch rather than any Emperor or King it is now justified to declare this state the Kingdom of God on Earth."
 
  # Vanilla Events:
- hindu_events.1.j: "Kali will lead us to wisdom."
- hindu_events.1.k: "Hanuman will lead us to wisdom."
+ hindu_events.1.j: "I follow Kali."
+ hindu_events.1.k: "I follow Hanuman."
 
  # Events:
  rce_events.EVTNAME1: "Console: Change Religion"
@@ -157,7 +157,7 @@
  rce_assyria_ideas_4: "Dreams of a Dying Culture"
  rce_assyria_ideas_4_desc: "Pushed to the brink, our people have become but a mere minority in the outskirts of Mosul. But we have endured nonetheless, we have survived, our resilience is unmatched by even our Hebrew brethren. The time has come to revive the dreams of a dying culture and make sure our customs and language is found in all courts from Rome to Isfahan.\n\n"
  rce_assyria_ideas_5: "Center of the Fertile Crescent"
- rce_assyria_ideas_5_desc: "The fertile crescent has seen better days, but with our affinity to turn even the most barren of lands into sprawling farmland, we would be able to perform miracles on the great rives with a bit of engineering and hard work.\n\n"
+ rce_assyria_ideas_5_desc: "The fertile crescent has seen better days, but with our ability to turn even the most barren of lands into sprawling farmland, we would be able to perform miracles on the great rives with a bit of engineering and hard work.\n\n"
  rce_assyria_ideas_6: "Coffers for Foreign Banners"
  rce_assyria_ideas_6_desc: "Our people are small and thinly spread, bolstering our armies with foreign banners is the only way for us to make a kingdom to last the ages. So instituting a mix of conscription and mercenaries is pivotal to our survival. A practice our ancestors already perfected.\n\n"
  rce_assyria_ideas_7: "Formalize the Aramaic Language"
