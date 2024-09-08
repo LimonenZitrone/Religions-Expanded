@@ -107,7 +107,7 @@ custom_button = {
 			set_variable = { which = rce_startup_screen_window_formables_selected_page value = 1 }
 		}
 	}
-	tooltip = rce_startup_screen_tab_religions_button_tt
+	tooltip = rce_startup_screen_tab_formables_button_tt
 }
 
 # Religions Window
