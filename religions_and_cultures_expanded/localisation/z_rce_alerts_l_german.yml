@@ -8,7 +8,7 @@
 
  # Customizable Localization:
  string_rce_alert_text_religion_mechanic_sylvan_affinity: "Ihr habt eine hohe §YWaldaffinität§! ([This.RceGetReligionMechanicSylvanAffinityValue]). Möglicherweise wollt Ihr diese für Foki oder das Weihen eines Hains nutzen."
- string_rce_alert_text_religion_mechanic_four_tenets_system: "Ihr habt genug §YStudiumsfortschritt des Herrschers§!, um eine §YLehre§! auszuwählen. Möglicherweise wollt Ihr das jetzt tun."
+ string_rce_alert_text_religion_mechanic_four_tenets_system: "Ihr habt genug §YHerrscher-Studienfortschritt§!, um eine §YLehre§! auszuwählen. Möglicherweise wollt Ihr das jetzt tun."
  string_rce_alert_text_religion_mechanic_manichaeism_purity_liturical_focus: "Ihr habt noch keinen §YLiturgischen Fokus§! für Euren derzeitigen Herrscher ausgewählt. Möglicherweise wollt Ihr diesen jetzt auswählen."
  string_rce_alert_text_religion_mechanic_manichaeism_purity: "Eure derzeitige Menge an §YReinheit§! ([This.RceGetReligionMechanicManichaeismPurityValue]) erlaubt es Euch, mehr §YNebenfoki§! auszuwählen als momentan ausgewählt sind. Möglicherweise wollt Ihr nun mehr Nebenfoki auswählen."
  string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_center_of_reformation_and_holy_site_interaction: "Ihr seid der momentane Kontrolleur des Patriarchats und es ist kein §YKonvertierungszentrum§! ausgewählt. Möglicherweise wollte Ihr dies jetzt tun. You may be able to do that now. \n\nIhr habt genug §YPatriarchalen Einfluss§! ([This.RceGetReligionMechanicNestorianPatriarchyValue]), um Euch eine Interaktion mit einer heiligen Stätte leisten zu können. Möglicherweise wollt Ihr nachschauen, ob Ihr auch die anderen Bedingungen erfüllt und es möglich ist, eine Interaktion mit einer heiligen Stätte durchzuführen."

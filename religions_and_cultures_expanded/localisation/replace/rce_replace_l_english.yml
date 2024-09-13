@@ -1,4 +1,6 @@
 ﻿l_english:
+ RV_NO_DEITY_DESC:1 "Your religion allows you to select which god to follow as your deity. Each deity will come with its own effects and last until your monarch changes."
+
  MODIFIER_COUNTRY_ADMIN_POWER:1 "Monthly £adm£Administrative Power"
  MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "Monthly £dip£Diplomatic Power"
  MODIFIER_COUNTRY_MILITARY_POWER:1 "Monthly £mil£Military Power"
