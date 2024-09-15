@@ -1,0 +1,13 @@
+﻿l_spanish:
+ RV_NO_DEITY:1 "No hay Deidad"
+ RV_NO_DEITY_DESC:1 "El hinduismo te permite escoger al dios que seguirás y considerarás tu deidad. Cada deidad tiene sus propios efectos y dura hasta que cambie tu monarca."
+
+ MODIFIER_COUNTRY_ADMIN_POWER:1 "£adm£Poder administrativo mensual"
+ MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "£dip£Poder diplomático mensual"
+ MODIFIER_COUNTRY_MILITARY_POWER:1 "£mil£Poder militar mensual"
+
+ province_is_buddhist_or_accepts_buddhism_at:1 "La religión de §Y[Root.GetName]§! es bien la §Ytheravada§!, §Yvajrayana§!, §Ymahayana§! o §YNang Chos§! y es la religión estatal, sincrética o armonizada de su propietario."
+ province_is_buddhist_or_accepts_buddhism_bt:1 "La religión de §Y[Root.GetName]§! es la §Yconfuciana§! y su propietario ha armonizado bien la §Ytheravada§!, §Yvajrayana§!, §Ymahayana§! o §YNang Chos§!."
+ province_is_buddhist_or_accepts_buddhism_ct:1 "La religión de §Y[Root.GetName]§! es la §Ytengri§! y su propietario ha la §Ytheravada§!, §Yvajrayana§!, §Ymahayana§! o §YNang Chos§! como su religión sincrética."
+
+ inquisition_desc:1 "Establece una Inquisición sancionada por el estado para mantener la pureza religiosa de nuestro pueblo erradicando los herejes y blasfemos. \n\n§YOther religious mechanics not having a modifier listed here may receive a bonus via triggered modifier after completing this idea.§!"

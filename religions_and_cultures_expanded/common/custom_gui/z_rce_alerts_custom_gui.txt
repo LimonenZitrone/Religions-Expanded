@@ -37,6 +37,28 @@ custom_button = {
 					}
 				}
 			}
+			AND = {
+				rce_uses_religion_mechanic = { mechanic = sukha }
+				OR = {
+					AND = {
+						monthly_income = 500
+						treasury = 3000
+					}
+					AND = {
+						NOT = { monthly_income = 500 }
+						monthly_income = 17
+						years_of_income = 0.5
+					}
+					AND = {
+						NOT = { monthly_income = 17 }
+						treasury = 100
+					}
+				}
+				OR = {
+					NOT = { has_country_flag = rce_religion_mechanic_sukha_sponsor_festival_used }
+					had_country_flag = { flag = rce_religion_mechanic_sukha_sponsor_festival_used days = 5475 }
+				}
+			}
 		}
 	}
 	effect = {
@@ -67,6 +89,12 @@ custom_button = {
 		number = 5
 		trigger = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
 		}
 	}
 	# Fallback

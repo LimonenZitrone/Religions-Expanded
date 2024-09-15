@@ -26,6 +26,12 @@ defined_text = {
 		}
 		localisation_key = "[This.GetRCEAlertTextReligionMechanicNestorian]"
 	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_sukha_can_sponsor_festival
+	}
 
 	text = {
 		trigger = {

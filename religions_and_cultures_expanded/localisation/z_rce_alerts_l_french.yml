@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_french:
  # GUIs:
  rce_alert_button_religion_mechanic_tt: "§YReligion Mechanic§!"
  rce_alert_button_religion_mechanic_tt_delayed: "[This.GetRCEAlertTextReligionMechanic] \n\nYou may want to navigate to the §YReligion§! tab. Clicking this alert will not bring you there. \n--------------\n§GClick to select whether you want to dismiss the alert.§!"

@@ -1,0 +1,13 @@
+﻿l_french:
+ RV_NO_DEITY:1 "Aucune divinité"
+ RV_NO_DEITY_DESC:1 "Notre religion nous autorise à pratiquer le culte d'une divinité de notre choix.\nChaque culte possède ses propres effets, et reste valable jusqu'au changement de dirigeant."
+
+ MODIFIER_COUNTRY_ADMIN_POWER:1 "£adm£Puissance administrative mensuelle"
+ MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "£dip£Puissance diplomatique mensuelle"
+ MODIFIER_COUNTRY_MILITARY_POWER:1 "£mil£Puissance militaire mensuelle"
+
+ province_is_buddhist_or_accepts_buddhism_at:1 "La foi de la province de §Y[Root.GetName]§! est le §Ytheravâda§!, le §Yvajrayâna§!, le §Ymahâyâna§! ou le §YNang Chos§!, religion officielle, secondaire ou harmonisée [Root.Owner.GetAuEnNP] §Y[Root.Owner.GetName]§!."
+ province_is_buddhist_or_accepts_buddhism_bt:1 "La foi de la province de §Y[Root.GetName]§! est le §Yconfucianisme§!, et [Root.Owner.GetLeLaNP] §Y[Root.Owner.GetName]§! [Root.Owner.GetAOntNP] harmonisé le §Ytheravâda§!, le §Yvajrayâna§!, le §Ymahâyâna§! ou le §YNang Chos§!."
+ province_is_buddhist_or_accepts_buddhism_ct:1 "La foi de la province de §Y[Root.GetName]§! est le §Ytengrisme§!, et [Root.Owner.GetLeLaNP] §Y[Root.Owner.GetName]§! [Root.Owner.GetAOntNP] adopté le §Ytheravâda§!, le §Yvajrayâna§!, le §Ymahâyâna§! ou le §YNang Chos§! comme religion secondaire."
+
+ inquisition_desc:1 "Une inquisition approuvée par l'État, capable d'extirper les hérétiques et blasphémateurs, permettrait de maintenir la pureté religieuse au sein du peuple. \n\n§YOther religious mechanics not having a modifier listed here may receive a bonus via triggered modifier after completing this idea.§!"

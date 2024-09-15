@@ -13,7 +13,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_rce_alert_icons_strip"
 		textureFile = "gfx/interface/rce_alert_icons_strip.dds"
-		noOfFrames = 5
+		noOfFrames = 6
 		transparencecheck = yes
 	}
 
