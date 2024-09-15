@@ -83,7 +83,7 @@
  RCE_GOV_RULER_NESTORIAN_PATRIARCHY_fem: "Matriarch"
 
  # Vanilla Modifier Names (for customizable localization):
- RCE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "Loyalitätsgleichgewicht ([Root.GetClergyName])"
+ RCE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "Loyalitätsgleichgewicht ([Root.GetKlerusName])"
 
  # Peace Treaties:
  rce_peace_treaty_convert_heathen_desc: "@[From.GetTag] §Y[From.GetName]§! wird zum §Y[Root.Religion.GetName]en§! Glauben konvertieren. @[Root.GetTag] §Y[Root.GetName]§! erhält §G+5.0§! Prestige."

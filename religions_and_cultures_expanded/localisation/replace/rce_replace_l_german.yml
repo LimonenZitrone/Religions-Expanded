@@ -1,3 +1,13 @@
 ﻿l_german:
  RV_NO_DEITY:1 "Kein Gott gewählt"
  RV_NO_DEITY_DESC:1 "Eure Religion erlaubt es Euch, einen Gott zu Eurer Gottheit zu machen. Jede Gottheit bringt ihre eigenen Effekte und bleibt bestehen, bis Euer Monarch wechselt."
+
+ MODIFIER_COUNTRY_ADMIN_POWER:1 "£adm£Administrative Macht (Monatlich)"
+ MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "£dip£Diplomatische Macht (Monatlich)"
+ MODIFIER_COUNTRY_MILITARY_POWER:1 "£mil£Militärische Macht (Monatlich)"
+
+ province_is_buddhist_or_accepts_buddhism_at:1 "Die Religion von §Y[Root.GetName]§! ist entweder §YTheravada§!, §YVajrayana§!, §YMahayana§! oder §YNang Chosisch§!, und das ist entweder die Staats-, synkretistische oder harmonisierte Religion des Besitzers."
+ province_is_buddhist_or_accepts_buddhism_bt:1 "Die Religion von §Y[Root.GetName]§! ist §Ykonfuzianisch§!, und der Besitzer hat entweder §YTheravada§!, §YVajrayana§!, §YMahayana§! oder §YNang Chosisch§! harmonisiert."
+ province_is_buddhist_or_accepts_buddhism_ct:1 "Die Religion von §Y[Root.GetName]§! ist §Ytengrisch§!, und der Besitzer hat entweder §YTheravada§!, §YVajrayana§!, §YMahayana§! oder §YNang Chosisch§! als synkretistische Religion."
+
+ inquisition_desc:1 "Eine staatlich sanktionierte Inquisition hält die religiöse Reinheit unserer Bevölkerung aufrecht, indem sie Häretiker und Gotteslästerer ausmerzt. \n\n§YAndere religiöse Mechaniken, die keinen Modifikator hier gelistet haben, erhalten möglicherweise einen Bonus über einen getriggerten Modifikator, nachdem diese Idee abgeschlossen wurde.§!"
