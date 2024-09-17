@@ -15,6 +15,7 @@ custom_icon = {
 }
 custom_button = {
 	name = rce_state_missionary_button
+	# there is no AI decision equivalent, AI will not use this feature
 	trigger = {
 		hidden_trigger = {
 			if = {
