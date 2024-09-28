@@ -79,7 +79,7 @@ rce_religion_initialization_manichaeism_is_starting_province = {
 	OR = {
 		province_id = 2119
 		province_id = 2152
-		province_id = 4289
+		province_id = 4290
 	}
 }
 
