@@ -16,6 +16,14 @@ rce_culture_initialization_avshars_culture_is_starting_province = {
 	province_id = 2301
 }
 
+# azeri_culture
+rce_culture_initialization_azeri_culture_is_starting_province = {
+	culture = azerbaijani
+}
+rce_culture_initialization_azeri_culture_is_starting_country = {
+	primary_culture = azerbaijani
+}
+
 # qashqai_culture
 rce_culture_initialization_qashqai_culture_is_starting_province = {
 	OR = {

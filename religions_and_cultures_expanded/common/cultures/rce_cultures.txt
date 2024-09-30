@@ -27,9 +27,8 @@ iranian	= {
 }
 
 altaic = {
-	# Vanilla Cultures
-	# azerbaijani moved to this group was in iranian
-	azerbaijani = {
+	# New Cultures
+	azeri_culture = {
 		primary = ARL
 		province = { local_has_qizilbash = yes }
 		dynasty_names = {
@@ -45,11 +44,10 @@ altaic = {
 			Adila Ikram
 		}
 	}
-
-	# New Cultures
 	qashqai_culture = {
 	}
 	kalmyk_culture = {
+		primary = KLM
 	}
 	oghuz_culture = {
 		province = { local_has_qizilbash = yes }

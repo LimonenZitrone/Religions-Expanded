@@ -4087,7 +4087,22 @@ iranian	= {
 			Šîwen Atiya
 		}
 	}
-	# azerbaijani moved to other group (altaic)
+	azerbaijani = {
+		primary = ARL
+		province = { local_has_qizilbash = yes }
+		dynasty_names = {
+			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
+			Talysh "Haji Chalabi"
+		}
+		male_names = {
+			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
+		}
+		female_names = {
+			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand
+			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha
+			Adila Ikram
+		}
+	}
 	khorasani = {
 		primary = KHO
 		male_names = {

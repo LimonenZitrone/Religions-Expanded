@@ -3,7 +3,7 @@
  RCE_BOOKMARK_INDIA: "§MRCE§!: §OIndien & Tibet§!"
  RCE_BOOKMARK_INDIA_DESC: "Neue Religionen: §YNang Chosisch§! und §YJainistisch§!. Geänderte Religionen: §YHinduistisch§!. Die Mechanik von §YHinduistisch§! wurde im Vergleich zum Basisspiel verändert. \n\nDie folgenden Länder werden nach dem Spielstart der Religion §YNang Chosisch§! folgen oder Provinzen besitzen, die der Religion folgen: @UTS §YTsang§!, @LDK §YLadakh§!, @GUG §YGuge§!, @PHA §YÜ§!, @KAM §YKham§!, @KRC §YKorchin§! und @OIR §YOiraten§!. \nDie folgenden Länder werden nach Spielstart §YJainistische§! Provinzen besitzen: @MER §YMewar§!, @KAT §YKutch§! und @BAH §YBahmanis§!. \nStartprovinzen und -nationen von §YHinduistisch§! wurden nicht verändert."
  RCE_BOOKMARK_MIDDLE_EAST: "§MRCE§!: §ONaher Osten§!"
- RCE_BOOKMARK_MIDDLE_EAST_DESC: "Neue Religionen: §YNestorianisch§! und §YManichäisch§!. Die folgenden Länder werden nach Spielstart §YNestorianische§! Provinzen besitzen: @QAR §YQara Qoyunlu§!, @BTL §YBitlis§!, @MHR §YMahra§!, @TIM §YTimuridenreich§!, @KAS §YYarkand§! und @KHA §YMongolen§!. Die folgenden Länder werden nach Spielstart §YManichäische§! Provinzen besitzen: @MSY §YMushasha§!, @OIR §YOiraten§! und @MNG §YMing§!. \nDie folgenden Kulturen wurden in eine andere Kulturgruppe verschoben: §YParthisch§! (§lIranisch§!), §YAserbaidschanisch§! (§lAltaisch§!), §YPhönizisch§!, §YBabylonisch§! und §YHebräisch§! (§lAramäisch§!). Die folgenden Kulturen wurden hinzugefügt: §YAfscharisch§!, §YFarsisch§! (§lIranisch§!), §YQaschqaiisch§!, §YKalmückisch§!, §YOghusisch§! (§lAltaisch§!), §YKoptisch§! (§lSudanesisch§!), §YAssyrisch§!, §YManichäisch§! und §YChaldäisch§! (§lAramäisch§!). Länder mit der Primärkultur §YTürkisch§! ändern diese in §YOghusisch§!, §YTürkisch§! wird sich mit der Zeit ausbreiten."
+ RCE_BOOKMARK_MIDDLE_EAST_DESC: "Neue Religionen: §YNestorianisch§! und §YManichäisch§!. Die folgenden Länder werden nach Spielstart §YNestorianische§! Provinzen besitzen: @QAR §YQara Qoyunlu§!, @BTL §YBitlis§!, @MHR §YMahra§!, @TIM §YTimuridenreich§!, @KAS §YYarkand§! und @KHA §YMongolen§!. Die folgenden Länder werden nach Spielstart §YManichäische§! Provinzen besitzen: @MSY §YMushasha§!, @OIR §YOiraten§! und @MNG §YMing§!. Die folgenden Kulturen wurden in eine andere Kulturgruppe verschoben: §YParthisch§! (§lIranisch§!), §YPhönizisch§!, §YBabylonisch§! und §YHebräisch§! (§lAramäisch§!). Die Kultur §YAserbaidschanisch§! wurde umbenannt in §YAltaserbaidschanisch§!. Die folgenden Kulturen wurden hinzugefügt: §YAfscharisch§!, §YFarsisch§! (§lIranisch§!), §YAserisch§!, §YQaschqaiisch§!, §YKalmückisch§!, §YOghusisch§! (§lAltaisch§!), §YKoptisch§! (§lSudanesisch§!), §YAssyrisch§!, §YManichäisch§! und §YChaldäisch§! (§lAramäisch§!). Länder mit der Primärkultur §YTürkisch§! ändern diese in §YOghusisch§!, §YTürkisch§! wird sich mit der Zeit ausbreiten. Länder mit der Primärkultur §YAserbaidschanisch§! ändern diese in §YAserisch§!."
  RCE_BOOKMARK_EASTERN_EUROPE: "§MRCE§!: §OOsteuropa§!"
  RCE_BOOKMARK_EASTERN_EUROPE_DESC: "Neue Religionen: §YVidilistisch§! und §YBogomilisch§!. \n\nDie folgenden Länder werden nach Spielstart §YVidilistische§! Provinzen besitzen: @LIT §YLithuania§!. \nDie folgenden Länder werden nach Spielstart §YBogomilische§! Provinzen besitzen: @BOS §YBosnia§!, @HRZ §YHerzegovina§! und @TUR §YOttomans§!."
 
@@ -52,11 +52,6 @@
  LANDING_rce_entry_province_change_religion_coptic_FLAVOR_TEXT: "§YKoptisch§! ist ein §lChristlicher§! Glaube, der in Teilen Ostafrikas, Anatoliens und Kaukasiens vorkommt. \n§YKoptisch§! wurde im Vergleich zum Basisspiel nicht verändert."
 
  ## Culture:
- ### Country Info:
- DLC_rce_entry_country_culture_info_azerbaijani_TOOLTIP_INSTANT: "Die Kultur §YAserbaidschanisch§! wurde in die Kulturgruppe §lAltaisch§! verschoben"
- LANDING_rce_entry_country_culture_info_azerbaijani_TEXT: "Die Kulturgruppe, in der sich die Kultur §YAserbaidschanisch§! befindet, wurde geändert."
- LANDING_rce_entry_country_culture_info_azerbaijani_FLAVOR_TEXT: "§YAserbaidschanisch§! war im Basisspiel in der Kulturgruppe §lIranisch§! und wurde in die Kulturgruppe §lAltaisch§! verschoben."
-
  ### Country:
  DLC_rce_entry_country_change_culture_oghuz_culture_TOOLTIP_INSTANT: "Zu Spielbeginn wird die §YPrimärkultur§! zu §YOghusisch§! (§lAltaisch§!) geändert."
  LANDING_rce_entry_country_change_culture_oghuz_culture_TEXT: "Die Primärkultur wird zu Spielbeginn zu §YOghusisch§! geändert."
@@ -65,6 +60,10 @@
  DLC_rce_entry_country_change_culture_farsi_culture_TOOLTIP_INSTANT: "Zu Spielbeginn wird die §YPrimärkultur§! zu §YFarsisch§! (§lIranisch§!) geändert."
  LANDING_rce_entry_country_change_culture_farsi_culture_TEXT: "Die Primärkultur wird zu Spielbeginn zu §YFarsisch§! geändert."
  LANDING_rce_entry_country_change_culture_farsi_culture_FLAVOR_TEXT: "§YFarsisch§! ist Teil der Kulturgruppe §lIranisch§!. \n\nDie Primärnation dieser Kultur ist @FRS §YFars§!."
+
+ DLC_rce_entry_country_change_culture_azeri_culture_TOOLTIP_INSTANT: "Zu Spielbeginn wird die §YPrimärkultur§! zu §YAserisch§! (§lAltaisch§!) geändert."
+ LANDING_rce_entry_country_change_culture_azeri_culture_TEXT: "Die Primärkultur wird zu Spielbeginn zu §YAserisch§! geändert."
+ LANDING_rce_entry_country_change_culture_azeri_culture_FLAVOR_TEXT: "§YAserisch§! ist Teil der Kulturgruppe §lAltaisch§!. \n\nDie Primärnation dieser Kultur ist @ARL §YArdabil§!. \n\n@PER §YPersien§! als ein Land mit dieser Primärkultur zu gründen, wird die Primärkultur zu §YAltaserbaidschanisch§! (§lIranisch§!, umbenannt von §YAserbaidschanisch§!) ändern und §YAserisch§! ohne Kosten akzeptieren."
 
  ### Province:
  DLC_rce_entry_province_change_culture_coptic_culture_TOOLTIP_INSTANT: "Zu Spielbeginn wird die §YKultur§! von mindestens einer im Besitz befindlichen §YProvinz§! zu §YKoptisch§! (§lSudanesisch§!) geändert."
@@ -94,3 +93,7 @@
  DLC_rce_entry_province_change_culture_manichaean_culture_TOOLTIP_INSTANT: "Zu Spielbeginn wird die §YKultur§! von mindestens einer im Besitz befindlichen §YProvinz§! zu §YManichäisch§! (§lAramäisch§!) geändert."
  LANDING_rce_entry_province_change_culture_manichaean_culture_TEXT: "Die folgenden Provinzen werden nach Spielbeginn zu §YManichäisch§! geändert: §YHoveizeh§!."
  LANDING_rce_entry_province_change_culture_manichaean_culture_FLAVOR_TEXT: "§YManichäisch§! ist Teil der Kulturgruppe §lAramäisch§!."
+
+ DLC_rce_entry_province_change_culture_azeri_culture_TOOLTIP_INSTANT: "Zu Spielbeginn wird die §YKultur§! von mindestens einer im Besitz befindlichen §YProvinz§! zu §YAserisch§! (§lAltaisch§!) geändert."
+ LANDING_rce_entry_province_change_culture_azeri_culture_TEXT: "Die folgenden Provinzen werden nach Spielbeginn zu §YAserisch§! geändert: §YTäbris§!, §YGanja§!, §YSchirwan§!, §YArdabil§!, §YMaragha§!, §YZandschan§!, §YQazvin§!, §YSamaxi§!, §YMianeh§!, §YKhoy§!, §YShaki§!, §YSoltanye§!, und §YAstara§!."
+ LANDING_rce_entry_province_change_culture_azeri_culture_FLAVOR_TEXT: "§YAserisch§! ist Teil der Kulturgruppe §lAltaisch§!. \n\nDie Primärnation dieser Kultur ist @ARL §YArdabil§!. \n\n@PER §YPersien§! als ein Land mit dieser Primärkultur zu gründen, wird die Primärkultur zu §YAltaserbaidschanisch§! (§lIranisch§!, umbenannt von §YAserbaidschanisch§!) ändern und §YAserisch§! ohne Kosten akzeptieren."

@@ -37,6 +37,46 @@ on_startup = {
 			}
 			change_culture = qashqai_culture
 		}
+		# azeri_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_azeri_culture_is_starting_province = yes
+				NOT = { culture = azeri_culture }
+			}
+			change_culture = azeri_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_azeri_culture_is_starting_country = yes
+				NOT = { primary_culture = azeri_culture }
+			}
+			change_primary_culture = azeri_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				if = {
+					limit = {
+						ruler_culture = azerbaijani
+					}
+					set_ruler_culture = azeri_culture
+				}
+				if = {
+					limit = {
+						has_heir = yes
+						heir_culture = azerbaijani
+					}
+					set_heir_culture = azeri_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+						consort_culture = azerbaijani
+					}
+					set_consort_culture = azeri_culture
+				}
+			}
+		}
 		# oghuz_culture
 		every_province = {
 			limit = {
