@@ -149,15 +149,6 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PER
-			# Religions & Cultures Expanded
-			if = {
-				limit = {
-					primary_culture = azeri_culture
-				}
-				change_primary_culture = azerbaijani
-				add_accepted_culture_or_dip_power = { culture = azeri_culture dip_reward = no free = yes }
-			}
-			# Vanilla
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -195,7 +186,16 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			# Religions & Cultures Expanded
 			if = {
+				limit = {
+					primary_culture = azeri_culture
+				}
+				change_primary_culture = azerbaijani
+				add_accepted_culture_or_dip_power = { culture = azeri_culture dip_reward = no free = yes }
+			}
+			# Vanilla (was an if, not an else_if)
+			else_if = {
 				limit = {
 					OR = {
 						NOT = { has_dlc = "King of Kings" }
