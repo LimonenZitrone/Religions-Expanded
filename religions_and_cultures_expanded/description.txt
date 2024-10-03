@@ -1,0 +1,89 @@
+[h1][b]Welcome to Religions & Cultures Expanded[/b][/h1]
+This mod aims to change and add religions, cultures, culture groups and mechanics.
+
+[h1]Currently Added[/h1]
+Currently the following religions are changed or added:
+[list]
+[*] Bogomoilist
+[*] Hindu (Vanilla, changed mechanic)
+[*] Jainist
+[*] Nestorian
+[*] Manichean
+[*] Nang Chos
+[*] Vidilist
+[/list]
+
+Currently the following new culture groups are added:
+[list]
+[*] Aramaic
+[/list]
+
+Currently the following new cultures are added and the following Vanilla cultures are swapped to different groups:
+[list]
+[*] Avshars (Iranian)
+[*] Farsi (Iranian)
+[*] Parthian (Vanilla, moved from Lost Cultures to Iranian)
+[*] Azeri (Altaic)
+[*] Kalmyk (Altaic)
+[*] Oghuz (Altaic)
+[*] Qashqai (Altaic)
+[*] Coptic (Sudanese)
+[*] Assyrian (Aramaic)
+[*] Babylonian (Vanilla, moved from Lost Cultures to Aramaic)
+[*] Chaldean (Aramaic)
+[*] Hebrew (Vanilla, moved from Lost Cultures to Aramaic)
+[*] Manichaean (Aramaic)
+[*] Phoenician (Vanilla, moved from Lost Cultures to Aramaic)
+[/list]
+
+Detailed information about the added content can be viewed in-game via a custom startup screen, which can also be opened again later with a button in the top right near the date controls.
+
+[h1]Localisations[/h1]
+[list]
+[*] English localisation included
+[*] German localisation included
+[*] French localisation included ([u]English[/u] language)
+[*] Spanish localisation included ([u]English[/u] language)
+[/list]
+
+[h1]Compatibility[/h1]
+[list]
+[*] EU4 Version: [b]1.37[/b]
+[*] should be compatible with any DLC
+[*] playing with mods adding content specific to certain Vanilla religions or cultures may lock you out of that content when those were changed or the starting situation of countries with such content were changed in this mod
+[*] there will be [u]major compatibility[/u] issues with mods that (EMF mods excluded, since those are compatible):
+[list]
+[*] add or change religions
+[*] change Vanilla cultures
+[*] change at least one of the following files in the [i]interface[/i] folder: [b]countryreligionview.gui[/b] or [b]topbar.gui[/b]
+[/list]
+[*] there will be [u]medium[/u] to [u]minor compatibility[/u] issues with mods that (EMF mods excluded, since those are compatible):
+[list]
+[*] add or change religion icons
+[*] change Hindu deities in the [i]common/personal_deities[/i] folder
+[*] change at least one of the following files in the [i]interface[/i] folder: [b]alerts.gui[/b] or [b]provinceview.gui[/b]
+[*] change at least one of the following diplomatic actions in the [i]common/diplomatic_actions[/i] folder: [b]giftaction[/b], [b]guaranteeaction[/b] or [b]insultaction[/b] (exceptions: [i]Force Revoke Guarantee[/i] & [i]More Favor Actions[/i])
+[*] change the file in the [i]common/governments[/i] folder
+[*] change at least one of the following scripted functions in the [i]common/scripted_functions[/i] folder: [b]can_claim_defender_of_faith[/b]
+[*] change at least one of the following static modifiers in the [i]common/static_modifiers[/i] folder: [b]devotion[/b], [b]innovativeness[/b], [b]prestige[/b], [b]religious_unity[/b] or [b]republican_tradition[/b]
+[*] change at least one of the following files in the [i]events[/i] folder: [b]Hinduism.txt[/b] or [b]flavorKLM.txt[/b]
+[*] change at least one of the following events in a file in the [i]events[/i] folder: [b]MEE_Byzantine_Events.7[/b]
+[*] change at least one of the following files in the [i]missions[/i] folder: [b]DOM_Ottoman_Missions.txt[/b], [b]KoK_Persia_Missions.txt[/b] and [b]Tibetan_Missions.txt[/b]
+[*] add the tag [b]NPA[/b]
+[/list]
+[/list]
+Major compatibility issues here mean that the mod will be [b]unplayable[/b] for the most part. Mods that change or add religions will most likely clash with the religions added in this mod, same applies to mods editing Vanilla cultures. Mods replacing the mentioned interface files will lead to many new mechanics not being usuable.
+Medium and minor compatibility issues here mean that the mod will be playable for the most part, but [b]certain features will not work correctly[/b]. Some things might be missing or not work as intended.
+
+[h1]Credits[/h1]
+[list]
+[*] some graphics were taken from [i]Crusader Kings III[/i] and then changed
+[/list]
+
+[h1]Other[/h1]
+[b]If you find any bugs or have any suggestions, please let us know in the comments or on our [url=https://discord.gg/tGskECCa9t]Discord[/url].[/b]
+
+Also check out other great mods on our partnered [url=https://discord.com/invite/TMP7yWA]Europa Universalis IV Discord[/url].
+
+[url=https://steamcommunity.com/workshop/filedetails/?id=1626860092][img]https://i.imgur.com/IWt15k9.png[/img][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1626860092][img]https://i.imgur.com/cmmnMPc.png[/img][/url]
