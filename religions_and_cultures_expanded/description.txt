@@ -38,6 +38,8 @@ Currently the following new cultures are added and the following Vanilla culture
 
 Detailed information about the added content can be viewed in-game via a custom startup screen, which can also be opened again later with a button in the top right near the date controls.
 
+Converting to or away from the new or changed religions by console should be avoided, because that can break things. To convert to the new religions, if you want to cheat, you can trigger the event [b]rce_events.1[/b] with the console.
+
 [h1]Localisations[/h1]
 [list]
 [*] English localisation included
