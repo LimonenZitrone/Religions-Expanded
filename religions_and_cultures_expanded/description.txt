@@ -51,13 +51,13 @@ Detailed information about the added content can be viewed in-game via a custom 
 [*] EU4 Version: [b]1.37[/b]
 [*] should be compatible with any DLC
 [*] playing with mods adding content specific to certain Vanilla religions or cultures may lock you out of that content when those were changed or the starting situation of countries with such content were changed in this mod
-[*] there will be [u]major compatibility[/u] issues with mods that (EMF mods excluded, since those are compatible):
+[*] there will be [u]major compatibility[/u] issues with mods that ([i]Expanded Mod Family mods[/i] excluded, since those are compatible):
 [list]
 [*] add or change religions
 [*] change Vanilla cultures
 [*] change at least one of the following files in the [i]interface[/i] folder: [b]countryreligionview.gui[/b] or [b]topbar.gui[/b]
 [/list]
-[*] there will be [u]medium[/u] to [u]minor compatibility[/u] issues with mods that (EMF mods excluded, since those are compatible):
+[*] there will be [u]medium[/u] to [u]minor compatibility[/u] issues with mods that ([i]Expanded Mod Family mods[/i] excluded, since those are compatible):
 [list]
 [*] add or change religion icons
 [*] change Hindu deities in the [i]common/personal_deities[/i] folder
@@ -86,4 +86,4 @@ Medium and minor compatibility issues here mean that the mod will be playable fo
 Also check out other great mods on our partnered [url=https://discord.com/invite/TMP7yWA]Europa Universalis IV Discord[/url].
 
 [url=https://steamcommunity.com/workshop/filedetails/?id=1626860092][img]https://i.imgur.com/IWt15k9.png[/img][/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1626860092][img]https://i.imgur.com/cmmnMPc.png[/img][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1626860092][img]https://i.imgur.com/iRrFPJs.png[/img][/url]
