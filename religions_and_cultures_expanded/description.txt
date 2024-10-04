@@ -66,6 +66,7 @@ Detailed information about the added content can be viewed in-game via a custom 
 [*] change the file in the [i]common/governments[/i] folder
 [*] change at least one of the following scripted functions in the [i]common/scripted_functions[/i] folder: [b]can_claim_defender_of_faith[/b]
 [*] change at least one of the following static modifiers in the [i]common/static_modifiers[/i] folder: [b]devotion[/b], [b]innovativeness[/b], [b]prestige[/b], [b]religious_unity[/b] or [b]republican_tradition[/b]
+[*] change at least one of the following files in the [i]decisions[/i] folder: [b]GreekNation.txt[/b], [b]IsraelNation.txt[/b], [b]Ottoman.txt[/b], [b]PersianNation.txt[/b], [b]TibetanNation.txt[/b] or [b]TurkishNation.txt[/b]
 [*] change at least one of the following files in the [i]events[/i] folder: [b]Hinduism.txt[/b] or [b]flavorKLM.txt[/b]
 [*] change at least one of the following events in a file in the [i]events[/i] folder: [b]MEE_Byzantine_Events.7[/b]
 [*] change at least one of the following files in the [i]missions[/i] folder: [b]DOM_Ottoman_Missions.txt[/b], [b]KoK_Persia_Missions.txt[/b] and [b]Tibetan_Missions.txt[/b]
