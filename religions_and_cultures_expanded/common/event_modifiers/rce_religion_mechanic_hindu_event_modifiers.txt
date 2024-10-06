@@ -133,6 +133,25 @@ rce_religion_mechanic_hindu_modifier_shiva_hanuman_5 = {
 	siege_ability = 0.15
 }
 
+rce_religion_mechanic_hindu_modifier_shiva_shakti_0 = {
+	fire_damage = 0.025
+}
+rce_religion_mechanic_hindu_modifier_shiva_shakti_1 = {
+	fire_damage = 0.05
+}
+rce_religion_mechanic_hindu_modifier_shiva_shakti_2 = {
+	fire_damage = 0.075
+}
+rce_religion_mechanic_hindu_modifier_shiva_shakti_3 = {
+	fire_damage = 0.1
+}
+rce_religion_mechanic_hindu_modifier_shiva_shakti_4 = {
+	fire_damage = 0.125
+}
+rce_religion_mechanic_hindu_modifier_shiva_shakti_5 = {
+	fire_damage = 0.15
+}
+
 rce_religion_mechanic_hindu_modifier_shiva_buddha_0 = {
 	land_attrition = -0.025
 }
@@ -229,6 +248,25 @@ rce_religion_mechanic_hindu_modifier_brahma_hanuman_5 = {
 	global_unrest = -3
 }
 
+rce_religion_mechanic_hindu_modifier_brahma_shakti_0 = {
+	build_cost = -0.025
+}
+rce_religion_mechanic_hindu_modifier_brahma_shakti_1 = {
+	build_cost = -0.05
+}
+rce_religion_mechanic_hindu_modifier_brahma_shakti_2 = {
+	build_cost = -0.075
+}
+rce_religion_mechanic_hindu_modifier_brahma_shakti_3 = {
+	build_cost = -0.1
+}
+rce_religion_mechanic_hindu_modifier_brahma_shakti_4 = {
+	build_cost = -0.125
+}
+rce_religion_mechanic_hindu_modifier_brahma_shakti_5 = {
+	build_cost = -0.15
+}
+
 rce_religion_mechanic_hindu_modifier_brahma_buddha_0 = {
 	stability_cost_modifier = -0.025
 }
@@ -323,6 +361,25 @@ rce_religion_mechanic_hindu_modifier_vishnu_hanuman_4 = {
 }
 rce_religion_mechanic_hindu_modifier_vishnu_hanuman_5 = {
 	naval_morale = 0.15
+}
+
+rce_religion_mechanic_hindu_modifier_vishnu_shakti_0 = {
+	liberty_desire_from_subject_development = -0.05
+}
+rce_religion_mechanic_hindu_modifier_vishnu_shakti_1 = {
+	liberty_desire_from_subject_development = -0.1
+}
+rce_religion_mechanic_hindu_modifier_vishnu_shakti_2 = {
+	liberty_desire_from_subject_development = -0.15
+}
+rce_religion_mechanic_hindu_modifier_vishnu_shakti_3 = {
+	liberty_desire_from_subject_development = -0.2
+}
+rce_religion_mechanic_hindu_modifier_vishnu_shakti_4 = {
+	liberty_desire_from_subject_development = -0.25
+}
+rce_religion_mechanic_hindu_modifier_vishnu_shakti_5 = {
+	liberty_desire_from_subject_development = -0.3
 }
 
 rce_religion_mechanic_hindu_modifier_vishnu_buddha_0 = {

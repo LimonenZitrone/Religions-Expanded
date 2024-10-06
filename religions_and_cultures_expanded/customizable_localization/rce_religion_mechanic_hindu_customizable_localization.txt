@@ -472,6 +472,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_shakti_0
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_0
@@ -508,6 +515,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_shakti_0
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_0
@@ -540,6 +554,13 @@ defined_text = {
 			has_personal_deity = hanuman
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_0
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_shakti_0
 	}
 	text = {
 		trigger = {
@@ -593,6 +614,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_shakti_1
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_1
@@ -629,6 +657,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_shakti_1
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_1
@@ -661,6 +696,13 @@ defined_text = {
 			has_personal_deity = hanuman
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_1
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_shakti_1
 	}
 	text = {
 		trigger = {
@@ -714,6 +756,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_shakti_2
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_2
@@ -750,6 +799,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_shakti_2
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_2
@@ -782,6 +838,13 @@ defined_text = {
 			has_personal_deity = hanuman
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_2
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_shakti_2
 	}
 	text = {
 		trigger = {
@@ -835,6 +898,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_shakti_3
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_3
@@ -871,6 +941,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_shakti_3
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_3
@@ -903,6 +980,13 @@ defined_text = {
 			has_personal_deity = hanuman
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_3
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_shakti_3
 	}
 	text = {
 		trigger = {
@@ -956,6 +1040,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_shakti_4
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_4
@@ -992,6 +1083,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_shakti_4
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_4
@@ -1024,6 +1122,13 @@ defined_text = {
 			has_personal_deity = hanuman
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_4
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_shakti_4
 	}
 	text = {
 		trigger = {
@@ -1077,6 +1182,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_shakti_5
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = shiva }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_shiva_buddha_5
@@ -1113,6 +1225,13 @@ defined_text = {
 	text = {
 		trigger = {
 			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_shakti_5
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = brahma }
 			has_personal_deity = buddha
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_brahma_buddha_5
@@ -1145,6 +1264,13 @@ defined_text = {
 			has_personal_deity = hanuman
 		}
 		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_hanuman_5
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_hindu_current_major_deity = { name = vishnu }
+			has_personal_deity = shakti
+		}
+		localisation_key = rce_religion_mechanic_hindu_dynamic_modifier_vishnu_shakti_5
 	}
 	text = {
 		trigger = {

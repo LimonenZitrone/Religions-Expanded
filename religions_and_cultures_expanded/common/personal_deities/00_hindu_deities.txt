@@ -157,6 +157,45 @@ hanuman = {
 	}
 }
 
+shakti = {
+	war_exhaustion = -0.05
+
+	potential = { religion = hinduism }
+	trigger = {}
+	sprite = 13
+	effect = {
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
+		hidden_effect = {
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			export_to_variable = {
+				which = rce_religion_mechanic_hindu_picked_minor_deity_year
+				value = trigger_value:is_year
+			}
+		}
+	}
+	removed_effect = {
+		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt_lost
+		hidden_effect = {
+			rce_update_religion_mechanic_hindu_dynamic_modifier = yes
+			clr_country_flag = rce_religion_mechanic_hindu_picked_minor_deity
+			set_variable = { which = rce_religion_mechanic_hindu_picked_minor_deity_year value = 0 }
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
 buddha = {
 	tolerance_heathen = 2
 
@@ -265,30 +304,6 @@ ganga = {
 		modifier = {
 			factor = 2
 			personality = ai_colonialist
-		}
-	}
-}
-
-shakti = {
-	#(Military - Offensive)
-	siege_ability = 0.05
-	discipline = 0.05
-
-	potential = { always = no }
-	trigger = {}
-	sprite = 6
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 0.5
-			personality = ai_diplomat
 		}
 	}
 }

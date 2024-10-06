@@ -799,6 +799,12 @@ rce_remove_religion_mechanic_hindu_dynamic_modifiers = {
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_hanuman_3
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_hanuman_4
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_hanuman_5
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_shakti_0
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_shakti_1
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_shakti_2
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_shakti_3
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_shakti_4
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_shakti_5
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_buddha_0
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_buddha_1
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_shiva_buddha_2
@@ -830,6 +836,12 @@ rce_remove_religion_mechanic_hindu_dynamic_modifiers = {
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_hanuman_3
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_hanuman_4
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_hanuman_5
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_shakti_0
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_shakti_1
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_shakti_2
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_shakti_3
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_shakti_4
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_shakti_5
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_buddha_0
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_buddha_1
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_brahma_buddha_2
@@ -861,6 +873,12 @@ rce_remove_religion_mechanic_hindu_dynamic_modifiers = {
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_hanuman_3
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_hanuman_4
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_hanuman_5
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_shakti_0
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_shakti_1
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_shakti_2
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_shakti_3
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_shakti_4
+		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_shakti_5
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_buddha_0
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_buddha_1
 		remove_country_modifier = rce_religion_mechanic_hindu_modifier_vishnu_buddha_2
@@ -1119,6 +1137,68 @@ rce_update_religion_mechanic_hindu_dynamic_modifier = {
 			else = {
 				add_country_modifier = {
 					name = rce_religion_mechanic_hindu_modifier_shiva_hanuman_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = shakti
+			}
+			if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 5 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_shiva_shakti_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 4 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_shiva_shakti_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 3 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_shiva_shakti_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 2 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_shiva_shakti_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = shiva level = 1 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_shiva_shakti_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_shiva_shakti_0
 					duration = -1
 					hidden = yes
 				}
@@ -1441,6 +1521,68 @@ rce_update_religion_mechanic_hindu_dynamic_modifier = {
 		}
 		else_if = {
 			limit = {
+				has_personal_deity = shakti
+			}
+			if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 5 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_brahma_shakti_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 4 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_brahma_shakti_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 3 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_brahma_shakti_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 2 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_brahma_shakti_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = brahma level = 1 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_brahma_shakti_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_brahma_shakti_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
 				has_personal_deity = buddha
 			}
 			if = {
@@ -1749,6 +1891,68 @@ rce_update_religion_mechanic_hindu_dynamic_modifier = {
 			else = {
 				add_country_modifier = {
 					name = rce_religion_mechanic_hindu_modifier_vishnu_hanuman_0
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_personal_deity = shakti
+			}
+			if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 5 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_vishnu_shakti_5
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 4 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_vishnu_shakti_4
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 3 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_vishnu_shakti_3
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 2 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_vishnu_shakti_2
+					duration = -1
+					hidden = yes
+				}
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_hindu_major_deity_dedication_level = { major_deity = vishnu level = 1 }
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_vishnu_shakti_1
+					duration = -1
+					hidden = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_religion_mechanic_hindu_modifier_vishnu_shakti_0
 					duration = -1
 					hidden = yes
 				}

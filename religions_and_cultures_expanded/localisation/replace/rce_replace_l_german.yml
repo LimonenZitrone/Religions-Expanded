@@ -7,6 +7,7 @@
  MODIFIER_COUNTRY_ADMIN_POWER:1 "£adm£Administrative Macht (Monatlich)"
  MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "£dip£Diplomatische Macht (Monatlich)"
  MODIFIER_COUNTRY_MILITARY_POWER:1 "£mil£Militärische Macht (Monatlich)"
+ MODIFIER_LIBERTY_DESIRE_FROM_SUBJECT_DEVELOPMENT:1 "Freiheitsstreben (Entwicklung)"
 
  province_is_buddhist_or_accepts_buddhism_at:1 "Die Religion von §Y[Root.GetName]§! ist entweder §YTheravada§!, §YVajrayana§!, §YMahayana§! oder §YNang Chosisch§!, und das ist entweder die Staats-, synkretistische oder harmonisierte Religion des Besitzers."
  province_is_buddhist_or_accepts_buddhism_bt:1 "Die Religion von §Y[Root.GetName]§! ist §Ykonfuzianisch§!, und der Besitzer hat entweder §YTheravada§!, §YVajrayana§!, §YMahayana§! oder §YNang Chosisch§! harmonisiert."

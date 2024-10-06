@@ -1,10 +1,9 @@
-version="1.0.0"
+version="1.0.1"
 tags={
 	"Religion"
 	"Gameplay"
 }
 name="Religions and Cultures Expanded"
-supported_version="v1.37.*"
 picture="thumbnail.png"
 dependencies={
 	"Trade Goods Expanded"
@@ -26,3 +25,5 @@ dependencies={
 	"Banners 2.0"
 	"Banners 1.0"
 }
+supported_version="v1.37.*"
+remote_file_id="3342969370"

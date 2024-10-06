@@ -24,9 +24,9 @@ country_event = {
 				NOT = { has_personal_deity = surya }
 				NOT = { has_personal_deity = kali }
 				NOT = { has_personal_deity = hanuman }
+				NOT = { has_personal_deity = shakti }
 				#NOT = { has_personal_deity = shiva }
 				#NOT = { has_personal_deity = ganga }
-				#NOT = { has_personal_deity = shakti }
 				#NOT = { has_personal_deity = vishnu }
 			}
 		}
@@ -43,10 +43,10 @@ country_event = {
 #	}
 
 	# Skaktism
-#	option = {
-#		name = "hindu_events.1.b"
-#		change_personal_deity = shakti
-#	}
+	option = {
+		name = "hindu_events.1.b"
+		change_personal_deity = shakti
+	}
 
 	# Vaishnavism
 #	option = {
@@ -568,7 +568,6 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		any_known_country = {
 			marriage_with = ROOT
@@ -629,7 +628,6 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -683,7 +681,6 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -774,7 +771,6 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		has_ruler_modifier = hindu_shakta_1
 		has_ruler_modifier = jnana
@@ -876,7 +872,6 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		has_regency = no
 		NOT = { has_ruler_modifier = jnana }
@@ -965,7 +960,6 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		has_ruler_modifier = hindu_shakta_2
 		has_ruler_modifier = jnana
@@ -1186,42 +1180,42 @@ country_event = {
 	}
 
 	# Lakshmi is the supreme divine
-#	option = {
-#		name = "hindu_events.26.b"
-#		if = {
-#			limit = {
-#				NOT = { ADM = 6 }
-#			}
-#			change_adm = 1
-#			else = {
-#				add_adm_power = 50
-#			}
-#		}
-#		change_personal_deity = shakti
-#		add_prestige = -10
-#		hidden_effect = {
-#			remove_country_modifier = hindu_vaishnava_1b
-#		}
-#	}
+	option = {
+		name = "hindu_events.26.b"
+		if = {
+			limit = {
+				NOT = { ADM = 6 }
+			}
+			change_adm = 1
+			else = {
+				add_adm_power = 50
+			}
+		}
+		change_personal_deity = shakti
+		add_prestige = -10
+		hidden_effect = {
+			remove_country_modifier = hindu_vaishnava_1b
+		}
+	}
 
 	# Shakti is the supreme divine
-#	option = {
-#		name = "hindu_events.26.c"
-#		if = {
-#			limit = {
-#				NOT = { MIL = 6 }
-#			}
-#			change_mil = 1
-#			else = {
-#				add_mil_power = 50
-#			}
-#		}
-#		change_personal_deity = shakti
-#		add_prestige = -10
-#		hidden_effect = {
-#			remove_country_modifier = hindu_vaishnava_1b
-#		}
-#	}
+	option = {
+		name = "hindu_events.26.c"
+		if = {
+			limit = {
+				NOT = { MIL = 6 }
+			}
+			change_mil = 1
+			else = {
+				add_mil_power = 50
+			}
+		}
+		change_personal_deity = shakti
+		add_prestige = -10
+		hidden_effect = {
+			remove_country_modifier = hindu_vaishnava_1b
+		}
+	}
 }
 
 # Brahma sampradaya
@@ -2230,7 +2224,6 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		always = no # shakti removed
 		has_personal_deity = shakti
 		is_at_war = yes
 		is_heir_leader = yes

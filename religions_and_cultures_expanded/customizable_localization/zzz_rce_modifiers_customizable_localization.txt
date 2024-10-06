@@ -1247,6 +1247,18 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = liberty_desire_from_subject_development
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LIBERTY_DESIRE_FROM_SUBJECT_DEVELOPMENT
+	}
+}
+
 # Religions & Cultures Expanded:
 defined_text = {
 	name = rce_yearly_religion_mechanic_sukha_change
