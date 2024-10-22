@@ -4,7 +4,7 @@
  rce_state_missionary_button_tt_currently_active: "Ein Missionar wurde §Y[Root.GetAreaName]§! zugewiesen."
  rce_state_missionary_button_tt_blocked_no_missionary: "§RIhr habt keine Missionare, die Ihr zuweisen könntet.§W"
  rce_state_missionary_button_tt_blocked_state_not_owned: "§RIhr besitzt nicht alle Provinzen in dem Staat §Y[Root.GetAreaName]§! als Eure Kernprovinzen.§W"
- rce_state_missionary_button_tt_blocked_state_not_converted: "§RAlle Provinzen in diesem Staat müssen Eurer Religion folgen. Mindestens §Y1§! Provinz in dem Staat §Y[Root.GetAreaName]§! folgt nicht dem §Y[From.Religion.GetName]en§! Glauben.§W"
+ rce_state_missionary_button_tt_blocked_state_not_converted: "§RAlle Provinzen in diesem Staat müssen Eurer Staatsreligion, Eurem synkretischen Glauben oder einer harmonisierten Religion folgen. Mindestens §Y1§! Provinz in dem Staat §Y[Root.GetAreaName]§! erfüllt diese Bedingungen nicht.§W"
  rce_state_missionary_button_tt_blocked_recently_used: "§RIhr könnt nur einmal pro Monat einen Missionar einem Staat zuweisen.§W"
  rce_state_missionary_button_tt_blocked_cannot_remove_before_1_year: "--------------\n§RIhr müsst §Y1 Jahr§! warten, bis Ihr einen Missionar von seiner Aufgabe in einem Staat entbinden könnt. Der Missionar wurde dem Staat im Jahr §Y[This.rce_missionary_assigned_to_state_year.GetValue]§! zugewiesen.§W"
 

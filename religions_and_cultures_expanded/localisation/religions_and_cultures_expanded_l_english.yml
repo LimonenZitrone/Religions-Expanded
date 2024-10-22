@@ -4,7 +4,7 @@
  rce_state_missionary_button_tt_currently_active: "A missionary was assigned to §Y[Root.GetAreaName]§!."
  rce_state_missionary_button_tt_blocked_no_missionary: "§RYou have no missionaries to assign.§W"
  rce_state_missionary_button_tt_blocked_state_not_owned: "§RYou do not own all provinces in the §Y[Root.GetAreaName]§! state as your core provinces.§W"
- rce_state_missionary_button_tt_blocked_state_not_converted: "§RAll provinces in the state must follow your religion. At least §Y1§! province in the §Y[Root.GetAreaName]§! state does not follow the §Y[From.Religion.GetName]§! faith.§W"
+ rce_state_missionary_button_tt_blocked_state_not_converted: "§RAll provinces in the state must follow your state religion, your syncretic faith or a harmonized religion. At least §Y1§! province in the §Y[Root.GetAreaName]§! state does not fulfill these requirements.§W"
  rce_state_missionary_button_tt_blocked_recently_used: "§RYou can only assign a missionary to a state once per month.§W"
  rce_state_missionary_button_tt_blocked_cannot_remove_before_1_year: "--------------\n§RYou must wait §Y1 year§! until you can unassign the missionary from the state again. The missionary was assigned in §Y[This.rce_missionary_assigned_to_state_year.GetValue]§!.§W"
 

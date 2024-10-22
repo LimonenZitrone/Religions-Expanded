@@ -94,6 +94,41 @@ on_province_religion_changed = {
 	}
 }
 
+# ROOT = country
+on_religion_change = {
+	if = {
+		limit = {
+			any_owned_province = {
+				has_province_modifier = rce_missionary_assigned_to_state_modifier
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = rce_missionary_assigned_to_state_modifier
+			}
+			if = {
+				limit = {
+					has_province_modifier = rce_missionary_assigned_to_state_main_modifier
+				}
+				remove_province_modifier = rce_missionary_assigned_to_state_main_modifier
+			}
+			if = {
+				limit = {
+					has_province_modifier = rce_missionary_assigned_to_state_modifier
+				}
+				remove_province_modifier = rce_missionary_assigned_to_state_modifier
+			}
+			clr_province_flag = rce_missionary_assigned_to_state_flag
+			set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
+		}
+	}
+}
+
+# ROOT = country
+on_secondary_religion_change = {
+	country_event = { id = religions_and_cultures_expanded_events.2 days = 1 } # update state assigned missionaries
+}
+
 on_monthly_pulse = {
 	if = {
 		limit = {

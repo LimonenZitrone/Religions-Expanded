@@ -29,6 +29,69 @@ country_event = {
 	}
 }
 
+# update state assigned missionaries after secondary religion change
+country_event = {
+	id = religions_and_cultures_expanded_events.2
+	title = religions_and_cultures_expanded_events.EVTNAME2
+	desc = religions_and_cultures_expanded_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = rce_missionary_assigned_to_state_modifier
+			NOT = {
+				OR = {
+					religion = ROOT
+					ROOT = { has_harmonized_with = PREV }
+					ROOT = { secondary_religion = PREV }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = rce_missionary_assigned_to_state_modifier
+					NOT = {
+						OR = {
+							religion = ROOT
+							ROOT = { has_harmonized_with = PREV }
+							ROOT = { secondary_religion = PREV }
+						}
+					}
+				}
+				area = {
+					if = {
+						limit = {
+							has_province_modifier = rce_missionary_assigned_to_state_main_modifier
+						}
+						remove_province_modifier = rce_missionary_assigned_to_state_main_modifier
+					}
+					if = {
+						limit = {
+							has_province_modifier = rce_missionary_assigned_to_state_modifier
+						}
+						remove_province_modifier = rce_missionary_assigned_to_state_modifier
+					}
+					clr_province_flag = rce_missionary_assigned_to_state_flag
+					set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = religions_and_cultures_expanded_events2.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
 # cheat event to convert to a new/changed religion
 country_event = {
 	id = rce_events.1
