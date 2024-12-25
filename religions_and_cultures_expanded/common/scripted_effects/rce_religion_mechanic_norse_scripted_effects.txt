@@ -1,0 +1,172 @@
+rce_set_religion_mechanic_norse_norn_value = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		[[value]
+			set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = $value$ }
+		]
+		[[which]
+			set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value which = $which$ }
+		]
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 100 }
+				}
+				set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 100 }
+			}
+			else_if = {
+				limit = {
+					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 0 } }
+				}
+				set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 0 }
+			}
+		}
+	}
+}
+
+rce_add_religion_mechanic_norse_norn_value = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		[[value]
+			change_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = $value$ }
+		]
+		[[which]
+			change_variable = { which = rce_religion_mechanic_norse_norn_$type$_value which = $which$ }
+		]
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 100 }
+				}
+				set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 100 }
+			}
+			else_if = {
+				limit = {
+					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 0 } }
+				}
+				set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 0 }
+			}
+		}
+	}
+}
+
+rce_set_religion_mechanic_norse_era = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		rce_remove_religion_mechanic_norse_era_flags = yes
+		custom_tooltip = rce_set_religion_mechanic_norse_era_tt_$era$
+		hidden_effect = {
+			set_country_flag = religion_mechanic_norse_era_$era$
+			rce_set_religion_mechanic_norse_correct_era_deity_for_selected_deity = yes
+		}
+	}
+}
+
+rce_set_religion_mechanic_norse_correct_era_deity_for_selected_deity = {
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = odin }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = freya }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = tor }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = tyr }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = njord }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = snotra }
+}
+
+rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = {
+	if = {
+		limit = {
+			rce_has_religion_mechanic_norse_deity = { deity = $deity$ }
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_norse_era = { era = adm }
+			}
+			change_personal_deity = $deity$_adm
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_norse_era = { era = dip }
+			}
+			change_personal_deity = $deity$_dip
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_norse_era = { era = mil }
+			}
+			change_personal_deity = $deity$_mil
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_norse_era = { era = balance }
+			}
+			change_personal_deity = $deity$_balance
+		}
+		else = {
+			change_personal_deity = $deity$
+		}
+	}
+}
+
+rce_export_monthly_religion_mechanic_norse_norn_values_gain = {
+	hidden_effect = {
+		set_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0 }
+		set_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0 }
+		set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 }
+	}
+}
+
+rce_add_monthly_religion_mechanic_norse_values = {
+	rce_export_monthly_religion_mechanic_norse_norn_values_gain = yes
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value_temp which = rce_monthly_religion_mechanic_norse_norn_adm_value }
+	rce_add_religion_mechanic_norse_norn_value = {
+		type = adm
+		which = rce_monthly_religion_mechanic_norse_norn_adm_value_temp
+	}
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value_temp value = 0 }
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value_temp which = rce_monthly_religion_mechanic_norse_norn_dip_value }
+	rce_add_religion_mechanic_norse_norn_value = {
+		type = dip
+		which = rce_monthly_religion_mechanic_norse_norn_dip_value_temp
+	}
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value_temp value = 0 }
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value_temp which = rce_monthly_religion_mechanic_norse_norn_mil_value }
+	rce_add_religion_mechanic_norse_norn_value = {
+		type = mil
+		which = rce_monthly_religion_mechanic_norse_norn_mil_value_temp
+	}
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value_temp value = 0 }
+}
+
+rce_remove_religion_mechanic_norse_era_flags = {
+	hidden_effect = {
+		clr_country_flag = religion_mechanic_norse_era_adm
+		clr_country_flag = religion_mechanic_norse_era_dip
+		clr_country_flag = religion_mechanic_norse_era_mil
+		clr_country_flag = religion_mechanic_norse_era_balance
+		clr_country_flag = religion_mechanic_norse_era_all
+	}
+}
+
+rce_clear_all_religion_mechanic_norse_modifiers = {
+	rce_remove_religion_mechanic_norse_era_flags = yes
+	set_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 0 }
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0 }
+	set_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 0 }
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0 }
+	set_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 0 }
+	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 }
+}
+
+rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = {
+	if = {
+		limit = {
+			rce_not_uses_religion_mechanic = { mechanic = norse }
+		}
+		rce_clear_all_religion_mechanic_norse_modifiers = yes
+	}
+}

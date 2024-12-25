@@ -1,0 +1,664 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+# odin
+odin = {
+	# Base Modifier:
+	legitimacy = 0.1
+	republican_tradition = 0.05
+	devotion = 0.1
+	horde_unity = 0.1
+	meritocracy = 0.1
+	# Era Specific Modifier:
+	advisor_cost = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 7
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+odin_adm = {
+	# Base Modifier:
+	legitimacy = 0.1
+	republican_tradition = 0.05
+	devotion = 0.1
+	horde_unity = 0.1
+	meritocracy = 0.1
+	# Era Specific Modifier:
+	global_unrest = -2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 7
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+odin_dip = {
+	# Base Modifier:
+	legitimacy = 0.1
+	republican_tradition = 0.05
+	devotion = 0.1
+	horde_unity = 0.1
+	meritocracy = 0.1
+	# Era Specific Modifier:
+	global_missionary_strength = 0.02
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 7
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+odin_mil = {
+	# Base Modifier:
+	legitimacy = 0.1
+	republican_tradition = 0.05
+	devotion = 0.1
+	horde_unity = 0.1
+	meritocracy = 0.1
+	# Era Specific Modifier:
+	siege_ability = 0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 7
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+odin_balance = {
+	# Base Modifier:
+	legitimacy = 0.15
+	republican_tradition = 0.075
+	devotion = 0.15
+	horde_unity = 0.15
+	meritocracy = 0.15
+	# Era Specific Modifier:
+	advisor_cost = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 7
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# freya
+freya = {
+	# Base Modifier:
+	global_tax_modifier = 0.15
+	# Era Specific Modifier:
+	state_maintenance_modifier = -0.3
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 8
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freya_adm = {
+	# Base Modifier:
+	global_tax_modifier = 0.25
+	# Era Specific Modifier:
+	adm_tech_cost_modifier = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 8
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freya_dip = {
+	# Base Modifier:
+	global_tax_modifier = 0.15
+	# Era Specific Modifier:
+	development_cost = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 8
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freya_mil = {
+	# Base Modifier:
+	global_tax_modifier = 0.15
+	# Era Specific Modifier:
+	global_manpower_modifier = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 8
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freya_balance = {
+	# Base Modifier:
+	global_tax_modifier = 0.15
+	# Era Specific Modifier:
+	state_maintenance_modifier = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 8
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# tor
+tor = {
+	# Base Modifier:
+	shock_damage = 0.1
+	# Era Specific Modifier:
+	land_maintenance_modifier = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 9
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tor_adm = {
+	# Base Modifier:
+	shock_damage = 0.1
+	# Era Specific Modifier:
+	mil_tech_cost_modifier = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 9
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tor_dip = {
+	# Base Modifier:
+	shock_damage = 0.1
+	# Era Specific Modifier:
+	defensiveness = 0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 9
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tor_mil = {
+	# Base Modifier:
+	shock_damage = 0.15
+	# Era Specific Modifier:
+	land_morale = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 9
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tor_balance = {
+	# Base Modifier:
+	shock_damage = 0.1
+	# Era Specific Modifier:
+	land_maintenance_modifier = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 9
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# tyr
+tyr = {
+	# Base Modifier:
+	discipline = 0.05
+	# Era Specific Modifier:
+	ae_impact = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 10
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tyr_adm = {
+	# Base Modifier:
+	discipline = 0.05
+	# Era Specific Modifier:
+	army_tradition = 0.5
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 10
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tyr_dip = {
+	# Base Modifier:
+	discipline = 0.05
+	# Era Specific Modifier:
+	general_cost = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 10
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tyr_mil = {
+	# Base Modifier:
+	discipline = 0.075
+	# Era Specific Modifier:
+	fire_damage_received = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 10
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+tyr_balance = {
+	# Base Modifier:
+	discipline = 0.05
+	# Era Specific Modifier:
+	ae_impact = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 10
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# njord
+njord = {
+	# Base Modifier:
+	global_trade_goods_size_modifier = 0.1
+	# Era Specific Modifier:
+	sunk_ship_morale_hit_recieved = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 11
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+njord_adm = {
+	# Base Modifier:
+	global_trade_goods_size_modifier = 0.15
+	# Era Specific Modifier:
+	inflation_reduction = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 11
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+njord_dip = {
+	# Base Modifier:
+	global_trade_goods_size_modifier = 0.1
+	# Era Specific Modifier:
+	global_ship_trade_power = 0.33
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 11
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+njord_mil = {
+	# Base Modifier:
+	global_trade_goods_size_modifier = 0.1
+	# Era Specific Modifier:
+	naval_morale_damage_received = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 11
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+njord_balance = {
+	# Base Modifier:
+	global_trade_goods_size_modifier = 0.1
+	# Era Specific Modifier:
+	sunk_ship_morale_hit_recieved = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 11
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# snotra
+snotra = {
+	# Base Modifier:
+	naval_maintenance_modifier = -0.1
+	# Era Specific Modifier:
+	reform_progress_growth = 0.25
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 12
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+snotra_adm = {
+	# Base Modifier:
+	naval_maintenance_modifier = -0.1
+	# Era Specific Modifier:
+	idea_cost = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 12
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+snotra_dip = {
+	# Base Modifier:
+	naval_maintenance_modifier = -0.15
+	# Era Specific Modifier:
+	build_cost = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 12
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+snotra_mil = {
+	# Base Modifier:
+	naval_maintenance_modifier = -0.1
+	# Era Specific Modifier:
+	naval_morale = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 12
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+snotra_balance = {
+	# Base Modifier:
+	naval_maintenance_modifier = -0.1
+	# Era Specific Modifier:
+	reform_progress_growth = 0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 12
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

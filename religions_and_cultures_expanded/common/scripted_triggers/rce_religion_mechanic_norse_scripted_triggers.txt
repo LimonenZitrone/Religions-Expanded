@@ -1,0 +1,78 @@
+rce_uses_religion_mechanic_norse = {
+	custom_trigger_tooltip = {
+		tooltip = rce_uses_religion_mechanic_norse_tt
+		religion = norse_pagan_reformed
+		uses_personal_deities = yes
+	}
+}
+
+rce_not_uses_religion_mechanic_norse = {
+	custom_trigger_tooltip = {
+		tooltip = rce_not_uses_religion_mechanic_norse_tt
+		NOT = { rce_uses_religion_mechanic_norse = yes }
+	}
+}
+
+rce_has_religion_mechanic_norse_era = {
+	custom_trigger_tooltip = {
+		tooltip = rce_has_religion_mechanic_norse_era_tt_$era$
+		has_country_flag = religion_mechanic_norse_era_$era$
+	}
+}
+
+rce_has_not_religion_mechanic_norse_era = {
+	custom_trigger_tooltip = {
+		tooltip = rce_has_not_religion_mechanic_norse_era_tt_$era$
+		NOT = { has_country_flag = religion_mechanic_norse_era_$era$ }
+	}
+}
+
+rce_has_religion_mechanic_norse_norn_value = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		[[value]
+			check_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = $value$ }
+		]
+		[[which]
+			check_variable = { which = rce_religion_mechanic_norse_norn_$type$_value which = $which$ }
+		]
+	}
+}
+
+rce_has_religion_mechanic_norse_deity = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		custom_trigger_tooltip = {
+			tooltip = rce_has_religion_mechanic_norse_deity_tt_$deity$
+			OR = {
+				has_personal_deity = $deity$
+				has_personal_deity = $deity$_adm
+				has_personal_deity = $deity$_dip
+				has_personal_deity = $deity$_mil
+				has_personal_deity = $deity$_balance
+			}
+		}
+	}
+}
+
+rce_has_not_religion_mechanic_norse_deity = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		custom_trigger_tooltip = {
+			tooltip = rce_has_not_religion_mechanic_norse_deity_tt_$deity$
+			NOT = {
+				has_personal_deity = $deity$
+				has_personal_deity = $deity$_adm
+				has_personal_deity = $deity$_dip
+				has_personal_deity = $deity$_mil
+				has_personal_deity = $deity$_balance
+			}
+		}
+	}
+}

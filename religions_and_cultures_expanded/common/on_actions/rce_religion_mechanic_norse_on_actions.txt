@@ -1,0 +1,151 @@
+on_religion_change = {
+	rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = yes
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		random_list = {
+			33 = {
+				modifier = {
+					factor = 3
+					ADM = 6
+				}
+				modifier = {
+					factor = 2
+					ADM = 5
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { ADM = 4 }
+				}
+				modifier = {
+					factor = 0.75
+					NOT = { ADM = 3 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { ADM = 2 }
+				}
+				modifier = {
+					factor = 0.25
+					NOT = { ADM = 1 }
+				}
+				rce_set_religion_mechanic_norse_era = { era = adm }
+			}
+			33 = {
+				modifier = {
+					factor = 3
+					DIP = 6
+				}
+				modifier = {
+					factor = 2
+					DIP = 5
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { DIP = 4 }
+				}
+				modifier = {
+					factor = 0.75
+					NOT = { DIP = 3 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { DIP = 2 }
+				}
+				modifier = {
+					factor = 0.25
+					NOT = { DIP = 1 }
+				}
+				rce_set_religion_mechanic_norse_era = { era = dip }
+			}
+			33 = {
+				modifier = {
+					factor = 3
+					MIL = 6
+				}
+				modifier = {
+					factor = 2
+					MIL = 5
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { MIL = 4 }
+				}
+				modifier = {
+					factor = 0.75
+					NOT = { MIL = 3 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { MIL = 2 }
+				}
+				modifier = {
+					factor = 0.25
+					NOT = { MIL = 1 }
+				}
+				rce_set_religion_mechanic_norse_era = { era = mil }
+			}
+		}
+	}
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		rce_add_monthly_religion_mechanic_norse_values = yes
+	}
+}
+
+# ROOT = annexing country, FROM = annexed country
+on_annexed = {
+	FROM = {
+		if = {
+			limit = {
+				rce_uses_religion_mechanic = { mechanic = norse }
+			}
+			rce_clear_all_religion_mechanic_norse_modifiers = yes
+		}
+	}
+}
+
+# ROOT = released country, FROM = releasing country
+on_country_released = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		rce_clear_all_religion_mechanic_norse_modifiers = yes
+	}
+	else = {
+		rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = yes
+	}
+}
+
+# ROOT = released country
+on_country_creation = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		rce_clear_all_religion_mechanic_norse_modifiers = yes
+	}
+	else = {
+		rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = yes
+	}
+}
+
+# ROOT = vassal, FROM = overlord
+on_create_vassal = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+		}
+		rce_clear_all_religion_mechanic_norse_modifiers = yes
+	}
+	else = {
+		rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = yes
+	}
+}

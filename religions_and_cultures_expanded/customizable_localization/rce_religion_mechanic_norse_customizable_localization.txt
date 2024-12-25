@@ -1,0 +1,206 @@
+defined_text = {
+	name = RceGetReligionMechanicNorseNornAdmValue
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_norn_value = {
+				type = adm
+				value = 0.001
+			}
+		}
+		localisation_key = "[This.rce_religion_mechanic_norse_norn_adm_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseNornDipValue
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_norn_value = {
+				type = dip
+				value = 0.001
+			}
+		}
+		localisation_key = "[This.rce_religion_mechanic_norse_norn_dip_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseNornMilValue
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_norn_value = {
+				type = mil
+				value = 0.001
+			}
+		}
+		localisation_key = "[This.rce_religion_mechanic_norse_norn_mil_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseNornAdmMonthlyGainValue
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0 } }
+		}
+		localisation_key = "[This.rce_monthly_religion_mechanic_norse_norn_adm_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseNornDipMonthlyGainValue
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0 } }
+		}
+		localisation_key = "[This.rce_monthly_religion_mechanic_norse_norn_dip_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseNornMilMonthlyGainValue
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 } }
+		}
+		localisation_key = "[This.rce_monthly_religion_mechanic_norse_norn_mil_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseCurrentEraName
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = adm }
+		}
+		localisation_key = rce_religion_mechanic_era_name_adm
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = dip }
+		}
+		localisation_key = rce_religion_mechanic_era_name_dip
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = mil }
+		}
+		localisation_key = rce_religion_mechanic_era_name_mil
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = balance }
+		}
+		localisation_key = rce_religion_mechanic_era_name_balance
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = all }
+		}
+		localisation_key = rce_religion_mechanic_era_name_all
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "-"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseCurrentDeityName
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = odin }
+		}
+		localisation_key = odin
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = freya }
+		}
+		localisation_key = freya
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = tor }
+		}
+		localisation_key = tor
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = tyr }
+		}
+		localisation_key = tyr
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = njord }
+		}
+		localisation_key = njord
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = snotra }
+		}
+		localisation_key = snotra
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "-"
+	}
+}

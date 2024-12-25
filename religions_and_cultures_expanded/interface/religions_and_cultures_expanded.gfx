@@ -436,4 +436,66 @@ spriteTypes = {
 		textureFile = "gfx/interface/rce_religion_mechanics/bogomilist_church_aspects_mechanic/mechanic_aspect_promote_ascetic_lifestyle.dds"
 		legacy_lazy_load = no
 	}
+
+	## Norse Mechanic:
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_eras_icon_strip"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_eras_icon_strip.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_empty_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_empty_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_era_name_bg"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_era_name_bg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_deity_name_bg"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_deity_name_bg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_deity_effects_bg"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_deity_effects_bg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_bar_frame"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_bar_bg"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_empty.dds"
+	}
+	progressbartype = {
+		name = "GFX_rce_religion_mechanic_norse_bar_adm"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_green.dds"
+		textureFile2 = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_empty.dds"
+		size = { x = 142 y = 18 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_rce_religion_mechanic_norse_bar_dip"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_blue.dds"
+		textureFile2 = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_empty.dds"
+		size = { x = 142 y = 18 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_rce_religion_mechanic_norse_bar_mil"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_red.dds"
+		textureFile2 = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_bar_empty.dds"
+		size = { x = 142 y = 18 }
+		effectFile = "gfx/FX/progress.lua"
+	}
 }

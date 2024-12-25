@@ -675,6 +675,76 @@ guiTypes = {
 			}
 		}
 
+		######################
+		### Norse Mechanic ###
+		######################
+		windowType = {
+			name = "rce_religion_mechanic_norse_window"
+			position = { x = 0 y = 230 }
+			scripted = yes
+
+			iconType = {
+				name = "rce_religion_mechanic_norse_era_bg"
+				position = { x = 9 y = 0 }
+				spriteType = "GFX_rce_religion_mechanic_norse_eras_icon_strip"
+				scripted = yes
+			}
+			iconType = {
+				name = "rce_religion_mechanic_norse_deity_bg"
+				position = { x = 81 y = 30 }
+				spriteType = "GFX_rce_religion_mechanic_norse_empty_button"
+				scale = 0.8
+				alwaystransparent = yes
+			}
+
+			windowType = {
+				name = "era_name_window"
+				position = { x = 30 y = 3 }
+
+				iconType = {
+					name = "rce_religion_mechanic_norse_era_name_bg"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_norse_era_name_bg"
+				}
+				instantTextBoxType = {
+					name = "rce_religion_mechanic_norse_era_name"
+					position = { x = 27 y = 7 }
+					font = "vic_18"
+					format = center
+					maxWidth = 100
+					maxHeight = 20
+					fixedsize = yes
+					scripted = yes
+				}
+			}
+
+			windowType = {
+				name = "deity_name_window"
+				position = { x = 12 y = 36 }
+
+				iconType = {
+					name = "rce_religion_mechanic_norse_deity_name_bg"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_norse_deity_name_bg"
+				}
+				instantTextBoxType = {
+					name = "rce_religion_mechanic_norse_deity_name"
+					position = { x = 10 y = 8 }
+					font = "vic_18"
+					format = center
+					maxWidth = 50
+					maxHeight = 20
+					fixedsize = yes
+					scripted = yes
+				}
+			}
+			iconType = {
+				name = "rce_religion_mechanic_norse_deity_effects_bg"
+				position = { x = 104 y = 52 }
+				spriteType = "GFX_rce_religion_mechanic_norse_deity_effects_bg"
+			}
+		}
+
 		######################################################
 		##  END Religions & Cultures Expanded Custom GUI 1  ##
 		######################################################
@@ -3331,6 +3401,81 @@ guiTypes = {
 					position = { x = 0 y = 0 }
 					spriteType = "GFX_rce_religion_mechanic_manichaeism_purity_sun_button"
 					scripted = yes
+				}
+			}
+		}
+
+		######################
+		### Norse Mechanic ###
+		######################
+		windowType = {
+			name = "rce_religion_mechanic_norse_overlay_window"
+			position = { x = 0 y = 230 }
+			scripted = yes
+
+			windowType = {
+				name = "bar_window"
+				position = { x = 173 y = 1 }
+
+				windowType = {
+					name = "adm_bar_window"
+					position = { x = 14 y = 5 }
+
+					iconType = {
+						name = "rce_religion_mechanic_norse_bar_adm_bg"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_rce_religion_mechanic_norse_bar_bg"
+						scripted = yes
+					}
+					iconType = {
+						name = "rce_religion_mechanic_norse_bar_adm"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_rce_religion_mechanic_norse_bar_adm"
+						alwaystransparent = yes
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "dip_bar_window"
+					position = { x = 14 y = 24 }
+
+					iconType = {
+						name = "rce_religion_mechanic_norse_bar_dip_bg"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_rce_religion_mechanic_norse_bar_bg"
+						scripted = yes
+					}
+					iconType = {
+						name = "rce_religion_mechanic_norse_bar_dip"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_rce_religion_mechanic_norse_bar_dip"
+						alwaystransparent = yes
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "mil_bar_window"
+					position = { x = 14 y = 43 }
+
+					iconType = {
+						name = "rce_religion_mechanic_norse_bar_mil_bg"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_rce_religion_mechanic_norse_bar_bg"
+						scripted = yes
+					}
+					iconType = {
+						name = "rce_religion_mechanic_norse_bar_mil"
+						position = { x = 0 y = 0 }
+						spriteType = "GFX_rce_religion_mechanic_norse_bar_mil"
+						alwaystransparent = yes
+						scripted = yes
+					}
+				}
+				iconType = {
+					name = "rce_religion_mechanic_norse_bar_frame"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_norse_bar_frame"
+					alwaystransparent = yes
 				}
 			}
 		}

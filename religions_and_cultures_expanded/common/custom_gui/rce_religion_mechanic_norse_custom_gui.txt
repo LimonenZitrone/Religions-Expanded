@@ -1,0 +1,120 @@
+custom_window = {
+	name = rce_religion_mechanic_norse_window
+	potential = {
+		ai = no
+		rce_uses_religion_mechanic = { mechanic = norse }
+	}
+}
+
+custom_icon = {
+	name = rce_religion_mechanic_norse_era_bg
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = adm }
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = dip }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = mil }
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = balance }
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_text_box = {
+	name = rce_religion_mechanic_norse_era_name
+	potential = {
+		always = yes
+	}
+}
+
+custom_text_box = {
+	name = rce_religion_mechanic_norse_deity_name
+	potential = {
+		always = yes
+	}
+}
+
+custom_window = {
+	name = rce_religion_mechanic_norse_overlay_window
+	potential = {
+		ai = no
+		rce_uses_religion_mechanic = { mechanic = norse }
+	}
+}
+
+custom_icon = {
+	name = rce_religion_mechanic_norse_bar_adm_bg
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_norse_bar_adm_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_norse_bar_adm
+	potential = {
+		rce_has_religion_mechanic_norse_norn_value = {
+			type = adm
+			value = 1
+		}
+	}
+	frame_variable = rce_religion_mechanic_norse_norn_adm_value
+}
+
+custom_icon = {
+	name = rce_religion_mechanic_norse_bar_dip_bg
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_norse_bar_dip_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_norse_bar_dip
+	potential = {
+		rce_has_religion_mechanic_norse_norn_value = {
+			type = dip
+			value = 1
+		}
+	}
+	frame_variable = rce_religion_mechanic_norse_norn_dip_value
+}
+
+custom_icon = {
+	name = rce_religion_mechanic_norse_bar_mil_bg
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_norse_bar_mil_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_norse_bar_mil
+	potential = {
+		rce_has_religion_mechanic_norse_norn_value = {
+			type = mil
+			value = 1
+		}
+	}
+	frame_variable = rce_religion_mechanic_norse_norn_mil_value
+}
