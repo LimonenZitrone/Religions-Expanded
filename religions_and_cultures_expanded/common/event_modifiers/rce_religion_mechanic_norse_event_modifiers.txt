@@ -1,0 +1,15 @@
+# Mechanic Modifiers:
+rce_religion_mechanic_norse_modifier_era_adm = {
+	rce_monthly_religion_mechanic_norse_norn_adm_change = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_era_dip = {
+	rce_monthly_religion_mechanic_norse_norn_dip_change = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_era_mil = {
+	rce_monthly_religion_mechanic_norse_norn_mil_change = -0.1
+	religion = yes
+}

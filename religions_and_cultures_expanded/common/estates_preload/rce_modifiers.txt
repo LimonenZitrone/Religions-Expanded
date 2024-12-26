@@ -78,4 +78,32 @@ estate_special = {
 			religion = manichaeism
 		}
 	}
+	# Norse Mechanic
+	modifier_definition = {
+		type = privileges
+		key = rce_monthly_religion_mechanic_norse_norn_adm_change
+		trigger = {
+			# keep the same as rce_uses_religion_mechanic_norse
+			religion = norse_pagan_reformed
+			uses_personal_deities = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = rce_monthly_religion_mechanic_norse_norn_dip_change
+		trigger = {
+			# keep the same as rce_uses_religion_mechanic_norse
+			religion = norse_pagan_reformed
+			uses_personal_deities = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = rce_monthly_religion_mechanic_norse_norn_mil_change
+		trigger = {
+			# keep the same as rce_uses_religion_mechanic_norse
+			religion = norse_pagan_reformed
+			uses_personal_deities = yes
+		}
+	}
 }

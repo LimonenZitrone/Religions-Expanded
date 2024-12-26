@@ -199,6 +199,30 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = kvasir }
+		}
+		localisation_key = kvasir
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = loki }
+		}
+		localisation_key = loki
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = heimdall }
+		}
+		localisation_key = heimdall
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = baldr }
+		}
+		localisation_key = baldr
+	}
+	text = {
+		trigger = {
 			always = yes
 		}
 		localisation_key = "-"

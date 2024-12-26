@@ -1548,11 +1548,14 @@
  # GUIs:
  rce_religion_mechanic_norse_era_name: "[This.RceGetReligionMechanicNorseCurrentEraName]"
  rce_religion_mechanic_norse_deity_name: "[This.RceGetReligionMechanicNorseCurrentDeityName]"
- rce_religion_mechanic_norse_bar_adm_tt: "§YInfluence of Skuld§! \nThe influence of the norn §YSkuld§! is currently at §Y[This.RceGetReligionMechanicNorseNornAdmValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YSkuld§!, the next era will be a §YProgress Era§!. \n\nThe current era affects the modifiers of the chosen personal deity."
- rce_religion_mechanic_norse_bar_dip_tt: "§YInfluence of Verdandi§! \nThe influence of the norn §YVerdandi§! is currently at §Y[This.RceGetReligionMechanicNorseNornDipValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YVerdandi§!, the next era will be a §YCooperation Era§!. \n\nThe current era affects the modifiers of the chosen personal deity."
- rce_religion_mechanic_norse_bar_mil_tt: "§YInfluence of Urdr§! \nThe influence of the norn §YUrdr§! is currently at §Y[This.RceGetReligionMechanicNorseNornMilValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YUrdr§!, the next era will be a §YConflict Era§!. \n\nThe current era affects the modifiers of the chosen personal deity."
+ rce_religion_mechanic_norse_bar_adm_tt: "§YInfluence of Skuld§! \nThe influence of the norn §YSkuld§! is currently at §Y[This.RceGetReligionMechanicNorseNornAdmValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YSkuld§!, the next era will be a §YProgress Era§!. \n\nThe current era affects the modifiers of the chosen personal deity. \n--------------\nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornAdmMonthlyGainValue]§! \n\nThe monthly change is affected by inflation, stability, corruption and potentially by modifiers. Other ways to impact the influence of §YSkuld§! are developing provinces, repaying loans, researching administrative technologies and enacting government reforms."
+ rce_religion_mechanic_norse_bar_dip_tt: "§YInfluence of Verdandi§! \nThe influence of the norn §YVerdandi§! is currently at §Y[This.RceGetReligionMechanicNorseNornDipValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YVerdandi§!, the next era will be a §YCooperation Era§!. \n\nThe current era affects the modifiers of the chosen personal deity. \n--------------\nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornDipMonthlyGainValue]§! \n\nThe monthly change is affected by amount of allies and amount of non-tributary and non-colonial subjects and potentially by modifiers. Other ways to impact the influence of §YVerdandi§! are recruiting admirals, adding provinces to trade companies and researching diplomatic technologies."
+ rce_religion_mechanic_norse_bar_mil_tt: "§YInfluence of Urdr§! \nThe influence of the norn §YUrdr§! is currently at §Y[This.RceGetReligionMechanicNorseNornMilValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YUrdr§!, the next era will be a §YConflict Era§!. \n\nThe current era affects the modifiers of the chosen personal deity. \n--------------\nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornMilMonthlyGainValue]§! \n\nThe monthly change is potentially affected by modifiers. Other ways to impact the influence of §YUrdr§! are winning battles, researching military technologies, recruiting generals, raiding coasts and pillaging provinces."
 
  # Custom Modifiers:
+ rce_monthly_religion_mechanic_norse_norn_adm_change: "Monthly Influence of Skuld"
+ rce_monthly_religion_mechanic_norse_norn_dip_change: "Monthly Influence of Verdandi"
+ rce_monthly_religion_mechanic_norse_norn_mil_change: "Monthly Influence of Urdr"
 
  # Deities:
  odin_adm: "Odin"
@@ -1603,6 +1606,46 @@
  snotra_mil_desc: "Snotra is the clever goddess. A wise man or woman can be called snotr in her honor."
  snotra_balance: "Snotra"
  snotra_balance_desc: "Snotra is the clever goddess. A wise man or woman can be called snotr in her honor."
+ kvasir: "Kvasir"
+ kvasir_desc: "Kvasir was a being born of the saliva of the Æsir and the Vanir, two groups of gods. Extremely wise, Kvasir travels far and wide, teaching and spreading knowledge."
+ kvasir_adm: "Kvasir"
+ kvasir_adm_desc: "Kvasir was a being born of the saliva of the Æsir and the Vanir, two groups of gods. Extremely wise, Kvasir travels far and wide, teaching and spreading knowledge."
+ kvasir_dip: "Kvasir"
+ kvasir_dip_desc: "Kvasir was a being born of the saliva of the Æsir and the Vanir, two groups of gods. Extremely wise, Kvasir travels far and wide, teaching and spreading knowledge."
+ kvasir_mil: "Kvasir"
+ kvasir_mil_desc: "Kvasir was a being born of the saliva of the Æsir and the Vanir, two groups of gods. Extremely wise, Kvasir travels far and wide, teaching and spreading knowledge."
+ kvasir_balance: "Kvasir"
+ kvasir_balance_desc: "Kvasir was a being born of the saliva of the Æsir and the Vanir, two groups of gods. Extremely wise, Kvasir travels far and wide, teaching and spreading knowledge."
+ loki: "Loki"
+ loki_desc: "Loki is a Norse god and the son of Fárbauti and Laufey. He is the father of Hel, the wolf Fenrir and the world serpent Jörmungandr. Loki is foretold to eventually break free from his bonds and, among the forces of the jötnar, to go to battle with the gods, during which time his children play a key role in the destruction of all but two humans over the events of Ragnarök."
+ loki_adm: "Loki"
+ loki_adm_desc: "Loki is a Norse god and the son of Fárbauti and Laufey. He is the father of Hel, the wolf Fenrir and the world serpent Jörmungandr. Loki is foretold to eventually break free from his bonds and, among the forces of the jötnar, to go to battle with the gods, during which time his children play a key role in the destruction of all but two humans over the events of Ragnarök."
+ loki_dip: "Loki"
+ loki_dip_desc: "Loki is a Norse god and the son of Fárbauti and Laufey. He is the father of Hel, the wolf Fenrir and the world serpent Jörmungandr. Loki is foretold to eventually break free from his bonds and, among the forces of the jötnar, to go to battle with the gods, during which time his children play a key role in the destruction of all but two humans over the events of Ragnarök."
+ loki_mil: "Loki"
+ loki_mil_desc: "Loki is a Norse god and the son of Fárbauti and Laufey. He is the father of Hel, the wolf Fenrir and the world serpent Jörmungandr. Loki is foretold to eventually break free from his bonds and, among the forces of the jötnar, to go to battle with the gods, during which time his children play a key role in the destruction of all but two humans over the events of Ragnarök."
+ loki_balance: "Loki"
+ loki_balance_desc: "Loki is a Norse god and the son of Fárbauti and Laufey. He is the father of Hel, the wolf Fenrir and the world serpent Jörmungandr. Loki is foretold to eventually break free from his bonds and, among the forces of the jötnar, to go to battle with the gods, during which time his children play a key role in the destruction of all but two humans over the events of Ragnarök."
+ heimdall: "Heimdall"
+ heimdall_desc: "Heimdall is a Norse god and the son of Odin and nine mothers. He is attested as possessing foreknowledge and keen senses, particularly eyesight and hearing, and keeps watch for invaders and the onset of Ragnarök."
+ heimdall_adm: "Heimdall"
+ heimdall_adm_desc: "Heimdall is a Norse god and the son of Odin and nine mothers. He is attested as possessing foreknowledge and keen senses, particularly eyesight and hearing, and keeps watch for invaders and the onset of Ragnarök."
+ heimdall_dip: "Heimdall"
+ heimdall_dip_desc: "Heimdall is a Norse god and the son of Odin and nine mothers. He is attested as possessing foreknowledge and keen senses, particularly eyesight and hearing, and keeps watch for invaders and the onset of Ragnarök."
+ heimdall_mil: "Heimdall"
+ heimdall_mil_desc: "Heimdall is a Norse god and the son of Odin and nine mothers. He is attested as possessing foreknowledge and keen senses, particularly eyesight and hearing, and keeps watch for invaders and the onset of Ragnarök."
+ heimdall_balance: "Heimdall"
+ heimdall_balance_desc: "Heimdall is a Norse god and the son of Odin and nine mothers. He is attested as possessing foreknowledge and keen senses, particularly eyesight and hearing, and keeps watch for invaders and the onset of Ragnarök."
+ baldr: "Baldr"
+ baldr_desc: "Baldr is a Norse god and the son of Odin and Frigg. He is known and admired for his compassion, wisdom and elegance."
+ baldr_adm: "Baldr"
+ baldr_adm_desc: "Baldr is a Norse god and the son of Odin and Frigg. He is known and admired for his compassion, wisdom and elegance."
+ baldr_dip: "Baldr"
+ baldr_dip_desc: "Baldr is a Norse god and the son of Odin and Frigg. He is known and admired for his compassion, wisdom and elegance."
+ baldr_mil: "Baldr"
+ baldr_mil_desc: "Baldr is a Norse god and the son of Odin and Frigg. He is known and admired for his compassion, wisdom and elegance."
+ baldr_balance: "Baldr"
+ baldr_balance_desc: "Baldr is a Norse god and the son of Odin and Frigg. He is known and admired for his compassion, wisdom and elegance."
 
  # Variables:
  rce_religion_mechanic_norse_norn_adm_value: "Influence of Skuld"
@@ -1615,6 +1658,7 @@
  rce_set_religion_mechanic_norse_era_tt_mil: "The current era will change to the §YConflict Era§!."
  rce_set_religion_mechanic_norse_era_tt_balance: "The current era will change to the §YEra of Balance§!."
  rce_set_religion_mechanic_norse_era_tt_all: "The current era will change to the §YHiminvangar Era§!."
+ rce_religion_mechanic_norse_modifier_era_duration_tt: "until the era ends"
 
  # Scripted Triggers:
  rce_uses_religion_mechanic_norse_tt: "Uses the §YNorse Norns & Eras§! mechanic"
@@ -1648,3 +1692,9 @@
  rce_religion_mechanic_era_name_mil: "Conflict Era"
  rce_religion_mechanic_era_name_balance: "Era of Balance"
  rce_religion_mechanic_era_name_all: "Himinvangar Era"
+
+ # Modifiers:
+ ## Mechanic Modifiers:
+ rce_religion_mechanic_norse_modifier_era_adm: "Progress Era"
+ rce_religion_mechanic_norse_modifier_era_dip: "Cooperation Era"
+ rce_religion_mechanic_norse_modifier_era_mil: "Conflict Era"

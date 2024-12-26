@@ -30,7 +30,7 @@ on_religion_change = {
 					factor = 0.25
 					NOT = { ADM = 1 }
 				}
-				rce_set_religion_mechanic_norse_era = { era = adm }
+				rce_set_religion_mechanic_norse_era = { era = adm modifier = yes }
 			}
 			33 = {
 				modifier = {
@@ -57,7 +57,7 @@ on_religion_change = {
 					factor = 0.25
 					NOT = { DIP = 1 }
 				}
-				rce_set_religion_mechanic_norse_era = { era = dip }
+				rce_set_religion_mechanic_norse_era = { era = dip modifier = yes }
 			}
 			33 = {
 				modifier = {
@@ -84,7 +84,7 @@ on_religion_change = {
 					factor = 0.25
 					NOT = { MIL = 1 }
 				}
-				rce_set_religion_mechanic_norse_era = { era = mil }
+				rce_set_religion_mechanic_norse_era = { era = mil modifier = yes }
 			}
 		}
 	}
@@ -97,6 +97,84 @@ on_monthly_pulse = {
 		}
 		rce_add_monthly_religion_mechanic_norse_values = yes
 	}
+}
+
+on_adm_tech_taken = {
+	rce_add_religion_mechanic_norse_norn_value = { type = adm value = 10 }
+}
+
+on_dip_tech_taken = {
+	rce_add_religion_mechanic_norse_norn_value = { type = dip value = 10 }
+}
+
+on_mil_tech_taken = {
+	rce_add_religion_mechanic_norse_norn_value = { type = mil value = 10 }
+}
+
+# ROOT = province
+on_adm_development = {
+	owner = {
+		rce_add_religion_mechanic_norse_norn_value = { type = adm value = 1 }
+	}
+}
+
+# ROOT = province
+on_dip_development = {
+	owner = {
+		rce_add_religion_mechanic_norse_norn_value = { type = adm value = 1 }
+	}
+}
+
+# ROOT = province
+on_mil_development = {
+	owner = {
+		rce_add_religion_mechanic_norse_norn_value = { type = adm value = 1 }
+	}
+}
+
+on_loan_repaid = {
+	rce_add_religion_mechanic_norse_norn_value = { type = adm value = 3 }
+}
+
+on_reform_enacted = {
+	rce_add_religion_mechanic_norse_norn_value = { type = adm value = 10 }
+}
+
+on_admiral_recruited = {
+	rce_add_religion_mechanic_norse_norn_value = { type = dip value = 1 }
+}
+
+on_general_recruited = {
+	rce_add_religion_mechanic_norse_norn_value = { type = mil value = 1 }
+}
+
+# ROOT = province, FROM = country
+on_added_to_trade_company = {
+	FROM = {
+		rce_add_religion_mechanic_norse_norn_value = { type = dip value = 1 }
+	}
+}
+
+# ROOT = province, FROM = country
+on_removed_from_company = {
+	FROM = {
+		rce_add_religion_mechanic_norse_norn_value = { type = dip value = -1 }
+	}
+}
+
+# ROOT = winning country, FROM = losing country
+on_battle_won_country = {
+	rce_add_religion_mechanic_norse_norn_value = { type = mil value = 1 }
+}
+
+# ROOT = raiding country, FROM = sea province
+on_raid_coast = {
+	rce_add_religion_mechanic_norse_norn_value = { type = mil value = 3 }
+}
+
+# ROOT = country doing the pillaging, FROM = country pillaged
+on_pillaged_capital = {
+	rce_add_religion_mechanic_norse_norn_value = { type = mil value = 5 }
 }
 
 # ROOT = annexing country, FROM = annexed country

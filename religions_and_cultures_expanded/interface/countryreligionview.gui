@@ -729,10 +729,10 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "rce_religion_mechanic_norse_deity_name"
-					position = { x = 10 y = 8 }
+					position = { x = 5 y = 8 }
 					font = "vic_18"
 					format = center
-					maxWidth = 50
+					maxWidth = 60
 					maxHeight = 20
 					fixedsize = yes
 					scripted = yes

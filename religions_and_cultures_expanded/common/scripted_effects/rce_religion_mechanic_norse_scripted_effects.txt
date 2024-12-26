@@ -61,6 +61,20 @@ rce_set_religion_mechanic_norse_era = {
 		}
 		rce_remove_religion_mechanic_norse_era_flags = yes
 		custom_tooltip = rce_set_religion_mechanic_norse_era_tt_$era$
+		[[modifier]
+			# only available for adm, dip and mil
+			if = {
+				limit = {
+					always = $modifier$
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_norse_modifier_era_$era$
+					duration = -1
+					desc = rce_religion_mechanic_norse_modifier_era_duration_tt
+				}
+				rce_export_monthly_religion_mechanic_norse_norn_values_gain = yes
+			}
+		]
 		hidden_effect = {
 			set_country_flag = religion_mechanic_norse_era_$era$
 			rce_set_religion_mechanic_norse_correct_era_deity_for_selected_deity = yes
@@ -75,6 +89,10 @@ rce_set_religion_mechanic_norse_correct_era_deity_for_selected_deity = {
 	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = tyr }
 	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = njord }
 	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = snotra }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = kvasir }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = loki }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = heimdall }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = baldr }
 }
 
 rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = {
@@ -114,9 +132,108 @@ rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = {
 
 rce_export_monthly_religion_mechanic_norse_norn_values_gain = {
 	hidden_effect = {
-		set_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0 }
-		set_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0 }
-		set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 }
+		# ADM
+		export_to_variable = {
+			which = rce_monthly_religion_mechanic_norse_norn_adm_value
+			value = modifier:rce_monthly_religion_mechanic_norse_norn_adm_change
+		}
+		## Corruption
+		if = {
+			limit = {
+				NOT = { corruption = 0.1 }
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0.05 }
+		}
+		else_if = {
+			limit = {
+				corruption = 1
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = -0.05 }
+		}
+		## Inflation
+		if = {
+			limit = {
+				NOT = { inflation = 1 }
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0.05 }
+		}
+		else_if = {
+			limit = {
+				inflation = 2
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = -0.05 }
+		}
+		## Stability
+		if = {
+			limit = {
+				stability = 3
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0.1 }
+		}
+		else_if = {
+			limit = {
+				stability = 2
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = 0.05 }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = 0 }
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = -0.05 }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = -1 }
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = -0.1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = -2 }
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_adm_value value = -0.15 }
+		}
+		# DIP
+		export_to_variable = {
+			which = rce_monthly_religion_mechanic_norse_norn_dip_value
+			value = modifier:rce_monthly_religion_mechanic_norse_norn_dip_change
+		}
+		## Allies
+		if = {
+			limit = {
+				num_of_allies = 1
+			}
+			every_ally = {
+				PREV = {
+					change_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0.05 }
+				}
+			}
+		}
+		## Subjects
+		if = {
+			limit = {
+				num_of_subjects = 1
+				any_subject_country = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+			}
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+				PREV = {
+					change_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0.05 }
+				}
+			}
+		}
+		# MIL
+		export_to_variable = {
+			which = rce_monthly_religion_mechanic_norse_norn_mil_value
+			value = modifier:rce_monthly_religion_mechanic_norse_norn_mil_change
+		}
 	}
 }
 
@@ -149,6 +266,9 @@ rce_remove_religion_mechanic_norse_era_flags = {
 		clr_country_flag = religion_mechanic_norse_era_mil
 		clr_country_flag = religion_mechanic_norse_era_balance
 		clr_country_flag = religion_mechanic_norse_era_all
+		remove_country_modifier = rce_religion_mechanic_norse_modifier_era_adm
+		remove_country_modifier = rce_religion_mechanic_norse_modifier_era_dip
+		remove_country_modifier = rce_religion_mechanic_norse_modifier_era_mil
 	}
 }
 

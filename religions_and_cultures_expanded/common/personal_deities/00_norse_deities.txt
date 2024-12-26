@@ -662,3 +662,437 @@ snotra_balance = {
 		factor = 1
 	}
 }
+
+### new deities ###
+# kvasir
+kvasir = {
+	# Base Modifier:
+	improve_relation_modifier = 0.15
+	# Era Specific Modifier:
+	diplomatic_reputation = 2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 13
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+kvasir_adm = {
+	# Base Modifier:
+	improve_relation_modifier = 0.15
+	# Era Specific Modifier:
+	dip_tech_cost_modifier = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 13
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+kvasir_dip = {
+	# Base Modifier:
+	improve_relation_modifier = 0.25
+	# Era Specific Modifier:
+	accept_vassalization_reasons = 10
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 13
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+kvasir_mil = {
+	# Base Modifier:
+	improve_relation_modifier = 0.15
+	# Era Specific Modifier:
+	core_creation = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 13
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+kvasir_balance = {
+	# Base Modifier:
+	improve_relation_modifier = 0.15
+	# Era Specific Modifier:
+	diplomatic_reputation = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 13
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# loki
+loki = {
+	# Base Modifier:
+	spy_offence = 0.15
+	# Era Specific Modifier:
+	yearly_corruption = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		has_idea_group = spy_ideas
+	}
+	sprite = 14
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+loki_adm = {
+	# Base Modifier:
+	spy_offence = 0.15
+	# Era Specific Modifier:
+	culture_conversion_cost = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		has_idea_group = spy_ideas
+	}
+	sprite = 14
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+loki_dip = {
+	# Base Modifier:
+	spy_offence = 0.15
+	# Era Specific Modifier:
+	monthly_favor_modifier = 0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		has_idea_group = spy_ideas
+	}
+	sprite = 14
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+loki_mil = {
+	# Base Modifier:
+	spy_offence = 0.25
+	# Era Specific Modifier:
+	spy_action_cost_modifier = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		has_idea_group = spy_ideas
+	}
+	sprite = 14
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+loki_balance = {
+	# Base Modifier:
+	spy_offence = 0.15
+	# Era Specific Modifier:
+	yearly_corruption = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		has_idea_group = spy_ideas
+	}
+	sprite = 14
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# heimdall
+heimdall = {
+	# Base Modifier:
+	trade_efficiency = 0.1
+	# Era Specific Modifier:
+	interest = -0.75
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 15
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+heimdall_adm = {
+	# Base Modifier:
+	trade_efficiency = 0.1
+	# Era Specific Modifier:
+	diplomats = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 15
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+heimdall_dip = {
+	# Base Modifier:
+	trade_efficiency = 0.15
+	# Era Specific Modifier:
+	monthly_splendor = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 15
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+heimdall_mil = {
+	# Base Modifier:
+	trade_efficiency = 0.1
+	# Era Specific Modifier:
+	merc_maintenance_modifier = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 15
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+heimdall_balance = {
+	# Base Modifier:
+	trade_efficiency = 0.1
+	# Era Specific Modifier:
+	interest = -0.5
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 15
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# baldr
+baldr = {
+	# Base Modifier:
+	prestige = 1
+	# Era Specific Modifier:
+	all_estate_influence_modifier = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+	}
+	sprite = 16
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+baldr_adm = {
+	# Base Modifier:
+	prestige = 2
+	# Era Specific Modifier:
+	monthly_splendor = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+	}
+	sprite = 16
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+baldr_dip = {
+	# Base Modifier:
+	prestige = 1
+	# Era Specific Modifier:
+	diplomatic_reputation = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+	}
+	sprite = 16
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+baldr_mil = {
+	# Base Modifier:
+	prestige = 1
+	# Era Specific Modifier:
+	army_tradition = 0.5
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+	}
+	sprite = 16
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+baldr_balance = {
+	# Base Modifier:
+	prestige = 1
+	# Era Specific Modifier:
+	all_estate_influence_modifier = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+	}
+	sprite = 16
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
