@@ -1547,10 +1547,11 @@
  ####################
  # GUIs:
  rce_religion_mechanic_norse_era_name: "[This.RceGetReligionMechanicNorseCurrentEraName]"
+ rce_religion_mechanic_norse_era_name_tt: "§Y[This.RceGetReligionMechanicNorseCurrentEraName]§! \nAll deities have a base and an era specific modifier. While the era specific modifier is different for each era, the base modifier is always the same. However the value of the base modifier is slightly stronger in the deity's main era. \n\n[This.RceGetReligionMechanicNorseCurrentEraDesc] \n--------------\nThis era will end in §Y[This.rce_religion_mechanic_norse_next_era_year.GetValue]§!. With the current influence values of the norns, the next age would be a §Y[This.RceGetReligionMechanicNorseNextEraName]§!."
  rce_religion_mechanic_norse_deity_name: "[This.RceGetReligionMechanicNorseCurrentDeityName]"
- rce_religion_mechanic_norse_bar_adm_tt: "§YInfluence of Skuld§! \nThe influence of the norn §YSkuld§! is currently at §Y[This.RceGetReligionMechanicNorseNornAdmValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YSkuld§!, the next era will be a §YProgress Era§!. \n\nThe current era affects the modifiers of the chosen personal deity. \n--------------\nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornAdmMonthlyGainValue]§! \n\nThe monthly change is affected by inflation, stability, corruption and potentially by modifiers. Other ways to impact the influence of §YSkuld§! are developing provinces, repaying loans, researching administrative technologies and enacting government reforms."
- rce_religion_mechanic_norse_bar_dip_tt: "§YInfluence of Verdandi§! \nThe influence of the norn §YVerdandi§! is currently at §Y[This.RceGetReligionMechanicNorseNornDipValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YVerdandi§!, the next era will be a §YCooperation Era§!. \n\nThe current era affects the modifiers of the chosen personal deity. \n--------------\nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornDipMonthlyGainValue]§! \n\nThe monthly change is affected by amount of allies and amount of non-tributary and non-colonial subjects and potentially by modifiers. Other ways to impact the influence of §YVerdandi§! are recruiting admirals, adding provinces to trade companies and researching diplomatic technologies."
- rce_religion_mechanic_norse_bar_mil_tt: "§YInfluence of Urdr§! \nThe influence of the norn §YUrdr§! is currently at §Y[This.RceGetReligionMechanicNorseNornMilValue]§! of §Y100§!. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YUrdr§!, the next era will be a §YConflict Era§!. \n\nThe current era affects the modifiers of the chosen personal deity. \n--------------\nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornMilMonthlyGainValue]§! \n\nThe monthly change is potentially affected by modifiers. Other ways to impact the influence of §YUrdr§! are winning battles, researching military technologies, recruiting generals, raiding coasts and pillaging provinces."
+ rce_religion_mechanic_norse_bar_adm_tt: "§YInfluence of Skuld§! \nThe influence of the norn §YSkuld§! is currently at §Y[This.RceGetReligionMechanicNorseNornAdmValue]§! of §Y100§!. \nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornAdmMonthlyGainValue]§! \n\nThe monthly change is affected by inflation, stability, corruption and potentially by modifiers. Other ways to impact the influence of §YSkuld§! are developing provinces, repaying loans, researching administrative technologies and enacting government reforms. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YSkuld§!, the next era will be a §YProgress Era§!. \n\nThe current era affects the modifiers of the chosen personal deity."
+ rce_religion_mechanic_norse_bar_dip_tt: "§YInfluence of Verdandi§! \nThe influence of the norn §YVerdandi§! is currently at §Y[This.RceGetReligionMechanicNorseNornDipValue]§! of §Y100§!. \nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornDipMonthlyGainValue]§! \n\nThe monthly change is affected by amount of allies and amount of non-tributary and non-colonial subjects and potentially by modifiers. Other ways to impact the influence of §YVerdandi§! are recruiting admirals, adding provinces to trade companies and researching diplomatic technologies. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YVerdandi§!, the next era will be a §YCooperation Era§!. \n\nThe current era affects the modifiers of the chosen personal deity."
+ rce_religion_mechanic_norse_bar_mil_tt: "§YInfluence of Urdr§! \nThe influence of the norn §YUrdr§! is currently at §Y[This.RceGetReligionMechanicNorseNornMilValue]§! of §Y100§!. \nMonthly Change: §Y[This.RceGetReligionMechanicNorseNornMilMonthlyGainValue]§! \n\nThe monthly change is affected by being at war and potentially by modifiers. Other ways to impact the influence of §YUrdr§! are winning battles, researching military technologies, recruiting generals, raiding coasts and pillaging provinces. \n--------------\nThe influence of the three norns decides the era that will be picked next. If multiple areas have very similar values, the next era will be a §YEra of Balance§! if §Y2§! or a §YHiminvangar Era§! if all §Y3§! norns' values are similar to each other. Otherwise if the leading norn is §YUrdr§!, the next era will be a §YConflict Era§!. \n\nThe current era affects the modifiers of the chosen personal deity."
 
  # Custom Modifiers:
  rce_monthly_religion_mechanic_norse_norn_adm_change: "Monthly Influence of Skuld"
@@ -1658,6 +1659,7 @@
  rce_set_religion_mechanic_norse_era_tt_mil: "The current era will change to the §YConflict Era§!."
  rce_set_religion_mechanic_norse_era_tt_balance: "The current era will change to the §YEra of Balance§!."
  rce_set_religion_mechanic_norse_era_tt_all: "The current era will change to the §YHiminvangar Era§!."
+ rce_set_religion_mechanic_norse_era_tt_next_era: "This era will last §Y20 years§!."
  rce_religion_mechanic_norse_modifier_era_duration_tt: "until the era ends"
 
  # Scripted Triggers:
@@ -1685,13 +1687,31 @@
  rce_has_not_religion_mechanic_norse_deity_tt_njord: "Is NOT following §YNjord§!"
  rce_has_religion_mechanic_norse_deity_tt_snotra: "Is following §YSnotra§!"
  rce_has_not_religion_mechanic_norse_deity_tt_snotra: "Is NOT following §YSnotra§!"
+ rce_has_religion_mechanic_norse_deity_tt_kvasir: "Is following §YKvasir§!"
+ rce_has_not_religion_mechanic_norse_deity_tt_kvasir: "Is NOT following §YKvasir§!"
+ rce_has_religion_mechanic_norse_deity_tt_loki: "Is following §YLoki§!"
+ rce_has_not_religion_mechanic_norse_deity_tt_loki: "Is NOT following §YLoki§!"
+ rce_has_religion_mechanic_norse_deity_tt_heimdall: "Is following §YHeimdall§!"
+ rce_has_not_religion_mechanic_norse_deity_tt_heimdall: "Is NOT following §YHeimdall§!"
+ rce_has_religion_mechanic_norse_deity_tt_baldr: "Is following §YBaldr§!"
+ rce_has_not_religion_mechanic_norse_deity_tt_baldr: "Is NOT following §YBaldr§!"
 
  # Customizable Localization:
  rce_religion_mechanic_era_name_adm: "Progress Era"
+ rce_religion_mechanic_era_desc_adm: "The following deities see the §YProgress Era§! as their main era and thus gain an increased base modifier in the current era:\n   - §YNjord§! \n   - §YFreya§! \n   - §YBaldr§! \n   - §YJormungandr§!"
  rce_religion_mechanic_era_name_dip: "Cooperation Era"
+ rce_religion_mechanic_era_desc_dip: "The following deities see the §YCooperation Era§! as their main era and thus gain an increased base modifier in the current era:\n   - §YSnotra§! \n   - §YKvasir§! \n   - §YHeimdall§! \n   - §YFreyr§!"
  rce_religion_mechanic_era_name_mil: "Conflict Era"
+ rce_religion_mechanic_era_desc_mil: "The following deities see the §YConflict Era§! as their main era and thus gain an increased base modifier in the current era:\n   - §YTor§! \n   - §YTyr§! \n   - §YLoki§! \n   - §YSleipnir§! \n   - §YFenrir§!"
  rce_religion_mechanic_era_name_balance: "Era of Balance"
+ rce_religion_mechanic_era_desc_balance: "The following deities see the §YEra of Balance§! as their main era and thus gain an increased base modifier in the current era:\n   - §YOdin§! \n   - §YJesus§!"
  rce_religion_mechanic_era_name_all: "Himinvangar Era"
+ rce_religion_mechanic_era_desc_all: "There are no deities that see the §YHiminvangar Era§! as their main era."
+
+ # Events:
+ rce_religion_mechanic_norse_events.EVTNAME1: "A New Era"
+ rce_religion_mechanic_norse_events.EVTDESC1: "The current era has been active for 20 years. Times have changed and a new era has begun, affecting the bonuses our selected deity gives us. All norns' influences have been reset to 0."
+ rce_religion_mechanic_norse_events1.EVTOPT1: "Alright."
 
  # Modifiers:
  ## Mechanic Modifiers:

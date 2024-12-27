@@ -60,7 +60,11 @@ rce_set_religion_mechanic_norse_era = {
 			rce_uses_religion_mechanic = { mechanic = norse }
 		}
 		rce_remove_religion_mechanic_norse_era_flags = yes
+		rce_set_religion_mechanic_norse_norn_value = { type = adm value = 0 }
+		rce_set_religion_mechanic_norse_norn_value = { type = dip value = 0 }
+		rce_set_religion_mechanic_norse_norn_value = { type = mil value = 0 }
 		custom_tooltip = rce_set_religion_mechanic_norse_era_tt_$era$
+		custom_tooltip = rce_set_religion_mechanic_norse_era_tt_next_era
 		[[modifier]
 			# only available for adm, dip and mil
 			if = {
@@ -76,6 +80,13 @@ rce_set_religion_mechanic_norse_era = {
 			}
 		]
 		hidden_effect = {
+			set_country_flag = religion_mechanic_norse_era_started
+			export_to_variable = {
+				which = rce_religion_mechanic_norse_next_era_year
+				value = trigger_value:is_year
+			}
+			change_variable = { which = rce_religion_mechanic_norse_next_era_year value = 20 }
+			country_event = { id = rce_religion_mechanic_norse_events.1 days = 7300 }
 			set_country_flag = religion_mechanic_norse_era_$era$
 			rce_set_religion_mechanic_norse_correct_era_deity_for_selected_deity = yes
 		}
@@ -234,6 +245,12 @@ rce_export_monthly_religion_mechanic_norse_norn_values_gain = {
 			which = rce_monthly_religion_mechanic_norse_norn_mil_value
 			value = modifier:rce_monthly_religion_mechanic_norse_norn_mil_change
 		}
+		if = {
+			limit = {
+				is_at_war = yes
+			}
+			change_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0.05 }
+		}
 	}
 }
 
@@ -261,6 +278,7 @@ rce_add_monthly_religion_mechanic_norse_values = {
 
 rce_remove_religion_mechanic_norse_era_flags = {
 	hidden_effect = {
+		clr_country_flag = religion_mechanic_norse_era_started
 		clr_country_flag = religion_mechanic_norse_era_adm
 		clr_country_flag = religion_mechanic_norse_era_dip
 		clr_country_flag = religion_mechanic_norse_era_mil
@@ -280,6 +298,7 @@ rce_clear_all_religion_mechanic_norse_modifiers = {
 	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0 }
 	set_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 0 }
 	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 }
+	set_variable = { which = rce_religion_mechanic_norse_next_era_year value = 0 }
 }
 
 rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = {

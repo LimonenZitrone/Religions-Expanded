@@ -1,0 +1,92 @@
+namespace = rce_religion_mechanic_norse_events
+
+country_event = {
+	id = rce_religion_mechanic_norse_events.1
+	title = rce_religion_mechanic_norse_events.EVTNAME1
+	desc = rce_religion_mechanic_norse_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		has_country_flag = religion_mechanic_norse_era_started
+		had_country_flag = { flag = religion_mechanic_norse_era_started days = 7299 }
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					rce_is_religion_mechanic_norse_next_era = { era = all }
+				}
+				rce_set_religion_mechanic_norse_era = { era = all }
+			}
+			else_if = {
+				limit = {
+					rce_is_religion_mechanic_norse_next_era = { era = balance }
+				}
+				rce_set_religion_mechanic_norse_era = { era = balance }
+			}
+			else_if = {
+				limit = {
+					rce_is_religion_mechanic_norse_next_era = { era = adm }
+				}
+				rce_set_religion_mechanic_norse_era = { era = adm }
+			}
+			else_if = {
+				limit = {
+					rce_is_religion_mechanic_norse_next_era = { era = dip }
+				}
+				rce_set_religion_mechanic_norse_era = { era = dip }
+			}
+			else_if = {
+				limit = {
+					rce_is_religion_mechanic_norse_next_era = { era = mil }
+				}
+				rce_set_religion_mechanic_norse_era = { era = mil }
+			}
+			else = {
+				# should never happen, but just in case
+				rce_set_religion_mechanic_norse_era = { era = adm }
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events1.EVTOPT1
+
+		tooltip = {
+			if = {
+				limit = {
+					rce_has_religion_mechanic_norse_era = { era = all }
+				}
+				rce_set_religion_mechanic_norse_era = { era = all }
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_norse_era = { era = balance }
+				}
+				rce_set_religion_mechanic_norse_era = { era = balance }
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_norse_era = { era = adm }
+				}
+				rce_set_religion_mechanic_norse_era = { era = adm }
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_norse_era = { era = dip }
+				}
+				rce_set_religion_mechanic_norse_era = { era = dip }
+			}
+			else_if = {
+				limit = {
+					rce_has_religion_mechanic_norse_era = { era = mil }
+				}
+				rce_set_religion_mechanic_norse_era = { era = mil }
+			}
+		}
+	}
+}

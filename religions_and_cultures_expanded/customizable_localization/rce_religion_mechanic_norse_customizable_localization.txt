@@ -158,6 +158,90 @@ defined_text = {
 }
 
 defined_text = {
+	name = RceGetReligionMechanicNorseCurrentEraDesc
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = adm }
+		}
+		localisation_key = rce_religion_mechanic_era_desc_adm
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = dip }
+		}
+		localisation_key = rce_religion_mechanic_era_desc_dip
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = mil }
+		}
+		localisation_key = rce_religion_mechanic_era_desc_mil
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = balance }
+		}
+		localisation_key = rce_religion_mechanic_era_desc_balance
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_era = { era = all }
+		}
+		localisation_key = rce_religion_mechanic_era_desc_all
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "-"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseNextEraName
+	random = no
+
+	text = {
+		trigger = {
+			rce_is_religion_mechanic_norse_next_era = { era = all }
+		}
+		localisation_key = rce_religion_mechanic_era_name_all
+	}
+	text = {
+		trigger = {
+			rce_is_religion_mechanic_norse_next_era = { era = balance }
+		}
+		localisation_key = rce_religion_mechanic_era_name_balance
+	}
+	text = {
+		trigger = {
+			rce_is_religion_mechanic_norse_next_era = { era = adm }
+		}
+		localisation_key = rce_religion_mechanic_era_name_adm
+	}
+	text = {
+		trigger = {
+			rce_is_religion_mechanic_norse_next_era = { era = dip }
+		}
+		localisation_key = rce_religion_mechanic_era_name_dip
+	}
+	text = {
+		trigger = {
+			rce_is_religion_mechanic_norse_next_era = { era = mil }
+		}
+		localisation_key = rce_religion_mechanic_era_name_mil
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_religion_mechanic_era_name_adm
+	}
+}
+
+defined_text = {
 	name = RceGetReligionMechanicNorseCurrentDeityName
 	random = no
 

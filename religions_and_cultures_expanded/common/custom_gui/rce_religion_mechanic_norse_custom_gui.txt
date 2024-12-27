@@ -48,6 +48,7 @@ custom_text_box = {
 	potential = {
 		always = yes
 	}
+	tooltip = rce_religion_mechanic_norse_era_name_tt
 }
 
 custom_text_box = {
