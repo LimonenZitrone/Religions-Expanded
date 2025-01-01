@@ -18,7 +18,7 @@ odin = {
 	}
 	trigger = {
 	}
-	sprite = 7
+	sprite = 8
 	effect = {
 	}
 	removed_effect = {
@@ -43,7 +43,7 @@ odin_adm = {
 	}
 	trigger = {
 	}
-	sprite = 7
+	sprite = 8
 	effect = {
 	}
 	removed_effect = {
@@ -68,7 +68,7 @@ odin_dip = {
 	}
 	trigger = {
 	}
-	sprite = 7
+	sprite = 8
 	effect = {
 	}
 	removed_effect = {
@@ -93,7 +93,7 @@ odin_mil = {
 	}
 	trigger = {
 	}
-	sprite = 7
+	sprite = 8
 	effect = {
 	}
 	removed_effect = {
@@ -118,7 +118,7 @@ odin_balance = {
 	}
 	trigger = {
 	}
-	sprite = 7
+	sprite = 8
 	effect = {
 	}
 	removed_effect = {
@@ -141,7 +141,7 @@ freya = {
 	}
 	trigger = {
 	}
-	sprite = 8
+	sprite = 9
 	effect = {
 	}
 	removed_effect = {
@@ -162,7 +162,7 @@ freya_adm = {
 	}
 	trigger = {
 	}
-	sprite = 8
+	sprite = 9
 	effect = {
 	}
 	removed_effect = {
@@ -183,7 +183,7 @@ freya_dip = {
 	}
 	trigger = {
 	}
-	sprite = 8
+	sprite = 9
 	effect = {
 	}
 	removed_effect = {
@@ -204,7 +204,7 @@ freya_mil = {
 	}
 	trigger = {
 	}
-	sprite = 8
+	sprite = 9
 	effect = {
 	}
 	removed_effect = {
@@ -225,7 +225,7 @@ freya_balance = {
 	}
 	trigger = {
 	}
-	sprite = 8
+	sprite = 9
 	effect = {
 	}
 	removed_effect = {
@@ -248,7 +248,7 @@ tor = {
 	}
 	trigger = {
 	}
-	sprite = 9
+	sprite = 10
 	effect = {
 	}
 	removed_effect = {
@@ -269,7 +269,7 @@ tor_adm = {
 	}
 	trigger = {
 	}
-	sprite = 9
+	sprite = 10
 	effect = {
 	}
 	removed_effect = {
@@ -290,7 +290,7 @@ tor_dip = {
 	}
 	trigger = {
 	}
-	sprite = 9
+	sprite = 10
 	effect = {
 	}
 	removed_effect = {
@@ -311,7 +311,7 @@ tor_mil = {
 	}
 	trigger = {
 	}
-	sprite = 9
+	sprite = 10
 	effect = {
 	}
 	removed_effect = {
@@ -332,7 +332,7 @@ tor_balance = {
 	}
 	trigger = {
 	}
-	sprite = 9
+	sprite = 10
 	effect = {
 	}
 	removed_effect = {
@@ -355,7 +355,7 @@ tyr = {
 	}
 	trigger = {
 	}
-	sprite = 10
+	sprite = 11
 	effect = {
 	}
 	removed_effect = {
@@ -376,7 +376,7 @@ tyr_adm = {
 	}
 	trigger = {
 	}
-	sprite = 10
+	sprite = 11
 	effect = {
 	}
 	removed_effect = {
@@ -397,7 +397,7 @@ tyr_dip = {
 	}
 	trigger = {
 	}
-	sprite = 10
+	sprite = 11
 	effect = {
 	}
 	removed_effect = {
@@ -418,7 +418,7 @@ tyr_mil = {
 	}
 	trigger = {
 	}
-	sprite = 10
+	sprite = 11
 	effect = {
 	}
 	removed_effect = {
@@ -439,7 +439,7 @@ tyr_balance = {
 	}
 	trigger = {
 	}
-	sprite = 10
+	sprite = 11
 	effect = {
 	}
 	removed_effect = {
@@ -462,7 +462,7 @@ njord = {
 	}
 	trigger = {
 	}
-	sprite = 11
+	sprite = 12
 	effect = {
 	}
 	removed_effect = {
@@ -483,7 +483,7 @@ njord_adm = {
 	}
 	trigger = {
 	}
-	sprite = 11
+	sprite = 12
 	effect = {
 	}
 	removed_effect = {
@@ -504,7 +504,7 @@ njord_dip = {
 	}
 	trigger = {
 	}
-	sprite = 11
+	sprite = 12
 	effect = {
 	}
 	removed_effect = {
@@ -525,7 +525,7 @@ njord_mil = {
 	}
 	trigger = {
 	}
-	sprite = 11
+	sprite = 12
 	effect = {
 	}
 	removed_effect = {
@@ -546,7 +546,7 @@ njord_balance = {
 	}
 	trigger = {
 	}
-	sprite = 11
+	sprite = 12
 	effect = {
 	}
 	removed_effect = {
@@ -569,7 +569,7 @@ snotra = {
 	}
 	trigger = {
 	}
-	sprite = 12
+	sprite = 13
 	effect = {
 	}
 	removed_effect = {
@@ -590,7 +590,7 @@ snotra_adm = {
 	}
 	trigger = {
 	}
-	sprite = 12
+	sprite = 13
 	effect = {
 	}
 	removed_effect = {
@@ -611,7 +611,7 @@ snotra_dip = {
 	}
 	trigger = {
 	}
-	sprite = 12
+	sprite = 13
 	effect = {
 	}
 	removed_effect = {
@@ -632,7 +632,7 @@ snotra_mil = {
 	}
 	trigger = {
 	}
-	sprite = 12
+	sprite = 13
 	effect = {
 	}
 	removed_effect = {
@@ -653,7 +653,7 @@ snotra_balance = {
 	}
 	trigger = {
 	}
-	sprite = 12
+	sprite = 13
 	effect = {
 	}
 	removed_effect = {
@@ -677,7 +677,7 @@ kvasir = {
 	}
 	trigger = {
 	}
-	sprite = 13
+	sprite = 14
 	effect = {
 	}
 	removed_effect = {
@@ -698,7 +698,7 @@ kvasir_adm = {
 	}
 	trigger = {
 	}
-	sprite = 13
+	sprite = 14
 	effect = {
 	}
 	removed_effect = {
@@ -719,7 +719,7 @@ kvasir_dip = {
 	}
 	trigger = {
 	}
-	sprite = 13
+	sprite = 14
 	effect = {
 	}
 	removed_effect = {
@@ -740,7 +740,7 @@ kvasir_mil = {
 	}
 	trigger = {
 	}
-	sprite = 13
+	sprite = 14
 	effect = {
 	}
 	removed_effect = {
@@ -761,7 +761,7 @@ kvasir_balance = {
 	}
 	trigger = {
 	}
-	sprite = 13
+	sprite = 14
 	effect = {
 	}
 	removed_effect = {
@@ -785,7 +785,7 @@ loki = {
 	trigger = {
 		has_idea_group = spy_ideas
 	}
-	sprite = 14
+	sprite = 15
 	effect = {
 	}
 	removed_effect = {
@@ -807,7 +807,7 @@ loki_adm = {
 	trigger = {
 		has_idea_group = spy_ideas
 	}
-	sprite = 14
+	sprite = 15
 	effect = {
 	}
 	removed_effect = {
@@ -829,7 +829,7 @@ loki_dip = {
 	trigger = {
 		has_idea_group = spy_ideas
 	}
-	sprite = 14
+	sprite = 15
 	effect = {
 	}
 	removed_effect = {
@@ -851,7 +851,7 @@ loki_mil = {
 	trigger = {
 		has_idea_group = spy_ideas
 	}
-	sprite = 14
+	sprite = 15
 	effect = {
 	}
 	removed_effect = {
@@ -873,7 +873,7 @@ loki_balance = {
 	trigger = {
 		has_idea_group = spy_ideas
 	}
-	sprite = 14
+	sprite = 15
 	effect = {
 	}
 	removed_effect = {
@@ -896,7 +896,7 @@ heimdall = {
 	}
 	trigger = {
 	}
-	sprite = 15
+	sprite = 16
 	effect = {
 	}
 	removed_effect = {
@@ -917,7 +917,7 @@ heimdall_adm = {
 	}
 	trigger = {
 	}
-	sprite = 15
+	sprite = 16
 	effect = {
 	}
 	removed_effect = {
@@ -938,7 +938,7 @@ heimdall_dip = {
 	}
 	trigger = {
 	}
-	sprite = 15
+	sprite = 16
 	effect = {
 	}
 	removed_effect = {
@@ -959,7 +959,7 @@ heimdall_mil = {
 	}
 	trigger = {
 	}
-	sprite = 15
+	sprite = 16
 	effect = {
 	}
 	removed_effect = {
@@ -980,7 +980,7 @@ heimdall_balance = {
 	}
 	trigger = {
 	}
-	sprite = 15
+	sprite = 16
 	effect = {
 	}
 	removed_effect = {
@@ -1003,7 +1003,7 @@ baldr = {
 	}
 	trigger = {
 	}
-	sprite = 16
+	sprite = 17
 	effect = {
 	}
 	removed_effect = {
@@ -1024,7 +1024,7 @@ baldr_adm = {
 	}
 	trigger = {
 	}
-	sprite = 16
+	sprite = 17
 	effect = {
 	}
 	removed_effect = {
@@ -1045,7 +1045,7 @@ baldr_dip = {
 	}
 	trigger = {
 	}
-	sprite = 16
+	sprite = 17
 	effect = {
 	}
 	removed_effect = {
@@ -1066,7 +1066,7 @@ baldr_mil = {
 	}
 	trigger = {
 	}
-	sprite = 16
+	sprite = 17
 	effect = {
 	}
 	removed_effect = {
@@ -1087,7 +1087,7 @@ baldr_balance = {
 	}
 	trigger = {
 	}
-	sprite = 16
+	sprite = 17
 	effect = {
 	}
 	removed_effect = {

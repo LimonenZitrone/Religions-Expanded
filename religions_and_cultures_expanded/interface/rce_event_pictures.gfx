@@ -5,11 +5,51 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_FOREST_eventPicture.dds"
 		alwaystransparent = yes
 	}
+	spriteType = {
+		name = "RCE_RUNESTONES_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_RUNESTONES_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_BATTLEFIELD_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_BATTLEFIELD_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_RIVER_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_RIVER_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_INNER_TRIBAL_TEMPLE_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_INNER_TRIBAL_TEMPLE_eventPicture.dds"
+		alwaystransparent = yes
+	}
 
 	# The Great Exhibition
 	spriteType = {
 		name = "RCE_FOREST_TGE_eventPicture"
 		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_FOREST_TGE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_RUNESTONES_TGE_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_RUNESTONES_TGE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_BATTLEFIELD_TGE_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_BATTLEFIELD_TGE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_RIVER_TGE_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_RIVER_TGE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "RCE_INNER_TRIBAL_TEMPLE_TGE_eventPicture"
+		texturefile = "gfx/event_pictures/rce_event_pictures/RCE_INNER_TRIBAL_TEMPLE_TGE_eventPicture.dds"
 		alwaystransparent = yes
 	}
 }

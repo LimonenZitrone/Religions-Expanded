@@ -58,6 +58,57 @@ custom_text_box = {
 	}
 }
 
+custom_button = {
+	name = rce_religion_mechanic_norse_consult_runes_button
+	# if you change this, make sure to change the rce_religion_mechanic_norse_consult_runes_decision decision accordingly
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_is_not_waiting_for_prophecy_event_tt
+			NOT = { has_country_flag = rce_religion_mechanic_will_get_norse_prophecy }
+		}
+		rce_has_not_religion_mechanic_norse_prophecy_modifier = yes
+		rce_has_religion_mechanic_norse_norn_value = {
+			type = adm
+			value = 25
+		}
+		rce_has_religion_mechanic_norse_norn_value = {
+			type = dip
+			value = 25
+		}
+		rce_has_religion_mechanic_norse_norn_value = {
+			type = mil
+			value = 25
+		}
+		capital_scope = {
+			controlled_by = ROOT
+			has_siege = no
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		set_country_flag = rce_religion_mechanic_will_get_norse_prophecy
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = adm
+			value = -25
+		}
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = dip
+			value = -25
+		}
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = mil
+			value = -25
+		}
+		custom_tooltip = rce_religion_mechanic_norse_consult_runes_button_tt_event_happens
+		hidden_effect = {
+			capital_scope = {
+				add_province_triggered_modifier = rce_religion_mechanic_norse_trigger_runes_event_province_triggered_modifier
+			}
+		}
+	}
+	tooltip = rce_religion_mechanic_norse_consult_runes_button_tt
+}
+
 custom_window = {
 	name = rce_religion_mechanic_norse_overlay_window
 	potential = {

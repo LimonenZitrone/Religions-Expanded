@@ -449,6 +449,11 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
+		name = "GFX_rce_religion_mechanic_norse_mechanic_consult_runes_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_consult_runes_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
 		name = "GFX_rce_religion_mechanic_norse_era_name_bg"
 		textureFile = "gfx/interface/rce_religion_mechanics/norse_mechanic/mechanic_era_name_bg.dds"
 		allwaystransparent = yes

@@ -205,14 +205,56 @@ rce_is_religion_mechanic_norse_next_era_balance = {
 				AND = {
 					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = -5 }
 					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = 5.001 } }
+					OR = {
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_dip_value }
+							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_mil_value }
+						}
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_adm_value }
+							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_mil_value }
+						}
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+						}
+					}
 				}
 				AND = {
 					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = -5 }
 					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = 5.001 } }
+					OR = {
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_dip_value }
+							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_mil_value }
+						}
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_mil_value which = rce_religion_mechanic_norse_norn_adm_value }
+							check_variable = { which = rce_religion_mechanic_norse_norn_mil_value which = rce_religion_mechanic_norse_norn_dip_value }
+						}
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+							check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+						}
+					}
 				}
 				AND = {
 					check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = -5 }
 					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = 5.001 } }
+					OR = {
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_adm_value }
+							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_mil_value }
+						}
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_mil_value which = rce_religion_mechanic_norse_norn_adm_value }
+							check_variable = { which = rce_religion_mechanic_norse_norn_mil_value which = rce_religion_mechanic_norse_norn_dip_value }
+						}
+						AND = {
+							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+							check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+						}
+					}
 				}
 			}
 		}
@@ -247,6 +289,54 @@ rce_is_religion_mechanic_norse_next_era_all = {
 			NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = 5.001 } }
 			check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = -5 }
 			NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = 5.001 } }
+		}
+	}
+}
+
+rce_has_religion_mechanic_norse_prophecy_modifier = {
+	custom_trigger_tooltip = {
+		tooltip = rce_has_religion_mechanic_norse_prophecy_modifier_tt
+		OR = {
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_conquest
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_prosperity
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_exploration
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_success
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_fertility
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_adventures
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_varangians
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_progress
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_stability
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_subjugation
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_deceit
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_allthing
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_odins_blessing
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_njords_blessing
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_asgards_beauty
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_gullveig
+		}
+	}
+}
+
+rce_has_not_religion_mechanic_norse_prophecy_modifier = {
+	custom_trigger_tooltip = {
+		tooltip = rce_has_not_religion_mechanic_norse_prophecy_modifier_tt
+		NOT = {
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_conquest
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_prosperity
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_exploration
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_success
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_fertility
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_adventures
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_varangians
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_progress
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_stability
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_subjugation
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_deceit
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_allthing
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_odins_blessing
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_njords_blessing
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_asgards_beauty
+			has_country_modifier = rce_religion_mechanic_norse_modifier_prophecy_gullveig
 		}
 	}
 }

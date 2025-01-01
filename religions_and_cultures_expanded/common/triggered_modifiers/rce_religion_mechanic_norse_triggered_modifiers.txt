@@ -1,0 +1,59 @@
+rce_religion_mechanic_norse_no_prophecy_active_era_adm_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		rce_has_not_religion_mechanic_norse_prophecy_modifier = yes
+	}
+
+	country_admin_power = 1
+}
+
+rce_religion_mechanic_norse_no_prophecy_active_era_dip_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		rce_has_not_religion_mechanic_norse_prophecy_modifier = yes
+	}
+
+	country_diplomatic_power = 1
+}
+
+rce_religion_mechanic_norse_no_prophecy_active_era_mil_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		rce_has_not_religion_mechanic_norse_prophecy_modifier = yes
+	}
+
+	country_military_power = 1
+}
+
+rce_religion_mechanic_norse_no_prophecy_active_era_balance_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		rce_has_not_religion_mechanic_norse_prophecy_modifier = yes
+	}
+
+	all_power_cost = -0.025
+}
+
+rce_religion_mechanic_norse_no_prophecy_active_era_all_triggered_modifier = {
+	potential = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		rce_has_not_religion_mechanic_norse_prophecy_modifier = yes
+	}
+
+	all_power_cost = -0.05
+}

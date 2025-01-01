@@ -6,7 +6,7 @@ ganesha = {
 
 	potential = { religion = hinduism }
 	trigger = {}
-	sprite = 1
+	sprite = 2
 	effect = {
 		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
@@ -45,7 +45,7 @@ kali = {
 
 	potential = { religion = hinduism }
 	trigger = {}
-	sprite = 2
+	sprite = 3
 	effect = {
 		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
@@ -84,7 +84,7 @@ surya = {
 
 	potential = { religion = hinduism }
 	trigger = {}
-	sprite = 3
+	sprite = 4
 	effect = {
 		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
@@ -123,7 +123,7 @@ hanuman = {
 
 	potential = { religion = hinduism }
 	trigger = {}
-	sprite = 4
+	sprite = 5
 	effect = {
 		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
@@ -162,7 +162,7 @@ shakti = {
 
 	potential = { religion = hinduism }
 	trigger = {}
-	sprite = 13
+	sprite = 7
 	effect = {
 		custom_tooltip = rce_religion_mechanic_hindu_dynamic_modifier_tt
 		hidden_effect = {
@@ -199,7 +199,7 @@ shakti = {
 buddha = {
 	tolerance_heathen = 2
 
-	sprite = 5
+	sprite = 6
 	potential = {
 		religion = hinduism
 	}
@@ -267,7 +267,7 @@ shiva = {
 
 	potential = { always = no }
 	trigger = {}
-	sprite = 6
+	sprite = 1
 
 	effect = {}
 	removed_effect = {}
@@ -291,7 +291,7 @@ ganga = {
 
 	potential = { always = no }
 	trigger = {}
-	sprite = 6
+	sprite = 1
 
 	effect = {}
 	removed_effect = {}
@@ -315,7 +315,7 @@ vishnu = {
 
 	potential = { always = no }
 	trigger = {}
-	sprite = 6
+	sprite = 1
 
 	effect = {}
 	removed_effect = {}

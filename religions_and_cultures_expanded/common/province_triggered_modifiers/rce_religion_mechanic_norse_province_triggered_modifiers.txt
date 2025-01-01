@@ -1,0 +1,25 @@
+rce_religion_mechanic_norse_trigger_runes_event_province_triggered_modifier = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	hidden = yes
+
+	picture = legitimacy
+
+	#Province scope
+	on_activation = {
+		owner = {
+			country_event = { id = rce_religion_mechanic_norse_events.2 days = 9 random = 20 }
+		}
+		remove_province_triggered_modifier = rce_religion_mechanic_norse_trigger_runes_event_province_triggered_modifier
+	}
+
+	on_deactivation = {
+		remove_province_triggered_modifier = rce_religion_mechanic_norse_trigger_runes_event_province_triggered_modifier
+	}
+}

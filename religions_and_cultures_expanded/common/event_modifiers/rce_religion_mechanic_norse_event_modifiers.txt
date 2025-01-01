@@ -13,3 +13,143 @@ rce_religion_mechanic_norse_modifier_era_mil = {
 	rce_monthly_religion_mechanic_norse_norn_mil_change = -0.1
 	religion = yes
 }
+
+rce_religion_mechanic_norse_modifier_prophecy_conquest = {
+	years_of_nationalism = -5
+	core_creation = -0.1
+	global_unrest = 2
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_prosperity = {
+	development_cost = -0.1
+	production_efficiency = 0.15
+	province_warscore_cost = 0.15
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_exploration = {
+	global_colonial_growth = 15
+	colonist_placement_chance = 0.15
+	trade_efficiency = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_success = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.2
+	manpower_recovery_speed = -0.15
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_fertility = {
+	manpower_recovery_speed = 0.1
+	global_trade_goods_size_modifier = 0.1
+	improve_relation_modifier = -0.15
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_adventures = {
+	naval_morale = 0.15
+	ship_durability = 0.1
+	stability_cost_modifier = 0.15
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_varangians = {
+	mercenary_discipline = 0.05
+	merc_maintenance_modifier = -0.2
+	global_regiment_recruit_speed = 0.2
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_progress = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+	global_tax_modifier = -0.15
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_stability = {
+	tolerance_own = 2
+	stability_cost_modifier = -0.15
+	idea_cost = 0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_subjugation = {
+	reduced_liberty_desire = 15
+	vassal_income = 0.15
+	development_cost = 0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_deceit = {
+	spy_offence = 0.15
+	ae_impact = -0.1
+	diplomatic_reputation = -1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_allthing = {
+	advisor_cost = -0.2
+	all_estate_influence_modifier = -0.1
+	production_efficiency = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_odins_blessing = {
+	all_estate_loyalty_equilibrium = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_njords_blessing = {
+	candidate_random_bonus = 2
+	reelection_cost = -0.15
+	all_estate_loyalty_equilibrium = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_asgards_beauty = {
+	build_cost = -0.15
+	build_time = -0.15
+	great_project_upgrade_cost = -0.15
+	development_cost = 0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_modifier_prophecy_gullveig = {
+	global_tax_modifier = -0.1
+	religion = yes
+}
+rce_religion_mechanic_norse_province_modifier_prophecy_gullveig = {
+	trade_goods_size_modifier = 0.15
+	local_gold_depletion_chance_modifier = -0.2
+	religion = yes
+}
+
+# Event Modifiers:
+rce_religion_mechanic_norse_omen_of_victory_modifier = {
+	land_morale = 0.1
+	religion = yes
+}
+rce_religion_mechanic_norse_omen_of_peace_modifier = {
+	diplomatic_reputation = 2
+	religion = yes
+}
+rce_religion_mechanic_norse_allfathers_blessing_modifier = {
+	land_morale = 0.1
+	diplomatic_reputation = 2
+	religion = yes
+}
+
+rce_religion_mechanic_norse_hunting_frenzy_modifier = {
+	global_tax_modifier = -0.1
+	religion = yes
+}
+
+rce_religion_mechanic_norse_hunter_recruitment_drive_modifier = {
+	mercenary_manpower = 0.25
+	merc_maintenance_modifier = -0.1
+	religion = yes
+}

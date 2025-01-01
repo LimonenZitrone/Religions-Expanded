@@ -743,6 +743,28 @@ guiTypes = {
 				position = { x = 104 y = 52 }
 				spriteType = "GFX_rce_religion_mechanic_norse_deity_effects_bg"
 			}
+			windowType = {
+				name = "button_window"
+				position = { x = 13 y = 66 }
+
+				guiButtonType = {
+					name = "rce_religion_mechanic_norse_consult_runes_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_norse_mechanic_consult_runes_button"
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "button_text"
+					position = { x = 5 y = 11 }
+					font = "Main_14"
+					format = center
+					maxWidth = 50
+					maxHeight = 20
+					fixedsize = yes
+					text = "rce_religion_mechanic_norse_consult_runes_button_text"
+					alwaystransparent = yes
+				}
+			}
 		}
 
 		######################################################

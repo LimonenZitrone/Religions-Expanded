@@ -33,9 +33,23 @@ rce_add_religion_mechanic_norse_norn_value = {
 		}
 		[[value]
 			change_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = $value$ }
+			hidden_effect = {
+				set_variable = { which = rce_religion_mechanic_norse_temp_norn_value value = $value$ }
+			}
 		]
 		[[which]
 			change_variable = { which = rce_religion_mechanic_norse_norn_$type$_value which = $which$ }
+			hidden_effect = {
+				set_variable = { which = rce_religion_mechanic_norse_temp_norn_value which = $which$ }
+			}
+		]
+		[[affect_others]
+			if = {
+				limit = {
+					always = $affect_others$
+				}
+				custom_tooltip = rce_add_religion_mechanic_norse_norn_value_tt_affect_others
+			}
 		]
 		hidden_effect = {
 			if = {
@@ -50,6 +64,46 @@ rce_add_religion_mechanic_norse_norn_value = {
 				}
 				set_variable = { which = rce_religion_mechanic_norse_norn_$type$_value value = 0 }
 			}
+			[[affect_others]
+				if = {
+					limit = {
+						always = $affect_others$
+					}
+					hidden_effect = {
+						set_country_flag = rce_add_religion_mechanic_norse_norn_value_affect_others_$type$
+						divide_variable = { which = rce_religion_mechanic_norse_temp_norn_value value = -5 }
+						if = {
+							limit = {
+								NOT = { has_country_flag = rce_add_religion_mechanic_norse_norn_value_affect_others_adm }
+							}
+							rce_add_religion_mechanic_norse_norn_value = {
+								type = adm
+								which = rce_religion_mechanic_norse_temp_norn_value
+							}
+						}
+						if = {
+							limit = {
+								NOT = { has_country_flag = rce_add_religion_mechanic_norse_norn_value_affect_others_dip }
+							}
+							rce_add_religion_mechanic_norse_norn_value = {
+								type = dip
+								which = rce_religion_mechanic_norse_temp_norn_value
+							}
+						}
+						if = {
+							limit = {
+								NOT = { has_country_flag = rce_add_religion_mechanic_norse_norn_value_affect_others_mil }
+							}
+							rce_add_religion_mechanic_norse_norn_value = {
+								type = mil
+								which = rce_religion_mechanic_norse_temp_norn_value
+							}
+						}
+						clr_country_flag = rce_add_religion_mechanic_norse_norn_value_affect_others_$type$
+					}
+				}
+			]
+			set_variable = { which = rce_religion_mechanic_norse_temp_norn_value value = 0 }
 		}
 	}
 }
@@ -299,6 +353,7 @@ rce_clear_all_religion_mechanic_norse_modifiers = {
 	set_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 0 }
 	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 }
 	set_variable = { which = rce_religion_mechanic_norse_next_era_year value = 0 }
+	clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy
 }
 
 rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = {

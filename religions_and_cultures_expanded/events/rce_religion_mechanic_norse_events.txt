@@ -90,3 +90,779 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = rce_religion_mechanic_norse_events.2
+	title = rce_religion_mechanic_norse_events.EVTNAME2
+	desc = rce_religion_mechanic_norse_events.EVTDESC2
+	picture = {
+		trigger = {
+			is_mod_active = "The Great Exhibition"
+		}
+		picture = RCE_RUNESTONES_TGE_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { is_mod_active = "The Great Exhibition" }
+		}
+		picture = RCE_RUNESTONES_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		has_country_flag = rce_religion_mechanic_will_get_norse_prophecy
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = {
+					modifier = {
+						factor = 1.1
+						any_owned_province = {
+							NOT = { is_core = ROOT }
+						}
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_conquest
+				}
+				10 = {
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_prosperity
+				}
+				10 = {
+					trigger = {
+						OR = {
+							num_of_colonists = 1
+							has_global_modifier_value = {
+								which = may_explore
+								value = 1
+							}
+						}
+					}
+					modifier = {
+						factor = 1.1
+						num_of_colonies = 3
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_exploration
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						any_active_trade_node = {
+							is_strongest_trade_power = ROOT
+						}
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_success
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						NOT = { manpower_percentage = 0.5 }
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_fertility
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						navy_size = 150
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_adventures
+				}
+				10 = {
+					trigger = {
+						OR = {
+							has_idea_group = mercenary_ideas
+							has_idea_group = plutocracy_ideas
+						}
+					}
+					modifier = {
+						factor = 1.1
+						num_of_mercenaries = 10
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_varangians
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						any_known_country = {
+							ROOT = {
+								OR = {
+									NOT = { adm_tech = PREV }
+									NOT = { dip_tech = PREV }
+									NOT = { mil_tech = PREV }
+								}
+							}
+						}
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_progress
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						NOT = { stability = 1 }
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_stability
+				}
+				10 = {
+					trigger = {
+						num_of_subjects = 1
+						any_subject_country = {
+							is_colonial_nation = no
+							is_subject_other_than_tributary_trigger = yes
+						}
+					}
+					modifier = {
+						factor = 1.1
+						num_of_non_tributary_subjects = 3
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_subjugation
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						OR = {
+							any_rival_country = {
+								is_neighbor_of = ROOT
+							}
+							any_neighbor_country = {
+								num_of_owned_provinces_with = {
+									value = 10
+									is_claim = ROOT
+								}
+							}
+						}
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_deceit
+				}
+				10 = {
+					modifier = {
+						factor = 1.1
+						NOT = { monthly_income = 40 }
+						employed_advisor = {
+							skill = 3
+							category = ADM
+						}
+						employed_advisor = {
+							skill = 3
+							category = DIP
+						}
+						employed_advisor = {
+							skill = 3
+							category = MIL
+						}
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_allthing
+				}
+				10 = {
+					trigger = {
+						government = monarchy
+						has_government_attribute = heir
+						OR = {
+							NOT = { ADM = 6 }
+							NOT = { DIP = 6 }
+							NOT = { MIL = 6 }
+						}
+					}
+					modifier = {
+						factor = 1.1
+						has_heir = no
+					}
+					modifier = {
+						factor = 1.1
+						rce_has_religion_mechanic_norse_deity = { deity = odin }
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_odins_blessing
+				}
+				10 = {
+					trigger = {
+						government = republic
+						has_government_attribute = has_term_election
+					}
+					modifier = {
+						factor = 1.1
+						NOT = { legitimacy_equivalent = 50 }
+					}
+					modifier = {
+						factor = 1.1
+						rce_has_religion_mechanic_norse_deity = { deity = njord }
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_njords_blessing
+				}
+				10 = {
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_asgards_beauty
+				}
+				10 = {
+					trigger = {
+						gold = 1
+					}
+					modifier = {
+						factor = 1.1
+						gold = 5
+					}
+					set_country_flag = rce_religion_mechanic_will_get_norse_prophecy_gullveig
+					random_owned_province = {
+						limit = {
+							trade_goods = gold
+						}
+						save_event_target_as = gullveig_province
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT1
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_conquest
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_conquest
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT2
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_prosperity
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_prosperity
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT3
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_exploration
+		}
+
+		create_explorer = { tradition = 50 }
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_exploration
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT4
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_success
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_success
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT5
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_fertility
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_fertility
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT6
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_adventures
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_adventures
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT7
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_varangians
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_varangians
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT8
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_progress
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_progress
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT9
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_stability
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_stability
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT10
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_subjugation
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_subjugation
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT11
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_deceit
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_deceit
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT12
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_allthing
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_allthing
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT13
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_odins_blessing
+		}
+
+		random_list = {
+			33 = {
+				trigger = {
+					NOT = { ADM = 6 }
+				}
+				change_adm = 1
+			}
+			33 = {
+				trigger = {
+					NOT = { DIP = 6 }
+				}
+				change_dip = 1
+			}
+			33 = {
+				trigger = {
+					NOT = { MIL = 6 }
+				}
+				change_mil = 1
+			}
+		}
+		if = {
+			limit = {
+				has_heir = no
+			}
+			define_heir = {
+				culture = ROOT
+				religion = ROOT
+				dynasty = ROOT
+				claim = 100
+				change_adm = 3
+				change_dip = 3
+				change_mil = 3
+				age = 15
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					heir_adm = 6
+					heir_dip = 6
+					heir_mil = 6
+				}
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { heir_adm = 6 }
+					}
+					change_heir_adm = 1
+				}
+				if = {
+					limit = {
+						NOT = { heir_dip = 6 }
+					}
+					change_heir_dip = 1
+				}
+				if = {
+					limit = {
+						NOT = { heir_mil = 6 }
+					}
+					change_heir_mil = 1
+				}
+			}
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_odins_blessing
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT14
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_njords_blessing
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_njords_blessing
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT15
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_asgards_beauty
+		}
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_asgards_beauty
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events2.EVTOPT16
+
+		trigger = {
+			has_country_flag = rce_religion_mechanic_will_get_norse_prophecy_gullveig
+		}
+		goto = gullveig_province
+
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_modifier_prophecy_gullveig
+			duration = 3650
+		}
+		event_target:gullveig_province = {
+			add_province_modifier = {
+				name = rce_religion_mechanic_norse_province_modifier_prophecy_gullveig
+				duration = 3650
+			}
+		}
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_conquest
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_prosperity
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_exploration
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_success
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_fertility
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_adventures
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_varangians
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_progress
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_stability
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_subjugation
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_deceit
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_allthing
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_odins_blessing
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_njords_blessing
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_asgards_beauty
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy_gullveig
+		clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_norse_events.3
+	title = rce_religion_mechanic_norse_events.EVTNAME3
+	desc = rce_religion_mechanic_norse_events.EVTDESC3
+	picture = {
+		trigger = {
+			is_mod_active = "The Great Exhibition"
+		}
+		picture = RCE_BATTLEFIELD_TGE_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { is_mod_active = "The Great Exhibition" }
+		}
+		picture = RCE_BATTLEFIELD_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		NOT = { has_country_modifier = rce_religion_mechanic_norse_omen_of_victory_modifier }
+		NOT = { has_country_modifier = rce_religion_mechanic_norse_omen_of_peace_modifier }
+		NOT = { has_country_modifier = rce_religion_mechanic_norse_allfathers_blessing_modifier }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events3.EVTOPT1
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = mil
+			value = 10
+			affect_others = yes
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_omen_of_victory_modifier
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events3.EVTOPT2
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = dip
+			value = 10
+			affect_others = yes
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_omen_of_peace_modifier
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events3.EVTOPT3
+
+		highlight = yes
+
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = odin }
+		}
+
+		ai_chance = { factor = 100 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = adm
+			value = 10
+			affect_others = yes
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_allfathers_blessing_modifier
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_norse_events.4
+	title = rce_religion_mechanic_norse_events.EVTNAME4
+	desc = rce_religion_mechanic_norse_events.EVTDESC4
+	picture = {
+		trigger = {
+			is_mod_active = "The Great Exhibition"
+		}
+		picture = RCE_INNER_TRIBAL_TEMPLE_TGE_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { is_mod_active = "The Great Exhibition" }
+		}
+		picture = RCE_INNER_TRIBAL_TEMPLE_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events4.EVTOPT1
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = adm
+			value = -10
+			affect_others = yes
+		}
+		change_government_reform_progress = -25
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events4.EVTOPT2
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = dip
+			value = -10
+			affect_others = yes
+		}
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_norse_events.5
+	title = rce_religion_mechanic_norse_events.EVTNAME5
+	desc = rce_religion_mechanic_norse_events.EVTDESC5
+	picture = {
+		trigger = {
+			is_mod_active = "The Great Exhibition"
+		}
+		picture = RCE_RIVER_TGE_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { is_mod_active = "The Great Exhibition" }
+		}
+		picture = RCE_RIVER_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		NOT = { has_country_modifier = rce_religion_mechanic_norse_hunting_frenzy_modifier }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events5.EVTOPT1
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = adm
+			value = 15
+			affect_others = yes
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events5.EVTOPT2
+
+		ai_chance = { factor = 0.5 }
+
+		add_years_of_income = 0.5
+		if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_norse_deity = { deity = freya } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_norse_hunting_frenzy_modifier
+				duration = 3650
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_norse_events.6
+	title = rce_religion_mechanic_norse_events.EVTNAME6
+	desc = rce_religion_mechanic_norse_events.EVTDESC6
+	picture = {
+		trigger = {
+			is_mod_active = "The Great Exhibition"
+		}
+		picture = RCE_FOREST_TGE_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { is_mod_active = "The Great Exhibition" }
+		}
+		picture = RCE_FOREST_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = norse }
+		NOT = { has_country_modifier = rce_religion_mechanic_norse_hunter_recruitment_drive_modifier }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events6.EVTOPT1
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_norse_norn_value = {
+			type = mil
+			value = 15
+			affect_others = yes
+		}
+		add_stability = -1
+	}
+
+	option = {
+		name = rce_religion_mechanic_norse_events6.EVTOPT2
+
+		ai_chance = { factor = 0.5 }
+
+		add_years_of_income = -0.33
+		add_country_modifier = {
+			name = rce_religion_mechanic_norse_hunter_recruitment_drive_modifier
+			duration = 3650
+		}
+	}
+}
