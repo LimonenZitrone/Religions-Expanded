@@ -1,0 +1,341 @@
+country_decisions = {
+	rce_religion_mechanic_norse_syncretize_with_christians_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+			NOT = { has_country_flag = rce_religion_mechanic_norse_unlocked_jesus }
+			any_owned_province = {
+				religion_group = christian
+			}
+		}
+		provinces_to_highlight = {
+			has_discovered = ROOT
+			religion_group = christian
+			OR = {
+				NOT = { owned_by = ROOT }
+				unrest = 1
+				NOT = { has_tax_building_trigger = yes }
+			}
+			ROOT = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 10
+						religion_group = christian
+						NOT = { unrest = 1 }
+						has_tax_building_trigger = yes
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 2
+			adm_power_cost = 50
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_norse_syncretize_heathen_tolerance_tt
+				has_global_modifier_value = {
+					which = tolerance_heathen
+					value = 0
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				religion_group = christian
+				NOT = { unrest = 1 }
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_stability = -1
+			adm_power_cost = 50
+			set_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+			custom_tooltip = rce_religion_mechanic_norse_syncretize_with_christians_decision_tt
+		}
+	}
+
+	rce_religion_mechanic_norse_syncretize_with_tengri_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+			NOT = { has_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir }
+			any_owned_province = {
+			#	OR = {
+					religion = tengri_pagan_reformed
+			#		religion = suomenusko
+			#	}
+			}
+		}
+		provinces_to_highlight = {
+			has_discovered = ROOT
+		#	OR = {
+				religion = tengri_pagan_reformed
+		#		religion = suomenusko
+		#	}
+			OR = {
+				NOT = { owned_by = ROOT }
+				unrest = 1
+				NOT = { has_tax_building_trigger = yes }
+			}
+			ROOT = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+					#	OR = {
+							religion = tengri_pagan_reformed
+					#		religion = suomenusko
+					#	}
+						NOT = { unrest = 1 }
+						has_tax_building_trigger = yes
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 2
+			adm_power_cost = 50
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_norse_syncretize_heretic_tolerance_tt
+				has_global_modifier_value = {
+					which = tolerance_heretic
+					value = 1
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+			#	OR = {
+					religion = tengri_pagan_reformed
+			#		religion = suomenusko
+			#	}
+				NOT = { unrest = 1 }
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_stability = -1
+			adm_power_cost = 50
+			set_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+			custom_tooltip = rce_religion_mechanic_norse_syncretize_with_tengri_decision_tt
+		}
+	}
+
+	rce_religion_mechanic_norse_syncretize_with_totemist_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+			NOT = { has_country_flag = rce_religion_mechanic_norse_unlocked_fenrir }
+			any_owned_province = {
+				OR = {
+					religion = totemism
+					religion = shamanism
+					religion = dreamtime
+					religion = animism
+				}
+			}
+		}
+		provinces_to_highlight = {
+			has_discovered = ROOT
+			OR = {
+				religion = totemism
+				religion = shamanism
+				religion = dreamtime
+				religion = animism
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				unrest = 1
+				NOT = { has_tax_building_trigger = yes }
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						OR = {
+							religion = totemism
+							religion = shamanism
+							religion = dreamtime
+							religion = animism
+						}
+						NOT = { unrest = 1 }
+						has_tax_building_trigger = yes
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 2
+			adm_power_cost = 50
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_norse_syncretize_heretic_tolerance_tt
+				has_global_modifier_value = {
+					which = tolerance_heretic
+					value = 1
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					religion = totemism
+					religion = shamanism
+					religion = dreamtime
+					religion = animism
+				}
+				NOT = { unrest = 1 }
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_stability = -1
+			adm_power_cost = 50
+			set_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+			custom_tooltip = rce_religion_mechanic_norse_syncretize_with_totemist_decision_tt
+		}
+	}
+
+	rce_religion_mechanic_norse_syncretize_with_nahuatl_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+			NOT = { has_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr }
+			any_owned_province = {
+				OR = {
+					religion = nahuatl
+					religion = inti
+					religion = mesoamerican_religion
+				}
+			}
+		}
+		provinces_to_highlight = {
+			has_discovered = ROOT
+			OR = {
+				religion = nahuatl
+				religion = inti
+				religion = mesoamerican_religion
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				unrest = 1
+				NOT = { has_tax_building_trigger = yes }
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						OR = {
+							religion = nahuatl
+							religion = inti
+							religion = mesoamerican_religion
+						}
+						NOT = { unrest = 1 }
+						has_tax_building_trigger = yes
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 2
+			adm_power_cost = 50
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_norse_syncretize_heretic_tolerance_tt
+				has_global_modifier_value = {
+					which = tolerance_heretic
+					value = 1
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					religion = nahuatl
+					religion = inti
+					religion = mesoamerican_religion
+				}
+				NOT = { unrest = 1 }
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_stability = -1
+			adm_power_cost = 50
+			set_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+			custom_tooltip = rce_religion_mechanic_norse_syncretize_with_nahuatl_decision_tt
+		}
+	}
+
+	rce_religion_mechanic_norse_syncretize_with_vidilist_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+			NOT = { has_country_flag = rce_religion_mechanic_norse_unlocked_freyr }
+			any_owned_province = {
+			#	OR = {
+					religion = vidilist
+			#		religion = druidic
+			#		religion = slavic
+			#		religion = polynesian
+			#	}
+			}
+		}
+		provinces_to_highlight = {
+			has_discovered = ROOT
+		#	OR = {
+				religion = vidilist
+		#		religion = druidic
+		#		religion = slavic
+		#		religion = polynesian
+		#	}
+			OR = {
+				NOT = { owned_by = ROOT }
+				unrest = 1
+				NOT = { has_tax_building_trigger = yes }
+			}
+			ROOT = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 2
+					#	OR = {
+							religion = vidilist
+					#		religion = druidic
+					#		religion = slavic
+					#		religion = polynesian
+					#	}
+						NOT = { unrest = 1 }
+						has_tax_building_trigger = yes
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 2
+			adm_power_cost = 50
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_norse_syncretize_heretic_tolerance_tt
+				has_global_modifier_value = {
+					which = tolerance_heretic
+					value = 1
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 2
+			#	OR = {
+					religion = vidilist
+			#		religion = druidic
+			#		religion = slavic
+			#		religion = polynesian
+			#	}
+				NOT = { unrest = 1 }
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_stability = -1
+			adm_power_cost = 50
+			set_country_flag = rce_religion_mechanic_norse_unlocked_freyr
+			custom_tooltip = rce_religion_mechanic_norse_syncretize_with_vidilist_decision_tt
+		}
+	}
+
+	# AI Decisions Below
+}

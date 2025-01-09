@@ -1096,3 +1096,638 @@ baldr_balance = {
 		factor = 1
 	}
 }
+
+# jesus
+jesus = {
+	# Base Modifier:
+	tolerance_own = 2
+	# Era Specific Modifier:
+	tolerance_heathen = 3
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jesus_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+		}
+	}
+	sprite = 18
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jesus_adm = {
+	# Base Modifier:
+	tolerance_own = 2
+	# Era Specific Modifier:
+	country_admin_power = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jesus_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+		}
+	}
+	sprite = 18
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jesus_dip = {
+	# Base Modifier:
+	tolerance_own = 2
+	# Era Specific Modifier:
+	country_diplomatic_power = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jesus_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+		}
+	}
+	sprite = 18
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jesus_mil = {
+	# Base Modifier:
+	tolerance_own = 2
+	# Era Specific Modifier:
+	country_military_power = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jesus_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+		}
+	}
+	sprite = 18
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jesus_balance = {
+	# Base Modifier:
+	tolerance_own = 4
+	# Era Specific Modifier:
+	tolerance_heathen = 2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jesus_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+		}
+	}
+	sprite = 18
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# sleipnir
+sleipnir = {
+	# Base Modifier:
+	cavalry_power = 0.15
+	# Era Specific Modifier:
+	cavalry_flanking = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_sleipnir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+		}
+	}
+	sprite = 19
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+sleipnir_adm = {
+	# Base Modifier:
+	cavalry_power = 0.15
+	# Era Specific Modifier:
+	cavalry_cost = -0.25
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_sleipnir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+		}
+	}
+	sprite = 19
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+sleipnir_dip = {
+	# Base Modifier:
+	cavalry_power = 0.15
+	# Era Specific Modifier:
+	movement_speed = 0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_sleipnir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+		}
+	}
+	sprite = 19
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+sleipnir_mil = {
+	# Base Modifier:
+	cavalry_power = 0.25
+	# Era Specific Modifier:
+	fire_damage_received = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_sleipnir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+		}
+	}
+	sprite = 19
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+sleipnir_balance = {
+	# Base Modifier:
+	cavalry_power = 0.15
+	# Era Specific Modifier:
+	cavalry_flanking = 0.75
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_sleipnir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+		}
+	}
+	sprite = 19
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# fenrir
+fenrir = {
+	# Base Modifier:
+	fire_damage = 0.1
+	# Era Specific Modifier:
+	infantry_cost = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_fenrir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+		}
+	}
+	sprite = 20
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+fenrir_adm = {
+	# Base Modifier:
+	fire_damage = 0.1
+	# Era Specific Modifier:
+	artillery_levels_available_vs_fort = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_fenrir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+		}
+	}
+	sprite = 20
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+fenrir_dip = {
+	# Base Modifier:
+	fire_damage = 0.1
+	# Era Specific Modifier:
+	hostile_attrition = 1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_fenrir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+		}
+	}
+	sprite = 20
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+fenrir_mil = {
+	# Base Modifier:
+	fire_damage = 0.15
+	# Era Specific Modifier:
+	infantry_power = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_fenrir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+		}
+	}
+	sprite = 20
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+fenrir_balance = {
+	# Base Modifier:
+	fire_damage = 0.1
+	# Era Specific Modifier:
+	infantry_cost = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_fenrir_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+		}
+	}
+	sprite = 20
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# jormungandr
+jormungandr = {
+	# Base Modifier:
+	stability_cost_modifier = -0.2
+	# Era Specific Modifier:
+	development_cost = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jormungandr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+		}
+	}
+	sprite = 21
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jormungandr_adm = {
+	# Base Modifier:
+	stability_cost_modifier = -0.3
+	# Era Specific Modifier:
+	global_autonomy = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jormungandr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+		}
+	}
+	sprite = 21
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jormungandr_dip = {
+	# Base Modifier:
+	stability_cost_modifier = -0.2
+	# Era Specific Modifier:
+	centralize_state_cost = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jormungandr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+		}
+	}
+	sprite = 21
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jormungandr_mil = {
+	# Base Modifier:
+	stability_cost_modifier = -0.2
+	# Era Specific Modifier:
+	global_regiment_recruit_speed = -0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jormungandr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+		}
+	}
+	sprite = 21
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+jormungandr_balance = {
+	# Base Modifier:
+	stability_cost_modifier = -0.2
+	# Era Specific Modifier:
+	development_cost = -0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_jormungandr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+		}
+	}
+	sprite = 21
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# freyr
+freyr = {
+	# Base Modifier:
+	max_attrition = 1
+	# Era Specific Modifier:
+	movement_speed = 0.15
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = all }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_freyr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_freyr
+		}
+	}
+	sprite = 22
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freyr_adm = {
+	# Base Modifier:
+	max_attrition = 1
+	# Era Specific Modifier:
+	production_efficiency = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = adm }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_freyr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_freyr
+		}
+	}
+	sprite = 22
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freyr_dip = {
+	# Base Modifier:
+	max_attrition = 2
+	# Era Specific Modifier:
+	trade_efficiency = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = dip }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_freyr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_freyr
+		}
+	}
+	sprite = 22
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freyr_mil = {
+	# Base Modifier:
+	max_attrition = 1
+	# Era Specific Modifier:
+	fort_maintenance_modifier = -0.2
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = mil }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_freyr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_freyr
+		}
+	}
+	sprite = 22
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+freyr_balance = {
+	# Base Modifier:
+	max_attrition = 1
+	# Era Specific Modifier:
+	movement_speed = 0.1
+
+	potential = {
+		religion = norse_pagan_reformed
+		rce_has_religion_mechanic_norse_era = { era = balance }
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_norse_unlocked_freyr_tt
+			has_country_flag = rce_religion_mechanic_norse_unlocked_freyr
+		}
+	}
+	sprite = 22
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

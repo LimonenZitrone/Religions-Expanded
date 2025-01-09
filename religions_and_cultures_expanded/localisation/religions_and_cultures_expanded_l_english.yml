@@ -47,6 +47,17 @@
  hindu_events.1.j: "I follow Kali."
  hindu_events.1.k: "I follow Hanuman."
 
+ norse_events.1.g: "May the knowledge of Kvasir guide us."
+ norse_events.1.h: "May Loki guide us."
+ norse_events.1.i: "May Heimdall watch over us."
+ norse_events.1.j: "May the wisdom of Baldr lead us to a bright future."
+ norse_events.1.k: "May Jesus guide us."
+ norse_events.1.l: "May Sleipnir guide us."
+ norse_events.1.m: "May Fenrir guide us."
+ norse_events.1.n: "May Jormungandr guide us."
+ norse_events.1.o: "May Freyr bring us prosperity."
+
+
  # Events:
  rce_events.EVTNAME1: "Console: Change Religion"
  rce_events.EVTDESC1: "Pick which new or altered religion you want to convert to."

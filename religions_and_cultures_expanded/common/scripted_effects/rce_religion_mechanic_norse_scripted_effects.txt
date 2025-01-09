@@ -148,50 +148,59 @@ rce_set_religion_mechanic_norse_era = {
 }
 
 rce_set_religion_mechanic_norse_correct_era_deity_for_selected_deity = {
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = odin }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = freya }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = tor }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = tyr }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = njord }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = snotra }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = kvasir }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = loki }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = heimdall }
-	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = baldr }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = odin }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = freya }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = tor }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = tyr }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = njord }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = snotra }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = kvasir }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = loki }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = heimdall }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = baldr }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = jesus }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = sleipnir }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = fenrir }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = jormungandr }
+	rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = { deity = freyr }
+}
+
+rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity_if_active = {
+	if = {
+		limit = {
+			rce_has_religion_mechanic_norse_deity = { deity = $deity$ }
+		}
+		rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = { deity = $deity$ }
+	}
 }
 
 rce_set_religion_mechanic_norse_correct_era_deity_for_specific_deity = {
 	if = {
 		limit = {
-			rce_has_religion_mechanic_norse_deity = { deity = $deity$ }
+			rce_has_religion_mechanic_norse_era = { era = adm }
 		}
-		if = {
-			limit = {
-				rce_has_religion_mechanic_norse_era = { era = adm }
-			}
-			change_personal_deity = $deity$_adm
+		change_personal_deity = $deity$_adm
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_norse_era = { era = dip }
 		}
-		else_if = {
-			limit = {
-				rce_has_religion_mechanic_norse_era = { era = dip }
-			}
-			change_personal_deity = $deity$_dip
+		change_personal_deity = $deity$_dip
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_norse_era = { era = mil }
 		}
-		else_if = {
-			limit = {
-				rce_has_religion_mechanic_norse_era = { era = mil }
-			}
-			change_personal_deity = $deity$_mil
+		change_personal_deity = $deity$_mil
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_norse_era = { era = balance }
 		}
-		else_if = {
-			limit = {
-				rce_has_religion_mechanic_norse_era = { era = balance }
-			}
-			change_personal_deity = $deity$_balance
-		}
-		else = {
-			change_personal_deity = $deity$
-		}
+		change_personal_deity = $deity$_balance
+	}
+	else = {
+		change_personal_deity = $deity$
 	}
 }
 
@@ -354,6 +363,11 @@ rce_clear_all_religion_mechanic_norse_modifiers = {
 	set_variable = { which = rce_monthly_religion_mechanic_norse_norn_mil_value value = 0 }
 	set_variable = { which = rce_religion_mechanic_norse_next_era_year value = 0 }
 	clr_country_flag = rce_religion_mechanic_will_get_norse_prophecy
+	clr_country_flag = rce_religion_mechanic_norse_unlocked_jesus
+	clr_country_flag = rce_religion_mechanic_norse_unlocked_sleipnir
+	clr_country_flag = rce_religion_mechanic_norse_unlocked_fenrir
+	clr_country_flag = rce_religion_mechanic_norse_unlocked_jormungandr
+	clr_country_flag = rce_religion_mechanic_norse_unlocked_freyr
 }
 
 rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = {

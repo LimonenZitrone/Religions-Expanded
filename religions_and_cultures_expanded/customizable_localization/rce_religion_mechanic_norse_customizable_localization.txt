@@ -307,6 +307,36 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = jesus }
+		}
+		localisation_key = jesus
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = sleipnir }
+		}
+		localisation_key = sleipnir
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = fenrir }
+		}
+		localisation_key = fenrir
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = jormungandr }
+		}
+		localisation_key = jormungandr
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = freyr }
+		}
+		localisation_key = freyr
+	}
+	text = {
+		trigger = {
 			always = yes
 		}
 		localisation_key = "-"
