@@ -342,3 +342,207 @@ defined_text = {
 		localisation_key = "-"
 	}
 }
+
+defined_text = {
+	name = RceGetReligionMechanicNorseCurrentDeityNameLong
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = odin }
+		}
+		localisation_key = odin
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = freya }
+		}
+		localisation_key = freya
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = tor }
+		}
+		localisation_key = tor
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = tyr }
+		}
+		localisation_key = tyr
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = njord }
+		}
+		localisation_key = njord
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = snotra }
+		}
+		localisation_key = snotra
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = kvasir }
+		}
+		localisation_key = kvasir
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = loki }
+		}
+		localisation_key = loki
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = heimdall }
+		}
+		localisation_key = heimdall
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = baldr }
+		}
+		localisation_key = baldr
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = jesus }
+		}
+		localisation_key = jesus
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = sleipnir }
+		}
+		localisation_key = sleipnir
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = fenrir }
+		}
+		localisation_key = fenrir
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = jormungandr }
+		}
+		localisation_key = jormungandr
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = freyr }
+		}
+		localisation_key = freyr
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = RV_NO_DEITY
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicNorseCurrentDeityDesc
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = odin }
+		}
+		localisation_key = odin_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = freya }
+		}
+		localisation_key = freya_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = tor }
+		}
+		localisation_key = tor_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = tyr }
+		}
+		localisation_key = tyr_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = njord }
+		}
+		localisation_key = njord_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = snotra }
+		}
+		localisation_key = snotra_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = kvasir }
+		}
+		localisation_key = kvasir_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = loki }
+		}
+		localisation_key = loki_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = heimdall }
+		}
+		localisation_key = heimdall_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = baldr }
+		}
+		localisation_key = baldr_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = jesus }
+		}
+		localisation_key = jesus_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = sleipnir }
+		}
+		localisation_key = sleipnir_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = fenrir }
+		}
+		localisation_key = fenrir_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = jormungandr }
+		}
+		localisation_key = jormungandr_desc
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_norse_deity = { deity = freyr }
+		}
+		localisation_key = freyr_desc
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = RV_NO_DEITY_DESC
+	}
+}

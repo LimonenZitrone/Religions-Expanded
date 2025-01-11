@@ -114,6 +114,14 @@ country_event = {
 	}
 
 	option = {
+		name = norse_pagan_reformed
+
+		ai_chance = { factor = 0 }
+
+		change_religion = norse_pagan_reformed
+	}
+
+	option = {
 		name = jainism
 
 		highlight = yes
@@ -199,6 +207,7 @@ country_event = {
 			rce_uses_religion_mechanic = { mechanic = sylvan_affinity }
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
+			rce_uses_religion_mechanic = { mechanic = norse }
 		}
 	}
 
@@ -219,6 +228,9 @@ country_event = {
 		rce_add_religion_mechanic_sylvan_affinity_value = { value = 100 }
 		rce_add_religion_mechanic_nestorian_patriarchy_value = { value = 100 }
 		rce_add_religion_mechanic_manichaeism_purity_value = { value = 100 }
+		rce_add_religion_mechanic_norse_norn_value = { type = adm value = 25 }
+		rce_add_religion_mechanic_norse_norn_value = { type = dip value = 25 }
+		rce_add_religion_mechanic_norse_norn_value = { type = mil value = 25 }
 	}
 
 	option = {
