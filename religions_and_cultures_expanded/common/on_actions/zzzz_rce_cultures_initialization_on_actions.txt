@@ -165,5 +165,649 @@ on_startup = {
 			}
 			change_culture = manichaean_culture
 		}
+		# norse_gael_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_norse_gael_culture_is_starting_province = yes
+				NOT = { culture = norse_gael_culture }
+			}
+			change_culture = norse_gael_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_farsi_culture_is_starting_country = yes
+				NOT = { primary_culture = norse_gael_culture }
+			}
+			change_primary_culture = norse_gael_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = norse_gael_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = norse_gael_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = norse_gael_culture
+				}
+			}
+		}
+		# cambrian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_cambrian_culture_is_starting_province = yes
+				NOT = { culture = cambrian_culture }
+			}
+			change_culture = cambrian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_farsi_culture_is_starting_country = yes
+				NOT = { primary_culture = cambrian_culture }
+			}
+			change_primary_culture = cambrian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = cambrian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = cambrian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = cambrian_culture
+				}
+			}
+		}
+		# anglo_irish_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_anglo_irish_culture_is_starting_province = yes
+				NOT = { culture = anglo_irish_culture }
+			}
+			change_culture = anglo_irish_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_anglo_irish_culture_is_starting_country = yes
+				NOT = { primary_culture = anglo_irish_culture }
+			}
+			change_primary_culture = anglo_irish_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = anglo_irish_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = anglo_irish_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = anglo_irish_culture
+				}
+			}
+		}
+		# northumbrian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_northumbrian_culture_is_starting_province = yes
+				NOT = { culture = northumbrian_culture }
+			}
+			change_culture = northumbrian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_northumbrian_culture_is_starting_country = yes
+				NOT = { primary_culture = northumbrian_culture }
+			}
+			change_primary_culture = northumbrian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = northumbrian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = northumbrian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = northumbrian_culture
+				}
+			}
+		}
+		# atlantique_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_atlantique_culture_is_starting_province = yes
+				NOT = { culture = atlantique_culture }
+			}
+			change_culture = atlantique_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_atlantique_culture_is_starting_country = yes
+				NOT = { primary_culture = atlantique_culture }
+			}
+			change_primary_culture = atlantique_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = atlantique_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = atlantique_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = atlantique_culture
+				}
+			}
+		}
+		BRI = {
+			add_accepted_culture = atlantique_culture
+		}
+		# picard_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_picard_culture_is_starting_province = yes
+				NOT = { culture = picard_culture }
+			}
+			change_culture = picard_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_picard_culture_is_starting_country = yes
+				NOT = { primary_culture = picard_culture }
+			}
+			change_primary_culture = picard_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = picard_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = picard_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = picard_culture
+				}
+			}
+		}
+		# provencal_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_provencal_culture_is_starting_province = yes
+				NOT = { culture = provencal_culture }
+			}
+			change_culture = provencal_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_provencal_culture_is_starting_country = yes
+				NOT = { primary_culture = provencal_culture }
+			}
+			change_primary_culture = provencal_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = provencal_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = provencal_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = provencal_culture
+				}
+			}
+		}
+		BUR = {
+			add_accepted_culture = provencal_culture
+		}
+		# arpitan_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_arpitan_culture_is_starting_province = yes
+				NOT = { culture = arpitan_culture }
+			}
+			change_culture = arpitan_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_arpitan_culture_is_starting_country = yes
+				NOT = { primary_culture = arpitan_culture }
+			}
+			change_primary_culture = arpitan_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = arpitan_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = arpitan_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = arpitan_culture
+				}
+			}
+		}
+		# auvergnat_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_auvergnat_culture_is_starting_province = yes
+				NOT = { culture = auvergnat_culture }
+			}
+			change_culture = auvergnat_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_auvergnat_culture_is_starting_country = yes
+				NOT = { primary_culture = auvergnat_culture }
+			}
+			change_primary_culture = auvergnat_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = auvergnat_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = auvergnat_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = auvergnat_culture
+				}
+			}
+		}
+		# lorrain_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_lorrain_culture_is_starting_province = yes
+				NOT = { culture = lorrain_culture }
+			}
+			change_culture = lorrain_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_lorrain_culture_is_starting_country = yes
+				NOT = { primary_culture = lorrain_culture }
+			}
+			change_primary_culture = lorrain_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = lorrain_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = lorrain_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = lorrain_culture
+				}
+			}
+		}
+		PRO = {
+			add_accepted_culture = lorrain_culture
+		}
+		# markish_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_markish_culture_is_starting_province = yes
+				NOT = { culture = markish_culture }
+			}
+			change_culture = markish_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_markish_culture_is_starting_country = yes
+				NOT = { primary_culture = markish_culture }
+			}
+			change_primary_culture = markish_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = markish_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = markish_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = markish_culture
+				}
+			}
+		}
+		MAG = {
+			add_accepted_culture = markish_culture
+		}
+		# holsatian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_holsatian_culture_is_starting_province = yes
+				NOT = { culture = holsatian_culture }
+			}
+			change_culture = holsatian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_holsatian_culture_is_starting_country = yes
+				NOT = { primary_culture = holsatian_culture }
+			}
+			change_primary_culture = holsatian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = holsatian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = holsatian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = holsatian_culture
+				}
+			}
+		}
+		HSA = {
+			add_accepted_culture = holsatian_culture
+		}
+		# south_austrian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_south_austrian_culture_is_starting_province = yes
+				NOT = { culture = south_austrian_culture }
+			}
+			change_culture = south_austrian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_south_austrian_culture_is_starting_country = yes
+				NOT = { primary_culture = south_austrian_culture }
+			}
+			change_primary_culture = south_austrian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = south_austrian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = south_austrian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = south_austrian_culture
+				}
+			}
+		}
+		# west_franconian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_west_franconian_culture_is_starting_province = yes
+				NOT = { culture = west_franconian_culture }
+			}
+			change_culture = west_franconian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_west_franconian_culture_is_starting_country = yes
+				NOT = { primary_culture = west_franconian_culture }
+			}
+			change_primary_culture = west_franconian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = west_franconian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = west_franconian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = west_franconian_culture
+				}
+			}
+		}
+		# central_franconian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_central_franconian_culture_is_starting_province = yes
+				NOT = { culture = central_franconian_culture }
+			}
+			change_culture = central_franconian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_central_franconian_culture_is_starting_country = yes
+				NOT = { primary_culture = central_franconian_culture }
+			}
+			change_primary_culture = central_franconian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = central_franconian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = central_franconian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = central_franconian_culture
+				}
+			}
+		}
+		# moravian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_moravian_culture_is_starting_province = yes
+				NOT = { culture = moravian_culture }
+			}
+			change_culture = moravian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_moravian_culture_is_starting_country = yes
+				NOT = { primary_culture = moravian_culture }
+			}
+			change_primary_culture = moravian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = moravian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = moravian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = moravian_culture
+				}
+			}
+		}
+		# kashubian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_kashubian_culture_is_starting_province = yes
+				NOT = { culture = kashubian_culture }
+			}
+			change_culture = kashubian_culture
+		}
+		# ingrian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_kashubian_culture_is_starting_province = yes
+				NOT = { culture = ingrian_culture }
+			}
+			change_culture = ingrian_culture
+		}
+		# karelian
+		every_province = {
+			limit = {
+				rce_culture_initialization_karelian_is_starting_province = yes
+				NOT = { culture = karelian }
+			}
+			change_culture = karelian
+		}
+		# curonian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_curonian_culture_is_starting_province = yes
+				NOT = { culture = curonian_culture }
+			}
+			change_culture = curonian_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_curonian_culture_is_starting_country = yes
+				NOT = { primary_culture = curonian_culture }
+			}
+			change_primary_culture = curonian_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = curonian_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = curonian_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = curonian_culture
+				}
+			}
+		}
+		# yotvingian_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_yotvingian_culture_is_starting_province = yes
+				NOT = { culture = yotvingian_culture }
+			}
+			change_culture = yotvingian_culture
+		}
+		# pomory_culture
+		every_province = {
+			limit = {
+				rce_culture_initialization_pomory_culture_is_starting_province = yes
+				NOT = { culture = pomory_culture }
+			}
+			change_culture = pomory_culture
+		}
+		every_country_including_inactive = {
+			limit = {
+				rce_culture_initialization_pomory_culture_is_starting_country = yes
+				NOT = { primary_culture = pomory_culture }
+			}
+			change_primary_culture = pomory_culture
+			if = {
+				limit = {
+					exists = yes
+				}
+				set_ruler_culture = pomory_culture
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = pomory_culture
+				}
+				if = {
+					limit = {
+						has_consort = yes
+					}
+					set_consort_culture = pomory_culture
+				}
+			}
+		}
+		NOV = {
+			add_accepted_culture = pomory_culture
+		}
 	}
 }
