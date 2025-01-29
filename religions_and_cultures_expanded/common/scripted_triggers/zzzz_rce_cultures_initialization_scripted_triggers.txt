@@ -162,7 +162,7 @@ rce_culture_initialization_arpitan_culture_is_starting_country = {
 rce_culture_initialization_auvergnat_culture_is_starting_province = {
 	OR = {
 		area = massif_central_area
-		province_id = 4367
+		province_id = 4387
 	}
 }
 rce_culture_initialization_auvergnat_culture_is_starting_country = {
