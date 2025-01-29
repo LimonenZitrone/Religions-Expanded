@@ -1782,16 +1782,11 @@ eastern = {
 		on_convert = {
 			change_religion = tibetan_buddhism
 			rce_export_monthly_religion_mechanic_four_tenets_system_value_gain = yes
-			if = {
-				limit = {
-					NOT = { has_country_flag = rce_initial_conversion }
-				}
-				add_prestige = -100
-				add_stability = -1
-				add_country_modifier = {
-					name = "conversion_zeal"
-					duration = 3650
-				}
+			add_prestige = -100
+			add_stability = -1
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
 			}
 		}
 

@@ -438,18 +438,110 @@ germanic = {
 	# New Cultures
 	markish_culture = {
 		primary = BRA
+		male_names = {
+			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor
+			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang
+			Andreas Bruno Burkhard Günther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Peter Ralph Reginald Sigehelm Wulfhelm Wulfhere Alfred
+			Alwin Adémar Alwin Adolf Albert Albrecht Arnold Baltasar
+			Benedict Bernd Bernard Bernhard Bertold Bertram Bertrand Burchard
+			Claus Nicholas Cobbo Cord Dietmar Diederik Ekkehard Ekbert Engelbert Engelhard
+			Erik Albert Ewald Frederick Gerard Gebhard Giselmar Gottschalk Günther Hans
+			Heideke Herbert Hermann Hinrik Jacob Jaspar Caspar Jochim Joakim Johann Kersten
+			Christian Laurentz Lambert Liawizo Liemar Liudger Otto Ludolf Ludwig
+			Louis Mathias Matthew Meinwerk Merten Martin Michael Norbert Ordulf
+			Peter Philip Renard Reinmar Roger Rudolf Ralph Sigbert Sigisbert
+			Sigfrid Siegfried Sigward Sigurd Simon Steffen Thomas Waldemar
+			Werner Victor Werneke Weybrecht Wichbert Wichmann Wigebert Wolter Walter Wulff Ulf
+		}
+		female_names = {
+			Amalia Bianka Eleonora
+			Agatha Balthild
+			Christina Cuthburg
+			Cynehild Cyneswith Cynethryth Eadburg Edith
+			Gunhilda Gunhild Helga Judith
+			Maud Matilda Sigri
+			Wulfhild
+			Addila Adela Adelheid Alof Agnes Anna Athela Beatrix Beatrice Bertha Bertha
+			Bertrada Bia Beatrice Bisina Bithild Brigida Brigid Elisabeth
+			Elisabeth Enda Gertrud Gisela
+			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard
+			Judith Katharina
+			Margarete Mathilde Matilda Mechthild Reginlint
+			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke
+			Wiltrud Wulfhild Ulfhild
+		}
+		dynasty_names = {
+			"von Schwarzburg" "von Schönburg" "von Schlotheim" "von Salza" "von Kospoth"
+			"von Knuth" "von Wettin" "Askanier" "von Hohenzollern" "von Erffa" "von Bodungen" "von Eckersberg" "von Brandenstein" "von Pappenheim" "von Wiehe"
+			"von Westernhagen" "von Jena" "von Trützschler" "von Plessen" "von Haugwitz" "von Kanitz" "von Falkenhayn" "von Thüna"
+			"von Thüringen" "von Nostitz" "von Bieberstein" "von Meerheimb" "von Freiberg" "von Neitschütz" "von Minckwitz" "von Arnswaldt" "von Auerswald" "aus dem Winckel"
+			"von Beichlingen" "von Bendeleben" "von Beneckendorff"  "von Berbisdorf" "von Bissingen" "von Bock" "von Bomsdorff" "von Bose" "von Breitenbach"
+			"von Breitenbuch" "von Brühl" "von Bünau" "von Hoym" "Holtzendorff" "von Hohenthal" "von Heynitz" "von Hessler" "von Helldorff" "von Harling" "von Görschen" "von Glaubitz"
+			"von Gfug" "von Gersdorff" "von Germar" "von Fritsch" "von Friesen" "von Flanss" "von Etzdorff" "von Erdmannsdorff" "von Einsiedel" "von Dyhrn" "von Dieskau" "von Creytzen" "von Carlowitz" "von Maltitz" "von Mansfeld" "von Miltitz" "von Mücheln" "von Pflugk" "von Pölnitz" "von Ponickau" "von Rackel"
+			"von Raumer" "von Rechenberg" "von Rex" "Sack" "von Scheidingen" "von Schleinitzstrasse" "von Schönberg" "Senfft von Pilsach" "von Stolberg" "von Kannewurf" "Karras" "von Keller" "von Kirchbach" "von Sternberg" "von Leisnig"
+			"von Liebenau" "von Loeben" "von Logau" "von Lüttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" Wöhrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
+		}
 	}
 	holsatian_culture = {
 		primary = SHL
+		male_names = {
+			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm
+			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried Günther Helmut Herbert Ignatz Isidor
+			Konstantin Kuno Markus Martin Oskar Reinhard Silvester Stefan Waldemar Jakob
+		}
+		female_names = {
+			Amanda Beate Debora Sara Anne Saga Sibyl Joanna Joanne Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie
+		}
 	}
 	south_austrian_culture = {
 		primary = TIR
+		male_names = {
+			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand
+			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph
+			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard
+			Raphael Karl Kajetan Clemens
+		}
+		female_names = {
+			Hiltraud Friede Juliane
+		}
+		dynasty_names = {
+			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
+			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
+			"von Württemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
+			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
+			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
+			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
+			"von Knöringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
+			"von Parsberg" "Pfäffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
+			"von Reitzenstein" "von Rohr"
+			"Rotenhan" "Rüdt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
+			"von Thuengen" "von Thürheim" "von Thurn und Taxis" "von Toerring"
+			"von Koenigsegg"
+		}
 	}
 	west_franconian_culture = {
 		primary = TRI
+		male_names = {
+			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold
+			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor
+			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
+		}
+		female_names = {
+			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara
+			Christa Christel Christiane Christina Christine Clara Claudia Constanze
+		}
 	}
 	central_franconian_culture = {
 		primary = FRN
+		male_names = {
+			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold
+			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor
+			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
+		}
+		female_names = {
+			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara
+			Christa Christel Christiane Christina Christine Clara Claudia Constanze
+		}
 	}
 }
 
