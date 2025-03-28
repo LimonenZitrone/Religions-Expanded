@@ -7,6 +7,13 @@ on_startup = {
 			add_province_triggered_modifier = rce_religion_mechanic_nestorian_patriarchy_constantinople_province_triggered_modifier
 		}
 	}
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
+			NOT = { has_saved_global_event_target = rce_religion_mechanic_nestorian_patriarchy_patriarch_controller }
+		}
+		rce_set_religion_mechanic_nestorian_patriarchy_patriarchy_controller = yes
+	}
 }
 
 on_religion_change = {
