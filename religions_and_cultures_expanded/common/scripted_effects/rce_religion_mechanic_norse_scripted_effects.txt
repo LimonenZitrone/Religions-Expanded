@@ -280,7 +280,7 @@ rce_export_monthly_religion_mechanic_norse_norn_values_gain = {
 			}
 			every_ally = {
 				PREV = {
-					change_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0.05 }
+					change_variable = { which = rce_monthly_religion_mechanic_norse_norn_dip_value value = 0.1 }
 				}
 			}
 		}

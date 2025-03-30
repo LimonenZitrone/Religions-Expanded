@@ -1,8 +1,109 @@
+on_startup = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = norse }
+			rce_has_not_religion_mechanic_norse_era = { era = adm }
+			rce_has_not_religion_mechanic_norse_era = { era = dip }
+			rce_has_not_religion_mechanic_norse_era = { era = mil }
+			rce_has_not_religion_mechanic_norse_era = { era = balance }
+			rce_has_not_religion_mechanic_norse_era = { era = all }
+		}
+		random_list = {
+			33 = {
+				modifier = {
+					factor = 3
+					ADM = 6
+				}
+				modifier = {
+					factor = 2
+					ADM = 5
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { ADM = 4 }
+				}
+				modifier = {
+					factor = 0.75
+					NOT = { ADM = 3 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { ADM = 2 }
+				}
+				modifier = {
+					factor = 0.25
+					NOT = { ADM = 1 }
+				}
+				rce_set_religion_mechanic_norse_era = { era = adm modifier = yes }
+			}
+			33 = {
+				modifier = {
+					factor = 3
+					DIP = 6
+				}
+				modifier = {
+					factor = 2
+					DIP = 5
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { DIP = 4 }
+				}
+				modifier = {
+					factor = 0.75
+					NOT = { DIP = 3 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { DIP = 2 }
+				}
+				modifier = {
+					factor = 0.25
+					NOT = { DIP = 1 }
+				}
+				rce_set_religion_mechanic_norse_era = { era = dip modifier = yes }
+			}
+			33 = {
+				modifier = {
+					factor = 3
+					MIL = 6
+				}
+				modifier = {
+					factor = 2
+					MIL = 5
+				}
+				modifier = {
+					factor = 0.9
+					NOT = { MIL = 4 }
+				}
+				modifier = {
+					factor = 0.75
+					NOT = { MIL = 3 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { MIL = 2 }
+				}
+				modifier = {
+					factor = 0.25
+					NOT = { MIL = 1 }
+				}
+				rce_set_religion_mechanic_norse_era = { era = mil modifier = yes }
+			}
+		}
+	}
+}
+
 on_religion_change = {
 	rce_clear_all_religion_mechanic_norse_modifiers_when_changing_religion = yes
 	if = {
 		limit = {
 			rce_uses_religion_mechanic = { mechanic = norse }
+			rce_has_not_religion_mechanic_norse_era = { era = adm }
+			rce_has_not_religion_mechanic_norse_era = { era = dip }
+			rce_has_not_religion_mechanic_norse_era = { era = mil }
+			rce_has_not_religion_mechanic_norse_era = { era = balance }
+			rce_has_not_religion_mechanic_norse_era = { era = all }
 		}
 		random_list = {
 			33 = {
