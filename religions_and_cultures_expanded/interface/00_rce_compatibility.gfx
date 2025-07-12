@@ -1,0 +1,7 @@
+spriteTypes = {
+	# Compatibility with SE:
+	spriteType = {
+		name = "GFX_release_trade_outpost_button"
+		textureFile = "gfx/interface/city_state_button.dds" # vanilla icon so we dont have an error without the sprite or icon
+	}
+}

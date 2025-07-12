@@ -7,6 +7,7 @@ name="Religions and Cultures Expanded"
 picture="thumbnail.png"
 dependencies={
 	"Trade Goods Expanded"
+	"Subjects Expanded"
 	"Bigger UI"
 	"Bigger UI V1.37"
 	"UI a la Artemis"

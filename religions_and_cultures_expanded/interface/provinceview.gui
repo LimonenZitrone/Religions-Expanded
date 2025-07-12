@@ -2549,6 +2549,24 @@ guiTypes = {
 				position = { x=478 y=144}
 				quadTextureSprite ="GFX_build_interface_building_tab"
 			}
+
+			##################################
+			## Subjects Expanded Custom GUI ##
+			##################################
+			### Included for Compatibility with SE ###
+			windowType = {
+				name = "se_province_view_window"
+				position = { x = 193 y = 519 }
+				scripted = yes
+
+				guiButtonType = {
+					name = "se_province_view_release_trade_outpost_button"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_release_trade_outpost_button"
+					scripted = yes
+				}
+			}
+
 			######################################################
 			## START Religions & Cultures Expanded Custom GUI 1 ##
 			######################################################

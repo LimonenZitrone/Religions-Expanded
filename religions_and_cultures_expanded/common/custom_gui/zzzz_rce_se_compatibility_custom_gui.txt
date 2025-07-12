@@ -1,0 +1,18 @@
+# Disabled SE custom gui that is included in RCE
+# With SE enabled, SE custom gui entries are read instead
+custom_window = {
+	name = se_province_view_window
+	potential = {
+		always = no
+	}
+}
+
+custom_button = {
+	name = se_province_view_release_trade_outpost_button
+	trigger = {
+		always = no
+	}
+	effect = {
+	}
+	tooltip = se_province_view_release_trade_outpost_button_tt
+}

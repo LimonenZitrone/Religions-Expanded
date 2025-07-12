@@ -7,6 +7,7 @@ name="Religions and Cultures Expanded"
 picture="thumbnail.png"
 dependencies={
 	"Trade Goods Expanded"
+	"Subjects Expanded"
 	"Bigger UI"
 	"Bigger UI V1.37"
 	"UI a la Artemis"
@@ -27,3 +28,4 @@ dependencies={
 }
 supported_version="v1.37.*"
 path="mod/religions_and_cultures_expanded"
+remote_file_id="3342969370"
