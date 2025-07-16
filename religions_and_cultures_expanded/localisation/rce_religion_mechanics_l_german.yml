@@ -1843,6 +1843,8 @@
  rce_religion_mechanic_norse_syncretize_with_vidilist_decision_title: "Synkretisiert mit dem Vidilitischen, Druidischen, Slawischen und Polynesischen Glauben"
  rce_religion_mechanic_norse_syncretize_with_vidilist_decision_desc: "Wir besitzen einige Vidilitische, Druidische, Slawische oder Polynesische Provinzen, wir sollten Teile ihres Glaubens in unsere Mythologie übernehmen."
  rce_religion_mechanic_norse_syncretize_with_vidilist_decision_tt: "Schaltet §YFreyr§! als wählbare Gottheit frei."
+ rce_religion_mechanic_norse_consult_runes_decision_title: "Befragt die Runen"
+ rce_religion_mechanic_norse_consult_runes_decision_desc: "Befragt die Runen, um etwas über die nächste Prophezeiung herauszufinden. Dies wird uns einen zufälligen Bonus sowie einen kleinen, ausgleichenden Malus gewähren."
 
  rce_religion_mechanic_norse_syncretize_heathen_tolerance_tt: "Habt eine §YToleranz gegenüber Heiden§! von mindestens §Y0§!"
  rce_religion_mechanic_norse_syncretize_heretic_tolerance_tt: "Habt eine §YToleranz gegenüber Häretikern§! von mindestens §Y1§!"

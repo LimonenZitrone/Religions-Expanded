@@ -25,6 +25,26 @@ odin = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_devotion = yes
+				uses_horde_unity = yes
+				uses_meritocracy = yes
+			}
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 1.25
+			calc_true_if = {
+				amount = 2
+				has_adm_advisor = yes
+				has_dip_advisor = yes
+				has_mil_advisor = yes
+			}
+		}
 	}
 }
 odin_adm = {
@@ -50,6 +70,21 @@ odin_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_devotion = yes
+				uses_horde_unity = yes
+				uses_meritocracy = yes
+			}
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 1
+		}
 	}
 }
 odin_dip = {
@@ -75,6 +110,21 @@ odin_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_devotion = yes
+				uses_horde_unity = yes
+				uses_meritocracy = yes
+			}
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.75 }
+		}
 	}
 }
 odin_mil = {
@@ -100,6 +150,21 @@ odin_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_devotion = yes
+				uses_horde_unity = yes
+				uses_meritocracy = yes
+			}
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
 	}
 }
 odin_balance = {
@@ -125,6 +190,26 @@ odin_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_devotion = yes
+				uses_horde_unity = yes
+				uses_meritocracy = yes
+			}
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 1.25
+			calc_true_if = {
+				amount = 2
+				has_adm_advisor = yes
+				has_dip_advisor = yes
+				has_mil_advisor = yes
+			}
+		}
 	}
 }
 
@@ -148,6 +233,14 @@ freya = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			tax_income_percentage = 0.33
+		}
+		modifier = {
+			factor = 1.1
+			num_of_states = 15
+		}
 	}
 }
 freya_adm = {
@@ -169,6 +262,16 @@ freya_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			tax_income_percentage = 0.33
+		}
+		modifier = {
+			factor = 2
+			any_known_country = {
+				ROOT = { NOT = { adm_tech = PREV } }
+			}
+		}
 	}
 }
 freya_dip = {
@@ -190,6 +293,19 @@ freya_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			tax_income_percentage = 0.33
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 10
+					development = 25
+				}
+			}
+		}
 	}
 }
 freya_mil = {
@@ -211,6 +327,17 @@ freya_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			tax_income_percentage = 0.33
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				is_at_war = yes
+				NOT = { manpower_percentage = 0.5 }
+			}
+		}
 	}
 }
 freya_balance = {
@@ -232,6 +359,14 @@ freya_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			tax_income_percentage = 0.33
+		}
+		modifier = {
+			factor = 1.1
+			num_of_states = 15
+		}
 	}
 }
 
@@ -255,6 +390,14 @@ tor = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.1
+			army_size = 100
+		}
 	}
 }
 tor_adm = {
@@ -276,6 +419,16 @@ tor_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			any_known_country = {
+				ROOT = { NOT = { mil_tech = PREV } }
+			}
+		}
 	}
 }
 tor_dip = {
@@ -297,6 +450,17 @@ tor_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.75
+			is_at_war = yes
+			is_in_war = {
+				defenders = ROOT
+			}
+		}
 	}
 }
 tor_mil = {
@@ -318,6 +482,10 @@ tor_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
 	}
 }
 tor_balance = {
@@ -339,6 +507,14 @@ tor_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.1
+			army_size = 100
+		}
 	}
 }
 
@@ -362,6 +538,10 @@ tyr = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.75
+			is_at_war = yes
+		}
 	}
 }
 tyr_adm = {
@@ -383,6 +563,10 @@ tyr_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.75
+			is_at_war = yes
+		}
 	}
 }
 tyr_dip = {
@@ -404,6 +588,10 @@ tyr_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.75
+			is_at_war = yes
+		}
 	}
 }
 tyr_mil = {
@@ -425,6 +613,10 @@ tyr_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.95
+			is_at_war = yes
+		}
 	}
 }
 tyr_balance = {
@@ -446,6 +638,10 @@ tyr_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.75
+			is_at_war = yes
+		}
 	}
 }
 
@@ -469,6 +665,14 @@ njord = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+			OR = {
+				num_of_heavy_ship = 20
+				num_of_galley = 50
+			}
+		}
 	}
 }
 njord_adm = {
@@ -490,6 +694,10 @@ njord_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			inflation = 5
+		}
 	}
 }
 njord_dip = {
@@ -511,6 +719,10 @@ njord_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			num_of_light_ship = 25
+		}
 	}
 }
 njord_mil = {
@@ -532,6 +744,14 @@ njord_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+			OR = {
+				num_of_heavy_ship = 20
+				num_of_galley = 50
+			}
+		}
 	}
 }
 njord_balance = {
@@ -553,6 +773,14 @@ njord_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+			OR = {
+				num_of_heavy_ship = 20
+				num_of_galley = 50
+			}
+		}
 	}
 }
 
@@ -575,7 +803,11 @@ snotra = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.25
+		modifier = {
+			factor = 1.1
+			navy_size = 50
+		}
 	}
 }
 snotra_adm = {
@@ -596,7 +828,11 @@ snotra_adm = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.25
+		modifier = {
+			factor = 1.1
+			navy_size = 50
+		}
 	}
 }
 snotra_dip = {
@@ -617,7 +853,11 @@ snotra_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
+		modifier = {
+			factor = 1.1
+			navy_size = 50
+		}
 	}
 }
 snotra_mil = {
@@ -639,6 +879,18 @@ snotra_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			navy_size = 50
+		}
+		modifier = {
+			factor = 1.15
+			is_at_war = yes
+			OR = {
+				num_of_heavy_ship = 20
+				num_of_galley = 50
+			}
+		}
 	}
 }
 snotra_balance = {
@@ -659,7 +911,11 @@ snotra_balance = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.25
+		modifier = {
+			factor = 1.1
+			navy_size = 50
+		}
 	}
 }
 
@@ -683,7 +939,7 @@ kvasir = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.33
 	}
 }
 kvasir_adm = {
@@ -704,7 +960,13 @@ kvasir_adm = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.33
+		modifier = {
+			factor = 1.5
+			any_known_country = {
+				ROOT = { NOT = { dip_tech = PREV } }
+			}
+		}
 	}
 }
 kvasir_dip = {
@@ -725,7 +987,7 @@ kvasir_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.15
 	}
 }
 kvasir_mil = {
@@ -746,7 +1008,11 @@ kvasir_mil = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.15
+		modifier = {
+			factor = 1.75
+			overextension_percentage = 0.25
+		}
 	}
 }
 kvasir_balance = {
@@ -767,7 +1033,7 @@ kvasir_balance = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.33
 	}
 }
 
@@ -792,6 +1058,10 @@ loki = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.75
+			corruption = 5
+		}
 	}
 }
 loki_adm = {
@@ -835,7 +1105,7 @@ loki_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0.75
 	}
 }
 loki_mil = {
@@ -857,7 +1127,7 @@ loki_mil = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0.5
 	}
 }
 loki_balance = {
@@ -880,6 +1150,10 @@ loki_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.75
+			corruption = 5
+		}
 	}
 }
 
@@ -903,6 +1177,10 @@ heimdall = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			num_of_loans = 3
+		}
 	}
 }
 heimdall_adm = {
@@ -944,7 +1222,7 @@ heimdall_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0.9
 	}
 }
 heimdall_mil = {
@@ -966,6 +1244,11 @@ heimdall_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+			num_of_mercenaries = 1
+		}
 	}
 }
 heimdall_balance = {
@@ -987,6 +1270,10 @@ heimdall_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			num_of_loans = 3
+		}
 	}
 }
 
@@ -1009,7 +1296,7 @@ baldr = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
 	}
 }
 baldr_adm = {
@@ -1051,7 +1338,7 @@ baldr_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.15
 	}
 }
 baldr_mil = {
@@ -1093,7 +1380,7 @@ baldr_balance = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
 	}
 }
 
@@ -1121,6 +1408,19 @@ jesus = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			NOT = {
+				has_global_modifier_value = {
+					which = tolerance_heathen
+					value = 0
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				NOT = { religion_group = ROOT }
+			}
+		}
 	}
 }
 jesus_adm = {
@@ -1145,7 +1445,7 @@ jesus_adm = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.33
 	}
 }
 jesus_dip = {
@@ -1170,7 +1470,7 @@ jesus_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.33
 	}
 }
 jesus_mil = {
@@ -1195,7 +1495,7 @@ jesus_mil = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.33
 	}
 }
 jesus_balance = {
@@ -1221,6 +1521,19 @@ jesus_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			NOT = {
+				has_global_modifier_value = {
+					which = tolerance_heathen
+					value = 0
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				NOT = { religion_group = ROOT }
+			}
+		}
 	}
 }
 
@@ -1248,6 +1561,11 @@ sleipnir = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			is_at_war = yes
+			num_of_cavalry = 30
+		}
 	}
 }
 sleipnir_adm = {
@@ -1273,6 +1591,10 @@ sleipnir_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			num_of_cavalry = 30
+		}
 	}
 }
 sleipnir_dip = {
@@ -1298,6 +1620,11 @@ sleipnir_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.05
+			is_at_war = yes
+			num_of_cavalry = 30
+		}
 	}
 }
 sleipnir_mil = {
@@ -1323,6 +1650,11 @@ sleipnir_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.05
+			is_at_war = yes
+			num_of_cavalry = 30
+		}
 	}
 }
 sleipnir_balance = {
@@ -1348,6 +1680,11 @@ sleipnir_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			is_at_war = yes
+			num_of_cavalry = 30
+		}
 	}
 }
 
@@ -1374,7 +1711,11 @@ fenrir = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 fenrir_adm = {
@@ -1399,7 +1740,11 @@ fenrir_adm = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 fenrir_dip = {
@@ -1424,7 +1769,11 @@ fenrir_dip = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 fenrir_mil = {
@@ -1449,7 +1798,11 @@ fenrir_mil = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 fenrir_balance = {
@@ -1474,7 +1827,11 @@ fenrir_balance = {
 	removed_effect = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 
@@ -1502,6 +1859,19 @@ jormungandr = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 10
+					development = 25
+				}
+			}
+		}
 	}
 }
 jormungandr_adm = {
@@ -1527,6 +1897,14 @@ jormungandr_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.1
+			average_autonomy_above_min = 5
+		}
 	}
 }
 jormungandr_dip = {
@@ -1552,6 +1930,10 @@ jormungandr_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
 	}
 }
 jormungandr_mil = {
@@ -1577,6 +1959,10 @@ jormungandr_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
 	}
 }
 jormungandr_balance = {
@@ -1602,6 +1988,19 @@ jormungandr_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 10
+					development = 25
+				}
+			}
+		}
 	}
 }
 
@@ -1629,6 +2028,10 @@ freyr = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 freyr_adm = {
@@ -1654,6 +2057,10 @@ freyr_adm = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 freyr_dip = {
@@ -1679,6 +2086,10 @@ freyr_dip = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }
 freyr_mil = {
@@ -1704,6 +2115,10 @@ freyr_mil = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.15
+			is_at_war = yes
+		}
 	}
 }
 freyr_balance = {
@@ -1729,5 +2144,9 @@ freyr_balance = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.1
+			is_at_war = yes
+		}
 	}
 }

@@ -1843,6 +1843,8 @@
  rce_religion_mechanic_norse_syncretize_with_vidilist_decision_title: "Syncretize with Vidilism, Druidism, Slavism or Polynesianism"
  rce_religion_mechanic_norse_syncretize_with_vidilist_decision_desc: "We own some Vidilist, Druidic, Slavic or Polynesian provinces, we should integrate parts of their faith into our mythology."
  rce_religion_mechanic_norse_syncretize_with_vidilist_decision_tt: "Unlock §YFreyr§! as a personal deity."
+ rce_religion_mechanic_norse_consult_runes_decision_title: "Consult the Runes"
+ rce_religion_mechanic_norse_consult_runes_decision_desc: "Question the Runes to find out about the next prophecy. This will grant us a random bonus as well as a small counter balancing malus."
 
  rce_religion_mechanic_norse_syncretize_heathen_tolerance_tt: "Have a §YTolerance of Heathens§! of at least §Y0§!"
  rce_religion_mechanic_norse_syncretize_heretic_tolerance_tt: "Have a §YTolerance of Heretics§! of at least §Y1§!"
