@@ -100,12 +100,21 @@ rce_is_religion_mechanic_norse_next_era_adm = {
 			check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_dip_value }
 			check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_mil_value }
 			OR = {
-				NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = -5 } }
-				check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = 5.001 }
-			}
-			OR = {
-				NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = -5 } }
-				check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = 5.001 }
+				NOT = {
+					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+					check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+					check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+				}
+				AND = {
+					OR = {
+						NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = -5 } }
+						check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = 5.001 }
+					}
+					OR = {
+						NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = -5 } }
+						check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = 5.001 }
+					}
+				}
 			}
 		}
 	}
@@ -130,12 +139,21 @@ rce_is_religion_mechanic_norse_next_era_dip = {
 			check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_adm_value }
 			check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_mil_value }
 			OR = {
-				NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = -5 } }
-				check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = 5.001 }
-			}
-			OR = {
-				NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_2 value = -5 } }
-				check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_2 value = 5.001 }
+				NOT = {
+					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+					check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+					check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+				}
+				AND = {
+					OR = {
+						NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = -5 } }
+						check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = 5.001 }
+					}
+					OR = {
+						NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_2 value = -5 } }
+						check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_2 value = 5.001 }
+					}
+				}
 			}
 		}
 	}
@@ -160,12 +178,21 @@ rce_is_religion_mechanic_norse_next_era_mil = {
 			check_variable = { which = rce_religion_mechanic_norse_norn_mil_value which = rce_religion_mechanic_norse_norn_dip_value }
 			check_variable = { which = rce_religion_mechanic_norse_norn_mil_value which = rce_religion_mechanic_norse_norn_mil_value }
 			OR = {
-				NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_1 value = -5 } }
-				check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_1 value = 5.001 }
-			}
-			OR = {
-				NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_2 value = -5 } }
-				check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_2 value = 5.001 }
+				NOT = {
+					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+					check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+					check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+				}
+				AND = {
+					OR = {
+						NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_1 value = -5 } }
+						check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_1 value = 5.001 }
+					}
+					OR = {
+						NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_2 value = -5 } }
+						check_variable = { which = rce_religion_mechanic_norse_norn_mil_value_temp_2 value = 5.001 }
+					}
+				}
 			}
 		}
 	}
@@ -206,6 +233,10 @@ rce_is_religion_mechanic_norse_next_era_balance = {
 					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = -5 }
 					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = 5.001 } }
 					OR = {
+						check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+						check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+					}
+					OR = {
 						AND = {
 							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_dip_value }
 							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_mil_value }
@@ -224,6 +255,10 @@ rce_is_religion_mechanic_norse_next_era_balance = {
 					check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = -5 }
 					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = 5.001 } }
 					OR = {
+						check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+						check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+					}
+					OR = {
 						AND = {
 							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_dip_value }
 							check_variable = { which = rce_religion_mechanic_norse_norn_adm_value which = rce_religion_mechanic_norse_norn_mil_value }
@@ -241,6 +276,10 @@ rce_is_religion_mechanic_norse_next_era_balance = {
 				AND = {
 					check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = -5 }
 					NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 value = 5.001 } }
+					OR = {
+						check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+						check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+					}
 					OR = {
 						AND = {
 							check_variable = { which = rce_religion_mechanic_norse_norn_dip_value which = rce_religion_mechanic_norse_norn_adm_value }
@@ -283,6 +322,11 @@ rce_is_religion_mechanic_norse_next_era_all = {
 			}
 			change_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 which = rce_religion_mechanic_norse_norn_dip_value }
 			subtract_variable = { which = rce_religion_mechanic_norse_norn_dip_value_temp_1 which = rce_religion_mechanic_norse_norn_mil_value }
+			OR = {
+				check_variable = { which = rce_religion_mechanic_norse_norn_adm_value value = 10 }
+				check_variable = { which = rce_religion_mechanic_norse_norn_dip_value value = 10 }
+				check_variable = { which = rce_religion_mechanic_norse_norn_mil_value value = 10 }
+			}
 			check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = -5 }
 			NOT = { check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_1 value = 5.001 } }
 			check_variable = { which = rce_religion_mechanic_norse_norn_adm_value_temp_2 value = -5 }

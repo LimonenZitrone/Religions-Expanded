@@ -691,7 +691,7 @@ guiTypes = {
 			}
 			iconType = {
 				name = "rce_religion_mechanic_norse_deity_bg"
-				position = { x = 81 y = 30 }
+				position = { x = 80 y = 31 }
 				spriteType = "GFX_rce_religion_mechanic_norse_empty_button"
 				scale = 0.8
 				alwaystransparent = yes
