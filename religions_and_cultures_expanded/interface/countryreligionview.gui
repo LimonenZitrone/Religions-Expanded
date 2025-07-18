@@ -3507,118 +3507,197 @@ guiTypes = {
 		#########################
 		windowType = {
 			name = "rce_religion_mechanic_pantheon_window"
-			position = { x = 27 y = 235 }
+			position = { x = 29 y = 240 }
 			scripted = yes
 
 			windowType = {
 				name = "god_adm_window"
 				position = { x = 0 y = 0 }
 
-				guiButtonType = {
-					name = "rce_religion_mechanic_pantheon_god_adm_button"
-					position = { x = 5 y = 0 }
-					spriteType = "GFX_rce_religion_mechanic_pantheon_god_background"
-					scripted = yes
-				}
 				iconType = {
 					name = "rce_religion_mechanic_pantheon_god_adm_selected_icon"
-					position = { x = 5 y = 0 }
+					position = { x = 19 y = 10 }
 					spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 					alwaystransparent = yes
 					scripted = yes
 				}
-				iconType = {
-					name = "name_background"
-					position = { x = 0 y = 65 }
-					spriteType = "GFX_rce_religion_mechanic_pantheon_god_name_background"
-					alwaystransparent = yes
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_adm_button"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay"
+					scripted = yes
 				}
 				instantTextBoxType = {
 					name = "rce_religion_mechanic_pantheon_god_adm_selected_text"
-					position = { x = 4 y = 70 }
+					position = { x = 19 y = 63 }
 					format = center
-					font = "vic_18_black"
+					font = "Main_14_black"
 					maxWidth = 67
 					maxHeight = 20
-					fixedsize = yes^
+					fixedsize = yes
+					alwaystransparent = yes
 					scripted = yes
 				}
 			}
 			windowType = {
 				name = "god_dip_window"
-				position = { x = 75 y = 0 }
+				position = { x = 92 y = 0 }
 
-				guiButtonType = {
-					name = "rce_religion_mechanic_pantheon_god_dip_button"
-					position = { x = 5 y = 0 }
-					spriteType = "GFX_rce_religion_mechanic_pantheon_god_background"
-					scripted = yes
-				}
 				iconType = {
 					name = "rce_religion_mechanic_pantheon_god_dip_selected_icon"
-					position = { x = 5 y = 0 }
+					position = { x = 19 y = 10 }
 					spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 					alwaystransparent = yes
 					scripted = yes
 				}
-				iconType = {
-					name = "name_background"
-					position = { x = 0 y = 65 }
-					spriteType = "GFX_rce_religion_mechanic_pantheon_god_name_background"
-					alwaystransparent = yes
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_dip_button"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay"
+					scripted = yes
 				}
 				instantTextBoxType = {
 					name = "rce_religion_mechanic_pantheon_god_dip_selected_text"
-					position = { x = 4 y = 70 }
+					position = { x = 19 y = 63 }
 					format = center
-					font = "vic_18_black"
+					font = "Main_14_black"
 					maxWidth = 67
 					maxHeight = 20
 					fixedsize = yes
+					alwaystransparent = yes
 					scripted = yes
 				}
 			}
 			windowType = {
 				name = "god_mil_window"
-				position = { x = 150 y = 0 }
+				position = { x = 184 y = 0 }
 
-				guiButtonType = {
-					name = "rce_religion_mechanic_pantheon_god_mil_button"
-					position = { x = 5 y = 0 }
-					spriteType = "GFX_rce_religion_mechanic_pantheon_god_background"
-					scripted = yes
-				}
 				iconType = {
 					name = "rce_religion_mechanic_pantheon_god_mil_selected_icon"
-					position = { x = 5 y = 0 }
+					position = { x = 19 y = 10 }
 					spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 					alwaystransparent = yes
 					scripted = yes
 				}
-				iconType = {
-					name = "name_background"
-					position = { x = 0 y = 65 }
-					spriteType = "GFX_rce_religion_mechanic_pantheon_god_name_background"
-					alwaystransparent = yes
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_mil_button"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay"
+					scripted = yes
 				}
 				instantTextBoxType = {
 					name = "rce_religion_mechanic_pantheon_god_mil_selected_text"
-					position = { x = 4 y = 70 }
+					position = { x = 19 y = 63 }
 					format = center
-					font = "vic_18_black"
+					font = "Main_14_black"
 					maxWidth = 67
 					maxHeight = 20
 					fixedsize = yes
+					alwaystransparent = yes
 					scripted = yes
 				}
 			}
 
-			guiButtonType = {
-				name = "rce_religion_mechanic_pantheon_ceremony_button"
-				position = { x = 228 y = 9 }
-				spriteType = "GFX_rce_religion_mechanic_pantheon_ceremony_button"
-				scale = 0.95
+		#	guiButtonType = {
+		#		name = "rce_religion_mechanic_pantheon_ceremony_button"
+		#		position = { x = 228 y = 9 }
+		#		spriteType = "GFX_rce_religion_mechanic_pantheon_ceremony_button"
+		#		scale = 0.95
+		#		scripted = yes
+		#	}
+
+			windowType = {
+				name = "rce_religion_mechanic_pantheon_god_selection_window"
+				position = { x = -24 y = -12 }
 				scripted = yes
+
+				iconType = {
+					name = "background"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_selection_bg"
+				}
+
+				windowType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_adm_window"
+					position = { x = 42 y = 19 }
+					scripted = yes
+
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_adm_page_1_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						windowType = {
+							name = "god_window_zeus"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 1
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_zeus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								fixedsize = yes
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_zeus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_zeus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+				}
+
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_window_close_button"
+					position = { x = 232 y = 302 }
+					spriteType = "GFX_standard_button_71"
+					buttonText = "BACK"
+					buttonFont = "vic_18"
+					shortcut = "ESCAPE"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_window_prev_page_button"
+					position = { x = 193 y = 303 }
+					spriteType = "button_left"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_window_next_page_button"
+					position = { x = 320 y = 303 }
+					spriteType = "button_right"
+					scripted = yes
+				}
 			}
 		}
 
