@@ -2728,6 +2728,26 @@ pagan = {
 		heretic = { DRUWINGI VISAMOKINGAS DIEVISKIS }
 	}
 
+	hellenism = {
+		icon = 36
+		color = { 127 0 77 }
+		country = {
+
+		}
+		country_as_secondary = {
+
+		}
+		province = {
+
+		}
+
+		on_convert = {
+			change_religion = hellenism
+		}
+
+		heretic = { }
+	}
+
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
 }

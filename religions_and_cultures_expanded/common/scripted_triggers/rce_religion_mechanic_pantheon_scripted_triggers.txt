@@ -1,0 +1,13 @@
+rce_uses_religion_mechanic_pantheon = {
+	custom_trigger_tooltip = {
+		tooltip = rce_uses_religion_mechanic_pantheon_tt
+		religion = hellenism
+	}
+}
+
+rce_not_uses_religion_mechanic_pantheon = {
+	custom_trigger_tooltip = {
+		tooltip = rce_not_uses_religion_mechanic_pantheon_tt
+		NOT = { rce_uses_religion_mechanic_pantheon = yes }
+	}
+}

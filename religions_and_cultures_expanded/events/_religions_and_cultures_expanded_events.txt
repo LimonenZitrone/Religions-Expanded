@@ -182,6 +182,16 @@ country_event = {
 	}
 
 	option = {
+		name = hellenism
+
+		highlight = yes
+
+		ai_chance = { factor = 0 }
+
+		change_religion = hellenism
+	}
+
+	option = {
 		name = rce_events1.EVTOPT1
 
 		ai_chance = { factor = 100 }

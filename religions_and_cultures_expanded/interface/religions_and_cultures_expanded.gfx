@@ -503,4 +503,28 @@ spriteTypes = {
 		size = { x = 142 y = 18 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+
+	## Pantheon Mechanic
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_god_background"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_god_background.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_god_name_background"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_god_name_background.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_god_none_selected_icon"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_god_none_selected_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_ceremony_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_ceremony_button.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_god_icons"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_god_icons.dds"
+		noOfFrames = 6
+	}
 }

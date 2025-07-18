@@ -1,0 +1,109 @@
+custom_window = {
+	name = rce_religion_mechanic_pantheon_window
+	potential = {
+		ai = no
+		rce_uses_religion_mechanic = { mechanic = pantheon }
+	}
+}
+
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_adm_button
+	trigger = {
+
+	}
+	effect = {
+
+	}
+	frame = {
+		number = 1
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_adm_button_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_pantheon_god_adm_selected_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 1
+	}
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_adm_selected_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_adm_selected_text_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_dip_button
+	trigger = {
+
+	}
+	effect = {
+
+	}
+	frame = {
+		number = 1
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_dip_button_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_pantheon_god_dip_selected_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 1
+	}
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_dip_selected_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_dip_selected_text_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_mil_button
+	trigger = {
+
+	}
+	effect = {
+
+	}
+	frame = {
+		number = 1
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_mil_button_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_pantheon_god_mil_selected_icon
+	potential = {
+		always = yes
+	}
+	frame = {
+		number = 1
+	}
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_mil_selected_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_mil_selected_text_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_pantheon_ceremony_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_ceremony_decisíon decision accordingly
+	trigger = {
+
+	}
+	effect = {
+
+	}
+	tooltip = rce_religion_mechanic_pantheon_ceremony_button_tt
+}

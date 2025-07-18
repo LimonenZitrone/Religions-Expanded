@@ -3502,6 +3502,126 @@ guiTypes = {
 			}
 		}
 
+		#########################
+		### Pantheon Mechanic ###
+		#########################
+		windowType = {
+			name = "rce_religion_mechanic_pantheon_window"
+			position = { x = 27 y = 235 }
+			scripted = yes
+
+			windowType = {
+				name = "god_adm_window"
+				position = { x = 0 y = 0 }
+
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_adm_button"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_background"
+					scripted = yes
+				}
+				iconType = {
+					name = "rce_religion_mechanic_pantheon_god_adm_selected_icon"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "name_background"
+					position = { x = 0 y = 65 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_name_background"
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "rce_religion_mechanic_pantheon_god_adm_selected_text"
+					position = { x = 4 y = 70 }
+					format = center
+					font = "vic_18_black"
+					maxWidth = 67
+					maxHeight = 20
+					fixedsize = yes^
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "god_dip_window"
+				position = { x = 75 y = 0 }
+
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_dip_button"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_background"
+					scripted = yes
+				}
+				iconType = {
+					name = "rce_religion_mechanic_pantheon_god_dip_selected_icon"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "name_background"
+					position = { x = 0 y = 65 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_name_background"
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "rce_religion_mechanic_pantheon_god_dip_selected_text"
+					position = { x = 4 y = 70 }
+					format = center
+					font = "vic_18_black"
+					maxWidth = 67
+					maxHeight = 20
+					fixedsize = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "god_mil_window"
+				position = { x = 150 y = 0 }
+
+				guiButtonType = {
+					name = "rce_religion_mechanic_pantheon_god_mil_button"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_background"
+					scripted = yes
+				}
+				iconType = {
+					name = "rce_religion_mechanic_pantheon_god_mil_selected_icon"
+					position = { x = 5 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "name_background"
+					position = { x = 0 y = 65 }
+					spriteType = "GFX_rce_religion_mechanic_pantheon_god_name_background"
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "rce_religion_mechanic_pantheon_god_mil_selected_text"
+					position = { x = 4 y = 70 }
+					format = center
+					font = "vic_18_black"
+					maxWidth = 67
+					maxHeight = 20
+					fixedsize = yes
+					scripted = yes
+				}
+			}
+
+			guiButtonType = {
+				name = "rce_religion_mechanic_pantheon_ceremony_button"
+				position = { x = 228 y = 9 }
+				spriteType = "GFX_rce_religion_mechanic_pantheon_ceremony_button"
+				scale = 0.95
+				scripted = yes
+			}
+		}
+
 		######################################################
 		##  END Religions & Cultures Expanded Custom GUI 2  ##
 		######################################################
