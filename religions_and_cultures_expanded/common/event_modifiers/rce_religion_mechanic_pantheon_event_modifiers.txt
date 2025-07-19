@@ -1,0 +1,10 @@
+# Mechanic Modifiers:
+rce_religion_mechanic_pantheon_dedicated_a_temple = {
+}
+rce_religion_mechanic_pantheon_held_a_festival = {
+}
+
+# God Modifiers:
+rce_religion_mechanic_pantheon_god_zeus_modifier = {
+	religion = yes
+}

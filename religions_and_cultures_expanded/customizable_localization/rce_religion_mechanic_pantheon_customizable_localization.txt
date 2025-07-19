@@ -1,0 +1,141 @@
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodAdm
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
+		}
+		localisation_key = string_rce_religion_mechanic_pantheon_adm_god_selected
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_rce_religion_mechanic_pantheon_no_god_selected
+	}
+}
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodNameAdm
+	random = no
+
+	# rce_religion_mechanic_pantheon_god_<god>_name_text
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "-"
+	}
+}
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescAdm
+	random = no
+
+	# rce_religion_mechanic_pantheon_god_<god>_desc_text
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodDip
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
+		}
+		localisation_key = string_rce_religion_mechanic_pantheon_dip_god_selected
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_rce_religion_mechanic_pantheon_no_god_selected
+	}
+}
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodNameDip
+	random = no
+
+	# rce_religion_mechanic_pantheon_god_<god>_name_text
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "-"
+	}
+}
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescDip
+	random = no
+
+	# rce_religion_mechanic_pantheon_god_<god>_desc_text
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodMil
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+		}
+		localisation_key = string_rce_religion_mechanic_pantheon_mil_god_selected
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_rce_religion_mechanic_pantheon_no_god_selected
+	}
+}
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodNameMil
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_zeus_name_text
+	}
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "-"
+	}
+}
+defined_text = {
+	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescMil
+	random = no
+
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_zeus_desc_text
+	}
+	# Fallback
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}

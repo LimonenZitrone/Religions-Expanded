@@ -522,7 +522,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_god_frame_overlay_small.dds"
 	}
 	spriteType = {
-		name = "GFX_rce_religion_mechanic_pantheon_ceremony_button"
-		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_ceremony_button.dds"
+		name = "GFX_rce_religion_mechanic_pantheon_dedicate_temple_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_dedicate_temple_button.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_hold_festival_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_hold_festival_button.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_pantheon_remove_god_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_remove_god_button.dds"
 	}
 }

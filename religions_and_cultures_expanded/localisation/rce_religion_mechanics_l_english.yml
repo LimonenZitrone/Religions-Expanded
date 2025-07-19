@@ -1827,7 +1827,7 @@
  rce_religion_mechanic_norse_events6.EVTOPT1: "It must be a spawn of Fenrir!"
  rce_religion_mechanic_norse_events6.EVTOPT2: "Assemble the Hunters!"
 
- # Decisions;
+ # Decisions:
  rce_religion_mechanic_norse_syncretize_with_christians_decision_title: "Syncretize with Christianity"
  rce_religion_mechanic_norse_syncretize_with_christians_decision_desc: "We own some Christian provinces, we should integrate parts of their faith into our mythology."
  rce_religion_mechanic_norse_syncretize_with_christians_decision_tt: "Unlock §YJesus§! as a personal deity."
@@ -1888,3 +1888,73 @@
  desc_rce_religion_mechanic_norse_no_prophecy_active_era_balance_triggered_modifier: "We have not consulted the Runes for a prophecy. As long as no prophecy is active, we will receive this modifier in the current era."
  rce_religion_mechanic_norse_no_prophecy_active_era_all_triggered_modifier: "No Active Prophecy"
  desc_rce_religion_mechanic_norse_no_prophecy_active_era_all_triggered_modifier: "We have not consulted the Runes for a prophecy. As long as no prophecy is active, we will receive this modifier in the current era."
+
+ #######################
+ ## Pantheon Mechanic ##
+ #######################
+ # GUIs:
+ rce_religion_mechanic_pantheon_remove_god_button_tt: "§YRemove a Forsaken God§! \nOne of our worshipped gods has forsaken us and we must get rid of them."
+ rce_religion_mechanic_pantheon_remove_god_button_tt_choose_god: "We will be able to choose, which god we want to remove. Doing this will result in us losing §R1§! stability."
+ rce_religion_mechanic_pantheon_not_removing_a_god_tt: "Is NOT currently removing a worshipped god"
+ rce_religion_mechanic_pantheon_cannot_remove_at_least_one_god_due_to_same_ruler_tt: "Has selected at least §Y1§! of the selected gods during the reign of §Y[This.Monarch.GetName]§!"
+ rce_religion_mechanic_pantheon_dedicate_temple_button_tt: "§YDedicate a new Temple§! \nDedicate a newly constructed temple to one of the worshipped gods."
+ rce_religion_mechanic_pantheon_dedicate_temple_button_tt_choose_modifier: "We will be able to choose the god, which decides the bonus a random owned province of the §Y[This.Religion.GetName]§! faith with a §YTax Building§! and our capital §Y[This.Capital.GetName]§! will receive."
+ rce_religion_mechanic_pantheon_not_dedicating_a_temple_tt: "Has NOT dedicated a new Temple to a god within the last §Y20 years§!"
+ rce_religion_mechanic_pantheon_hold_festival_button_tt: "§YHold Festivals for the Gods§! \nHold festivals to honor the worshipped gods of the Pantheon."
+ rce_religion_mechanic_pantheon_not_held_a_festival_tt: "Has NOT held Festivals for the Gods within the last §Y20 years§!"
+ rce_religion_mechanic_pantheon_god_adm_button_tt: "§YSelect £adm£ Administrative God§! \n--------------\n[This.RceGetReligionMechanicPantheonCurrentGodAdm]"
+ rce_religion_mechanic_pantheon_god_dip_button_tt: "§YSelect £dip£ Diplomatic God§! \n--------------\n[This.RceGetReligionMechanicPantheonCurrentGodDip]"
+ rce_religion_mechanic_pantheon_god_mil_button_tt: "§YSelect £mil£ Military God§! \n--------------\n[This.RceGetReligionMechanicPantheonCurrentGodMil]"
+ rce_religion_mechanic_pantheon_god_button_tt_cant_remove_god_under_same_ruler: "§RWe have selected this god under the reign of §Y[This.Monarch.GetName]§!, we can only change the selected god after [This.Monarch.GetHerHis] death without using the interaction to replace a forsaken god.§W"
+ rce_religion_mechanic_pantheon_god_adm_selected_text: "[This.RceGetReligionMechanicPantheonCurrentGodNameAdm]"
+ rce_religion_mechanic_pantheon_god_dip_selected_text: "[This.RceGetReligionMechanicPantheonCurrentGodNameDip]"
+ rce_religion_mechanic_pantheon_god_mil_selected_text: "[This.RceGetReligionMechanicPantheonCurrentGodNameMil]"
+ rce_religion_mechanic_pantheon_god_selection_window_prev_page_button_tt: "Previous Page."
+ rce_religion_mechanic_pantheon_god_selection_window_next_page_button_tt: "Next Page."
+ rce_religion_mechanic_pantheon_god_select_button_tt: "§YSelect God§!"
+
+ # Scripted Effects:
+ rce_set_religion_mechanic_active_god_tt_cooldown: "§OWe cannot remove this god without penalties until the death of §Y[This.Monarch.GetName]§!.§W"
+ rce_remove_religion_mechanic_active_adm_god_tt: "The currently selected £adm£ §YAdministrative God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameAdm]§!) and the connected bonus is removed."
+ rce_remove_religion_mechanic_active_dip_god_tt: "The currently selected £dip£ §YDiplomatic God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameDip]§!) and the connected bonus is removed."
+ rce_remove_religion_mechanic_active_mil_god_tt: "The currently selected £mil£ §YMilitary God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameMil]§!) and the connected bonus is removed."
+ rce_religion_mechanic_pantheon_god_modifier_duration_tt: "until the god is no longer worshipped"
+
+ # Scripted Triggers:
+ rce_uses_religion_mechanic_pantheon_tt: "Uses the §YPantheon§! mechanic"
+ rce_not_uses_religion_mechanic_pantheon_tt: "Does NOT use the §YPantheon§! mechanic"
+ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_adm_tt: "Has selected any £adm£ §YAdministrative God§! in the Pantheon"
+ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip_tt: "Has selected any £dip£ §YDiplomatic God§! in the Pantheon"
+ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil_tt: "Has selected any £mil£ §YMilitary God§! in the Pantheon"
+ rce_religion_mechanic_pantheon_god_adm_not_selected_during_current_ruler_tt: "Has NOT selected the current £adm£ §YAdministrative God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameAdm]§!) during the reign of §Y[This.Monarch.GetName]§!"
+ rce_religion_mechanic_pantheon_god_dip_not_selected_during_current_ruler_tt: "Has NOT selected the current £dip£ §YDiplomatic God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameDip]§!) during the reign of §Y[This.Monarch.GetName]§!"
+ rce_religion_mechanic_pantheon_god_mil_not_selected_during_current_ruler_tt: "Has NOT selected the current £mil£ §YMilitary God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameMil]§!) during the reign of §Y[This.Monarch.GetName]§!"
+
+ rce_has_religion_mechanic_pantheon_god_selected_tt_zeus: "Has selected §YZeus§! as a god in the Pantheon"
+ rce_not_has_religion_mechanic_pantheon_god_selected_tt_zeus: "Has NOT selected §YZeus§! as a god in the Pantheon"
+
+ # Customizable Localization:
+ string_rce_religion_mechanic_pantheon_adm_god_selected: "[This.RceGetReligionMechanicPantheonCurrentGodNameWithDescAdm]"
+ string_rce_religion_mechanic_pantheon_dip_god_selected: "[This.RceGetReligionMechanicPantheonCurrentGodNameWithDescDip]"
+ string_rce_religion_mechanic_pantheon_mil_god_selected: "[This.RceGetReligionMechanicPantheonCurrentGodNameWithDescMil]"
+ string_rce_religion_mechanic_pantheon_no_god_selected: "There currently is no god selected in this category."
+
+ # Gods:
+ rce_religion_mechanic_pantheon_god_zeus_name_text: "Zeus"
+ rce_religion_mechanic_pantheon_god_zeus_desc_text: "§YZeus§! \nZeus is the chief deity of the Pantheon. He is a sky and thunder god in ancient Greek religion and mythology, who rules as king of the gods on Mount Olympus."
+ rce_religion_mechanic_pantheon_god_zeus_effects_text: "Modifier Placeholder"
+
+ # Events:
+ rce_religion_mechanic_pantheon_events.EVTNAME1: "Remove a Forsaken God?"
+ rce_religion_mechanic_pantheon_events.EVTDESC1: "Which of the currently worshipped gods do you want to remove?"
+ rce_religion_mechanic_pantheon_events1.EVTOPT1: "Remove the £adm£ §YAdministrative God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameAdm]§!)."
+ rce_religion_mechanic_pantheon_events1.EVTOPT2: "Remove the £dip£ §YDiplomatic God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameDip]§!)."
+ rce_religion_mechanic_pantheon_events1.EVTOPT3: "Remove the £mil£ §YMilitary God§! (§Y[This.RceGetReligionMechanicPantheonCurrentGodNameMil]§!)."
+ rce_religion_mechanic_pantheon_events1.EVTOPT4: "Cancel."
+
+ # Decisions:
+
+ # Modifiers:
+ ## Mechanic Modifiers:
+ ## God Modifiers:
+ rce_religion_mechanic_pantheon_god_zeus_modifier: "Worshipping Zeus"

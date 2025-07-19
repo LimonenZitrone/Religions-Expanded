@@ -7,11 +7,94 @@ custom_window = {
 }
 
 custom_button = {
+	name = rce_religion_mechanic_pantheon_remove_god_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_remove_god_decision decision accordingly
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_pantheon_not_removing_a_god_tt
+			NOT = { has_country_flag = rce_religion_mechanic_pantheon_removing_a_god }
+		}
+		stability = 1
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_pantheon_cannot_remove_at_least_one_god_due_to_same_ruler_tt
+			OR = {
+				has_ruler_flag = rce_religion_mechanic_pantheon_god_adm_selected_during_reign
+				has_ruler_flag = rce_religion_mechanic_pantheon_god_dip_selected_during_reign
+				has_ruler_flag = rce_religion_mechanic_pantheon_god_mil_selected_during_reign
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		country_event = { id = rce_religion_mechanic_pantheon_events.1 tooltip = rce_religion_mechanic_pantheon_remove_god_button_tt_choose_god }
+	}
+	tooltip = rce_religion_mechanic_pantheon_remove_god_button_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_pantheon_dedicate_temple_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_dedicate_temple_decision decision accordingly
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_pantheon_not_dedicating_a_temple_tt
+			NOT = { has_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple }
+			NOT = { has_country_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple }
+		}
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+		capital_scope = {
+			has_owner_religion = yes
+		}
+		any_owned_province = {
+			is_capital = no
+			has_owner_religion = yes
+			has_tax_building_trigger = yes
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		country_event = { id = rce_religion_mechanic_pantheon_events.2 tooltip = rce_religion_mechanic_pantheon_dedicate_temple_button_tt_choose_modifier }
+	}
+	tooltip = rce_religion_mechanic_pantheon_dedicate_temple_button_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_pantheon_hold_festival_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_hold_festival_decision decision accordingly
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_pantheon_not_held_a_festival_tt
+			NOT = { has_country_modifier = rce_religion_mechanic_pantheon_held_a_festival }
+		}
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_held_a_festival
+			duration = 7300
+			hidden = yes
+		}
+		# effects of god combinations
+	}
+	tooltip = rce_religion_mechanic_pantheon_hold_festival_button_tt
+}
+
+custom_button = {
 	name = rce_religion_mechanic_pantheon_god_adm_button
 	trigger = {
 
 	}
 	effect = {
+		if = {
+			limit = {
+				has_ruler_flag = rce_religion_mechanic_pantheon_god_adm_selected_during_reign
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_god_button_tt_cant_remove_god_under_same_ruler
+		}
 		hidden_effect = {
 			clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
 			clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
@@ -43,6 +126,12 @@ custom_button = {
 
 	}
 	effect = {
+		if = {
+			limit = {
+				has_ruler_flag = rce_religion_mechanic_pantheon_god_dip_selected_during_reign
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_god_button_tt_cant_remove_god_under_same_ruler
+		}
 		hidden_effect = {
 			clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
 			clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
@@ -74,6 +163,12 @@ custom_button = {
 
 	}
 	effect = {
+		if = {
+			limit = {
+				has_ruler_flag = rce_religion_mechanic_pantheon_god_mil_selected_during_reign
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_god_button_tt_cant_remove_god_under_same_ruler
+		}
 		hidden_effect = {
 			clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
 			clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
@@ -158,22 +253,48 @@ custom_window = {
 		has_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
 	}
 }
-
 custom_window = {
 	name = rce_religion_mechanic_pantheon_god_selection_adm_page_1_window
 	potential = {
-		is_variable_equal = { rce_religion_mechanic_pantheon_god_selection_page = 1 }
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 1 }
 	}
 }
 
-## Gods ##
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_dip_window
+	potential = {
+		has_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_dip_page_1_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 1 }
+	}
+}
+
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_mil_window
+	potential = {
+		has_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_mil_page_1_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 1 }
+	}
+}
+
+# Gods #
+## MIL ##
 ### Zeus ###
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_zeus_name_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_zeus_name_text_tt
+	tooltip = rce_religion_mechanic_pantheon_god_zeus_desc_text
 }
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_zeus_effects_text
@@ -185,10 +306,17 @@ custom_text_box = {
 custom_button = {
 	name = rce_religion_mechanic_pantheon_god_zeus_select_button
 	trigger = {
-
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = zeus
+		}
 	}
 	effect = {
-
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_active_god = {
+			type = mil
+			name = zeus
+		}
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_zeus_select_button_tt
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
 }

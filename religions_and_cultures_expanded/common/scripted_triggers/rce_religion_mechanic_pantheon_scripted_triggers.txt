@@ -11,3 +11,69 @@ rce_not_uses_religion_mechanic_pantheon = {
 		NOT = { rce_uses_religion_mechanic_pantheon = yes }
 	}
 }
+
+rce_has_religion_mechanic_pantheon_god_selected = {
+	custom_trigger_tooltip = {
+		tooltip = rce_has_religion_mechanic_pantheon_god_selected_tt_$name$
+		has_country_modifier = rce_religion_mechanic_pantheon_god_$name$_modifier
+	}
+}
+
+rce_not_has_religion_mechanic_pantheon_god_selected = {
+	custom_trigger_tooltip = {
+		tooltip = rce_not_has_religion_mechanic_pantheon_god_selected_tt_$name$
+		NOT = { has_country_modifier = rce_religion_mechanic_pantheon_god_$name$_modifier }
+	}
+}
+
+rce_has_religion_mechanic_pantheon_any_god_selected_of_type = {
+	[[adm]
+		if = {
+			limit = {
+				always = $adm$
+			}
+			custom_trigger_tooltip = {
+				tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_adm_tt
+				OR = {
+					# list of gods: rce_has_religion_mechanic_pantheon_god_selected = { name = X }
+					always = no
+				}
+			}
+		}
+	]
+	[[dip]
+		if = {
+			limit = {
+				always = $dip$
+			}
+			custom_trigger_tooltip = {
+				tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip_tt
+				OR = {
+					# list of gods: rce_has_religion_mechanic_pantheon_god_selected = { name = X }
+					always = no
+				}
+			}
+		}
+	]
+	[[mil]
+		if = {
+			limit = {
+				always = $mil$
+			}
+			custom_trigger_tooltip = {
+				tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil_tt
+				OR = {
+					rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+				}
+			}
+		}
+	]
+}
+
+rce_can_select_religion_mechanic_pantheon_god_of_type = {
+	custom_trigger_tooltip = {
+		tooltip = rce_religion_mechanic_pantheon_god_$type$_not_selected_during_current_ruler_tt
+		NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign }
+	}
+	rce_not_has_religion_mechanic_pantheon_god_selected = { name = $name$ }
+}

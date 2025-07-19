@@ -1,0 +1,56 @@
+rce_set_religion_mechanic_active_god = {
+	rce_remove_religion_mechanic_active_$type$_god = yes
+	set_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign
+	add_country_modifier = {
+		name = rce_religion_mechanic_pantheon_god_$name$_modifier
+		duration = -1
+		desc = rce_religion_mechanic_pantheon_god_modifier_duration_tt
+	}
+	custom_tooltip = rce_set_religion_mechanic_active_god_tt_cooldown
+	hidden_effect = {
+		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
+		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
+		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
+		set_variable = { which = rce_religion_mechanic_pantheon_god_selection_page value = 0 }
+	}
+}
+
+rce_remove_religion_mechanic_active_god = {
+	if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = $name$ }
+		}
+		custom_tooltip = rce_remove_religion_mechanic_active_$type$_god_tt
+		hidden_effect = {
+			clr_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign
+			remove_country_modifier = rce_religion_mechanic_pantheon_god_$name$_modifier
+		}
+	}
+}
+
+rce_remove_religion_mechanic_active_adm_god = {
+	# list of gods: rce_remove_religion_mechanic_active_god = { name = X }
+}
+
+rce_remove_religion_mechanic_active_dip_god = {
+	# list of gods: rce_remove_religion_mechanic_active_god = { name = X }
+}
+
+rce_remove_religion_mechanic_active_mil_god = {
+	rce_remove_religion_mechanic_active_god = {
+		type = mil
+		name = zeus
+	}
+}
+
+rce_clear_all_religion_mechanic_pantheon_modifiers = {
+	rce_remove_religion_mechanic_active_adm_god = yes
+	rce_remove_religion_mechanic_active_dip_god = yes
+	rce_remove_religion_mechanic_active_mil_god = yes
+	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
+	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
+	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
+	set_variable = { which = rce_religion_mechanic_pantheon_god_selection_page value = 0 }
+	remove_country_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple
+	remove_country_modifier = rce_religion_mechanic_pantheon_held_a_festival
+}
