@@ -1242,6 +1242,66 @@ guiTypes = {
 								text = "hinduism"
 							}
 						}
+						windowType = {
+							name = "religion_8_window"
+							position = { x = 0 y = 46 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_religion_8_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_religion_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_religion_8_icon"
+								position = { x = 7 y = 9 }
+								spriteType = "GFX_icon_religion"
+								scale = 0.5
+								frame = 21
+								alwaystransparent = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_religion_8_button_text"
+								position = { x = 40 y = 17 }
+								font = "vic_18"
+								format = left
+								maxWidth = 98
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "norse_pagan_reformed"
+							}
+						}
+						windowType = {
+							name = "religion_9_window"
+							position = { x = 0 y = 92 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_religion_9_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_religion_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_religion_9_icon"
+								position = { x = 7 y = 9 }
+								spriteType = "GFX_icon_religion"
+								scale = 0.5
+								frame = 36
+								alwaystransparent = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_religion_9_button_text"
+								position = { x = 40 y = 17 }
+								font = "vic_18"
+								format = left
+								maxWidth = 98
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "hellenism"
+							}
+						}
 					}
 
 					windowType = {

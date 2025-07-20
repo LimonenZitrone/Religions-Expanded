@@ -63,6 +63,18 @@ defined_text = {
 		}
 		localisation_key = hinduism
 	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 8 }
+		}
+		localisation_key = norse_pagan_reformed
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 9 }
+		}
+		localisation_key = hellenism
+	}
 
 	# Fallback
 	text = {
@@ -136,6 +148,18 @@ defined_text = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 7 }
 		}
 		localisation_key = rce_startup_text_hinduism
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 8 }
+		}
+		localisation_key = rce_startup_text_norse_pagan_reformed
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_religion value = 9 }
+		}
+		localisation_key = rce_startup_text_hellenism
 	}
 
 	# Fallback
