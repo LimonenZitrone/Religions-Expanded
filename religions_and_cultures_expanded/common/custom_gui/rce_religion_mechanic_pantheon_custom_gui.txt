@@ -287,7 +287,7 @@ custom_window = {
 }
 
 # Gods #
-## MIL ##
+## ADM ##
 ### Zeus ###
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_zeus_name_text
@@ -307,14 +307,14 @@ custom_button = {
 	name = rce_religion_mechanic_pantheon_god_zeus_select_button
 	trigger = {
 		rce_can_select_religion_mechanic_pantheon_god_of_type = {
-			type = mil
+			type = adm
 			name = zeus
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
 		rce_set_religion_mechanic_active_god = {
-			type = mil
+			type = adm
 			name = zeus
 		}
 	}

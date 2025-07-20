@@ -35,8 +35,7 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type = {
 			custom_trigger_tooltip = {
 				tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_adm_tt
 				OR = {
-					# list of gods: rce_has_religion_mechanic_pantheon_god_selected = { name = X }
-					always = no
+					rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
 				}
 			}
 		}
@@ -63,7 +62,8 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type = {
 			custom_trigger_tooltip = {
 				tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil_tt
 				OR = {
-					rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+					# list of gods: rce_has_religion_mechanic_pantheon_god_selected = { name = X }
+					always = no
 				}
 			}
 		}

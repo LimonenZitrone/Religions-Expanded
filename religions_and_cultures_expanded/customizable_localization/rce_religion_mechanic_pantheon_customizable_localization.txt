@@ -19,7 +19,12 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameAdm
 	random = no
 
-	# rce_religion_mechanic_pantheon_god_<god>_name_text
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_zeus_name_text
+	}
 	# Fallback
 	text = {
 		trigger = {
@@ -32,7 +37,12 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescAdm
 	random = no
 
-	# rce_religion_mechanic_pantheon_god_<god>_desc_text
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_zeus_desc_text
+	}
 	# Fallback
 	text = {
 		trigger = {
@@ -107,12 +117,7 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameMil
 	random = no
 
-	text = {
-		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
-		}
-		localisation_key = rce_religion_mechanic_pantheon_god_zeus_name_text
-	}
+	# rce_religion_mechanic_pantheon_god_<god>_name_text
 	# Fallback
 	text = {
 		trigger = {
@@ -125,12 +130,7 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescMil
 	random = no
 
-	text = {
-		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
-		}
-		localisation_key = rce_religion_mechanic_pantheon_god_zeus_desc_text
-	}
+	# rce_religion_mechanic_pantheon_god_<god>_desc_text
 	# Fallback
 	text = {
 		trigger = {

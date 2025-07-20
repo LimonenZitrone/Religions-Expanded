@@ -18,6 +18,9 @@
  bogomilist: "Bogomilist"
  bogomilist_religion_desc: "Bogomilism is the name of a Christian dualist and Gnostic tradition with its roots in the teachings of the Bulgarian priest Bogomil. It rejects the material world as the creation of an evil demiurge and emphasizes asceticism and spiritual purity. \n\nIn 1444, Bogomilism is a significant religious movement in the Balkans, especially in Bulgaria and Bosnia, but it faces intense persecution from both the Catholic and Orthodox Churches. This persecution will likely lead to its decline and the assimilation of its adherents into other Christian denominations."
  bogomilist_string: "Bogomilism"
+ hellenism: "Hellenist"
+ hellenism_religion_desc: ""
+ hellenism_string: "Hellenism"
 
  # Heresies:
  YAPANIYA: "Yapaniya"
@@ -63,6 +66,12 @@
  bogomilist_rebels_army: "$RELIGION$ Army"
  bogomilist_rebels_demand: "Convert $COUNTRYNAME$"
  bogomilist_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ hellenism_rebels_title: "Religious"
+ hellenism_rebels_name: "$RELIGION$ Zealots"
+ hellenism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ hellenism_rebels_army: "$RELIGION$ Army"
+ hellenism_rebels_demand: "Convert $COUNTRYNAME$"
+ hellenism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
  # Decisions:
  rce_religion_decision_vidilist_stamp_out_the_pagans_title: "Stamp Out the Pagans"

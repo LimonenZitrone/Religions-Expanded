@@ -3640,34 +3640,6 @@ guiTypes = {
 						scripted = yes
 
 						# List of Gods
-					}
-				}
-
-				windowType = {
-					name = "rce_religion_mechanic_pantheon_god_selection_dip_window"
-					position = { x = 42 y = 19 }
-					scripted = yes
-
-					windowType = {
-						name = "rce_religion_mechanic_pantheon_god_selection_dip_page_1_window"
-						position = { x = 0 y = 0 }
-						scripted = yes
-
-						# List of Gods
-					}
-				}
-
-				windowType = {
-					name = "rce_religion_mechanic_pantheon_god_selection_mil_window"
-					position = { x = 42 y = 19 }
-					scripted = yes
-
-					windowType = {
-						name = "rce_religion_mechanic_pantheon_god_selection_mil_page_1_window"
-						position = { x = 0 y = 0 }
-						scripted = yes
-
-						# List of Gods
 						windowType = {
 							name = "god_window_zeus"
 							position = { x = 0 y = 0 }
@@ -3715,6 +3687,34 @@ guiTypes = {
 								scripted = yes
 							}
 						}
+					}
+				}
+
+				windowType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_dip_window"
+					position = { x = 42 y = 19 }
+					scripted = yes
+
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_dip_page_1_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+					}
+				}
+
+				windowType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_mil_window"
+					position = { x = 42 y = 19 }
+					scripted = yes
+
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_mil_page_1_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
 					}
 				}
 

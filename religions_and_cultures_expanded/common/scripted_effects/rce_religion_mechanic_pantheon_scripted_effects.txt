@@ -29,18 +29,15 @@ rce_remove_religion_mechanic_active_god = {
 }
 
 rce_remove_religion_mechanic_active_adm_god = {
-	# list of gods: rce_remove_religion_mechanic_active_god = { name = X }
+	rce_remove_religion_mechanic_active_god = { type = adm name = zeus }
 }
 
 rce_remove_religion_mechanic_active_dip_god = {
-	# list of gods: rce_remove_religion_mechanic_active_god = { name = X }
+	# list of gods: rce_remove_religion_mechanic_active_god = { type = dip name = X }
 }
 
 rce_remove_religion_mechanic_active_mil_god = {
-	rce_remove_religion_mechanic_active_god = {
-		type = mil
-		name = zeus
-	}
+	# list of gods: rce_remove_religion_mechanic_active_god = { type = mil name = X }
 }
 
 rce_clear_all_religion_mechanic_pantheon_modifiers = {
