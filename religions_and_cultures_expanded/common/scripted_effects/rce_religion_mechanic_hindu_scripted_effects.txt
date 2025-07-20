@@ -2080,12 +2080,3 @@ rce_clear_all_religion_mechanic_hindu_modifiers = {
 	set_variable = { which = rce_monthly_religion_mechanic_hindu_value_ruler_skill value = 0 }
 	set_variable = { which = rce_monthly_religion_mechanic_hindu_value_ruler_personality value = 0 }
 }
-
-rce_clear_all_religion_mechanic_hindu_modifiers_when_changing_religion = {
-	if = {
-		limit = {
-			rce_not_uses_religion_mechanic = { mechanic = hindu }
-		}
-		rce_clear_all_religion_mechanic_hindu_modifiers = yes
-	}
-}
