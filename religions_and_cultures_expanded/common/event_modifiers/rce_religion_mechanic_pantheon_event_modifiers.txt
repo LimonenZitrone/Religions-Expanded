@@ -5,6 +5,147 @@ rce_religion_mechanic_pantheon_held_a_festival = {
 }
 
 # God Modifiers:
+rce_religion_mechanic_pantheon_god_urania_modifier = {
+}
+rce_religion_mechanic_pantheon_god_cronus_modifier = {
+}
 rce_religion_mechanic_pantheon_god_zeus_modifier = {
-	religion = yes
+}
+rce_religion_mechanic_pantheon_god_oceanus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_amphitrite_modifier = {
+}
+rce_religion_mechanic_pantheon_god_leucothea_modifier = {
+}
+rce_religion_mechanic_pantheon_god_rhea_modifier = {
+}
+rce_religion_mechanic_pantheon_god_demeter_modifier = {
+}
+rce_religion_mechanic_pantheon_god_pan_modifier = {
+}
+rce_religion_mechanic_pantheon_god_asclepius_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hephaestus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_daedalus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_kratos_modifier = {
+}
+rce_religion_mechanic_pantheon_god_dike_modifier = {
+}
+rce_religion_mechanic_pantheon_god_enyo_modifier = {
+}
+rce_religion_mechanic_pantheon_god_eros_modifier = {
+}
+rce_religion_mechanic_pantheon_god_anteros_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hera_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hades_modifier = {
+}
+rce_religion_mechanic_pantheon_god_thanatos_modifier = {
+}
+rce_religion_mechanic_pantheon_god_macaria_modifier = {
+}
+rce_religion_mechanic_pantheon_god_clotho_modifier = {
+}
+rce_religion_mechanic_pantheon_god_metis_modifier = {
+}
+rce_religion_mechanic_pantheon_god_tiresias_modifier = {
+}
+rce_religion_mechanic_pantheon_god_iris_modifier = {
+}
+rce_religion_mechanic_pantheon_god_selene_modifier = {
+}
+rce_religion_mechanic_pantheon_god_astraeus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_galene_modifier = {
+}
+rce_religion_mechanic_pantheon_god_thetis_modifier = {
+}
+rce_religion_mechanic_pantheon_god_nereus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_gaia_modifier = {
+}
+rce_religion_mechanic_pantheon_god_horae_modifier = {
+}
+rce_religion_mechanic_pantheon_god_dione_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hermes_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hestia_modifier = {
+}
+rce_religion_mechanic_pantheon_god_mnemosyne_modifier = {
+}
+rce_religion_mechanic_pantheon_god_harmonia_modifier = {
+}
+rce_religion_mechanic_pantheon_god_themis_modifier = {
+}
+rce_religion_mechanic_pantheon_god_eris_modifier = {
+}
+rce_religion_mechanic_pantheon_god_aphrodite_modifier = {
+}
+rce_religion_mechanic_pantheon_god_peitho_modifier = {
+}
+rce_religion_mechanic_pantheon_god_philotes_modifier = {
+}
+rce_religion_mechanic_pantheon_god_persephone_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hecate_modifier = {
+}
+rce_religion_mechanic_pantheon_god_orpheus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_circe_modifier = {
+}
+rce_religion_mechanic_pantheon_god_moira_modifier = {
+}
+rce_religion_mechanic_pantheon_god_apollo_modifier = {
+}
+rce_religion_mechanic_pantheon_god_hyperion_modifier = {
+}
+rce_religion_mechanic_pantheon_god_aether_modifier = {
+}
+rce_religion_mechanic_pantheon_god_helios_modifier = {
+}
+rce_religion_mechanic_pantheon_god_poseidon_modifier = {
+}
+rce_religion_mechanic_pantheon_god_triton_modifier = {
+}
+rce_religion_mechanic_pantheon_god_scylla_modifier = {
+}
+rce_religion_mechanic_pantheon_god_artemis_modifier = {
+}
+rce_religion_mechanic_pantheon_god_eileithyia_modifier = {
+}
+rce_religion_mechanic_pantheon_god_cyrene_modifier = {
+}
+rce_religion_mechanic_pantheon_god_bellerophon_modifier = {
+}
+rce_religion_mechanic_pantheon_god_athena_modifier = {
+}
+rce_religion_mechanic_pantheon_god_prometheus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_ares_modifier = {
+}
+rce_religion_mechanic_pantheon_god_phobos_modifier = {
+}
+rce_religion_mechanic_pantheon_god_deimos_modifier = {
+}
+rce_religion_mechanic_pantheon_god_penthesilea_modifier = {
+}
+rce_religion_mechanic_pantheon_god_helen_modifier = {
+}
+rce_religion_mechanic_pantheon_god_iolaus_modifier = {
+}
+rce_religion_mechanic_pantheon_god_charon_modifier = {
+}
+rce_religion_mechanic_pantheon_god_melinoe_modifier = {
+}
+rce_religion_mechanic_pantheon_god_achlys_modifier = {
+}
+rce_religion_mechanic_pantheon_god_atropos_modifier = {
+}
+rce_religion_mechanic_pantheon_god_medea_modifier = {
+}
+rce_religion_mechanic_pantheon_god_cassandra_modifier = {
 }

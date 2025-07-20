@@ -512,6 +512,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_rce_religion_mechanic_pantheon_god_icons"
 		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_god_icons.dds"
+		noOfFrames = 25
 	}
 	spriteType = {
 		name = "GFX_rce_religion_mechanic_pantheon_god_selection_bg"

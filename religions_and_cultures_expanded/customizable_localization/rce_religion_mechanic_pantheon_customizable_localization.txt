@@ -4,7 +4,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
 		}
 		localisation_key = string_rce_religion_mechanic_pantheon_adm_god_selected
 	}
@@ -21,9 +21,147 @@ defined_text = {
 
 	text = {
 		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = urania }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_urania_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = cronus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_cronus_name_text
+	}
+	text = {
+		trigger = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
 		}
 		localisation_key = rce_religion_mechanic_pantheon_god_zeus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = oceanus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_oceanus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = amphitrite }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_amphitrite_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = leucothea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_leucothea_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = rhea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_rhea_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = demeter }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_demeter_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = pan }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_pan_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = asclepius }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_asclepius_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hephaestus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hephaestus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = daedalus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_daedalus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = kratos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_kratos_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = dike }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_dike_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = enyo }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_enyo_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = eros }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_eros_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = anteros }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_anteros_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hera }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hera_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hades }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hades_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = thanatos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_thanatos_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = macaria }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_macaria_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = clotho }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_clotho_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = metis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_metis_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = tiresias }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_tiresias_name_text
 	}
 	# Fallback
 	text = {
@@ -39,9 +177,147 @@ defined_text = {
 
 	text = {
 		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = urania }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_urania_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = cronus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_cronus_desc_text
+	}
+	text = {
+		trigger = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
 		}
 		localisation_key = rce_religion_mechanic_pantheon_god_zeus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = oceanus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_oceanus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = amphitrite }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_amphitrite_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = leucothea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_leucothea_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = rhea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_rhea_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = demeter }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_demeter_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = pan }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_pan_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = asclepius }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_asclepius_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hephaestus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hephaestus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = daedalus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_daedalus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = kratos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_kratos_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = dike }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_dike_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = enyo }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_enyo_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = eros }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_eros_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = anteros }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_anteros_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hera }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hera_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hades }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hades_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = thanatos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_thanatos_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = macaria }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_macaria_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = clotho }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_clotho_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = metis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_metis_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = tiresias }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_tiresias_desc_text
 	}
 	# Fallback
 	text = {
@@ -58,7 +334,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
 		}
 		localisation_key = string_rce_religion_mechanic_pantheon_dip_god_selected
 	}
@@ -73,7 +349,150 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameDip
 	random = no
 
-	# rce_religion_mechanic_pantheon_god_<god>_name_text
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = iris }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_iris_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = selene }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_selene_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = astraeus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_astraeus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = galene }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_galene_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = thetis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_thetis_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = nereus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_nereus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = gaia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_gaia_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = horae }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_horae_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = dione }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_dione_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hermes }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hermes_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hestia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hestia_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = mnemosyne }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_mnemosyne_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = harmonia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_harmonia_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = themis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_themis_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = eris }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_eris_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = aphrodite }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_aphrodite_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = peitho }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_peitho_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = philotes }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_philotes_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = persephone }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_persephone_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hecate }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hecate_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_orpheus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = circe }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_circe_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_moira_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_apollo_name_text
+	}
 	# Fallback
 	text = {
 		trigger = {
@@ -86,7 +505,150 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescDip
 	random = no
 
-	# rce_religion_mechanic_pantheon_god_<god>_desc_text
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = iris }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_iris_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = selene }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_selene_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = astraeus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_astraeus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = galene }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_galene_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = thetis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_thetis_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = nereus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_nereus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = gaia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_gaia_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = horae }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_horae_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = dione }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_dione_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hermes }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hermes_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hestia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hestia_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = mnemosyne }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_mnemosyne_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = harmonia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_harmonia_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = themis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_themis_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = eris }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_eris_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = aphrodite }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_aphrodite_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = peitho }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_peitho_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = philotes }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_philotes_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = persephone }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_persephone_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hecate }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hecate_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_orpheus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = circe }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_circe_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_moira_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_apollo_desc_text
+	}
 	# Fallback
 	text = {
 		trigger = {
@@ -102,7 +664,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
 		}
 		localisation_key = string_rce_religion_mechanic_pantheon_mil_god_selected
 	}
@@ -117,7 +679,150 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameMil
 	random = no
 
-	# rce_religion_mechanic_pantheon_god_<god>_name_text
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hyperion }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hyperion_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = aether }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_aether_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = helios }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_helios_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = poseidon }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_poseidon_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = triton }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_triton_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = scylla }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_scylla_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = artemis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_artemis_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = eileithyia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_eileithyia_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = cyrene }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_cyrene_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = bellerophon }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_bellerophon_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = athena }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_athena_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = prometheus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_prometheus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = ares }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_ares_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = phobos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_phobos_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = deimos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_deimos_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = penthesilea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_penthesilea_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_helen_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_iolaus_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = charon }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_charon_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = melinoe }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_melinoe_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = achlys }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_achlys_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = atropos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_atropos_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = medea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_medea_name_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = cassandra }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_cassandra_name_text
+	}
 	# Fallback
 	text = {
 		trigger = {
@@ -130,7 +835,150 @@ defined_text = {
 	name = RceGetReligionMechanicPantheonCurrentGodNameWithDescMil
 	random = no
 
-	# rce_religion_mechanic_pantheon_god_<god>_desc_text
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = hyperion }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_hyperion_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = aether }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_aether_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = helios }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_helios_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = poseidon }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_poseidon_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = triton }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_triton_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = scylla }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_scylla_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = artemis }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_artemis_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = eileithyia }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_eileithyia_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = cyrene }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_cyrene_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = bellerophon }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_bellerophon_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = athena }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_athena_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = prometheus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_prometheus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = ares }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_ares_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = phobos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_phobos_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = deimos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_deimos_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = penthesilea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_penthesilea_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_helen_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_iolaus_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = charon }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_charon_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = melinoe }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_melinoe_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = achlys }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_achlys_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = atropos }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_atropos_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = medea }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_medea_desc_text
+	}
+	text = {
+		trigger = {
+			rce_has_religion_mechanic_pantheon_god_selected = { name = cassandra }
+		}
+		localisation_key = rce_religion_mechanic_pantheon_god_cassandra_desc_text
+	}
 	# Fallback
 	text = {
 		trigger = {

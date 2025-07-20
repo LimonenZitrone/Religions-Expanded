@@ -1,49 +1,390 @@
-rce_set_religion_mechanic_active_god = {
-	rce_remove_religion_mechanic_active_$type$_god = yes
+rce_set_religion_mechanic_pantheon_image_frame_for_non_selected_gods = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm } }
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_adm_selected_icon_frame value = 1 }
+		}
+		if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip } }
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_dip_selected_icon_frame value = 1 }
+		}
+		if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil } }
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_mil_selected_icon_frame value = 1 }
+		}
+	}
+}
+
+rce_set_religion_mechanic_pantheon_active_god = {
+	rce_remove_religion_mechanic_pantheon_active_$type$_god = yes
 	set_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign
 	add_country_modifier = {
 		name = rce_religion_mechanic_pantheon_god_$name$_modifier
 		duration = -1
 		desc = rce_religion_mechanic_pantheon_god_modifier_duration_tt
 	}
-	custom_tooltip = rce_set_religion_mechanic_active_god_tt_cooldown
+	custom_tooltip = rce_set_religion_mechanic_pantheon_active_god_tt_cooldown
 	hidden_effect = {
 		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
 		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
 		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
 		set_variable = { which = rce_religion_mechanic_pantheon_god_selection_page value = 0 }
+		set_country_flag = rce_religion_mechanic_pantheon_new_selected_god_is_$name$
+		if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = urania }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = iris }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hyperion }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 2 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = cronus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = selene }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = aether }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 3 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = zeus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = astraeus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = helios }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 4 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = oceanus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = galene }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = poseidon }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 5 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = amphitrite }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = thetis }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = triton }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 6 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = leucothea }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = nereus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = scylla }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 7 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = rhea }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = gaia }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = artemis }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 8 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = demeter }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = horae }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eileithyia }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 9 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = pan }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = dione }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = cyrene }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 10 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = asclepius }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hermes }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = bellerophon }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 11 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hephaestus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hestia }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = athena }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 12 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = daedalus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = mnemosyne }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = prometheus }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 13 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = kratos }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = harmonia }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = ares }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 14 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = dike }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = themis }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = phobos }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 15 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = enyo }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eris }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = deimos }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 16 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eros }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = aphrodite }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = penthesilea }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 17 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = anteros }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = peitho }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = helen }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 18 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hera }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = philotes }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = iolaus }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 19 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hades }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = persephone }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = charon }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 20 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = thanatos }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hecate }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = melinoe }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 21 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = macaria }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = orpheus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = achlys }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 22 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = clotho }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = circe }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = atropos }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 23 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = metis }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = moira }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = medea }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 24 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = tiresias }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = apollo }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = cassandra }
+				}
+			}
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 25 }
+		}
+		clr_country_flag = rce_religion_mechanic_pantheon_new_selected_god_is_$name$
 	}
 }
 
-rce_remove_religion_mechanic_active_god = {
+rce_remove_religion_mechanic_pantheon_active_god = {
 	if = {
 		limit = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = $name$ }
 		}
-		custom_tooltip = rce_remove_religion_mechanic_active_$type$_god_tt
+		custom_tooltip = rce_remove_religion_mechanic_pantheon_active_$type$_god_tt
 		hidden_effect = {
 			clr_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign
 			remove_country_modifier = rce_religion_mechanic_pantheon_god_$name$_modifier
+			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 1 }
 		}
 	}
 }
 
-rce_remove_religion_mechanic_active_adm_god = {
-	rce_remove_religion_mechanic_active_god = { type = adm name = zeus }
+rce_remove_religion_mechanic_pantheon_active_adm_god = {
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = urania }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = cronus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = zeus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = oceanus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = amphitrite }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = leucothea }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = rhea }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = demeter }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = pan }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = asclepius }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = hephaestus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = daedalus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = kratos }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = dike }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = enyo }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = eros }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = anteros }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = hera }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = hades }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = thanatos }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = macaria }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = clotho }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = metis }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = tiresias }
 }
 
-rce_remove_religion_mechanic_active_dip_god = {
-	# list of gods: rce_remove_religion_mechanic_active_god = { type = dip name = X }
+rce_remove_religion_mechanic_pantheon_active_dip_god = {
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = iris }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = selene }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = astraeus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = galene }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = thetis }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = nereus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = gaia }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = horae }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = dione }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hermes }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hestia }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = mnemosyne }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = harmonia }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = themis }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = eris }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = aphrodite }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = peitho }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = philotes }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = persephone }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hecate }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = orpheus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = circe }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = moira }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = apollo }
 }
 
-rce_remove_religion_mechanic_active_mil_god = {
-	# list of gods: rce_remove_religion_mechanic_active_god = { type = mil name = X }
+rce_remove_religion_mechanic_pantheon_active_mil_god = {
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = hyperion }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = aether }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = helios }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = poseidon }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = triton }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = scylla }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = artemis }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = eileithyia }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = cyrene }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = bellerophon }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = athena }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = prometheus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = ares }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = phobos }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = deimos }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = penthesilea }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = helen }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = iolaus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = charon }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = melinoe }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = achlys }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = atropos }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = medea }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = cassandra }
 }
 
 rce_clear_all_religion_mechanic_pantheon_modifiers = {
-	rce_remove_religion_mechanic_active_adm_god = yes
-	rce_remove_religion_mechanic_active_dip_god = yes
-	rce_remove_religion_mechanic_active_mil_god = yes
+	rce_remove_religion_mechanic_pantheon_active_adm_god = yes
+	rce_remove_religion_mechanic_pantheon_active_dip_god = yes
+	rce_remove_religion_mechanic_pantheon_active_mil_god = yes
+	set_variable = { which = rce_religion_mechanic_pantheon_god_adm_selected_icon_frame value = 0 }
+	set_variable = { which = rce_religion_mechanic_pantheon_god_dip_selected_icon_frame value = 0 }
+	set_variable = { which = rce_religion_mechanic_pantheon_god_mil_selected_icon_frame value = 0 }
 	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
 	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
 	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil

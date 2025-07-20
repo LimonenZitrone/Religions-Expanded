@@ -18,39 +18,39 @@ country_event = {
 		name = rce_religion_mechanic_pantheon_events1.EVTOPT1
 
 		trigger = {
-			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
 		}
 
 		ai_chance = { factor = 0 }
 
 		add_stability = -1
-		rce_remove_religion_mechanic_active_adm_god = yes
+		rce_remove_religion_mechanic_pantheon_active_adm_god = yes
 	}
 
 	option = {
 		name = rce_religion_mechanic_pantheon_events1.EVTOPT2
 
 		trigger = {
-			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
 		}
 
 		ai_chance = { factor = 0 }
 
 		add_stability = -1
-		rce_remove_religion_mechanic_active_dip_god = yes
+		rce_remove_religion_mechanic_pantheon_active_dip_god = yes
 	}
 
 	option = {
 		name = rce_religion_mechanic_pantheon_events1.EVTOPT3
 
 		trigger = {
-			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
 		}
 
 		ai_chance = { factor = 0 }
 
 		add_stability = -1
-		rce_remove_religion_mechanic_active_mil_god = yes
+		rce_remove_religion_mechanic_pantheon_active_mil_god = yes
 	}
 
 	option = {

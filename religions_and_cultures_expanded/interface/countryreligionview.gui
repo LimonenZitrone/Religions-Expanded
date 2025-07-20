@@ -3620,7 +3620,7 @@ guiTypes = {
 
 			windowType = {
 				name = "rce_religion_mechanic_pantheon_god_selection_window"
-				position = { x = -24 y = -12 }
+				position = { x = -10 y = -12 }
 				scripted = yes
 
 				iconType = {
@@ -3641,14 +3641,106 @@ guiTypes = {
 
 						# List of Gods
 						windowType = {
-							name = "god_window_zeus"
+							name = "god_window_urania"
 							position = { x = 0 y = 0 }
 
 							iconType = {
 								name = "icon"
 								position = { x = 64 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
-								frame = 1
+								frame = 2
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_urania_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_urania_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_urania_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_cronus"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 3
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_cronus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_cronus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_cronus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_zeus"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 4
 								scale = 0.55
 							}
 							iconType = {
@@ -3663,7 +3755,6 @@ guiTypes = {
 								font = "vic_18"
 								maxWidth = 50
 								maxHeight = 40
-								fixedsize = yes
 								vertical_alignment = center
 								scripted = yes
 							}
@@ -3687,6 +3778,993 @@ guiTypes = {
 								scripted = yes
 							}
 						}
+						windowType = {
+							name = "god_window_oceanus"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 5
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_oceanus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_oceanus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_oceanus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_amphitrite"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 6
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_amphitrite_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_amphitrite_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_amphitrite_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_leucothea"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 7
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_leucothea_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_leucothea_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_leucothea_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_adm_page_2_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_rhea"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 8
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_rhea_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_rhea_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_rhea_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_demeter"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 9
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_demeter_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_demeter_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_demeter_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_pan"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 10
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_pan_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_pan_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_pan_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_asclepius"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 11
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_asclepius_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_asclepius_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_asclepius_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_hephaestus"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 12
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hephaestus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hephaestus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hephaestus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_daedalus"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 13
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_daedalus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_daedalus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_daedalus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_adm_page_3_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_kratos"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 14
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_kratos_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_kratos_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_kratos_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_dike"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 15
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_dike_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_dike_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_dike_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_enyo"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 16
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_enyo_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_enyo_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_enyo_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_eros"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 17
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_eros_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_eros_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_eros_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_anteros"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 18
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_anteros_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_anteros_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_anteros_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_hera"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 19
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hera_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hera_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hera_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_adm_page_4_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_hades"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 20
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hades_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hades_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hades_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_thanatos"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 21
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_thanatos_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_thanatos_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_thanatos_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_macaria"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 22
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_macaria_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_macaria_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_macaria_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_clotho"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 23
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_clotho_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_clotho_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_clotho_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_metis"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 24
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_metis_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_metis_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_metis_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_tiresias"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 25
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_tiresias_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_tiresias_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_tiresias_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
 					}
 				}
 
@@ -3701,6 +4779,1131 @@ guiTypes = {
 						scripted = yes
 
 						# List of Gods
+						windowType = {
+							name = "god_window_iris"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 2
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_iris_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_iris_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_iris_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_selene"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 3
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_selene_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_selene_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_selene_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_astraeus"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 4
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_astraeus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_astraeus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_astraeus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_galene"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 5
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_galene_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_galene_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_galene_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_thetis"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 6
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_thetis_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_thetis_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_thetis_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_nereus"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 7
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_nereus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_nereus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_nereus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_dip_page_2_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_gaia"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 8
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_gaia_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_gaia_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_gaia_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_horae"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 9
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_horae_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_horae_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_horae_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_dione"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 10
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_dione_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_dione_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_dione_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_hermes"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 11
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hermes_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hermes_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hermes_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_hestia"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 12
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hestia_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hestia_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hestia_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_mnemosyne"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 13
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_mnemosyne_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_mnemosyne_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_mnemosyne_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_dip_page_3_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_harmonia"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 14
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_harmonia_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_harmonia_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_harmonia_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_themis"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 15
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_themis_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_themis_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_themis_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_eris"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 16
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_eris_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_eris_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_eris_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_aphrodite"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 17
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_aphrodite_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_aphrodite_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_aphrodite_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_peitho"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 18
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_peitho_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_peitho_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_peitho_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_philotes"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 19
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_philotes_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_philotes_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_philotes_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_dip_page_4_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_persephone"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 20
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_persephone_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_persephone_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_persephone_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_hecate"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 21
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hecate_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hecate_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hecate_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_orpheus"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 22
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_orpheus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_orpheus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_orpheus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_circe"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 23
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_circe_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_circe_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_circe_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_moira"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 24
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_moira_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_moira_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_moira_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_apollo"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 25
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_apollo_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_apollo_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_apollo_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
 					}
 				}
 
@@ -3715,6 +5918,1131 @@ guiTypes = {
 						scripted = yes
 
 						# List of Gods
+						windowType = {
+							name = "god_window_hyperion"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 2
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hyperion_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_hyperion_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_hyperion_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_aether"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 3
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_aether_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_aether_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_helios_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_helios"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 4
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_helios_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_helios_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_helios_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_poseidon"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 5
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_poseidon_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_poseidon_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_poseidon_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_triton"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 6
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_triton_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_triton_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_triton_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_scylla"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 7
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_scylla_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_scylla_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_scylla_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_mil_page_2_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_artemis"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 8
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_artemis_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_artemis_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_artemis_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_eileithyia"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 9
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_eileithyia_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_eileithyia_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_eileithyia_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_cyrene"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 10
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_cyrene_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_cyrene_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_cyrene_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_bellerophon"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 11
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_bellerophon_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_bellerophon_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_bellerophon_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_athena"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 12
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_athena_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_athena_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_athena_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_prometheus"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 13
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_prometheus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_prometheus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_prometheus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_mil_page_3_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_ares"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 14
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_ares_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_ares_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_ares_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_phobos"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 15
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_phobos_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_phobos_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_phobos_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_deimos"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 16
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_deimos_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_deimos_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_deimos_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_penthesilea"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 17
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_penthesilea_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_penthesilea_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_penthesilea_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_helen"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 18
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_helen_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_helen_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_helen_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_iolaus"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 19
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_iolaus_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_iolaus_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_iolaus_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+					}
+					windowType = {
+						name = "rce_religion_mechanic_pantheon_god_selection_mil_page_4_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						# List of Gods
+						windowType = {
+							name = "god_window_charon"
+							position = { x = 0 y = 0 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 20
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_charon_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_charon_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_charon_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_melinoe"
+							position = { x = 0 y = 46 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 21
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_melinoe_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_melinoe_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_melinoe_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_achlys"
+							position = { x = 0 y = 92 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 22
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_achlys_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_achlys_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_achlys_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_atropos"
+							position = { x = 0 y = 138 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 23
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_atropos_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_atropos_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_atropos_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_medea"
+							position = { x = 0 y = 184 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 24
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_medea_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_medea_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_medea_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
+						windowType = {
+							name = "god_window_cassandra"
+							position = { x = 0 y = 230 }
+
+							iconType = {
+								name = "icon"
+								position = { x = 64 y = 6 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
+								frame = 25
+								scale = 0.55
+							}
+							iconType = {
+								name = "frame"
+								position = { x = 61 y = 3 }
+								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_cassandra_name_text"
+								position = { x = 7 y = 5 }
+								format = center
+								font = "vic_18"
+								maxWidth = 50
+								maxHeight = 40
+								vertical_alignment = center
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_religion_mechanic_pantheon_god_cassandra_effects_text"
+								position = { x = 112 y = 8 }
+								font = "vic_18"
+								maxWidth = 260
+								maxHeight = 37
+								format = left
+								vertical_alignment = center
+								fixedsize = yes
+								scripted = yes
+							}
+							guiButtonType = {
+								name = "rce_religion_mechanic_pantheon_god_cassandra_select_button"
+								position = { x = 378 y = 10 }
+								spriteType = "GFX_standard_button_71"
+								buttonText = "SELECT"
+								buttonFont = "vic_18"
+								scripted = yes
+							}
+						}
 					}
 				}
 
@@ -3737,6 +7065,17 @@ guiTypes = {
 					name = "rce_religion_mechanic_pantheon_god_selection_window_next_page_button"
 					position = { x = 320 y = 303 }
 					spriteType = "button_right"
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "rce_religion_mechanic_pantheon_god_selection_window_pages_text"
+					position = { x = 420 y = 308 }
+					font = "vic_22"
+					format = center
+					maxWidth = 60
+					maxHeight = 20
+					fixedsize = yes
+					alwaystransparent = yes
 					scripted = yes
 				}
 			}

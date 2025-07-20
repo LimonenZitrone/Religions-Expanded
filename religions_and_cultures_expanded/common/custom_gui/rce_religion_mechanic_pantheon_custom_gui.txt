@@ -40,9 +40,9 @@ custom_button = {
 			NOT = { has_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple }
 			NOT = { has_country_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple }
 		}
-		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
-		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
-		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
 		capital_scope = {
 			has_owner_religion = yes
 		}
@@ -67,9 +67,9 @@ custom_button = {
 			tooltip = rce_religion_mechanic_pantheon_not_held_a_festival_tt
 			NOT = { has_country_modifier = rce_religion_mechanic_pantheon_held_a_festival }
 		}
-		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { adm = yes }
-		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { dip = yes }
-		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { mil = yes }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
+		rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
@@ -109,9 +109,7 @@ custom_icon = {
 	potential = {
 		always = yes
 	}
-	frame = {
-		number = 1
-	}
+	frame_variable = rce_religion_mechanic_pantheon_god_adm_selected_icon_frame
 }
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_adm_selected_text
@@ -146,9 +144,7 @@ custom_icon = {
 	potential = {
 		always = yes
 	}
-	frame = {
-		number = 1
-	}
+	frame_variable = rce_religion_mechanic_pantheon_god_dip_selected_icon_frame
 }
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_dip_selected_text
@@ -183,9 +179,7 @@ custom_icon = {
 	potential = {
 		always = yes
 	}
-	frame = {
-		number = 1
-	}
+	frame_variable = rce_religion_mechanic_pantheon_god_mil_selected_icon_frame
 }
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_mil_selected_text
@@ -231,12 +225,11 @@ custom_button = {
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_selection_window_prev_page_button_tt
 }
-
 custom_button = {
 	name = rce_religion_mechanic_pantheon_god_selection_window_next_page_button
 	trigger = {
 		hidden_trigger = {
-			always = no # disabled for now
+			NOT = { check_variable = { which = rce_religion_mechanic_pantheon_god_selection_page value = 4 } }
 		}
 	}
 	effect = {
@@ -245,6 +238,12 @@ custom_button = {
 		}
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_selection_window_next_page_button_tt
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_selection_window_pages_text
+	potential = {
+		always = yes
+	}
 }
 
 custom_window = {
@@ -257,6 +256,24 @@ custom_window = {
 	name = rce_religion_mechanic_pantheon_god_selection_adm_page_1_window
 	potential = {
 		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 1 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_adm_page_2_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 2 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_adm_page_3_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 3 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_adm_page_4_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 4 }
 	}
 }
 
@@ -272,6 +289,24 @@ custom_window = {
 		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 1 }
 	}
 }
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_dip_page_2_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 2 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_dip_page_3_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 3 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_dip_page_4_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 4 }
+	}
+}
 
 custom_window = {
 	name = rce_religion_mechanic_pantheon_god_selection_mil_window
@@ -285,10 +320,92 @@ custom_window = {
 		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 1 }
 	}
 }
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_mil_page_2_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 2 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_mil_page_3_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 3 }
+	}
+}
+custom_window = {
+	name = rce_religion_mechanic_pantheon_god_selection_mil_page_4_window
+	potential = {
+		is_variable_equal = { which = rce_religion_mechanic_pantheon_god_selection_page value = 4 }
+	}
+}
 
 # Gods #
 ## ADM ##
-### Zeus ###
+### urania ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_urania_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_urania_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_urania_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_urania_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_urania_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = urania
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = urania
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### cronus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_cronus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_cronus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_cronus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_cronus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_cronus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = cronus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = cronus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### zeus ###
 custom_text_box = {
 	name = rce_religion_mechanic_pantheon_god_zeus_name_text
 	potential = {
@@ -313,9 +430,2219 @@ custom_button = {
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
-		rce_set_religion_mechanic_active_god = {
+		rce_set_religion_mechanic_pantheon_active_god = {
 			type = adm
 			name = zeus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### oceanus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_oceanus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_oceanus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_oceanus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_oceanus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_oceanus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = oceanus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = oceanus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### amphitrite ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_amphitrite_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_amphitrite_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_amphitrite_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_amphitrite_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_amphitrite_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = amphitrite
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = amphitrite
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### leucothea ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_leucothea_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_leucothea_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_leucothea_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_leucothea_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_leucothea_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = leucothea
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = leucothea
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### rhea ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_rhea_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_rhea_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_rhea_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_rhea_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_rhea_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = rhea
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = rhea
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### demeter ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_demeter_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_demeter_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_demeter_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_demeter_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_demeter_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = demeter
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = demeter
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### pan ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_pan_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_pan_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_pan_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_pan_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_pan_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = pan
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = pan
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### asclepius ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_asclepius_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_asclepius_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_asclepius_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_asclepius_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_asclepius_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = asclepius
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = asclepius
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### hephaestus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hephaestus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hephaestus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hephaestus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hephaestus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hephaestus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = hephaestus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = hephaestus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### daedalus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_daedalus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_daedalus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_daedalus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_daedalus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_daedalus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = daedalus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = daedalus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### kratos ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_kratos_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_kratos_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_kratos_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_kratos_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_kratos_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = kratos
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = kratos
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### dike ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_dike_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_dike_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_dike_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_dike_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_dike_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = dike
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = dike
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### enyo ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_enyo_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_enyo_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_enyo_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_enyo_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_enyo_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = enyo
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = enyo
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### eros ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_eros_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_eros_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_eros_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_eros_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_eros_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = eros
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = eros
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### anteros ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_anteros_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_anteros_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_anteros_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_anteros_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_anteros_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = anteros
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = anteros
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### hera ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hera_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hera_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hera_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hera_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hera_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = hera
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = hera
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### hades ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hades_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hades_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hades_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hades_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hades_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = hades
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = hades
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### thanatos ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_thanatos_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_thanatos_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_thanatos_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_thanatos_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_thanatos_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = thanatos
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = thanatos
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### macaria ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_macaria_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_macaria_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_macaria_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_macaria_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_macaria_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = macaria
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = macaria
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### clotho ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_clotho_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_clotho_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_clotho_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_clotho_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_clotho_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = clotho
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = clotho
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### metis ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_metis_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_metis_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_metis_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_metis_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_metis_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = metis
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = metis
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### tiresias ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_tiresias_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_tiresias_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_tiresias_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_tiresias_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_tiresias_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = adm
+			name = tiresias
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = tiresias
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+## DIP ##
+### iris ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_iris_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_iris_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_iris_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_iris_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_iris_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = iris
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = iris
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### selene ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_selene_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_selene_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_selene_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_selene_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_selene_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = selene
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = selene
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### astraeus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_astraeus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_astraeus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_astraeus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_astraeus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_astraeus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = astraeus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = astraeus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### galene ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_galene_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_galene_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_galene_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_galene_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_galene_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = galene
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = galene
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### thetis ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_thetis_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_thetis_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_thetis_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_thetis_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_thetis_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = thetis
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = thetis
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### nereus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_nereus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_nereus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_nereus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_nereus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_nereus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = nereus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = nereus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### gaia ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_gaia_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_gaia_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_gaia_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_gaia_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_gaia_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = gaia
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = gaia
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### horae ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_horae_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_horae_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_horae_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_horae_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_horae_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = horae
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = horae
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### dione ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_dione_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_dione_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_dione_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_dione_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_dione_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = dione
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = dione
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### hermes ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hermes_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hermes_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hermes_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hermes_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hermes_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = hermes
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = hermes
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### hestia ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hestia_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hestia_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hestia_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hestia_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hestia_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = hestia
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = hestia
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### mnemosyne ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_mnemosyne_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_mnemosyne_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_mnemosyne_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_mnemosyne_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_mnemosyne_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = mnemosyne
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = mnemosyne
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### harmonia ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_harmonia_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_harmonia_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_harmonia_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_harmonia_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_harmonia_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = harmonia
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = harmonia
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### themis ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_themis_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_themis_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_themis_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_themis_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_themis_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = themis
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = themis
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### eris ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_eris_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_eris_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_eris_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_eris_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_eris_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = eris
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = eris
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### aphrodite ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_aphrodite_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_aphrodite_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_aphrodite_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_aphrodite_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_aphrodite_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = aphrodite
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = aphrodite
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### peitho ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_peitho_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_peitho_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_peitho_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_peitho_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_peitho_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = peitho
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = peitho
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### philotes ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_philotes_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_philotes_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_philotes_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_philotes_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_philotes_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = philotes
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = philotes
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### persephone ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_persephone_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_persephone_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_persephone_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_persephone_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_persephone_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = persephone
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = persephone
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### hecate ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hecate_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hecate_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hecate_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hecate_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hecate_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = hecate
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = hecate
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### orpheus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_orpheus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_orpheus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_orpheus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_orpheus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_orpheus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = orpheus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = orpheus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### circe ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_circe_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_circe_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_circe_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_circe_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_circe_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = circe
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = circe
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### moira ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_moira_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_moira_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_moira_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_moira_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_moira_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = moira
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = moira
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### apollo ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_apollo_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_apollo_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_apollo_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_apollo_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_apollo_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = dip
+			name = apollo
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = apollo
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+## MIL ##
+### hyperion ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hyperion_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hyperion_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_hyperion_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_hyperion_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_hyperion_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = hyperion
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = hyperion
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### aether ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_aether_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_aether_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_aether_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_aether_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_aether_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = aether
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = aether
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### helios ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_helios_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_helios_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_helios_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_helios_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_helios_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = helios
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = helios
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### poseidon ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_poseidon_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_poseidon_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_poseidon_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_poseidon_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_poseidon_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = poseidon
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = poseidon
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### triton ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_triton_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_triton_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_triton_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_triton_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_triton_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = triton
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = triton
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### scylla ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_scylla_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_scylla_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_scylla_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_scylla_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_scylla_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = scylla
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = scylla
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### artemis ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_artemis_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_artemis_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_artemis_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_artemis_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_artemis_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = artemis
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = artemis
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### eileithyia ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_eileithyia_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_eileithyia_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_eileithyia_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_eileithyia_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_eileithyia_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = eileithyia
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = eileithyia
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### cyrene ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_cyrene_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_cyrene_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_cyrene_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_cyrene_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_cyrene_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = cyrene
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = cyrene
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### bellerophon ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_bellerophon_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_bellerophon_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_bellerophon_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_bellerophon_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_bellerophon_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = bellerophon
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = bellerophon
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### athena ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_athena_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_athena_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_athena_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_athena_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_athena_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = athena
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = athena
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### prometheus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_prometheus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_prometheus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_prometheus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_prometheus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_prometheus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = prometheus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = prometheus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### ares ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_ares_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_ares_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_ares_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_ares_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_ares_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = ares
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = ares
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### phobos ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_phobos_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_phobos_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_phobos_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_phobos_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_phobos_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = phobos
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = phobos
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### deimos ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_deimos_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_deimos_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_deimos_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_deimos_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_deimos_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = deimos
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = deimos
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### penthesilea ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_penthesilea_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_penthesilea_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_penthesilea_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_penthesilea_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_penthesilea_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = penthesilea
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = penthesilea
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### helen ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_helen_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_helen_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_helen_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_helen_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_helen_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = helen
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = helen
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### iolaus ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_iolaus_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_iolaus_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_iolaus_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_iolaus_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_iolaus_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = iolaus
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = iolaus
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### charon ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_charon_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_charon_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_charon_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_charon_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_charon_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = charon
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = charon
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### melinoe ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_melinoe_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_melinoe_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_melinoe_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_melinoe_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_melinoe_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = melinoe
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = melinoe
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### achlys ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_achlys_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_achlys_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_achlys_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_achlys_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_achlys_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = achlys
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = achlys
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### atropos ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_atropos_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_atropos_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_atropos_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_atropos_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_atropos_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = atropos
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = atropos
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### medea ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_medea_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_medea_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_medea_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_medea_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_medea_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = medea
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = medea
+		}
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
+}
+### cassandra ###
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_cassandra_name_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_cassandra_desc_text
+}
+custom_text_box = {
+	name = rce_religion_mechanic_pantheon_god_cassandra_effects_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_pantheon_god_cassandra_effects_text
+}
+custom_button = {
+	name = rce_religion_mechanic_pantheon_god_cassandra_select_button
+	trigger = {
+		rce_can_select_religion_mechanic_pantheon_god_of_type = {
+			type = mil
+			name = cassandra
+		}
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = cassandra
 		}
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
