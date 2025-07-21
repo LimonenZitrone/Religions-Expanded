@@ -113,7 +113,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = demeter }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = horae }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = caeneus }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eileithyia }
 				}
 			}
@@ -263,7 +263,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = metis }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = moira }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = lachesis }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = medea }
 				}
 			}
@@ -332,7 +332,7 @@ rce_remove_religion_mechanic_pantheon_active_dip_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = thetis }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = nereus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = gaia }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = horae }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = caeneus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = dione }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hermes }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hestia }
@@ -347,7 +347,7 @@ rce_remove_religion_mechanic_pantheon_active_dip_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hecate }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = orpheus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = circe }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = moira }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = lachesis }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = apollo }
 }
 

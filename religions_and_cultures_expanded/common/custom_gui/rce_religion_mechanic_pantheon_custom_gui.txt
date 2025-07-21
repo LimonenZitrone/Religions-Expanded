@@ -1325,34 +1325,34 @@ custom_button = {
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
 }
-### horae ###
+### caeneus ###
 custom_text_box = {
-	name = rce_religion_mechanic_pantheon_god_horae_name_text
+	name = rce_religion_mechanic_pantheon_god_caeneus_name_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_horae_desc_text
+	tooltip = rce_religion_mechanic_pantheon_god_caeneus_desc_text
 }
 custom_text_box = {
-	name = rce_religion_mechanic_pantheon_god_horae_effects_text
+	name = rce_religion_mechanic_pantheon_god_caeneus_effects_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_horae_effects_text
+	tooltip = rce_religion_mechanic_pantheon_god_caeneus_effects_text
 }
 custom_button = {
-	name = rce_religion_mechanic_pantheon_god_horae_select_button
+	name = rce_religion_mechanic_pantheon_god_caeneus_select_button
 	trigger = {
 		rce_can_select_religion_mechanic_pantheon_god_of_type = {
 			type = dip
-			name = horae
+			name = caeneus
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
-			name = horae
+			name = caeneus
 		}
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
@@ -1805,34 +1805,34 @@ custom_button = {
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
 }
-### moira ###
+### lachesis ###
 custom_text_box = {
-	name = rce_religion_mechanic_pantheon_god_moira_name_text
+	name = rce_religion_mechanic_pantheon_god_lachesis_name_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_moira_desc_text
+	tooltip = rce_religion_mechanic_pantheon_god_lachesis_desc_text
 }
 custom_text_box = {
-	name = rce_religion_mechanic_pantheon_god_moira_effects_text
+	name = rce_religion_mechanic_pantheon_god_lachesis_effects_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_moira_effects_text
+	tooltip = rce_religion_mechanic_pantheon_god_lachesis_effects_text
 }
 custom_button = {
-	name = rce_religion_mechanic_pantheon_god_moira_select_button
+	name = rce_religion_mechanic_pantheon_god_lachesis_select_button
 	trigger = {
 		rce_can_select_religion_mechanic_pantheon_god_of_type = {
 			type = dip
-			name = moira
+			name = lachesis
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
-			name = moira
+			name = lachesis
 		}
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt

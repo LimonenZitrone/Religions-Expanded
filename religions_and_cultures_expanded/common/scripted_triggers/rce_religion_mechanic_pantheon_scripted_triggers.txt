@@ -85,7 +85,7 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = thetis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = nereus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = gaia }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = horae }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = caeneus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = dione }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hermes }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hestia }
@@ -100,7 +100,7 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hecate }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = circe }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
 		}
 	}
@@ -228,7 +228,7 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_nature = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_nature_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = gaia }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = horae }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = caeneus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = dione }
 		}
 	}
@@ -383,7 +383,7 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_fate = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_fate_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = circe }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
 		}
 	}
