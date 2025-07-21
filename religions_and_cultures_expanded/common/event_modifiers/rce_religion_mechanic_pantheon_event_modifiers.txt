@@ -6,146 +6,225 @@ rce_religion_mechanic_pantheon_held_a_festival = {
 
 # God Modifiers:
 rce_religion_mechanic_pantheon_god_urania_modifier = {
+	stability_cost_modifier = -0.1
 }
 rce_religion_mechanic_pantheon_god_cronus_modifier = {
+	legitimacy = 0.1
+	republican_tradition = 0.1
+	devotion = 0.1
+	horde_unity = 0.1
+	meritocracy = 0.1
 }
 rce_religion_mechanic_pantheon_god_zeus_modifier = {
+	tolerance_own = 2
+	all_power_cost = -0.01
 }
 rce_religion_mechanic_pantheon_god_oceanus_modifier = {
+	naval_maintenance_modifier = -0.05
 }
 rce_religion_mechanic_pantheon_god_amphitrite_modifier = {
+	blockade_efficiency = 0.1
 }
 rce_religion_mechanic_pantheon_god_leucothea_modifier = {
+	ship_durability = 0.05
 }
 rce_religion_mechanic_pantheon_god_rhea_modifier = {
+	gold_depletion_chance_modifier = -0.1
 }
 rce_religion_mechanic_pantheon_god_demeter_modifier = {
+	development_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_pan_modifier = {
+	build_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_asclepius_modifier = {
+	global_institution_spread = 0.05
 }
 rce_religion_mechanic_pantheon_god_hephaestus_modifier = {
+	core_creation = -0.05
 }
 rce_religion_mechanic_pantheon_god_daedalus_modifier = {
+	culture_conversion_time = -0.1
 }
 rce_religion_mechanic_pantheon_god_kratos_modifier = {
+	land_maintenance_modifier = -0.05
 }
 rce_religion_mechanic_pantheon_god_dike_modifier = {
+	reserves_organisation = 0.1
 }
 rce_religion_mechanic_pantheon_god_enyo_modifier = {
+	movement_speed = 0.05
 }
 rce_religion_mechanic_pantheon_god_eros_modifier = {
+	global_trade_goods_size_modifier = 0.05
 }
 rce_religion_mechanic_pantheon_god_anteros_modifier = {
+	inflation_reduction = 0.05
 }
 rce_religion_mechanic_pantheon_god_hera_modifier = {
+	production_efficiency = 0.05
 }
 rce_religion_mechanic_pantheon_god_hades_modifier = {
+	monarch_lifespan = 0.1
 }
 rce_religion_mechanic_pantheon_god_thanatos_modifier = {
+	global_monthly_devastation = -0.05
 }
 rce_religion_mechanic_pantheon_god_macaria_modifier = {
+	mercenary_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_clotho_modifier = {
+	adm_tech_cost_modifier = -0.05
 }
 rce_religion_mechanic_pantheon_god_metis_modifier = {
+	idea_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_tiresias_modifier = {
+	global_missionary_strength = 0.01
 }
 rce_religion_mechanic_pantheon_god_iris_modifier = {
+	diplomatic_annexation_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_selene_modifier = {
+	all_estate_loyalty_equilibrium = 0.05
 }
 rce_religion_mechanic_pantheon_god_astraeus_modifier = {
+	war_exhaustion = -0.03
 }
 rce_religion_mechanic_pantheon_god_galene_modifier = {
+	global_ship_trade_power = 0.1
 }
 rce_religion_mechanic_pantheon_god_thetis_modifier = {
+	ship_power_propagation = 0.1
 }
 rce_religion_mechanic_pantheon_god_nereus_modifier = {
+	trade_range_modifier = 0.1
 }
 rce_religion_mechanic_pantheon_god_gaia_modifier = {
+	colonist_placement_chance = 0.05
 }
 rce_religion_mechanic_pantheon_god_horae_modifier = {
+	range = 0.1
 }
 rce_religion_mechanic_pantheon_god_dione_modifier = {
+	native_uprising_chance = -0.15
 }
 rce_religion_mechanic_pantheon_god_hermes_modifier = {
+	culture_conversion_cost = -0.1
 }
 rce_religion_mechanic_pantheon_god_hestia_modifier = {
+	promote_culture_cost = -0.15
 }
 rce_religion_mechanic_pantheon_god_mnemosyne_modifier = {
+	prestige = 0.15
 }
 rce_religion_mechanic_pantheon_god_harmonia_modifier = {
+	ae_impact = -0.05
 }
 rce_religion_mechanic_pantheon_god_themis_modifier = {
+	province_warscore_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_eris_modifier = {
+	spy_offence = 0.1
 }
 rce_religion_mechanic_pantheon_god_aphrodite_modifier = {
+	diplomatic_reputation = 0.5
 }
 rce_religion_mechanic_pantheon_god_peitho_modifier = {
+	accept_vassalization_reasons = 10
 }
 rce_religion_mechanic_pantheon_god_philotes_modifier = {
+	improve_relation_modifier = 0.1
 }
 rce_religion_mechanic_pantheon_god_persephone_modifier = {
+	transport_attrition = -0.25
 }
 rce_religion_mechanic_pantheon_god_hecate_modifier = {
+	unjustified_demands = -0.05
 }
 rce_religion_mechanic_pantheon_god_orpheus_modifier = {
+	reduced_liberty_desire = 5
 }
 rce_religion_mechanic_pantheon_god_circe_modifier = {
+	trade_steering = 0.05
 }
 rce_religion_mechanic_pantheon_god_moira_modifier = {
+	dip_tech_cost_modifier = -0.05
 }
 rce_religion_mechanic_pantheon_god_apollo_modifier = {
+	envoy_travel_time = -0.05
+	yearly_corruption = -0.05
 }
 rce_religion_mechanic_pantheon_god_hyperion_modifier = {
+	warscore_from_battles_modifier = 0.1
 }
 rce_religion_mechanic_pantheon_god_aether_modifier = {
+	own_territory_dice_roll_bonus = 1
 }
 rce_religion_mechanic_pantheon_god_helios_modifier = {
+	fire_damage = 0.05
 }
 rce_religion_mechanic_pantheon_god_poseidon_modifier = {
+	naval_morale = 0.05
+	cavalry_power = 0.05
 }
 rce_religion_mechanic_pantheon_god_triton_modifier = {
+	sailors_recovery_speed = 0.05
 }
 rce_religion_mechanic_pantheon_god_scylla_modifier = {
+	own_coast_naval_combat_bonus = 1
 }
 rce_religion_mechanic_pantheon_god_artemis_modifier = {
+	hostile_attrition = 0.5
 }
 rce_religion_mechanic_pantheon_god_eileithyia_modifier = {
+	morale_damage_received = -0.05
 }
 rce_religion_mechanic_pantheon_god_cyrene_modifier = {
+	defensiveness = 0.1
 }
 rce_religion_mechanic_pantheon_god_bellerophon_modifier = {
+	years_of_nationalism = -5
 }
 rce_religion_mechanic_pantheon_god_athena_modifier = {
+	army_tradition = 0.15
 }
 rce_religion_mechanic_pantheon_god_prometheus_modifier = {
+	artillery_fire = 0.5
 }
 rce_religion_mechanic_pantheon_god_ares_modifier = {
+	land_morale = 0.05
 }
 rce_religion_mechanic_pantheon_god_phobos_modifier = {
+	discipline = 0.025
 }
 rce_religion_mechanic_pantheon_god_deimos_modifier = {
+	infantry_power = 0.05
 }
 rce_religion_mechanic_pantheon_god_penthesilea_modifier = {
+	manpower_in_true_faith_provinces = 0.1
 }
 rce_religion_mechanic_pantheon_god_helen_modifier = {
+	siege_ability = 0.05
 }
 rce_religion_mechanic_pantheon_god_iolaus_modifier = {
+	morale_damage = 0.05
 }
 rce_religion_mechanic_pantheon_god_charon_modifier = {
+	global_naval_engagement_modifier = 0.1
 }
 rce_religion_mechanic_pantheon_god_melinoe_modifier = {
+	shock_damage_received = -0.05
 }
 rce_religion_mechanic_pantheon_god_achlys_modifier = {
+	reinforce_speed = 0.1
 }
 rce_religion_mechanic_pantheon_god_atropos_modifier = {
+	mil_tech_cost_modifier = -0.05
 }
 rce_religion_mechanic_pantheon_god_medea_modifier = {
+	global_spy_defence = 0.1
 }
 rce_religion_mechanic_pantheon_god_cassandra_modifier = {
+	reinforce_cost_modifier = -0.1
 }

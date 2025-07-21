@@ -1032,6 +1032,42 @@ defined_text = {
 }
 
 defined_text = {
+	name = yearly_legitimacy_equivalent
+	random = no
+
+	text = {
+		trigger = {
+			uses_republican_tradition = yes
+		}
+		localisation_key = "[yearly_republican_tradition]"
+	}
+	text = {
+		trigger = {
+			uses_devotion = yes
+		}
+		localisation_key = "[yearly_devotion]"
+	}
+	text = {
+		trigger = {
+			uses_horde_unity = yes
+		}
+		localisation_key = "[yearly_horde_unity]"
+	}
+	text = {
+		trigger = {
+			uses_meritocracy = yes
+		}
+		localisation_key = "[yearly_meritocracy]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "[yearly_legitimacy]"
+	}
+}
+
+defined_text = {
 	name = yearly_legitimacy
 	random = no
 
@@ -1052,6 +1088,42 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = YEARLY_REPUBLICAN_TRADITION
+	}
+}
+
+defined_text = {
+	name = yearly_devotion
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_DEVOTION
+	}
+}
+
+defined_text = {
+	name = yearly_horde_unity
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_HORDE_UNITY
+	}
+}
+
+defined_text = {
+	name = yearly_meritocracy
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_MERITOCRACY
 	}
 }
 
@@ -1256,6 +1328,534 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = MODIFIER_LIBERTY_DESIRE_FROM_SUBJECT_DEVELOPMENT
+	}
+}
+
+defined_text = {
+	name = tolerance_own
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TOLERANCE_OWN
+	}
+}
+
+defined_text = {
+	name = all_power_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ALL_POWER_COST
+	}
+}
+
+defined_text = {
+	name = naval_maintenance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = NAVAL_MAINTENANCE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = land_maintenance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LAND_MAINTENANCE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = blockade_efficiency
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = BLOCKADE_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = ship_durability
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SHIP_DURABILITY
+	}
+}
+
+defined_text = {
+	name = gold_depletion_chance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GOLD_DEPLETION_CHANCE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = global_institution_spread
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_INSTITUTION_SPREAD
+	}
+}
+
+defined_text = {
+	name = core_creation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_CORE_CREATION
+	}
+}
+
+defined_text = {
+	name = reserves_organisation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_RESERVES_ORGANIZATION
+	}
+}
+
+defined_text = {
+	name = movement_speed
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MOVEMENT_SPEED
+	}
+}
+
+defined_text = {
+	name = inflation_reduction
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = INFLATION_REDUCTION
+	}
+}
+
+defined_text = {
+	name = monarch_lifespan
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MONARCH_LIFESPAN
+	}
+}
+
+defined_text = {
+	name = global_monthly_devastation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_MONTHLY_DEVASTATION
+	}
+}
+
+defined_text = {
+	name = mercenary_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MERCENARY_COST
+	}
+}
+
+defined_text = {
+	name = adm_tech_cost_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = adm_tech_cost_modifier
+	}
+}
+
+defined_text = {
+	name = dip_tech_cost_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dip_tech_cost_modifier
+	}
+}
+
+defined_text = {
+	name = mil_tech_cost_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mil_tech_cost_modifier
+	}
+}
+
+defined_text = {
+	name = diplomatic_annexation_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DIPLOMATIC_ANNEXATION_COST
+	}
+}
+
+defined_text = {
+	name = war_exhaustion
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = WAR_EXHAUSTION
+	}
+}
+
+defined_text = {
+	name = ship_power_propagation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SHIP_POWER_PROPAGATION
+	}
+}
+
+defined_text = {
+	name = trade_range_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TRADE_RANGE
+	}
+}
+
+defined_text = {
+	name = range
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COLONIAL_RANGE
+	}
+}
+
+defined_text = {
+	name = native_uprising_chance
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_NATIVE_UPRISING_CHANCE
+	}
+}
+
+defined_text = {
+	name = promote_culture_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_PROMOTE_CULTURE_COST
+	}
+}
+
+defined_text = {
+	name = province_warscore_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_PROVINCE_WARSCORE_COST
+	}
+}
+
+defined_text = {
+	name = accept_vassalization_reasons
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ACCEPT_VASSALIZATION_REASONS
+	}
+}
+
+defined_text = {
+	name = transport_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TRANSPORT_ATTRITION
+	}
+}
+
+defined_text = {
+	name = unjustified_demands
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_UNJUSTIFIED_DEMANDS
+	}
+}
+
+defined_text = {
+	name = reduced_liberty_desire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REDUCED_LIBERTY_DESIRE
+	}
+}
+
+defined_text = {
+	name = envoy_travel_time
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ENVOY_TRAVEL_TIME
+	}
+}
+
+defined_text = {
+	name = yearly_corruption
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_YEARLY_CORRUPTION
+	}
+}
+
+defined_text = {
+	name = warscore_from_battles_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_WARSCORE_FROM_BATTLES_MODIFIER
+	}
+}
+
+defined_text = {
+	name = own_territory_dice_roll_bonus
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_OWN_TERRITORY_DICE_ROLL_BONUS
+	}
+}
+
+defined_text = {
+	name = sailors_recovery_speed
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SAILORS_RECOVERY
+	}
+}
+
+defined_text = {
+	name = own_coast_naval_combat_bonus
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_OWN_COAST_NAVAL_COMBAT_BONUS
+	}
+}
+
+defined_text = {
+	name = morale_damage
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MORALE_DAMAGE
+	}
+}
+
+defined_text = {
+	name = years_of_nationalism
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_YEARS_OF_NATIONALISM
+	}
+}
+
+defined_text = {
+	name = artillery_fire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ARTILLERY_FIRE
+	}
+}
+
+defined_text = {
+	name = infantry_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = INFANTRY_POWER
+	}
+}
+
+defined_text = {
+	name = global_naval_engagement_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_NAVAL_ENGAGEMENT_MODIFIER
+	}
+}
+
+defined_text = {
+	name = reinforce_speed
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REINFORCE_SPEED
+	}
+}
+
+defined_text = {
+	name = global_spy_defence
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SPY_GLOBAL_DEFENCE
+	}
+}
+
+defined_text = {
+	name = reinforce_cost_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REINFORCE_COST
 	}
 }
 
