@@ -85,6 +85,7 @@ custom_button = {
 
 custom_button = {
 	name = rce_religion_mechanic_pantheon_god_adm_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_god_adm_decision decision accordingly
 	effect = {
 		if = {
 			limit = {
@@ -117,6 +118,7 @@ custom_text_box = {
 
 custom_button = {
 	name = rce_religion_mechanic_pantheon_god_dip_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_god_dip_decision decision accordingly
 	effect = {
 		if = {
 			limit = {
@@ -149,6 +151,7 @@ custom_text_box = {
 
 custom_button = {
 	name = rce_religion_mechanic_pantheon_god_mil_button
+	# if you change this, make sure to change the rce_religion_mechanic_pantheon_god_mil_decision decision accordingly
 	effect = {
 		if = {
 			limit = {

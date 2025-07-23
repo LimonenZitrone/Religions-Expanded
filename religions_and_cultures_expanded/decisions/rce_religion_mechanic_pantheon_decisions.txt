@@ -1,0 +1,144 @@
+country_decisions = {
+	# AI Decisions Below
+	rce_religion_mechanic_pantheon_remove_god_decision = {
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_pantheon_not_removing_a_god_tt
+				NOT = { has_country_flag = rce_religion_mechanic_pantheon_removing_a_god }
+			}
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_pantheon_cannot_remove_at_least_one_god_due_to_same_ruler_tt
+				OR = {
+					has_ruler_flag = rce_religion_mechanic_pantheon_god_adm_selected_during_reign
+					has_ruler_flag = rce_religion_mechanic_pantheon_god_dip_selected_during_reign
+					has_ruler_flag = rce_religion_mechanic_pantheon_god_mil_selected_during_reign
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = rce_tooltip_effect_text
+			country_event = { id = rce_religion_mechanic_pantheon_events.1 tooltip = rce_religion_mechanic_pantheon_remove_god_button_tt_choose_god }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rce_religion_mechanic_pantheon_dedicate_temple_decision = {
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+
+		}
+		effect = {
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rce_religion_mechanic_pantheon_hold_festival_decision = {
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+
+		}
+		effect = {
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rce_religion_mechanic_pantheon_god_adm_decision = {
+		# not the same as rce_religion_mechanic_pantheon_god_adm_button
+		# triggers added
+		# AI only event to pick
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+			NOT = { has_country_flag = rce_religion_mechanic_pantheon_god_selection_adm }
+			rce_can_select_religion_mechanic_pantheon_god_of_type = { type = adm }
+		}
+		effect = {
+			set_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
+			country_event = { id = rce_religion_mechanic_pantheon_events.3 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_modifier = rce_religion_mechanic_pantheon_ai_selected_adm_god
+			}
+		}
+	}
+
+	rce_religion_mechanic_pantheon_god_dip_decision = {
+		# not the same as rce_religion_mechanic_pantheon_god_dip_button
+		# triggers added
+		# AI only event to pick
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+			NOT = { has_country_flag = rce_religion_mechanic_pantheon_god_selection_dip }
+			rce_can_select_religion_mechanic_pantheon_god_of_type = { type = dip }
+		}
+		effect = {
+			set_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
+			country_event = { id = rce_religion_mechanic_pantheon_events.4 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_modifier = rce_religion_mechanic_pantheon_ai_selected_dip_god
+			}
+		}
+	}
+
+	rce_religion_mechanic_pantheon_god_mil_decision = {
+		# not the same as rce_religion_mechanic_pantheon_god_mil_button
+		# triggers added
+		# AI only event to pick
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+			NOT = { has_country_flag = rce_religion_mechanic_pantheon_god_selection_mil }
+			rce_can_select_religion_mechanic_pantheon_god_of_type = { type = mil }
+		}
+		effect = {
+			set_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
+			country_event = { id = rce_religion_mechanic_pantheon_events.5 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_modifier = rce_religion_mechanic_pantheon_ai_selected_mil_god
+			}
+		}
+	}
+}

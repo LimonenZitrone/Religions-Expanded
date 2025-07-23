@@ -31,7 +31,9 @@ rce_can_select_religion_mechanic_pantheon_god_of_type = {
 		tooltip = rce_religion_mechanic_pantheon_god_$type$_not_selected_during_current_ruler_tt
 		NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign }
 	}
-	rce_not_has_religion_mechanic_pantheon_god_selected = { name = $name$ }
+	[[name]
+		rce_not_has_religion_mechanic_pantheon_god_selected = { name = $name$ }
+	]
 }
 
 rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = {

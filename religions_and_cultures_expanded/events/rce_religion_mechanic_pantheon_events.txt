@@ -1,0 +1,1890 @@
+namespace = rce_religion_mechanic_pantheon_events
+
+country_event = {
+	id = rce_religion_mechanic_pantheon_events.1
+	title = rce_religion_mechanic_pantheon_events.EVTNAME1
+	desc = rce_religion_mechanic_pantheon_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_pantheon_removing_a_god
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events1.EVTOPT1
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
+		}
+
+		ai_chance = { factor = 0 }
+
+		add_stability = -1
+		rce_remove_religion_mechanic_pantheon_active_adm_god = yes
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events1.EVTOPT2
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
+		}
+
+		ai_chance = { factor = 0 }
+
+		add_stability = -1
+		rce_remove_religion_mechanic_pantheon_active_dip_god = yes
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events1.EVTOPT3
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
+		}
+
+		ai_chance = { factor = 0 }
+
+		add_stability = -1
+		rce_remove_religion_mechanic_pantheon_active_mil_god = yes
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events1.EVTOPT4
+
+		ai_chance = { factor = 100 }
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_pantheon_removing_a_god
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_pantheon_events.2
+	title = rce_religion_mechanic_pantheon_events.EVTNAME2
+	desc = rce_religion_mechanic_pantheon_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	goto = target_province
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					has_owner_religion = yes
+					has_tax_building_trigger = yes
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT1
+
+		trigger = {
+
+		}
+
+
+	}
+
+	after = {
+		clr_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_dedicated_a_temple
+			duration = 7300
+			hidden = yes
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_pantheon_events.3
+	title = rce_religion_mechanic_pantheon_events.EVTNAME3
+	desc = rce_religion_mechanic_pantheon_events.EVTDESC3
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_urania_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = urania
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				NOT = { stability = 0 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = urania
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_cronus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = cronus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				NOT = { legitimacy_equivalent = 50 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = cronus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_zeus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = zeus
+			}
+		}
+
+		ai_chance = {
+			factor = 1.5
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = zeus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_oceanus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = oceanus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				navy_size = 50
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = oceanus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_amphitrite_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = amphitrite
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+				navy_size = 20
+				any_war_enemy_country = {
+					num_of_total_ports = 1
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = amphitrite
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_leucothea_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = leucothea
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = leucothea
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_rhea_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = rhea
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.15
+				gold = 5
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = rhea
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_demeter_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = demeter
+			}
+		}
+
+		ai_chance = {
+			factor = 1.33
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = demeter
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_pan_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = pan
+			}
+		}
+
+		ai_chance = {
+			factor = 1.15
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = pan
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_asclepius_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = asclepius
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_lacking_institutions = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { is_lacking_institutions = yes }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = asclepius
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hephaestus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = hephaestus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				overextension_percentage = 0.1
+			}
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = hephaestus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_daedalus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = daedalus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				any_owned_province = {
+					has_owner_culture = no
+					has_owner_accepted_culture = no
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = daedalus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_kratos_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = kratos
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				army_size = 50
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = kratos
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_dike_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = dike
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = dike
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_enyo_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = enyo
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = enyo
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_eros_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = eros
+			}
+		}
+
+		ai_chance = {
+			factor = 1.05
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = eros
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_anteros_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = anteros
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.15
+				inflation = 5
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { inflation = 3 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { inflation = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = anteros
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hera_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = hera
+			}
+		}
+
+		ai_chance = {
+			factor = 1.1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = hera
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hades_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = hades
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = republic
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = hades
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_thanatos_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = thanatos
+			}
+		}
+
+		ai_chance = {
+			factor = 0.95
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = thanatos
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_macaria_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = macaria
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+				num_of_mercenaries = 1
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { num_of_mercenaries = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = macaria
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_clotho_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = clotho
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.75
+				any_known_country = {
+					ROOT = { NOT = { adm_tech = PREV } }
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = clotho
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_metis_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = metis
+			}
+		}
+
+		ai_chance = {
+			factor = 1.25
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = metis
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_tiresias_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = adm
+				name = tiresias
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				NOT = { religious_unity = 0.75 }
+			}
+			modifier = {
+				factor = 0.1
+				religious_unity = 1
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = adm
+			name = tiresias
+		}
+	}
+
+	after = {
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_ai_selected_adm_god
+			duration = 5475
+			hidden = yes
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_pantheon_events.4
+	title = rce_religion_mechanic_pantheon_events.EVTNAME4
+	desc = rce_religion_mechanic_pantheon_events.EVTDESC4
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_iris_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = iris
+			}
+		}
+
+		ai_chance = {
+			factor = 0.9
+			modifier = {
+				factor = 0
+				NOT = { num_of_non_tributary_subjects = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = iris
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_selene_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = selene
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = selene
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_astraeus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = astraeus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = astraeus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_galene_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = galene
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_light_ship = 10 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = galene
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_thetis_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = thetis
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_light_ship = 10 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = thetis
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_nereus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = nereus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = nereus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_gaia_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = gaia
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_colonists = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = gaia
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_caeneus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = caeneus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_colonists = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = caeneus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_dione_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = dione
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_colonists = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = dione
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hermes_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = hermes
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				any_owned_province = {
+					has_owner_culture = no
+					has_owner_accepted_culture = no
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = hermes
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hestia_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = hestia
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				any_owned_province = {
+					has_owner_culture = no
+					has_owner_accepted_culture = no
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = hestia
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_mnemosyne_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = mnemosyne
+			}
+		}
+
+		ai_chance = {
+			factor = 0.95
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = mnemosyne
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_harmonia_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = harmonia
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				is_at_war = yes
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = harmonia
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_themis_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = themis
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				is_at_war = yes
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = themis
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_eris_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = eris
+			}
+		}
+
+		ai_chance = {
+			factor = 0.9
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = eris
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_aphrodite_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = aphrodite
+			}
+		}
+
+		ai_chance = {
+			factor = 1.15
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = aphrodite
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_peitho_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = peitho
+			}
+		}
+
+		ai_chance = {
+			factor = 0.75
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = peitho
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_philotes_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = philotes
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = philotes
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_persephone_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = persephone
+			}
+		}
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { num_of_transport = 10 }
+			}
+			modifier = {
+				factor = 0.5
+				is_at_war = no
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = persephone
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hecate_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = hecate
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = hecate
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_orpheus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = orpheus
+			}
+		}
+
+		ai_chance = {
+			factor = 1.05
+			modifier = {
+				factor = 0
+				NOT = { num_of_subjects = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = orpheus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_circe_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = circe
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = circe
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_lachesis_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = lachesis
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.75
+				any_known_country = {
+					ROOT = { NOT = { dip_tech = PREV } }
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = lachesis
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_apollo_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = dip
+				name = apollo
+			}
+		}
+
+		ai_chance = {
+			factor = 1.25
+			modifier = {
+				factor = 1.5
+				corruption = 2
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = dip
+			name = apollo
+		}
+	}
+
+	after = {
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_ai_selected_dip_god
+			duration = 5475
+			hidden = yes
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_pantheon_events.5
+	title = rce_religion_mechanic_pantheon_events.EVTNAME5
+	desc = rce_religion_mechanic_pantheon_events.EVTDESC5
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_hyperion_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = hyperion
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				is_at_war = no
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = hyperion
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_aether_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = aether
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				is_at_war = yes
+				is_in_war = {
+					defenders = ROOT
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = aether
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_helios_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = helios
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = helios
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_poseidon_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = poseidon
+			}
+		}
+
+		ai_chance = {
+			factor = 1.25
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = poseidon
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_triton_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = triton
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = { navy_size = 30 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { navy_size = 10 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = triton
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_scylla_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = scylla
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = { navy_size = 30 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { navy_size = 10 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = scylla
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_artemis_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = artemis
+			}
+		}
+
+		ai_chance = {
+			factor = 0.9
+			modifier = {
+				factor = 0.25
+				is_at_war = no
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = artemis
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_eileithyia_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = eileithyia
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = eileithyia
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_cyrene_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = cyrene
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+				is_in_war = {
+					defenders = ROOT
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = cyrene
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_bellerophon_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = bellerophon
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = bellerophon
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_athena_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = athena
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = athena
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_prometheus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = prometheus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_artillery = 1 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = prometheus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_ares_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = ares
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.33
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = ares
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_phobos_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = phobos
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = phobos
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_deimos_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = deimos
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.15
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = deimos
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_penthesilea_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = penthesilea
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = penthesilea
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_helen_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = helen
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = helen
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_iolaus_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = iolaus
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = iolaus
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_charon_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = charon
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { navy_size = 30 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { navy_size = 10 }
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = charon
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_melinoe_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = melinoe
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = melinoe
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_achlys_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = achlys
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.05
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = achlys
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_atropos_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = atropos
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.75
+				any_known_country = {
+					ROOT = { NOT = { mil_tech = PREV } }
+				}
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = atropos
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_medea_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = medea
+			}
+		}
+
+		ai_chance = {
+			factor = 0.5
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = medea
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_god_cassandra_name_text
+
+		trigger = {
+			rce_can_select_religion_mechanic_pantheon_god_of_type = {
+				type = mil
+				name = cassandra
+			}
+		}
+
+		ai_chance = {
+			factor = 0.75
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
+		}
+
+		rce_set_religion_mechanic_pantheon_active_god = {
+			type = mil
+			name = cassandra
+		}
+	}
+
+	after = {
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_ai_selected_mil_god
+			duration = 5475
+			hidden = yes
+		}
+	}
+}

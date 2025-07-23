@@ -3,6 +3,12 @@ rce_religion_mechanic_pantheon_dedicated_a_temple = {
 }
 rce_religion_mechanic_pantheon_held_a_festival = {
 }
+rce_religion_mechanic_pantheon_ai_selected_adm_god = {
+}
+rce_religion_mechanic_pantheon_ai_selected_dip_god = {
+}
+rce_religion_mechanic_pantheon_ai_selected_mil_god = {
+}
 
 # God Modifiers:
 rce_religion_mechanic_pantheon_god_urania_modifier = {
