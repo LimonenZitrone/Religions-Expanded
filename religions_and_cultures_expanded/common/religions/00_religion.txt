@@ -2732,13 +2732,14 @@ pagan = {
 		icon = 36
 		color = { 127 0 77 }
 		country = {
-
+			tolerance_heathen = 2
+			reform_progress_growth = 0.1
 		}
 		country_as_secondary = {
-
+			tolerance_heathen = 2
+			num_accepted_cultures = 1
 		}
 		province = {
-
 		}
 
 		on_convert = {
