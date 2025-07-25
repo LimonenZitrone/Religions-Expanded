@@ -15,21 +15,21 @@ rce_religion_mechanic_pantheon_god_urania_modifier = {
 	stability_cost_modifier = -0.1
 }
 rce_religion_mechanic_pantheon_god_cronus_modifier = {
-	legitimacy = 0.1
-	republican_tradition = 0.1
-	devotion = 0.1
-	horde_unity = 0.1
-	meritocracy = 0.1
+	legitimacy = 0.5
+	republican_tradition = 0.2
+	devotion = 0.5
+	horde_unity = 0.5
+	meritocracy = 0.5
 }
 rce_religion_mechanic_pantheon_god_zeus_modifier = {
 	tolerance_own = 2
 	all_power_cost = -0.01
 }
 rce_religion_mechanic_pantheon_god_oceanus_modifier = {
-	naval_maintenance_modifier = -0.05
+	naval_maintenance_modifier = -0.1
 }
 rce_religion_mechanic_pantheon_god_amphitrite_modifier = {
-	blockade_efficiency = 0.1
+	blockade_efficiency = 0.15
 }
 rce_religion_mechanic_pantheon_god_leucothea_modifier = {
 	ship_durability = 0.05
@@ -41,13 +41,13 @@ rce_religion_mechanic_pantheon_god_demeter_modifier = {
 	development_cost = -0.05
 }
 rce_religion_mechanic_pantheon_god_pan_modifier = {
-	build_cost = -0.05
+	build_cost = -0.1
 }
 rce_religion_mechanic_pantheon_god_asclepius_modifier = {
 	global_institution_spread = 0.05
 }
 rce_religion_mechanic_pantheon_god_hephaestus_modifier = {
-	core_creation = -0.05
+	core_creation = -0.1
 }
 rce_religion_mechanic_pantheon_god_daedalus_modifier = {
 	culture_conversion_time = -0.1
@@ -59,7 +59,7 @@ rce_religion_mechanic_pantheon_god_dike_modifier = {
 	reserves_organisation = 0.1
 }
 rce_religion_mechanic_pantheon_god_enyo_modifier = {
-	movement_speed = 0.05
+	movement_speed = 0.1
 }
 rce_religion_mechanic_pantheon_god_eros_modifier = {
 	global_trade_goods_size_modifier = 0.05
@@ -68,7 +68,7 @@ rce_religion_mechanic_pantheon_god_anteros_modifier = {
 	inflation_reduction = 0.05
 }
 rce_religion_mechanic_pantheon_god_hera_modifier = {
-	production_efficiency = 0.05
+	production_efficiency = 0.1
 }
 rce_religion_mechanic_pantheon_god_hades_modifier = {
 	monarch_lifespan = 0.1
@@ -89,7 +89,7 @@ rce_religion_mechanic_pantheon_god_tiresias_modifier = {
 	global_missionary_strength = 0.01
 }
 rce_religion_mechanic_pantheon_god_iris_modifier = {
-	diplomatic_annexation_cost = -0.05
+	diplomatic_annexation_cost = -0.1
 }
 rce_religion_mechanic_pantheon_god_selene_modifier = {
 	all_estate_loyalty_equilibrium = 0.05
@@ -122,7 +122,7 @@ rce_religion_mechanic_pantheon_god_hestia_modifier = {
 	promote_culture_cost = -0.15
 }
 rce_religion_mechanic_pantheon_god_mnemosyne_modifier = {
-	prestige = 0.15
+	prestige = 0.5
 }
 rce_religion_mechanic_pantheon_god_harmonia_modifier = {
 	ae_impact = -0.05

@@ -1455,3 +1455,21 @@ defined_text = {
 		localisation_key = ""
 	}
 }
+
+defined_text = {
+	name = RceGetReligionMechanicPantheonGodCronusModifierValue
+	random = no
+
+	text = {
+		trigger = {
+			uses_republican_tradition = yes
+		}
+		localisation_key = "+0.20"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "+0.50"
+	}
+}

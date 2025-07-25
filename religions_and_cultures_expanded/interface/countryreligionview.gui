@@ -3646,14 +3646,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 2
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3661,16 +3661,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_urania_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3692,14 +3693,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 3
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3707,16 +3708,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_cronus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3738,14 +3740,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 4
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3753,16 +3755,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_zeus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3784,14 +3787,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 5
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3799,16 +3802,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_oceanus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3830,14 +3834,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 6
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3845,16 +3849,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_amphitrite_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3876,14 +3881,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 7
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3891,16 +3896,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_leucothea_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3929,14 +3935,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 8
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3944,16 +3950,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_rhea_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -3975,14 +3982,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 9
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -3990,16 +3997,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_demeter_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4021,14 +4029,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 10
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4036,16 +4044,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_pan_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4067,14 +4076,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 11
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4082,16 +4091,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_asclepius_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4113,14 +4123,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 12
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4128,16 +4138,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hephaestus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4159,14 +4170,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 13
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4174,16 +4185,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_daedalus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4212,14 +4224,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 14
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4227,16 +4239,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_kratos_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4258,14 +4271,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 15
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4273,16 +4286,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_dike_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4304,14 +4318,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 16
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4319,16 +4333,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_enyo_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4350,14 +4365,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 17
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4365,16 +4380,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_eros_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4396,14 +4412,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 18
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4411,16 +4427,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_anteros_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4442,14 +4459,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 19
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4457,16 +4474,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hera_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4495,14 +4513,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 20
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4510,16 +4528,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hades_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4541,14 +4560,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 21
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4556,16 +4575,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_thanatos_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4587,14 +4607,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 22
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4602,16 +4622,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_macaria_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4633,14 +4654,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 23
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4648,16 +4669,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_clotho_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4679,14 +4701,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 24
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4694,16 +4716,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_metis_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4725,14 +4748,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 25
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4740,16 +4763,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_tiresias_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4785,14 +4809,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 2
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4800,16 +4824,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_iris_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4831,14 +4856,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 3
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4846,16 +4871,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_selene_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4877,14 +4903,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 4
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4892,16 +4918,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_astraeus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4923,14 +4950,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 5
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4938,16 +4965,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_galene_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -4969,14 +4997,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 6
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -4984,16 +5012,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_thetis_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5015,14 +5044,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 7
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5030,16 +5059,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_nereus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5068,14 +5098,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 8
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5083,16 +5113,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_gaia_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5114,14 +5145,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 9
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5129,16 +5160,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_caeneus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5160,14 +5192,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 10
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5175,16 +5207,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_dione_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5206,14 +5239,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 11
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5221,16 +5254,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hermes_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5252,14 +5286,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 12
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5267,16 +5301,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hestia_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5298,14 +5333,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 13
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5313,16 +5348,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_mnemosyne_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5351,14 +5387,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 14
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5366,16 +5402,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_harmonia_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5397,14 +5434,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 15
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5412,16 +5449,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_themis_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5443,14 +5481,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 16
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5458,16 +5496,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_eris_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5489,14 +5528,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 17
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5504,16 +5543,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_aphrodite_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5535,14 +5575,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 18
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5550,16 +5590,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_peitho_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5581,14 +5622,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 19
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5596,16 +5637,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_philotes_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5634,14 +5676,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 20
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5649,16 +5691,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_persephone_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5680,14 +5723,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 21
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5695,16 +5738,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hecate_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5726,14 +5770,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 22
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5741,16 +5785,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_orpheus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5772,14 +5817,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 23
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5787,16 +5832,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_circe_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5818,14 +5864,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 24
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5833,16 +5879,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_lachesis_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5864,14 +5911,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 25
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5879,16 +5926,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_apollo_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5924,14 +5972,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 2
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5939,16 +5987,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_hyperion_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -5970,14 +6019,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 3
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -5985,16 +6034,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_aether_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6016,14 +6066,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 4
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6031,16 +6081,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = T
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_helios_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6062,14 +6113,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 5
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6077,16 +6128,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_poseidon_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6108,14 +6160,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 6
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6123,16 +6175,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_triton_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6154,14 +6207,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 7
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6169,16 +6222,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = M
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_scylla_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6207,14 +6261,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 8
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6222,16 +6276,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_artemis_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6253,14 +6308,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 9
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6268,16 +6323,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_eileithyia_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6299,14 +6355,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 10
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6314,16 +6370,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = G
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_cyrene_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6345,14 +6402,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 11
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6360,16 +6417,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_bellerophon_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6391,14 +6449,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 12
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6406,16 +6464,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_athena_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6437,14 +6496,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 13
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6452,16 +6511,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = Y
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_prometheus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6490,14 +6550,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 14
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6505,16 +6565,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_ares_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6536,14 +6597,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 15
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6551,16 +6612,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_phobos_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6582,14 +6644,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 16
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6597,16 +6659,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = O
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_deimos_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6628,14 +6691,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 17
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6643,16 +6706,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_penthesilea_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6674,14 +6738,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 18
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6689,16 +6753,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_helen_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6720,14 +6785,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 19
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6735,16 +6800,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = V
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_iolaus_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6773,14 +6839,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 20
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6788,16 +6854,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_charon_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6819,14 +6886,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 21
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6834,16 +6901,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_melinoe_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6865,14 +6933,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 22
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6880,16 +6948,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = R
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_achlys_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6911,14 +6980,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 23
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6926,16 +6995,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_atropos_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -6957,14 +7027,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 24
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -6972,16 +7042,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_medea_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
@@ -7003,14 +7074,14 @@ guiTypes = {
 
 							iconType = {
 								name = "icon"
-								position = { x = 64 y = 6 }
+								position = { x = 74 y = 6 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_icons"
 								frame = 25
 								scale = 0.55
 							}
 							iconType = {
 								name = "frame"
-								position = { x = 61 y = 3 }
+								position = { x = 71 y = 3 }
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
@@ -7018,16 +7089,17 @@ guiTypes = {
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
-								maxWidth = 50
+								maxWidth = 60
 								maxHeight = 40
 								vertical_alignment = center
+								text_color_code = l
 								scripted = yes
 							}
 							instantTextBoxType = {
 								name = "rce_religion_mechanic_pantheon_god_cassandra_effects_text"
-								position = { x = 112 y = 8 }
+								position = { x = 120 y = 8 }
 								font = "vic_18"
-								maxWidth = 260
+								maxWidth = 255
 								maxHeight = 37
 								format = left
 								vertical_alignment = center
