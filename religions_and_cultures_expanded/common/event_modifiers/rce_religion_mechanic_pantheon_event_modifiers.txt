@@ -213,7 +213,7 @@ rce_religion_mechanic_pantheon_god_penthesilea_modifier = {
 rce_religion_mechanic_pantheon_god_helen_modifier = {
 	siege_ability = 0.05
 }
-rce_religion_mechanic_pantheon_god_iolaus_modifier = {
+rce_religion_mechanic_pantheon_god_heracles_modifier = {
 	morale_damage = 0.05
 }
 rce_religion_mechanic_pantheon_god_charon_modifier = {

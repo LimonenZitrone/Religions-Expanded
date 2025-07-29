@@ -129,7 +129,7 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = deimos }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = penthesilea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = charon }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = melinoe }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = achlys }
@@ -334,7 +334,7 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_love = {
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = penthesilea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 		}
 	}
 }

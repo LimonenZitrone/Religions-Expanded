@@ -1095,9 +1095,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 		}
-		localisation_key = rce_religion_mechanic_pantheon_god_iolaus_name_text
+		localisation_key = rce_religion_mechanic_pantheon_god_heracles_name_text
 	}
 	text = {
 		trigger = {
@@ -1251,9 +1251,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 		}
-		localisation_key = rce_religion_mechanic_pantheon_god_iolaus_desc_text
+		localisation_key = rce_religion_mechanic_pantheon_god_heracles_desc_text
 	}
 	text = {
 		trigger = {
@@ -1407,9 +1407,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = iolaus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 		}
-		localisation_key = rce_religion_mechanic_pantheon_god_iolaus_effects_text
+		localisation_key = rce_religion_mechanic_pantheon_god_heracles_effects_text
 	}
 	text = {
 		trigger = {

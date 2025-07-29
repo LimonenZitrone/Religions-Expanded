@@ -6780,7 +6780,7 @@ guiTypes = {
 							}
 						}
 						windowType = {
-							name = "god_window_iolaus"
+							name = "god_window_heracles"
 							position = { x = 0 y = 230 }
 
 							iconType = {
@@ -6796,7 +6796,7 @@ guiTypes = {
 								spriteType = "GFX_rce_religion_mechanic_pantheon_god_frame_overlay_small"
 							}
 							instantTextBoxType = {
-								name = "rce_religion_mechanic_pantheon_god_iolaus_name_text"
+								name = "rce_religion_mechanic_pantheon_god_heracles_name_text"
 								position = { x = 7 y = 5 }
 								format = center
 								font = "vic_18"
@@ -6807,7 +6807,7 @@ guiTypes = {
 								scripted = yes
 							}
 							instantTextBoxType = {
-								name = "rce_religion_mechanic_pantheon_god_iolaus_effects_text"
+								name = "rce_religion_mechanic_pantheon_god_heracles_effects_text"
 								position = { x = 120 y = 8 }
 								font = "vic_18"
 								maxWidth = 255
@@ -6818,7 +6818,7 @@ guiTypes = {
 								scripted = yes
 							}
 							guiButtonType = {
-								name = "rce_religion_mechanic_pantheon_god_iolaus_select_button"
+								name = "rce_religion_mechanic_pantheon_god_heracles_select_button"
 								position = { x = 378 y = 10 }
 								spriteType = "GFX_standard_button_71"
 								buttonText = "SELECT"

@@ -214,7 +214,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hera }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = philotes }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = iolaus }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = heracles }
 				}
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 19 }
@@ -369,7 +369,7 @@ rce_remove_religion_mechanic_pantheon_active_mil_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = deimos }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = penthesilea }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = helen }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = iolaus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = heracles }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = charon }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = melinoe }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = achlys }

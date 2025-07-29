@@ -1707,12 +1707,12 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_iolaus_name_text
+		name = rce_religion_mechanic_pantheon_god_heracles_name_text
 
 		trigger = {
 			rce_can_select_religion_mechanic_pantheon_god_of_type = {
 				type = mil
-				name = iolaus
+				name = heracles
 			}
 		}
 
@@ -1726,7 +1726,7 @@ country_event = {
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = mil
-			name = iolaus
+			name = heracles
 		}
 	}
 

@@ -2417,34 +2417,34 @@ custom_button = {
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
 }
-### iolaus ###
+### heracles ###
 custom_text_box = {
-	name = rce_religion_mechanic_pantheon_god_iolaus_name_text
+	name = rce_religion_mechanic_pantheon_god_heracles_name_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_iolaus_desc_text
+	tooltip = rce_religion_mechanic_pantheon_god_heracles_desc_text
 }
 custom_text_box = {
-	name = rce_religion_mechanic_pantheon_god_iolaus_effects_text
+	name = rce_religion_mechanic_pantheon_god_heracles_effects_text
 	potential = {
 		always = yes
 	}
-	tooltip = rce_religion_mechanic_pantheon_god_iolaus_effects_text
+	tooltip = rce_religion_mechanic_pantheon_god_heracles_effects_text
 }
 custom_button = {
-	name = rce_religion_mechanic_pantheon_god_iolaus_select_button
+	name = rce_religion_mechanic_pantheon_god_heracles_select_button
 	trigger = {
 		rce_can_select_religion_mechanic_pantheon_god_of_type = {
 			type = mil
-			name = iolaus
+			name = heracles
 		}
 	}
 	effect = {
 		custom_tooltip = rce_tooltip_effect_text
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = mil
-			name = iolaus
+			name = heracles
 		}
 	}
 	tooltip = rce_religion_mechanic_pantheon_god_select_button_tt
