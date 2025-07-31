@@ -2730,7 +2730,7 @@ pagan = {
 
 	hellenism = {
 		icon = 36
-		color = { 127 0 77 }
+		color = { 95 0 75 }
 		country = {
 			tolerance_heathen = 2
 			reform_progress_growth = 0.1
