@@ -10005,7 +10005,6 @@ lost_cultures_group = {
 			Æthelburh Seaxburh Wihtburh
 		}
 	}
-	# phoenician moved to other group (aramaic_culture_group)
 	# babylonian moved to other group (aramaic_culture_group)
 	etrurian = { #EU Rome
 		dynasty_names = {
