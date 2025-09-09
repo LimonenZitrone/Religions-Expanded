@@ -72,8 +72,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	goto = target_province
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple
@@ -81,7 +79,44 @@ country_event = {
 				limit = {
 					is_capital = no
 					has_owner_religion = yes
-					has_tax_building_trigger = yes
+					NOT = { has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local }
+					has_port = yes
+				}
+				save_event_target_as = target_port_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					has_owner_religion = yes
+					NOT = { has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local }
+					any_neighbor_province = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				save_event_target_as = target_border_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					has_owner_religion = yes
+					NOT = { has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local }
+					has_great_project = {
+						type = monument
+					}
+					NOT = {
+						has_great_project = {
+							type = monument
+							tier = 3
+						}
+					}
+				}
+				save_event_target_as = target_monument_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					has_owner_religion = yes
+					NOT = { has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local }
 				}
 				save_event_target_as = target_province
 			}
@@ -92,17 +127,1250 @@ country_event = {
 		name = rce_religion_mechanic_pantheon_events2.EVTOPT1
 
 		trigger = {
-
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = cosmic
+			}
 		}
 
+		goto = target_province
 
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_cosmic_big
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_cosmic_medium
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_cosmic_small
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT2
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = sea
+			}
+		}
+
+		goto = target_port_province
+
+		if = {
+			limit = {
+				event_target:target_port_province = {
+					has_building = cathedral
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						has_port = yes
+					}
+				}
+				event_target:target_port_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big
+						duration = 7300
+					}
+				}
+				capital_scope = {
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_big
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_big
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_big
+						duration = 7300
+					}
+				}
+			}
+			else = {
+				event_target:target_port_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big_big
+						duration = 7300
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_port_province = {
+					has_building = temple
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						has_port = yes
+					}
+				}
+				event_target:target_port_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_medium
+						duration = 7300
+					}
+				}
+				capital_scope = {
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_medium
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_medium
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_medium
+						duration = 7300
+					}
+				}
+			}
+			else = {
+				event_target:target_port_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big_medium
+						duration = 7300
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					capital_scope = {
+						has_port = yes
+					}
+				}
+				event_target:target_port_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_small
+						duration = 7300
+					}
+				}
+				capital_scope = {
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_small
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_small
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_small
+						duration = 7300
+					}
+				}
+			}
+			else = {
+				event_target:target_port_province = {
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big_small
+						duration = 7300
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_port_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT3
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = nature
+			}
+		}
+
+		goto = target_province
+
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_nature_big
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_nature_medium
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_nature_small
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT4
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = culture
+			}
+		}
+
+		goto = target_province
+
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_big
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_big_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_big_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_big_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_medium
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_medium_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_medium_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_medium_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_small
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_small_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_small_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_small_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT5
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = death
+			}
+			has_saved_event_target = target_border_province
+		}
+
+		goto = target_border_province
+
+		if = {
+			limit = {
+				event_target:target_border_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_border_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_border_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_border_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_border_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_border_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT5
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = death
+			}
+			NOT = { has_saved_event_target = target_border_province }
+		}
+
+		goto = target_province
+
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT6
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = love
+			}
+		}
+
+		goto = target_province
+
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_love_big
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_love_medium
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_love_small
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT7
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = warfare
+			}
+		}
+
+		goto = target_province
+
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_big
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_big_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_big_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_big_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_medium
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_medium_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_medium_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_medium_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_small
+					duration = 7300
+				}
+				area = {
+					limit = {
+						owned_by = ROOT
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_small_area
+							}
+							remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_small_area
+						}
+					}
+					add_province_modifier = {
+						name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_small_area
+						duration = 7300
+					}
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT8
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = fate
+			}
+			has_saved_event_target = target_monument_province
+		}
+
+		goto = target_monument_province
+
+		if = {
+			limit = {
+				event_target:target_monument_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_monument_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_big
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_monument_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_monument_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_medium
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_monument_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_small
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_monument_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_pantheon_events2.EVTOPT8
+
+		trigger = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = fate
+			}
+			NOT = { has_saved_event_target = target_monument_province }
+		}
+
+		goto = target_province
+
+		if = {
+			limit = {
+				event_target:target_province = {
+					has_building = cathedral
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_big
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+					duration = 7300
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				event_target:target_province = {
+					has_building = temple
+				}
+			}
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_medium
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+					duration = 7300
+				}
+			}
+		}
+		else = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_small
+					duration = 7300
+				}
+			}
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+						}
+						remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+					}
+				}
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:target_province = {
+				add_province_modifier = {
+					name = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+					duration = 7300
+					hidden = yes
+				}
+			}
+		}
 	}
 
 	after = {
 		clr_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple
 		add_country_modifier = {
 			name = rce_religion_mechanic_pantheon_dedicated_a_temple
-			duration = 7300
+			duration = 3650
 			hidden = yes
 		}
 	}
@@ -117,30 +1385,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_urania_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = urania
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.25
-				NOT = { stability = 0 }
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = urania
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_cronus_name_text
 
 		trigger = {
@@ -153,8 +1397,8 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.1
-				NOT = { legitimacy_equivalent = 50 }
+				factor = 1.5
+				is_lacking_institutions = yes
 			}
 		}
 
@@ -185,26 +1429,22 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_oceanus_name_text
+		name = rce_religion_mechanic_pantheon_god_odysseus_name_text
 
 		trigger = {
 			rce_can_select_religion_mechanic_pantheon_god_of_type = {
 				type = adm
-				name = oceanus
+				name = odysseus
 			}
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.1
-				navy_size = 50
-			}
+			factor = 0.75
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = adm
-			name = oceanus
+			name = odysseus
 		}
 	}
 
@@ -221,62 +1461,19 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.1
+				factor = 0
+				NOT = { navy_size = 20 }
+			}
+			modifier = {
+				factor = 1.5
 				is_at_war = yes
-				navy_size = 20
-				any_war_enemy_country = {
-					num_of_total_ports = 1
-				}
+				navy_size = 30
 			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = adm
 			name = amphitrite
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_leucothea_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = leucothea
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = leucothea
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_rhea_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = rhea
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.15
-				gold = 5
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = rhea
 		}
 	}
 
@@ -311,7 +1508,11 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1.15
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = { religious_unity = 0.75 }
+			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -333,12 +1534,8 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.1
-				is_lacking_institutions = yes
-			}
-			modifier = {
-				factor = 0
-				NOT = { is_lacking_institutions = yes }
+				factor = 1.25
+				inflation = 5
 			}
 		}
 
@@ -359,18 +1556,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.1
-				overextension_percentage = 0.1
-			}
-			modifier = {
-				factor = 1.1
-				is_at_war = yes
-				is_in_war = {
-					attacker_leader = ROOT
-				}
-			}
+			factor = 1.1
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -392,11 +1578,13 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.1
-				any_owned_province = {
-					has_owner_culture = no
-					has_owner_accepted_culture = no
-				}
+				factor = 0
+				is_at_war = no
+			}
+			modifier = {
+				factor = 1.15
+				is_at_war = yes
+				num_of_mercenaries = 10
 			}
 		}
 
@@ -443,7 +1631,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.05
+				factor = 1.15
 				is_at_war = yes
 			}
 		}
@@ -451,30 +1639,6 @@ country_event = {
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = adm
 			name = dike
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_enyo_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = enyo
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.05
-				is_at_war = yes
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = enyo
 		}
 	}
 
@@ -489,44 +1653,20 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1.05
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { corruption = 1 }
+			}
+			modifier = {
+				factor = 1.5
+				corruption = 5
+			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = adm
 			name = eros
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_anteros_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = anteros
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.15
-				inflation = 5
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { inflation = 3 }
-			}
-			modifier = {
-				factor = 0
-				NOT = { inflation = 1 }
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = anteros
 		}
 	}
 
@@ -562,10 +1702,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				government = republic
-			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -585,41 +1721,16 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.95
+			factor = 1
+			modifier = {
+				factor = 1.1
+				is_at_war = yes
+			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = adm
 			name = thanatos
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_macaria_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = macaria
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.1
-				is_at_war = yes
-				num_of_mercenaries = 1
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { num_of_mercenaries = 1 }
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = macaria
 		}
 	}
 
@@ -650,26 +1761,6 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_metis_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = adm
-				name = metis
-			}
-		}
-
-		ai_chance = {
-			factor = 1.25
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = adm
-			name = metis
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_tiresias_name_text
 
 		trigger = {
@@ -680,15 +1771,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.25
-				NOT = { religious_unity = 0.75 }
-			}
-			modifier = {
-				factor = 0.1
-				religious_unity = 1
-			}
+			factor = 0.95
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -729,32 +1812,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				NOT = { num_of_non_tributary_subjects = 1 }
+				NOT = { num_of_colonies = 1 }
 			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
 			name = iris
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_selene_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = selene
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = selene
 		}
 	}
 
@@ -771,7 +1835,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.1
+				factor = 1.05
 				is_at_war = yes
 			}
 		}
@@ -779,30 +1843,6 @@ country_event = {
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
 			name = astraeus
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_galene_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = galene
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { num_of_light_ship = 10 }
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = galene
 		}
 	}
 
@@ -818,10 +1858,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { num_of_light_ship = 10 }
-			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -886,39 +1922,11 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { num_of_colonists = 1 }
-			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
 			name = caeneus
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_dione_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = dione
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { num_of_colonists = 1 }
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = dione
 		}
 	}
 
@@ -933,14 +1941,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.1
-				any_owned_province = {
-					has_owner_culture = no
-					has_owner_accepted_culture = no
-				}
-			}
+			factor = 1.05
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -977,26 +1978,6 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_mnemosyne_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = mnemosyne
-			}
-		}
-
-		ai_chance = {
-			factor = 0.95
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = mnemosyne
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_harmonia_name_text
 
 		trigger = {
@@ -1024,33 +2005,6 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_themis_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = themis
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.25
-				is_at_war = yes
-				is_in_war = {
-					attacker_leader = ROOT
-				}
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = themis
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_eris_name_text
 
 		trigger = {
@@ -1061,7 +2015,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.9
+			factor = 0.95
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1081,32 +2035,12 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1.15
+			factor = 1.05
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
 			name = aphrodite
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_peitho_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = peitho
-			}
-		}
-
-		ai_chance = {
-			factor = 0.75
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = peitho
 		}
 	}
 
@@ -1121,7 +2055,11 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 0.95
+			modifier = {
+				factor = 0
+				NOT = { num_of_non_tributary_subjects = 1 }
+			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1141,13 +2079,9 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.5
+			factor = 0.75
 			modifier = {
 				factor = 0
-				NOT = { num_of_transport = 10 }
-			}
-			modifier = {
-				factor = 0.5
 				is_at_war = no
 			}
 		}
@@ -1155,33 +2089,6 @@ country_event = {
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
 			name = persephone
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_hecate_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = hecate
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.05
-				is_at_war = yes
-				is_in_war = {
-					attacker_leader = ROOT
-				}
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = hecate
 		}
 	}
 
@@ -1196,10 +2103,10 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1.05
+			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { num_of_subjects = 1 }
+				NOT = { navy_size = 20 }
 			}
 		}
 
@@ -1210,32 +2117,12 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_circe_name_text
+		name = rce_religion_mechanic_pantheon_god_moira_name_text
 
 		trigger = {
 			rce_can_select_religion_mechanic_pantheon_god_of_type = {
 				type = dip
-				name = circe
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = dip
-			name = circe
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_lachesis_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = dip
-				name = lachesis
+				name = moira
 			}
 		}
 
@@ -1251,7 +2138,7 @@ country_event = {
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
-			name = lachesis
+			name = moira
 		}
 	}
 
@@ -1266,11 +2153,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1.25
-			modifier = {
-				factor = 1.5
-				corruption = 2
-			}
+			factor = 1
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1297,30 +2180,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_hyperion_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = mil
-				name = hyperion
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.5
-				is_at_war = no
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = mil
-			name = hyperion
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_aether_name_text
 
 		trigger = {
@@ -1333,11 +2192,8 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.25
+				factor = 1.1
 				is_at_war = yes
-				is_in_war = {
-					defenders = ROOT
-				}
 			}
 		}
 
@@ -1382,7 +2238,11 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1.25
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { navy_size = 20 }
+			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1404,12 +2264,8 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 0.1
-				NOT = { navy_size = 30 }
-			}
-			modifier = {
 				factor = 0
-				NOT = { navy_size = 10 }
+				NOT = { navy_size = 20 }
 			}
 		}
 
@@ -1420,30 +2276,30 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_scylla_name_text
+		name = rce_religion_mechanic_pantheon_god_perseus_name_text
 
 		trigger = {
 			rce_can_select_religion_mechanic_pantheon_god_of_type = {
 				type = mil
-				name = scylla
+				name = perseus
 			}
 		}
 
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 0.1
-				NOT = { navy_size = 30 }
-			}
-			modifier = {
 				factor = 0
-				NOT = { navy_size = 10 }
+				OR = {
+					NOT = { navy_size = 20 }
+					NOT = { num_of_galley = 15 }
+					NOT = { num_of_heavy_ship = 15 }
+				}
 			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = mil
-			name = scylla
+			name = perseus
 		}
 	}
 
@@ -1458,9 +2314,9 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.9
+			factor = 1.05
 			modifier = {
-				factor = 0.25
+				factor = 0
 				is_at_war = no
 			}
 		}
@@ -1468,30 +2324,6 @@ country_event = {
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = mil
 			name = artemis
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_eileithyia_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = mil
-				name = eileithyia
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.05
-				is_at_war = yes
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = mil
-			name = eileithyia
 		}
 	}
 
@@ -1534,6 +2366,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				unrest = 1
+			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1553,7 +2389,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 0.75
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1573,15 +2409,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.05
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0
-				NOT = { num_of_artillery = 1 }
-			}
+			factor = 0.5
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1663,26 +2491,6 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_penthesilea_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = mil
-				name = penthesilea
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = mil
-			name = penthesilea
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_helen_name_text
 
 		trigger = {
@@ -1695,8 +2503,12 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.1
+				factor = 1.15
 				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_artillery = 1 }
 			}
 		}
 
@@ -1718,10 +2530,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 1.1
-				is_at_war = yes
-			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
@@ -1743,46 +2551,14 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1.05
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { navy_size = 30 }
-			}
-			modifier = {
-				factor = 0
-				NOT = { navy_size = 10 }
+				factor = 1.25
+				NOT = { manpower_percentage = 0.5 }
 			}
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = mil
 			name = charon
-		}
-	}
-
-	option = {
-		name = rce_religion_mechanic_pantheon_god_melinoe_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = mil
-				name = melinoe
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.1
-				is_at_war = yes
-			}
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = mil
-			name = melinoe
 		}
 	}
 
@@ -1799,8 +2575,13 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 0
+				is_at_war = no
+			}
+			modifier = {
 				factor = 1.05
 				is_at_war = yes
+				num_of_mercenaries = 10
 			}
 		}
 
@@ -1837,26 +2618,6 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_medea_name_text
-
-		trigger = {
-			rce_can_select_religion_mechanic_pantheon_god_of_type = {
-				type = mil
-				name = medea
-			}
-		}
-
-		ai_chance = {
-			factor = 0.5
-		}
-
-		rce_set_religion_mechanic_pantheon_active_god = {
-			type = mil
-			name = medea
-		}
-	}
-
-	option = {
 		name = rce_religion_mechanic_pantheon_god_cassandra_name_text
 
 		trigger = {
@@ -1867,11 +2628,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.75
-			modifier = {
-				factor = 1.1
-				is_at_war = yes
-			}
+			factor = 1
 		}
 
 		rce_set_religion_mechanic_pantheon_active_god = {

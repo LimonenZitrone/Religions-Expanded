@@ -1859,6 +1859,342 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = sailor_maintenance_modifer
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SAILOR_MAINTENANCE
+	}
+}
+
+defined_text = {
+	name = movement_speed_in_fleet_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MOVEMENT_SPEED_IN_FLEET
+	}
+}
+
+defined_text = {
+	name = fort_maintenance_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = FORT_MAINTENANCE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = heir_chance
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_HEIR_CHANCE
+	}
+}
+
+defined_text = {
+	name = native_assimilation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_NATIVE_ASSIMILATION
+	}
+}
+
+defined_text = {
+	name = global_trade_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_TRADE_POWER
+	}
+}
+
+defined_text = {
+	name = global_ship_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SHIP_COST
+	}
+}
+
+defined_text = {
+	name = placed_merchant_power_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_PLACED_MERCHANT_POWER_MODIFIER
+	}
+}
+
+defined_text = {
+	name = vassal_income
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_VASSAL_INCOME
+	}
+}
+
+defined_text = {
+	name = landing_penalty
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_FLAGSHIP_LANDING_PENALTY
+	}
+}
+
+defined_text = {
+	name = siege_blockade_progress
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SIEGE_BLOCKADE_PROGRESS
+	}
+}
+
+defined_text = {
+	name = naval_attrition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = NAVAL_ATTRITION
+	}
+}
+
+defined_text = {
+	name = global_ship_repair
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_SHIP_REPAIR
+	}
+}
+
+defined_text = {
+	name = leader_naval_fire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LEADER_NAVAL_FIRE
+	}
+}
+
+defined_text = {
+	name = max_admiral_fire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MAX_ADMIRAL_FIRE
+	}
+}
+
+defined_text = {
+	name = naval_morale_damage_received
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_NAVAL_MORALE_DAMAGE_RECEIVED
+	}
+}
+
+defined_text = {
+	name = disengagement_chance
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DISENGAGEMENT_CHANCE
+	}
+}
+
+defined_text = {
+	name = galley_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GALLEY_POWER
+	}
+}
+
+defined_text = {
+	name = heavy_ship_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = HEAVYSHIP_POWER
+	}
+}
+
+defined_text = {
+	name = attack_bonus_in_capital_terrain
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ATTACK_BONUS_IN_CAPITAL_TERRAIN
+	}
+}
+
+defined_text = {
+	name = global_autonomy
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_AUTONOMY_MOD
+	}
+}
+
+defined_text = {
+	name = general_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GENERAL_COST
+	}
+}
+
+defined_text = {
+	name = artillery_levels_available_vs_fort
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ARTILLERY_LEVELS_AVAILABLE_VS_FORT
+	}
+}
+
+defined_text = {
+	name = artillery_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ARTILLERY_POWER
+	}
+}
+
+defined_text = {
+	name = global_regiment_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = REGIMENT_COST
+	}
+}
+
+defined_text = {
+	name = global_regiment_recruit_speed
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = REGIMENT_RECRUIT_SPEED
+	}
+}
+
+defined_text = {
+	name = leader_land_fire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LEADER_LAND_FIRE
+	}
+}
+
+defined_text = {
+	name = max_general_fire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MAX_GENERAL_FIRE
+	}
+}
+
 # Religions & Cultures Expanded:
 defined_text = {
 	name = rce_yearly_religion_mechanic_sukha_change

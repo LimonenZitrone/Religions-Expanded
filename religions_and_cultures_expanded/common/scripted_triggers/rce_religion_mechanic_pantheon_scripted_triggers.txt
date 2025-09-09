@@ -48,13 +48,10 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_adm = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_adm_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = urania }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = cronus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = oceanus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = odysseus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = amphitrite }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = leucothea }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = rhea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = demeter }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = pan }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = asclepius }
@@ -62,15 +59,11 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_adm = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = daedalus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = kratos }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = dike }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = enyo }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = eros }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = anteros }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hera }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hades }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = thanatos }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = macaria }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = clotho }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = metis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = tiresias }
 		}
 	}
@@ -81,28 +74,20 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip = {
 		tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = iris }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = selene }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = astraeus }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = galene }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = thetis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = nereus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = gaia }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = caeneus }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = dione }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hermes }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hestia }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = mnemosyne }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = harmonia }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = themis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = eris }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = aphrodite }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = peitho }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = philotes }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = persephone }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = hecate }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = circe }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
 		}
 	}
@@ -112,14 +97,12 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = hyperion }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = aether }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = helios }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = poseidon }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = triton }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = scylla }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = perseus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = artemis }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = eileithyia }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = cyrene }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = bellerophon }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = athena }
@@ -127,14 +110,11 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_mil = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = ares }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = phobos }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = deimos }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = penthesilea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = charon }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = melinoe }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = achlys }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = atropos }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = medea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = cassandra }
 		}
 	}
@@ -157,7 +137,6 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_cosmic = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_cosmic_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = urania }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = cronus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
 		}
@@ -168,7 +147,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_cosmic = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_cosmic_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = iris }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = selene }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = astraeus }
 		}
 	}
@@ -177,7 +155,6 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_cosmic = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_cosmic_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = hyperion }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = aether }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = helios }
 		}
@@ -188,9 +165,8 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_sea = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_sea_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = oceanus }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = odysseus }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = amphitrite }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = leucothea }
 		}
 	}
 }
@@ -198,7 +174,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_sea = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_sea_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = galene }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = thetis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = nereus }
 		}
@@ -210,7 +185,7 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_sea = {
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = poseidon }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = triton }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = scylla }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = perseus }
 		}
 	}
 }
@@ -219,7 +194,6 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_nature = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_nature_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = rhea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = demeter }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = pan }
 		}
@@ -231,7 +205,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_nature = {
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = gaia }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = caeneus }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = dione }
 		}
 	}
 }
@@ -240,7 +213,6 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_nature = {
 		tooltip = rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_nature_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = artemis }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = eileithyia }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = cyrene }
 		}
 	}
@@ -262,7 +234,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_culture = {
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hermes }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hestia }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = mnemosyne }
 		}
 	}
 }
@@ -283,7 +254,6 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_warfare = {
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = kratos }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = dike }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = enyo }
 		}
 	}
 }
@@ -292,7 +262,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_warfare = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_warfare_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = harmonia }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = themis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = eris }
 		}
 	}
@@ -313,7 +282,6 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_love = {
 		tooltip = rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_love_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = eros }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = anteros }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hera }
 		}
 	}
@@ -323,7 +291,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_love = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_love_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = aphrodite }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = peitho }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = philotes }
 		}
 	}
@@ -332,7 +299,6 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_love = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_love_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = penthesilea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
 		}
@@ -345,7 +311,6 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_death = {
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = hades }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = thanatos }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = macaria }
 		}
 	}
 }
@@ -354,7 +319,6 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_death = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_death_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = persephone }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = hecate }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
 		}
 	}
@@ -364,7 +328,6 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_death = {
 		tooltip = rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_death_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = charon }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = melinoe }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = achlys }
 		}
 	}
@@ -375,7 +338,6 @@ rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_fate = {
 		tooltip = rce_has_religion_mechanic_pantheon_adm_god_selected_of_theme_fate_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = clotho }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = metis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = tiresias }
 		}
 	}
@@ -384,8 +346,7 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_fate = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_fate_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = circe }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
 		}
 	}
@@ -395,8 +356,28 @@ rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_fate = {
 		tooltip = rce_has_religion_mechanic_pantheon_mil_god_selected_of_theme_fate_tt
 		OR = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = atropos }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = medea }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = cassandra }
 		}
+	}
+}
+
+rce_has_religion_mechanic_pantheon_hero_god_of_all_types = {
+	# ADM
+	OR = {
+		rce_has_religion_mechanic_pantheon_god_selected = { name = daedalus }
+		rce_has_religion_mechanic_pantheon_god_selected = { name = tiresias }
+	}
+	# DIP
+	OR = {
+		rce_has_religion_mechanic_pantheon_god_selected = { name = caeneus }
+		rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
+	}
+	# MIL
+	OR = {
+		rce_has_religion_mechanic_pantheon_god_selected = { name = perseus }
+		rce_has_religion_mechanic_pantheon_god_selected = { name = bellerophon }
+		rce_has_religion_mechanic_pantheon_god_selected = { name = helen }
+		rce_has_religion_mechanic_pantheon_god_selected = { name = heracles }
+		rce_has_religion_mechanic_pantheon_god_selected = { name = cassandra }
 	}
 }

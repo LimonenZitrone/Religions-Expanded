@@ -27,13 +27,14 @@ rce_set_religion_mechanic_pantheon_image_frame_for_non_selected_gods = {
 rce_set_religion_mechanic_pantheon_active_god = {
 	rce_remove_religion_mechanic_pantheon_active_$type$_god = yes
 	set_ruler_flag = rce_religion_mechanic_pantheon_god_$type$_selected_during_reign
-	add_country_modifier = {
-		name = rce_religion_mechanic_pantheon_god_$name$_modifier
-		duration = -1
-		desc = rce_religion_mechanic_pantheon_god_modifier_duration_tt
-	}
+	custom_tooltip = rce_set_religion_mechanic_pantheon_active_god_tt
+	custom_tooltip = rce_religion_mechanic_pantheon_god_$name$_effects_text
 	custom_tooltip = rce_set_religion_mechanic_pantheon_active_god_tt_cooldown
 	hidden_effect = {
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_god_$name$_modifier
+			duration = -1
+		}
 		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_adm
 		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
 		clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
@@ -41,11 +42,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		set_country_flag = rce_religion_mechanic_pantheon_new_selected_god_is_$name$
 		if = {
 			limit = {
-				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = urania }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = iris }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hyperion }
-				}
+				rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = iris }
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 2 }
 		}
@@ -53,7 +50,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = cronus }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = selene }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = aether }
 				}
 			}
@@ -72,8 +68,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		else_if = {
 			limit = {
 				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = oceanus }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = galene }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = odysseus }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = poseidon }
 				}
 			}
@@ -92,9 +87,8 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		else_if = {
 			limit = {
 				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = leucothea }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = nereus }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = scylla }
+					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = perseus }
 				}
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 7 }
@@ -102,7 +96,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		else_if = {
 			limit = {
 				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = rhea }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = gaia }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = artemis }
 				}
@@ -114,7 +107,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = demeter }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = caeneus }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eileithyia }
 				}
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 9 }
@@ -123,7 +115,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = pan }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = dione }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = cyrene }
 				}
 			}
@@ -153,7 +144,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = daedalus }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = mnemosyne }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = prometheus }
 				}
 			}
@@ -173,7 +163,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = dike }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = themis }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = phobos }
 				}
 			}
@@ -182,7 +171,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		else_if = {
 			limit = {
 				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = enyo }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eris }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = deimos }
 				}
@@ -194,18 +182,13 @@ rce_set_religion_mechanic_pantheon_active_god = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = eros }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = aphrodite }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = penthesilea }
 				}
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 17 }
 		}
 		else_if = {
 			limit = {
-				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = anteros }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = peitho }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = helen }
-				}
+				rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = helen }
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 18 }
 		}
@@ -231,18 +214,13 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		}
 		else_if = {
 			limit = {
-				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = thanatos }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = hecate }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = melinoe }
-				}
+				rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = thanatos }
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 21 }
 		}
 		else_if = {
 			limit = {
 				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = macaria }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = orpheus }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = achlys }
 				}
@@ -253,7 +231,6 @@ rce_set_religion_mechanic_pantheon_active_god = {
 			limit = {
 				OR = {
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = clotho }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = circe }
 					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = atropos }
 				}
 			}
@@ -261,11 +238,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		}
 		else_if = {
 			limit = {
-				OR = {
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = metis }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = lachesis }
-					rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = medea }
-				}
+				rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = moira }
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 24 }
 		}
@@ -298,13 +271,10 @@ rce_remove_religion_mechanic_pantheon_active_god = {
 }
 
 rce_remove_religion_mechanic_pantheon_active_adm_god = {
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = urania }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = cronus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = zeus }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = oceanus }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = odysseus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = amphitrite }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = leucothea }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = rhea }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = demeter }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = pan }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = asclepius }
@@ -312,54 +282,40 @@ rce_remove_religion_mechanic_pantheon_active_adm_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = daedalus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = kratos }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = dike }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = enyo }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = eros }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = anteros }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = hera }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = hades }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = thanatos }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = macaria }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = clotho }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = metis }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = adm name = tiresias }
 }
 
 rce_remove_religion_mechanic_pantheon_active_dip_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = iris }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = selene }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = astraeus }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = galene }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = thetis }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = nereus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = gaia }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = caeneus }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = dione }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hermes }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hestia }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = mnemosyne }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = harmonia }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = themis }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = eris }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = aphrodite }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = peitho }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = philotes }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = persephone }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = hecate }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = orpheus }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = circe }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = lachesis }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = moira }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = apollo }
 }
 
 rce_remove_religion_mechanic_pantheon_active_mil_god = {
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = hyperion }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = aether }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = helios }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = poseidon }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = triton }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = scylla }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = perseus }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = artemis }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = eileithyia }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = cyrene }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = bellerophon }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = athena }
@@ -367,15 +323,1139 @@ rce_remove_religion_mechanic_pantheon_active_mil_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = ares }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = phobos }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = deimos }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = penthesilea }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = helen }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = heracles }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = charon }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = melinoe }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = achlys }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = atropos }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = medea }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = mil name = cassandra }
+}
+
+rce_religion_mechanic_pantheon_hold_festival_effect = {
+	add_adm_power = -100
+	add_dip_power = -100
+	add_mil_power = -100
+	add_country_modifier = {
+		name = rce_religion_mechanic_pantheon_held_a_festival
+		duration = 7300
+		hidden = yes
+	}
+	custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt
+	if = {
+		limit = {
+			OR = {
+				rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+				rce_has_religion_mechanic_pantheon_god_selected = { name = poseidon }
+				rce_has_religion_mechanic_pantheon_god_selected = { name = hades }
+				rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_god_selected = { name = zeus }
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_special_god_selected_zeus
+			add_army_tradition = 5
+			custom_tooltip = " "
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_god_selected = { name = poseidon }
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_special_god_selected_poseidon
+			add_navy_tradition = 5
+			custom_tooltip = " "
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_god_selected = { name = hades }
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_special_god_selected_hades
+			add_corruption = -5
+			custom_tooltip = " "
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
+			}
+			custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_special_god_selected_apollo
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_apollo
+				duration = 3650
+			}
+		}
+	}
+	else = {
+		custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_special_god_not_selected
+	}
+	custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_combination
+	if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_hero_god_of_all_types = yes
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_festival_modifier_heros
+			duration = 3650
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = warfare
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = warfare
+				}
+			}
+			add_yearly_manpower = 3
+			add_mil_power = 50
+		}
+		else = {
+			add_yearly_manpower = 2
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = fate
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = fate
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				if = {
+					limit = {
+						calc_true_if = {
+							amount = 8
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 6
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 7
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 5.25
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 6
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 4.5
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 5
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 3.75
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 4
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 3
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 3
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 2.25
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 2
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 1.5
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 1
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 0.75
+				}
+				else = {
+					change_innovativeness = 0.25
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_religion_mechanic_pantheon_festival_modifier_fate_big
+					duration = 5475
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				if = {
+					limit = {
+						calc_true_if = {
+							amount = 8
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 4
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 7
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 3.5
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 6
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 3
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 5
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 2.5
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 4
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 2
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 3
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 1.5
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 2
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 1
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							amount = 1
+							# ADM
+							full_idea_group = innovativeness_ideas
+							full_idea_group = religious_ideas
+							full_idea_group = economic_ideas
+							full_idea_group = expansion_ideas
+							full_idea_group = administrative_ideas
+							full_idea_group = humanist_ideas
+							full_idea_group = infrastructure_ideas
+							# DIP
+							full_idea_group = spy_ideas
+							full_idea_group = diplomatic_ideas
+							full_idea_group = trade_ideas
+							full_idea_group = exploration_ideas
+							full_idea_group = maritime_ideas
+							full_idea_group = influence_ideas
+							full_idea_group = court_ideas
+							# MIL
+							full_idea_group = aristocracy_ideas
+							full_idea_group = offensive_ideas
+							full_idea_group = defensive_ideas
+							full_idea_group = quality_ideas
+							full_idea_group = quantity_ideas
+							full_idea_group = naval_ideas
+							full_idea_group = theocracy_gov_ideas
+							full_idea_group = indigenous_ideas
+							full_idea_group = horde_gov_ideas
+							full_idea_group = plutocracy_ideas
+							full_idea_group = mercenary_ideas
+						}
+					}
+					change_innovativeness = 0.5
+				}
+				else = {
+					change_innovativeness = 0.1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rce_religion_mechanic_pantheon_festival_modifier_fate
+					duration = 3650
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = sea
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = sea
+				}
+			}
+			add_yearly_sailors = 3
+			add_dip_power = 50
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_sea_big
+				duration = 5475
+			}
+		}
+		else = {
+			add_yearly_sailors = 2
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_sea
+				duration = 3650
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = cosmic
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = cosmic
+				}
+			}
+			add_legitimacy_equivalent = { amount = 15 republican_tradition = 15 }
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_cosmic_big
+				duration = 5475
+			}
+		}
+		else = {
+			add_legitimacy_equivalent = { amount = 10 republican_tradition = 10 }
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_cosmic
+				duration = 3650
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = love
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = love
+				}
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_love_big
+				duration = 5475
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_love
+				duration = 3650
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = nature
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = nature
+				}
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_nature
+				duration = 5475
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						rce_province_has_plantation_or_farm_estate_trade_good = yes
+					}
+				}
+				custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_nature_specific_goods
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_nature
+				hidden_effect = {
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					any_owned_province = {
+						rce_province_has_plantation_or_farm_estate_trade_good = yes
+					}
+				}
+				custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_nature_specific_goods
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+					random_owned_province = {
+						limit = {
+							rce_province_has_plantation_or_farm_estate_trade_good = yes
+						}
+						add_random_development = 1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = rce_religion_mechanic_pantheon_hold_festival_effect_tt_nature
+				hidden_effect = {
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+					random_owned_province = {
+						add_random_development = 1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = death
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = death
+				}
+			}
+			add_years_of_income = 3
+			add_adm_power = 50
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_death_big
+				duration = 5475
+			}
+		}
+		else = {
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_death
+				duration = 3650
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 2
+				theme = culture
+			}
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+					value = 3
+					theme = culture
+				}
+			}
+			add_stability_or_adm_power = yes
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_culture_big
+				duration = 5475
+			}
+		}
+		else = {
+			add_stability_or_adm_power = yes
+			add_country_modifier = {
+				name = rce_religion_mechanic_pantheon_festival_modifier_culture
+				duration = 3650
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = cosmic
+			}
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = sea
+			}
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = nature
+			}
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_festival_modifier_cosmic_sea_nature
+			duration = 3650
+		}
+	}
+	else_if = {
+		limit = {
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = fate
+			}
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = death
+			}
+			rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+				value = 1
+				theme = love
+			}
+		}
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_festival_modifier_fate_death_love
+			duration = 3650
+		}
+	}
+	else = {
+		# generic festival
+	}
 }
 
 rce_clear_all_religion_mechanic_pantheon_modifiers = {
@@ -389,6 +1469,72 @@ rce_clear_all_religion_mechanic_pantheon_modifiers = {
 	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_dip
 	clr_country_flag = rce_religion_mechanic_pantheon_god_selection_mil
 	set_variable = { which = rce_religion_mechanic_pantheon_god_selection_page value = 0 }
-	remove_country_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple
 	remove_country_modifier = rce_religion_mechanic_pantheon_held_a_festival
+	remove_country_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple
+	remove_country_modifier = rce_religion_mechanic_pantheon_ai_selected_adm_god
+	remove_country_modifier = rce_religion_mechanic_pantheon_ai_selected_dip_god
+	remove_country_modifier = rce_religion_mechanic_pantheon_ai_selected_mil_god
+	every_owned_province = {
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_cosmic_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_cosmic_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_cosmic_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_cosmic_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_sea_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_sea_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_nature_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_nature_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_nature_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_nature_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_big_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_medium_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_culture_small_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_culture_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_big_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_medium_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_death_small_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_death_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_love_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_love_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_love_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_love_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_big_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_medium_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_warfare_small_area
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_warfare_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_big
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_medium
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_province_modifier_fate_small
+		remove_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_capital_modifier_fate_small
+	}
 }

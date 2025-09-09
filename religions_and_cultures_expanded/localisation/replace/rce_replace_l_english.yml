@@ -8,6 +8,9 @@
  MODIFIER_COUNTRY_DIPLOMATIC_POWER:1 "Monthly £dip£Diplomatic Power"
  MODIFIER_COUNTRY_MILITARY_POWER:1 "Monthly £mil£Military Power"
  MODIFIER_LIBERTY_DESIRE_FROM_SUBJECT_DEVELOPMENT:1 "Liberty Desire (Development)"
+ MODIFIER_SAME_RELIGION_ADVISOR_COST:1 "Advisor Cost (Ruler Culture)"
+ MODIFIER_OWN_COAST_NAVAL_COMBAT_BONUS:1 "Naval Combat Bonus (Own Coast)"
+ MODIFIER_ENFORCE_RELIGION_COST:1 "Enforce Religion Cost"
 
  province_is_buddhist_or_accepts_buddhism_at:1 "The Religion of §Y[Root.GetName]§! is either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§! and is either the State, the Syncretic or the Harmonized Religion of the owner."
  province_is_buddhist_or_accepts_buddhism_bt:1 "The Religion of §Y[Root.GetName]§! is §YConfucian§! and the owner has harmonized either §YTheravada§!, §YVajrayana§!, §YMahayana§! or §YNang Chos§!."

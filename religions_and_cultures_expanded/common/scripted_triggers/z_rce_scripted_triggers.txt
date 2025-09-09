@@ -1,0 +1,41 @@
+rce_province_has_plantation_or_farm_estate_trade_good = {
+	OR = {
+		trade_goods = coffee
+		trade_goods = cotton
+		trade_goods = sugar
+		trade_goods = tobacco
+		trade_goods = tea
+		trade_goods = cocoa
+		trade_goods = grain
+		trade_goods = livestock
+		trade_goods = wine
+		# TGE
+		AND = {
+			is_expanded_mod_active = { mod = trade_goods }
+			OR = {
+				trade_goods = palm_oil
+				trade_goods = saffron
+				trade_goods = cinnamon
+				trade_goods = cloves
+				trade_goods = opium
+				trade_goods = dates
+				trade_goods = vanilla
+				trade_goods = nutmeg
+				trade_goods = chocolate
+				trade_goods = apiculture
+				trade_goods = rice
+				trade_goods = horses
+				trade_goods = olive_oil
+				trade_goods = camel
+				trade_goods = elephants
+				trade_goods = citrus
+				trade_goods = potato
+				trade_goods = maize
+				trade_goods = tomato
+				trade_goods = champagne
+				trade_goods = llama
+				trade_goods = millet
+			}
+		}
+	}
+}

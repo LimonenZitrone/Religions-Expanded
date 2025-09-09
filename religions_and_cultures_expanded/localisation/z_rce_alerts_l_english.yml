@@ -15,6 +15,9 @@
  string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_center_of_reformation: "You are the current Patriarchy Controller and no §YCenter of Conversion§! has been selected. You may be able to do that now."
  string_rce_alert_text_religion_mechanic_nestorian_patriarchy: "You have enough §YPatriarch Influence§! ([This.RceGetReligionMechanicNestorianPatriarchyValue]) to afford a holy site interaction. You may want to check if you fullfil the other conditions and can use a holy site interaction."
  string_rce_alert_text_religion_mechanic_sukha_can_sponsor_festival: "You can sponsor a festival to gain a bonus and increase your yearly Sukha gain. You may want to do that now."
+ string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_and_replace_god: "You have at least §Y1§! empty slot in your Pantheon. You may want to select a god in that slot now. \n\nYou can replace at least §Y1§! of the selected gods in your Pantheon without suffering a stability hit, because they were selected under the previous ruler's reign."
+ string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_god: "You have at least §Y1§! empty slot in your Pantheon. You may want to select a god in that slot now."
+ string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_replace_god: "You can replace at least §Y1§! of the selected gods in your Pantheon without suffering a stability hit, because they were selected under the previous ruler's reign."
 
  # Decisions:
  rce_religion_enable_alerts_decision_title: "Dismissed Alerts Settings (RCE)"

@@ -22,7 +22,6 @@ country_decisions = {
 			}
 		}
 		effect = {
-			custom_tooltip = rce_tooltip_effect_text
 			country_event = { id = rce_religion_mechanic_pantheon_events.1 tooltip = rce_religion_mechanic_pantheon_remove_god_button_tt_choose_god }
 		}
 		ai_will_do = {
@@ -37,13 +36,108 @@ country_decisions = {
 		}
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = pantheon }
-
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_pantheon_not_dedicating_a_temple_tt
+				NOT = { has_country_flag = rce_religion_mechanic_pantheon_dedicating_a_temple }
+				NOT = { has_country_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple }
+			}
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
+			if = {
+				limit = {
+					OR = {
+						uses_legitimacy = yes
+						uses_republican_tradition = yes
+						uses_devotion = yes
+						uses_meritocracy = yes
+						uses_horde_unity = yes
+					}
+				}
+				legitimacy_equivalent = 5
+			}
+			if = {
+				limit = {
+					monthly_income = 250
+				}
+				treasury = 1500
+			}
+			else_if = {
+				limit = {
+					NOT = { monthly_income = 17 }
+				}
+				treasury = 100
+			}
+			else = {
+				years_of_income = 0.5
+			}
+			capital_scope = {
+				has_owner_religion = yes
+			}
+			if = {
+				limit = {
+					rce_has_religion_mechanic_pantheon_num_of_gods_selected_of_theme = {
+						value = 3
+						theme = sea
+					}
+				}
+				any_owned_province = {
+					is_capital = no
+					has_owner_religion = yes
+					has_port = yes
+					custom_trigger_tooltip = {
+						tooltip = rce_religion_mechanic_pantheon_not_dedicated_a_temple_local_tt
+						NOT = { has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local }
+					}
+				}
+			}
+			else = {
+				any_owned_province = {
+					is_capital = no
+					has_owner_religion = yes
+					custom_trigger_tooltip = {
+						tooltip = rce_religion_mechanic_pantheon_not_dedicated_a_temple_local_tt
+						NOT = { has_province_modifier = rce_religion_mechanic_pantheon_dedicated_a_temple_local }
+					}
+				}
+			}
 		}
 		effect = {
-
+			add_legitimacy_equivalent = { amount = -5 republican_tradition = -5 }
+			if = {
+				limit = {
+					monthly_income = 250
+				}
+				add_treasury = -1500
+			}
+			else_if = {
+				limit = {
+					NOT = { monthly_income = 17 }
+				}
+				add_treasury = -100
+			}
+			else = {
+				add_years_of_income = -0.5
+			}
+			country_event = { id = rce_religion_mechanic_pantheon_events.2 tooltip = rce_religion_mechanic_pantheon_dedicate_temple_button_tt_choose_modifier }
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 3 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					uses_legitimacy = yes
+					uses_republican_tradition = yes
+					uses_devotion = yes
+					uses_meritocracy = yes
+					uses_horde_unity = yes
+				}
+				NOT = { legitimacy_equivalent = 70 }
+			}
 		}
 	}
 
@@ -54,13 +148,22 @@ country_decisions = {
 		}
 		allow = {
 			rce_uses_religion_mechanic = { mechanic = pantheon }
-
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_pantheon_not_held_a_festival_tt
+				NOT = { has_country_modifier = rce_religion_mechanic_pantheon_held_a_festival }
+			}
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
+			rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
 		}
 		effect = {
-
+			rce_religion_mechanic_pantheon_hold_festival_effect = yes
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 

@@ -20,8 +20,16 @@ rce_peace_treaty_convert_heathen = {
 	requires_is_allowed = no
 
 	is_visible = {
-		rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
-		has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
+		OR = {
+			AND = {
+				rce_religion_mechanic_nestorian_patriarchy_is_patriarchy_controller = yes
+				has_country_modifier = rce_religion_mechanic_nestorian_patriarchy_main_interaction_6_modifier
+			}
+			AND = {
+				rce_uses_religion_mechanic = { mechanic = pantheon }
+				has_country_modifier = rce_religion_mechanic_pantheon_god_prometheus_modifier
+			}
+		}
 		NOT = { religion_group = FROM }
 	}
 	is_allowed = {

@@ -32,6 +32,12 @@ defined_text = {
 		}
 		localisation_key = string_rce_alert_text_religion_mechanic_sukha_can_sponsor_festival
 	}
+	text = {
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
+		}
+		localisation_key = "[This.GetRCEAlertTextReligionMechanicPantheon]"
+	}
 
 	text = {
 		trigger = {
@@ -85,5 +91,51 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy
+	}
+}
+
+defined_text = {
+	name = GetRCEAlertTextReligionMechanicPantheon
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm } }
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip } }
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil } }
+			}
+			OR = {
+				AND = {
+					rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm }
+					NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_adm_selected_during_reign }
+				}
+				AND = {
+					rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip }
+					NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_dip_selected_during_reign }
+				}
+				AND = {
+					rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil }
+					NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_mil_selected_during_reign }
+				}
+			}
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_and_replace_god
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm } }
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip } }
+				NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil } }
+			}
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_select_god
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_rce_alert_text_religion_mechanic_nestorian_patriarchy_can_replace_god
 	}
 }

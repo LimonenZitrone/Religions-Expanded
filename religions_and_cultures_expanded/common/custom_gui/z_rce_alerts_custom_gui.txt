@@ -59,6 +59,17 @@ custom_button = {
 					had_country_flag = { flag = rce_religion_mechanic_sukha_sponsor_festival_used days = 5475 }
 				}
 			}
+			AND = {
+				rce_uses_religion_mechanic = { mechanic = pantheon }
+				OR = {
+					NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = adm } }
+					NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = dip } }
+					NOT = { rce_has_religion_mechanic_pantheon_any_god_selected_of_type = { type = mil } }
+					NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_adm_selected_during_reign }
+					NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_dip_selected_during_reign }
+					NOT = { has_ruler_flag = rce_religion_mechanic_pantheon_god_mil_selected_during_reign }
+				}
+			}
 		}
 	}
 	effect = {
@@ -95,6 +106,12 @@ custom_button = {
 		number = 6
 		trigger = {
 			rce_uses_religion_mechanic = { mechanic = sukha }
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = pantheon }
 		}
 	}
 	# Fallback
