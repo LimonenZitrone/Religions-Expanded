@@ -1,0 +1,446 @@
+namespace = rce_religion_hellenism_events
+
+country_event = {
+	id = rce_religion_hellenism_events.1
+	title = rce_religion_hellenism_events.EVTNAME1
+	desc = rce_religion_hellenism_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		current_age = age_of_discovery
+		OR = {
+			primary_culture = greek
+			primary_culture = pontic_greek
+			primary_culture = cappadocian_greek
+			AND = {
+				OR = {
+					accepted_culture = greek
+					accepted_culture = pontic_greek
+					accepted_culture = cappadocian_greek
+				}
+				development_in_provinces = {
+					value = 50
+					has_owner_accepted_culture = yes
+					OR = {
+						culture = greek
+						culture = pontic_greek
+						culture = cappadocian_greek
+					}
+				}
+			}
+		}
+		NOT = { has_country_flag = rce_had_hellenism_nostalgia }
+		OR = {
+			owns = 146
+			AND = {
+				tag = BYZ
+				owns = 151
+			}
+		}
+		is_subject = no
+		has_institution = renaissance
+		OR = {
+			religion = orthodox
+			AND = {
+				religion = catholic
+				OR = {
+					is_excommunicated = yes
+					has_country_modifier = the_statue_in_restraint_of_appeals
+				}
+			}
+		}
+		OR = {
+			ruler_has_personality = scholar_personality
+			ruler_has_personality = sinner_personality
+			AND = {
+				adm = 4
+				dip = 4
+				mil = 4
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_had_hellenism_nostalgia
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events1.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		custom_tooltip = rce_research_hellenism_tt
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+			add_reform_desire = 0.01
+		}
+		else = {
+			add_patriarch_authority = -0.15
+		}
+		add_ruler_modifier = {
+			name = rce_hellenism_rethinking_life_modifier
+			duration = 10950
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events1.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else = {
+			add_patriarch_authority = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_hellenism_events.2
+	title = rce_religion_hellenism_events.EVTNAME2
+	desc = rce_religion_hellenism_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		OR = {
+			primary_culture = greek
+			primary_culture = pontic_greek
+			primary_culture = cappadocian_greek
+		}
+		has_ruler_modifier = rce_hellenism_rethinking_life_modifier
+		NOT = { has_country_flag = rce_discovered_hellenism }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			owns = 146
+		}
+		modifier = {
+			factor = 0.5
+			has_idea_group = religious_ideas
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_discovered_hellenism
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events2.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		set_ruler_religion = hellenism
+	}
+
+	option = {
+		name = rce_religion_hellenism_events2.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else_if = {
+			limit = {
+				religion = orthodox
+			}
+			add_patriarch_authority = 0.1
+		}
+		remove_country_modifier = rce_hellenism_rethinking_life_modifier
+	}
+}
+
+country_event = {
+	id = rce_religion_hellenism_events.3
+	title = rce_religion_hellenism_events.EVTNAME3
+	desc = rce_religion_hellenism_events.EVTDESC3
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		OR = {
+			primary_culture = greek
+			primary_culture = pontic_greek
+			primary_culture = cappadocian_greek
+		}
+		has_ruler_modifier = rce_hellenism_rethinking_life_modifier
+		OR = {
+			ruler_religion = hellenism
+			AND = {
+				has_country_flag = rce_discovered_hellenism
+				NOT = { had_country_flag = { flag = rce_discovered_hellenism days = 7300 } }
+			}
+		}
+		NOT = { religion = hellenism }
+		NOT = { has_country_flag = rce_hellenism_province_conversion }
+		any_owned_province = {
+			is_capital = no
+			same_continent = CAPITAL
+			is_island = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			owns = 146
+		}
+		modifier = {
+			factor = 0.5
+			has_idea_group = religious_ideas
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_hellenism_province_conversion
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					same_continent = CAPITAL
+					is_island = no
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events3.EVTOPT1
+
+		goto = target_province
+
+		ai_chance = { factor = 0 }
+
+		event_target:target_province = {
+			change_religion = hellenism
+		}
+		if = {
+			limit = {
+				ruler_has_personality = sinner_personality
+			}
+			remove_ruler_personality = sinner_personality
+			add_ruler_personality = zealot_personality
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events3.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else_if = {
+			limit = {
+				religion = orthodox
+			}
+			add_patriarch_authority = 0.1
+		}
+		remove_country_modifier = rce_hellenism_rethinking_life_modifier
+	}
+}
+
+country_event = {
+	id = rce_religion_hellenism_events.4
+	title = rce_religion_hellenism_events.EVTNAME4
+	desc = rce_religion_hellenism_events.EVTDESC4
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		OR = {
+			primary_culture = greek
+			primary_culture = pontic_greek
+			primary_culture = cappadocian_greek
+		}
+		has_ruler_modifier = rce_hellenism_rethinking_life_modifier
+		OR = {
+			ruler_religion = hellenism
+			AND = {
+				has_country_flag = rce_discovered_hellenism
+				NOT = { had_country_flag = { flag = rce_discovered_hellenism days = 10950 } }
+			}
+		}
+		NOT = { religion = hellenism }
+		NOT = { has_country_flag = rce_hellenism_country_conversion }
+		any_owned_province = {
+			religion = hellenism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 20
+		modifier = {
+			factor = 0.5
+			owns = 146
+		}
+		modifier = {
+			factor = 0.5
+			has_idea_group = religious_ideas
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_hellenism_country_conversion
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events4.EVTOPT1
+
+		goto = capital
+
+		ai_chance = { factor = 0 }
+
+		add_stability = -3
+		remove_country_modifier = rce_hellenism_rethinking_life_modifier
+		change_religion = hellenism
+		custom_tooltip = " "
+		add_country_modifier = {
+			name = rce_hellenism_fervor
+			duration = 18250
+		}
+		capital_scope = {
+			change_religion = hellenism
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events4.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else_if = {
+			limit = {
+				religion = orthodox
+			}
+			add_patriarch_authority = 0.1
+		}
+		remove_country_modifier = rce_hellenism_rethinking_life_modifier
+	}
+}
+
+country_event = {
+	id = rce_religion_hellenism_events.5
+	title = rce_religion_hellenism_events.EVTNAME5
+	desc = rce_religion_hellenism_events.EVTDESC5
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	fire_only_once = yes
+
+	goto = target_province
+
+	trigger = {
+		current_age = age_of_reformation
+		NOT = { religion = hellenism }
+		NOT = { religion_group = pagan }
+		OR = {
+			primary_culture = greek
+			primary_culture = pontic_greek
+			primary_culture = cappadocian_greek
+		}
+		any_owned_province = {
+			region = balkan_region
+			has_rebel_faction = animism_rebels
+			religion = animism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					region = balkan_region
+					has_rebel_faction = animism_rebels
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events5.EVTOPT1
+
+		trigger = {
+			NOT = { religion_group = pagan }
+		}
+
+		disband_rebels = animism_rebels
+		add_stability = -2
+		event_target:target_province = {
+			change_religion = hellenism
+			spawn_rebels = {
+				type = hellenism_rebels
+				size = 2
+			}
+			spawn_rebels = {
+				type = hellenism_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_hellenism_events5.EVTOPT2
+
+		trigger = {
+			religion_group = pagan
+		}
+
+		goto = capital
+
+		disband_rebels = animism_rebels
+		change_religion = hellenism
+		capital_scope = {
+			change_religion = hellenism
+		}
+		event_target:target_province = {
+			change_religion = hellenism
+		}
+	}
+}

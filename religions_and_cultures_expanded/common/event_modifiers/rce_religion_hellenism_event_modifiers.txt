@@ -1,0 +1,14 @@
+rce_hellenism_rethinking_life_modifier = {
+	heir_chance = -1
+	legitimacy = -0.5
+	papal_influence = -5
+	yearly_patriarch_authority = -0.05
+	religion = yes
+}
+
+rce_hellenism_fervor = {
+	missionaries = 1
+	global_heathen_missionary_strength = 0.08
+	tolerance_heathen = -5
+	religion = yes
+}
