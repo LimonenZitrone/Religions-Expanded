@@ -38,7 +38,12 @@ country_event = {
 			}
 		}
 		is_subject = no
-		has_institution = renaissance
+		OR = {
+			has_institution = renaissance
+			employed_advisor = {
+				religion = hellenism
+			}
+		}
 		OR = {
 			religion = orthodox
 			AND = {
@@ -65,6 +70,12 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			employed_advisor = {
+				religion = hellenism
+			}
 		}
 	}
 
@@ -139,6 +150,12 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			employed_advisor = {
+				religion = hellenism
+			}
 		}
 	}
 
@@ -216,6 +233,12 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			employed_advisor = {
+				religion = hellenism
+			}
 		}
 	}
 
@@ -310,6 +333,12 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			employed_advisor = {
+				religion = hellenism
+			}
 		}
 	}
 
