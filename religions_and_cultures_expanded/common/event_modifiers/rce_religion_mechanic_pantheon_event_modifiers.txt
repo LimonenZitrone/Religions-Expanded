@@ -7,6 +7,12 @@ rce_religion_mechanic_pantheon_ai_selected_mil_god = {
 }
 rce_religion_mechanic_pantheon_held_a_festival = {
 }
+rce_religion_mechanic_pantheon_festival_modifier_generic = {
+	stability_cost_modifier = -0.2
+	tolerance_own = 3
+	reform_progress_growth = 0.1
+	religion = yes
+}
 rce_religion_mechanic_pantheon_festival_modifier_apollo = {
 	movement_speed = 0.1
 	religion = yes

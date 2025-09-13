@@ -2254,6 +2254,7 @@
 
  # Modifiers:
  ## Mechanic Modifiers:
+ rce_religion_mechanic_pantheon_festival_modifier_generic: "Festival for the Gods"
  rce_religion_mechanic_pantheon_festival_modifier_apollo: "Festival for Apollo"
  rce_religion_mechanic_pantheon_festival_modifier_heros: "Hero Games"
  rce_religion_mechanic_pantheon_festival_modifier_fate_big: "Festival of Fate"

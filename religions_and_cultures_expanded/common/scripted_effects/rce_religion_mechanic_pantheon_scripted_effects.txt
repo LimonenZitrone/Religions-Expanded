@@ -1454,7 +1454,10 @@ rce_religion_mechanic_pantheon_hold_festival_effect = {
 		}
 	}
 	else = {
-		# generic festival
+		add_country_modifier = {
+			name = rce_religion_mechanic_pantheon_festival_modifier_generic
+			duration = 3650
+		}
 	}
 }
 
