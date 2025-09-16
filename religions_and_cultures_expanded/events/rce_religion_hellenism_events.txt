@@ -77,6 +77,10 @@ country_event = {
 				religion = hellenism
 			}
 		}
+		modifier = {
+			factor = 0.75
+			NOT = { has_dlc = "King of Kings" }
+		}
 	}
 
 	immediate = {
@@ -156,6 +160,10 @@ country_event = {
 			employed_advisor = {
 				religion = hellenism
 			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { has_dlc = "King of Kings" }
 		}
 	}
 
@@ -239,6 +247,10 @@ country_event = {
 			employed_advisor = {
 				religion = hellenism
 			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { has_dlc = "King of Kings" }
 		}
 	}
 
@@ -339,6 +351,10 @@ country_event = {
 			employed_advisor = {
 				religion = hellenism
 			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { has_dlc = "King of Kings" }
 		}
 	}
 
