@@ -36,6 +36,22 @@ harmonized_tibetan_buddhism = {
 	religion = yes
 }
 
+rce_european_pagan_relations_modifier_age_of_discovery = {
+	relation_with_heathens = -75
+	reverse_relation_with_heathen_religion = -75
+	religion = yes
+}
+rce_european_pagan_relations_modifier_age_of_reformation = {
+	relation_with_heathens = -50
+	reverse_relation_with_heathen_religion = -50
+	religion = yes
+}
+rce_european_pagan_relations_modifier_age_of_absolutism = {
+	relation_with_heathens = -25
+	reverse_relation_with_heathen_religion = -25
+	religion = yes
+}
+
 # Formable Modifiers:
 rce_formable_nestorian_kingdom_of_god_modifier = {
 	land_morale = 0.1

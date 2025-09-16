@@ -21,6 +21,49 @@ on_startup = {
 		set_variable = { which = rce_startup_screen_window_selected_religion value = 0 }
 		set_variable = { which = rce_startup_screen_window_religions_selected_page value = 1 }
 	}
+	if = {
+		limit = {
+			religion_group = pagan
+			capital_scope = {
+				continent = europe
+			}
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+			NOT = { has_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery }
+			NOT = { has_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation }
+			NOT = { has_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism }
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_discovery
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_reformation
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_absolutism
+				duration = -1
+			}
+		}
+	}
 }
 
 # ROOT = province, FROM = old owner
@@ -122,6 +165,46 @@ on_religion_change = {
 			set_variable = { which = rce_missionary_assigned_to_state_year value = 0 }
 		}
 	}
+	if = {
+		limit = {
+			religion_group = pagan
+			capital_scope = {
+				continent = europe
+			}
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_discovery
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_reformation
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_absolutism
+				duration = -1
+			}
+		}
+	}
 }
 
 # ROOT = country
@@ -204,5 +287,129 @@ on_harmonized_tibetan_buddhism = {
 	on_harmonized_religion_estate_privileges_effect = yes
 	events = {
 		rce_religion_tibetan_buddhism_events.1
+	}
+}
+
+on_new_age = {
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+	}
+	if = {
+		limit = {
+			religion_group = pagan
+			capital_scope = {
+				continent = europe
+			}
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_discovery
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_reformation
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_absolutism
+				duration = -1
+			}
+		}
+	}
+}
+
+on_capital_moved = {
+	owner = {
+		if = {
+			limit = {
+				has_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+			}
+			remove_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+		}
+		if = {
+			limit = {
+				has_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+			}
+			remove_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+		}
+		if = {
+			limit = {
+				has_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+			}
+			remove_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+		}
+		if = {
+			limit = {
+				religion_group = pagan
+				capital_scope = {
+					continent = europe
+				}
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+					current_age = age_of_absolutism
+				}
+			}
+			if = {
+				limit = {
+					current_age = age_of_discovery
+				}
+				add_country_modifier = {
+					name = rce_european_pagan_relations_modifier_age_of_discovery
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					current_age = age_of_reformation
+				}
+				add_country_modifier = {
+					name = rce_european_pagan_relations_modifier_age_of_reformation
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					current_age = age_of_absolutism
+				}
+				add_country_modifier = {
+					name = rce_european_pagan_relations_modifier_age_of_absolutism
+					duration = -1
+				}
+			}
+		}
 	}
 }
