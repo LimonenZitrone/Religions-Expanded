@@ -34,11 +34,15 @@
  yotvingian_culture: "Yotvingian"
  moravian_culture: "Moravian"
  kashubian_culture: "Kashubian"
- polabian_culture: "Polabian"
+ obotritian_culture: "Obotritian"
+ veletian_culture: "Veletian"
+ wendish_culture: "Wendish"
  pomory_culture: "Pomory"
  moravian_culture_new: "Moravian"
  kashubian_culture_new: "Kashubian"
- polabian_culture_new: "Polabian"
+ obotritian_culture_new: "Obotritian"
+ veletian_culture_new: "Veletian"
+ wendish_culture_new: "Wendish"
  pomory_culture_new: "Pomory"
 
  # Events:
@@ -69,6 +73,14 @@
  rce_culture_oghuz_culture_events3.EVTOPT1: "This must stop."
  rce_culture_oghuz_culture_events3.EVTOPT2: "Let's see what happens."
  rce_culture_oghuz_culture_events.3.tt: "The passive spread of the §YTurkish§! culture in our lands will continue."
+
+ rce_culture_west_slavic_cultures_in_north_germany_events.EVTNAME1: "Emergence of the [Root.rce_germanic_culture_to_west_slavic_culture_culture_name] culture"
+ rce_culture_west_slavic_cultures_in_north_germany_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_west_slavic_cultures_in_north_germany_events1.EVTOPT1: "Interesting."
+
+ rce_culture_cumbrian_culture_events.EVTNAME1: "Emergence of the Cumbrian culture"
+ rce_culture_cumbrian_culture_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_cumbrian_culture_events1.EVTOPT1: "Interesting."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"

@@ -1,0 +1,65 @@
+defined_text = {
+	name = rce_germanic_culture_to_west_slavic_culture_culture_name
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				# kashubian_culture
+				area = west_prussia_area
+				area = hinter_pommern_area
+				area = neumark_area
+			}
+		}
+		localisation_key = kashubian_culture
+	}
+	text = {
+		trigger = {
+			OR = {
+				# obotritian_culture
+				area = mecklenburg_area
+				area = lower_saxony_area
+				area = holstein_area
+			}
+		}
+		localisation_key = obotritian_culture
+	}
+	text = {
+		trigger = {
+			OR = {
+				# veletian_culture
+				area = vorpommern_area
+				area = mittelmark_area
+				area = northern_saxony_area
+			}
+		}
+		localisation_key = veletian_culture
+	}
+	text = {
+		trigger = {
+			OR = {
+				# sorbian
+				area = south_saxony_area
+				area = thuringia_area
+				area = lusatia_area
+			}
+		}
+		localisation_key = sorbian
+	}
+	text = {
+		trigger = {
+			OR = {
+				# wendish_culture
+				area = upper_franconia_area
+				area = lower_bavaria_area
+			}
+		}
+		localisation_key = wendish_culture
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}

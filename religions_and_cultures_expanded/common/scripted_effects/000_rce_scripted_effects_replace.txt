@@ -190,6 +190,7 @@ spawn_country_religious_rebels = {
 			nestorian = 			{ PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ } } }
 			manichaeism = 			{ PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ } } }
 			bogomilist = 			{ PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ } } }
+			hellenism = 			{ PREV = { spawn_rebels = { type = hellenism_rebels size = $size$ } } }
 		}
 	}
 }
@@ -232,6 +233,7 @@ spawn_province_religious_rebels = {
 		nestorian = 			{ spawn_rebels = { type = nestorian_rebels size = $size$ } }
 		manichaeism = 			{ spawn_rebels = { type = manichaeism_rebels size = $size$ } }
 		bogomilist = 			{ spawn_rebels = { type = bogomilist_rebels size = $size$ } }
+		hellenism = 			{ spawn_rebels = { type = hellenism_rebels size = $size$ } }
 	}
 }
 
@@ -333,6 +335,7 @@ spawn_rebels_from_unhappy_estate = {
 						nestorian =     { PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ as_if_faction = yes } } }
 						manichaeism =     { PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ as_if_faction = yes } } }
 						bogomilist =     { PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ as_if_faction = yes } } }
+						hellenism =     { PREV = { spawn_rebels = { type = hellenism_rebels size = $size$ as_if_faction = yes } } }
 					}
 				}
 			}
@@ -597,5 +600,281 @@ spawn_rebels_from_unhappy_estate = {
 				}
 			}
 		}
+	}
+}
+
+create_new_culture_group = {
+	change_primary_culture = $culture$_new
+	set_ruler_culture = $culture$_new
+	if = {
+		limit = {
+			has_heir = yes
+		}
+		set_heir_culture = $culture$_new
+	}
+	if = {
+		limit = {
+			has_consort = yes
+			OR = {
+				consort_culture = $culture$
+				[[culture2]consort_culture = $culture2$]
+				[[culture3]consort_culture = $culture3$]
+				[[culture4]consort_culture = $culture4$]
+				[[culture5]consort_culture = $culture5$]
+				[[culture6]consort_culture = $culture6$]
+				[[culture7]consort_culture = $culture7$]
+				[[culture8]consort_culture = $culture8$]
+				[[culture9]consort_culture = $culture9$]
+				[[culture10]consort_culture = $culture10$]
+				[[culture11]consort_culture = $culture11$]
+				[[culture11]consort_culture = $culture11$]
+				[[culture12]consort_culture = $culture12$]
+				[[culture13]consort_culture = $culture13$]
+				[[culture14]consort_culture = $culture14$]
+				[[culture15]consort_culture = $culture15$]
+				[[culture16]consort_culture = $culture16$]
+				[[culture17]consort_culture = $culture17$]
+				[[culture18]consort_culture = $culture18$]
+				[[culture19]consort_culture = $culture19$]
+				[[culture20]consort_culture = $culture20$]
+				# Religions & Cultures Expanded:
+				[[culture21]consort_culture = $culture21$]
+				[[culture22]consort_culture = $culture22$]
+			}
+			consort_culture = $culture$
+		}
+		set_consort_culture = $culture$_new
+	}
+	hidden_effect = {
+		every_province = {
+			limit = {
+				OR = {
+					culture = $culture$
+					[[culture2]culture = $culture2$]
+					[[culture3]culture = $culture3$]
+					[[culture4]culture = $culture4$]
+					[[culture5]culture = $culture5$]
+					[[culture6]culture = $culture6$]
+					[[culture7]culture = $culture7$]
+					[[culture8]culture = $culture8$]
+					[[culture9]culture = $culture9$]
+					[[culture10]culture = $culture10$]
+					[[culture11]culture = $culture11$]
+					[[culture11]culture = $culture11$]
+					[[culture12]culture = $culture12$]
+					[[culture13]culture = $culture13$]
+					[[culture14]culture = $culture14$]
+					[[culture15]culture = $culture15$]
+					[[culture16]culture = $culture16$]
+					[[culture17]culture = $culture17$]
+					[[culture18]culture = $culture18$]
+					[[culture19]culture = $culture19$]
+					[[culture20]culture = $culture20$]
+					# Religions & Cultures Expanded:
+					[[culture21]culture = $culture21$]
+					[[culture22]culture = $culture22$]
+				}
+			}
+			trigger_switch = {
+				on_trigger = culture
+				$culture$ = { change_culture = $culture$_new }
+				[[culture2]$culture2$ = { change_culture = $culture2$_new }]
+				[[culture3]$culture3$ = { change_culture = $culture3$_new }]
+				[[culture4]$culture4$ = { change_culture = $culture4$_new }]
+				[[culture5]$culture5$ = { change_culture = $culture5$_new }]
+				[[culture6]$culture6$ = { change_culture = $culture6$_new }]
+				[[culture7]$culture7$ = { change_culture = $culture7$_new }]
+				[[culture8]$culture8$ = { change_culture = $culture8$_new }]
+				[[culture9]$culture9$ = { change_culture = $culture9$_new }]
+				[[culture10]$culture10$ = { change_culture = $culture10$_new }]
+				[[culture11]$culture11$ = { change_culture = $culture11$_new }]
+				[[culture11]$culture11$ = { change_culture = $culture11$_new }]
+				[[culture12]$culture12$ = { change_culture = $culture12$_new }]
+				[[culture13]$culture13$ = { change_culture = $culture13$_new }]
+				[[culture14]$culture14$ = { change_culture = $culture14$_new }]
+				[[culture15]$culture15$ = { change_culture = $culture15$_new }]
+				[[culture16]$culture16$ = { change_culture = $culture16$_new }]
+				[[culture17]$culture17$ = { change_culture = $culture17$_new }]
+				[[culture18]$culture18$ = { change_culture = $culture18$_new }]
+				[[culture19]$culture19$ = { change_culture = $culture19$_new }]
+				[[culture20]$culture20$ = { change_culture = $culture20$_new }]
+				# Religions & Cultures Expanded:
+				[[culture21]$culture21$ = { change_culture = $culture21$_new }]
+				[[culture22]$culture22$ = { change_culture = $culture22$_new }]
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = $culture$
+					[[culture2]primary_culture = $culture2$]
+					[[culture3]primary_culture = $culture3$]
+					[[culture4]primary_culture = $culture4$]
+					[[culture5]primary_culture = $culture5$]
+					[[culture6]primary_culture = $culture6$]
+					[[culture7]primary_culture = $culture7$]
+					[[culture8]primary_culture = $culture8$]
+					[[culture9]primary_culture = $culture9$]
+					[[culture10]primary_culture = $culture10$]
+					[[culture11]primary_culture = $culture11$]
+					[[culture11]primary_culture = $culture11$]
+					[[culture12]primary_culture = $culture12$]
+					[[culture13]primary_culture = $culture13$]
+					[[culture14]primary_culture = $culture14$]
+					[[culture15]primary_culture = $culture15$]
+					[[culture16]primary_culture = $culture16$]
+					[[culture17]primary_culture = $culture17$]
+					[[culture18]primary_culture = $culture18$]
+					[[culture19]primary_culture = $culture19$]
+					[[culture20]primary_culture = $culture20$]
+					# Religions & Cultures Expanded:
+					[[culture21]primary_culture = $culture21$]
+					[[culture22]primary_culture = $culture22$]
+				}
+			}
+			trigger_switch = {
+				on_trigger = primary_culture
+				$culture$ = {
+					change_primary_culture = $culture$_new
+					set_ruler_culture = $culture$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture$_new }
+				}
+				[[culture2]$culture2$ = {
+					change_primary_culture = $culture2$_new
+					set_ruler_culture = $culture2$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture2$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture2$_new }
+				}]
+				[[culture3]$culture3$ = {
+					change_primary_culture = $culture3$_new
+					set_ruler_culture = $culture3$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture3$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture3$_new }
+				}]
+				[[culture4]$culture4$ = {
+					change_primary_culture = $culture4$_new
+					set_ruler_culture = $culture4$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture4$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture4$_new }
+				}]
+				[[culture5]$culture5$ = {
+					change_primary_culture = $culture5$_new
+					set_ruler_culture = $culture5$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture5$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture5$_new }
+				}]
+				[[culture6]$culture6$ = {
+					change_primary_culture = $culture6$_new
+					set_ruler_culture = $culture6$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture6$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture6$_new }
+				}]
+				[[culture7]$culture7$ = {
+					change_primary_culture = $culture7$_new
+					set_ruler_culture = $culture7$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture7$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture7$_new }
+				}]
+				[[culture8]$culture8$ = {
+					change_primary_culture = $culture8$_new
+					set_ruler_culture = $culture8$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture8$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture8$_new }
+				}]
+				[[culture9]$culture9$ = {
+					change_primary_culture = $culture9$_new
+					set_ruler_culture = $culture9$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture9$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture9$_new }
+				}]
+				[[culture10]$culture10$ = {
+					change_primary_culture = $culture10$_new
+					set_ruler_culture = $culture10$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture10$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture10$_new }
+				}]
+				[[culture11]$culture11$ = {
+					change_primary_culture = $culture11$_new
+					set_ruler_culture = $culture11$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture11$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture11$_new }
+				}]
+				[[culture11]$culture11$ = {
+					change_primary_culture = $culture11$_new
+					set_ruler_culture = $culture11$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture11$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture11$_new }
+				}]
+				[[culture12]$culture12$ = {
+					change_primary_culture = $culture12$_new
+					set_ruler_culture = $culture12$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture12$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture12$_new }
+				}]
+				[[culture13]$culture13$ = {
+					change_primary_culture = $culture13$_new
+					set_ruler_culture = $culture13$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture13$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture13$_new }
+				}]
+				[[culture14]$culture14$ = {
+					change_primary_culture = $culture14$_new
+					set_ruler_culture = $culture14$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture14$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture14$_new }
+				}]
+				[[culture15]$culture15$ = {
+					change_primary_culture = $culture15$_new
+					set_ruler_culture = $culture15$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture15$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture15$_new }
+				}]
+				[[culture16]$culture16$ = {
+					change_primary_culture = $culture16$_new
+					set_ruler_culture = $culture16$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture16$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture16$_new }
+				}]
+				[[culture17]$culture17$ = {
+					change_primary_culture = $culture17$_new
+					set_ruler_culture = $culture17$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture17$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture17$_new }
+				}]
+				[[culture18]$culture18$ = {
+					change_primary_culture = $culture18$_new
+					set_ruler_culture = $culture18$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture18$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture18$_new }
+				}]
+				[[culture19]$culture19$ = {
+					change_primary_culture = $culture19$_new
+					set_ruler_culture = $culture19$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture19$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture19$_new }
+				}]
+				[[culture20]$culture20$ = {
+					change_primary_culture = $culture20$_new
+					set_ruler_culture = $culture20$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture20$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture20$_new }
+				}]
+				# Religions & Cultures Expanded:
+				[[culture21]$culture21$ = {
+					change_primary_culture = $culture21$_new
+					set_ruler_culture = $culture21$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture21$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture21$_new }
+				}]
+				[[culture22]$culture22$ = {
+					change_primary_culture = $culture22$_new
+					set_ruler_culture = $culture22$_new
+					if = { limit = { has_heir = yes } set_heir_culture = $culture22$_new }
+					if = { limit = { has_consort = yes } set_consort_culture = $culture22$_new }
+				}]
+			}
+		}
+		set_global_flag = updated_$culture_group$_flag
 	}
 }

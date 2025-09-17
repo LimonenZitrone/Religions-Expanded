@@ -1,0 +1,245 @@
+namespace = rce_culture_west_slavic_cultures_in_north_germany_events
+
+province_event = {
+	id = rce_culture_west_slavic_cultures_in_north_germany_events.1
+	title = rce_culture_west_slavic_cultures_in_north_germany_events.EVTNAME1
+	desc = rce_culture_west_slavic_cultures_in_north_germany_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			# kashubian_culture
+			area = west_prussia_area
+			area = hinter_pommern_area
+			area = neumark_area
+			# obotritian_culture
+			area = mecklenburg_area
+			area = lower_saxony_area
+			area = holstein_area
+			# veletian_culture
+			area = vorpommern_area
+			area = mittelmark_area
+			area = northern_saxony_area
+			# sorbian
+			area = south_saxony_area
+			area = thuringia_area
+			area = lusatia_area
+			# wendish_culture
+			area = upper_franconia_area
+			area = lower_bavaria_area
+		}
+		culture_group = germanic
+		owner = {
+			OR = {
+				culture_group = west_slavic
+				culture_group = slavic
+			}
+		}
+		NOT = { has_province_flag = rce_germanic_culture_converted_to_west_slavic_culture }
+		any_neighbor_province = {
+			owned_by = ROOT
+			OR = {
+				culture_group = west_slavic
+				culture_group = slavic
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				OR = {
+					culture_group = west_slavic
+					culture_group = slavic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					OR = {
+						culture_group = west_slavic
+						culture_group = slavic
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					OR = {
+						culture_group = west_slavic
+						culture_group = slavic
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			calc_true_if = {
+				amount = 4
+				all_neighbor_province = {
+					owned_by = ROOT
+					OR = {
+						culture_group = west_slavic
+						culture_group = slavic
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			calc_true_if = {
+				amount = 5
+				all_neighbor_province = {
+					owned_by = ROOT
+					OR = {
+						culture_group = west_slavic
+						culture_group = slavic
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 7
+				all_neighbor_province = {
+					owned_by = ROOT
+					OR = {
+						culture_group = west_slavic
+						culture_group = slavic
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_germanic_culture_converted_to_west_slavic_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_west_slavic_cultures_in_north_germany_events1.EVTOPT1
+
+		if = {
+			limit = {
+				OR = {
+					# kashubian_culture
+					area = west_prussia_area
+					area = hinter_pommern_area
+					area = neumark_area
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						culture_group = slavic
+					}
+				}
+				change_culture = kashubian_culture_new
+			}
+			else = {
+				change_culture = kashubian_culture
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					# obotritian_culture
+					area = mecklenburg_area
+					area = lower_saxony_area
+					area = holstein_area
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						culture_group = slavic
+					}
+				}
+				change_culture = obotritian_culture_new
+			}
+			else = {
+				change_culture = obotritian_culture
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					# veletian_culture
+					area = vorpommern_area
+					area = mittelmark_area
+					area = northern_saxony_area
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						culture_group = slavic
+					}
+				}
+				change_culture = veletian_culture_new
+			}
+			else = {
+				change_culture = veletian_culture
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					# sorbian
+					area = south_saxony_area
+					area = thuringia_area
+					area = lusatia_area
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						culture_group = slavic
+					}
+				}
+				change_culture = sorbian_new
+			}
+			else = {
+				change_culture = sorbian
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					# wendish_culture
+					area = upper_franconia_area
+					area = lower_bavaria_area
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						culture_group = slavic
+					}
+				}
+				change_culture = wendish_culture_new
+			}
+			else = {
+				change_culture = wendish_culture
+			}
+		}
+		add_province_modifier = {
+			name = rce_germanic_culture_converted_to_west_slavic_culture_modifier
+			duration = 18250
+		}
+	}
+}

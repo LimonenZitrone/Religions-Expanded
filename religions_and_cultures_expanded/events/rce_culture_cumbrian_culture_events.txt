@@ -1,0 +1,98 @@
+namespace = rce_culture_cumbrian_culture_events
+
+province_event = {
+	id = rce_culture_cumbrian_culture_events.1
+	title = rce_culture_cumbrian_culture_events.EVTNAME1
+	desc = rce_culture_cumbrian_culture_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = scottish_marches_area
+			area = yorkshire_area
+			area = east_midlands_area
+		}
+		culture_group = british
+		owner = {
+			culture_group = gaelic
+		}
+		NOT = { has_province_flag = rce_converted_to_cumbrian_culture }
+		any_neighbor_province = {
+			owned_by = ROOT
+			culture_group = gaelic
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = gaelic
+			}
+		}
+		modifier = {
+			factor = 0.9
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = gaelic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = gaelic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			calc_true_if = {
+				amount = 4
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = gaelic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			calc_true_if = {
+				amount = 5
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = gaelic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 7
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = gaelic
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_cumbrian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_cumbrian_culture_events1.EVTOPT1
+
+		change_culture = cumbrian_culture
+	}
+}

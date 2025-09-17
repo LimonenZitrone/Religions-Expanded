@@ -694,7 +694,11 @@ west_slavic = {
 	}
 	kashubian_culture = {
 	}
-	polabian_culture = {
+	obotritian_culture = {
+	}
+	veletian_culture = {
+	}
+	wendish_culture = {
 	}
 }
 
@@ -711,7 +715,11 @@ slavic = {
 	}
 	kashubian_culture_new = {
 	}
-	polabian_culture_new = {
+	obotritian_culture_new = {
+	}
+	veletian_culture_new = {
+	}
+	wendish_culture_new = {
 	}
 	# new east_slavic cultures for compatibility
 	pomory_culture_new = {

@@ -14,8 +14,8 @@
  manichaean_culture: "Mandäisch"
  chaldean_culture: "Chaldäisch"
  norse_gael_culture: "Nordisch-Gälisch"
- cumbrian_culture: "Cumbrisch"
- cambrian_culture: "Cambrisch"
+ cumbrian_culture: "Kumbrisch"
+ cambrian_culture: "Kambrisch"
  anglo_irish_culture: "Anglo-Irisch"
  northumbrian_culture: "Northumbrisch"
  atlantique_culture: "Atlantisch"
@@ -34,24 +34,28 @@
  yotvingian_culture: "Jatwingisch"
  moravian_culture: "Mährisch"
  kashubian_culture: "Kaschubisch"
- polabian_culture: "Polabisch"
+ obotritian_culture: "Obodritisch"
+ veletian_culture: "Wilzisch"
+ wendish_culture: "Wendisch"
  pomory_culture: "Pomorisch"
  moravian_culture_new: "Mährisch"
  kashubian_culture_new: "Kaschubisch"
- polabian_culture_new: "Polabisch"
+ obotritian_culture_new: "Obodritisch"
+ veletian_culture_new: "Wilzisch"
+ wendish_culture_new: "Wendisch"
  pomory_culture_new: "Pomorisch"
 
  # Events:
  rce_culture_aramaic_culture_group_events.EVTNAME1: "Entstehung der chaldäischen Kultur"
- rce_culture_aramaic_culture_group_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [407.GetName] unter [407.Religion.GetGroupName]en und [407.Culture.GetGroupName]en Einflüssen lebten, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [407.GetName] unter [407.Religion.GetGroupName]en und [407.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_aramaic_culture_group_events1.EVTOPT1: "Interessant."
 
  rce_culture_aramaic_culture_group_events.EVTNAME2: "Entstehung der babylonischen Kultur"
- rce_culture_aramaic_culture_group_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [410.GetName] unter [410.Religion.GetGroupName]en und [410.Culture.GetGroupName]en Einflüssen lebten, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [410.GetName] unter [410.Religion.GetGroupName]en und [410.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_aramaic_culture_group_events2.EVTOPT1: "Interessant."
 
  rce_culture_aramaic_culture_group_events.EVTNAME3: "Entstehung der phönizischen Kultur"
- rce_culture_aramaic_culture_group_events.EVTDESC3: "Die lange Zeit, in der die Bevölkerung von [1855.GetName] unter [1855.Religion.GetGroupName]en und [1855.Culture.GetGroupName]en Einflüssen lebten, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events.EVTDESC3: "Die lange Zeit, in der die Bevölkerung von [1855.GetName] unter [1855.Religion.GetGroupName]en und [1855.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_aramaic_culture_group_events3.EVTOPT1: "Interessant."
 
  rce_culture_oghuz_culture_events.EVTNAME1: "Entstehung der türkischen Kultur"
@@ -69,6 +73,14 @@
  rce_culture_oghuz_culture_events3.EVTOPT1: "Das muss aufhören."
  rce_culture_oghuz_culture_events3.EVTOPT2: "Lasst uns abwarten, was passiert."
  rce_culture_oghuz_culture_events.3.tt: "Die passive Ausbreitung der Kultur '§YTürkisch§!' in unseren Provinzen wird fortgesetzt."
+
+ rce_culture_west_slavic_cultures_in_north_germany_events.EVTNAME1: "Entstehung der [Root.rce_germanic_culture_to_west_slavic_culture_culture_name]en Kultur"
+ rce_culture_west_slavic_cultures_in_north_germany_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_west_slavic_cultures_in_north_germany_events1.EVTOPT1: "Interessant."
+
+ rce_culture_cumbrian_culture_events.EVTNAME1: "Entstehung der Kumbrischen Kultur"
+ rce_culture_cumbrian_culture_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_cumbrian_culture_events1.EVTOPT1: "Interessant."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Assyrische Kultur annehmen"
