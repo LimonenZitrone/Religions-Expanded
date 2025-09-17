@@ -18,10 +18,10 @@
  rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "Guaranteed Jains Autonomy"
  desc_rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "The state has guaranteed greater autonomy for the Jains."
  harmonized_tibetan_buddhism: "Harmonized with the Nang Chos Faith"
+ desc_harmonized_tibetan_buddhism: "We have incorporated the Nang Chos faith in our country and national ethos."
  rce_european_pagan_relations_modifier_age_of_discovery: "European Paganism"
  rce_european_pagan_relations_modifier_age_of_reformation: "European Paganism"
  rce_european_pagan_relations_modifier_age_of_absolutism: "European Paganism"
- desc_harmonized_tibetan_buddhism: "We have incorporated the Nang Chos faith in our country and national ethos."
  rce_formable_nestorian_kingdom_of_god_modifier: "The Kingdom of God"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "The Patriarch has declared himself as the custodian of the Kingdom of God on Earth."
 
@@ -59,7 +59,6 @@
  norse_events.1.m: "May Fenrir guide us."
  norse_events.1.n: "May Jormungandr guide us."
  norse_events.1.o: "May Freyr bring us prosperity."
-
 
  # Events:
  rce_events.EVTNAME1: "Console: Change Religion"

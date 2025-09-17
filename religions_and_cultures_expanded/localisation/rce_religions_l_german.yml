@@ -18,6 +18,9 @@
  bogomilist: "Bogomilisch"
  bogomilist_religion_desc: "Bogomilismus ist der Name einer christlichen dualistischen und gnostischen Tradition, deren Wurzeln in den Lehren des bulgarischen Priesters Bogomil liegen. Der Glaube lehnt die materielle Welt als die Schaffung eines bösen Demiurgen ab und betont Askese und spirituelle Reinheit. \n\nIm Jahre 1444 ist der Bogomilismus eine bedeutende religiöse Bewegung auf dem Balkan, vor allem in Bulgarien und Bosnien, aber er ist einer intensiven Verfolgung sowohl von der katholischen als auch von der orthodoxen Kirche ausgesetzt. Diese Verfolgung wird wahrscheinlich zu seinem Niedergang und der Assimilation seiner Anhänger in andere christliche Konfessionen führen."
  bogomilist_string: "Bogomilismus"
+ hellenism: "Hellenistisch"
+ hellenism_religion_desc: "Hellenismus ist die Bezeichnung für eine polytheistische Tradition mit Wurzeln in der antiken griechischen Welt, die die olympischen Götter verehrt und Ritualen folgt, die an Stadtstaaten und lokale Kulte gebunden sind. \nIm Jahr 1444 ist der Hellenismus als eine organisierte Religion längst verschwunden und wurde in ganz Europa durch das Christentum ersetzt. Aber Überreste seiner Philosophie, Literatur und Kultur beeinflussen noch immer Gelehrte und Künstler."
+ hellenism_string: "Hellenismus"
 
  # Heresies:
  YAPANIYA: "Yapaniya"
@@ -32,37 +35,43 @@
  jainism_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
  jainism_rebels_army: "$RELIGION$e Armee"
  jainism_rebels_demand: "Konvertiert $COUNTRYNAME$"
- jainism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$ Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ jainism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
  tibetan_buddhism_rebels_title: "Religiös"
  tibetan_buddhism_rebels_name: "$RELIGION$e Fanatiker"
  tibetan_buddhism_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
  tibetan_buddhism_rebels_army: "$RELIGION$e Armee"
  tibetan_buddhism_rebels_demand: "Konvertiert $COUNTRYNAME$"
- tibetan_buddhism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$ Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ tibetan_buddhism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
  vidilist_rebels_title: "Religiös"
  vidilist_rebels_name: "$RELIGION$e Fanatiker"
  vidilist_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
  vidilist_rebels_army: "$RELIGION$e Armee"
  vidilist_rebels_demand: "Konvertiert $COUNTRYNAME$"
- vidilist_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$ Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ vidilist_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
  nestorian_rebels_title: "Religiös"
  nestorian_rebels_name: "$RELIGION$e Fanatiker"
  nestorian_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
  nestorian_rebels_army: "$RELIGION$e Armee"
  nestorian_rebels_demand: "Konvertiert $COUNTRYNAME$"
- nestorian_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$ Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ nestorian_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
  manichaeism_rebels_title: "Religiös"
  manichaeism_rebels_name: "$RELIGION$e Fanatiker"
  manichaeism_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
  manichaeism_rebels_army: "$RELIGION$e Armee"
  manichaeism_rebels_demand: "Konvertiert $COUNTRYNAME$"
- manichaeism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$ Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ manichaeism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
  bogomilist_rebels_title: "Religiös"
  bogomilist_rebels_name: "$RELIGION$e Fanatiker"
  bogomilist_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
  bogomilist_rebels_army: "$RELIGION$e Armee"
  bogomilist_rebels_demand: "Konvertiert $COUNTRYNAME$"
- bogomilist_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$ Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ bogomilist_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
+ hellenism_rebels_title: "Religiös"
+ hellenism_rebels_name: "$RELIGION$e Fanatiker"
+ hellenism_rebels_desc: "Religiöse Fanatiker erheben sich vor allem in Provinzen, deren Religion von der Staatsreligion abweicht. Sie wollen ihre Religion verbreiten und alle Ungläubigen bekehren."
+ hellenism_rebels_army: "$RELIGION$e Armee"
+ hellenism_rebels_demand: "Konvertiert $COUNTRYNAME$"
+ hellenism_rebels_demand_desc: "Die religiösen Rebellen kämpfen für die $RELIGION$e Religion. Sie verlangen, dass wir deren Vormachtstellung anerkennen oder wenigstens unsere Konvertierungsversuche einstellen, so dass sie ihren Glauben in Frieden ausüben können."
 
  # Decisions:
  rce_religion_decision_vidilist_stamp_out_the_pagans_title: "Vernichtet die Heiden"
@@ -115,6 +124,31 @@
  rce_religion_jainism_events3.EVTOPT4: "Entsendet Soldaten, um bei dem Fest zu helfen!"
  rce_religion_jainism_events3.EVTOPT5: "Wir können ihnen nicht helfen."
 
+ rce_religion_hellenism_events.EVTNAME1: "Eine Welle der Neugier"
+ rce_religion_hellenism_events.EVTDESC1: "[Root.GetName] ist schon seit Jahrhunderten ein christliches Land. Aber vor Kurzem wurden, aufgrund des neuen Interesses an der antiken Kultur, Architektur und Literatur, alte Bücher wiederentdeckt, die über einen alten Glauben berichten. Sogar unser[Root.GetMeFemale] [Root.Monarch.GetTitle] ist an diesem Thema interessiert. [Root.Monarch.GetSheHeCap] scheint Momente zu haben, in denen [Root.Monarch.GetSheHe] den [Root.Religion.GetName]en Glauben anzweifelt. Dieser alte Glaube könnte eine Lösung für [Root.Monarch.GetHerHis] Dilemma bieten..."
+ rce_religion_hellenism_events1.EVTOPT1: "Lasst uns mehr über den Hellenismus lernen..."
+ rce_religion_hellenism_events1.EVTOPT2: "Das ist Irrsinn!"
+
+ rce_religion_hellenism_events.EVTNAME2: "Eine religiöse Reise"
+ rce_religion_hellenism_events.EVTDESC2: "Nachdem Lesen vieler, vieler alte Bücher, hat [Root.Monarch.GetName] [Root.Monarch.GetHerHis]e eigene Vision des Hellenistischen Glaubens ausgebildet. Die antike Literatur fand [Root.Monarch.GetSheHe] faszinierend, alles erschien auf einmal Sinn zu ergeben. \nAllerdings ist all dieses theoretische Wissen überwältigend, sodass [Root.GetMderdie] [Root.Monarch.GetTitle] nach praktischen Überbleibseln des Hellenistischen Glaubens suchte. [Root.Monarch.GetSheHeCap] und [Root.Monarch.GetHerHis]e engsten Berater und Freunde reisten zu einer bekannten Ruine eines antiken Tempels in der Region..."
+ rce_religion_hellenism_events2.EVTOPT1: "Dieser Anblick bestärkt mich in meinem Glauben: Der antike Glaube ist der wahre Glaube..."
+ rce_religion_hellenism_events2.EVTOPT2: "Das ist Irrsinn!"
+
+ rce_religion_hellenism_events.EVTNAME3: "[Root.Monarch.GetName]s Wende zu den antiken Göttern"
+ rce_religion_hellenism_events.EVTDESC3: "Viele Höflinge hatten spekuliert, dass [Root.Monarch.GetName] schnell zum [Root.Religion.GetName]en Glauben zurückkehren würde und dass [Root.Monarch.GetHerHis]e Konvertierung zum Hellenistischen Glauben nichts anderes bleiben würde als ein kurzer Ausbruch von Naivität, etwas, das die Welt bald wieder vergessen hätte. Nun, nachdem [Root.Monarch.GetName] seit Monaten keine Zeichen des Bedauerns zeigt, sondern daran arbeitet, die Restrukturierung von [Root.Capital.GetName] zu planen, um Platz für neue Tempel für die antiken Götter zu schaffen, müssen selbst die, die es nicht sehen wollten, eingestehen, dass [Root.GetMderdie] [Root.Monarch.GetTitle] [Root.Monarch.GetHerHis]e Entscheidung getroffen hat: [Root.Monarch.GetSheHeCap], bald die Hauptstadt und irgendwann das ganze Land wird der christlichen Religion entsagen und zu den Hellenistischen Wurzeln zurückkehren."
+ rce_religion_hellenism_events3.EVTOPT1: "Neue Tempel sollen entstehen!"
+ rce_religion_hellenism_events3.EVTOPT2: "Das ist Irrsinn!"
+
+ rce_religion_hellenism_events.EVTNAME4: "Die Hellenistische Konvertierung von [Root.GetName]"
+ rce_religion_hellenism_events.EVTDESC4: "In unseren eigenen Provinzen werden heidnische Predigten gehört. Einst gläubige Christen werfen ihre Kreuze ins Meer und errichten Schreine für die antiken Götter. Kirchen werden in Tempel umgewandelt. \nInmitten all dessen befindet sich [Root.Monarch.GetTitle] [Root.Monarch.GetName], [Root.GetMderdie] sich mittlerweile selbst zum 'Priester der antiken Götter' ernannt hat und die Bekehrung ganzer Gebiete von [Root.GetName] überwacht."
+ rce_religion_hellenism_events4.EVTOPT1: "Es ist vollbracht! Wir folgen endlich wieder dem wahren Glauben!"
+ rce_religion_hellenism_events4.EVTOPT2: "Das ist Irrsinn!"
+
+ rce_religion_hellenism_events.EVTNAME5: "Das Erwachen des Hellenistischen Glaubens"
+ rce_religion_hellenism_events.EVTDESC5: "Die animistische Rebellion in [target_province.GetName] ist auf Ruinen jahrhunderte alter, antiker Tempel gestoßen. Der Glaube unserer Vorfahren eröffnete diesen Rebellen eine völlig neue Welt des Glaubens. Jetzt rebellieren sie nicht mehr wegen ihrer animistischen Traditionen gegen uns, sondern wegen ihrer neu entdeckten Götter des Olymp."
+ rce_religion_hellenism_events5.EVTOPT1: "Irrsinn!"
+ rce_religion_hellenism_events5.EVTOPT2: "Es gibt keinen Grund zu rebellieren. Wir sind auch Kinder der Götter!"
+
  # Modifiers:
  ## Event Modifiers:
  rce_religion_jainism_fundamentalists_punished_modifier: "Jainistische Fundamentalisten bestraft"
@@ -125,6 +159,9 @@
  rce_religion_jainism_eased_taxation_modifier: "Steuererleichterungen"
  rce_religion_jainism_ruler_attended_festivities_modifier: "Herrscher besuchte die Festlichkeiten"
  rce_religion_jainism_ruler_provided_labour_for_festival_modifier: "Bereitgestellte Arbeit für das Fest"
+ rce_hellenism_rethinking_life_modifier: "Rückzug aus dem öffentlichen Leben"
+ desc_rce_hellenism_rethinking_life_modifier: "Unser[Root.GetMeFemale] gütige[Root.GetMrMale] [Root.Monarch.GetTitle] hat sich aus dem öffentlichen Leben zurückgezogen, nachdem [Root.Monarch.GetHerHis] Vertrauen in den [Root.Religion.GetName]en Glauben ins Wanken geraten ist. [Root.Monarch.GetSheHeCap] hat in einem antiken Buch über einen alten Glauben gelesen, einen Glauben [Root.Monarch.GetHerHis]er Vorfahren. Dies hat das Interesse von [Root.Monarch.GetName] an antiker, religiöser Literatur geweckt..."
+ rce_hellenism_fervor: "Hellenistischer Eifer"
  ## Province Triggered Modifiers:
  rce_bogomilist_plovdiv_province_triggered_modifier: "Die Eroberung von Plovdiv"
  rce_jainism_mewar_province_triggered_modifier: "Die Eroberung von Mewar"
@@ -142,6 +179,7 @@
 
  # Tooltips:
  rce_religion_jainism_estate_brahmins_tt: "Wir müssen dieselben Bedingungen erfüllen wir ein §YHinduistisches§! Land, um Zugang zu dem Stand der '§YBrahmanen§!' zu erhalten."
+ rce_research_hellenism_tt: "§Y[Root.Monarch.GetName]§! wird sich aus dem öffentlichen Leben zurückziehen. [Root.Monarch.GetSheHeCap] wird Büchereien im ganzen Land besuchen, um alles über diesen antiken Glauben zu lesen, was [Root.Monarch.GetSheHe] finden kann...\n"
 
  # Customizable Localization:
  rce_religion_decision_convert_to_nestorian_desc_assyrian: "Wir folgen der assyrischen Kultur und sollten die Kirche Assyriens wiedererrichten!"

@@ -19,6 +19,9 @@
  desc_rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "Der Staat hat den Jaina größere Autonomie gewährt."
  harmonized_tibetan_buddhism: "Harmonisiert mit dem 'Nang Chos'-Glauben"
  desc_harmonized_tibetan_buddhism: "Wir haben den 'Nang Chos'-Glauben in unser Land und nationalen Ethos eingebunden."
+ rce_european_pagan_relations_modifier_age_of_discovery: "European Paganism"
+ rce_european_pagan_relations_modifier_age_of_reformation: "European Paganism"
+ rce_european_pagan_relations_modifier_age_of_absolutism: "European Paganism"
  rce_formable_nestorian_kingdom_of_god_modifier: "Königreich Gottes"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "Der Patriarch hat sich selbst zum Verwalter des Königreichs Gottes auf Erden ausgerufen."
 
@@ -46,6 +49,16 @@
  # Vanilla Events:
  hindu_events.1.j: "Ich folge Kali."
  hindu_events.1.k: "Ich folge Hanuman."
+
+ norse_events.1.g: "Möge das Wissen von Kvasir uns leiten."
+ norse_events.1.h: "Möge Loki uns führen."
+ norse_events.1.i: "Möge Heimdall über uns wachen."
+ norse_events.1.j: "Möge die Weisheit Baldrs uns in eine strahlende Zukunft führen."
+ norse_events.1.k: "Möge Jesus uns führen."
+ norse_events.1.l: "Möge Sleipnir uns führen."
+ norse_events.1.m: "Möge Fenrir uns führen."
+ norse_events.1.n: "Möge Jörmungandr uns führen."
+ norse_events.1.o: "Möge Freyr uns Wohlstand bringen."
 
  # Events:
  rce_events.EVTNAME1: "Console: Religion ändern"

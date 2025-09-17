@@ -19,6 +19,9 @@
  desc_rce_religion_jainism_estate_jains_guaranteed_autonomy_mod: "The state has guaranteed greater autonomy for the Jains."
  harmonized_tibetan_buddhism: "Harmonized with the Nang Chos Faith"
  desc_harmonized_tibetan_buddhism: "We have incorporated the Nang Chos faith in our country and national ethos."
+ rce_european_pagan_relations_modifier_age_of_discovery: "European Paganism"
+ rce_european_pagan_relations_modifier_age_of_reformation: "European Paganism"
+ rce_european_pagan_relations_modifier_age_of_absolutism: "European Paganism"
  rce_formable_nestorian_kingdom_of_god_modifier: "The Kingdom of God"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "The Patriarch has declared himself as the custodian of the Kingdom of God on Earth."
 
@@ -46,6 +49,16 @@
  # Vanilla Events:
  hindu_events.1.j: "I follow Kali."
  hindu_events.1.k: "I follow Hanuman."
+
+ norse_events.1.g: "May the knowledge of Kvasir guide us."
+ norse_events.1.h: "May Loki guide us."
+ norse_events.1.i: "May Heimdall watch over us."
+ norse_events.1.j: "May the wisdom of Baldr lead us to a bright future."
+ norse_events.1.k: "May Jesus guide us."
+ norse_events.1.l: "May Sleipnir guide us."
+ norse_events.1.m: "May Fenrir guide us."
+ norse_events.1.n: "May Jormungandr guide us."
+ norse_events.1.o: "May Freyr bring us prosperity."
 
  # Events:
  rce_events.EVTNAME1: "Console: Change Religion"
@@ -83,7 +96,7 @@
  RCE_GOV_RULER_NESTORIAN_PATRIARCHY_fem: "Matriarch"
 
  # Vanilla Modifier Names (for customizable localization):
- RCE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "Equilibrio de lealtad [Root.GetCleroName]"
+ RCE_CHURCH_LOYALTY_EQUILIBRIUM_MODIFIER: "[Root.GetClergyName] Loyalty Equilibrium"
 
  # Peace Treaties:
  rce_peace_treaty_convert_heathen_desc: "@[From.GetTag] §Y[From.GetName]§! will convert to the §Y[Root.Religion.GetName]§! faith. @[Root.GetTag] §Y[Root.GetName]§! gains §G+5.0§! Prestige."
@@ -115,10 +128,10 @@
 
  # Estate Privileges:
  rce_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary: "Patriarchal Emissary"
- rce_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetCleroName] and the Patriarch."
+ rce_religion_mechanic_nestorian_patriarchy_estate_church_privilege_patriarchal_emissary_desc: "The Patriarch's legates and other emissaries shall not only be welcomed in our lands, but the [Root.Monarch.GetTitle] commits to always obeying their judgment and to non-interference in the relations between the local [Root.GetClergyName] and the Patriarch."
 
  rce_religion_jainism_estate_jains_guaranteed_autonomy: "Guaranteed Jains Autonomy"
- rce_religion_jainism_estate_jains_guaranteed_autonomy_desc: "The [Root.GetJainistasName] are held in high regard by our subjects. Granting them greater autonomy would be an effective way to secure their support for the [Root.GovernmentName] and ensure that our differences with them do not erupt into religious strife."
+ rce_religion_jainism_estate_jains_guaranteed_autonomy_desc: "The [Root.GetJainsName] are held in high regard by our subjects. Granting them greater autonomy would be an effective way to secure their support for the [Root.GovernmentName] and ensure that our differences with them do not erupt into religious strife."
  rce_religion_jainism_estate_jains_guaranteed_autonomy_effect_tooltip: "Every owned province of the §YJainist§! faith gains: \n[local_missionary_strength]: §R-100.0%§! \n[local_religious_unity_contribution]: §G-100.0%§!"
  rce_religion_jainism_estate_jains_guaranteed_autonomy_revoke_effect_tooltip: "The modifier §Y'Guaranteed Jains Autonomy'§! is removed from all owned §YJainist§! provinces."
 

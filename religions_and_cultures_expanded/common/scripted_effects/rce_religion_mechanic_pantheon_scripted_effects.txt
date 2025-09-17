@@ -238,7 +238,7 @@ rce_set_religion_mechanic_pantheon_active_god = {
 		}
 		else_if = {
 			limit = {
-				rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = moira }
+				rce_is_religion_mechanic_pantheon_newly_selected_god_for_frame_assignment = { name = lachesis }
 			}
 			set_variable = { which = rce_religion_mechanic_pantheon_god_$type$_selected_icon_frame value = 24 }
 		}
@@ -305,7 +305,7 @@ rce_remove_religion_mechanic_pantheon_active_dip_god = {
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = philotes }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = persephone }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = orpheus }
-	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = moira }
+	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = lachesis }
 	rce_remove_religion_mechanic_pantheon_active_god = { type = dip name = apollo }
 }
 

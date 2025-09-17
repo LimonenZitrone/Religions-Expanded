@@ -427,7 +427,7 @@ rce_religion_mechanic_pantheon_god_orpheus_modifier = {
 	naval_attrition = -0.1
 	global_ship_repair = 0.15
 }
-rce_religion_mechanic_pantheon_god_moira_modifier = {
+rce_religion_mechanic_pantheon_god_lachesis_modifier = {
 	dip_tech_cost_modifier = -0.1
 }
 rce_religion_mechanic_pantheon_god_apollo_modifier = {

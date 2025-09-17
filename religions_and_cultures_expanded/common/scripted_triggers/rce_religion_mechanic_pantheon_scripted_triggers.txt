@@ -87,7 +87,7 @@ rce_has_religion_mechanic_pantheon_any_god_selected_of_type_dip = {
 			rce_has_religion_mechanic_pantheon_god_selected = { name = philotes }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = persephone }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = orpheus }
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
 		}
 	}
@@ -346,7 +346,7 @@ rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_fate = {
 	custom_trigger_tooltip = {
 		tooltip = rce_has_religion_mechanic_pantheon_dip_god_selected_of_theme_fate_tt
 		OR = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 			rce_has_religion_mechanic_pantheon_god_selected = { name = apollo }
 		}
 	}

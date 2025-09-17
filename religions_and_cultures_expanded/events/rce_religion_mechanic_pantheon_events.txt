@@ -2117,12 +2117,12 @@ country_event = {
 	}
 
 	option = {
-		name = rce_religion_mechanic_pantheon_god_moira_name_text
+		name = rce_religion_mechanic_pantheon_god_lachesis_name_text
 
 		trigger = {
 			rce_can_select_religion_mechanic_pantheon_god_of_type = {
 				type = dip
-				name = moira
+				name = lachesis
 			}
 		}
 
@@ -2138,7 +2138,7 @@ country_event = {
 
 		rce_set_religion_mechanic_pantheon_active_god = {
 			type = dip
-			name = moira
+			name = lachesis
 		}
 	}
 

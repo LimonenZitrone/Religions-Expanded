@@ -465,9 +465,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 		}
-		localisation_key = rce_religion_mechanic_pantheon_god_moira_name_text
+		localisation_key = rce_religion_mechanic_pantheon_god_lachesis_name_text
 	}
 	text = {
 		trigger = {
@@ -573,9 +573,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 		}
-		localisation_key = rce_religion_mechanic_pantheon_god_moira_desc_text
+		localisation_key = rce_religion_mechanic_pantheon_god_lachesis_desc_text
 	}
 	text = {
 		trigger = {
@@ -681,9 +681,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			rce_has_religion_mechanic_pantheon_god_selected = { name = moira }
+			rce_has_religion_mechanic_pantheon_god_selected = { name = lachesis }
 		}
-		localisation_key = rce_religion_mechanic_pantheon_god_moira_effects_text
+		localisation_key = rce_religion_mechanic_pantheon_god_lachesis_effects_text
 	}
 	text = {
 		trigger = {
