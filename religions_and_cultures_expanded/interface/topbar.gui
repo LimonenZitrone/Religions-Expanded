@@ -1602,48 +1602,294 @@ guiTypes = {
 								text = "aramaic_culture_group"
 							}
 						}
+						windowType = {
+							name = "culture_7_window"
+							position = { x = 0 y = 204 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_7_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_7_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_7_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "gaelic"
+							}
+						}
+						windowType = {
+							name = "culture_8_window"
+							position = { x = 0 y = 238 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_8_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_8_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_8_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "british"
+							}
+						}
+					}
+					windowType = {
+						name = "rce_startup_screen_cultures_list_page_2_window"
+						position = { x = 0 y = 0 }
+						scripted = yes
+
+						windowType = {
+							name = "culture_9_window"
+							position = { x = 0 y = 0 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_9_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_9_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_9_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "french"
+							}
+						}
+						windowType = {
+							name = "culture_10_window"
+							position = { x = 0 y = 34 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_10_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_10_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_10_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "germanic"
+							}
+						}
+						windowType = {
+							name = "culture_11_window"
+							position = { x = 0 y = 68 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_11_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_11_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_11_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "finno_ugric"
+							}
+						}
+						windowType = {
+							name = "culture_12_window"
+							position = { x = 0 y = 102 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_12_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_12_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_12_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "baltic"
+							}
+						}
+						windowType = {
+							name = "culture_13_window"
+							position = { x = 0 y = 136 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_13_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_13_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_13_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "west_slavic"
+							}
+						}
+						windowType = {
+							name = "culture_14_window"
+							position = { x = 0 y = 170 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_14_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_14_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_14_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "east_slavic"
+							}
+						}
+						windowType = {
+							name = "culture_15_window"
+							position = { x = 0 y = 204 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_culture_15_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_culture_button"
+								scripted = yes
+							}
+							iconType = {
+								name = "rce_startup_screen_culture_15_primary_icon"
+								position = { x = 7 y = 4 }
+								spriteType = "GFX_primary_culture_icon"
+								scale = 0.75
+								alwaystransparent = yes
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_culture_15_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "scandinavian"
+							}
+						}
 					#	windowType = {
-					#		name = "culture_7_window"
-					#		position = { x = 0 y = 204 }
-					#
-					#		guiButtonType = {
-					#			name = "rce_startup_screen_culture_7_button"
-					#			position = { x = 2 y = 2 }
-					#			spriteType = "GFX_rce_startup_screen_culture_button"
-					#			scripted = yes
-					#		}
-					#		iconType = {
-					#			name = "rce_startup_screen_culture_7_primary_icon"
-					#			position = { x = 7 y = 4 }
-					#			spriteType = "GFX_primary_culture_icon"
-					#			scale = 0.75
-					#			alwaystransparent = yes
-					#			scripted = yes
-					#		}
-					#		instantTextBoxType = {
-					#			name = "rce_startup_screen_culture_7_button_text"
-					#			position = { x = 12 y = 10 }
-					#			font = "vic_18"
-					#			format = center
-					#			maxWidth = 128
-					#			maxHeight = 20
-					#			fixedsize = yes
-					#			alwaystransparent = yes
-					#			text = "Culture Placeholder"
-					#		}
-					#	}
-					#	windowType = {
-					#		name = "culture_8_window"
+					#		name = "culture_16_window"
 					#		position = { x = 0 y = 238 }
 					#
 					#		guiButtonType = {
-					#			name = "rce_startup_screen_culture_8_button"
+					#			name = "rce_startup_screen_culture_16_button"
 					#			position = { x = 2 y = 2 }
 					#			spriteType = "GFX_rce_startup_screen_culture_button"
 					#			scripted = yes
 					#		}
 					#		iconType = {
-					#			name = "rce_startup_screen_culture_8_primary_icon"
+					#			name = "rce_startup_screen_culture_16_primary_icon"
 					#			position = { x = 7 y = 4 }
 					#			spriteType = "GFX_primary_culture_icon"
 					#			scale = 0.75
@@ -1651,7 +1897,7 @@ guiTypes = {
 					#			scripted = yes
 					#		}
 					#		instantTextBoxType = {
-					#			name = "rce_startup_screen_culture_8_button_text"
+					#			name = "rce_startup_screen_culture_16_button_text"
 					#			position = { x = 12 y = 10 }
 					#			font = "vic_18"
 					#			format = center
@@ -1659,7 +1905,7 @@ guiTypes = {
 					#			maxHeight = 20
 					#			fixedsize = yes
 					#			alwaystransparent = yes
-					#			text = "Culture Placeholder"
+					#			text = "Culture Group Placeholder"
 					#		}
 					#	}
 					}

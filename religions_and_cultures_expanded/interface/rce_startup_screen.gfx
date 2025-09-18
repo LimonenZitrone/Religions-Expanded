@@ -64,4 +64,8 @@ spriteTypes = {
 		name = "GFX_text_rce_startup_screen_icon_norse_mechanic"
 		textureFile = "gfx/interface/rce_startup_screen/texticons/rce_startup_screen_icon_norse_mechanic.dds"
 	}
+	spriteType = {
+		name = "GFX_text_rce_startup_screen_icon_pantheon_mechanic"
+		textureFile = "gfx/interface/rce_startup_screen/texticons/rce_startup_screen_icon_pantheon_mechanic.dds"
+	}
 }

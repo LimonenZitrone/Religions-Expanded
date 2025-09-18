@@ -230,6 +230,60 @@ defined_text = {
 		}
 		localisation_key = aramaic_culture_group
 	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 7 }
+		}
+		localisation_key = gaelic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 8 }
+		}
+		localisation_key = british
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 9 }
+		}
+		localisation_key = french
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 10 }
+		}
+		localisation_key = germanic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 11 }
+		}
+		localisation_key = finno_ugric
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 12 }
+		}
+		localisation_key = baltic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 13 }
+		}
+		localisation_key = west_slavic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 14 }
+		}
+		localisation_key = east_slavic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 15 }
+		}
+		localisation_key = scandinavian
+	}
 
 	# Fallback
 	text = {
@@ -297,6 +351,60 @@ defined_text = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 6 }
 		}
 		localisation_key = rce_startup_text_aramaic_culture_group
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 7 }
+		}
+		localisation_key = rce_startup_text_gaelic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 8 }
+		}
+		localisation_key = rce_startup_text_british
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 9 }
+		}
+		localisation_key = rce_startup_text_french
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 10 }
+		}
+		localisation_key = rce_startup_text_germanic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 11 }
+		}
+		localisation_key = rce_startup_text_finno_ugric
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 12 }
+		}
+		localisation_key = rce_startup_text_baltic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 13 }
+		}
+		localisation_key = rce_startup_text_west_slavic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 14 }
+		}
+		localisation_key = rce_startup_text_east_slavic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 15 }
+		}
+		localisation_key = rce_startup_text_scandinavian
 	}
 
 	# Fallback

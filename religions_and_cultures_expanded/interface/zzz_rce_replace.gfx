@@ -40,4 +40,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//hindu_deities_strip.dds"
 		noOfFrames = 22
 	}
+
+	# doesn't exist, but still in this file cause it's vanilla
+	spriteType = {
+		name = "GFX_text_DLC_kok"
+		texturefile = "gfx/interface/king_of_kings_icon_s.dds"
+	}
 }
