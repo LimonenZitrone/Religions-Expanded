@@ -25,6 +25,8 @@
  rce_formable_nestorian_kingdom_of_god_modifier: "The Kingdom of God"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "The Patriarch has declared himself as the custodian of the Kingdom of God on Earth."
  rce_germanic_culture_converted_to_west_slavic_culture_modifier: "New Settlements"
+ rce_celtic_vassal_modifier: "Celtic Vassal"
+ rce_celtic_vassal_upkeep_modifier: "Marriage with Celtic Vassal"
 
  # Tooltips:
  RCE_UNTIL_MONARCH_DEATH: "until ruler death"
@@ -212,3 +214,12 @@
  rce_coptic_egypt_ideas_6_desc: "We stand at a geographically advantageous position. As such, this allows us to manipulate our mercantile conduct and impose our influence on the global markets with relative ease.\n\n"
  rce_coptic_egypt_ideas_7: "Monument Builders"
  rce_coptic_egypt_ideas_7_desc: "The great Pyramids, only of the great wonders to stand proud and healthy, is a testiment to our ability to touch the skies with our monuments. We are the greatest of builders able to turn empty sand into metropolises and to turn remote oases into bustling mercantile hubs that would make the Italians turn pale in awe.\n\n"
+
+ # Subject Types:
+ rce_celtic_vassal: "Celtic Vassal"
+ rce_celtic_vassal_title: "Celtic Vassal"
+ rce_celtic_vassal_title_plural: "Celtic Vassals"
+ rce_celtic_vassal_is_our: "§Y$NAME$§! is our Celtic Vassal."
+ rce_celtic_vassal_long_desc: "A Celtic Vassal behaves exactly like a normal vassal, but it has a reduced liberty desire from development, gains a bonus for culture conversion time and cost and doesn't cost a diplomatic relation.\n"
+ rce_celtic_vassal_no_overlord_dow: "You cannot declare war on your own Celtic Vassal."
+ rce_celtic_vassal_overlord_title: "Overlord"

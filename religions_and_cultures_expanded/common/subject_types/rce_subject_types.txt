@@ -1,0 +1,35 @@
+rce_celtic_vassal = {}
+
+rce_celtic_vassal = {
+	copy_from = vassal
+	count = vassal
+
+	# Triggers:
+	is_potential_overlord = {
+		culture_group = gaelic
+	}
+
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+
+	# Properties:
+	takes_diplo_slot = no
+
+	liberty_desire_development_ratio = 0.1
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = rce_celtic_vassal_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			marriage_with = FROM
+		}
+		modifier = rce_celtic_vassal_upkeep_modifier
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+}

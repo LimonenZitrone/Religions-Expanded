@@ -25,6 +25,8 @@
  rce_formable_nestorian_kingdom_of_god_modifier: "Königreich Gottes"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "Der Patriarch hat sich selbst zum Verwalter des Königreichs Gottes auf Erden ausgerufen."
  rce_germanic_culture_converted_to_west_slavic_culture_modifier: "Neue Siedlungen"
+ rce_celtic_vassal_modifier: "Keltischer Vasall"
+ rce_celtic_vassal_upkeep_modifier: "Staatsehe mit einem Keltischen Vasallen"
 
  # Tooltips:
  RCE_UNTIL_MONARCH_DEATH: "bis zum Tod des Herrschers"
@@ -212,3 +214,12 @@
  rce_coptic_egypt_ideas_6_desc: "Unsere geografische Lage gibt uns eine sehr vorteilhafte Position: Sie erlaubt es uns, den Handel zu manipulieren und unseren Einfluss auf die globalen Märkte verhältnismäßig leicht geltend zu machen.\n\n"
  rce_coptic_egypt_ideas_7: "Monumentale Baumeister"
  rce_coptic_egypt_ideas_7_desc: "Die großen Pyramiden, das einzige der großen Wunder, die noch bestehen und stolz die Landschaft bestimmen, sind ein Beweis für unsere Fähigkeit, mit unseren Monumenten den Himmel zu berühren. Wir sind die größten Baumeister, wir sind in der Lage, leeren Sand in Metropolen und abgelegene Oasen in geschäftige Handelszentren zu verwandeln, die die Italiener vor Ehrfurcht erblassen lassen würden.\n\n"
+
+ # Subject Types:
+ rce_celtic_vassal: "Keltischer Vasall"
+ rce_celtic_vassal_title: "Keltischer Vasall"
+ rce_celtic_vassal_title_plural: "Keltische Vasallen"
+ rce_celtic_vassal_is_our: "§Y$NAME$§! ist unser Keltischer Vasall."
+ rce_celtic_vassal_long_desc: "Ein Keltischer Vasall verhält sich genauso wie ein normaler Vasall, besitzt aber ein verringertes Freiheitsstreben aufgrund von Entwicklung, erhält einen Bonus auf Kulturkonvertierungskosten und -zeit und kostet keine diplomatische Beziehung.\n"
+ rce_celtic_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Keltischen Vasallen nicht den Krieg erklären."
+ rce_celtic_vassal_overlord_title: "Lehnsherr"
