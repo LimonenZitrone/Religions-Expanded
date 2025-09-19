@@ -400,6 +400,281 @@ gaelic = {
 			Tancostyla Tegla Thecla Ysbail Ystradwel
 		}
 	}
+	iceni_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	lusitani_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	celtiberian_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	pictones_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	volcae_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	arverni_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	parisii_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	aedui_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	belgae_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	treveri_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	vangioni_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	helvetii_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	insubres_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	celtoligures_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	boiian_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	veneti_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	alaunoi_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	boiihaemian_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	lougi_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	cotini_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	tektosages_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	tauri_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	norici_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	skordiskoi_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
+	tylian_culture = {
+		male_names = {
+			# placeholder
+		}
+		female_names = {
+			# placeholder
+		}
+		dynasty_names = {
+			# placeholder
+		}
+	}
 }
 
 british = {
