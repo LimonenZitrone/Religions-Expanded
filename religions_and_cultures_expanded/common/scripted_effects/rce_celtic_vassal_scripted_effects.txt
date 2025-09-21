@@ -1,0 +1,1226 @@
+rce_create_celtic_vassal_subject_in_target = {
+	if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = breton
+			}
+		}
+		$who$ = { change_primary_culture = breton }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = cornish
+			}
+		}
+		$who$ = { change_primary_culture = cornish }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = cumbrian_culture
+			}
+		}
+		$who$ = { change_primary_culture = cumbrian_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = cambrian_culture
+			}
+		}
+		$who$ = { change_primary_culture = cambrian_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = irish
+			}
+		}
+		$who$ = { change_primary_culture = irish }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = highland_scottish
+			}
+		}
+		$who$ = { change_primary_culture = highland_scottish }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = iceni_culture
+			}
+		}
+		$who$ = { change_primary_culture = iceni_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = lusitani_culture
+			}
+		}
+		$who$ = { change_primary_culture = lusitani_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = celtiberian_culture
+			}
+		}
+		$who$ = { change_primary_culture = celtiberian_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = pictones_culture
+			}
+		}
+		$who$ = { change_primary_culture = pictones_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = volcae_culture
+			}
+		}
+		$who$ = { change_primary_culture = volcae_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = arverni_culture
+			}
+		}
+		$who$ = { change_primary_culture = arverni_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = parisii_culture
+			}
+		}
+		$who$ = { change_primary_culture = parisii_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = aedui_culture
+			}
+		}
+		$who$ = { change_primary_culture = aedui_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = belgae_culture
+			}
+		}
+		$who$ = { change_primary_culture = belgae_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = treveri_culture
+			}
+		}
+		$who$ = { change_primary_culture = treveri_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = vangioni_culture
+			}
+		}
+		$who$ = { change_primary_culture = vangioni_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = helvetii_culture
+			}
+		}
+		$who$ = { change_primary_culture = helvetii_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = insubres_culture
+			}
+		}
+		$who$ = { change_primary_culture = insubres_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = celtoligures_culture
+			}
+		}
+		$who$ = { change_primary_culture = celtoligures_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = boiian_culture
+			}
+		}
+		$who$ = { change_primary_culture = boiian_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = veneti_culture
+			}
+		}
+		$who$ = { change_primary_culture = veneti_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = alaunoi_culture
+			}
+		}
+		$who$ = { change_primary_culture = alaunoi_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = boiihaemian_culture
+			}
+		}
+		$who$ = { change_primary_culture = boiihaemian_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = lougi_culture
+			}
+		}
+		$who$ = { change_primary_culture = lougi_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = cotini_culture
+			}
+		}
+		$who$ = { change_primary_culture = cotini_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = tektosages_culture
+			}
+		}
+		$who$ = { change_primary_culture = tektosages_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = tauri_culture
+			}
+		}
+		$who$ = { change_primary_culture = tauri_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = norici_culture
+			}
+		}
+		$who$ = { change_primary_culture = norici_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = skordiskoi_culture
+			}
+		}
+		$who$ = { change_primary_culture = skordiskoi_culture }
+	}
+	else_if = {
+		limit = {
+			rce_is_valid_target_for_celtic_vassal = {
+				who = $who$
+				culture = tylian_culture
+			}
+		}
+		$who$ = { change_primary_culture = tylian_culture }
+	}
+	create_subject = {
+		subject = $who$
+		subject_type = rce_celtic_vassal
+		[[keep_liberty_desire]
+			keep_liberty_desire = $keep_liberty_desire$
+		]
+	}
+}
+
+rce_release_celtic_vassal_subject = {
+	rce_release_celtic_vassal_subject_culture_$culture$ = yes
+}
+rce_release_celtic_vassal_subject_in_target = {
+	tooltip = {
+		release = $who$
+		create_subject = {
+			subject = $who$
+			subject_type = rce_celtic_vassal
+		}
+		$who$ = {
+			change_primary_culture = $culture$
+		}
+		custom_tooltip = rce_release_celtic_vassal_subject_in_target_tt
+		every_owned_province = {
+			limit = {
+				is_capital = no
+				rce_province_is_in_region_to_celtic_vassal = { culture = $culture$ }
+			}
+			custom_tooltip = rce_release_celtic_vassal_subject_in_target_tt_list
+		}
+	}
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				is_core = $who$
+			}
+			set_province_flag = rce_was_core_of_@$who$
+			remove_core = $who$
+		}
+		every_owned_province = {
+			limit = {
+				is_capital = no
+				rce_province_is_in_region_to_celtic_vassal = { culture = $culture$ }
+			}
+			add_core = $who$
+		}
+		release = $who$
+		every_owned_province = {
+			limit = {
+				has_province_flag = rce_was_core_of_@$who$
+			}
+			clr_province_flag = rce_was_core_of_@$who$
+			add_core = $who$
+		}
+		$who$ = {
+			change_primary_culture = $culture$
+			if = {
+				limit = {
+					is_lacking_institutions = yes
+				}
+				embrace_institutions_of = PREV
+			}
+			if = {
+				limit = {
+					PREV = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
+			}
+			else_if = {
+				limit = {
+					PREV = {
+						government = republic
+					}
+				}
+				change_government = republic
+			}
+			else_if = {
+				limit = {
+					PREV = {
+						government = theocracy
+					}
+				}
+				change_government = theocracy
+			}
+			else_if = {
+				limit = {
+					PREV = {
+						government = tribal
+					}
+				}
+				change_government = tribal
+			}
+			else_if = {
+				limit = {
+					PREV = {
+						government = native
+					}
+				}
+				change_government = native
+			}
+			else = {
+				change_government = monarchy
+			}
+			adopt_reform_progress = PREV
+			change_religion = PREV
+			define_ruler = {
+				max_age = 60
+				claim = 100
+			}
+		}
+		create_subject = {
+			subject = $who$
+			subject_type = rce_celtic_vassal
+		}
+	}
+}
+
+rce_release_celtic_vassal_subject_culture_breton = {
+	if = {
+		limit = {
+			NOT = { exists = BRI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BRI
+			culture = breton
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = NRM }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = NRM
+			culture = breton
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = ALE }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = ALE
+			culture = breton
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_cornish = {
+	if = {
+		limit = {
+			NOT = { exists = CRN }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = CRN
+			culture = cornish
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_cumbrian_culture = {
+	if = {
+		limit = {
+			NOT = { exists = SCO }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SCO
+			culture = cumbrian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = NOL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = NOL
+			culture = cumbrian_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_cambrian_culture = {
+	if = {
+		limit = {
+			NOT = { exists = WLS }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = WLS
+			culture = cambrian_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_irish = {
+	if = {
+		limit = {
+			NOT = { exists = IRE }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = IRE
+			culture = irish
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = MTH }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = MTH
+			culture = irish
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = CNN }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = CNN
+			culture = irish
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_highland_scottish = {
+	if = {
+		limit = {
+			NOT = { exists = HSC }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = HSC
+			culture = highland_scottish
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = KOI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = KOI
+			culture = highland_scottish
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = LOI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = LOI
+			culture = highland_scottish
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_iceni_culture = {
+	if = {
+		limit = {
+			NOT = { exists = GBR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = GBR
+			culture = iceni_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = ENG }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = ENG
+			culture = iceni_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_lusitani_culture = {
+	if = {
+		limit = {
+			NOT = { exists = LON }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = LON
+			culture = lusitani_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = POR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = POR
+			culture = lusitani_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_celtiberian_culture = {
+	if = {
+		limit = {
+			NOT = { exists = GAL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = GAL
+			culture = celtiberian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = ASU }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = ASU
+			culture = celtiberian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = NAV }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = NAV
+			culture = celtiberian_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_pictones_culture = {
+	if = {
+		limit = {
+			NOT = { exists = GUY }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = GUY
+			culture = pictones_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = AMG }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = AMG
+			culture = pictones_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_volcae_culture = {
+	if = {
+		limit = {
+			NOT = { exists = TOU }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = TOU
+			culture = volcae_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = FOI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = FOI
+			culture = volcae_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_arverni_culture = {
+	if = {
+		limit = {
+			NOT = { exists = AUV }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = AUV
+			culture = arverni_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = BOU }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BOU
+			culture = arverni_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = DAU }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = DAU
+			culture = arverni_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_parisii_culture = {
+	if = {
+		limit = {
+			NOT = { exists = ORL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = ORL
+			culture = parisii_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = CHP }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = CHP
+			culture = parisii_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = BER }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BER
+			culture = parisii_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_aedui_culture = {
+	if = {
+		limit = {
+			NOT = { exists = BUR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BUR
+			culture = aedui_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = LOR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = LOR
+			culture = aedui_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = BAR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BAR
+			culture = aedui_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_belgae_culture = {
+	if = {
+		limit = {
+			NOT = { exists = PIC }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = PIC
+			culture = belgae_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = HAI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = HAI
+			culture = belgae_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = FLA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = FLA
+			culture = belgae_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_treveri_culture = {
+	if = {
+		limit = {
+			NOT = { exists = WES }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = WES
+			culture = treveri_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = TRI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = TRI
+			culture = treveri_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = LUX }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = LUX
+			culture = treveri_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_vangioni_culture = {
+	if = {
+		limit = {
+			NOT = { exists = SWA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SWA
+			culture = vangioni_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = WUR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = WUR
+			culture = vangioni_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = BAD }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BAD
+			culture = vangioni_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = PAL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = PAL
+			culture = vangioni_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_helvetii_culture = {
+	if = {
+		limit = {
+			NOT = { exists = SWI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SWI
+			culture = helvetii_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = TTL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = TTL
+			culture = helvetii_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = GNV }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = GNV
+			culture = helvetii_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_insubres_culture = {
+	if = {
+		limit = {
+			NOT = { exists = MLO }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = MLO
+			culture = insubres_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = MFA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = MFA
+			culture = insubres_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = SZO }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SZO
+			culture = insubres_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_celtoligures_culture = {
+	if = {
+		limit = {
+			NOT = { exists = GEN }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = GEN
+			culture = celtoligures_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = PRO }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = PRO
+			culture = celtoligures_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = AVI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = AVI
+			culture = celtoligures_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_boiian_culture = {
+	if = {
+		limit = {
+			NOT = { exists = URB }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = URB
+			culture = boiian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = BLG }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BLG
+			culture = boiian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = PGA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = PGA
+			culture = boiian_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_veneti_culture = {
+	if = {
+		limit = {
+			NOT = { exists = VEN }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = VEN
+			culture = veneti_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = PDV }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = PDV
+			culture = veneti_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = VRN }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = VRN
+			culture = veneti_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_alaunoi_culture = {
+	if = {
+		limit = {
+			NOT = { exists = BAV }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BAV
+			culture = alaunoi_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = SLZ }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SLZ
+			culture = alaunoi_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = PSS }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = PSS
+			culture = alaunoi_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_boiihaemian_culture = {
+	if = {
+		limit = {
+			NOT = { exists = BOH }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BOH
+			culture = boiihaemian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = MVA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = MVA
+			culture = boiihaemian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = SOR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SOR
+			culture = boiihaemian_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_lougi_culture = {
+	if = {
+		limit = {
+			NOT = { exists = KRA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = KRA
+			culture = lougi_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = SIL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SIL
+			culture = lougi_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = GLG }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = GLG
+			culture = lougi_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_cotini_culture = {
+	if = {
+		limit = {
+			NOT = { exists = SLO }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SLO
+			culture = cotini_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = VOL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = VOL
+			culture = cotini_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = OPL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = OPL
+			culture = cotini_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_tektosages_culture = {
+	if = {
+		limit = {
+			NOT = { exists = TRA }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = TRA
+			culture = tektosages_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = HUN }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = HUN
+			culture = tektosages_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = CLI }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = CLI
+			culture = tektosages_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_tauri_culture = {
+	if = {
+		limit = {
+			NOT = { exists = CRO }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = CRO
+			culture = tauri_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = BOS }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BOS
+			culture = tauri_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = DAL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = DAL
+			culture = tauri_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_norici_culture = {
+	if = {
+		limit = {
+			NOT = { exists = STY }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = STY
+			culture = norici_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = TIR }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = TIR
+			culture = norici_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = HAB }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = HAB
+			culture = norici_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_skordiskoi_culture = {
+	if = {
+		limit = {
+			NOT = { exists = SER }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = SER
+			culture = skordiskoi_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = MON }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = MON
+			culture = skordiskoi_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = HRZ }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = HRZ
+			culture = skordiskoi_culture
+		}
+	}
+}
+rce_release_celtic_vassal_subject_culture_tylian_culture = {
+	if = {
+		limit = {
+			NOT = { exists = BUL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = BUL
+			culture = tylian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = WAL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = WAL
+			culture = tylian_culture
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = MOL }
+		}
+		rce_release_celtic_vassal_subject_in_target = {
+			who = MOL
+			culture = tylian_culture
+		}
+	}
+}

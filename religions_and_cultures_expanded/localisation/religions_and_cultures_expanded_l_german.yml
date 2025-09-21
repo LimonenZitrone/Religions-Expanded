@@ -36,6 +36,8 @@
  RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC: "Ein Land, das einer §YDharmischen§! Religion folgt, muss zunächst seinen Glauben zentralisieren, bevor es den Titel des Verteidiger des Glaubens erwerben kann!"
  RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_PAGAN: "Ein Land, das einer §YHeidnischen§! Religion folgt, muss zunächst seinen Glauben zentralisieren, bevor es den Titel des Verteidiger des Glaubens erwerben kann!"
  rce_tooltip_effect_text: "§YEffekt:§!"
+ rce_release_celtic_vassal_subject_in_target_tt: "\nDas entlassene Land erhält folgende Provinzen von uns:"
+ rce_release_celtic_vassal_subject_in_target_tt_list: "   - §Y[This.GetName]§!"
 
  # Decisions:
  rce_religion_reform_religion_decision_title: "Zentralisiert den [Root.Religion.GetName]en Glauben"
@@ -48,6 +50,8 @@
  rce_formable_decision_coptic_egypt_desc: "Gründet die Nation Kemet, wobei Ihr die reiche Geschichte des Nildeltas zur Schaffung eines modernen Staats in der Region einbezieht."
  rce_formable_decision_nestorian_kingdom_of_god_title: "Das Königreich Gottes ausrufen"
  rce_formable_decision_nestorian_kingdom_of_god_desc: "Mit den Gebieten des Balkans und Anatoliens unter der Herrschaft des Patriarchen statt der eines Kaisers oder Königs ist es nun berechtigt, das Königreich Gottes auf Erden auszurufen."
+ rce_celtic_vassal_release_subject_decision_title: "Entlasst einen Keltischen Vasallen"
+ rce_celtic_vassal_release_subject_decision_desc: "Wir besitzen Provinzen, die eine eigene §Y[Root.Culture.GetGroupName]e§! Kultur entwickeln können, wenn wir dort einen §YKeltischen Vasallen§! entlassen."
 
  # Vanilla Events:
  hindu_events.1.j: "Ich folge Kali."
@@ -72,6 +76,15 @@
  rce_events.EVTDESC2: "Wählt hier aus, ob Ihr etwas Macht für eine neue Religionsmechanik erhalten wollt, falls Ihr über eine verfügt."
  rce_events2.EVTOPT1: "Gib mir Macht."
  rce_events2.EVTOPT2: "Abbrechen."
+
+ rce_celtic_vassal_events.EVTNAME1: "Entlasst einen Keltischen Vasallen"
+ rce_celtic_vassal_events.EVTDESC1: "Wählt hier aus, für welche Kultur Ihr einen Keltischen Vasallen entlassen möchtet. Ein passendes Land wird in bestimmten, von Eucht besessenen Gebieten entlassen und verändert seine Primärkultur zu der gewählten Kultur, um sie zu verbreiten."
+ rce_celtic_vassal_events1.EVTOPT1: "Abbrechen."
+
+ # New Diplomatic Actions:
+ rce_celtic_vassal_create_subject_title: "Keltischen Vasallen errichten"
+ rce_celtic_vassal_create_subject_desc: "Wollt Ihr Euren Vasallen §Y[From.GetName]§! zu einem §YKeltischen Vasallen§! machen? \n\nDies wird ihre Primärkultur zu der jeweils zu ihrer Region passenden §Y[Root.Culture.GetGroupName]en§! Kultur ändern."
+ rce_celtic_vassal_create_subject_tooltip: "Macht §Y[From.GetName]§! zu Eurem §YKeltischen Vasallen§!.\n"
 
  # Countries:
  ## Tags:
@@ -109,6 +122,10 @@
  rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation_desc: "Das §Y[From.Religion.GetName]e§! Zentrum der Konvertierung in §Y[rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§! wird zerstört. Der Kontrolleur des Patriarchats kann kein Zentrum der Konvertierung mehr auswählen, erst der nächste Kontrolleur des Patriarchats wird dazu wieder in der Lage sein."
  CB_ALLOWED_rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Zentrum der Konvertierung zerstören"
  PEACE_rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Zentrum der Konvertierung zerstören"
+
+ rce_peace_treaty_make_celtic_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem @[Root.GetTag] §Y[Root.GetAdjective]en§! Keltischen Vasallen."
+ CB_ALLOWED_rce_peace_treaty_make_celtic_vassal: "Keltischen Vasallen erzwingen"
+ PEACE_rce_peace_treaty_make_celtic_vassal: "Keltischen Vasallen erzwingen"
 
  # Casus Bellis:
  cb_rce_religion_mechanic_nestorian_patriarchy_excommunication: "Exkommunizierter Herrscher"

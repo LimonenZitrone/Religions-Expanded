@@ -1,0 +1,67 @@
+rce_celtic_vassal_create_subject = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		can_be_overlord = rce_celtic_vassal
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_vassal = yes
+				is_march = yes
+			}
+		}
+		rce_can_create_celtic_vassal_subject_in_target = {
+			who = FROM
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			can_be_overlord = rce_celtic_vassal
+			overlord_of = FROM
+			FROM = {
+				OR = {
+					is_vassal = yes
+					is_march = yes
+				}
+			}
+			rce_can_create_celtic_vassal_subject_in_target = {
+				who = FROM
+			}
+		}
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				can_be_overlord = rce_celtic_vassal
+				overlord_of = FROM
+				FROM = {
+					OR = {
+						is_vassal = yes
+						is_march = yes
+					}
+				}
+				rce_can_create_celtic_vassal_subject_in_target = {
+					who = FROM
+				}
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+			}
+			rce_create_celtic_vassal_subject_in_target = {
+				who = FROM
+				keep_liberty_desire = yes
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = no
+	}
+}

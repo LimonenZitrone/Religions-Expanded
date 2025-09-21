@@ -1,0 +1,20 @@
+country_decisions = {
+	rce_celtic_vassal_release_subject_decision = {
+		potential = {
+			can_be_overlord = rce_celtic_vassal
+			NOT = { has_country_flag = rce_is_releasing_celtic_vassal }
+			rce_can_release_celtic_vassal_subject = yes
+
+		}
+		allow = {
+			can_be_overlord = rce_celtic_vassal
+			is_at_war = no
+		}
+		effect = {
+			country_event = { id = rce_celtic_vassal_events.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

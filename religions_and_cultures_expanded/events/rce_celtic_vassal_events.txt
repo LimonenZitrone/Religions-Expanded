@@ -1,0 +1,430 @@
+namespace = rce_celtic_vassal_events
+
+country_event = {
+	id = rce_celtic_vassal_events.1
+	title = rce_celtic_vassal_events.EVTNAME1
+	desc = rce_celtic_vassal_events.EVTDESC1
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_is_releasing_celtic_vassal
+		}
+	}
+
+	option = {
+		name = breton
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = breton
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = breton }
+	}
+	option = {
+		name = cornish
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = cornish
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = cornish }
+	}
+	option = {
+		name = cumbrian_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = cumbrian_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = cumbrian_culture }
+	}
+	option = {
+		name = cambrian_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = cambrian_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = cambrian_culture }
+	}
+	option = {
+		name = irish
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = irish
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = irish }
+	}
+	option = {
+		name = highland_scottish
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = highland_scottish
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = highland_scottish }
+	}
+	option = {
+		name = iceni_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = iceni_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = iceni_culture }
+	}
+	option = {
+		name = lusitani_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = lusitani_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = lusitani_culture }
+	}
+	option = {
+		name = celtiberian_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = celtiberian_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = celtiberian_culture }
+	}
+	option = {
+		name = pictones_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = pictones_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = pictones_culture }
+	}
+	option = {
+		name = volcae_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = volcae_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = volcae_culture }
+	}
+	option = {
+		name = arverni_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = arverni_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = arverni_culture }
+	}
+	option = {
+		name = parisii_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = parisii_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = parisii_culture }
+	}
+	option = {
+		name = aedui_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = aedui_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = aedui_culture }
+	}
+	option = {
+		name = belgae_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = belgae_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = belgae_culture }
+	}
+	option = {
+		name = treveri_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = treveri_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = treveri_culture }
+	}
+	option = {
+		name = vangioni_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = vangioni_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = vangioni_culture }
+	}
+	option = {
+		name = helvetii_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = helvetii_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = helvetii_culture }
+	}
+	option = {
+		name = insubres_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = insubres_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = insubres_culture }
+	}
+	option = {
+		name = celtoligures_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = celtoligures_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = celtoligures_culture }
+	}
+	option = {
+		name = boiian_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = boiian_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = boiian_culture }
+	}
+	option = {
+		name = veneti_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = veneti_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = veneti_culture }
+	}
+	option = {
+		name = alaunoi_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = alaunoi_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = alaunoi_culture }
+	}
+	option = {
+		name = boiihaemian_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = boiihaemian_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = boiihaemian_culture }
+	}
+	option = {
+		name = lougi_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = lougi_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = lougi_culture }
+	}
+	option = {
+		name = cotini_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = cotini_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = cotini_culture }
+	}
+	option = {
+		name = tektosages_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = tektosages_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = tektosages_culture }
+	}
+	option = {
+		name = tauri_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = tauri_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = tauri_culture }
+	}
+	option = {
+		name = norici_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = norici_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = norici_culture }
+	}
+	option = {
+		name = skordiskoi_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = skordiskoi_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = skordiskoi_culture }
+	}
+	option = {
+		name = tylian_culture
+
+		trigger = {
+			rce_is_valid_target_for_celtic_vassal = {
+				release = yes
+				culture = tylian_culture
+				check_subjects = yes
+			}
+		}
+
+		rce_release_celtic_vassal_subject = { culture = tylian_culture }
+	}
+
+	option = {
+		name = rce_celtic_vassal_events1.EVTOPT1
+
+		ai_chance = { factor = 0 }
+	}
+
+	after = {
+		clr_country_flag = rce_is_releasing_celtic_vassal
+	}
+}

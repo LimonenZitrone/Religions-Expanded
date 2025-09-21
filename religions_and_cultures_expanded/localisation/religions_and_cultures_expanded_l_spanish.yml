@@ -36,6 +36,8 @@
  RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_DHARMIC: "A country following a §YDharmic§! religion must first centralize the faith before being able to become the Defender of the Faith!"
  RCE_CANNOT_CLAIM_DOF_RELIGION_NOT_REFORMED_TT_PAGAN: "A country following a §YPagan§! religion must first centralize the faith before being able to become the Defender of the Faith!"
  rce_tooltip_effect_text: "§YEffects:§!"
+ rce_release_celtic_vassal_subject_in_target_tt: "\nThe released country will receive the following provinces from us:"
+ rce_release_celtic_vassal_subject_in_target_tt_list: "   - §Y[This.GetName]§!"
 
  # Decisions:
  rce_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
@@ -48,6 +50,8 @@
  rce_formable_decision_coptic_egypt_desc: "Found the Kemet nation, drawing on the rich history of the Nile Delta to establish a modern state in the region."
  rce_formable_decision_nestorian_kingdom_of_god_title: "Declare the Kingdom of God"
  rce_formable_decision_nestorian_kingdom_of_god_desc: "With the lands of the Balkans and Anatolia under the temporal power of the Patriarch rather than any Emperor or King it is now justified to declare this state the Kingdom of God on Earth."
+ rce_celtic_vassal_release_subject_decision_title: "Release a Celtic Vassal"
+ rce_celtic_vassal_release_subject_decision_desc: "We own provinces that can develop their own §Y[Root.Culture.GetGroupName]§! culture, if we establish a §YCeltic Vassal§! there."
 
  # Vanilla Events:
  hindu_events.1.j: "I follow Kali."
@@ -72,6 +76,15 @@
  rce_events.EVTDESC2: "Pick whether you want to receive some power for a new religion mechanic, if you use one."
  rce_events2.EVTOPT1: "Give me Power."
  rce_events2.EVTOPT2: "Cancel."
+
+ rce_celtic_vassal_events.EVTNAME1: "Release a Celtic Vassal"
+ rce_celtic_vassal_events.EVTDESC1: "Choose here for which culture you want to release a Celtic Vassal. A fitting country will be released in certain areas of your owned provinces and change the primary culture to specified culture in order to spread it."
+ rce_celtic_vassal_events1.EVTOPT1: "Cancel."
+
+ # New Diplomatic Actions:
+ rce_celtic_vassal_create_subject_title: "Establish Celtic Vassal"
+ rce_celtic_vassal_create_subject_desc: "Do you want to make your vassal §Y[From.GetName]§! into a §YCeltic Vassal§!? \n\nThis will switch their primary culture to the matching §Y[Root.Culture.GetGroupName]§! culture for their region."
+ rce_celtic_vassal_create_subject_tooltip: "Make §Y[From.GetName]§! to your §YCeltic Vassal§!.\n"
 
  # Countries:
  ## Tags:
@@ -109,6 +122,10 @@
  rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation_desc: "The §Y[From.Religion.GetName]§! Center of Conversion in §Y[rce_religion_mechanic_nestorian_patriarchy_current_center_of_reformation.GetName]§! is destroyed. The Patriarchy Controller will not be able to select another Center of Conversion, only the next Patriarchy Controller will be able to again."
  CB_ALLOWED_rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Destroy Center of Conversion"
  PEACE_rce_peace_treaty_religion_mechanic_nestorian_patriarchy_disable_center_of_reformation: "Destroy Center of Conversion"
+
+ rce_peace_treaty_make_celtic_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! will become a @[Root.GetTag] §Y[Root.GetAdjective]§! Celtic Vassal."
+ CB_ALLOWED_rce_peace_treaty_make_celtic_vassal: "Force Celtic Vassal"
+ PEACE_rce_peace_treaty_make_celtic_vassal: "Force Celtic Vassal"
 
  # Casus Bellis:
  cb_rce_religion_mechanic_nestorian_patriarchy_excommunication: "Excommunicated Ruler"

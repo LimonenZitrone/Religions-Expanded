@@ -1,52 +1,1221 @@
-is_valid_target_for_celtic_vassal = {
-	[[iceni_culture]
+rce_is_valid_target_for_celtic_vassal = {
+	rce_is_valid_target_for_celtic_vassal_culture_$culture$ = {
+		[[who]
+			who = $who$
+		]
+		[[release]
+			release = yes
+		]
+	}
+	[[check_subjects]
+		NOT = {
+			any_subject_country = {
+				is_subject_of_type = rce_celtic_vassal
+				primary_culture = $culture$
+			}
+		}
 	]
-	[[lusitani_culture]
+	[[release]
+		NOT = { primary_culture = $culture$ }
+		any_owned_province = {
+			is_capital = no
+			rce_province_is_in_region_to_celtic_vassal = { culture = $culture$ }
+		}
 	]
-	[[celtiberian_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_breton = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = BRI
+				tag = NRM
+				tag = ALE
+			}
+		}
 	]
-	[[pictones_culture]
+	[[release]
+		OR = {
+			NOT = { exists = BRI }
+			NOT = { exists = NRM }
+			NOT = { exists = ALE }
+		}
 	]
-	[[volcae_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_cornish = {
+	[[who]
+		$who$ = {
+			tag = CRN
+		}
 	]
-	[[arverni_culture]
+	[[release]
+		NOT = { exists = CRN }
 	]
-	[[parisii_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_cumbrian_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = SCO
+				tag = NOL
+			}
+		}
 	]
-	[[aedui_culture]
+	[[release]
+		OR = {
+			NOT = { exists = SCO }
+			NOT = { exists = NOL }
+		}
 	]
-	[[belgae_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_cambrian_culture = {
+	[[who]
+		$who$ = {
+			tag = WLS
+		}
 	]
-	[[treveri_culture]
+	[[release]
+		NOT = { exists = WLS }
 	]
-	[[vangioni_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_irish = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = IRE
+				tag = MTH
+				tag = CNN
+			}
+		}
 	]
-	[[helvetii_culture]
+	[[release]
+		OR = {
+			NOT = { exists = IRE }
+			NOT = { exists = MTH }
+			NOT = { exists = CNN }
+		}
 	]
-	[[insubres_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_highland_scottish = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = HSC
+				tag = KOI
+				tag = LOI
+			}
+		}
 	]
-	[[celtoligures_culture]
+	[[release]
+		OR = {
+			NOT = { exists = HSC }
+			NOT = { exists = KOI }
+			NOT = { exists = LOI }
+		}
 	]
-	[[boiian_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_iceni_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
 	]
-	[[veneti_culture]
+	[[release]
+		OR = {
+			NOT = { exists = GBR }
+			NOT = { exists = ENG }
+		}
 	]
-	[[alaunoi_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_lusitani_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = LON
+				tag = POR
+			}
+		}
 	]
-	[[boiihaemian_culture]
+	[[release]
+		OR = {
+			NOT = { exists = LON }
+			NOT = { exists = POR }
+		}
 	]
-	[[lougi_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_celtiberian_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = GAL
+				tag = ASU
+				tag = NAV
+			}
+		}
 	]
-	[[cotini_culture]
+	[[release]
+		OR = {
+			NOT = { exists = GAL }
+			NOT = { exists = ASU }
+			NOT = { exists = NAV }
+		}
 	]
-	[[tektosages_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_pictones_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = GUY
+				tag = AMG
+			}
+		}
 	]
-	[[tauri_culture]
+	[[release]
+		OR = {
+			NOT = { exists = GUY }
+			NOT = { exists = AMG }
+		}
 	]
-	[[norici_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_volcae_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = TOU
+				tag = FOI
+			}
+		}
 	]
-	[[skordiskoi_culture]
+	[[release]
+		OR = {
+			NOT = { exists = TOU }
+			NOT = { exists = FOI }
+		}
 	]
-	[[tylian_culture]
+}
+rce_is_valid_target_for_celtic_vassal_culture_arverni_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = AUV
+				tag = BOU
+				tag = DAU
+			}
+		}
 	]
+	[[release]
+		OR = {
+			NOT = { exists = AUV }
+			NOT = { exists = BOU }
+			NOT = { exists = DAU }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_parisii_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = ORL
+				tag = CHP
+				tag = BER
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = ORL }
+			NOT = { exists = CHP }
+			NOT = { exists = BER }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_aedui_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = BUR
+				tag = LOR
+				tag = BAR
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = BUR }
+			NOT = { exists = LOR }
+			NOT = { exists = BAR }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_belgae_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = PIC
+				tag = HAI
+				tag = FLA
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = PIC }
+			NOT = { exists = HAI }
+			NOT = { exists = FLA }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_treveri_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = WES
+				tag = TRI
+				tag = LUX
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = WES }
+			NOT = { exists = TRI }
+			NOT = { exists = LUX }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_vangioni_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = SWA
+				tag = WUR
+				tag = BAD
+				tag = PAL
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = SWA }
+			NOT = { exists = WUR }
+			NOT = { exists = BAD }
+			NOT = { exists = PAL }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_helvetii_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = SWI
+				tag = TTL
+				tag = GNV
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = SWI }
+			NOT = { exists = TTL }
+			NOT = { exists = GNV }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_insubres_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = MLO
+				tag = MFA
+				tag = SZO
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = MLO }
+			NOT = { exists = MFA }
+			NOT = { exists = SZO }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_celtoligures_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = GEN
+				tag = PRO
+				tag = AVI
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = GEN }
+			NOT = { exists = PRO }
+			NOT = { exists = AVI }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_boiian_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = URB
+				tag = BLG
+				tag = PGA
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = URB }
+			NOT = { exists = BLG }
+			NOT = { exists = PGA }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_veneti_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = VEN
+				tag = PDV
+				tag = VRN
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = VEN }
+			NOT = { exists = PDV }
+			NOT = { exists = VRN }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_alaunoi_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = BAV
+				tag = SLZ
+				tag = PSS
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = BAV }
+			NOT = { exists = SLZ }
+			NOT = { exists = PSS }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_boiihaemian_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = BOH
+				tag = MVA
+				tag = SOR
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = BOH }
+			NOT = { exists = MVA }
+			NOT = { exists = SOR }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_lougi_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = KRA
+				tag = SIL
+				tag = GLG
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = KRA }
+			NOT = { exists = SIL }
+			NOT = { exists = GLG }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_cotini_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = SLO
+				tag = VOL
+				tag = OPL
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = SLO }
+			NOT = { exists = VOL }
+			NOT = { exists = OPL }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_tektosages_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = TRA
+				tag = HUN
+				tag = CLI
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = TRA }
+			NOT = { exists = HUN }
+			NOT = { exists = CLI }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_tauri_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = CRO
+				tag = BOS
+				tag = DAL
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = CRO }
+			NOT = { exists = BOS }
+			NOT = { exists = DAL }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_norici_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = STY
+				tag = TIR
+				tag = HAB
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = STY }
+			NOT = { exists = TIR }
+			NOT = { exists = HAB }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_skordiskoi_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = SER
+				tag = MON
+				tag = HRZ
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = SER }
+			NOT = { exists = MON }
+			NOT = { exists = HRZ }
+		}
+	]
+}
+rce_is_valid_target_for_celtic_vassal_culture_tylian_culture = {
+	[[who]
+		$who$ = {
+			OR = {
+				tag = BUL
+				tag = WAL
+				tag = MOL
+			}
+		}
+	]
+	[[release]
+		OR = {
+			NOT = { exists = BUL }
+			NOT = { exists = WAL }
+			NOT = { exists = MOL }
+		}
+	]
+}
+
+rce_can_create_celtic_vassal_subject_in_target = {
+	OR = {
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = breton
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = cornish
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = cumbrian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = cambrian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = irish
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = highland_scottish
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = iceni_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = lusitani_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = celtiberian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = pictones_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = volcae_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = arverni_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = parisii_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = aedui_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = belgae_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = treveri_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = vangioni_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = helvetii_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = insubres_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = celtoligures_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = boiian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = veneti_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = alaunoi_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = boiihaemian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = lougi_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = cotini_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = tektosages_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = tauri_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = norici_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = skordiskoi_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			who = $who$
+			culture = tylian_culture
+			check_subjects = yes
+		}
+	}
+}
+
+rce_can_release_celtic_vassal_subject = {
+	OR = {
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = breton
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = cornish
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = cumbrian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = cambrian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = irish
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = highland_scottish
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = iceni_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = lusitani_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = celtiberian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = pictones_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = volcae_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = arverni_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = parisii_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = aedui_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = belgae_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = treveri_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = vangioni_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = helvetii_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = insubres_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = celtoligures_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = boiian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = veneti_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = alaunoi_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = boiihaemian_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = lougi_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = cotini_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = tektosages_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = tauri_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = norici_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = skordiskoi_culture
+			check_subjects = yes
+		}
+		rce_is_valid_target_for_celtic_vassal = {
+			release = yes
+			culture = tylian_culture
+			check_subjects = yes
+		}
+	}
+}
+
+rce_province_is_in_region_to_celtic_vassal = {
+	rce_province_is_in_region_to_celtic_vassal_culture_$culture$ = yes
+}
+
+rce_province_is_in_region_to_celtic_vassal_culture_breton = {
+	OR = {
+		area = brittany_area
+		area = normandy_area
+		province_id = 177
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_cornish = {
+	OR = {
+		area = wessex_area
+		province_id = 239
+		province_id = 237
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_cumbrian_culture = {
+	OR = {
+		area = scottish_marches_area
+		area = yorkshire_area
+		AND = {
+			area = east_midlands_area
+			NOT = { province_id = 4376 }
+		}
+		province_id = 4361
+		province_id = 4362
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_cambrian_culture = {
+	OR = {
+		area = wales_area
+		AND = {
+			area = west_midlands_area
+			NOT = { province_id = 239 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_irish = {
+	OR = {
+		area = munster_area
+		area = connacht_area
+		area = leinster_area
+		area = ulster_area
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_highland_scottish = {
+	OR = {
+		area = highlands_area
+		area = kingdom_of_the_isles_area
+		AND = {
+			area = lowlands_area
+			NOT = { province_id = 4361 }
+			NOT = { province_id = 4362 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_iceni_culture = {
+	OR = {
+		area = east_anglia_area
+		AND = {
+			area = home_counties_area
+			NOT = { province_id = 237 }
+		}
+		province_id = 4376
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_lusitani_culture = {
+	OR = {
+		area = alentejo_area
+		area = extremadura_area
+		province_id = 4548
+		province_id = 216
+		province_id = 228
+		province_id = 1851
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_celtiberian_culture = {
+	OR = {
+		area = galicia_area
+		area = basque_country
+		AND = {
+			area = leon_area
+			NOT = { province_id = 216 }
+		}
+		AND = {
+			area = beieras_area
+			NOT = { province_id = 228 }
+			NOT = { province_id = 1851 }
+		}
+		AND = {
+			area = asturias_area
+			NOT = { province_id = 215 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_pictones_culture = {
+	OR = {
+		area = poitou_area
+		AND = {
+			area = loire_area
+			NOT = { province_id = 177 }
+		}
+		province_id = 173
+		province_id = 174
+		province_id = 194
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_volcae_culture = {
+	OR = {
+		AND = {
+			area = pyrenees_area
+			NOT = { province_id = 173 }
+		}
+		AND = {
+			area = languedoc_area
+			NOT = { province_id = 4391 }
+		}
+		province_id = 197
+		province_id = 198
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_arverni_culture = {
+	OR = {
+		area = massif_central_area
+		province_id = 4391
+		province_id = 4112
+		AND = {
+			area = savoy_dauphine_area
+			NOT = { province_id = 4719 }
+			NOT = { province_id = 205 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_parisii_culture = {
+	OR = {
+		area = orleans_area
+		area = ile_de_france_area
+		AND = {
+			area = champagne_area
+			NOT = { province_id = 181 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_aedui_culture = {
+	OR = {
+		area = west_burgundy_area
+		area = bourgogne_area
+		area = lorraine_area
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_belgae_culture = {
+	OR = {
+		area = picardy_area
+		area = flanders_area
+		AND = {
+			area = brabant_area
+			NOT = { province_id = 2974 }
+		}
+		AND = {
+			area = wallonia_area
+			NOT = { province_id = 93 }
+			NOT = { province_id = 94 }
+		}
+		province_id = 96
+		province_id = 181
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_treveri_culture = {
+	OR = {
+		area = lower_rhineland_area
+		AND = {
+			area = north_rhine_area
+			NOT = { province_id = 2975 }
+		}
+		province_id = 93
+		province_id = 94
+		province_id = 2974
+		province_id = 1742
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_vangioni_culture = {
+	OR = {
+		area = palatinate_area
+		area = upper_rhineland_area
+		area = upper_swabia_area
+		AND = {
+			area = alsace_area
+			NOT = { province_id = 1880 }
+		}
+		AND = {
+			area = lower_swabia_area
+			NOT = { province_id = 4712 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_helvetii_culture = {
+	OR = {
+		area = romandie_area
+		area = switzerland_area
+		province_id = 1880
+		province_id = 4712
+		province_id = 4719
+		province_id = 205
+		province_id = 4710
+		province_id = 73
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_insubres_culture = {
+	OR = {
+		area = piedmont_area
+		area = lombardy_area
+		province_id = 105
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_celtoligures_culture = {
+	OR = {
+		area = provence_area
+		area = liguria_area
+		province_id = 2980
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_boiian_culture = {
+	OR = {
+		AND = {
+			area = emilia_romagna_area
+			NOT = { province_id = 105 }
+			NOT = { province_id = 113 }
+		}
+		province_id = 116
+		province_id = 2978
+		province_id = 2976
+		province_id = 2977
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_veneti_culture = {
+	OR = {
+		area = po_valley_area
+		area = venetia_area
+		province_id = 113
+		province_id = 4738
+		province_id = 1769
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_alaunoi_culture = {
+	OR = {
+		area = upper_bavaria_area
+		area = lower_bavaria_area
+		area = east_bavaria_area
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_boiihaemian_culture = {
+	OR = {
+		area = erzgebirge_area
+		area = bohemia_area
+		area = moravia_area
+		province_id = 133
+		province_id = 1770
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_lougi_culture = {
+	OR = {
+		area = silesia_area
+		area = wielkopolska_area
+		AND = {
+			area = central_poland_area
+			NOT = { province_id = 1939 }
+		}
+		AND = {
+			area = malopolska_area
+			NOT = { province_id = 4527 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_cotini_culture = {
+	OR = {
+		area = slovakia_area
+		area = transylvania_area
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_tektosages_culture = {
+	OR = {
+		area = transdanubia_area
+		area = alfold_area
+		province_id = 4173
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_tauri_culture = {
+	OR = {
+		area = croatia_area
+		AND = {
+			area = carinthia_area
+			NOT = { province_id = 4738 }
+			NOT = { province_id = 1769 }
+		}
+		AND = {
+			area = slavonia_area
+			NOT = { province_id = 4173 }
+		}
+		province_id = 140
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_norici_culture = {
+	OR = {
+		area = inner_austria_area
+		AND = {
+			area = tirol_area
+			NOT = { province_id = 73 }
+		}
+		AND = {
+			area = austria_proper_area
+			NOT = { province_id = 133 }
+			NOT = { province_id = 1770 }
+		}
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_skordiskoi_culture = {
+	OR = {
+		area = east_adriatic_coast_area
+		area = rascia_area
+		area = serbia_area
+		AND = {
+			area = bosnia_area
+			NOT = { province_id = 140 }
+		}
+		province_id = 2746
+		province_id = 156
+	}
+}
+rce_province_is_in_region_to_celtic_vassal_culture_tylian_culture = {
+	OR = {
+		area = silistria_area
+		area = wallachia_area
+		AND = {
+			area = southern_transylvania_area
+			NOT = { province_id = 156 }
+		}
+		province_id = 150
+	}
 }

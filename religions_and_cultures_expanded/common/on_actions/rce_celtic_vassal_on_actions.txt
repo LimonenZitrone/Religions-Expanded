@@ -1,0 +1,50 @@
+# ROOT = overlord, FROM = subject
+on_dependency_gained = {
+	if = {
+		limit = {
+			NOT = { can_be_overlord = rce_celtic_vassal }
+			FROM = {
+				is_subject_of_type = celtic_vassal
+			}
+		}
+		create_subject = {
+			subject = FROM
+			subject_type = vassal
+			keep_liberty_desire = yes
+		}
+	}
+}
+
+on_primary_culture_changed = {
+	if = {
+		limit = {
+			is_subject = yes
+			is_subject_of_type = celtic_vassal
+		}
+		overlord = {
+			create_subject = {
+				subject = ROOT
+				subject_type = vassal
+				keep_liberty_desire = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { can_be_overlord = rce_celtic_vassal }
+			has_subject_of_type = celtic_vassal
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = celtic_vassal
+			}
+			ROOT = {
+				create_subject = {
+					subject = PREV
+					subject_type = vassal
+					keep_liberty_desire = yes
+				}
+			}
+		}
+	}
+}
