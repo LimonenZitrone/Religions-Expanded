@@ -6,7 +6,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = breton
 			}
 		}
-		$who$ = { change_primary_culture = breton }
+		$who$ = {
+			change_primary_culture = breton
+			override_country_name = RCE_CELTIC_VASSAL_breton
+		}
 	}
 	else_if = {
 		limit = {
@@ -15,7 +18,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = cornish
 			}
 		}
-		$who$ = { change_primary_culture = cornish }
+		$who$ = {
+			change_primary_culture = cornish
+			override_country_name = RCE_CELTIC_VASSAL_cornish
+		}
 	}
 	else_if = {
 		limit = {
@@ -24,7 +30,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = cumbrian_culture
 			}
 		}
-		$who$ = { change_primary_culture = cumbrian_culture }
+		$who$ = {
+			change_primary_culture = cumbrian_culture
+			override_country_name = RCE_CELTIC_VASSAL_cumbrian_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -33,7 +42,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = cambrian_culture
 			}
 		}
-		$who$ = { change_primary_culture = cambrian_culture }
+		$who$ = {
+			change_primary_culture = cambrian_culture
+			override_country_name = RCE_CELTIC_VASSAL_cambrian_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -42,7 +54,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = irish
 			}
 		}
-		$who$ = { change_primary_culture = irish }
+		$who$ = {
+			change_primary_culture = irish
+			override_country_name = RCE_CELTIC_VASSAL_irish
+		}
 	}
 	else_if = {
 		limit = {
@@ -51,7 +66,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = highland_scottish
 			}
 		}
-		$who$ = { change_primary_culture = highland_scottish }
+		$who$ = {
+			change_primary_culture = highland_scottish
+			override_country_name = RCE_CELTIC_VASSAL_highland_scottish
+		}
 	}
 	else_if = {
 		limit = {
@@ -60,7 +78,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = iceni_culture
 			}
 		}
-		$who$ = { change_primary_culture = iceni_culture }
+		$who$ = {
+			change_primary_culture = iceni_culture
+			override_country_name = RCE_CELTIC_VASSAL_iceni_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -69,7 +90,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = lusitani_culture
 			}
 		}
-		$who$ = { change_primary_culture = lusitani_culture }
+		$who$ = {
+			change_primary_culture = lusitani_culture
+			override_country_name = RCE_CELTIC_VASSAL_lusitani_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -78,7 +102,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = celtiberian_culture
 			}
 		}
-		$who$ = { change_primary_culture = celtiberian_culture }
+		$who$ = {
+			change_primary_culture = celtiberian_culture
+			override_country_name = RCE_CELTIC_VASSAL_celtiberian_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -87,7 +114,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = pictones_culture
 			}
 		}
-		$who$ = { change_primary_culture = pictones_culture }
+		$who$ = {
+			change_primary_culture = pictones_culture
+			override_country_name = RCE_CELTIC_VASSAL_pictones_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -96,7 +126,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = volcae_culture
 			}
 		}
-		$who$ = { change_primary_culture = volcae_culture }
+		$who$ = {
+			change_primary_culture = volcae_culture
+			override_country_name = RCE_CELTIC_VASSAL_volcae_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -105,7 +138,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = arverni_culture
 			}
 		}
-		$who$ = { change_primary_culture = arverni_culture }
+		$who$ = {
+			change_primary_culture = arverni_culture
+			override_country_name = RCE_CELTIC_VASSAL_arverni_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -114,7 +150,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = parisii_culture
 			}
 		}
-		$who$ = { change_primary_culture = parisii_culture }
+		$who$ = {
+			change_primary_culture = parisii_culture
+			override_country_name = RCE_CELTIC_VASSAL_parisii_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -123,7 +162,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = aedui_culture
 			}
 		}
-		$who$ = { change_primary_culture = aedui_culture }
+		$who$ = {
+			change_primary_culture = aedui_culture
+			override_country_name = RCE_CELTIC_VASSAL_aedui_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -132,7 +174,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = belgae_culture
 			}
 		}
-		$who$ = { change_primary_culture = belgae_culture }
+		$who$ = {
+			change_primary_culture = belgae_culture
+			override_country_name = RCE_CELTIC_VASSAL_belgae_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -141,7 +186,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = treveri_culture
 			}
 		}
-		$who$ = { change_primary_culture = treveri_culture }
+		$who$ = {
+			change_primary_culture = treveri_culture
+			override_country_name = RCE_CELTIC_VASSAL_treveri_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -150,7 +198,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = vangioni_culture
 			}
 		}
-		$who$ = { change_primary_culture = vangioni_culture }
+		$who$ = {
+			change_primary_culture = vangioni_culture
+			override_country_name = RCE_CELTIC_VASSAL_vangioni_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -159,7 +210,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = helvetii_culture
 			}
 		}
-		$who$ = { change_primary_culture = helvetii_culture }
+		$who$ = {
+			change_primary_culture = helvetii_culture
+			override_country_name = RCE_CELTIC_VASSAL_helvetii_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -168,7 +222,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = insubres_culture
 			}
 		}
-		$who$ = { change_primary_culture = insubres_culture }
+		$who$ = {
+			change_primary_culture = insubres_culture
+			override_country_name = RCE_CELTIC_VASSAL_insubres_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -177,7 +234,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = celtoligures_culture
 			}
 		}
-		$who$ = { change_primary_culture = celtoligures_culture }
+		$who$ = {
+			change_primary_culture = celtoligures_culture
+			override_country_name = RCE_CELTIC_VASSAL_celtoligures_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -186,7 +246,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = boiian_culture
 			}
 		}
-		$who$ = { change_primary_culture = boiian_culture }
+		$who$ = {
+			change_primary_culture = boiian_culture
+			override_country_name = RCE_CELTIC_VASSAL_boiian_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -195,7 +258,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = veneti_culture
 			}
 		}
-		$who$ = { change_primary_culture = veneti_culture }
+		$who$ = {
+			change_primary_culture = veneti_culture
+			override_country_name = RCE_CELTIC_VASSAL_veneti_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -204,7 +270,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = alaunoi_culture
 			}
 		}
-		$who$ = { change_primary_culture = alaunoi_culture }
+		$who$ = {
+			change_primary_culture = alaunoi_culture
+			override_country_name = RCE_CELTIC_VASSAL_alaunoi_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -213,7 +282,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = boiihaemian_culture
 			}
 		}
-		$who$ = { change_primary_culture = boiihaemian_culture }
+		$who$ = {
+			change_primary_culture = boiihaemian_culture
+			override_country_name = RCE_CELTIC_VASSAL_boiihaemian_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -222,7 +294,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = lougi_culture
 			}
 		}
-		$who$ = { change_primary_culture = lougi_culture }
+		$who$ = {
+			change_primary_culture = lougi_culture
+			override_country_name = RCE_CELTIC_VASSAL_lougi_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -231,7 +306,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = cotini_culture
 			}
 		}
-		$who$ = { change_primary_culture = cotini_culture }
+		$who$ = {
+			change_primary_culture = cotini_culture
+			override_country_name = RCE_CELTIC_VASSAL_cotini_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -240,7 +318,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = tektosages_culture
 			}
 		}
-		$who$ = { change_primary_culture = tektosages_culture }
+		$who$ = {
+			change_primary_culture = tektosages_culture
+			override_country_name = RCE_CELTIC_VASSAL_tektosages_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -249,7 +330,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = tauri_culture
 			}
 		}
-		$who$ = { change_primary_culture = tauri_culture }
+		$who$ = {
+			change_primary_culture = tauri_culture
+			override_country_name = RCE_CELTIC_VASSAL_tauri_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -258,7 +342,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = norici_culture
 			}
 		}
-		$who$ = { change_primary_culture = norici_culture }
+		$who$ = {
+			change_primary_culture = norici_culture
+			override_country_name = RCE_CELTIC_VASSAL_norici_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -267,7 +354,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = skordiskoi_culture
 			}
 		}
-		$who$ = { change_primary_culture = skordiskoi_culture }
+		$who$ = {
+			change_primary_culture = skordiskoi_culture
+			override_country_name = RCE_CELTIC_VASSAL_skordiskoi_culture
+		}
 	}
 	else_if = {
 		limit = {
@@ -276,7 +366,10 @@ rce_create_celtic_vassal_subject_in_target = {
 				culture = tylian_culture
 			}
 		}
-		$who$ = { change_primary_culture = tylian_culture }
+		$who$ = {
+			change_primary_culture = tylian_culture
+			override_country_name = RCE_CELTIC_VASSAL_tylian_culture
+		}
 	}
 	create_subject = {
 		subject = $who$
@@ -284,6 +377,9 @@ rce_create_celtic_vassal_subject_in_target = {
 		[[keep_liberty_desire]
 			keep_liberty_desire = $keep_liberty_desire$
 		]
+	}
+	$who$ = {
+		change_country_color = { country = PREV }
 	}
 }
 
@@ -293,6 +389,9 @@ rce_release_celtic_vassal_subject = {
 rce_release_celtic_vassal_subject_in_target = {
 	tooltip = {
 		release = $who$
+		$who$ = {
+			override_country_name = RCE_CELTIC_VASSAL_$culture$
+		}
 		create_subject = {
 			subject = $who$
 			subject_type = rce_celtic_vassal
@@ -334,6 +433,8 @@ rce_release_celtic_vassal_subject_in_target = {
 		}
 		$who$ = {
 			change_primary_culture = $culture$
+			override_country_name = RCE_CELTIC_VASSAL_$culture$
+			change_country_color = { country = PREV }
 			if = {
 				limit = {
 					is_lacking_institutions = yes

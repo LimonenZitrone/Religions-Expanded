@@ -228,112 +228,8 @@ gaelic = {
 	# New Cultures
 	norse_gael_culture = {
 		primary = KOI
-		male_names = {
-			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
-			Bhaltair Boisil Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard Bhaltair
-			Cresdean Calum Conan Conal Cormac Cailean
-			Domhnall Donnchadh Dughall Daibhidh Diarmid Dolan Daniel Deorsa Dughlas
-			Eoghan Eobhann Eideard Eachann Eoin Eosaph Eanruig Ellair
-			Fearchar Faolan Fearghas Fionn Filib Frangan Friseal Fionnlagh
-			Gillebríghde Gillechreosd Gillecallum Gilleasp Gilleandrais Garbhan Goiridh Griogair
-			Hamish Harailt Horas
-			Iain Iacob Iosag Iomhar Iosaph Iona
-			Lucais Labhrainn
-			Maoilios Murchadh Martain Mascual Marcus Mata Mecheil Morgan Mungan Murchadh
-			Neacal Niall Niallghas
-			Oilbhreis Oisean
-			Padraig Pol Peadar
-			Raibeart Ruadh Ruaraidh Raghnall Ruiseart
-			Seumas Seoras Somhairle Seleas Samuel Sachairi Steaphan
-			Thomais Tadhg Toibaid
-			Uilleam Uisdean
-		}
-		female_names = {
-			Anna
-			Beathag Baraball Bearnas Beitiris Bhioctoria Brighde
-			Catreona Ceit Coinneach Claimha
-			Deirdre Deoiridh Diorbhail
-			Ealasaid Cibhlin Eubh
-			Floraidh Floireans Fionnaghal Frangag Fionnghuala
-			Gormal Gormlaith Giorsal
-			Iseabail
-			Liusaidh Leagsaidh Leitis Lucrais Leosa
-			Mairead Marsail Marta Milread Moibeal Moire Mor Mairi
-			Nansaidh
-			Olibhia Oighrig
-			Peanaidh
-			Rut Raonaid Rebeca
-			Seonag Sorcha Sene Siusan Seleas
-			Tearlag Teasag
-			Una
-		}
-		dynasty_names = {
-			Arasgain
-			Bochanan Beitean Brus
-			Caimbeul Cinneide Caimbeulach Comyn Cochran
-			Donohoe Dernly
-			Gordan Grannd Guinne
-			Haig
-			Lamont
-			MacCongáil MacDhiarmaid Moireach MacPharlain MacLeoid MacDhomhnaill MacDhonnachaidh Munro MacNab
-			Ncill
-			Rothach Ros
-			Stiubhart Singlear Sutherlarach
-		}
 	}
 	cumbrian_culture = {
-		male_names = {
-			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
-			Bhaltair Boisil Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard Bhaltair
-			Cresdean Calum Conan Conal Cormac Cailean
-			Domhnall Donnchadh Dughall Daibhidh Diarmid Dolan Daniel Deorsa Dughlas
-			Eoghan Eobhann Eideard Eachann Eoin Eosaph Eanruig Ellair
-			Fearchar Faolan Fearghas Fionn Filib Frangan Friseal Fionnlagh
-			Gillebríghde Gillechreosd Gillecallum Gilleasp Gilleandrais Garbhan Goiridh Griogair
-			Hamish Harailt Horas
-			Iain Iacob Iosag Iomhar Iosaph Iona
-			Lucais Labhrainn
-			Maoilios Murchadh Martain Mascual Marcus Mata Mecheil Morgan Mungan Murchadh
-			Neacal Niall Niallghas
-			Oilbhreis Oisean
-			Padraig Pol Peadar
-			Raibeart Ruadh Ruaraidh Raghnall Ruiseart
-			Seumas Seoras Somhairle Seleas Samuel Sachairi Steaphan
-			Thomais Tadhg Toibaid
-			Uilleam Uisdean
-		}
-		female_names = {
-			Anna
-			Beathag Baraball Bearnas Beitiris Bhioctoria Brighde
-			Catreona Ceit Coinneach Claimha
-			Deirdre Deoiridh Diorbhail
-			Ealasaid Cibhlin Eubh
-			Floraidh Floireans Fionnaghal Frangag Fionnghuala
-			Gormal Gormlaith Giorsal
-			Iseabail
-			Liusaidh Leagsaidh Leitis Lucrais Leosa
-			Mairead Marsail Marta Milread Moibeal Moire Mor Mairi
-			Nansaidh
-			Olibhia Oighrig
-			Peanaidh
-			Rut Raonaid Rebeca
-			Seonag Sorcha Sene Siusan Seleas
-			Tearlag Teasag
-			Una
-		}
-		dynasty_names = {
-			Arasgain
-			Bochanan Beitean Brus
-			Caimbeul Cinneide Caimbeulach Comyn Cochran
-			Donohoe Dernly
-			Gordan Grannd Guinne
-			Haig
-			Lamont
-			MacCongáil MacDhiarmaid Moireach MacPharlain MacLeoid MacDhomhnaill MacDhonnachaidh Munro MacNab
-			Ncill
-			Rothach Ros
-			Stiubhart Singlear Sutherlarach
-		}
 	}
 	cambrian_culture = {
 		primary = WLS
@@ -401,279 +297,107 @@ gaelic = {
 		}
 	}
 	iceni_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	lusitani_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	celtiberian_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	pictones_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	volcae_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	arverni_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	parisii_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	aedui_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	belgae_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	treveri_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	vangioni_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	helvetii_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	insubres_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	celtoligures_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	boiian_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	veneti_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	alaunoi_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	boiihaemian_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	lougi_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	cotini_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	tektosages_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	tauri_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	norici_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	skordiskoi_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
 	}
 	tylian_culture = {
-		male_names = {
-			# placeholder
-		}
-		female_names = {
-			# placeholder
-		}
-		dynasty_names = {
-			# placeholder
-		}
+	}
+
+	male_names = {
+		Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
+		Bhaltair Boisil Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard Bhaltair
+		Cresdean Calum Conan Conal Cormac Cailean
+		Domhnall Donnchadh Dughall Daibhidh Diarmid Dolan Daniel Deorsa Dughlas
+		Eoghan Eobhann Eideard Eachann Eoin Eosaph Eanruig Ellair
+		Fearchar Faolan Fearghas Fionn Filib Frangan Friseal Fionnlagh
+		Gillebríghde Gillechreosd Gillecallum Gilleasp Gilleandrais Garbhan Goiridh Griogair
+		Hamish Harailt Horas
+		Iain Iacob Iosag Iomhar Iosaph Iona
+		Lucais Labhrainn
+		Maoilios Murchadh Martain Mascual Marcus Mata Mecheil Morgan Mungan Murchadh
+		Neacal Niall Niallghas
+		Oilbhreis Oisean
+		Padraig Pol Peadar
+		Raibeart Ruadh Ruaraidh Raghnall Ruiseart
+		Seumas Seoras Somhairle Seleas Samuel Sachairi Steaphan
+		Thomais Tadhg Toibaid
+		Uilleam Uisdean
+	}
+	female_names = {
+		Anna
+		Beathag Baraball Bearnas Beitiris Bhioctoria Brighde
+		Catreona Ceit Coinneach Claimha
+		Deirdre Deoiridh Diorbhail
+		Ealasaid Cibhlin Eubh
+		Floraidh Floireans Fionnaghal Frangag Fionnghuala
+		Gormal Gormlaith Giorsal
+		Iseabail
+		Liusaidh Leagsaidh Leitis Lucrais Leosa
+		Mairead Marsail Marta Milread Moibeal Moire Mor Mairi
+		Nansaidh
+		Olibhia Oighrig
+		Peanaidh
+		Rut Raonaid Rebeca
+		Seonag Sorcha Sene Siusan Seleas
+		Tearlag Teasag
+		Una
+	}
+	dynasty_names = {
+		Arasgain
+		Bochanan Beitean Brus
+		Caimbeul Cinneide Caimbeulach Comyn Cochran
+		Donohoe Dernly
+		Gordan Grannd Guinne
+		Haig
+		Lamont
+		MacCongáil MacDhiarmaid Moireach MacPharlain MacLeoid MacDhomhnaill MacDhonnachaidh Munro MacNab
+		Ncill
+		Rothach Ros
+		Stiubhart Singlear Sutherlarach
 	}
 }
 

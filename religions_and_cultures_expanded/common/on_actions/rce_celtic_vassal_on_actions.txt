@@ -4,13 +4,17 @@ on_dependency_gained = {
 		limit = {
 			NOT = { can_be_overlord = rce_celtic_vassal }
 			FROM = {
-				is_subject_of_type = celtic_vassal
+				is_subject_of_type = rce_celtic_vassal
 			}
 		}
 		create_subject = {
 			subject = FROM
 			subject_type = vassal
 			keep_liberty_desire = yes
+		}
+		FROM = {
+			restore_country_name = yes
+			restore_country_color = yes
 		}
 	}
 }
@@ -19,8 +23,10 @@ on_primary_culture_changed = {
 	if = {
 		limit = {
 			is_subject = yes
-			is_subject_of_type = celtic_vassal
+			is_subject_of_type = rce_celtic_vassal
 		}
+		restore_country_name = yes
+		restore_country_color = yes
 		overlord = {
 			create_subject = {
 				subject = ROOT
@@ -32,12 +38,14 @@ on_primary_culture_changed = {
 	if = {
 		limit = {
 			NOT = { can_be_overlord = rce_celtic_vassal }
-			has_subject_of_type = celtic_vassal
+			has_subject_of_type = rce_celtic_vassal
 		}
 		every_subject_country = {
 			limit = {
-				is_subject_of_type = celtic_vassal
+				is_subject_of_type = rce_celtic_vassal
 			}
+			restore_country_name = yes
+			restore_country_color = yes
 			ROOT = {
 				create_subject = {
 					subject = PREV
@@ -45,6 +53,21 @@ on_primary_culture_changed = {
 					keep_liberty_desire = yes
 				}
 			}
+		}
+	}
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			can_be_overlord = rce_celtic_vassal
+			has_subject_of_type = rce_celtic_vassal
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+			change_country_color = { country = ROOT }
 		}
 	}
 }
