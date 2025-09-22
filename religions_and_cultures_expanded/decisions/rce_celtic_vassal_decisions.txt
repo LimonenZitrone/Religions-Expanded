@@ -1,5 +1,6 @@
 country_decisions = {
 	rce_celtic_vassal_release_subject_decision = {
+		color = { 161 126 128 }
 		potential = {
 			can_be_overlord = rce_celtic_vassal
 			NOT = { has_country_flag = rce_is_releasing_celtic_vassal }

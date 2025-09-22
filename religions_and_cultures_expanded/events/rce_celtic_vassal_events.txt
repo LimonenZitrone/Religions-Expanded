@@ -17,11 +17,15 @@ country_event = {
 	option = {
 		name = breton
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = breton
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = breton
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -30,11 +34,15 @@ country_event = {
 	option = {
 		name = cornish
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = cornish
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = cornish
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -43,11 +51,15 @@ country_event = {
 	option = {
 		name = cumbrian_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = cumbrian_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = cumbrian_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -56,11 +68,15 @@ country_event = {
 	option = {
 		name = cambrian_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = cambrian_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = cambrian_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -69,11 +85,15 @@ country_event = {
 	option = {
 		name = irish
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = irish
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = irish
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -82,11 +102,15 @@ country_event = {
 	option = {
 		name = highland_scottish
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = highland_scottish
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = highland_scottish
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -95,11 +119,15 @@ country_event = {
 	option = {
 		name = iceni_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = iceni_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = iceni_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -108,11 +136,15 @@ country_event = {
 	option = {
 		name = lusitani_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = lusitani_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = lusitani_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -121,11 +153,15 @@ country_event = {
 	option = {
 		name = celtiberian_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = celtiberian_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = celtiberian_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -134,11 +170,15 @@ country_event = {
 	option = {
 		name = pictones_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = pictones_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = pictones_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -147,11 +187,15 @@ country_event = {
 	option = {
 		name = volcae_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = volcae_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = volcae_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -160,11 +204,15 @@ country_event = {
 	option = {
 		name = arverni_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = arverni_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = arverni_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -173,11 +221,15 @@ country_event = {
 	option = {
 		name = parisii_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = parisii_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = parisii_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -186,11 +238,15 @@ country_event = {
 	option = {
 		name = aedui_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = aedui_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = aedui_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -199,11 +255,15 @@ country_event = {
 	option = {
 		name = belgae_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = belgae_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = belgae_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -212,11 +272,15 @@ country_event = {
 	option = {
 		name = treveri_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = treveri_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = treveri_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -225,11 +289,15 @@ country_event = {
 	option = {
 		name = vangioni_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = vangioni_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = vangioni_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -238,11 +306,15 @@ country_event = {
 	option = {
 		name = helvetii_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = helvetii_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = helvetii_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -251,11 +323,15 @@ country_event = {
 	option = {
 		name = insubres_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = insubres_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = insubres_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -264,11 +340,15 @@ country_event = {
 	option = {
 		name = celtoligures_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = celtoligures_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = celtoligures_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -277,11 +357,15 @@ country_event = {
 	option = {
 		name = boiian_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = boiian_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = boiian_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -290,11 +374,15 @@ country_event = {
 	option = {
 		name = veneti_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = veneti_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = veneti_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -303,11 +391,15 @@ country_event = {
 	option = {
 		name = alaunoi_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = alaunoi_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = alaunoi_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -316,11 +408,15 @@ country_event = {
 	option = {
 		name = boiihaemian_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = boiihaemian_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = boiihaemian_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -329,11 +425,15 @@ country_event = {
 	option = {
 		name = lougi_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = lougi_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = lougi_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -342,11 +442,15 @@ country_event = {
 	option = {
 		name = cotini_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = cotini_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = cotini_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -355,11 +459,15 @@ country_event = {
 	option = {
 		name = tektosages_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = tektosages_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = tektosages_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -368,11 +476,15 @@ country_event = {
 	option = {
 		name = tauri_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = tauri_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = tauri_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -381,11 +493,15 @@ country_event = {
 	option = {
 		name = norici_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = norici_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = norici_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -394,11 +510,15 @@ country_event = {
 	option = {
 		name = skordiskoi_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = skordiskoi_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = skordiskoi_culture
+					check_subjects = yes
+				}
 			}
 		}
 
@@ -407,11 +527,15 @@ country_event = {
 	option = {
 		name = tylian_culture
 
+		highlight = yes
+
 		trigger = {
-			rce_is_valid_target_for_celtic_vassal = {
-				release = yes
-				culture = tylian_culture
-				check_subjects = yes
+			hidden_trigger = {
+				rce_is_valid_target_for_celtic_vassal = {
+					release = yes
+					culture = tylian_culture
+					check_subjects = yes
+				}
 			}
 		}
 

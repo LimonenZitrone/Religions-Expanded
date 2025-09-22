@@ -422,6 +422,7 @@ rce_release_celtic_vassal_subject_in_target = {
 				rce_province_is_in_region_to_celtic_vassal = { culture = $culture$ }
 			}
 			add_core = $who$
+			remove_core = PREV
 		}
 		release = $who$
 		every_owned_province = {
