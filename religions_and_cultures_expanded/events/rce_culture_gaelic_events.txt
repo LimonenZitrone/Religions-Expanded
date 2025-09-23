@@ -1,0 +1,963 @@
+namespace = rce_culture_gaelic_events
+
+country_event = {
+	id = rce_culture_gaelic_events.1
+	title = rce_culture_gaelic_events.EVTNAME1
+	desc = rce_culture_gaelic_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 169
+
+	trigger = {
+		owns = 169
+		culture_group = gaelic
+		169 = {
+			NOT = { culture = breton }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events1.EVTOPT1
+
+		169 = {
+			change_culture = breton
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.2
+	title = rce_culture_gaelic_events.EVTNAME2
+	desc = rce_culture_gaelic_events.EVTDESC2
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 233
+
+	trigger = {
+		owns = 233
+		culture_group = gaelic
+		233 = {
+			NOT = { culture = cornish }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events2.EVTOPT1
+
+		233 = {
+			change_culture = cornish
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.3
+	title = rce_culture_gaelic_events.EVTNAME3
+	desc = rce_culture_gaelic_events.EVTDESC3
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 247
+
+	trigger = {
+		owns = 247
+		culture_group = gaelic
+		247 = {
+			NOT = { culture = cumbrian_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events3.EVTOPT1
+
+		247 = {
+			change_culture = cumbrian_culture
+			set_province_flag = rce_converted_to_cumbrian_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.4
+	title = rce_culture_gaelic_events.EVTNAME4
+	desc = rce_culture_gaelic_events.EVTDESC4
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 4369
+
+	trigger = {
+		owns = 4369
+		culture_group = gaelic
+		4369 = {
+			NOT = { culture = cambrian_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events4.EVTOPT1
+
+		4369 = {
+			change_culture = cambrian_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.5
+	title = rce_culture_gaelic_events.EVTNAME5
+	desc = rce_culture_gaelic_events.EVTDESC5
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 4118
+
+	trigger = {
+		owns = 4118
+		culture_group = gaelic
+		4118 = {
+			NOT = { culture = irish }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events5.EVTOPT1
+
+		4118 = {
+			change_culture = irish
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.6
+	title = rce_culture_gaelic_events.EVTNAME6
+	desc = rce_culture_gaelic_events.EVTDESC6
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 252
+
+	trigger = {
+		owns = 252
+		culture_group = gaelic
+		252 = {
+			NOT = { culture = highland_scottish }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events6.EVTOPT1
+
+		252 = {
+			change_culture = highland_scottish
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.7
+	title = rce_culture_gaelic_events.EVTNAME7
+	desc = rce_culture_gaelic_events.EVTDESC7
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 238
+
+	trigger = {
+		owns = 238
+		culture_group = gaelic
+		238 = {
+			NOT = { culture = iceni_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events7.EVTOPT1
+
+		238 = {
+			change_culture = iceni_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.8
+	title = rce_culture_gaelic_events.EVTNAME8
+	desc = rce_culture_gaelic_events.EVTDESC8
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 227
+
+	trigger = {
+		owns = 227
+		culture_group = gaelic
+		227 = {
+			NOT = { culture = lusitani_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events8.EVTOPT1
+
+		227 = {
+			change_culture = lusitani_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.9
+	title = rce_culture_gaelic_events.EVTNAME9
+	desc = rce_culture_gaelic_events.EVTDESC9
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 206
+
+	trigger = {
+		owns = 206
+		culture_group = gaelic
+		206 = {
+			NOT = { culture = celtiberian_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events9.EVTOPT1
+
+		206 = {
+			change_culture = celtiberian_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.10
+	title = rce_culture_gaelic_events.EVTNAME10
+	desc = rce_culture_gaelic_events.EVTDESC10
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 174
+
+	trigger = {
+		owns = 174
+		culture_group = gaelic
+		174 = {
+			NOT = { culture = pictones_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events10.EVTOPT1
+
+		174 = {
+			change_culture = pictones_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.11
+	title = rce_culture_gaelic_events.EVTNAME11
+	desc = rce_culture_gaelic_events.EVTDESC11
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 196
+
+	trigger = {
+		owns = 196
+		culture_group = gaelic
+		196 = {
+			NOT = { culture = volcae_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events11.EVTOPT1
+
+		196 = {
+			change_culture = volcae_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.12
+	title = rce_culture_gaelic_events.EVTNAME12
+	desc = rce_culture_gaelic_events.EVTDESC12
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 199
+
+	trigger = {
+		owns = 199
+		culture_group = gaelic
+		199 = {
+			NOT = { culture = arverni_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events12.EVTOPT1
+
+		199 = {
+			change_culture = arverni_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.13
+	title = rce_culture_gaelic_events.EVTNAME13
+	desc = rce_culture_gaelic_events.EVTDESC13
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 183
+
+	trigger = {
+		owns = 183
+		culture_group = gaelic
+		183 = {
+			NOT = { culture = parisii_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events13.EVTOPT1
+
+		183 = {
+			change_culture = parisii_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.14
+	title = rce_culture_gaelic_events.EVTNAME14
+	desc = rce_culture_gaelic_events.EVTDESC14
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 192
+
+	trigger = {
+		owns = 192
+		culture_group = gaelic
+		192 = {
+			NOT = { culture = aedui_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events14.EVTOPT1
+
+		192 = {
+			change_culture = aedui_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.15
+	title = rce_culture_gaelic_events.EVTNAME15
+	desc = rce_culture_gaelic_events.EVTDESC15
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 92
+
+	trigger = {
+		owns = 92
+		culture_group = gaelic
+		92 = {
+			NOT = { culture = belgae_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events15.EVTOPT1
+
+		92 = {
+			change_culture = belgae_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.16
+	title = rce_culture_gaelic_events.EVTNAME16
+	desc = rce_culture_gaelic_events.EVTDESC16
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 80
+
+	trigger = {
+		owns = 80
+		culture_group = gaelic
+		80 = {
+			NOT = { culture = treveri_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events16.EVTOPT1
+
+		80 = {
+			change_culture = treveri_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.17
+	title = rce_culture_gaelic_events.EVTNAME17
+	desc = rce_culture_gaelic_events.EVTDESC17
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 74
+
+	trigger = {
+		owns = 74
+		culture_group = gaelic
+		74 = {
+			NOT = { culture = vangioni_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events17.EVTOPT1
+
+		74 = {
+			change_culture = vangioni_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.18
+	title = rce_culture_gaelic_events.EVTNAME18
+	desc = rce_culture_gaelic_events.EVTDESC18
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 1869
+
+	trigger = {
+		owns = 1869
+		culture_group = gaelic
+		1869 = {
+			NOT = { culture = helvetii_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events18.EVTOPT1
+
+		1869 = {
+			change_culture = helvetii_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.19
+	title = rce_culture_gaelic_events.EVTNAME19
+	desc = rce_culture_gaelic_events.EVTDESC19
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 104
+
+	trigger = {
+		owns = 104
+		culture_group = gaelic
+		104 = {
+			NOT = { culture = insubres_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events19.EVTOPT1
+
+		104 = {
+			change_culture = insubres_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.20
+	title = rce_culture_gaelic_events.EVTNAME20
+	desc = rce_culture_gaelic_events.EVTDESC20
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 101
+
+	trigger = {
+		owns = 101
+		culture_group = gaelic
+		101 = {
+			NOT = { culture = celtoligures_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events20.EVTOPT1
+
+		101 = {
+			change_culture = celtoligures_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.21
+	title = rce_culture_gaelic_events.EVTNAME21
+	desc = rce_culture_gaelic_events.EVTDESC21
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 2977
+
+	trigger = {
+		owns = 2977
+		culture_group = gaelic
+		2977 = {
+			NOT = { culture = boiian_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events21.EVTOPT1
+
+		2977 = {
+			change_culture = boiian_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.22
+	title = rce_culture_gaelic_events.EVTNAME22
+	desc = rce_culture_gaelic_events.EVTDESC22
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 112
+
+	trigger = {
+		owns = 112
+		culture_group = gaelic
+		112 = {
+			NOT = { culture = veneti_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events22.EVTOPT1
+
+		112 = {
+			change_culture = veneti_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.23
+	title = rce_culture_gaelic_events.EVTNAME23
+	desc = rce_culture_gaelic_events.EVTDESC23
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 65
+
+	trigger = {
+		owns = 65
+		culture_group = gaelic
+		65 = {
+			NOT = { culture = alaunoi_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events23.EVTOPT1
+
+		65 = {
+			change_culture = alaunoi_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.24
+	title = rce_culture_gaelic_events.EVTNAME24
+	desc = rce_culture_gaelic_events.EVTDESC24
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 266
+
+	trigger = {
+		owns = 266
+		culture_group = gaelic
+		266 = {
+			NOT = { culture = boiihaemian_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events24.EVTOPT1
+
+		266 = {
+			change_culture = boiihaemian_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.25
+	title = rce_culture_gaelic_events.EVTNAME25
+	desc = rce_culture_gaelic_events.EVTDESC25
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 262
+
+	trigger = {
+		owns = 262
+		culture_group = gaelic
+		262 = {
+			NOT = { culture = lougi_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events25.EVTOPT1
+
+		262 = {
+			change_culture = lougi_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.26
+	title = rce_culture_gaelic_events.EVTNAME26
+	desc = rce_culture_gaelic_events.EVTDESC26
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 1772
+
+	trigger = {
+		owns = 1772
+		culture_group = gaelic
+		1772 = {
+			NOT = { culture = cotini_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events26.EVTOPT1
+
+		1772 = {
+			change_culture = cotini_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.27
+	title = rce_culture_gaelic_events.EVTNAME27
+	desc = rce_culture_gaelic_events.EVTDESC27
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 153
+
+	trigger = {
+		owns = 153
+		culture_group = gaelic
+		153 = {
+			NOT = { culture = tektosages_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events27.EVTOPT1
+
+		153 = {
+			change_culture = tektosages_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.28
+	title = rce_culture_gaelic_events.EVTNAME28
+	desc = rce_culture_gaelic_events.EVTDESC28
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 4751
+
+	trigger = {
+		owns = 4751
+		culture_group = gaelic
+		4751 = {
+			NOT = { culture = tauri_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events28.EVTOPT1
+
+		4751 = {
+			change_culture = tauri_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.29
+	title = rce_culture_gaelic_events.EVTNAME29
+	desc = rce_culture_gaelic_events.EVTDESC29
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 132
+
+	trigger = {
+		owns = 132
+		culture_group = gaelic
+		132 = {
+			NOT = { culture = norici_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events29.EVTOPT1
+
+		132 = {
+			change_culture = norici_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.30
+	title = rce_culture_gaelic_events.EVTNAME30
+	desc = rce_culture_gaelic_events.EVTDESC30
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 1827
+
+	trigger = {
+		owns = 1827
+		culture_group = gaelic
+		1827 = {
+			NOT = { culture = skordiskoi_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events30.EVTOPT1
+
+		1827 = {
+			change_culture = skordiskoi_culture
+		}
+	}
+}
+
+country_event = {
+	id = rce_culture_gaelic_events.31
+	title = rce_culture_gaelic_events.EVTNAME31
+	desc = rce_culture_gaelic_events.EVTDESC31
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 161
+
+	trigger = {
+		owns = 161
+		culture_group = gaelic
+		161 = {
+			NOT = { culture = tylian_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = rce_culture_gaelic_events31.EVTOPT1
+
+		161 = {
+			change_culture = tylian_culture
+		}
+	}
+}

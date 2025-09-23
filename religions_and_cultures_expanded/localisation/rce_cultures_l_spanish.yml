@@ -107,6 +107,130 @@
  rce_culture_cumbrian_culture_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
  rce_culture_cumbrian_culture_events1.EVTOPT1: "Interesting."
 
+ rce_culture_gaelic_events.EVTNAME1: "Emergence of the Breton culture"
+ rce_culture_gaelic_events.EVTDESC1: "The long time the population of [169.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events1.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME2: "Emergence of the Cornish culture"
+ rce_culture_gaelic_events.EVTDESC2: "The long time the population of [233.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events2.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME3: "Emergence of the Cumbrian culture"
+ rce_culture_gaelic_events.EVTDESC3: "The long time the population of [247.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events3.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME4: "Emergence of the Cambrian culture"
+ rce_culture_gaelic_events.EVTDESC4: "The long time the population of [4369.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events4.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME5: "Emergence of the Irish culture"
+ rce_culture_gaelic_events.EVTDESC5: "The long time the population of [4118.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events5.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME6: "Emergence of the Gaelic culture"
+ rce_culture_gaelic_events.EVTDESC6: "The long time the population of [252.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events6.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME7: "Emergence of the Iceni culture"
+ rce_culture_gaelic_events.EVTDESC7: "The long time the population of [238.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events7.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME8: "Emergence of the Lusitani culture"
+ rce_culture_gaelic_events.EVTDESC8: "The long time the population of [227.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events8.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME9: "Emergence of the Celtiberian culture"
+ rce_culture_gaelic_events.EVTDESC9: "The long time the population of [206.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events9.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME10: "Emergence of the Pictones culture"
+ rce_culture_gaelic_events.EVTDESC10: "The long time the population of [174.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events10.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME11: "Emergence of the Volcae culture"
+ rce_culture_gaelic_events.EVTDESC11: "The long time the population of [196.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events11.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME12: "Emergence of the Arverni culture"
+ rce_culture_gaelic_events.EVTDESC12: "The long time the population of [199.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events12.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME13: "Emergence of the Parisii culture"
+ rce_culture_gaelic_events.EVTDESC13: "The long time the population of [183.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events13.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME14: "Emergence of the Aedui culture"
+ rce_culture_gaelic_events.EVTDESC14: "The long time the population of [192.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events14.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME15: "Emergence of the Belgae culture"
+ rce_culture_gaelic_events.EVTDESC15: "The long time the population of [92.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events15.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME16: "Emergence of the Treveri culture"
+ rce_culture_gaelic_events.EVTDESC16: "The long time the population of [80.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events16.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME17: "Emergence of the Vangioni culture"
+ rce_culture_gaelic_events.EVTDESC17: "The long time the population of [74.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events17.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME18: "Emergence of the Helvetii culture"
+ rce_culture_gaelic_events.EVTDESC18: "The long time the population of [1869.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events18.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME19: "Emergence of the Insubres culture"
+ rce_culture_gaelic_events.EVTDESC19: "The long time the population of [104.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events19.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME20: "Emergence of the Celtoligures culture"
+ rce_culture_gaelic_events.EVTDESC20: "The long time the population of [101.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events20.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME21: "Emergence of the Boiian culture"
+ rce_culture_gaelic_events.EVTDESC21: "The long time the population of [2977.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events21.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME22: "Emergence of the Veneti culture"
+ rce_culture_gaelic_events.EVTDESC22: "The long time the population of [112.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events22.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME23: "Emergence of the Alaunoi culture"
+ rce_culture_gaelic_events.EVTDESC23: "The long time the population of [65.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events23.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME24: "Emergence of the Boiihaemian culture"
+ rce_culture_gaelic_events.EVTDESC24: "The long time the population of [266.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events24.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME25: "Emergence of the Lougi culture"
+ rce_culture_gaelic_events.EVTDESC25: "The long time the population of [262.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events25.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME26: "Emergence of the Cotini culture"
+ rce_culture_gaelic_events.EVTDESC26: "The long time the population of [1772.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events26.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME27: "Emergence of the Tektosages culture"
+ rce_culture_gaelic_events.EVTDESC27: "The long time the population of [153.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events27.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME28: "Emergence of the Tauri culture"
+ rce_culture_gaelic_events.EVTDESC28: "The long time the population of [4751.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events28.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME29: "Emergence of the Norici culture"
+ rce_culture_gaelic_events.EVTDESC29: "The long time the population of [132.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events29.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME30: "Emergence of the Skordiskoi culture"
+ rce_culture_gaelic_events.EVTDESC30: "The long time the population of [1827.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events30.EVTOPT1: "Interesting."
+
+ rce_culture_gaelic_events.EVTNAME31: "Emergence of the Tylian culture"
+ rce_culture_gaelic_events.EVTDESC31: "The long time the population of [161.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_gaelic_events31.EVTOPT1: "Interesting."
+
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"
  rce_culture_decision_convert_to_assyrian_culture_desc: "We own an important province of the Assyrian culture and have [Root.Religion.GetGroupName] influences, so we should adopt the Assyrian culture."

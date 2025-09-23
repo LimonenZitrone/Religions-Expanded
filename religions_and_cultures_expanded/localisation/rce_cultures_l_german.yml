@@ -107,6 +107,130 @@
  rce_culture_cumbrian_culture_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_cumbrian_culture_events1.EVTOPT1: "Interessant."
 
+ rce_culture_gaelic_events.EVTNAME1: "Entstehung der bretonischen Kultur"
+ rce_culture_gaelic_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [169.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events1.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME2: "Entstehung der kornischen Kultur"
+ rce_culture_gaelic_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [233.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events2.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME3: "Entstehung der kumbrischen Kultur"
+ rce_culture_gaelic_events.EVTDESC3: "Die lange Zeit, in der die Bevölkerung von [247.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events3.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME4: "Entstehung der kambrischen Kultur"
+ rce_culture_gaelic_events.EVTDESC4: "Die lange Zeit, in der die Bevölkerung von [4369.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events4.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME5: "Entstehung der irischen Kultur"
+ rce_culture_gaelic_events.EVTDESC5: "Die lange Zeit, in der die Bevölkerung von [4118.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events5.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME6: "Entstehung der gälischen Kultur"
+ rce_culture_gaelic_events.EVTDESC6: "Die lange Zeit, in der die Bevölkerung von [252.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events6.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME7: "Entstehung der icenischen Kultur"
+ rce_culture_gaelic_events.EVTDESC7: "Die lange Zeit, in der die Bevölkerung von [238.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events7.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME8: "Entstehung der lusitanischen Kultur"
+ rce_culture_gaelic_events.EVTDESC8: "Die lange Zeit, in der die Bevölkerung von [227.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events8.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME9: "Entstehung der keltiberischen Kultur"
+ rce_culture_gaelic_events.EVTDESC9: "Die lange Zeit, in der die Bevölkerung von [206.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events9.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME10: "Entstehung der piktonischen Kultur"
+ rce_culture_gaelic_events.EVTDESC10: "Die lange Zeit, in der die Bevölkerung von [174.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events10.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME11: "Entstehung der volcaeischen Kultur"
+ rce_culture_gaelic_events.EVTDESC11: "Die lange Zeit, in der die Bevölkerung von [196.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events11.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME12: "Entstehung der arvernischen Kultur"
+ rce_culture_gaelic_events.EVTDESC12: "Die lange Zeit, in der die Bevölkerung von [199.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events12.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME13: "Entstehung der parisischen Kultur"
+ rce_culture_gaelic_events.EVTDESC13: "Die lange Zeit, in der die Bevölkerung von [183.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events13.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME14: "Entstehung der aeduischen Kultur"
+ rce_culture_gaelic_events.EVTDESC14: "Die lange Zeit, in der die Bevölkerung von [192.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events14.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME15: "Entstehung der belgischen Kultur"
+ rce_culture_gaelic_events.EVTDESC15: "Die lange Zeit, in der die Bevölkerung von [92.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events15.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME16: "Entstehung der treverischen Kultur"
+ rce_culture_gaelic_events.EVTDESC16: "Die lange Zeit, in der die Bevölkerung von [80.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events16.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME17: "Entstehung der vangionischen Kultur"
+ rce_culture_gaelic_events.EVTDESC17: "Die lange Zeit, in der die Bevölkerung von [74.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events17.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME18: "Entstehung der helvetischen Kultur"
+ rce_culture_gaelic_events.EVTDESC18: "Die lange Zeit, in der die Bevölkerung von [1869.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events18.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME19: "Entstehung der insubrischen Kultur"
+ rce_culture_gaelic_events.EVTDESC19: "Die lange Zeit, in der die Bevölkerung von [104.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events19.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME20: "Entstehung der keltisch-Ligurischen Kultur"
+ rce_culture_gaelic_events.EVTDESC20: "Die lange Zeit, in der die Bevölkerung von [101.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events20.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME21: "Entstehung der boierischen Kultur"
+ rce_culture_gaelic_events.EVTDESC21: "Die lange Zeit, in der die Bevölkerung von [2977.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events21.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME22: "Entstehung der venetischen Kultur"
+ rce_culture_gaelic_events.EVTDESC22: "Die lange Zeit, in der die Bevölkerung von [112.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events22.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME23: "Entstehung der alaunischen Kultur"
+ rce_culture_gaelic_events.EVTDESC23: "Die lange Zeit, in der die Bevölkerung von [65.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events23.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME24: "Entstehung der boiohaemischen Kultur"
+ rce_culture_gaelic_events.EVTDESC24: "Die lange Zeit, in der die Bevölkerung von [266.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events24.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME25: "Entstehung der lugischen Kultur"
+ rce_culture_gaelic_events.EVTDESC25: "Die lange Zeit, in der die Bevölkerung von [262.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events25.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME26: "Entstehung der kotinischen Kultur"
+ rce_culture_gaelic_events.EVTDESC26: "Die lange Zeit, in der die Bevölkerung von [1772.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events26.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME27: "Entstehung der tektosagischen Kultur"
+ rce_culture_gaelic_events.EVTDESC27: "Die lange Zeit, in der die Bevölkerung von [153.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events27.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME28: "Entstehung der taurinischen Kultur"
+ rce_culture_gaelic_events.EVTDESC28: "Die lange Zeit, in der die Bevölkerung von [4751.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events28.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME29: "Entstehung der norikischen Kultur"
+ rce_culture_gaelic_events.EVTDESC29: "Die lange Zeit, in der die Bevölkerung von [132.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events29.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME30: "Entstehung der skordiskischen Kultur"
+ rce_culture_gaelic_events.EVTDESC30: "Die lange Zeit, in der die Bevölkerung von [1827.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events30.EVTOPT1: "Interessant."
+
+ rce_culture_gaelic_events.EVTNAME31: "Entstehung der tylischen Kultur"
+ rce_culture_gaelic_events.EVTDESC31: "Die lange Zeit, in der die Bevölkerung von [161.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_gaelic_events31.EVTOPT1: "Interessant."
+
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Assyrische Kultur annehmen"
  rce_culture_decision_convert_to_assyrian_culture_desc: "Wir besitzen eine wichtige Provinz der assyrischen Kultur und sind [Root.Religion.GetGroupName] beeinflusst, also sollten wir die assyrische Kultur annehmen."
