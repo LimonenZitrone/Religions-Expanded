@@ -77,6 +77,7 @@ country_event = {
 		culture_group = gaelic
 		247 = {
 			NOT = { culture = cumbrian_culture }
+			NOT = { has_province_flag = rce_converted_to_cumbrian_culture }
 		}
 	}
 
