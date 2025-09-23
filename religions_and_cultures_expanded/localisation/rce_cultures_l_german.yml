@@ -103,7 +103,7 @@
  rce_culture_west_slavic_cultures_in_north_germany_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_west_slavic_cultures_in_north_germany_events1.EVTOPT1: "Interessant."
 
- rce_culture_cumbrian_culture_events.EVTNAME1: "Entstehung der Kumbrischen Kultur"
+ rce_culture_cumbrian_culture_events.EVTNAME1: "Entstehung der kumbrischen Kultur"
  rce_culture_cumbrian_culture_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_cumbrian_culture_events1.EVTOPT1: "Interessant."
 
