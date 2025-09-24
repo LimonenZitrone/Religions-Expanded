@@ -15,7 +15,7 @@ country_decisions = {
 			country_event = { id = rce_celtic_vassal_events.1 }
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }

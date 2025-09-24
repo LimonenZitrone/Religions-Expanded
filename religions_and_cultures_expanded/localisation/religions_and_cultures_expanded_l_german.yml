@@ -83,9 +83,9 @@
  rce_celtic_vassal_events.EVTDESC1: "Wählt hier aus, für welche Kultur Ihr einen Keltischen Vasallen entlassen möchtet. Ein passendes Land wird in bestimmten, von Eucht besessenen Gebieten entlassen und verändert seine Primärkultur zu der gewählten Kultur, um sie zu verbreiten."
  rce_celtic_vassal_events1.EVTOPT1: "Abbrechen."
 
- rce_celtic_vassal_events.EVTNAME1: "Verbreitung der [Root.Owner.Culture.GetName]en Kultur"
- rce_celtic_vassal_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetName]en Einflüssen lebte, hat dazu geführt, dass sich die Kultur in dieser Provinz verbreitet hat."
- rce_celtic_vassal_events1.EVTOPT1: "Interessant."
+ rce_celtic_vassal_events.EVTNAME2: "Verbreitung der [Root.Owner.Culture.GetName]en Kultur"
+ rce_celtic_vassal_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetName]en Einflüssen lebte, hat dazu geführt, dass sich die Kultur in dieser Provinz verbreitet hat."
+ rce_celtic_vassal_events2.EVTOPT1: "Interessant."
 
  # New Diplomatic Actions:
  rce_celtic_vassal_create_subject_title: "Keltischen Vasallen errichten"
@@ -193,13 +193,19 @@
 
  rce_peace_treaty_make_celtic_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem @[Root.GetTag] §Y[Root.GetAdjective]en§! Keltischen Vasallen."
  CB_ALLOWED_rce_peace_treaty_make_celtic_vassal: "Keltischen Vasallen erzwingen"
- PEACE_rce_peace_treaty_make_celtic_vassal: "Keltischen Vasallen erzwingen"
+ PEACE_rce_peace_treaty_make_celtic_vassal: "$TAKERS$er Keltischer Vasall"
+
+ rce_peace_treaty_make_celtic_vassal_capped_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem @[Root.GetTag] §Y[Root.GetAdjective]en§! Keltischen Vasallen."
+ CB_ALLOWED_rce_peace_treaty_make_celtic_vassal_capped: "Keltischen Vasallen erzwingen"
+ PEACE_rce_peace_treaty_make_celtic_vassal_capped: "$TAKERS$er Keltischer Vasall"
 
  # Casus Bellis:
  cb_rce_religion_mechanic_nestorian_patriarchy_excommunication: "Exkommunizierter Herrscher"
  cb_rce_religion_mechanic_nestorian_patriarchy_excommunication_desc: "Ihr Herrscher wurde exkommuniziert."
  cb_rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation: "Zentrum der Konvertierung zerstören"
  cb_rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_desc: "Sie sind der derzeitige Kontrolleur des Nestorischen Patriarchats. Wir müssen sie dazu zwingen, das Zentrum der Konvertierung, das den Nestorianischen Glauben in unseren Ländereien verbreitet, zu zerstören!"
+ cb_rce_create_celtic_vassal: "Keltischen Vasallen erzwingen"
+ cb_rce_create_celtic_vassal_desc: "Wir können sie unterwerfen und zu einem Keltischen Vasallen machen."
 
  # War Goals:
  rce_religion_mechanic_nestorian_patriarchy_excommunication_war_goal: "Eroberung einer Provinz"

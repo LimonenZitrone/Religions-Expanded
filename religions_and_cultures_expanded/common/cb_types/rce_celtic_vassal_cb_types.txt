@@ -1,0 +1,23 @@
+cb_rce_create_celtic_vassal = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		ai = no
+		can_be_overlord = rce_celtic_vassal
+	}
+
+	prerequisites = {
+		OR = {
+			claim = FROM # cb_conquest
+			core_claim = FROM # cb_core
+			has_casus_belli = { type = cb_imperial target = FROM }
+			has_casus_belli = { type = cb_vassalize_mission target = FROM }
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+	}
+
+	war_goal = rce_rce_create_celtic_vassal
+}

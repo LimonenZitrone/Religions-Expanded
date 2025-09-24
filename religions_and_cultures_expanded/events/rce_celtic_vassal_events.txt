@@ -633,7 +633,7 @@ province_event = {
 	}
 
 	option = {
-		name = rce_culture_cumbrian_culture_events1.EVTOPT1
+		name = rce_culture_cumbrian_culture_events2.EVTOPT1
 
 		change_culture = owner
 	}

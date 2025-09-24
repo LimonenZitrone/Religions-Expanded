@@ -83,9 +83,9 @@
  rce_celtic_vassal_events.EVTDESC1: "Choose here for which culture you want to release a Celtic Vassal. A fitting country will be released in certain areas of your owned provinces and change the primary culture to specified culture in order to spread it."
  rce_celtic_vassal_events1.EVTOPT1: "Cancel."
 
- rce_celtic_vassal_events.EVTNAME1: "Spread of the [Root.Owner.Culture.GetName] culture"
- rce_celtic_vassal_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetName] influences has lead to the culture spreading to this province."
- rce_celtic_vassal_events1.EVTOPT1: "Interesting."
+ rce_celtic_vassal_events.EVTNAME2: "Spread of the [Root.Owner.Culture.GetName] culture"
+ rce_celtic_vassal_events.EVTDESC2: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetName] influences has lead to the culture spreading to this province."
+ rce_celtic_vassal_events2.EVTOPT1: "Interesting."
 
  # New Diplomatic Actions:
  rce_celtic_vassal_create_subject_title: "Establish Celtic Vassal"
@@ -193,13 +193,19 @@
 
  rce_peace_treaty_make_celtic_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! will become a @[Root.GetTag] §Y[Root.GetAdjective]§! Celtic Vassal."
  CB_ALLOWED_rce_peace_treaty_make_celtic_vassal: "Force Celtic Vassal"
- PEACE_rce_peace_treaty_make_celtic_vassal: "Force Celtic Vassal"
+ PEACE_rce_peace_treaty_make_celtic_vassal: "$TAKERS$ Celtic Vassal"
+
+ rce_peace_treaty_make_celtic_vassal_capped_desc: "@[From.GetTag] §Y[From.GetName]§! will become a @[Root.GetTag] §Y[Root.GetAdjective]§! Celtic Vassal."
+ CB_ALLOWED_rce_peace_treaty_make_celtic_vassal_capped: "Force Celtic Vassal"
+ PEACE_rce_peace_treaty_make_celtic_vassal_capped: "$TAKERS$ Celtic Vassal"
 
  # Casus Bellis:
  cb_rce_religion_mechanic_nestorian_patriarchy_excommunication: "Excommunicated Ruler"
  cb_rce_religion_mechanic_nestorian_patriarchy_excommunication_desc: "Their ruler has been excommunicated."
  cb_rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation: "Destroy Center of Conversion"
  cb_rce_religion_mechanic_nestorian_patriarchy_remove_center_of_reformation_desc: "They are the current Nestorian Patriarchy Controller. We must force them to destroy the Center of Conversion that is spreading the Nestorian faith in our lands!"
+ cb_rce_create_celtic_vassal: "Enforce Celtic Vassal"
+ cb_rce_create_celtic_vassal_desc: "We can subjugate them and turn them into a Celtic Vassal."
 
  # War Goals:
  rce_religion_mechanic_nestorian_patriarchy_excommunication_war_goal: "Take a province"

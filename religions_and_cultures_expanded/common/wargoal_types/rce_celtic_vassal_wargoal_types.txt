@@ -1,0 +1,26 @@
+rce_rce_create_celtic_vassal = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			rce_peace_treaty_make_celtic_vassal
+			rce_peace_treaty_make_celtic_vassal_capped
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = VASSAL_MISSION_WAR_NAME
+}
