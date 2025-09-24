@@ -15,6 +15,7 @@ province_event = {
 		culture_group = british
 		owner = {
 			culture_group = gaelic
+			NOT = { is_subject_of_type = rce_celtic_vassal }
 		}
 		NOT = { has_province_flag = rce_converted_to_cumbrian_culture }
 		any_neighbor_province = {

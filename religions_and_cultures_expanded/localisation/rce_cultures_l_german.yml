@@ -231,6 +231,15 @@
  rce_culture_gaelic_events.EVTDESC31: "Die lange Zeit, in der die Bevölkerung von [161.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_gaelic_events31.EVTOPT1: "Interessant."
 
+ rce_culture_hanseatic_culture_events.EVTNAME1: "Emergence of the Hanseatic culture"
+ rce_culture_hanseatic_culture_events.EVTDESC1: "Mit der Gründung des Hansebunds ist die Anzahl der Handelsreisenden gestiegen. Märkte sind zu einem Ort kulturellen Austauschs geworden, wodurch nun eine neue Kultur in [Root.Capital.GetName] entstanden ist."
+ rce_culture_hanseatic_culture_events1.EVTOPT1: "Fördert die neue Kultur."
+ rce_culture_hanseatic_culture_events1.EVTOPT2: "Unsere Wurzeln sind [Root.Culture.GetName]."
+
+ rce_culture_hanseatic_culture_events.EVTNAME2: "Verbreitung der hanseatischenen Kultur"
+ rce_culture_hanseatic_culture_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetName]en Einflüssen lebte, hat dazu geführt, dass sich die Kultur in dieser Provinz verbreitet hat."
+ rce_culture_hanseatic_culture_events2.EVTOPT1: "Interessant."
+
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Assyrische Kultur annehmen"
  rce_culture_decision_convert_to_assyrian_culture_desc: "Wir besitzen eine wichtige Provinz der assyrischen Kultur und sind [Root.Religion.GetGroupName] beeinflusst, also sollten wir die assyrische Kultur annehmen."

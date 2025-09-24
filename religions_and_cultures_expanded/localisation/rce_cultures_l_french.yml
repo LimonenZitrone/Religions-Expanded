@@ -69,6 +69,7 @@
  norici_culture: "Norici"
  skordiskoi_culture: "Skordiskoi"
  tylian_culture: "Tylian"
+ hanseatic_culture: "Hanseatic"
 
  # Events:
  rce_culture_aramaic_culture_group_events.EVTNAME1: "Emergence of the Chaldean culture"
@@ -230,6 +231,15 @@
  rce_culture_gaelic_events.EVTNAME31: "Emergence of the Tylian culture"
  rce_culture_gaelic_events.EVTDESC31: "The long time the population of [161.GetName] has been living under [Root.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
  rce_culture_gaelic_events31.EVTOPT1: "Interesting."
+
+ rce_culture_hanseatic_culture_events.EVTNAME1: "Emergence of the Hanseatic culture"
+ rce_culture_hanseatic_culture_events.EVTDESC1: "With the formation of the Hanseatic League the amount of commercial travelers has increased. Markets became places of cultural exchange, which has lead to a new culture emerging in [Root.Capital.GetName]."
+ rce_culture_hanseatic_culture_events1.EVTOPT1: "Embrace the new culture."
+ rce_culture_hanseatic_culture_events1.EVTOPT2: "Our roots are [Root.Culture.GetName]."
+
+ rce_culture_hanseatic_culture_events.EVTNAME2: "Spread of the Hanseatic culture"
+ rce_culture_hanseatic_culture_events.EVTDESC2: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetName] influences has lead to the culture spreading to this province."
+ rce_culture_hanseatic_culture_events2.EVTOPT1: "Interesting."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"

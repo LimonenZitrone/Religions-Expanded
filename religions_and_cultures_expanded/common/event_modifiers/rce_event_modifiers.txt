@@ -67,6 +67,11 @@ rce_germanic_culture_converted_to_west_slavic_culture_modifier = {
 	local_development_cost = -0.1
 	local_tax_modifier = 0.2
 }
+rce_hanseatic_culture_conversion_modifier = {
+	culture_conversion_cost = -0.33
+	culture_conversion_time = -0.33
+	num_accepted_cultures = 1
+}
 
 # Subject Type Modifiers:
 rce_celtic_vassal_modifier = {

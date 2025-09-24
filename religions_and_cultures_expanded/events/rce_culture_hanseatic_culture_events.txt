@@ -1,0 +1,155 @@
+namespace = rce_culture_hanseatic_culture_events
+
+country_event = {
+	id = rce_culture_hanseatic_culture_events.1
+	title = rce_culture_hanseatic_culture_events.EVTNAME1
+	desc = rce_culture_hanseatic_culture_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	goto = capital
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag
+			has_country_flag = is_hanseatic_league_flag
+		}
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+		}
+		NOT = { primary_culture = hanseatic_culture }
+		capital_scope = {
+			NOT = { culture = hanseatic_culture }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			export_to_variable = {
+				which = rce_pre_hanseatic_culture_primary
+				value = trigger_value:primary_culture
+			}
+		}
+	}
+
+	option = {
+		name = rce_culture_hanseatic_culture_events1.EVTOPT1
+
+		ai_chance = { factor = 0.1 }
+
+		change_primary_culture = hanseatic_culture
+		capital_scope = {
+			change_culture = hanseatic_culture
+		}
+		add_country_modifier = {
+			name = rce_hanseatic_culture_conversion_modifier
+			duration = 10950
+		}
+		add_accepted_culture = variable:rce_pre_hanseatic_culture_primary
+	}
+
+	option = {
+		name = rce_culture_hanseatic_culture_events1.EVTOPT2
+
+		ai_chance = { factor = 0.9 }
+
+		add_accepted_culture_or_dip_power = { culture = hanseatic_culture dip_reward = no free = yes }
+		capital_scope = {
+			change_culture = hanseatic_culture
+		}
+	}
+
+	after = {
+		set_variable = { which = rce_pre_hanseatic_culture_primary value = 0 }
+	}
+}
+
+province_event = {
+	id = rce_culture_hanseatic_culture_events.2
+	title = rce_culture_hanseatic_culture_events.EVTNAME2
+	desc = rce_culture_hanseatic_culture_events.EVTDESC2
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			province_id = 45
+			province_id = 44
+			province_id = 1874
+			province_id = 25
+			province_id = 43
+			province_id = 1858
+			province_id = 38
+		}
+		NOT = { culture = hanseatic_culture }
+		owner = {
+			primary_culture = hanseatic_culture
+		}
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				has_owner_culture = yes
+			}
+		}
+		modifier = {
+			factor = 0.9
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			calc_true_if = {
+				amount = 4
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			calc_true_if = {
+				amount = 5
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_culture_hanseatic_culture_events2.EVTOPT1
+
+		change_culture = hanseatic_culture
+	}
+}

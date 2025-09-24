@@ -1,0 +1,9 @@
+on_primary_culture_changed = {
+	if = {
+		limit = {
+			NOT = { primary_culture = hanseatic_culture }
+			has_country_modifier = rce_hanseatic_culture_conversion_modifier
+		}
+		remove_country_modifier = rce_hanseatic_culture_conversion_modifier
+	}
+}

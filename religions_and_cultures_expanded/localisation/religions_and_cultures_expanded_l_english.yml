@@ -25,6 +25,8 @@
  rce_formable_nestorian_kingdom_of_god_modifier: "The Kingdom of God"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "The Patriarch has declared himself as the custodian of the Kingdom of God on Earth."
  rce_germanic_culture_converted_to_west_slavic_culture_modifier: "New Settlements"
+ rce_hanseatic_culture_conversion_modifier: "Emergence of the Hanseatic Culture"
+ desc_rce_hanseatic_culture_conversion_modifier: "§YThis modifier will be removed when changing primary culture.§!"
  rce_celtic_vassal_modifier: "Celtic Vassal"
  rce_celtic_vassal_upkeep_modifier: "Marriage with Celtic Vassal"
 
@@ -80,6 +82,10 @@
  rce_celtic_vassal_events.EVTNAME1: "Release a Celtic Vassal"
  rce_celtic_vassal_events.EVTDESC1: "Choose here for which culture you want to release a Celtic Vassal. A fitting country will be released in certain areas of your owned provinces and change the primary culture to specified culture in order to spread it."
  rce_celtic_vassal_events1.EVTOPT1: "Cancel."
+
+ rce_celtic_vassal_events.EVTNAME1: "Spread of the [Root.Owner.Culture.GetName] culture"
+ rce_celtic_vassal_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetName] influences has lead to the culture spreading to this province."
+ rce_celtic_vassal_events1.EVTOPT1: "Interesting."
 
  # New Diplomatic Actions:
  rce_celtic_vassal_create_subject_title: "Establish Celtic Vassal"

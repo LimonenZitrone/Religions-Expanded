@@ -25,6 +25,8 @@
  rce_formable_nestorian_kingdom_of_god_modifier: "Königreich Gottes"
  desc_rce_formable_nestorian_kingdom_of_god_modifier: "Der Patriarch hat sich selbst zum Verwalter des Königreichs Gottes auf Erden ausgerufen."
  rce_germanic_culture_converted_to_west_slavic_culture_modifier: "Neue Siedlungen"
+ rce_hanseatic_culture_conversion_modifier: "Entstehung der hanseatischen Kultur"
+ desc_rce_hanseatic_culture_conversion_modifier: "§YDieser Modifikator wird beim Wechsel der Primärkultur entfernt.§!"
  rce_celtic_vassal_modifier: "Keltischer Vasall"
  rce_celtic_vassal_upkeep_modifier: "Staatsehe mit einem Keltischen Vasallen"
 
@@ -80,6 +82,10 @@
  rce_celtic_vassal_events.EVTNAME1: "Entlasst einen Keltischen Vasallen"
  rce_celtic_vassal_events.EVTDESC1: "Wählt hier aus, für welche Kultur Ihr einen Keltischen Vasallen entlassen möchtet. Ein passendes Land wird in bestimmten, von Eucht besessenen Gebieten entlassen und verändert seine Primärkultur zu der gewählten Kultur, um sie zu verbreiten."
  rce_celtic_vassal_events1.EVTOPT1: "Abbrechen."
+
+ rce_celtic_vassal_events.EVTNAME1: "Verbreitung der [Root.Owner.Culture.GetName]en Kultur"
+ rce_celtic_vassal_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetName]en Einflüssen lebte, hat dazu geführt, dass sich die Kultur in dieser Provinz verbreitet hat."
+ rce_celtic_vassal_events1.EVTOPT1: "Interessant."
 
  # New Diplomatic Actions:
  rce_celtic_vassal_create_subject_title: "Keltischen Vasallen errichten"

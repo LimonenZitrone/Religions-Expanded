@@ -552,3 +552,89 @@ country_event = {
 		clr_country_flag = rce_is_releasing_celtic_vassal
 	}
 }
+
+province_event = {
+	id = rce_celtic_vassal_events.2
+	title = rce_celtic_vassal_events.EVTNAME2
+	desc = rce_celtic_vassal_events.EVTDESC2
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		has_owner_culture = no
+		owner = {
+			culture_group = gaelic
+			is_subject_of_type = rce_celtic_vassal
+		}
+		any_neighbor_province = {
+			owned_by = ROOT
+			has_owner_culture = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				has_owner_culture = yes
+			}
+		}
+		modifier = {
+			factor = 0.9
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			calc_true_if = {
+				amount = 4
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			calc_true_if = {
+				amount = 5
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 7
+				all_neighbor_province = {
+					owned_by = ROOT
+					has_owner_culture = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rce_culture_cumbrian_culture_events1.EVTOPT1
+
+		change_culture = owner
+	}
+}

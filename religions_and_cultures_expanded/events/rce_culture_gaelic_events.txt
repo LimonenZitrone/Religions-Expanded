@@ -20,6 +20,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -51,6 +57,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -83,6 +95,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -115,6 +133,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -146,6 +170,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -177,6 +207,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -208,6 +244,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -239,6 +281,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -270,6 +318,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -301,6 +355,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -332,6 +392,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -363,6 +429,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -394,6 +466,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -425,6 +503,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -456,6 +540,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -487,6 +577,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -518,6 +614,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -549,6 +651,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -580,6 +688,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -611,6 +725,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -642,6 +762,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -673,6 +799,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -704,6 +836,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -735,6 +873,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -766,6 +910,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -797,6 +947,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -828,6 +984,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -859,6 +1021,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -890,6 +1058,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -921,6 +1095,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
@@ -952,6 +1132,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = {
+				is_subject_of_type = rce_celtic_vassal
+			}
+		}
 	}
 
 	option = {
