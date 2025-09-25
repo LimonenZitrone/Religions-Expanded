@@ -993,6 +993,41 @@ custom_icon = {
 		culture_group = scandinavian
 	}
 }
+#### byzantine
+custom_button = {
+	name = rce_startup_screen_culture_16_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 16 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = byzantine
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 16 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_16_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_16_primary_icon
+	potential = {
+		culture_group = byzantine
+	}
+}
 
 # Formables Window
 custom_window = {

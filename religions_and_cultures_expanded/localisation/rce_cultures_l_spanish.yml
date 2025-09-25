@@ -70,6 +70,21 @@
  skordiskoi_culture: "Skordiskoi"
  tylian_culture: "Tylian"
  hanseatic_culture: "Hanseatic"
+ macedonian_culture: "Macedonian"
+ thracian_culture: "Thracian"
+ ionian_culture: "Ionian"
+ bosporan_culture: "Bosporan"
+ graeco_syrian_culture: "Graeco-Syrian"
+ aegyptan_culture: "Aegyptan"
+ cyrenaican_culture: "Cyrenaican"
+ graeco_armenian_culture: "Graeco-Armenian"
+ seleucid_culture: "Seleucid"
+ graeco_persian_culture: "Graeco-Persian"
+ areian_culture: "Areian"
+ yavana_culture: "Yavana"
+ bactrian_culture: "Bactrian"
+ graeco_illyrian_culture: "Graeco-Illyrian"
+ graeco_parthian_culture: "Graeco-Parthian"
 
  # Events:
  rce_culture_aramaic_culture_group_events.EVTNAME1: "Emergence of the Chaldean culture"
@@ -240,6 +255,78 @@
  rce_culture_hanseatic_culture_events.EVTNAME2: "Spread of the Hanseatic culture"
  rce_culture_hanseatic_culture_events.EVTDESC2: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetName] influences has lead to the culture spreading to this province."
  rce_culture_hanseatic_culture_events2.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME1: "Emergence of the Pontic culture"
+ rce_culture_byzantine_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events1.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME2: "Emergence of the Cappadocian culture"
+ rce_culture_byzantine_events.EVTDESC2: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events2.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME3: "Emergence of the Griko culture"
+ rce_culture_byzantine_events.EVTDESC3: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events3.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME4: "Emergence of the Macedonian culture"
+ rce_culture_byzantine_events.EVTDESC4: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events4.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME5: "Emergence of the Thracian culture"
+ rce_culture_byzantine_events.EVTDESC5: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events5.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME6: "Emergence of the Ionian culture"
+ rce_culture_byzantine_events.EVTDESC6: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events6.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME7: "Emergence of the Bosporan culture"
+ rce_culture_byzantine_events.EVTDESC7: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events7.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME8: "Emergence of the Graeco-Syrian culture"
+ rce_culture_byzantine_events.EVTDESC8: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events8.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME9: "Emergence of the Aegyptan culture"
+ rce_culture_byzantine_events.EVTDESC9: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events9.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME10: "Emergence of the Cyrenaican culture"
+ rce_culture_byzantine_events.EVTDESC10: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events10.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME11: "Emergence of the Graeco-Armenian culture"
+ rce_culture_byzantine_events.EVTDESC11: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events11.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME12: "Emergence of the Seleucid culture"
+ rce_culture_byzantine_events.EVTDESC12: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events12.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME13: "Emergence of the Graeco-Persian culture"
+ rce_culture_byzantine_events.EVTDESC13: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events13.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME14: "Emergence of the Areian culture"
+ rce_culture_byzantine_events.EVTDESC14: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events14.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME15: "Emergence of the Yavana culture"
+ rce_culture_byzantine_events.EVTDESC15: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events15.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME16: "Emergence of the Bactrian culture"
+ rce_culture_byzantine_events.EVTDESC16: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events16.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME17: "Emergence of the Graeco-Illyrian culture"
+ rce_culture_byzantine_events.EVTDESC17: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events17.EVTOPT1: "Interesting."
+
+ rce_culture_byzantine_events.EVTNAME18: "Emergence of the Graeco-Parthian culture"
+ rce_culture_byzantine_events.EVTDESC18: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_byzantine_events18.EVTOPT1: "Interesting."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"

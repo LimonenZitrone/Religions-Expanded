@@ -284,6 +284,12 @@ defined_text = {
 		}
 		localisation_key = scandinavian
 	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 16 }
+		}
+		localisation_key = byzantine
+	}
 
 	# Fallback
 	text = {
@@ -405,6 +411,12 @@ defined_text = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 15 }
 		}
 		localisation_key = rce_startup_text_scandinavian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 16 }
+		}
+		localisation_key = rce_startup_text_byzantine
 	}
 
 	# Fallback

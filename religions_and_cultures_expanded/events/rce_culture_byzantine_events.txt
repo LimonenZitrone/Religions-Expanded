@@ -1,0 +1,1271 @@
+namespace = rce_culture_byzantine_events
+
+province_event = {
+	id = rce_culture_byzantine_events.1
+	title = rce_culture_byzantine_events.EVTNAME1
+	desc = rce_culture_byzantine_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = kastamonu_area
+			province_id = 330
+		}
+		has_owner_religion = yes
+		NOT = { culture = pontic_greek }
+		NOT = { has_province_flag = rce_converted_to_pontic_greek }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_pontic_greek
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events1.EVTOPT1
+
+		change_culture = pontic_greek
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.2
+	title = rce_culture_byzantine_events.EVTNAME2
+	desc = rce_culture_byzantine_events.EVTDESC2
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = rum_area
+			area = karaman_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = cappadocian_greek }
+		NOT = { has_province_flag = rce_converted_to_cappadocian_greek }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_cappadocian_greek
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events2.EVTOPT1
+
+		change_culture = cappadocian_greek
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.3
+	title = rce_culture_byzantine_events.EVTNAME3
+	desc = rce_culture_byzantine_events.EVTDESC3
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = sicily_area
+			area = calabria_area
+			AND = {
+				area = apulia_area
+				NOT = { province_id = 4733 }
+			}
+		}
+		has_owner_religion = yes
+		NOT = { culture = griko }
+		NOT = { has_province_flag = rce_converted_to_griko }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_griko
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events3.EVTOPT1
+
+		change_culture = griko
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.4
+	title = rce_culture_byzantine_events.EVTNAME4
+	desc = rce_culture_byzantine_events.EVTDESC4
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = macedonia_area
+			area = albania_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = macedonian_culture }
+		NOT = { has_province_flag = rce_converted_to_macedonian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_macedonian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events4.EVTOPT1
+
+		change_culture = macedonian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.5
+	title = rce_culture_byzantine_events.EVTNAME5
+	desc = rce_culture_byzantine_events.EVTDESC5
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = silistria_area
+			area = bulgaria_area
+			province_id = 1764
+			province_id = 149
+		}
+		has_owner_religion = yes
+		NOT = { culture = thracian_culture }
+		NOT = { has_province_flag = rce_converted_to_thracian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_thracian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events5.EVTOPT1
+
+		change_culture = thracian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.6
+	title = rce_culture_byzantine_events.EVTNAME6
+	desc = rce_culture_byzantine_events.EVTDESC6
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = hudavendigar_area
+			area = aydin_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = ionian_culture }
+		NOT = { has_province_flag = rce_converted_to_ionian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_ionian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events6.EVTOPT1
+
+		change_culture = ionian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.7
+	title = rce_culture_byzantine_events.EVTNAME7
+	desc = rce_culture_byzantine_events.EVTDESC7
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = crimea_area
+			area = azov_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = bosporan_culture }
+		NOT = { has_province_flag = rce_converted_to_bosporan_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_bosporan_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events7.EVTOPT1
+
+		change_culture = bosporan_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.8
+	title = rce_culture_byzantine_events.EVTNAME8
+	desc = rce_culture_byzantine_events.EVTDESC8
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = aleppo_area
+			area = syria_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = graeco_syrian_culture }
+		NOT = { has_province_flag = rce_converted_to_graeco_syrian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_graeco_syrian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events8.EVTOPT1
+
+		change_culture = graeco_syrian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.9
+	title = rce_culture_byzantine_events.EVTNAME9
+	desc = rce_culture_byzantine_events.EVTDESC9
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = bahari_area
+			area = delta_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = aegyptan_culture }
+		NOT = { has_province_flag = rce_converted_to_aegyptan_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_aegyptan_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events9.EVTOPT1
+
+		change_culture = aegyptan_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.10
+	title = rce_culture_byzantine_events.EVTNAME10
+	desc = rce_culture_byzantine_events.EVTDESC10
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = cyrenaica_area
+			area = tripolitania_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = cyrenaican_culture }
+		NOT = { has_province_flag = rce_converted_to_cyrenaican_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_cyrenaican_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events10.EVTOPT1
+
+		change_culture = cyrenaican_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.11
+	title = rce_culture_byzantine_events.EVTNAME11
+	desc = rce_culture_byzantine_events.EVTDESC11
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = north_kurdistan_area
+			area = armenia_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = graeco_armenian_culture }
+		NOT = { has_province_flag = rce_converted_to_graeco_armenian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_graeco_armenian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events11.EVTOPT1
+
+		change_culture = graeco_armenian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.12
+	title = rce_culture_byzantine_events.EVTNAME12
+	desc = rce_culture_byzantine_events.EVTDESC12
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = iraq_arabi_area
+			area = basra_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = seleucid_culture }
+		NOT = { has_province_flag = rce_converted_to_seleucid_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_seleucid_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events12.EVTOPT1
+
+		change_culture = seleucid_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.13
+	title = rce_culture_byzantine_events.EVTNAME13
+	desc = rce_culture_byzantine_events.EVTDESC13
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = farsistan_area
+			area = persian_gulf_coast
+		}
+		has_owner_religion = yes
+		NOT = { culture = graeco_persian_culture }
+		NOT = { has_province_flag = rce_converted_to_graeco_persian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_graeco_persian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events13.EVTOPT1
+
+		change_culture = graeco_persian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.14
+	title = rce_culture_byzantine_events.EVTNAME14
+	desc = rce_culture_byzantine_events.EVTDESC14
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = ghor_area
+			AND = {
+				area = sistan_area
+				NOT = { province_id = 435 }
+			}
+		}
+		has_owner_religion = yes
+		NOT = { culture = areian_culture }
+		NOT = { has_province_flag = rce_converted_to_areian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_areian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events14.EVTOPT1
+
+		change_culture = areian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.15
+	title = rce_culture_byzantine_events.EVTNAME15
+	desc = rce_culture_byzantine_events.EVTDESC15
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = sindh_area
+			area = lahore_area
+			province_id = 4511
+		}
+		has_owner_religion = yes
+		NOT = { culture = yavana_culture }
+		NOT = { has_province_flag = rce_converted_to_yavana_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_yavana_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events15.EVTOPT1
+
+		change_culture = yavana_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.16
+	title = rce_culture_byzantine_events.EVTNAME16
+	desc = rce_culture_byzantine_events.EVTDESC16
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = arys_area
+			area = ferghana_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = bactrian_culture }
+		NOT = { has_province_flag = rce_converted_to_bactrian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_bactrian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events16.EVTOPT1
+
+		change_culture = bactrian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.17
+	title = rce_culture_byzantine_events.EVTNAME17
+	desc = rce_culture_byzantine_events.EVTDESC17
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = croatia_area
+			area = east_adriatic_coast_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = graeco_illyrian_culture }
+		NOT = { has_province_flag = rce_converted_to_graeco_illyrian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_graeco_illyrian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events17.EVTOPT1
+
+		change_culture = graeco_illyrian_culture
+	}
+}
+
+province_event = {
+	id = rce_culture_byzantine_events.18
+	title = rce_culture_byzantine_events.EVTNAME18
+	desc = rce_culture_byzantine_events.EVTDESC18
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = iraq_e_ajam_area
+			area = mashhad_area
+		}
+		has_owner_religion = yes
+		NOT = { culture = graeco_parthian_culture }
+		NOT = { has_province_flag = rce_converted_to_graeco_parthian_culture }
+		owner = {
+			culture_group = byzantine
+			OR = {
+				religion_group = christian
+				religion = hellenism
+			}
+			OR = {
+				government_rank = 3
+				AND = {
+					NOT = { has_dlc = "Common Sense" }
+					total_development = 1000
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = hellenism
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = byzantine
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_graeco_parthian_culture
+		}
+	}
+
+	option = {
+		name = rce_culture_byzantine_events18.EVTOPT1
+
+		change_culture = graeco_parthian_culture
+	}
+}

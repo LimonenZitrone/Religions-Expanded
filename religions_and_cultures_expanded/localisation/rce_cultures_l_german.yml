@@ -69,6 +69,22 @@
  norici_culture: "Norikisch"
  skordiskoi_culture: "Skordiskisch"
  tylian_culture: "Tylisch"
+ hanseatic_culture: "Hanseatisch"
+ macedonian_culture: "Makedonisch"
+ thracian_culture: "Thrakisch"
+ ionian_culture: "Ionisch"
+ bosporan_culture: "Bosporanisch"
+ graeco_syrian_culture: "Graeco-Syrisch"
+ aegyptan_culture: "Ägyptanisch"
+ cyrenaican_culture: "Kyrenaikanisch"
+ graeco_armenian_culture: "Graeco-Armenisch"
+ seleucid_culture: "Seleukidisch"
+ graeco_persian_culture: "Graeco-Persisch"
+ areian_culture: "Areianisch"
+ yavana_culture: "Yavanisch"
+ bactrian_culture: "Baktrisch"
+ graeco_illyrian_culture: "Graeco-Illyrisch"
+ graeco_parthian_culture: "Graeco-Parthisch"
 
  # Events:
  rce_culture_aramaic_culture_group_events.EVTNAME1: "Entstehung der chaldäischen Kultur"
@@ -231,7 +247,7 @@
  rce_culture_gaelic_events.EVTDESC31: "Die lange Zeit, in der die Bevölkerung von [161.GetName] unter dem [Root.Culture.GetGroupName]en Einfluss lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_gaelic_events31.EVTOPT1: "Interessant."
 
- rce_culture_hanseatic_culture_events.EVTNAME1: "Emergence of the Hanseatic culture"
+ rce_culture_hanseatic_culture_events.EVTNAME1: "Entstehung der hanseatischen Kultur"
  rce_culture_hanseatic_culture_events.EVTDESC1: "Mit der Gründung des Hansebunds ist die Anzahl der Handelsreisenden gestiegen. Märkte sind zu einem Ort kulturellen Austauschs geworden, wodurch nun eine neue Kultur in [Root.Capital.GetName] entstanden ist."
  rce_culture_hanseatic_culture_events1.EVTOPT1: "Fördert die neue Kultur."
  rce_culture_hanseatic_culture_events1.EVTOPT2: "Unsere Wurzeln sind [Root.Culture.GetName]."
@@ -239,6 +255,78 @@
  rce_culture_hanseatic_culture_events.EVTNAME2: "Verbreitung der hanseatischenen Kultur"
  rce_culture_hanseatic_culture_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Culture.GetName]en Einflüssen lebte, hat dazu geführt, dass sich die Kultur in dieser Provinz verbreitet hat."
  rce_culture_hanseatic_culture_events2.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME1: "Entstehung der pontischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events1.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME2: "Entstehung der kappadokischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC2: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events2.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME3: "Entstehung der grikonischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC3: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events3.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME4: "Entstehung der makedonischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC4: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events4.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME5: "Entstehung der thrakischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC5: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events5.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME6: "Entstehung der ionischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC6: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events6.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME7: "Entstehung der bosporanischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC7: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events7.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME8: "Entstehung der graeco-syrischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC8: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events8.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME9: "Entstehung der ägyptanischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC9: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events9.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME10: "Entstehung der kyrenaikanischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC10: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events10.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME11: "Entstehung der graeco-armenischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC11: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events11.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME12: "Entstehung der seleukidischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC12: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events12.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME13: "Entstehung der graeco-persischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC13: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events13.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME14: "Entstehung der areianischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC14: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events14.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME15: "Entstehung der yavanischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC15: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events15.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME16: "Entstehung der baktrischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC16: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events16.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME17: "Entstehung der graeco-illyrischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC17: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events17.EVTOPT1: "Interessant."
+
+ rce_culture_aramaic_culture_group_events.EVTNAME18: "Entstehung der graeco-parthischen Kultur"
+ rce_culture_aramaic_culture_group_events.EVTDESC18: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_aramaic_culture_group_events18.EVTOPT1: "Interessant."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Assyrische Kultur annehmen"

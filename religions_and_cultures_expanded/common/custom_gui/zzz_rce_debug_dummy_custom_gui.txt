@@ -160,6 +160,14 @@ custom_text_box = {
 	potential = { always = no }
 }
 custom_button = {
+	name = rce_startup_screen_culture_16_primary_icon # icon
+	potential = { always = no }
+}
+custom_text_box = {
+	name = rce_startup_screen_culture_16_primary_icon # icon
+	potential = { always = no }
+}
+custom_button = {
 	name = rce_startup_screen_list_pages_text_cultures # text box
 	potential = { always = no }
 }
