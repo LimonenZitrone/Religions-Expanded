@@ -2152,28 +2152,28 @@ guiTypes = {
 								text = "RCE_FORMABLE_COPTIC_EGYPT"
 							}
 						}
-					#	windowType = {
-					#		name = "formable_5_window"
-					#		position = { x = 0 y = 136 }
-					#
-					#		guiButtonType = {
-					#			name = "rce_startup_screen_formable_5_button"
-					#			position = { x = 2 y = 2 }
-					#			spriteType = "GFX_rce_startup_screen_formable_button"
-					#			scripted = yes
-					#		}
-					#		instantTextBoxType = {
-					#			name = "rce_startup_screen_formable_5_button_text"
-					#			position = { x = 12 y = 10 }
-					#			font = "vic_18"
-					#			format = center
-					#			maxWidth = 128
-					#			maxHeight = 20
-					#			fixedsize = yes
-					#			alwaystransparent = yes
-					#			text = "Placeholder"
-					#		}
-					#	}
+						windowType = {
+							name = "formable_5_window"
+							position = { x = 0 y = 136 }
+
+							guiButtonType = {
+								name = "rce_startup_screen_formable_5_button"
+								position = { x = 2 y = 2 }
+								spriteType = "GFX_rce_startup_screen_formable_button"
+								scripted = yes
+							}
+							instantTextBoxType = {
+								name = "rce_startup_screen_formable_5_button_text"
+								position = { x = 12 y = 10 }
+								font = "vic_18"
+								format = center
+								maxWidth = 128
+								maxHeight = 20
+								fixedsize = yes
+								alwaystransparent = yes
+								text = "RCE_FORMABLE_BERBER_MAURETANIA"
+							}
+						}
 					#	windowType = {
 					#		name = "formable_6_window"
 					#		position = { x = 0 y = 170 }

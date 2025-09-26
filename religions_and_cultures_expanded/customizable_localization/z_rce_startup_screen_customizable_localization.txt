@@ -487,6 +487,12 @@ defined_text = {
 		}
 		localisation_key = RCE_FORMABLE_COPTIC_EGYPT
 	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 5 }
+		}
+		localisation_key = RCE_FORMABLE_BERBER_MAURETANIA
+	}
 
 	# Fallback
 	text = {
@@ -542,6 +548,12 @@ defined_text = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 4 }
 		}
 		localisation_key = rce_startup_text_rce_formable_coptic_egypt
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 5 }
+		}
+		localisation_key = rce_startup_text_rce_formable_berber_mauretania
 	}
 
 	# Fallback

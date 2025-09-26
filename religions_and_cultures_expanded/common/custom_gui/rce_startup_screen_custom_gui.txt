@@ -1233,3 +1233,26 @@ custom_button = {
 	}
 	tooltip = rce_startup_screen_formable_4_button_tt
 }
+#### RCE_FORMABLE_BERBER_MAURETANIA
+custom_button = {
+	name = rce_startup_screen_formable_5_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_formable value = 5 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_formable value = 5 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_formable_5_button_tt
+}
