@@ -17,3 +17,5 @@
  province_is_buddhist_or_accepts_buddhism_ct:1 "Die Religion von §Y[Root.GetName]§! ist §Ytengrisch§!, und der Besitzer hat entweder §YTheravada§!, §YVajrayana§!, §YMahayana§! oder §YNang Chosisch§! als synkretistische Religion."
 
  inquisition_desc:1 "Eine staatlich sanktionierte Inquisition hält die religiöse Reinheit unserer Bevölkerung aufrecht, indem sie Häretiker und Gotteslästerer ausmerzt. \n\n§YAndere religiöse Mechaniken, die keinen Modifikator hier gelistet haben, erhalten möglicherweise einen Bonus über einen getriggerten Modifikator, nachdem diese Idee abgeschlossen wurde.§!"
+
+ estate_dhimmi_guaranteed_autonomy_mod:1 "Gewährte den Dhimmi Autonomie"

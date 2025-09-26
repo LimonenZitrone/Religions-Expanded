@@ -1,0 +1,76 @@
+namespace = rce_culture_pruthenian_events
+
+province_event = {
+	id = rce_culture_pruthenian_events.1
+	title = rce_culture_pruthenian_events.EVTNAME1
+	desc = rce_culture_pruthenian_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = west_prussia_area
+			area = east_prussia_area
+		}
+		NOT = { culture = pruthenian }
+		NOT = { has_province_flag = rce_converted_to_pruthenian }
+		religion_group = pagan
+		owner = {
+			culture_group = baltic
+			religion_group = pagan
+		}
+		OR = {
+			culture_group = baltic
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = baltic
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.75
+			culture_group = baltic
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture_group = baltic
+			}
+		}
+		modifier = {
+			factor = 0.7
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = baltic
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture_group = baltic
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_pruthenian
+		}
+	}
+
+	option = {
+		name = rce_culture_pruthenian_events1.EVTOPT1
+
+		change_culture = pruthenian
+	}
+}

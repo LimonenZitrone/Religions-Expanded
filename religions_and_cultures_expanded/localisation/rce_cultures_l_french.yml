@@ -339,6 +339,10 @@
  rce_culture_andalucian_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Culture.GetGroupName] and [Root.Religion.GetGroupName] influences has lead to a different culture emerging in the province."
  rce_culture_andalucian_events1.EVTOPT1: "Interesting."
 
+ rce_culture_pruthenian_events.EVTNAME1: "Emergence of the Pruthenian culture"
+ rce_culture_pruthenian_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Owner.Culture.GetGroupName] and [Root.Owner.Religion.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_pruthenian_events1.EVTOPT1: "Interesting."
+
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"
  rce_culture_decision_convert_to_assyrian_culture_desc: "We own an important province of the Assyrian culture and have [Root.Religion.GetGroupName] influences, so we should adopt the Assyrian culture."
