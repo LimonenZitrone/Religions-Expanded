@@ -40,7 +40,7 @@
  rce_tooltip_effect_text: "§YEffects:§!"
  rce_release_celtic_vassal_subject_in_target_tt: "\nThe released country will receive the following provinces from us:"
  rce_release_celtic_vassal_subject_in_target_tt_list: "   - §Y[This.GetName]§!"
- rce_formable_decision_berber_tamazgha_tt: "Add §Y[Root.Culture.GetName]§! as an accepted culture. \nEvery owned province with a §Y[Root.Culture.GetGroupName]§! culture changes to §YAmazigh§!.\n"
+ rce_formable_decision_berber_mauretania_tt: "Add §Y[Root.Culture.GetName]§! as an accepted culture. \nEvery owned province with a §Y[Root.Culture.GetGroupName]§! culture changes to §YAmazigh§!.\n"
 
  # Decisions:
  rce_religion_reform_religion_decision_title: "Centralize the [Root.Religion.GetName] Faith"
@@ -53,8 +53,8 @@
  rce_formable_decision_coptic_egypt_desc: "Found the Kemet nation, drawing on the rich history of the Nile Delta to establish a modern state in the region."
  rce_formable_decision_nestorian_kingdom_of_god_title: "Declare the Kingdom of God"
  rce_formable_decision_nestorian_kingdom_of_god_desc: "With the lands of the Balkans and Anatolia under the temporal power of the Patriarch rather than any Emperor or King it is now justified to declare this state the Kingdom of God on Earth."
- rce_formable_decision_berber_tamazgha_title: "Form Tamazgha"
- rce_formable_decision_berber_tamazgha_desc: "We have to unify the Amazigh people in North Africa in one country."
+ rce_formable_decision_berber_mauretania_title: "Form Mauretania"
+ rce_formable_decision_berber_mauretania_desc: "We have to unify the Amazigh people in North Africa in one country."
  rce_celtic_vassal_release_subject_decision_title: "Release a Celtic Vassal"
  rce_celtic_vassal_release_subject_decision_desc: "We own provinces that can develop their own §Y[Root.Culture.GetGroupName]§! culture, if we establish a §YCeltic Vassal§! there."
 
@@ -110,8 +110,8 @@
  RCE_FORMABLE_CHAHAMANA_NADU_ADJ: "Chahamana"
  RCE_FORMABLE_NESTORIAN_KINGDOM_OF_GOD: "Kingdom of God"
  RCE_FORMABLE_NESTORIAN_KINGDOM_OF_GOD_ADJ: "Patriarchal"
- RCE_FORMABLE_BERBER_TAMAZGHA: "Tamazgha"
- RCE_FORMABLE_BERBER_TAMAZGHA_ADJ: "Tamazight"
+ RCE_FORMABLE_BERBER_MAURETANIA: "Mauretania"
+ RCE_FORMABLE_BERBER_MAURETANIA_ADJ: "Mauretanian"
  RCE_CELTIC_VASSAL_breton: "Armorica"
  RCE_CELTIC_VASSAL_breton_ADJ: "Breton"
  RCE_CELTIC_VASSAL_cornish: "Dumnonia"

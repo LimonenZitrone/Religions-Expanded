@@ -312,12 +312,12 @@ country_decisions = {
 		}
 	}
 
-	rce_formable_decision_berber_tamazgha  = {
+	rce_formable_decision_berber_mauretania  = {
 		major = yes
 		potential = {
 			culture_group = maghrebi
-			NOT = { has_global_flag = rce_formable_berber_tamazgha }
-			NOT = { has_country_flag = rce_formable_berber_tamazgha }
+			NOT = { has_global_flag = rce_formable_berber_mauretania }
+			NOT = { has_country_flag = rce_formable_berber_mauretania }
 		}
 		provinces_to_highlight = {
 			region = maghreb_region
@@ -343,18 +343,18 @@ country_decisions = {
 		}
 		effect = {
 			add_prestige = 20
-			set_country_flag = rce_formable_berber_tamazgha
-			set_global_flag = rce_formable_berber_tamazgha
-			override_country_name = RCE_FORMABLE_BERBER_TAMAZGHA
+			set_country_flag = rce_formable_berber_mauretania
+			set_global_flag = rce_formable_berber_mauretania
+			override_country_name = RCE_FORMABLE_BERBER_MAURETANIA
 			change_country_color = { color = { 255 215 0 } }
 			hidden_effect = {
 				export_to_variable = {
-					which = rce_formable_berber_tamazgha_previous_culture
+					which = rce_formable_berber_mauretania_previous_culture
 					value = trigger_value:primary_culture
 				}
 			}
 			change_primary_culture = berber
-			custom_tooltip = rce_formable_decision_berber_tamazgha_tt
+			custom_tooltip = rce_formable_decision_berber_mauretania_tt
 			hidden_effect = {
 				set_ruler_culture = berber
 				if = {
@@ -369,8 +369,8 @@ country_decisions = {
 					}
 					change_culture = berber
 				}
-				add_accepted_culture = variable:rce_formable_berber_tamazgha_previous_culture
-				set_variable = { which = rce_formable_berber_tamazgha_previous_culture value = 0 }
+				add_accepted_culture = variable:rce_formable_berber_mauretania_previous_culture
+				set_variable = { which = rce_formable_berber_mauretania_previous_culture value = 0 }
 			}
 			if = {
 				limit = { has_custom_ideas = no }

@@ -22,10 +22,10 @@ on_annexed = {
 		}
 		if = {
 			limit = {
-				has_country_flag = rce_formable_berber_tamazgha
+				has_country_flag = rce_formable_berber_mauretania
 			}
-			clr_global_flag = rce_formable_berber_tamazgha
-			clr_country_flag = rce_formable_berber_tamazgha
+			clr_global_flag = rce_formable_berber_mauretania
+			clr_country_flag = rce_formable_berber_mauretania
 			restore_country_name = yes
 			restore_country_color = yes
 			swap_free_idea_group = yes
@@ -46,11 +46,11 @@ on_primary_culture_changed = {
 	}
 	if = {
 		limit = {
-			has_country_flag = rce_formable_berber_tamazgha
+			has_country_flag = rce_formable_berber_mauretania
 			NOT = { culture_group = maghrebi }
 		}
-		clr_global_flag = rce_formable_berber_tamazgha
-		clr_country_flag = rce_formable_berber_tamazgha
+		clr_global_flag = rce_formable_berber_mauretania
+		clr_country_flag = rce_formable_berber_mauretania
 		restore_country_name = yes
 		restore_country_color = yes
 		swap_free_idea_group = yes
@@ -75,7 +75,7 @@ on_province_owner_change = {
 		limit = {
 			region = maghreb_region
 			FROM = {
-				has_country_flag = rce_formable_berber_tamazgha
+				has_country_flag = rce_formable_berber_mauretania
 				NOT = {
 					any_owned_province = {
 						region = maghreb_region
@@ -85,8 +85,8 @@ on_province_owner_change = {
 			}
 		}
 		FROM = {
-			clr_global_flag = rce_formable_berber_tamazgha
-			clr_country_flag = rce_formable_berber_tamazgha
+			clr_global_flag = rce_formable_berber_mauretania
+			clr_country_flag = rce_formable_berber_mauretania
 			restore_country_name = yes
 			restore_country_color = yes
 			swap_free_idea_group = yes
