@@ -290,6 +290,12 @@ defined_text = {
 		}
 		localisation_key = byzantine
 	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 17 }
+		}
+		localisation_key = maghrebi
+	}
 
 	# Fallback
 	text = {
@@ -417,6 +423,12 @@ defined_text = {
 			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 16 }
 		}
 		localisation_key = rce_startup_text_byzantine
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 17 }
+		}
+		localisation_key = rce_startup_text_maghrebi
 	}
 
 	# Fallback

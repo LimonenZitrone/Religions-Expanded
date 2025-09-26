@@ -431,6 +431,12 @@ custom_window = {
 		is_variable_equal = { which = rce_startup_screen_window_cultures_selected_page value = 2 }
 	}
 }
+custom_window = {
+	name = rce_startup_screen_cultures_list_page_3_window
+	potential = {
+		is_variable_equal = { which = rce_startup_screen_window_cultures_selected_page value = 3 }
+	}
+}
 ### List Pages Control Window
 custom_button = {
 	name = rce_startup_screen_list_prev_page_button_cultures
@@ -451,7 +457,7 @@ custom_button = {
 	name = rce_startup_screen_list_next_page_button_cultures
 	trigger = {
 		hidden_trigger = {
-			NOT = { check_variable = { which = rce_startup_screen_window_cultures_selected_page value = 2 } }
+			NOT = { check_variable = { which = rce_startup_screen_window_cultures_selected_page value = 3 } }
 		}
 	}
 	effect = {
@@ -1026,6 +1032,41 @@ custom_icon = {
 	name = rce_startup_screen_culture_16_primary_icon
 	potential = {
 		culture_group = byzantine
+	}
+}
+#### maghrebi
+custom_button = {
+	name = rce_startup_screen_culture_17_button
+	effect = {
+		hidden_effect = {
+			set_variable = { which = rce_startup_screen_window_selected_culture value = 17 }
+		}
+		custom_tooltip = rce_startup_screen_scrollbar_info_tt
+		if = {
+			limit = {
+				culture_group = maghrebi
+			}
+			custom_tooltip = rce_startup_screen_culture_button_tt_current
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = rce_startup_screen_window_selected_culture value = 17 }
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
+	tooltip = rce_startup_screen_culture_17_button_tt
+}
+custom_icon = {
+	name = rce_startup_screen_culture_17_primary_icon
+	potential = {
+		culture_group = maghrebi
 	}
 }
 
