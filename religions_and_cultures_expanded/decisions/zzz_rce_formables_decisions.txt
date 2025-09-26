@@ -346,7 +346,7 @@ country_decisions = {
 			set_country_flag = rce_formable_berber_mauretania
 			set_global_flag = rce_formable_berber_mauretania
 			override_country_name = RCE_FORMABLE_BERBER_MAURETANIA
-			change_country_color = { color = { 255 215 0 } }
+			change_country_color = { color = { 250 213 165 } }
 			hidden_effect = {
 				export_to_variable = {
 					which = rce_formable_berber_mauretania_previous_culture

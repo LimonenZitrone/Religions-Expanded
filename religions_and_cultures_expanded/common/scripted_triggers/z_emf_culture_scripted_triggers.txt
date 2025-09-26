@@ -1,0 +1,3 @@
+emf_culture_is_maghrebi = {
+	rce_is_maghrebi_culture_or_similar_turko_semitic_culture = yes
+}
