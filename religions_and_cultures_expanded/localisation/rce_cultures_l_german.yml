@@ -85,6 +85,13 @@
  bactrian_culture: "Baktrisch"
  graeco_illyrian_culture: "Graeco-Illyrisch"
  graeco_parthian_culture: "Graeco-Parthisch"
+ libyan_culture: "Libysch"
+ masmuda_culture: "Masmudaisch"
+ sanhaja_culture: "Sanhadschaisch"
+ zenati_culture: "Zenatisch"
+ mozabite_culture: "Mozabitisch"
+ sokna_culture: "Soknaisch"
+ kabyle_culture: "Kabylisch"
 
  # Events:
  rce_culture_aramaic_culture_group_events.EVTNAME1: "Entstehung der chaldäischen Kultur"
@@ -327,6 +334,10 @@
  rce_culture_aramaic_culture_group_events.EVTNAME18: "Entstehung der graeco-parthischen Kultur"
  rce_culture_aramaic_culture_group_events.EVTDESC18: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Owner.Religion.GetName]en und [Root.Owner.Culture.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
  rce_culture_aramaic_culture_group_events18.EVTOPT1: "Interessant."
+
+ rce_culture_andalucian_events.EVTNAME1: "Entstehung der andalusischen Kultur"
+ rce_culture_andalucian_events.EVTDESC1: "Die lange Zeit, in der die Bevölkerung von [Root.GetName] unter [Root.Culture.GetGroupName]en und [Root.Religion.GetGroupName]en Einflüssen lebte, hat dazu geführt, dass in der Provinz eine neue Kultur entstanden ist."
+ rce_culture_andalucian_events1.EVTOPT1: "Interessant."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Assyrische Kultur annehmen"

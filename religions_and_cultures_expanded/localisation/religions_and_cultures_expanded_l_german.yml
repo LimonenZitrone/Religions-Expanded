@@ -40,6 +40,7 @@
  rce_tooltip_effect_text: "§YEffekt:§!"
  rce_release_celtic_vassal_subject_in_target_tt: "\nDas entlassene Land erhält folgende Provinzen von uns:"
  rce_release_celtic_vassal_subject_in_target_tt_list: "   - §Y[This.GetName]§!"
+ rce_formable_decision_berber_tamazgha_tt: "Die Kultur §Y[Root.Culture.GetName]§! wird akzepziert. \nDie Kultur jeder im Besitz befindlichen Provinz, die eine §Y[Root.Culture.GetGroupName]§! Kultur besitzt, wird zu §YAmazighisch§! geändert.\n"
 
  # Decisions:
  rce_religion_reform_religion_decision_title: "Zentralisiert den [Root.Religion.GetName]en Glauben"
@@ -52,6 +53,8 @@
  rce_formable_decision_coptic_egypt_desc: "Gründet die Nation Kemet, wobei Ihr die reiche Geschichte des Nildeltas zur Schaffung eines modernen Staats in der Region einbezieht."
  rce_formable_decision_nestorian_kingdom_of_god_title: "Das Königreich Gottes ausrufen"
  rce_formable_decision_nestorian_kingdom_of_god_desc: "Mit den Gebieten des Balkans und Anatoliens unter der Herrschaft des Patriarchen statt der eines Kaisers oder Königs ist es nun berechtigt, das Königreich Gottes auf Erden auszurufen."
+ rce_formable_decision_berber_tamazgha_title: "Gründet Tamazgha"
+ rce_formable_decision_berber_tamazgha_desc: "Wir müssen die amazighischen Völker in Nordafrika in einem Land vereinen."
  rce_celtic_vassal_release_subject_decision_title: "Entlasst einen Keltischen Vasallen"
  rce_celtic_vassal_release_subject_decision_desc: "Wir besitzen Provinzen, die eine eigene §Y[Root.Culture.GetGroupName]e§! Kultur entwickeln können, wenn wir dort einen §YKeltischen Vasallen§! entlassen."
 
@@ -107,6 +110,8 @@
  RCE_FORMABLE_CHAHAMANA_NADU_ADJ: "Chauhanisch"
  RCE_FORMABLE_NESTORIAN_KINGDOM_OF_GOD: "Königreich Gottes"
  RCE_FORMABLE_NESTORIAN_KINGDOM_OF_GOD_ADJ: "Patriarchal"
+ RCE_FORMABLE_BERBER_TAMAZGHA: "Tamazgha"
+ RCE_FORMABLE_BERBER_TAMAZGHA_ADJ: "Tamazightisch"
  RCE_CELTIC_VASSAL_breton: "Armorica"
  RCE_CELTIC_VASSAL_breton_ADJ: "Bretonisch"
  RCE_CELTIC_VASSAL_cornish: "Dumnonia"
@@ -233,6 +238,10 @@
  rce_anatolian_beyliks_ideas: "Anatolische Beyliks-Ideen"
  rce_anatolian_beyliks_ideas_start: "Anatolische Beyliks-Traditionen"
  rce_anatolian_beyliks_ideas_bonus: "Anatolische Beyliks-Ambitionen"
+
+ rce_berber_ideas: "Berber-Ideen"
+ rce_berber_ideas_start: "Berber-Traditionen"
+ rce_berber_ideas_bonus: "Berber-Ambitionen"
 
  rce_NPA_ideas: "Patriarchale Ideen"
  rce_NPA_ideas_start: "Patriarchale Traditionen"

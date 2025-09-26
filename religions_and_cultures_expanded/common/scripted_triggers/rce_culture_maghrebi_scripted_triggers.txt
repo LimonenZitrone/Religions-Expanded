@@ -1,0 +1,9 @@
+rce_is_maghrebi_culture_or_similar_turko_semitic_culture = {
+	OR = {
+		culture_group = maghrebi
+		primary_culture = moroccan
+		primary_culture = algerian
+		primary_culture = tunisian
+		primary_culture = libyan_culture
+	}
+}

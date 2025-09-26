@@ -18,3 +18,22 @@ ottoman_great_navy = {
 
 	button_gfx = 18
 }
+
+maghrebi_corsairs = {
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		rce_is_maghrebi_culture_or_similar_turko_semitic_culture = yes # Religions & Cultures Expanded
+	}
+
+	cost = 0.1
+	country_modifier = {
+		privateer_efficiency = 0.25
+		may_perform_slave_raid = yes
+		available_province_loot = 0.5
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 19
+}

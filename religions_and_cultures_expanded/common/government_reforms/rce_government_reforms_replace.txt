@@ -116,6 +116,42 @@ nayankara_reform = {
 	}
 }
 
+barbary_sultanate_reform = {
+	icon = "barbary_eyalet_government"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+		rce_is_maghrebi_culture_or_similar_turko_semitic_culture = yes # Religions & Cultures Expanded
+	}
+	queen = no
+	nation_designer_trigger = {
+		religion_group = muslim
+		rce_is_maghrebi_culture_or_similar_turko_semitic_culture = yes # Religions & Cultures Expanded
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	modifiers = {
+		land_attrition = -0.1
+		may_perform_slave_raid = yes
+		coast_raid_range = 1
+		navy_tradition_decay = -0.005
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Winds of Change"
+			}
+		}
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 # Common:
 head_of_the_reformed_church_reform = {
 	icon = "regionally_elected_commanders"

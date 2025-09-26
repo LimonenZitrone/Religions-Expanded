@@ -20,6 +20,16 @@ on_annexed = {
 			restore_country_color = yes
 			swap_free_idea_group = yes
 		}
+		if = {
+			limit = {
+				has_country_flag = rce_formable_berber_tamazgha
+			}
+			clr_global_flag = rce_formable_berber_tamazgha
+			clr_country_flag = rce_formable_berber_tamazgha
+			restore_country_name = yes
+			restore_country_color = yes
+			swap_free_idea_group = yes
+		}
 	}
 }
 
@@ -30,6 +40,17 @@ on_primary_culture_changed = {
 		}
 		clr_global_flag = rce_formable_assyria
 		clr_country_flag = rce_formable_assyria
+		restore_country_name = yes
+		restore_country_color = yes
+		swap_free_idea_group = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = rce_formable_berber_tamazgha
+			NOT = { culture_group = maghrebi }
+		}
+		clr_global_flag = rce_formable_berber_tamazgha
+		clr_country_flag = rce_formable_berber_tamazgha
 		restore_country_name = yes
 		restore_country_color = yes
 		swap_free_idea_group = yes
@@ -46,5 +67,29 @@ on_religion_change = {
 		restore_country_name = yes
 		restore_country_color = yes
 		swap_free_idea_group = yes
+	}
+}
+
+on_province_owner_change = {
+	if = {
+		limit = {
+			region = maghreb_region
+			FROM = {
+				has_country_flag = rce_formable_berber_tamazgha
+				NOT = {
+					any_owned_province = {
+						region = maghreb_region
+						culture_group = maghrebi
+					}
+				}
+			}
+		}
+		FROM = {
+			clr_global_flag = rce_formable_berber_tamazgha
+			clr_country_flag = rce_formable_berber_tamazgha
+			restore_country_name = yes
+			restore_country_color = yes
+			swap_free_idea_group = yes
+		}
 	}
 }

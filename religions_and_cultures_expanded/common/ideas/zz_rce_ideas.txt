@@ -35,3 +35,41 @@ rce_anatolian_beyliks_ideas = {
 		# uses vanilla modifiers
 	}
 }
+
+rce_berber_ideas = {
+	start = {
+		naval_attrition = -0.25
+		land_morale = 0.1
+	}
+
+	bonus = {
+		global_trade_power = 0.10
+	}
+
+	trigger = {
+		rce_is_maghrebi_culture_or_similar_turko_semitic_culture = yes
+	}
+	free = yes
+
+	ber_barbary_pirates = {
+		# uses vanilla modifiers
+	}
+	desert_warfare = {
+		# uses vanilla modifiers
+	}
+	trans_saharan_trade = {
+		# uses vanilla modifiers
+	}
+	corsairs = {
+		# uses vanilla modifiers
+	}
+	tuareg_cavalry = {
+		# uses vanilla modifiers
+	}
+	dual_diplomacy = {
+		# uses vanilla modifiers
+	}
+	brothers_barbarossa = {
+		# uses vanilla modifiers
+	}
+}

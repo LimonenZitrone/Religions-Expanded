@@ -311,4 +311,87 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	rce_formable_decision_berber_tamazgha  = {
+		major = yes
+		potential = {
+			culture_group = maghrebi
+			NOT = { has_global_flag = rce_formable_berber_tamazgha }
+			NOT = { has_country_flag = rce_formable_berber_tamazgha }
+		}
+		provinces_to_highlight = {
+			region = maghreb_region
+			culture_group = maghrebi
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			maghreb_region = {
+				type = all
+				OR = {
+					NOT = { culture_group = maghrebi }
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			set_country_flag = rce_formable_berber_tamazgha
+			set_global_flag = rce_formable_berber_tamazgha
+			override_country_name = RCE_FORMABLE_BERBER_TAMAZGHA
+			change_country_color = { color = { 255 215 0 } }
+			hidden_effect = {
+				export_to_variable = {
+					which = rce_formable_berber_tamazgha_previous_culture
+					value = trigger_value:primary_culture
+				}
+			}
+			change_primary_culture = berber
+			custom_tooltip = rce_formable_decision_berber_tamazgha_tt
+			hidden_effect = {
+				set_ruler_culture = berber
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = berber
+				}
+				every_owned_province = {
+					limit = {
+						culture_group = maghrebi
+					}
+					change_culture = berber
+				}
+				add_accepted_culture = variable:rce_formable_berber_tamazgha_previous_culture
+				set_variable = { which = rce_formable_berber_tamazgha_previous_culture value = 0 }
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			maghreb_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = formed_andalusia_flag # prevented from forming Andalusia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

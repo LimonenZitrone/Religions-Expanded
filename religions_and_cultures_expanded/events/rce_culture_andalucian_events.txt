@@ -1,0 +1,103 @@
+namespace = rce_culture_andalucian_events
+
+province_event = {
+	id = rce_culture_andalucian_events.1
+	title = rce_culture_andalucian_events.EVTNAME1
+	desc = rce_culture_andalucian_events.EVTDESC1
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		OR = {
+			area = alentejo_area
+			area = lower_andalucia_area
+			area = upper_andalucia_area
+			area = extremadura_area
+			area = toledo_area
+			area = valencia_area
+		}
+		culture_group = iberian
+		NOT = { culture = andalucian }
+		NOT = { has_province_flag = rce_converted_to_andalucian }
+		OR = {
+			religion_group = muslim
+			has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+		}
+		any_neighbor_province = {
+			owned_by = ROOT
+			culture = andalucian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = ROOT
+				culture = andalucian
+			}
+		}
+		modifier = {
+			factor = 0.9
+			calc_true_if = {
+				amount = 2
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture = andalucian
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			calc_true_if = {
+				amount = 3
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture = andalucian
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			calc_true_if = {
+				amount = 4
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture = andalucian
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			calc_true_if = {
+				amount = 5
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture = andalucian
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 7
+				all_neighbor_province = {
+					owned_by = ROOT
+					culture = andalucian
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = rce_converted_to_andalucian
+		}
+	}
+
+	option = {
+		name = rce_culture_andalucian_events1.EVTOPT1
+
+		change_culture = andalucian
+	}
+}

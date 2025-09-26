@@ -85,6 +85,13 @@
  bactrian_culture: "Bactrian"
  graeco_illyrian_culture: "Graeco-Illyrian"
  graeco_parthian_culture: "Graeco-Parthian"
+ libyan_culture: "Libyan"
+ masmuda_culture: "Masmuda"
+ sanhaja_culture: "Sanhaja"
+ zenati_culture: "Zenati"
+ mozabite_culture: "Mozabite"
+ sokna_culture: "Sokna"
+ kabyle_culture: "Kabyle"
 
  # Events:
  rce_culture_aramaic_culture_group_events.EVTNAME1: "Emergence of the Chaldean culture"
@@ -327,6 +334,10 @@
  rce_culture_byzantine_events.EVTNAME18: "Emergence of the Graeco-Parthian culture"
  rce_culture_byzantine_events.EVTDESC18: "The long time the population of [Root.GetName] has been living under [Root.Owner.Religion.GetName] and [Root.Owner.Culture.GetGroupName] influences has lead to a different culture emerging in the province."
  rce_culture_byzantine_events18.EVTOPT1: "Interesting."
+
+ rce_culture_andalucian_events.EVTNAME1: "Emergence of the Andalusian culture"
+ rce_culture_andalucian_events.EVTDESC1: "The long time the population of [Root.GetName] has been living under [Root.Culture.GetGroupName] and [Root.Religion.GetGroupName] influences has lead to a different culture emerging in the province."
+ rce_culture_andalucian_events1.EVTOPT1: "Interesting."
 
  # Decisions:
  rce_culture_decision_convert_to_assyrian_culture_title: "Adopt the Assyrian culture"
