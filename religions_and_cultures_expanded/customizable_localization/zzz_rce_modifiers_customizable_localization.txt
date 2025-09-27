@@ -576,6 +576,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = global_manpower_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_MANPOWER
+	}
+}
+
+defined_text = {
 	name = global_sailors_modifier
 	random = no
 
@@ -2192,6 +2204,30 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = MODIFIER_MAX_GENERAL_FIRE
+	}
+}
+
+defined_text = {
+	name = may_perform_slave_raid
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MAY_PERFORM_SLAVE_RAID
+	}
+}
+
+defined_text = {
+	name = sunk_ship_morale_hit_recieved
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SUNK_SHIP_MORALE_HIT_RECIEVED
 	}
 }
 

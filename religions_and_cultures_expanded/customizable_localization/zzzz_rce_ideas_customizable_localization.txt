@@ -553,3 +553,24 @@ defined_text = {
 		localisation_key = rce_berber_mauretania_ideas_7
 	}
 }
+defined_text = {
+	name = rce_berber_mauretania_ideas_start_dlc_modifier
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				has_dlc = "Mare Nostrum"
+				has_dlc = "Golden Century"
+				has_dlc = "Lions of the North"
+			}
+		}
+		localisation_key = rce_berber_mauretania_ideas_start_dlc_modifier_dlc
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rce_berber_mauretania_ideas_start_dlc_modifier_no_dlc
+	}
+}
