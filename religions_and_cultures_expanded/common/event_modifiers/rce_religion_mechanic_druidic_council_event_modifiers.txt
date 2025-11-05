@@ -1,0 +1,710 @@
+# Mechanic Modifiers:
+rce_religion_mechanic_druidic_council_spiritualist_modifier_1 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_2 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.00125
+	land_morale = 0.00375
+	naval_morale = 0.00375
+	build_cost = -0.00375
+	ae_impact = -0.0025
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_3 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0025
+	land_morale = 0.0075
+	naval_morale = 0.0075
+	build_cost = -0.0075
+	ae_impact = -0.005
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_4 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.00325
+	land_morale = 0.01175
+	naval_morale = 0.01175
+	build_cost = -0.01175
+	ae_impact = -0.0075
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_5 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.005
+	land_morale = 0.015
+	naval_morale = 0.015
+	build_cost = -0.015
+	ae_impact = -0.01
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_6 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.00625
+	land_morale = 0.01875
+	naval_morale = 0.01875
+	build_cost = -0.01875
+	ae_impact = -0.0125
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_7 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0075
+	land_morale = 0.0225
+	naval_morale = 0.0225
+	build_cost = -0.0225
+	ae_impact = -0.015
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_8 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.00825
+	land_morale = 0.02625
+	naval_morale = 0.02625
+	build_cost = -0.02625
+	ae_impact = -0.0175
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_9 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.01
+	land_morale = 0.03
+	naval_morale = 0.03
+	build_cost = -0.03
+	ae_impact = -0.02
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_10 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.01125
+	land_morale = 0.03375
+	naval_morale = 0.03375
+	build_cost = -0.03375
+	ae_impact = -0.0225
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_11 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0125
+	land_morale = 0.0375
+	naval_morale = 0.0375
+	build_cost = -0.0375
+	ae_impact = -0.025
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_12 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.01375
+	land_morale = 0.04125
+	naval_morale = 0.04125
+	build_cost = -0.04125
+	ae_impact = -0.0275
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_13 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.015
+	land_morale = 0.045
+	naval_morale = 0.045
+	build_cost = -0.045
+	ae_impact = -0.03
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_14 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.01625
+	land_morale = 0.04875
+	naval_morale = 0.04875
+	build_cost = -0.04875
+	ae_impact = -0.0325
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_15 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0175
+	land_morale = 0.0525
+	naval_morale = 0.0525
+	build_cost = -0.0525
+	ae_impact = -0.035
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_16 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.01875
+	land_morale = 0.05625
+	naval_morale = 0.05625
+	build_cost = -0.05625
+	ae_impact = -0.0375
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_17 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.02
+	land_morale = 0.06
+	naval_morale = 0.06
+	build_cost = -0.06
+	ae_impact = -0.04
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_18 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.02125
+	land_morale = 0.06375
+	naval_morale = 0.06375
+	build_cost = -0.06375
+	ae_impact = -0.0425
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_19 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0225
+	land_morale = 0.0675
+	naval_morale = 0.0675
+	build_cost = -0.0675
+	ae_impact = -0.045
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_20 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.02375
+	land_morale = 0.07125
+	naval_morale = 0.07125
+	build_cost = -0.07125
+	ae_impact = -0.0475
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_21 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.025
+	land_morale = 0.075
+	naval_morale = 0.075
+	build_cost = -0.075
+	ae_impact = -0.05
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_22 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.02625
+	land_morale = 0.07875
+	naval_morale = 0.07875
+	build_cost = -0.07875
+	ae_impact = -0.0525
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_23 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0275
+	land_morale = 0.0825
+	naval_morale = 0.0825
+	build_cost = -0.0825
+	ae_impact = -0.055
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_24 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.02875
+	land_morale = 0.08625
+	naval_morale = 0.08625
+	build_cost = -0.08625
+	ae_impact = -0.0575
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_25 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.03
+	land_morale = 0.09
+	naval_morale = 0.09
+	build_cost = -0.09
+	ae_impact = -0.06
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_26 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.03125
+	land_morale = 0.09375
+	naval_morale = 0.09375
+	build_cost = -0.09375
+	ae_impact = -0.0625
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_27 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0325
+	land_morale = 0.0975
+	naval_morale = 0.0975
+	build_cost = -0.0975
+	ae_impact = -0.065
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_28 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.03375
+	land_morale = 0.10125
+	naval_morale = 0.10125
+	build_cost = -0.10125
+	ae_impact = -0.0675
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_29 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.035
+	land_morale = 0.105
+	naval_morale = 0.105
+	build_cost = -0.105
+	ae_impact = -0.07
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_30 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.03625
+	land_morale = 0.10875
+	naval_morale = 0.10875
+	build_cost = -0.10875
+	ae_impact = -0.0725
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_31 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0375
+	land_morale = 0.1125
+	naval_morale = 0.1125
+	build_cost = -0.1125
+	ae_impact = -0.075
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_32 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.03875
+	land_morale = 0.11625
+	naval_morale = 0.11625
+	build_cost = -0.11625
+	ae_impact = -0.0775
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_33 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.04
+	land_morale = 0.12
+	naval_morale = 0.12
+	build_cost = -0.12
+	ae_impact = -0.08
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_34 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.04125
+	land_morale = 0.12375
+	naval_morale = 0.12375
+	build_cost = -0.12375
+	ae_impact = -0.0825
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_35 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0425
+	land_morale = 0.1275
+	naval_morale = 0.1275
+	build_cost = -0.1275
+	ae_impact = -0.085
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_36 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.04375
+	land_morale = 0.13125
+	naval_morale = 0.13125
+	build_cost = -0.13125
+	ae_impact = -0.0875
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_37 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.045
+	land_morale = 0.135
+	naval_morale = 0.135
+	build_cost = -0.135
+	ae_impact = -0.09
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_38 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.04625
+	land_morale = 0.13875
+	naval_morale = 0.13875
+	build_cost = -0.13875
+	ae_impact = -0.0925
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_39 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.0475
+	land_morale = 0.1425
+	naval_morale = 0.1425
+	build_cost = -0.1425
+	ae_impact = -0.095
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_40 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.04875
+	land_morale = 0.14625
+	naval_morale = 0.14625
+	build_cost = -0.14625
+	ae_impact = -0.0975
+}
+rce_religion_mechanic_druidic_council_spiritualist_modifier_41 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	global_missionary_strength = 0.05
+	land_morale = 0.15
+	naval_morale = 0.15
+	build_cost = -0.15
+	ae_impact = -0.1
+}
+
+rce_religion_mechanic_druidic_council_naturalist_modifier_1 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_2 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0075
+	manpower_recovery_speed = 0.00375
+	sailors_recovery_speed = 0.00375
+	development_cost = -0.00375
+	global_trade_goods_size_modifier = 0.0025
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_3 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.015
+	manpower_recovery_speed = 0.0075
+	sailors_recovery_speed = 0.0075
+	development_cost = -0.0075
+	global_trade_goods_size_modifier = 0.005
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_4 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0225
+	manpower_recovery_speed = 0.01175
+	sailors_recovery_speed = 0.01175
+	development_cost = -0.01175
+	global_trade_goods_size_modifier = 0.0075
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_5 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.03
+	manpower_recovery_speed = 0.015
+	sailors_recovery_speed = 0.015
+	development_cost = -0.015
+	global_trade_goods_size_modifier = 0.01
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_6 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0375
+	manpower_recovery_speed = 0.01875
+	sailors_recovery_speed = 0.01875
+	development_cost = -0.01875
+	global_trade_goods_size_modifier = 0.0125
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_7 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.045
+	manpower_recovery_speed = 0.0225
+	sailors_recovery_speed = 0.0225
+	development_cost = -0.0225
+	global_trade_goods_size_modifier = 0.015
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_8 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0525
+	manpower_recovery_speed = 0.02625
+	sailors_recovery_speed = 0.02625
+	development_cost = -0.02625
+	global_trade_goods_size_modifier = 0.0175
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_9 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.06
+	manpower_recovery_speed = 0.03
+	sailors_recovery_speed = 0.03
+	development_cost = -0.03
+	global_trade_goods_size_modifier = 0.02
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_10 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0675
+	manpower_recovery_speed = 0.03375
+	sailors_recovery_speed = 0.03375
+	development_cost = -0.03375
+	global_trade_goods_size_modifier = 0.0225
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_11 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.075
+	manpower_recovery_speed = 0.0375
+	sailors_recovery_speed = 0.0375
+	development_cost = -0.0375
+	global_trade_goods_size_modifier = 0.025
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_12 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0825
+	manpower_recovery_speed = 0.04125
+	sailors_recovery_speed = 0.04125
+	development_cost = -0.04125
+	global_trade_goods_size_modifier = 0.0275
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_13 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.09
+	manpower_recovery_speed = 0.045
+	sailors_recovery_speed = 0.045
+	development_cost = -0.045
+	global_trade_goods_size_modifier = 0.03
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_14 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.0975
+	manpower_recovery_speed = 0.04875
+	sailors_recovery_speed = 0.04875
+	development_cost = -0.04875
+	global_trade_goods_size_modifier = 0.0325
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_15 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.105
+	manpower_recovery_speed = 0.0525
+	sailors_recovery_speed = 0.0525
+	development_cost = -0.0525
+	global_trade_goods_size_modifier = 0.035
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_16 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.1125
+	manpower_recovery_speed = 0.05625
+	sailors_recovery_speed = 0.05625
+	development_cost = -0.05625
+	global_trade_goods_size_modifier = 0.0375
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_17 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.12
+	manpower_recovery_speed = 0.06
+	sailors_recovery_speed = 0.06
+	development_cost = -0.06
+	global_trade_goods_size_modifier = 0.04
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_18 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.1275
+	manpower_recovery_speed = 0.06375
+	sailors_recovery_speed = 0.06375
+	development_cost = -0.06375
+	global_trade_goods_size_modifier = 0.0425
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_19 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.135
+	manpower_recovery_speed = 0.0675
+	sailors_recovery_speed = 0.0675
+	development_cost = -0.0675
+	global_trade_goods_size_modifier = 0.045
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_20 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.1425
+	manpower_recovery_speed = 0.07125
+	sailors_recovery_speed = 0.07125
+	development_cost = -0.07125
+	global_trade_goods_size_modifier = 0.0475
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_21 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.15
+	manpower_recovery_speed = 0.075
+	sailors_recovery_speed = 0.075
+	development_cost = -0.075
+	global_trade_goods_size_modifier = 0.05
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_22 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.1575
+	manpower_recovery_speed = 0.07875
+	sailors_recovery_speed = 0.07875
+	development_cost = -0.07875
+	global_trade_goods_size_modifier = 0.0525
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_23 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.165
+	manpower_recovery_speed = 0.0825
+	sailors_recovery_speed = 0.0825
+	development_cost = -0.0825
+	global_trade_goods_size_modifier = 0.055
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_24 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.1725
+	manpower_recovery_speed = 0.08625
+	sailors_recovery_speed = 0.08625
+	development_cost = -0.08625
+	global_trade_goods_size_modifier = 0.0575
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_25 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.18
+	manpower_recovery_speed = 0.09
+	sailors_recovery_speed = 0.09
+	development_cost = -0.09
+	global_trade_goods_size_modifier = 0.06
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_26 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.1875
+	manpower_recovery_speed = 0.09375
+	sailors_recovery_speed = 0.09375
+	development_cost = -0.09375
+	global_trade_goods_size_modifier = 0.0625
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_27 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.195
+	manpower_recovery_speed = 0.0975
+	sailors_recovery_speed = 0.0975
+	development_cost = -0.0975
+	global_trade_goods_size_modifier = 0.065
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_28 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2025
+	manpower_recovery_speed = 0.10125
+	sailors_recovery_speed = 0.10125
+	development_cost = -0.10125
+	global_trade_goods_size_modifier = 0.0675
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_29 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.21
+	manpower_recovery_speed = 0.105
+	sailors_recovery_speed = 0.105
+	development_cost = -0.105
+	global_trade_goods_size_modifier = 0.07
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_30 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2175
+	manpower_recovery_speed = 0.10875
+	sailors_recovery_speed = 0.10875
+	development_cost = -0.10875
+	global_trade_goods_size_modifier = 0.0725
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_31 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.225
+	manpower_recovery_speed = 0.1125
+	sailors_recovery_speed = 0.1125
+	development_cost = -0.1125
+	global_trade_goods_size_modifier = 0.075
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_32 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2325
+	manpower_recovery_speed = 0.11625
+	sailors_recovery_speed = 0.11625
+	development_cost = -0.11625
+	global_trade_goods_size_modifier = 0.0775
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_33 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.24
+	manpower_recovery_speed = 0.12
+	sailors_recovery_speed = 0.12
+	development_cost = -0.12
+	global_trade_goods_size_modifier = 0.08
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_34 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2475
+	manpower_recovery_speed = 0.12375
+	sailors_recovery_speed = 0.12375
+	development_cost = -0.12375
+	global_trade_goods_size_modifier = 0.0825
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_35 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.255
+	manpower_recovery_speed = 0.1275
+	sailors_recovery_speed = 0.1275
+	development_cost = -0.1275
+	global_trade_goods_size_modifier = 0.085
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_36 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2625
+	manpower_recovery_speed = 0.13125
+	sailors_recovery_speed = 0.13125
+	development_cost = -0.13125
+	global_trade_goods_size_modifier = 0.0875
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_37 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.27
+	manpower_recovery_speed = 0.135
+	sailors_recovery_speed = 0.135
+	development_cost = -0.135
+	global_trade_goods_size_modifier = 0.09
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_38 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2775
+	manpower_recovery_speed = 0.13875
+	sailors_recovery_speed = 0.13875
+	development_cost = -0.13875
+	global_trade_goods_size_modifier = 0.0925
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_39 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.285
+	manpower_recovery_speed = 0.1425
+	sailors_recovery_speed = 0.1425
+	development_cost = -0.1425
+	global_trade_goods_size_modifier = 0.095
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_40 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.2925
+	manpower_recovery_speed = 0.14625
+	sailors_recovery_speed = 0.14625
+	development_cost = -0.14625
+	global_trade_goods_size_modifier = 0.0975
+}
+rce_religion_mechanic_druidic_council_naturalist_modifier_41 = {
+	picture = rce_yearly_religion_mechanic_sukha_change
+	defensiveness = 0.3
+	manpower_recovery_speed = 0.15
+	sailors_recovery_speed = 0.15
+	development_cost = -0.15
+	global_trade_goods_size_modifier = 0.1
+}
+
+rce_religion_mechanic_druidic_council_call_druidic_council_cooldown_modifier = {
+}
+rce_religion_mechanic_druidic_council_council_province_modifier_religious_rules_enforced = {
+	local_missionary_strength = 0.02
+	local_tax_modifier = 0.2
+}
+rce_religion_mechanic_druidic_council_council_modifier_slackened_forestry_laws = {
+	build_cost = -0.15
+	build_time = -0.15
+	church_influence_modifier = -0.1
+}
+rce_religion_mechanic_druidic_council_council_modifier_druidic_diplomats = {
+	diplomatic_reputation = 1
+}
+rce_religion_mechanic_druidic_council_council_modifier_sanctioned_warfare = {
+	manpower_recovery_speed = 0.15
+}
+rce_religion_mechanic_druidic_council_council_modifier_blessed_fleets = {
+	sailors_recovery_speed = 0.15
+	naval_morale = 0.15
+}
+rce_religion_mechanic_druidic_council_council_modifier_druidic_council = {
+	vassal_income = 0.15
+	reduced_liberty_desire = 10
+}
+rce_religion_mechanic_druidic_council_council_modifier_understand_new_lands = {
+	global_colonial_growth = 15
+	colony_development_boost = 1
+}
+rce_religion_mechanic_druidic_council_council_modifier_druidic_advisory_council = {
+	advisor_cost = -0.15
+}
+rce_religion_mechanic_druidic_council_council_province_modifier_lenient_on_non_believers = {
+	local_tolerance_of_heathens = 2
+	local_tolerance_of_heretics = 2
+}
+rce_religion_mechanic_druidic_council_council_province_modifier_allow_druids_in_estates = {
+	all_estate_influence_modifier = -0.1
+	all_estate_loyalty_equilibrium = 0.1
+}
+rce_religion_mechanic_druidic_council_council_modifier_reorganized_trade_routes = {
+	trade_steering = 0.1
+	caravan_power = 0.1
+}
+rce_religion_mechanic_druidic_council_council_province_modifier_reorganized_trade_routes = {
+	province_trade_power_value = 2
+}
+rce_religion_mechanic_druidic_council_council_modifier_druid_generals = {
+	free_land_leader_pool = 1
+	leader_siege = 1
+}
+rce_religion_mechanic_druidic_council_council_province_modifier_fortified_groves = {
+	local_defensiveness = 0.2
+}
+rce_religion_mechanic_druidic_council_council_province_modifier_urban_naturalism = {
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.05
+}
+rce_religion_mechanic_druidic_council_council_modifier_justified_wars = {
+	core_creation = -0.1
+}

@@ -1,0 +1,69 @@
+custom_window = {
+	name = rce_religion_mechanic_druidic_council_window
+	potential = {
+		ai = no
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+	}
+}
+
+custom_text_box = {
+	name = rce_religion_mechanic_druidic_council_value_text
+	potential = {
+		always = yes
+	}
+	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt
+}
+custom_icon = {
+	name = rce_religion_mechanic_druidic_council_bar
+	potential = {
+		check_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 1 }
+	}
+	frame_variable = rce_religion_mechanic_druidic_council_value_progressbar
+}
+custom_icon = {
+	name = rce_religion_mechanic_druidic_council_bg
+	potential = {
+		NOT = { check_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 1 } }
+	}
+}
+custom_button = {
+	name = rce_religion_mechanic_druidic_council_bar_overlay_spiritualist
+	trigger = {
+		hidden_trigger = {
+			always = no # used to grab tooltip of effects
+		}
+	}
+	effect = {
+		rce_religion_mechanic_druidic_council_show_current_modifier_tooltip = yes
+		rce_religion_mechanic_druidic_council_show_max_spiritualist_modifier_tooltip = yes
+	}
+	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt
+}
+custom_button = {
+	name = rce_religion_mechanic_druidic_council_bar_overlay_naturalist
+	trigger = {
+		hidden_trigger = {
+			always = no # used to grab tooltip of effects
+		}
+	}
+	effect = {
+		rce_religion_mechanic_druidic_council_show_current_modifier_tooltip = yes
+		rce_religion_mechanic_druidic_council_show_max_naturalist_modifier_tooltip = yes
+	}
+	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_druidic_council_call_druidic_council_button
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = rce_religion_mechanic_druidic_council_not_called_druidic_council_recently_tt
+			NOT = { has_country_modifier = rce_religion_mechanic_druidic_council_call_druidic_council_cooldown_modifier }
+			NOT = { has_country_flag = rce_religion_mechanic_druidic_council_calling_druidic_council }
+		}
+	}
+	effect = {
+		country_event = { id = rce_religion_mechanic_druidic_council_events.1 }
+	}
+	tooltip = rce_religion_mechanic_druidic_council_call_druidic_council_button_tt
+}

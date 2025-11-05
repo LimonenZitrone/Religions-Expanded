@@ -1,0 +1,35 @@
+defined_text = {
+	name = RceGetReligionMechanicDruidicCouncilValue
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_religion_mechanic_druidic_council_value value = 0 } }
+		}
+		localisation_key = "[This.rce_religion_mechanic_druidic_council_value.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
+	name = RceGetReligionMechanicDruidicCouncilValueShort
+	random = no
+
+	text = {
+		trigger = {
+			NOT = { is_variable_equal = { which = rce_religion_mechanic_druidic_council_value_display value = 0 } }
+		}
+		localisation_key = "[This.rce_religion_mechanic_druidic_council_value_display.GetValue]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}

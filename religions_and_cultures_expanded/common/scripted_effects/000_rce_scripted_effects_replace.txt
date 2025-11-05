@@ -191,6 +191,7 @@ spawn_country_religious_rebels = {
 			manichaeism = 			{ PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ } } }
 			bogomilist = 			{ PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ } } }
 			hellenism = 			{ PREV = { spawn_rebels = { type = hellenism_rebels size = $size$ } } }
+			druidism = 				{ PREV = { spawn_rebels = { type = druidism_rebels size = $size$ } } }
 		}
 	}
 }
@@ -234,6 +235,7 @@ spawn_province_religious_rebels = {
 		manichaeism = 			{ spawn_rebels = { type = manichaeism_rebels size = $size$ } }
 		bogomilist = 			{ spawn_rebels = { type = bogomilist_rebels size = $size$ } }
 		hellenism = 			{ spawn_rebels = { type = hellenism_rebels size = $size$ } }
+		druidism = 				{ spawn_rebels = { type = druidism_rebels size = $size$ } }
 	}
 }
 
@@ -336,6 +338,7 @@ spawn_rebels_from_unhappy_estate = {
 						manichaeism =     { PREV = { spawn_rebels = { type = manichaeism_rebels size = $size$ as_if_faction = yes } } }
 						bogomilist =     { PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ as_if_faction = yes } } }
 						hellenism =     { PREV = { spawn_rebels = { type = hellenism_rebels size = $size$ as_if_faction = yes } } }
+						druidism =     { PREV = { spawn_rebels = { type = druidism_rebels size = $size$ as_if_faction = yes } } }
 					}
 				}
 			}

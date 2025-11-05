@@ -534,4 +534,32 @@ spriteTypes = {
 		name = "GFX_rce_religion_mechanic_pantheon_remove_god_button"
 		textureFile = "gfx/interface/rce_religion_mechanics/pantheon_mechanic/mechanic_remove_god_button.dds"
 	}
+
+	## Druidic Council Mechanic:
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_druidic_council_bar_frame"
+		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_bar_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_druidic_council_bar_bg"
+		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_bar_empty.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_druidic_council_bar_overlay"
+		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_bar_overlay.dds"
+	}
+	progressbartype = {
+		name = "GFX_rce_religion_mechanic_druidic_council_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_bar.dds"
+		textureFile2 = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_bar_empty.dds"
+		size = { x = 202 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_druidic_council_call_druidic_council_button"
+		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_call_druidic_council_button.dds"
+		transparencecheck = yes
+	}
 }

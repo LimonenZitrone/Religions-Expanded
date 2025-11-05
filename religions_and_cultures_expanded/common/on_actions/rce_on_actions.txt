@@ -430,3 +430,201 @@ on_capital_moved = {
 		}
 	}
 }
+
+# ROOT = released country, FROM = releasing country
+on_country_released = {
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+	}
+	if = {
+		limit = {
+			religion_group = pagan
+			capital_scope = {
+				continent = europe
+			}
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_discovery
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_reformation
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_absolutism
+				duration = -1
+			}
+		}
+	}
+}
+
+# ROOT = released country
+on_country_creation = {
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+	}
+	if = {
+		limit = {
+			religion_group = pagan
+			capital_scope = {
+				continent = europe
+			}
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_discovery
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_reformation
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_absolutism
+				duration = -1
+			}
+		}
+	}
+}
+
+# ROOT = vassal, FROM = overlord
+on_create_vassal = {
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_discovery
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_reformation
+	}
+	if = {
+		limit = {
+			has_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+		}
+		remove_country_modifier = rce_european_pagan_relations_modifier_age_of_absolutism
+	}
+	if = {
+		limit = {
+			religion_group = pagan
+			capital_scope = {
+				continent = europe
+			}
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_discovery
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_reformation
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = {
+				name = rce_european_pagan_relations_modifier_age_of_absolutism
+				duration = -1
+			}
+		}
+	}
+}

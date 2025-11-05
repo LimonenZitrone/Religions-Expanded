@@ -1,0 +1,1701 @@
+rce_set_religion_mechanic_druidic_council_value = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		[[value]
+			set_variable = { which = rce_religion_mechanic_druidic_council_value value = $value$ }
+		]
+		[[which]
+			set_variable = { which = rce_religion_mechanic_druidic_council_value which = $which$ }
+		]
+		hidden_effect = {
+			if = {
+				limit = {
+					rce_has_religion_mechanic_druidic_council_value = { value = 100 }
+				}
+				set_variable = { which = rce_religion_mechanic_druidic_council_value value = 100 }
+			}
+			else_if = {
+				limit = {
+					NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -99.99 } }
+				}
+				set_variable = { which = rce_religion_mechanic_druidic_council_value value = -100 }
+			}
+			set_variable = { which = rce_religion_mechanic_druidic_council_value_display which = rce_religion_mechanic_druidic_council_value }
+			divide_variable = { which = rce_religion_mechanic_druidic_council_value_display value = 1000 }
+			multiply_variable = { which = rce_religion_mechanic_druidic_council_value_display value = 1000 } # 0 decimals in display
+			set_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar which = rce_religion_mechanic_druidic_council_value }
+			change_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 100 }
+			divide_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 2 } # 0-100%
+			rce_update_religion_mechanic_druidic_council_modifier = yes
+		}
+	}
+}
+
+rce_add_religion_mechanic_druidic_council_value = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		[[value]
+			change_variable = { which = rce_religion_mechanic_druidic_council_value value = $value$ }
+		]
+		[[which]
+			change_variable = { which = rce_religion_mechanic_druidic_council_value which = $which$ }
+		]
+		hidden_effect = {
+			if = {
+				limit = {
+					rce_has_religion_mechanic_druidic_council_value = { value = 100 }
+				}
+				set_variable = { which = rce_religion_mechanic_druidic_council_value value = 100 }
+			}
+			else_if = {
+				limit = {
+					NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -99.99 } }
+				}
+				set_variable = { which = rce_religion_mechanic_druidic_council_value value = -100 }
+			}
+			set_variable = { which = rce_religion_mechanic_druidic_council_value_display which = rce_religion_mechanic_druidic_council_value }
+			divide_variable = { which = rce_religion_mechanic_druidic_council_value_display value = 1000 }
+			multiply_variable = { which = rce_religion_mechanic_druidic_council_value_display value = 1000 } # 0 decimals in display
+			set_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar which = rce_religion_mechanic_druidic_council_value }
+			change_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 100 }
+			divide_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 2 } # 0-100%
+			rce_update_religion_mechanic_druidic_council_modifier = yes
+		}
+	}
+}
+
+rce_remove_religion_mechanic_druidic_council_modifiers = {
+	hidden_effect = {
+		if = {
+			limit = {
+				rce_has_any_religion_mechanic_druidic_council_modifiers = yes
+			}
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_1
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_2
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_3
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_4
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_5
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_6
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_7
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_8
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_9
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_10
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_11
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_12
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_13
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_14
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_15
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_16
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_17
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_18
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_19
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_20
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_21
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_22
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_23
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_24
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_25
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_26
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_27
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_28
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_29
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_30
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_31
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_32
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_33
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_34
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_35
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_36
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_37
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_38
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_39
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_40
+			remove_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_41
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_1
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_2
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_3
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_4
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_5
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_6
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_7
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_8
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_9
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_10
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_11
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_12
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_13
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_14
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_15
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_16
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_17
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_18
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_19
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_20
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_21
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_22
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_23
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_24
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_25
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_26
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_27
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_28
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_29
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_30
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_31
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_32
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_33
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_34
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_35
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_36
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_37
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_38
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_39
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_40
+			remove_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_41
+		}
+	}
+}
+
+rce_update_religion_mechanic_druidic_council_modifier = {
+	rce_remove_religion_mechanic_druidic_council_modifiers = yes
+	if = {
+		limit = {
+			rce_has_religion_mechanic_druidic_council_value = { value = 0 }
+		}
+		if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 100 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_41
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 97.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_40
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 95 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_39
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 92.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_38
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 90 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_37
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 87.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_36
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 85 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_35
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 82.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_34
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 80 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_33
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 77.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_32
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 75 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_31
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 72.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_30
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 70 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_29
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 67.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_28
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 65 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_27
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 62.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_26
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 60 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_25
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 57.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_24
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 55 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_23
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 52.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_22
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 50 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_21
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 47.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_20
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 45 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_19
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 42.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_18
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 40 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_17
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 37.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_16
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 35 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_15
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 32.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_14
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 30 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_13
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 27.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_12
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 25 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_11
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 22.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_10
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 20 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_9
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 17.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_8
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 15 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_7
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 12.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_6
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 10 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 7.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				rce_has_religion_mechanic_druidic_council_value = { value = 2.5 }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_2
+				duration = -1
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_naturalist_modifier_1
+				duration = -1
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -99.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_41
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -97.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_40
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -94.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_39
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -92.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_38
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -89.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_37
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -87.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_36
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -84.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_35
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -82.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_34
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -79.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_33
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -77.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_32
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -74.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_31
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -72.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_30
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -69.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_29
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -67.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_28
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -64.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_27
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -62.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_26
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -59.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_25
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -57.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_24
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -54.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_23
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -52.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_22
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -49.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_21
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -47.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_20
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -44.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_19
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -42.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_18
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -39.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_17
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -37.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_16
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -34.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_15
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -32.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_14
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -29.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_13
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -27.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_12
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -24.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_11
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -22.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_10
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -19.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_9
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -17.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_8
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -14.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_7
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -12.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_6
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -9.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -7.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -4.99 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -2.49 } }
+			}
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_2
+				duration = -1
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = rce_religion_mechanic_druidic_council_spiritualist_modifier_1
+				duration = -1
+			}
+		}
+	}
+}
+
+rce_religion_mechanic_druidic_council_show_current_modifier_tooltip = {
+	custom_tooltip = rce_religion_mechanic_druidic_council_show_current_modifier_tooltip_tt
+	tooltip = {
+		if = {
+			limit = {
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = 0 } }
+			}
+			if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_41
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_41
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_40
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_40
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_39
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_39
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_38
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_38
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_37
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_37
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_36
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_36
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_35
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_35
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_34
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_34
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_33
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_33
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_32
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_32
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_31
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_31
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_30
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_30
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_29
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_29
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_28
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_28
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_27
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_27
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_26
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_26
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_25
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_25
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_24
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_24
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_23
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_23
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_22
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_22
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_21
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_21
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_20
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_20
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_19
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_19
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_18
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_18
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_17
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_17
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_16
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_16
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_15
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_15
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_14
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_14
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_13
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_13
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_12
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_12
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_11
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_11
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_10
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_10
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_9
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_9
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_8
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_8
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_7
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_7
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_6
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_6
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_5
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_5
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_4
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_4
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_3
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_spiritualist_modifier_2
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_spiritualist_modifier_2
+					duration = -1
+				}
+			}
+			else = {
+			#	add_country_modifier = {
+			#		name = rce_religion_mechanic_druidic_council_spiritualist_modifier_1
+			#		duration = -1
+			#	}
+				custom_tooltip = rce_religion_mechanic_druidic_council_show_current_modifier_tooltip_tt_none # no effects
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_41
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_41
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_40
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_40
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_39
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_39
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_38
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_38
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_37
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_37
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_36
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_36
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_35
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_35
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_34
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_34
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_33
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_33
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_32
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_32
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_31
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_31
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_30
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_30
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_29
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_29
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_28
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_28
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_27
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_27
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_26
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_26
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_25
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_25
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_24
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_24
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_23
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_23
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_22
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_22
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_21
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_21
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_20
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_20
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_19
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_19
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_18
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_18
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_17
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_17
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_16
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_16
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_15
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_15
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_14
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_14
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_13
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_13
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_12
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_12
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_11
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_11
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_10
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_10
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_9
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_9
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_8
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_8
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_7
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_7
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_6
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_6
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_5
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_5
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_4
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_4
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_3
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = rce_religion_mechanic_druidic_council_naturalist_modifier_2
+				}
+				add_country_modifier = {
+					name = rce_religion_mechanic_druidic_council_naturalist_modifier_2
+					duration = -1
+				}
+			}
+			else = {
+			#	add_country_modifier = {
+			#		name = rce_religion_mechanic_druidic_council_naturalist_modifier_1
+			#		duration = -1
+			#	}
+				custom_tooltip = rce_religion_mechanic_druidic_council_show_current_modifier_tooltip_tt_none # no effects
+			}
+		}
+	}
+}
+
+rce_religion_mechanic_druidic_council_show_max_spiritualist_modifier_tooltip = {
+	custom_tooltip = rce_religion_mechanic_druidic_council_show_max_spiritualist_modifier_tooltip_tt
+	tooltip = {
+		add_country_modifier = {
+			name = rce_religion_mechanic_druidic_council_spiritualist_modifier_41
+			duration = -1
+		}
+	}
+}
+rce_religion_mechanic_druidic_council_show_max_naturalist_modifier_tooltip = {
+	custom_tooltip = rce_religion_mechanic_druidic_council_show_max_naturalist_modifier_tooltip_tt
+	tooltip = {
+		add_country_modifier = {
+			name = rce_religion_mechanic_druidic_council_naturalist_modifier_41
+			duration = -1
+		}
+	}
+}
+
+rce_clear_all_religion_mechanic_druidic_council_modifiers = {
+	if = {
+		limit = {
+			rce_has_any_religion_mechanic_druidic_council_modifiers = yes
+		}
+		set_variable = { which = rce_religion_mechanic_druidic_council_value value = 0 }
+		set_variable = { which = rce_religion_mechanic_druidic_council_value_display value = 0 }
+		set_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 0 }
+		rce_remove_religion_mechanic_druidic_council_modifiers = yes
+		remove_country_modifier = rce_religion_mechanic_druidic_council_call_druidic_council_cooldown_modifier
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_slackened_forestry_laws
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_druidic_diplomats
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_sanctioned_warfare
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_blessed_fleets
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_druidic_council
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_understand_new_lands
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_druidic_advisory_council
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_reorganized_trade_routes
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_druid_generals
+		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_justified_wars
+		every_owned_province = {
+			remove_province_modifier = rce_religion_mechanic_druidic_council_council_province_modifier_religious_rules_enforced
+			remove_province_modifier = rce_religion_mechanic_druidic_council_council_province_modifier_lenient_on_non_believers
+			remove_province_modifier = rce_religion_mechanic_druidic_council_council_province_modifier_allow_druids_in_estates
+			remove_province_modifier = rce_religion_mechanic_druidic_council_council_province_modifier_reorganized_trade_routes
+			remove_province_modifier = rce_religion_mechanic_druidic_council_council_province_modifier_fortified_groves
+			remove_province_modifier = rce_religion_mechanic_druidic_council_council_province_modifier_urban_naturalism
+		}
+	}
+}

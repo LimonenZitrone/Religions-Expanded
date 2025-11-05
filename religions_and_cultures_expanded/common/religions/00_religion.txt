@@ -2749,6 +2749,24 @@ pagan = {
 		heretic = { }
 	}
 
+	druidism = {
+		icon = 37
+		color = { 95 0 75 }
+		country = {
+		}
+		country_as_secondary = {
+		}
+		province = {
+		}
+
+		on_convert = {
+			change_religion = druidism
+			rce_set_religion_mechanic_druidic_council_value = { value = 0 }
+		}
+
+		heretic = { }
+	}
+
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
 }

@@ -1,0 +1,53 @@
+on_religion_change = {
+	if = {
+		limit = {
+			rce_not_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		rce_clear_all_religion_mechanic_druidic_council_modifiers = yes
+	}
+}
+
+# ROOT = annexing country, FROM = annexed country
+on_annexed = {
+	FROM = {
+		if = {
+			limit = {
+				rce_uses_religion_mechanic = { mechanic = druidic_council }
+			}
+			rce_clear_all_religion_mechanic_druidic_council_modifiers = yes
+		}
+	}
+}
+
+# ROOT = released country, FROM = releasing country
+on_country_released = {
+	rce_clear_all_religion_mechanic_druidic_council_modifiers = yes
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		rce_set_religion_mechanic_druidic_council_value = { value = 0 }
+	}
+}
+
+# ROOT = released country
+on_country_creation = {
+	rce_clear_all_religion_mechanic_druidic_council_modifiers = yes
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		rce_set_religion_mechanic_druidic_council_value = { value = 0 }
+	}
+}
+
+# ROOT = vassal, FROM = overlord
+on_create_vassal = {
+	rce_clear_all_religion_mechanic_druidic_council_modifiers = yes
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		rce_set_religion_mechanic_druidic_council_value = { value = 0 }
+	}
+}

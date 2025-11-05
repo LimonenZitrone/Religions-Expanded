@@ -80,6 +80,7 @@
  rce_events.EVTNAME2: "Console: Give Religious Power"
  rce_events.EVTDESC2: "Pick whether you want to receive some power for a new religion mechanic, if you use one."
  rce_events2.EVTOPT1: "Give me Power."
+ rce_events2.EVTOPT3: "Give me Power (Opposite Side)."
  rce_events2.EVTOPT2: "Cancel."
 
  rce_celtic_vassal_events.EVTNAME1: "Release a Celtic Vassal"

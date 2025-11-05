@@ -6221,6 +6221,77 @@ guiTypes = {
 			}
 		}
 
+		################################
+		### Druidic Council Mechanic ###
+		################################
+		windowType = {
+			name = "rce_religion_mechanic_druidic_council_window"
+			position = { x = 15 y = 235 }
+			scripted = yes
+
+			iconType = {
+				name = "rce_religion_mechanic_druidic_council_banner"
+				position = { x = 25 y = 0 }
+				spriteType = "GFX_copts_site_title_banner"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "rce_religion_mechanic_druidic_council_value_text"
+				position = { x = 55 y = 4 }
+				font = "vic_18"
+				format = centre
+				maxWidth = 231
+				maxHeight = 20
+				fixedsize = yes
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "rce_religion_mechanic_druidic_council_call_druidic_council_button"
+				position = { x = 122 y = 25 }
+				spriteType = "GFX_rce_religion_mechanic_druidic_council_call_druidic_council_button"
+				scripted = yes
+			}
+
+			windowType = {
+				name = "rce_religion_mechanic_druidic_council_bar_window"
+				position = { x = 53 y = 67 }
+
+				iconType = {
+					name = "rce_religion_mechanic_druidic_council_bg"
+					position = { x = 14 y = 7 }
+					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_bg"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "rce_religion_mechanic_druidic_council_bar"
+					position = { x = 14 y = 7 }
+					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "rce_religion_mechanic_druidic_council_bar_overlay_spiritualist"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_overlay"
+					scripted = yes
+				}
+				guiButtonType = {
+					name = "rce_religion_mechanic_druidic_council_bar_overlay_naturalist"
+					position = { x = 111 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_overlay"
+					scripted = yes
+				}
+				iconType = {
+					name = "rce_religion_mechanic_druidic_council_bar_frame"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_frame"
+					alwaystransparent = yes
+				}
+			}
+		}
+
 		######################################################
 		##  END Religions & Cultures Expanded Custom GUI 2  ##
 		######################################################

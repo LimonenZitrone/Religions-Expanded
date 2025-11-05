@@ -88,3 +88,16 @@ sound = {
 	name = religion_hellenism
 	file = "start_conversion_zoroastrian.wav"
 }
+
+sound = {
+	name = defender_of_the_druidism_faith
+	file = "claim_defender_faith_coptic.wav"
+}
+sound = {
+	name = start_convert_druidism
+	file = "start_conversion_pagan_animism.wav"
+}
+sound = {
+	name = religion_druidism
+	file = "tab_religion_america.wav"
+}

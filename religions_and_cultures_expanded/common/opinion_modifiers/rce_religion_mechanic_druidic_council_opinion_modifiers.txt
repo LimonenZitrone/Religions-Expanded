@@ -1,0 +1,5 @@
+rce_religion_mechanic_druidic_council_council_modifier_druidic_council_opinion = {
+	opinion = 25
+	years = 15
+	max = 25
+}

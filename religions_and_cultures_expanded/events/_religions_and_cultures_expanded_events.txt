@@ -192,6 +192,16 @@ country_event = {
 	}
 
 	option = {
+		name = druidism
+
+		highlight = yes
+
+		ai_chance = { factor = 0 }
+
+		change_religion = druidism
+	}
+
+	option = {
 		name = rce_events1.EVTOPT1
 
 		ai_chance = { factor = 100 }
@@ -218,6 +228,7 @@ country_event = {
 			rce_uses_religion_mechanic = { mechanic = nestorian_patriarchy }
 			rce_uses_religion_mechanic = { mechanic = manichaeism_purity }
 			rce_uses_religion_mechanic = { mechanic = norse }
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
 		}
 	}
 
@@ -241,6 +252,19 @@ country_event = {
 		rce_add_religion_mechanic_norse_norn_value = { type = adm value = 25 }
 		rce_add_religion_mechanic_norse_norn_value = { type = dip value = 25 }
 		rce_add_religion_mechanic_norse_norn_value = { type = mil value = 25 }
+		rce_add_religion_mechanic_druidic_council_value = { value = 100 }
+	}
+
+	option = {
+		name = rce_events2.EVTOPT3
+
+		trigger = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -100 }
+
+		ai_chance = { factor = 0 }
 	}
 
 	option = {

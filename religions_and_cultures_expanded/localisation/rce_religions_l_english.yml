@@ -21,6 +21,9 @@
  hellenism: "Hellenistic"
  hellenism_religion_desc: "Hellenism is the name of a polytheistic tradition rooted in the ancient Greek world that venerates the Olympian gods and follows rituals tied to city-states and local cults. \nIn 1444 Hellenism has long since declined as an organized religion, replaced by Christianity across Europe, but remnants of its philosophy, literature, and culture still influence scholars and artists."
  hellenism_string: "Hellenism"
+ druidism: "Druidic"
+ druidism_religion_desc: ""
+ druidism_string: "Druidism"
 
  # Heresies:
  YAPANIYA: "Yapaniya"
@@ -72,6 +75,12 @@
  hellenism_rebels_army: "$RELIGION$ Army"
  hellenism_rebels_demand: "Convert $COUNTRYNAME$"
  hellenism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ druidism_rebels_title: "Religious"
+ druidism_rebels_name: "$RELIGION$ Zealots"
+ druidism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ druidism_rebels_army: "$RELIGION$ Army"
+ druidism_rebels_demand: "Convert $COUNTRYNAME$"
+ druidism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
  # Decisions:
  rce_religion_decision_vidilist_stamp_out_the_pagans_title: "Stamp Out the Pagans"
