@@ -136,11 +136,6 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		OR = {
-			primary_culture = greek
-			primary_culture = pontic_greek
-			primary_culture = cappadocian_greek
-		}
 		has_ruler_modifier = rce_hellenism_rethinking_life_modifier
 		NOT = { has_country_flag = rce_discovered_hellenism }
 	}
@@ -210,11 +205,6 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		OR = {
-			primary_culture = greek
-			primary_culture = pontic_greek
-			primary_culture = cappadocian_greek
-		}
 		has_ruler_modifier = rce_hellenism_rethinking_life_modifier
 		OR = {
 			ruler_religion = hellenism
@@ -316,11 +306,6 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		OR = {
-			primary_culture = greek
-			primary_culture = pontic_greek
-			primary_culture = cappadocian_greek
-		}
 		has_ruler_modifier = rce_hellenism_rethinking_life_modifier
 		OR = {
 			ruler_religion = hellenism
@@ -442,6 +427,7 @@ country_event = {
 				limit = {
 					region = balkan_region
 					has_rebel_faction = animism_rebels
+					religion = animism
 				}
 				save_event_target_as = target_province
 			}

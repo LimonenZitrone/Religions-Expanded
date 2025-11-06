@@ -21,7 +21,7 @@
  hellenism: "Hellenistic"
  hellenism_religion_desc: "Hellenism is the name of a polytheistic tradition rooted in the ancient Greek world that venerates the Olympian gods and follows rituals tied to city-states and local cults. \nIn 1444 Hellenism has long since declined as an organized religion, replaced by Christianity across Europe, but remnants of its philosophy, literature, and culture still influence scholars and artists."
  hellenism_string: "Hellenism"
- druidism: "Druidic"
+ druidism: "Druidist"
  druidism_religion_desc: ""
  druidism_string: "Druidism"
 
@@ -158,6 +158,31 @@
  rce_religion_hellenism_events5.EVTOPT1: "Madness!"
  rce_religion_hellenism_events5.EVTOPT2: "There is no reason to rebel as we too are children of the gods!"
 
+ rce_religion_druidism_events.EVTNAME1: "A Wave of Curiosity"
+ rce_religion_druidism_events.EVTDESC1: "[Root.GetName] is a Christian country for centuries. But always since [Root.Monarch.GetName] was a child, [Root.Monarch.GetSheHe] was in awe when looking at ancient artificial stone formations. Recently scholars have started studying the most well known ones, like Stonehenge, and they are convinved to have found a connection to an ancient faith. This has aroused the [Root.Monarch.GetTitle]'s interest in this topic. [Root.Monarch.GetSheHeCap] seems to have moments, in which [Root.Monarch.GetSheHe] is doubting the [Root.Religion.GetName] faith. This old faith could offer solutions for [Root.Monarch.GetHerHis] dilemma..."
+ rce_religion_druidism_events1.EVTOPT1: "Let's learn about Druidism..."
+ rce_religion_druidism_events1.EVTOPT2: "This is madness!"
+
+ rce_religion_druidism_events.EVTNAME2: "A Religious Journey"
+ rce_religion_druidism_events.EVTDESC2: "After reading many, many studies, [Root.Monarch.GetName] has formed [Root.Monarch.GetHerHis] vision of the Druidist faith. The literature [Root.Monarch.GetSheHe] found intriguing, everything seemed to made sense to [Root.Monarch.GetHerHim]. \nHowever, all this theoretical knowledge is overwhelming, so the [Root.Monarch.GetTitle] and [Root.Monarch.GetHerHis] closest advisors and friends travelled to Stonehenge themselves..."
+ rce_religion_druidism_events2.EVTOPT1: "This sight strengthens my believe: The ancient faith is the True Faith..."
+ rce_religion_druidism_events2.EVTOPT2: "This is madness!"
+
+ rce_religion_druidism_events.EVTNAME3: "[Root.Monarch.GetName]'s Turn to the Ancient Gods"
+ rce_religion_druidism_events.EVTDESC3: "Many courtiers speculated, [Root.Monarch.GetName] would quickly return to the [Root.Religion.GetName] faith and [Root.Monarch.GetHerHis] conversion to the Druidist faith would remain nothing but a short outburst of naivety, something the world would have soon forgotten. Now, after months of [Root.Monarch.GetName] not showing any signs of regret but instead working on planning to restructure [Root.Capital.GetName] in order to make place for Temples to the ancient gods, even those, who wouldn't want to see it, must now accept that the [Root.Monarch.GetTitle] has made [Root.Monarch.GetHerHis] decision: [Root.Monarch.GetSheHe], soon the capital and eventually the whole country will get rid of the Christian faith and go back to the Druidist roots."
+ rce_religion_druidism_events3.EVTOPT1: "New Temples should arise!"
+ rce_religion_druidism_events3.EVTOPT2: "This is madness!"
+
+ rce_religion_druidism_events.EVTNAME4: "The Druidist Conversion of [Root.GetName]"
+ rce_religion_druidism_events.EVTDESC4: "Heathen preachings are witnessed in our own provinces. Once devoted Christians are tossing their crosses into the ocean and building shrines for the ancient gods. Churches are turned into temples.\nIn the midst of all that is [Root.Monarch.GetTitle] [Root.Monarch.GetName], now self proclaimed "Grand Druid", who overlooks the conversion of entire areas of [Root.GetName]."
+ rce_religion_druidism_events4.EVTOPT1: "It is done! We are once again following the True Faith!"
+ rce_religion_druidism_events4.EVTOPT2: "This is madness!"
+
+ rce_religion_druidism_events.EVTNAME5: "The Awakening of the Druidist Faith"
+ rce_religion_druidism_events.EVTDESC5: "The animistic revolt of [target_province.GetName] has found ruins of an ancient cult sight from centuries ago. The faith of our ancestors revealed a whole new world of believes to these rebels. Now they are no longer rebelling against us for their animistic traditions but for their new found Druidist gods."
+ rce_religion_druidism_events5.EVTOPT1: "Madness!"
+ rce_religion_druidism_events5.EVTOPT2: "There is no reason to rebel as we too are children of the gods!"
+
  # Modifiers:
  ## Event Modifiers:
  rce_religion_jainism_fundamentalists_punished_modifier: "Jain Fundamentalists Punished"
@@ -171,6 +196,9 @@
  rce_hellenism_rethinking_life_modifier: "Withdrawn from Public Life"
  desc_rce_hellenism_rethinking_life_modifier: "Our good [Root.Monarch.GetTitle] has withdrawn from public life after [Root.Monarch.GetHerHis] faith in the [Root.Religion.GetName] faith has begun to stagger. [Root.Monarch.GetSheHeCap] has read about an old faith in an ancient book, a faith of [Root.Monarch.GetHerHis] ancestors. This has made [Root.Monarch.GetName] very interested in ancient, religious literature..."
  rce_hellenism_fervor: "Hellenistic Fervor"
+ rce_druidism_rethinking_life_modifier: "Withdrawn from Public Life"
+ desc_rce_druidism_rethinking_life_modifier: "Our good [Root.Monarch.GetTitle] has withdrawn from public life after [Root.Monarch.GetHerHis] faith in the [Root.Religion.GetName] faith has begun to stagger. [Root.Monarch.GetSheHeCap] has read about an old faith in new studies from scholars, a faith of [Root.Monarch.GetHerHis] ancestors. This has made [Root.Monarch.GetName] very interested in the research of that religion..."
+ rce_druidism_fervor: "Druidist Fervor"
  ## Province Triggered Modifiers:
  rce_bogomilist_plovdiv_province_triggered_modifier: "The Conquest of Plovdiv"
  rce_jainism_mewar_province_triggered_modifier: "The Conquest of Mewar"

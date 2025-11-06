@@ -1,0 +1,514 @@
+namespace = rce_religion_druidism_events
+
+country_event = {
+	id = rce_religion_druidism_events.1
+	title = rce_religion_druidism_events.EVTNAME1
+	desc = rce_religion_druidism_events.EVTDESC1
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		current_age = age_of_discovery
+		OR = {
+			culture_group = gaelic
+			primary_culture = english
+			primary_culture = anglois
+		}
+		NOT = { has_country_flag = rce_had_druidism_nostalgia }
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Leviathan" }
+				owns = 234
+			}
+			AND = {
+				has_dlc = "Leviathan"
+				any_owned_province = {
+					OR = {
+						has_great_project = {
+							type = stonehenge
+							tier = 1
+						}
+						has_great_project = {
+							type = stonehenge
+							tier = 2
+						}
+						has_great_project = {
+							type = stonehenge
+							tier = 3
+						}
+					}
+					OR = {
+						province_is_or_accepts_religion_group = {
+							religion_group = pagan
+						}
+						AND = {
+							culture = roman
+							province_is_or_accepts_culture = yes
+						}
+						AND = {
+							OR = {
+								culture = anglois
+								culture = english
+							}
+							province_is_or_accepts_culture = yes
+						}
+					}
+				}
+			}
+		}
+		is_subject = no
+		religion_group = christian
+		OR = {
+			ruler_has_personality = scholar_personality
+			ruler_has_personality = sinner_personality
+			ruler_has_personality = free_thinker_personality
+			AND = {
+				adm = 4
+				dip = 4
+				mil = 4
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			culture_group = gaelic
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				NOT = { has_dlc = "Leviathan" }
+				any_owned_province = {
+					OR = {
+						has_great_project = {
+							type = stonehenge
+							tier = 2
+						}
+						has_great_project = {
+							type = stonehenge
+							tier = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_had_druidism_nostalgia
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events1.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		custom_tooltip = rce_research_druidism_tt
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+			add_reform_desire = 0.01
+		}
+		else = {
+			add_legitimacy_equivalent = { amount = -25 republican_tradition = -15 }
+		}
+		add_ruler_modifier = {
+			name = rce_druidism_rethinking_life_modifier
+			duration = 10950
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events1.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else = {
+			add_legitimacy_equivalent = { amount = 25 republican_tradition = 15 }
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_druidism_events.2
+	title = rce_religion_druidism_events.EVTNAME2
+	desc = rce_religion_druidism_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		has_ruler_modifier = rce_druidism_rethinking_life_modifier
+		NOT = { has_country_flag = rce_discovered_druidism }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			culture_group = gaelic
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				NOT = { has_dlc = "Leviathan" }
+				any_owned_province = {
+					OR = {
+						has_great_project = {
+							type = stonehenge
+							tier = 2
+						}
+						has_great_project = {
+							type = stonehenge
+							tier = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_discovered_druidism
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events2.EVTOPT1
+
+		ai_chance = { factor = 0 }
+
+		set_ruler_religion = druidism
+	}
+
+	option = {
+		name = rce_religion_druidism_events2.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else = {
+			add_legitimacy_equivalent = { amount = 25 republican_tradition = 15 }
+		}
+		remove_country_modifier = rce_druidism_rethinking_life_modifier
+	}
+}
+
+country_event = {
+	id = rce_religion_druidism_events.3
+	title = rce_religion_druidism_events.EVTNAME3
+	desc = rce_religion_druidism_events.EVTDESC3
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		has_ruler_modifier = rce_druidism_rethinking_life_modifier
+		OR = {
+			ruler_religion = druidism
+			AND = {
+				has_country_flag = rce_discovered_druidism
+				NOT = { had_country_flag = { flag = rce_discovered_druidism days = 7300 } }
+			}
+		}
+		NOT = { religion = druidism }
+		NOT = { has_country_flag = rce_druidism_province_conversion }
+		any_owned_province = {
+			is_capital = no
+			same_continent = CAPITAL
+			is_island = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			culture_group = gaelic
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				NOT = { has_dlc = "Leviathan" }
+				any_owned_province = {
+					OR = {
+						has_great_project = {
+							type = stonehenge
+							tier = 2
+						}
+						has_great_project = {
+							type = stonehenge
+							tier = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_druidism_province_conversion
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					same_continent = CAPITAL
+					is_island = no
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events3.EVTOPT1
+
+		goto = target_province
+
+		ai_chance = { factor = 0 }
+
+		event_target:target_province = {
+			change_religion = druidism
+		}
+		if = {
+			limit = {
+				ruler_has_personality = sinner_personality
+			}
+			remove_ruler_personality = sinner_personality
+			add_ruler_personality = zealot_personality
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events3.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else = {
+			add_legitimacy_equivalent = { amount = 25 republican_tradition = 15 }
+		}
+		remove_country_modifier = rce_druidism_rethinking_life_modifier
+	}
+}
+
+country_event = {
+	id = rce_religion_druidism_events.4
+	title = rce_religion_druidism_events.EVTNAME4
+	desc = rce_religion_druidism_events.EVTDESC4
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		has_ruler_modifier = rce_druidism_rethinking_life_modifier
+		OR = {
+			ruler_religion = druidism
+			AND = {
+				has_country_flag = rce_discovered_druidism
+				NOT = { had_country_flag = { flag = rce_discovered_druidism days = 10950 } }
+			}
+		}
+		NOT = { religion = druidism }
+		NOT = { has_country_flag = rce_druidism_country_conversion }
+		any_owned_province = {
+			religion = druidism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 20
+		modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			culture_group = gaelic
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				NOT = { has_dlc = "Leviathan" }
+				any_owned_province = {
+					OR = {
+						has_great_project = {
+							type = stonehenge
+							tier = 2
+						}
+						has_great_project = {
+							type = stonehenge
+							tier = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = rce_druidism_country_conversion
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events4.EVTOPT1
+
+		goto = capital
+
+		ai_chance = { factor = 0 }
+
+		add_stability = -3
+		remove_country_modifier = rce_druidism_rethinking_life_modifier
+		change_religion = druidism
+		custom_tooltip = " "
+		add_country_modifier = {
+			name = rce_druidism_fervor
+			duration = 18250
+		}
+		capital_scope = {
+			change_religion = druidism
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events4.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+			add_reform_desire = -0.01
+		}
+		else = {
+			add_legitimacy_equivalent = { amount = 25 republican_tradition = 15 }
+		}
+		remove_country_modifier = rce_druidism_rethinking_life_modifier
+	}
+}
+
+country_event = {
+	id = rce_religion_druidism_events.5
+	title = rce_religion_druidism_events.EVTNAME5
+	desc = rce_religion_druidism_events.EVTDESC5
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	fire_only_once = yes
+
+	goto = target_province
+
+	trigger = {
+		current_age = age_of_reformation
+		NOT = { religion = druidism }
+		NOT = { religion_group = pagan }
+		OR = {
+			culture_group = gaelic
+			primary_culture = english
+			primary_culture = anglois
+		}
+		any_owned_province = {
+			OR = {
+				region = british_isles_region
+				region = france_region
+			}
+			has_rebel_faction = animism_rebels
+			religion = animism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = british_isles_region
+						region = france_region
+					}
+					has_rebel_faction = animism_rebels
+					religion = animism
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events5.EVTOPT1
+
+		trigger = {
+			NOT = { religion_group = pagan }
+		}
+
+		disband_rebels = animism_rebels
+		add_stability = -2
+		event_target:target_province = {
+			change_religion = druidism
+			spawn_rebels = {
+				type = druidism_rebels
+				size = 2
+			}
+			spawn_rebels = {
+				type = druidism_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_druidism_events5.EVTOPT2
+
+		trigger = {
+			religion_group = pagan
+		}
+
+		goto = capital
+
+		disband_rebels = animism_rebels
+		change_religion = druidism
+		capital_scope = {
+			change_religion = druidism
+		}
+		event_target:target_province = {
+			change_religion = druidism
+		}
+	}
+}
