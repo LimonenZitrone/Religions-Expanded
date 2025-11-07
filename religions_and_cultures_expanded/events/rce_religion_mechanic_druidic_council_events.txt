@@ -623,3 +623,24 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.2
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME2
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC2
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events2.EVTOPT1
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -15 }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events2.EVTOPT2
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 15 }
+	}
+}

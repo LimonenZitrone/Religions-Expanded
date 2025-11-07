@@ -7,6 +7,18 @@ on_religion_change = {
 	}
 }
 
+on_monarch_death = {
+	if = {
+		limit = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		set_variable = { which = rce_religion_mechanic_druidic_council_value_temp which = rce_religion_mechanic_druidic_council_value }
+		divide_variable = { which = rce_religion_mechanic_druidic_council_value_temp value = 2 }
+		rce_set_religion_mechanic_druidic_council_value = { which = rce_religion_mechanic_druidic_council_value_temp }
+		country_event = { id = rce_religion_mechanic_druidic_council_events.2 }
+	}
+}
+
 # ROOT = annexing country, FROM = annexed country
 on_annexed = {
 	FROM = {

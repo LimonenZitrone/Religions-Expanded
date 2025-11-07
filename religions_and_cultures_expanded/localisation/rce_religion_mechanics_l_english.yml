@@ -2391,9 +2391,13 @@
  ##############################
  # GUIs:
  rce_religion_mechanic_druidic_council_value_text: "Druidic Alignment: [Root.RceGetReligionMechanicDruidicCouncilValueShort]"
- rce_religion_mechanic_druidic_council_mechanic_tt: "§YDruidic Alignment§! \nOur §YDruidic Alignment§! is currently at §Y[Root.RceGetReligionMechanicDruidicCouncilValue]§!."
+ rce_religion_mechanic_druidic_council_mechanic_tt: "§YDruidic Alignment§! \nOur §YDruidic Alignment§! is currently at §Y[Root.RceGetReligionMechanicDruidicCouncilValue]§!. \n--------------\nDruidic Alignment is measured on a scale between -100 (§YSpiritiualism§!) and 100 (§YNaturalism§!). \nThe Druidic Alignment of your ruler is affected by various things, such as decisions and events. \nOn ruler death the Druidic Alignment will be reset to half of its current value."
+ rce_religion_mechanic_druidic_council_mechanic_tt_short: "§YDruidic Alignment§! \nOur §YDruidic Alignment§! is currently at §Y[Root.RceGetReligionMechanicDruidicCouncilValue]§!."
  rce_religion_mechanic_druidic_council_call_druidic_council_button_tt: "§YCall Druidic Council§! \nCall the Council of the Druids to decide over the next issue that it should concentrate on."
  rce_religion_mechanic_druidic_council_not_called_druidic_council_recently_tt: "The Druidic Council was NOT called within the last §Y15 years§!"
+ rce_religion_mechanic_druidic_council_spend_button_spiritualist_tt: "§YEmbrace Spiritualist Practices§!"
+ rce_religion_mechanic_druidic_council_spend_button_naturalist_tt: "§YEmbrace Naturalist Practices§!"
+ rce_religion_mechanic_druidic_council_spend_button_naturalist_income_tt: "from owned provinces with a trade good applicable for a §YPlantation§! or §YFarm Estate§! manufactory."
 
  # Variables:
  rce_religion_mechanic_druidic_council_value: "Druidic Alignment"
@@ -2405,8 +2409,8 @@
  rce_religion_mechanic_druidic_council_show_max_naturalist_modifier_tooltip_tt: "§YAt the maximum value Druidic Alignment will have the following effects:§!"
 
  # Scripted Triggers:
- rce_uses_religion_mechanic_sukha_tt: "Uses the §YDruidic Council§! mechanic"
- rce_not_uses_religion_mechanic_sukha_tt: "Does NOT use the §YDruidic Council§! mechanic"
+ rce_uses_religion_mechanic_druidic_council_tt: "Uses the §YDruidic Council§! mechanic"
+ rce_not_uses_religion_mechanic_druidic_council_tt: "Does NOT use the §YDruidic Council§! mechanic"
 
  # Events:
  rce_religion_mechanic_druidic_council_events.EVTNAME1: "The Druidic Council"
@@ -2430,6 +2434,24 @@
  rce_religion_mechanic_druidic_council_events.1.tt.1: "Every owned province with a §Ytaxation building§!:"
  rce_religion_mechanic_druidic_council_events.1.tt.2: "Every owned province with a §Ytaxation building§! and at least §Y10§! development:"
  rce_religion_mechanic_druidic_council_events.1.tt.3: "Every owned province with a §Ytaxation building§! and §YHills§!, §YMountains§! or §YHighlands§! terrain:"
+
+ rce_religion_mechanic_druidic_council_events.EVTNAME2: "[Root.Monarch.GetName]'s Alignment"
+ rce_religion_mechanic_druidic_council_events.EVTDESC2: "With [Root.Monarch.GetName] starting [Root.Monarch.GetHerHis] reign, it is time to decide whether [Root.Monarch.GetSheHe] has a Spiritual or Naturalist stance."
+ rce_religion_mechanic_druidic_council_events2.EVTOPT1: "[Root.Monarch.GetName] is a Spiritualist."
+ rce_religion_mechanic_druidic_council_events2.EVTOPT2: "[Root.Monarch.GetName] is a Naturalist."
+
+ # Decisions:
+ rce_religion_mechanic_druidic_council_increase_druidic_alignment_decision_title: "Increase Naturalist Influence"
+ rce_religion_mechanic_druidic_council_increase_druidic_alignment_decision_desc: "Support the Naturalists among the Druids to strengthen their position."
+ rce_religion_mechanic_druidic_council_decrease_druidic_alignment_decision_title: "Increase Spiritualist Influence"
+ rce_religion_mechanic_druidic_council_decrease_druidic_alignment_decision_desc: "Support the Spiritualists among the Druids to strengthen their position."
+ rce_religion_mechanic_druidic_council_not_changed_druidic_alignment_recently_tt: "Has NOT increased the Naturalist or Spiritualist Influence within the last §Y15 years§!"
+ rce_religion_mechanic_druidic_council_call_druidic_council_decision_title: "Call Druidic Council"
+ rce_religion_mechanic_druidic_council_call_druidic_council_decision_desc: "Call the Council of the Druids to decide over the next issue that it should concentrate on."
+ rce_religion_mechanic_druidic_council_spend_decision_spiritualist_title: "Embrace Spiritualist Practices"
+ rce_religion_mechanic_druidic_council_spend_decision_spiritualist_desc: ""
+ rce_religion_mechanic_druidic_council_spend_decision_naturalist_title: "Embrace Naturalist Practices"
+ rce_religion_mechanic_druidic_council_spend_decision_naturalist_desc: ""
 
  # Modifiers:
  ## Mechanic Modifiers:

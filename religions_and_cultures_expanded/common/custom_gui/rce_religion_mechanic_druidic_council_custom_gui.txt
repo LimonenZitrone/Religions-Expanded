@@ -37,7 +37,7 @@ custom_button = {
 		rce_religion_mechanic_druidic_council_show_current_modifier_tooltip = yes
 		rce_religion_mechanic_druidic_council_show_max_spiritualist_modifier_tooltip = yes
 	}
-	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt
+	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt_short
 }
 custom_button = {
 	name = rce_religion_mechanic_druidic_council_bar_overlay_naturalist
@@ -50,11 +50,12 @@ custom_button = {
 		rce_religion_mechanic_druidic_council_show_current_modifier_tooltip = yes
 		rce_religion_mechanic_druidic_council_show_max_naturalist_modifier_tooltip = yes
 	}
-	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt
+	tooltip = rce_religion_mechanic_druidic_council_mechanic_tt_short
 }
 
 custom_button = {
 	name = rce_religion_mechanic_druidic_council_call_druidic_council_button
+	# if you change this, make sure to change the rce_religion_mechanic_druidic_council_call_druidic_council_decision decision accordingly
 	trigger = {
 		custom_trigger_tooltip = {
 			tooltip = rce_religion_mechanic_druidic_council_not_called_druidic_council_recently_tt
@@ -63,7 +64,49 @@ custom_button = {
 		}
 	}
 	effect = {
+		custom_tooltip = rce_tooltip_effect_text
 		country_event = { id = rce_religion_mechanic_druidic_council_events.1 }
 	}
 	tooltip = rce_religion_mechanic_druidic_council_call_druidic_council_button_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_druidic_council_spend_button_spiritualist
+	# if you change this, make sure to change the rce_religion_mechanic_druidic_council_spend_decision_spiritualist decision accordingly
+	trigger = {
+		NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -74.999 } }
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_add_religion_mechanic_druidic_council_value = { value = 50 }
+		add_army_tradition = 15
+		add_navy_tradition = 15
+		if = {
+			limit = {
+				has_dlc = "Cradle of Civilization"
+			}
+			add_army_professionalism = 0.025
+		}
+	}
+	tooltip = rce_religion_mechanic_druidic_council_spend_button_spiritualist_tt
+}
+
+custom_button = {
+	name = rce_religion_mechanic_druidic_council_spend_button_naturalist
+	# if you change this, make sure to change the rce_religion_mechanic_druidic_council_spend_decision_naturalist decision accordingly
+	trigger = {
+		rce_has_religion_mechanic_druidic_council_value = { value = 75 }
+	}
+	effect = {
+		custom_tooltip = rce_tooltip_effect_text
+		rce_add_religion_mechanic_druidic_council_value = { value = -50 }
+		add_years_of_owned_provinces_production_income = {
+			years = 2
+			trigger = {
+				rce_province_has_plantation_or_farm_estate_trade_good = yes
+			}
+			custom_tooltip = rce_religion_mechanic_druidic_council_spend_button_naturalist_income_tt
+		}
+	}
+	tooltip = rce_religion_mechanic_druidic_council_spend_button_naturalist_tt
 }

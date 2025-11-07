@@ -562,4 +562,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_call_druidic_council_button.dds"
 		transparencecheck = yes
 	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_druidic_council_spend_button_spiritualist"
+		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_spend_button_spiritualist.dds"
+	}
+	spriteType = {
+		name = "GFX_rce_religion_mechanic_druidic_council_spend_button_naturalist"
+		textureFile = "gfx/interface/rce_religion_mechanics/druidic_council_mechanic/mechanic_spend_button_naturalist.dds"
+	}
 }

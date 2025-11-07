@@ -1,0 +1,160 @@
+country_decisions = {
+	rce_religion_mechanic_druidic_council_increase_druidic_alignment_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_horde_unity = yes
+				uses_devotion = yes
+				uses_meritocracy = yes
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_druidic_council_not_changed_druidic_alignment_recently_tt
+				OR = {
+					NOT = { has_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown }
+					had_country_flag = { flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown days = 5475 }
+				}
+			}
+			legitimacy_equivalent = 50
+		}
+		effect = {
+			clr_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown
+			set_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown
+			add_legitimacy_equivalent = { amount = -15 republican_tradition = -10 }
+			if = {
+				limit = {
+					uses_republican_tradition = yes
+				}
+				rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+			}
+			else = {
+				rce_add_religion_mechanic_druidic_council_value = { value = 5 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rce_religion_mechanic_druidic_council_decrease_druidic_alignment_decision = {
+		potential = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+			OR = {
+				uses_legitimacy = yes
+				uses_republican_tradition = yes
+				uses_horde_unity = yes
+				uses_devotion = yes
+				uses_meritocracy = yes
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_druidic_council_not_changed_druidic_alignment_recently_tt
+				OR = {
+					NOT = { has_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown }
+					had_country_flag = { flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown days = 5475 }
+				}
+			}
+			legitimacy_equivalent = 50
+		}
+		effect = {
+			clr_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown
+			set_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown
+			add_legitimacy_equivalent = { amount = -15 republican_tradition = -10 }
+			if = {
+				limit = {
+					uses_republican_tradition = yes
+				}
+				rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+			}
+			else = {
+				rce_add_religion_mechanic_druidic_council_value = { value = -5 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# AI Decisions Below
+	rce_religion_mechanic_druidic_council_call_druidic_council_decision = {
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+			custom_trigger_tooltip = {
+				tooltip = rce_religion_mechanic_druidic_council_not_called_druidic_council_recently_tt
+				NOT = { has_country_modifier = rce_religion_mechanic_druidic_council_call_druidic_council_cooldown_modifier }
+				NOT = { has_country_flag = rce_religion_mechanic_druidic_council_calling_druidic_council }
+			}
+		}
+		effect = {
+			country_event = { id = rce_religion_mechanic_druidic_council_events.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	rce_religion_mechanic_druidic_council_spend_decision_spiritualist = {
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+			NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -74.999 } }
+		}
+		effect = {
+			rce_add_religion_mechanic_druidic_council_value = { value = 50 }
+			add_army_tradition = 15
+			add_navy_tradition = 15
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_army_professionalism = 0.025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				rce_has_religion_mechanic_druidic_council_value = { value = -89.999 }
+			}
+		}
+	}
+
+	rce_religion_mechanic_druidic_council_spend_decision_naturalist = {
+		potential = {
+			ai = yes
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+		}
+		allow = {
+			rce_uses_religion_mechanic = { mechanic = druidic_council }
+			rce_has_religion_mechanic_druidic_council_value = { value = 75 }
+		}
+		effect = {
+			rce_add_religion_mechanic_druidic_council_value = { value = -50 }
+			add_years_of_owned_provinces_production_income = {
+				years = 2
+				trigger = {
+					rce_province_has_plantation_or_farm_estate_trade_good = yes
+				}
+				custom_tooltip = rce_religion_mechanic_druidic_council_spend_button_naturalist_income_tt
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = 90 } }
+			}
+		}
+	}
+}

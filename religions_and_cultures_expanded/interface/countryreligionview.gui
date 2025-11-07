@@ -6248,7 +6248,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "rce_religion_mechanic_druidic_council_call_druidic_council_button"
-				position = { x = 122 y = 25 }
+				position = { x = 78 y = 25 }
 				spriteType = "GFX_rce_religion_mechanic_druidic_council_call_druidic_council_button"
 				scripted = yes
 			}
@@ -6273,13 +6273,13 @@ guiTypes = {
 				}
 				guiButtonType = {
 					name = "rce_religion_mechanic_druidic_council_bar_overlay_spiritualist"
-					position = { x = 0 y = 0 }
+					position = { x = 4 y = 5 }
 					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_overlay"
 					scripted = yes
 				}
 				guiButtonType = {
 					name = "rce_religion_mechanic_druidic_council_bar_overlay_naturalist"
-					position = { x = 111 y = 0 }
+					position = { x = 115 y = 5 }
 					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_overlay"
 					scripted = yes
 				}
@@ -6289,6 +6289,21 @@ guiTypes = {
 					spriteType = "GFX_rce_religion_mechanic_druidic_council_bar_frame"
 					alwaystransparent = yes
 				}
+			}
+
+			guiButtonType = {
+				name = "rce_religion_mechanic_druidic_council_spend_button_spiritualist"
+				position = { x = 5 y = 25 }
+				spriteType = "GFX_rce_religion_mechanic_druidic_council_spend_button_spiritualist"
+				scale = 0.9
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "rce_religion_mechanic_druidic_council_spend_button_naturalist"
+				position = { x = 257 y = 25 }
+				spriteType = "GFX_rce_religion_mechanic_druidic_council_spend_button_naturalist"
+				scale = 0.9
+				scripted = yes
 			}
 		}
 
