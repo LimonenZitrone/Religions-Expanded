@@ -632,6 +632,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+	}
+
 	option = {
 		name = rce_religion_mechanic_druidic_council_events2.EVTOPT1
 
@@ -642,5 +646,226 @@ country_event = {
 		name = rce_religion_mechanic_druidic_council_events2.EVTOPT2
 
 		rce_add_religion_mechanic_druidic_council_value = { value = 15 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.3
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME3
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC3
+	picture = STREET_SPEECH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+				}
+				save_event_target_as = extremist_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events3.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -24.99 } }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events3.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				rce_has_religion_mechanic_druidic_council_value = { value = 25 }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.4
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME4
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC4
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events4.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -24.99 } }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events4.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				rce_has_religion_mechanic_druidic_council_value = { value = 25 }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.5
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME5
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC5
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+		rce_has_religion_mechanic_druidic_council_value = { value = -35 }
+		NOT = { rce_has_religion_mechanic_druidic_council_value = { value = 35 } }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events5.EVTOPT1
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.6
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME6
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC6
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+		NOT = { has_country_modifier = rce_add_religion_mechanic_druidic_council_building_restrictions_modifier }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events6.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -24.99 } }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events6.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				rce_has_religion_mechanic_druidic_council_value = { value = 25 }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+		add_country_modifier = {
+			name = rce_add_religion_mechanic_druidic_council_building_restrictions_modifier
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.7
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME7
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC7
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events7.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				NOT = { rce_has_religion_mechanic_druidic_council_value = { value = -24.99 } }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events7.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				rce_has_religion_mechanic_druidic_council_value = { value = 25 }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
 	}
 }

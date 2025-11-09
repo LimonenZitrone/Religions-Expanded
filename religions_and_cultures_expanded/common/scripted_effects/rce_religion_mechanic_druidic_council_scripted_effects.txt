@@ -1678,6 +1678,7 @@ rce_clear_all_religion_mechanic_druidic_council_modifiers = {
 		set_variable = { which = rce_religion_mechanic_druidic_council_value_display value = 0 }
 		set_variable = { which = rce_religion_mechanic_druidic_council_value_progressbar value = 0 }
 		rce_remove_religion_mechanic_druidic_council_modifiers = yes
+		clr_country_flag = rce_religion_mechanic_druidic_change_druidic_alignment_cooldown
 		remove_country_modifier = rce_religion_mechanic_druidic_council_call_druidic_council_cooldown_modifier
 		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_slackened_forestry_laws
 		remove_country_modifier = rce_religion_mechanic_druidic_council_council_modifier_druidic_diplomats

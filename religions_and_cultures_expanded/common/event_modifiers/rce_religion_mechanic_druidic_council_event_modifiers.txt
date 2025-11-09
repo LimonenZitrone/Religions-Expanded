@@ -708,3 +708,10 @@ rce_religion_mechanic_druidic_council_council_province_modifier_urban_naturalism
 rce_religion_mechanic_druidic_council_council_modifier_justified_wars = {
 	core_creation = -0.1
 }
+
+# Event Modifiers:
+rce_add_religion_mechanic_druidic_council_building_restrictions_modifier = {
+	tolerance_own = 0.5
+	build_cost = 0.1
+	religion = yes
+}
