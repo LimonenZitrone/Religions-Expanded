@@ -2751,7 +2751,7 @@ pagan = {
 
 	druidism = {
 		icon = 37
-		color = { 95 0 75 }
+		color = { 0 75 20 }
 		country = {
 		}
 		country_as_secondary = {
@@ -2762,6 +2762,7 @@ pagan = {
 		on_convert = {
 			change_religion = druidism
 			rce_set_religion_mechanic_druidic_council_value = { value = 0 }
+			country_event = { id = rce_religion_mechanic_druidic_council_events.2 }
 		}
 
 		heretic = { }
