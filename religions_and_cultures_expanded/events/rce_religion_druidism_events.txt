@@ -7,7 +7,10 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		current_age = age_of_discovery
+		OR = {
+			current_age = age_of_discovery
+			has_country_flag = rce_formable_celtica
+		}
 		OR = {
 			culture_group = gaelic
 			primary_culture = english
@@ -97,6 +100,10 @@ country_event = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = rce_formable_celtica
+		}
 	}
 
 	immediate = {
@@ -184,6 +191,10 @@ country_event = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = rce_formable_celtica
+		}
 	}
 
 	immediate = {
@@ -270,6 +281,10 @@ country_event = {
 					}
 				}
 			}
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = rce_formable_celtica
 		}
 	}
 
@@ -374,6 +389,10 @@ country_event = {
 					}
 				}
 			}
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = rce_formable_celtica
 		}
 	}
 

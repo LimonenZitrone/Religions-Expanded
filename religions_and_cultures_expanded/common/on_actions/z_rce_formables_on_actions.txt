@@ -30,6 +30,16 @@ on_annexed = {
 			restore_country_color = yes
 			swap_free_idea_group = yes
 		}
+		if = {
+			limit = {
+				has_country_flag = rce_formable_celtica
+			}
+			clr_global_flag = rce_formable_celtica
+			clr_country_flag = rce_formable_celtica
+			restore_country_name = yes
+			restore_country_color = yes
+			swap_free_idea_group = yes
+		}
 	}
 }
 
@@ -51,6 +61,17 @@ on_primary_culture_changed = {
 		}
 		clr_global_flag = rce_formable_berber_mauretania
 		clr_country_flag = rce_formable_berber_mauretania
+		restore_country_name = yes
+		restore_country_color = yes
+		swap_free_idea_group = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = rce_formable_celtica
+			NOT = { culture_group = gaelic }
+		}
+		clr_global_flag = rce_formable_celtica
+		clr_country_flag = rce_formable_celtica
 		restore_country_name = yes
 		restore_country_color = yes
 		swap_free_idea_group = yes

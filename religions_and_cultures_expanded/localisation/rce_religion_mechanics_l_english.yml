@@ -2464,6 +2464,26 @@
  rce_religion_mechanic_druidic_council_events7.EVTOPT1: "There is nothing wrong with idealizing our ancestors."
  rce_religion_mechanic_druidic_council_events7.EVTOPT2: "We must ban offensive stories from the realm."
 
+ rce_religion_mechanic_druidic_council_events.EVTNAME8: "[target_province.GetName] sanctuaries deteriorating"
+ rce_religion_mechanic_druidic_council_events.EVTDESC8: "Due to a combination of lacking druidic discipline and a faltering economy many of the great sanctuaries of [target_province.GetName] are in a terrible state. A concerned druid has approached the [Root.Monarch.GetTitle] with a warning that unless something is done soon the dire situation may lead to the last sanctuaries being fully destroyed and [target_province.GetName] being left with no religious sites anymore. There are, however, many local landowners more than ready to infringe on the land the abandoned sanctuaries would leave behind. As the [Root.Monarch.GetTitle] is meant to protect religious life in [Root.GetName] it will be clear to many observers that the responsibility for whatever happens will rest on [Root.Monarch.GetHerHis] shoulders."
+ rce_religion_mechanic_druidic_council_events8.EVTOPT1: "We must do all we can!"
+ rce_religion_mechanic_druidic_council_events8.EVTOPT2: "Perhaps now the land will come to better use."
+
+ rce_religion_mechanic_druidic_council_events.EVTNAME9: "The Horrors of War"
+ rce_religion_mechanic_druidic_council_events.EVTDESC9: "Not all men are cut out to lead a life of war and it seems the conflict our country is currently in has made some of them realize it. The number of deserters seeking to hide among druids is not big but they set a dangerous example. As a [Root.Monarch.GetTitle] it is, however, our duty to protect the druids and while we have repeatedly warned them not to accept men like these into their ranks it seems some still do."
+ rce_religion_mechanic_druidic_council_events9.EVTOPT1: "We must remember to be gentle."
+ rce_religion_mechanic_druidic_council_events9.EVTOPT2: "Demand that they release these 'druids' to us."
+
+ rce_religion_mechanic_druidic_council_events.EVTNAME10: "A Luxurious Life"
+ rce_religion_mechanic_druidic_council_events.EVTDESC10: "Recently [Root.Monarch.GetName] have come under attack by those who feel [Root.Monarch.GetHerHis] rule has been one of extravagance and conspicuous consumption. Some of our ministers, however, insist that a certain amount of luxury is necessary for a ruler, especially when dealing with foreign monarchs and their emissaries."
+ rce_religion_mechanic_druidic_council_events10.EVTOPT1: "Let us do away with worldly things!"
+ rce_religion_mechanic_druidic_council_events10.EVTOPT2: "We cannot stoop to the level of peasants..."
+
+ rce_religion_mechanic_druidic_council_events.EVTNAME11: "Plight of [target_province.GetName]"
+ rce_religion_mechanic_druidic_council_events.EVTDESC11: "A representative of the farmers of [target_province.GetName] arrived in [Root.Capital.GetCapitalName] today, imploring [Root.Monarch.GetName] to help expand and maintain the irrigation system of the province. The local population is growing and claiming new land at a speed that the current infrastructure does not support. The representative also asks that the state supply food to those who need it in the meantime. \nWhile this project would have few downsides besides the cost there are currently no plans to improve this particular region and doing so in reasonable time would likely be quite expensive."
+ rce_religion_mechanic_druidic_council_events11.EVTOPT1: "This [Root.Monarch.GetTitle] is always ready to listen to the people."
+ rce_religion_mechanic_druidic_council_events11.EVTOPT2: "You will have to wait for your turn."
+
  # Decisions:
  rce_religion_mechanic_druidic_council_increase_druidic_alignment_decision_title: "Increase Naturalist Influence"
  rce_religion_mechanic_druidic_council_increase_druidic_alignment_decision_desc: "Support the Naturalists among the Druids to strengthen their position."

@@ -209,3 +209,40 @@ rce_berber_mauretania_ideas = {
 		placed_merchant_power_modifier = 0.33
 	}
 }
+
+rce_celcita_ideas = {
+	start = {
+
+	}
+
+	bonus = {
+
+	}
+
+	trigger = {
+		has_country_flag = rce_formable_celtica
+	}
+	free = yes
+
+	rce_celcita_ideas_1 = {
+
+	}
+	rce_celcita_ideas_2 = {
+
+	}
+	rce_celcita_ideas_3 = {
+
+	}
+	rce_celcita_ideas_4 = {
+
+	}
+	rce_celcita_ideas_5 = {
+
+	}
+	rce_celcita_ideas_6 = {
+
+	}
+	rce_celcita_ideas_7 = {
+
+	}
+}

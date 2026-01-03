@@ -661,6 +661,10 @@ country_event = {
 		rce_uses_religion_mechanic = { mechanic = druidic_council }
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -713,6 +717,10 @@ country_event = {
 		rce_uses_religion_mechanic = { mechanic = druidic_council }
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = {
 		name = rce_religion_mechanic_druidic_council_events4.EVTOPT1
 
@@ -758,6 +766,10 @@ country_event = {
 		NOT = { rce_has_religion_mechanic_druidic_council_value = { value = 35 } }
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = {
 		name = rce_religion_mechanic_druidic_council_events5.EVTOPT1
 
@@ -776,6 +788,10 @@ country_event = {
 	trigger = {
 		rce_uses_religion_mechanic = { mechanic = druidic_council }
 		NOT = { has_country_modifier = rce_add_religion_mechanic_druidic_council_building_restrictions_modifier }
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = {
@@ -841,6 +857,10 @@ country_event = {
 		rce_uses_religion_mechanic = { mechanic = druidic_council }
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = {
 		name = rce_religion_mechanic_druidic_council_events7.EVTOPT1
 
@@ -867,5 +887,266 @@ country_event = {
 		}
 
 		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.8
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME8
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC8
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+		any_owned_province = {
+			has_owner_religion = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_religion = yes
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events8.EVTOPT1
+
+		ai_chance = {
+			factor = 0.9
+			modifier = {
+				factor = 0.1
+				NOT = { years_of_income = 0.1 }
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+		add_years_of_income = -0.05
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events8.EVTOPT2
+
+		ai_chance = {
+			factor = 0.1
+			modifier = {
+				factor = 0.1
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+			scaled_estate_land_share_reduce_effect = { estate = estate_church }
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.9
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME9
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC9
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+		is_at_war = yes
+		government = monarchy
+		has_regency = no
+		num_of_cities = 3
+		war_exhaustion = 2
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events9.EVTOPT1
+
+		ai_chance = { factor = 0.5 }
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+		add_war_exhaustion = -1
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events9.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0.1
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+		add_yearly_manpower = 0.5
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.10
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME10
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC10
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+		government = monarchy
+		has_regency = no
+		NOT = { has_ruler_flag = rce_religion_mechanic_druidic_council_luxury_accusations }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = rce_religion_mechanic_druidic_council_luxury_accusations
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events10.EVTOPT1
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+		add_prestige = -10
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events10.EVTOPT2
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -10 }
+		add_legitimacy = -10
+		add_horde_unity = -10
+	}
+}
+
+country_event = {
+	id = rce_religion_mechanic_druidic_council_events.11
+	title = rce_religion_mechanic_druidic_council_events.EVTNAME11
+	desc = rce_religion_mechanic_druidic_council_events.EVTDESC11
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	goto = target_province
+
+	trigger = {
+		rce_uses_religion_mechanic = { mechanic = druidic_council }
+		has_regency = no
+		any_owned_province = {
+			has_owner_religion = yes
+			NOT = { development = 24 }
+			NOT = { has_province_modifier = improvement_program }
+			NOT = { has_province_modifier = hampered_growth }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_religion = yes
+					NOT = { development = 24 }
+					NOT = { has_province_modifier = improvement_program }
+					NOT = { has_province_modifier = hampered_growth }
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events11.EVTOPT1
+
+		rce_add_religion_mechanic_druidic_council_value = { value = 10 }
+		add_years_of_income = -0.1
+		event_target:target_province = {
+			add_province_modifier = {
+				name = improvement_program
+				duration = 1825
+			}
+		}
+	}
+
+	option = {
+		name = rce_religion_mechanic_druidic_council_events11.EVTOPT2
+
+		rce_add_religion_mechanic_druidic_council_value = { value = -15 }
+		event_target:target_province = {
+			add_province_modifier = {
+				name = hampered_growth
+				duration = 1825
+			}
+		}
 	}
 }

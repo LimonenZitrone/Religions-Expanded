@@ -395,4 +395,92 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	rce_formable_decision_celtica = {
+		major = yes
+		potential = {
+			culture_group = gaelic
+			NOT = { has_global_flag = rce_formable_celtica }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 373
+				province_id = 252
+				province_id = 242
+				province_id = 233
+				AND = {
+					province_id = 172
+					ROOT = {
+						NOT = { owns_core_province = 234 }
+					}
+				}
+				AND = {
+					province_id = 234
+					ROOT = {
+						NOT = { owns_core_province = 172 }
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			culture_group = gaelic
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 373
+			owns_core_province = 252
+			owns_core_province = 242
+			owns_core_province = 233
+			OR = {
+				owns_core_province = 172
+				owns_core_province = 234
+			}
+			OR = {
+				development_in_provinces = {
+					value = 200
+					culture_group = gaelic
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 50
+					culture_group = gaelic
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			set_global_flag = rce_formable_celtica
+			set_country_flag = rce_formable_celtica
+			override_country_name = RCE_FORMABLE_CELTICA
+			change_country_color = { color = { 255 215 0 } }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					NOT = { religion = druidism }
+				}
+				custom_tooltip = rce_formable_decision_celtica_tt
+			}
+			british_isles_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

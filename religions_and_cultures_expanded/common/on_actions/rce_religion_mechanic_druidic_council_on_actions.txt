@@ -21,11 +21,15 @@ on_monarch_death = {
 
 on_thri_yearly_pulse_2 = {
 	random_events = {
-		100 = rce_religion_mechanic_druidic_council_events.3
-		100 = rce_religion_mechanic_druidic_council_events.4
-		70 = rce_religion_mechanic_druidic_council_events.5
-		90 = rce_religion_mechanic_druidic_council_events.6
-		100 = rce_religion_mechanic_druidic_council_events.7
+		70 = rce_religion_mechanic_druidic_council_events.3
+		70 = rce_religion_mechanic_druidic_council_events.4
+		40 = rce_religion_mechanic_druidic_council_events.5
+		60 = rce_religion_mechanic_druidic_council_events.6
+		70 = rce_religion_mechanic_druidic_council_events.7
+		70 = rce_religion_mechanic_druidic_council_events.8
+		70 = rce_religion_mechanic_druidic_council_events.9
+		70 = rce_religion_mechanic_druidic_council_events.10
+		70 = rce_religion_mechanic_druidic_council_events.11
 	}
 }
 
